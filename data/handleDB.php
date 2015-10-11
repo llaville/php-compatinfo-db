@@ -31,8 +31,6 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class Command extends BaseCommand
 {
-    const JSON_PRETTY_PRINT = 128;
-
     protected function readJsonFile($refName, $ext, $major)
     {
         $filename = $this->getApplication()->getRefDir() .
@@ -54,7 +52,7 @@ class Command extends BaseCommand
         if (!file_exists($filename)) {
             return false;
         }
-        $jsonStr = json_encode($data, self::JSON_PRETTY_PRINT);
+        $jsonStr = json_encode($data, JSON_PRETTY_PRINT);
         file_put_contents($filename, $jsonStr);
     }
 }
