@@ -67,7 +67,7 @@ class Environment
         $pdo = self::initRefDb();
 
         $stmt = $pdo->prepare(
-            'SELECT build_string as "build.string", build_date as "build.date"' .
+            'SELECT build_string as "build.string", build_date as "build.date", build_version as "build.version"' .
             ' FROM bartlett_compatinfo_versions'
         );
         $stmt->execute();
