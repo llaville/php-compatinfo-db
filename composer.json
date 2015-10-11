@@ -21,11 +21,13 @@
         "ext-pdo_sqlite": "*"
     },
     "require-dev": {
+        "symfony/console": "~2.5",
         "psr/log": "~1.0",
         "monolog/monolog": "~1.10",
         "bartlett/phpunit-loggertestlistener": "~1.5"
     },
     "suggest": {
+        "symfony/console": "Allow to rebuild the Reference CompatInfo Database",
         "psr/log": "Allow logging events with the LogPlugin",
         "monolog/monolog": "Allow logging events with the LogPlugin",
         "bartlett/phpunit-loggertestlistener": "Allow logging unit tests to your favorite PSR-3 logger interface"
