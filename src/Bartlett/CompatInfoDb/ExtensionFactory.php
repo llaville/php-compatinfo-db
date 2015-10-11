@@ -126,18 +126,18 @@ class ExtensionFactory implements ReferenceInterface
         return $this->getLatestPhpVersion();
     }
 
-    public static function getLatestPhpVersion()
+    public static function getLatestPhpVersion($phpVersion = PHP_VERSION)
     {
-        if (version_compare(PHP_VERSION, '5.3', 'lt')) {
+        if (version_compare($phpVersion, '5.3', 'lt')) {
             return self::LATEST_PHP_5_2;
         }
-        if (version_compare(PHP_VERSION, '5.4', 'lt')) {
+        if (version_compare($phpVersion, '5.4', 'lt')) {
             return self::LATEST_PHP_5_3;
         }
-        if (version_compare(PHP_VERSION, '5.5', 'lt')) {
+        if (version_compare($phpVersion, '5.5', 'lt')) {
             return self::LATEST_PHP_5_4;
         }
-        if (version_compare(PHP_VERSION, '5.6', 'lt')) {
+        if (version_compare($phpVersion, '5.6', 'lt')) {
             return self::LATEST_PHP_5_5;
         }
         return self::LATEST_PHP_5_6;
