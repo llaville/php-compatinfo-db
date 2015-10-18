@@ -66,7 +66,6 @@ class MemcacheExtensionTest extends GenericTest
             );
         }
 
-        self::$ext = 'Memcache';
         parent::setUpBeforeClass();
     }
 }

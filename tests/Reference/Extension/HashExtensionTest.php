@@ -99,7 +99,7 @@ class HashExtensionTest extends GenericTest
                 self::$ignoredconstants = $mhashconstants;
             }
         }
-        self::$ext = 'Hash';
+
         parent::setUpBeforeClass();
     }
 }

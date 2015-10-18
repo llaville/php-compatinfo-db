@@ -35,14 +35,4 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  */
 class PcreExtensionTest extends GenericTest
 {
-    /**
-     * Sets up the shared fixture.
-     *
-     * @return void
-     */
-    public static function setUpBeforeClass()
-    {
-        self::$ext = 'Pcre';
-        parent::setUpBeforeClass();
-    }
 }

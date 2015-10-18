@@ -207,7 +207,7 @@ class StandardExtensionTest extends GenericTest
                 'STREAM_IPPROTO_RAW',
             );
         }
-        self::$ext = 'Standard';
+
         parent::setUpBeforeClass();
     }
 }

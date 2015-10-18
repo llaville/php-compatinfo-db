@@ -47,7 +47,6 @@ class FtpExtensionTest extends GenericTest
             'ftp_ssl_connect',
         );
 
-        self::$ext = 'Ftp';
         parent::setUpBeforeClass();
     }
 }

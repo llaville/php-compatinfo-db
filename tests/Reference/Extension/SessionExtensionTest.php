@@ -46,7 +46,7 @@ class SessionExtensionTest extends GenericTest
             // Only defined after session_start
             'SID',
         );
-        self::$ext = 'Session';
+
         parent::setUpBeforeClass();
     }
 }

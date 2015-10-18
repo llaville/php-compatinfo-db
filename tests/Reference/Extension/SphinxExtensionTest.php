@@ -54,7 +54,6 @@ class SphinxExtensionTest extends GenericTest
             'SERIALIZER_IGBINARY'
         );
 
-        self::$ext = 'Sphinx';
         parent::setUpBeforeClass();
     }
 }

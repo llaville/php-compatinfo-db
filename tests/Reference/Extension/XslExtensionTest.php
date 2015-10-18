@@ -57,7 +57,7 @@ class XslExtensionTest extends GenericTest
                 'XSL_SECPREF_WRITE_NETWORK',
             );
         }
-        self::$ext = 'Xsl';
+
         parent::setUpBeforeClass();
     }
 }

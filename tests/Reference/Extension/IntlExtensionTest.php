@@ -66,7 +66,6 @@ class IntlExtensionTest extends GenericTest
             'intl.use_exceptions'
         );
 
-        self::$ext = 'Intl';
         parent::setUpBeforeClass();
     }
 }

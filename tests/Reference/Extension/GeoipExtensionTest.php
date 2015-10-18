@@ -51,7 +51,7 @@ class GeoipExtensionTest extends GenericTest
             // requires GeoIP C library 1.4.8 or higher (LIBGEOIP_VERSION >= 1004008)
             'GEOIP_NETSPEED_EDITION_REV1',
         );
-        self::$ext = 'Geoip';
+
         parent::setUpBeforeClass();
     }
 }

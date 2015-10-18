@@ -42,7 +42,10 @@ class RedisExtensionTest extends GenericTest
      */
     public static function setUpBeforeClass()
     {
-        self::$ext = 'Redis';
+        self::$optionalconstants = array(
+            'Redis::SERIALIZER_IGBINARY', // Build time option
+        );
+
         parent::setUpBeforeClass();
     }
 }

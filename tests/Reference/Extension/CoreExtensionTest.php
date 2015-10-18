@@ -120,7 +120,6 @@ class CoreExtensionTest extends GenericTest
             'self',
         );
 
-        self::$ext = 'Core';
         parent::setUpBeforeClass();
     }
 }

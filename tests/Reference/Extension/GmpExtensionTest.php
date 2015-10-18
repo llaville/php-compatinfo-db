@@ -49,7 +49,6 @@ class GmpExtensionTest extends GenericTest
             'GMP_MPIR_VERSION', // optional in source code
         );
 
-        self::$ext = 'Gmp';
         parent::setUpBeforeClass();
     }
 }

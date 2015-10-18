@@ -35,18 +35,4 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  */
 class CurlExtensionTest extends GenericTest
 {
-    /**
-     * Sets up the shared fixture.
-     *
-     * @return void
-     */
-    public static function setUpBeforeClass()
-    {
-        self::$optionalconstants = array(
-            'CURLOPT_MUTE',
-            'CURLOPT_PASSWDFUNCTION',
-        );
-        self::$ext = 'Curl';
-        parent::setUpBeforeClass();
-    }
 }

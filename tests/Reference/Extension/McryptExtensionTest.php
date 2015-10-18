@@ -80,7 +80,7 @@ class McryptExtensionTest extends GenericTest
         self::$ignoredconstants = array(
             'MCRYPT_BLOWFISH_COMPAT',
         );
-        self::$ext = 'Mcrypt';
+
         parent::setUpBeforeClass();
     }
 }

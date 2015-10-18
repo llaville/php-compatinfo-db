@@ -48,7 +48,6 @@ class SoapExtensionTest extends GenericTest
             'soap_encode_to_zval',
         );
 
-        self::$ext = 'Soap';
         parent::setUpBeforeClass();
     }
 }

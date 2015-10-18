@@ -34,8 +34,14 @@ use Bartlett\CompatInfoDb\ExtensionFactory;
  * @since      Class available since Release 3.0.0RC1 of PHP_CompatInfo
  * @since      Class available since Release 1.0.0alpha1 of PHP_CompatInfo_Db
  */
-class GenericTest extends \PHPUnit_Framework_TestCase
+abstract class GenericTest extends \PHPUnit_Framework_TestCase
 {
+    const REF_ELEMENT_INI       = 1;
+    const REF_ELEMENT_CONSTANT  = 2;
+    const REF_ELEMENT_FUNCTION  = 3;
+    const REF_ELEMENT_INTERFACE = 4;
+    const REF_ELEMENT_CLASS     = 5;
+
     protected static $obj = null;
     protected static $ref = null;
     protected static $ext = null;
@@ -90,6 +96,27 @@ class GenericTest extends \PHPUnit_Framework_TestCase
     );
 
     /**
+     * {@inheritDoc}
+     */
+    public function __construct($name = null, array $data = array(), $dataName = '')
+    {
+        parent::__construct($name, $data, $dataName);
+
+        $parts = explode('\\', get_class($this));
+
+        self::$ext = $name = strtolower(
+            str_replace('ExtensionTest', '', end($parts))
+        );
+
+        // special case(s)
+        if ('zendopcache' === $name) {
+            self::$ext = $name = 'zend opcache';
+        }
+
+        self::$obj = new ExtensionFactory($name);
+    }
+
+    /**
      * Sets up the shared fixture.
      *
      * @return void
@@ -97,37 +124,259 @@ class GenericTest extends \PHPUnit_Framework_TestCase
      */
     public static function setUpBeforeClass()
     {
-        if (self::$ext) {
-            $name = strtolower(self::$ext);
-            self::$obj = new ExtensionFactory($name);
-        }
-        if (!self::$obj instanceof ReferenceInterface) {
-            self::$obj = null;
-            return;
-        }
-        self::$ext = $extname = self::$obj->getName();
         self::$optionalreleases = array();
 
-        if (!extension_loaded($extname)) {
-            // if dynamic extension load is activated
-            $loaded = (bool) ini_get('enable_dl');
-            if ($loaded) {
-                // give a second chance
-                $prefix = (PHP_SHLIB_SUFFIX === 'dll') ? 'php_' : '';
-                @dl($prefix . $extname . '.' . PHP_SHLIB_SUFFIX);
+        $releases       = array_keys(self::$obj->getReleases());
+        $currentVersion = self::$obj->getCurrentVersion();
+
+        if ($currentVersion === false) {
+            // extension did not provide any version information
+            return;
+        }
+
+        // platform dependant
+        foreach ($releases as $rel_version) {
+            if (version_compare($currentVersion, $rel_version, 'lt')) {
+                array_push(self::$optionalreleases, $rel_version);
             }
         }
-        if (!extension_loaded($extname)) {
-            self::$obj = null;
+    }
+
+    /**
+     * Generic Reference validator and producer
+     *
+     * @return array()
+     */
+    public function provideReferenceValues($methodName)
+    {
+        if (!extension_loaded(self::$ext)) {
+            $this->markTestSkipped(
+                sprintf('Extension %s is required.', self::$ext)
+            );
+        }
+
+        if ('testGetIniEntriesFromReference' === $methodName) {
+            $elements = self::$obj->getIniEntries();
+
+        } elseif ('testGetFunctionsFromReference'  === $methodName) {
+            $elements = self::$obj->getFunctions();
+
+        } elseif ('testGetConstantsFromReference'  === $methodName) {
+            $elements = self::$obj->getConstants();
+
+        } elseif ('testGetClassesFromReference' == $methodName) {
+            $elements = self::$obj->getClasses();
+
+        } elseif ('testGetInterfacesFromReference' == $methodName) {
+            $elements = self::$obj->getInterfaces();
+
         } else {
-            $releases       = array_keys(self::$obj->getReleases());
-            $currentVersion = self::$obj->getCurrentVersion();
-            // platform dependant
-            foreach ($releases as $rel_version) {
-                if (version_compare($currentVersion, $rel_version, 'lt')) {
-                    array_push(self::$optionalreleases, $rel_version);
+            $elements = array();
+        }
+
+        $this->assertTrue(is_array($elements));
+
+        if (empty($elements)) {
+            // do not fails suite if no test case found in data provider
+            $this->markTestSkipped(
+                sprintf(
+                    'No tests found in suite "%s::%s".',
+                    get_class($this),
+                    $methodName
+                )
+            );
+        }
+
+        $dataset = array();
+        foreach ($elements as $name => $range) {
+
+            if (array_key_exists('lib.requires', $range)
+                && !empty($range['lib.requires'])
+            ) {
+                list($libname, $vnumber) = explode(':', $range['lib.requires']);
+
+                if (self::lib($libname) < $vnumber) {
+                    // not supported by current platform
+                    continue;
                 }
             }
+            $dataset[] = array($name, $range);
+        }
+        return $dataset;
+    }
+
+    protected static function lib($name, $key = 'version_number')
+    {
+        if ('curl' == $name
+            && function_exists('curl_version')
+        ) {
+            $meta = curl_version();
+            $meta['version_text'] = $meta['version'];
+
+        } elseif ('libxml' == $name) {
+            $meta = array(
+                'version_number' => defined('LIBXML_DOTTED_VERSION')
+                    ? self::toNumber(\LIBXML_DOTTED_VERSION) : false,
+                'version_text'   => defined('LIBXML_DOTTED_VERSION')
+                    ? \LIBXML_DOTTED_VERSION : false,
+            );
+
+        } elseif ('intl' == $name) {
+            $meta = array(
+                'version_number' => defined('INTL_ICU_VERSION')
+                    ? self::toNumber(\INTL_ICU_VERSION) : false,
+                'version_text'   => defined('INTL_ICU_VERSION')
+                    ? \INTL_ICU_VERSION : false,
+            );
+
+        } elseif ('openssl' == $name) {
+            $meta = array(
+                'version_number' => defined('OPENSSL_VERSION_NUMBER')
+                    ? \OPENSSL_VERSION_NUMBER : false,
+                'version_text'   => defined('OPENSSL_VERSION_TEXT')
+                    ? self::toText(\OPENSSL_VERSION_NUMBER) : false,
+            );
+        }
+        if (isset($meta)) {
+            if (isset($key) && array_key_exists($key, $meta)) {
+                return $meta[$key];
+            }
+            return $meta;
+        }
+        return false;
+    }
+
+    protected static function toText($number)
+    {
+        $hex = dechex(($number & ~ 15) / 16);
+
+        if (strlen($hex) % 2 !== 0) {
+            $hex = '0' . $hex;
+        }
+
+        $arr = str_split($hex, 2);
+
+        return implode('.', array_map('hexdec', $arr));
+    }
+
+    protected static function toNumber($text)
+    {
+        $arr = explode('.', $text);
+        $arr = array_map('dechex', $arr);
+        $hex = '';
+
+        foreach ($arr as $digit) {
+            if (strlen($digit) % 2 !== 0) {
+                $hex .= '0';
+            }
+            $hex .= $digit;
+        }
+        $hex .= 'F';
+
+        return hexdec($hex);
+    }
+
+    /**
+     *
+     */
+    protected function checkValuesFromReference($element, $range, &$optional, &$ignored, $refElementType)
+    {
+        if (in_array($range['ext.min'], self::$optionalreleases)) {
+            return;
+        }
+
+        $min = $range['php.min'];
+        $max = $range['php.max'];
+
+        if (array_key_exists('php.excludes', $range)) {
+            if (in_array(PHP_VERSION, $range['php.excludes'])) {
+                // We are in min/max, so add it as optional
+                array_push($optional, $element);
+            }
+        }
+        if (!in_array($element, $optional)
+            && (empty($min) || version_compare(PHP_VERSION, $min) >= 0)
+            && (empty($max) || version_compare(PHP_VERSION, $max) <= 0)
+        ) {
+            // Should be there except if set as optional
+            $this->assertShouldBeThere($element, $refElementType);
+        }
+        if (!in_array($element, $ignored)) {
+            if (($min && version_compare(PHP_VERSION, $min) < 0)
+                || ($max && version_compare(PHP_VERSION, $max) > 0)
+            ) {
+                // Should not be there except if ignored
+                $this->assertShouldNotBeThere($element, $refElementType, $min, $max);
+            }
+        }
+    }
+
+    protected function assertShouldBeThere($element, $refElementType)
+    {
+        if (self::REF_ELEMENT_INI == $refElementType) {
+            $this->assertNotSame(
+                ini_get($element),
+                false,
+                "INI '$element', found in Reference, does not exists."
+            );
+
+        } elseif (self::REF_ELEMENT_FUNCTION == $refElementType) {
+            $this->assertTrue(
+                function_exists($element),
+                "Function '$element', found in Reference, does not exists."
+            );
+
+        } elseif (self::REF_ELEMENT_CONSTANT == $refElementType) {
+            $this->assertTrue(
+                defined($element),
+                "Constant '$element', found in Reference, does not exists."
+            );
+
+        } elseif (self::REF_ELEMENT_CLASS == $refElementType) {
+            $this->assertTrue(
+                class_exists($element, false),
+                "Class '$element', found in Reference, does not exists."
+            );
+
+        } elseif (self::REF_ELEMENT_INTERFACE == $refElementType) {
+            $this->assertTrue(
+                interface_exists($element, false),
+                "Interface '$element', found in Reference, does not exists."
+            );
+        }
+    }
+
+    protected function assertShouldNotBeThere($element, $refElementType, $min, $max)
+    {
+        if (self::REF_ELEMENT_INI == $refElementType) {
+            $this->assertFalse(
+                ini_get($element),
+                "INI '$element', found in Reference ($min,$max), exists."
+            );
+
+        } elseif (self::REF_ELEMENT_FUNCTION == $refElementType) {
+            $this->assertFalse(
+                function_exists($element),
+                "Function '$element', found in Reference ($min,$max), exists."
+            );
+
+        } elseif (self::REF_ELEMENT_CONSTANT == $refElementType) {
+            $this->assertFalse(
+                defined($element),
+                "Constant '$element', found in Reference ($min,$max), exists."
+            );
+
+        } elseif (self::REF_ELEMENT_CLASS == $refElementType) {
+            $this->assertFalse(
+                class_exists($element, false),
+                "Class '$element', found in Reference ($min,$max), exists."
+            );
+
+        } elseif (self::REF_ELEMENT_INTERFACE == $refElementType) {
+            $this->assertFalse(
+                interface_exists($element, false),
+                "Interface '$element', found in Reference ($min,$max), exists."
+            );
         }
     }
 
@@ -138,9 +387,9 @@ class GenericTest extends \PHPUnit_Framework_TestCase
      */
     public function testReference()
     {
-        if (is_null(self::$obj)) {
+        if (!extension_loaded(self::$ext)) {
             $this->markTestSkipped(
-                "The '" . self::$ext . "' extension is not available."
+                sprintf('Extension %s is required.', self::$ext)
             );
         }
         $this->assertTrue(true);
@@ -149,54 +398,19 @@ class GenericTest extends \PHPUnit_Framework_TestCase
     /**
      * Test than all referenced ini entries exists
      *
-     * @depends testReference
+     * @dataProvider provideReferenceValues
      * @group  reference
      * @return void
      */
-    public function testGetIniEntriesFromReference()
+    public function testGetIniEntriesFromReference($name, $range)
     {
-        if (is_null(self::$obj)) {
-            return;
-        }
-        $inientries = self::$obj->getIniEntries();
-        $this->assertTrue(is_array($inientries));
-        foreach ($inientries as $inientry => $range) {
-            if (in_array($range['ext.min'], self::$optionalreleases)) {
-                continue;
-            }
-
-            $min = $range['php.min'];
-            $max = $range['php.max'];
-
-            if (array_key_exists('php.excludes', $range)) {
-                if (in_array(PHP_VERSION, $range['php.excludes'])) {
-                    // We are in min/max, so add it as optional
-                    array_push(self::$optionalcfgs, $inientry);
-                }
-            }
-            if (!in_array($inientry, self::$optionalcfgs)
-                && (empty($min) || version_compare(PHP_VERSION, $min)>=0)
-                && (empty($max) || version_compare(PHP_VERSION, $max)<=0)
-            ) {
-                // Should be there except if set as optional
-                $this->assertNotSame(
-                    ini_get($inientry),
-                    false,
-                    "INI '$inientry', found in Reference, does not exists."
-                );
-            }
-            if (!in_array($inientry, self::$ignoredcfgs)) {
-                if (($min && version_compare(PHP_VERSION, $min)<0)
-                    || ($max && version_compare(PHP_VERSION, $max)>0)
-                ) {
-                    // Should not be there except if ignored
-                    $this->assertFalse(
-                        ini_get($inientry),
-                        "INI '$inientry', found in Reference ($min,$max), exists."
-                    );
-                }
-            }
-        }
+        $this->checkValuesFromReference(
+            $name,
+            $range,
+            self::$optionalcfgs,
+            self::$ignoredcfgs,
+            self::REF_ELEMENT_INI
+        );
     }
 
     /**
@@ -233,53 +447,19 @@ class GenericTest extends \PHPUnit_Framework_TestCase
     /**
      * Test than all referenced functions exists
      *
-     * @depends testReference
+     * @dataProvider provideReferenceValues
      * @group  reference
      * @return void
      */
-    public function testGetFunctionsFromReference()
+    public function testGetFunctionsFromReference($name, $range)
     {
-        if (is_null(self::$obj)) {
-            return;
-        }
-        $fcts = self::$obj->getFunctions();
-        $this->assertTrue(is_array($fcts));
-        foreach ($fcts as $fctname => $range) {
-            if (in_array($range['ext.min'], self::$optionalreleases)) {
-                continue;
-            }
-
-            $min = $range['php.min'];
-            $max = $range['php.max'];
-
-            if (array_key_exists('php.excludes', $range)) {
-                if (in_array(PHP_VERSION, $range['php.excludes'])) {
-                    // We are in min/max, so add it as optional
-                    array_push(self::$optionalfunctions, $fctname);
-                }
-            }
-            if (!in_array($fctname, self::$optionalfunctions)
-                && (empty($min) || version_compare(PHP_VERSION, $min)>=0)
-                && (empty($max) || version_compare(PHP_VERSION, $max)<=0)
-            ) {
-                // Should be there except if set as optional
-                $this->assertTrue(
-                    function_exists($fctname),
-                    "Function '$fctname', found in Reference, does not exists."
-                );
-            }
-            if (!in_array($fctname, self::$ignoredfunctions)) {
-                if (($min && version_compare(PHP_VERSION, $min)<0)
-                    || ($max && version_compare(PHP_VERSION, $max)>0)
-                ) {
-                    // Should not be there except if ignored
-                    $this->assertFalse(
-                        function_exists($fctname),
-                        "Function '$fctname', found in Reference ($min,$max), exists."
-                    );
-                }
-            }
-        }
+        $this->checkValuesFromReference(
+            $name,
+            $range,
+            self::$optionalfunctions,
+            self::$ignoredfunctions,
+            self::REF_ELEMENT_FUNCTION
+        );
     }
 
     /**
@@ -313,51 +493,19 @@ class GenericTest extends \PHPUnit_Framework_TestCase
     /**
      * Test than all referenced constants exists
      *
-     * @depends testReference
+     * @dataProvider provideReferenceValues
      * @group  reference
      * @return void
      */
-    public function testGetConstantsFromReference()
+    public function testGetConstantsFromReference($name, $range)
     {
-        if (is_null(self::$obj)) {
-            return;
-        }
-        $dict = self::$obj->getConstants();
-        $this->assertTrue(is_array($dict));
-        foreach ($dict as $constname => $range) {
-            if (in_array($range['ext.min'], self::$optionalreleases)) {
-                continue;
-            }
-
-            $min = $range['php.min'];
-            $max = $range['php.max'];
-
-            if (array_key_exists('php.excludes', $range)) {
-                if (in_array(PHP_VERSION, $range['php.excludes'])) {
-                    // We are in min/max, so add it as optional
-                    array_push(self::$optionalconstants, $constname);
-                }
-            }
-            if (!in_array($constname, self::$optionalconstants)
-                && (empty($min) || version_compare(PHP_VERSION, $min)>=0)
-                && (empty($max) || version_compare(PHP_VERSION, $max)<=0)
-            ) {
-                $this->assertTrue(
-                    defined($constname),
-                    "Constant '$constname', found in Reference, does not exists."
-                );
-            }
-            if (!in_array($constname, self::$ignoredconstants)) {
-                if (($min && version_compare(PHP_VERSION, $min)<0)
-                    || ($max && version_compare(PHP_VERSION, $max)>0)
-                ) {
-                    $this->assertFalse(
-                        defined($constname),
-                        "Constant '$constname', found in Reference ($min,$max), exists."
-                    );
-                }
-            }
-        }
+        $this->checkValuesFromReference(
+            $name,
+            $range,
+            self::$optionalconstants,
+            self::$ignoredconstants,
+            self::REF_ELEMENT_CONSTANT
+        );
     }
 
     /**
@@ -396,51 +544,19 @@ class GenericTest extends \PHPUnit_Framework_TestCase
     /**
      * Test than all referenced classes exists
      *
-     * @depends testReference
+     * @dataProvider provideReferenceValues
      * @group  reference
      * @return void
      */
-    public function testGetClassesFromReference()
+    public function testGetClassesFromReference($name, $range)
     {
-        if (is_null(self::$obj)) {
-            return;
-        }
-        $dict = self::$obj->getClasses();
-        $this->assertTrue(is_array($dict));
-        foreach ($dict as $classname => $range) {
-            if (in_array($range['ext.min'], self::$optionalreleases)) {
-                continue;
-            }
-
-            $min = $range['php.min'];
-            $max = $range['php.max'];
-
-            if (array_key_exists('php.excludes', $range)) {
-                if (in_array(PHP_VERSION, $range['php.excludes'])) {
-                    // We are in min/max, so add it as optional
-                    array_push(self::$ignoredclasses, $constname);
-                }
-            }
-            if (!in_array($classname, self::$optionalclasses)
-                && (empty($min) || version_compare(PHP_VERSION, $min)>=0)
-                && (empty($max) || version_compare(PHP_VERSION, $max)<=0)
-            ) {
-                $this->assertTrue(
-                    class_exists($classname, false),
-                    "Class '$classname', found in Reference, does not exists."
-                );
-            }
-            if (!in_array($classname, self::$ignoredclasses)) {
-                if (($min && version_compare(PHP_VERSION, $min)<0)
-                    || ($max && version_compare(PHP_VERSION, $max)>0)
-                ) {
-                    $this->assertFalse(
-                        class_exists($classname, false),
-                        "Class '$classname', found in Reference ($min,$max), exists."
-                    );
-                }
-            }
-        }
+        $this->checkValuesFromReference(
+            $name,
+            $range,
+            self::$optionalclasses,
+            self::$ignoredclasses,
+            self::REF_ELEMENT_CLASS
+        );
     }
 
     /**
@@ -611,40 +727,18 @@ class GenericTest extends \PHPUnit_Framework_TestCase
     /**
      * Test than all referenced interfaces exists
      *
-     * @depends testReference
+     * @dataProvider provideReferenceValues
      * @group  reference
      * @return void
      */
-    public function testGetInterfacesFromReference()
+    public function testGetInterfacesFromReference($name, $range)
     {
-        if (is_null(self::$obj)) {
-            return;
-        }
-        $dict = self::$obj->getInterfaces();
-        $this->assertTrue(is_array($dict));
-        foreach ($dict as $intname => $range) {
-            if (in_array($range['ext.min'], self::$optionalreleases)) {
-                continue;
-            }
-
-            $min = $range['php.min'];
-            $max = $range['php.max'];
-
-            if (array_key_exists('php.excludes', $range)) {
-                if (in_array(PHP_VERSION, $range['php.excludes'])) {
-                    // We are in min/max, so add it as optional
-                    array_push(self::$optionalinterfaces, $intname);
-                }
-            }
-            if (!in_array($intname, self::$optionalinterfaces)
-                && (empty($min) || version_compare(PHP_VERSION, $min)>=0)
-                && (empty($max) || version_compare(PHP_VERSION, $max)<=0)
-            ) {
-                $this->assertTrue(
-                    interface_exists($intname, false),
-                    "Interface '$intname', found in Reference, does not exists."
-                );
-            }
-        }
+        $this->checkValuesFromReference(
+            $name,
+            $range,
+            self::$optionalinterfaces,
+            self::$ignoredinterfaces,
+            self::REF_ELEMENT_INTERFACE
+        );
     }
 }

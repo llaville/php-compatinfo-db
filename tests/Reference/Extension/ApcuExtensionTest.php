@@ -52,7 +52,7 @@ class ApcuExtensionTest extends GenericTest
                 ' apc_register_serializer-0',   // on PHP 5.6 branch
             );
         }
-        self::$ext = 'Apcu';
+
         parent::setUpBeforeClass();
     }
 }

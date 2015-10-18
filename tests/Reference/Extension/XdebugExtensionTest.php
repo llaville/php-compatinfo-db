@@ -63,7 +63,6 @@ class XdebugExtensionTest extends GenericTest
             }
         }
 
-        self::$ext = 'Xdebug';
         parent::setUpBeforeClass();
     }
 }

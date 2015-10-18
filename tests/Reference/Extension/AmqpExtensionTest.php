@@ -51,7 +51,7 @@ class AmqpExtensionTest extends GenericTest
         } else {
             // *nix
         }
-        self::$ext = 'Amqp';
+
         parent::setUpBeforeClass();
     }
 }

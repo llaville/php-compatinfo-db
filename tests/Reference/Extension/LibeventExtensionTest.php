@@ -42,8 +42,6 @@ class LibeventExtensionTest extends GenericTest
      */
     public static function setUpBeforeClass()
     {
-        self::$ext = 'Libevent';
-
         if (PATH_SEPARATOR == ';') {
             // Win*
             array_push(self::$optionalfunctions, 'event_base_reinit');

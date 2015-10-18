@@ -66,7 +66,6 @@ class GdExtensionTest extends GenericTest
             self::$optionalfunctions[] = 'imageantialias';
         }
 
-        self::$ext = 'Gd';
         parent::setUpBeforeClass();
     }
 }
