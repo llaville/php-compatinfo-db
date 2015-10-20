@@ -6,4 +6,4 @@ It can be updated when needed, without relation to php-compatinfo life cycle.
 # Status
 
 Currently under development. An alpha version should be available soon, before reaching final milestone 
-[4.6.0](https://github.com/llaville/php-compat-info/milestones/4.6.0) of php-compatinfo
+[5.0.0](https://github.com/llaville/php-compat-info/milestones/5.0.0) of php-compatinfo
