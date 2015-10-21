@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="bartlett/php-compatinfo-db" default="help">
+
+    <target name="help">
+        <echo>A toolchain manager for unit tests of ${phing.project.name}   </echo>
+        <echo>                                                              </echo>
+        <echo>targets:                                                      </echo>
+        <echo>  runtests     Run all Reference tests                        </echo>
+    </target>
+
+    <target name="runtests">
+
+        <foreach param="filename" target="runExtensionTest">
+            <fileset dir="Reference/Extension">
+                <include name="*Test.php" />
+            </fileset>
+        </foreach>
+
+    </target>
+
+    <target hidden="true"
+        name="runExtensionTest"
+    >
+        <phpunit bootstrap="bootstrap.php" pharlocation="${phpunit.pharlocation}">
+            <formatter type="plain" usefile="false" />
+            <batchtest>
+                <fileset dir="Reference/Extension">
+                    <include name="${filename}" />
+                </fileset>
+            </batchtest>
+        </phpunit>
+
+    </target>
+
+</project>
