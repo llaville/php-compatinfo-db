@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="bartlett/php-compatinfo-db" default="help">
 
+    <property name="phpunit.formatter.type"     value="summary" />
+    <property name="phpunit.formatter.todir"    value="reports" />
+    <property name="phpunit.printsummary"       value="false" />
+
     <target name="help">
         <echo>A toolchain manager for unit tests of ${phing.project.name}   </echo>
+        <echo>                                                              </echo>
+        <echo>Use property 'phpunit.formatter.type' to define type of report</echo>
+        <echo>Either 'summary', 'plain' or 'xml' (default to summary)       </echo>
         <echo>                                                              </echo>
         <echo>targets:                                                      </echo>
         <echo>  runtests     Run all Reference tests                        </echo>
@@ -10,25 +17,65 @@
 
     <target name="runtests">
 
-        <foreach param="filename" target="runExtensionTest">
-            <fileset dir="Reference/Extension">
-                <include name="*Test.php" />
-            </fileset>
-        </foreach>
+        <if>
+            <equals arg1="${phpunit.formatter.type}" arg2="summary" />
+            <then>
+                <property name="phpunit.formatter.usefile"  value="false" />
+                <property name="phpunit.formatter.outfile"  value="" />
+                <property name="phpunit.printsummary"       value="false" override="true" />
+            </then>
+        </if>
 
-    </target>
+        <if>
+            <equals arg1="${phpunit.formatter.type}" arg2="plain" />
+            <then>
+                <property name="phpunit.formatter.usefile"  value="false" />
+                <property name="phpunit.formatter.outfile"  value="testresults.txt" />
+            </then>
+        </if>
 
-    <target hidden="true"
-        name="runExtensionTest"
-    >
-        <phpunit bootstrap="bootstrap.php" pharlocation="${phpunit.pharlocation}">
-            <formatter type="plain" usefile="false" />
+        <if>
+            <equals arg1="${phpunit.formatter.type}" arg2="xml" />
+            <then>
+                <property name="phpunit.formatter.usefile"  value="true" />
+                <property name="phpunit.formatter.outfile"  value="testsuites.xml" />
+                <property name="phpunit.report.format"      value="frames" />
+                <property name="phpunit.report.todir"       value="reports/html" />
+                <property name="phpunit.report.styledir"    value="/home/github/phing/etc" />
+            </then>
+        </if>
+
+        <echo>Run All Tests</echo>
+
+        <phpunit pharlocation="${phpunit.pharlocation}"
+            bootstrap="${project.basedir}/bootstrap.php"
+            printsummary="${phpunit.printsummary}"
+        >
+            <formatter type="${phpunit.formatter.type}"
+                usefile="${phpunit.formatter.usefile}"
+                outfile="${phpunit.formatter.outfile}"
+                todir="${phpunit.formatter.todir}"
+            />
+
             <batchtest>
                 <fileset dir="Reference/Extension">
-                    <include name="${filename}" />
+                    <include name="*Test.php" />
                 </fileset>
             </batchtest>
         </phpunit>
+
+        <if>
+            <equals arg1="${phpunit.formatter.type}" arg2="xml" />
+            <then>
+                <echo>Build Html Report</echo>
+
+                <phpunitreport infile="${phpunit.formatter.todir}/${phpunit.formatter.outfile}"
+                    styledir="${phpunit.report.styledir}"
+                    format="${phpunit.report.format}"
+                    todir="${phpunit.report.todir}"
+                />
+            </then>
+        </if>
 
     </target>
 
