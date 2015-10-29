@@ -199,7 +199,8 @@ class SqliteStorage
             'SELECT c.name,' .
             ' e.name as "ext.name", ext_min as "ext.min", ext_max as "ext.max",' .
             ' php_min as "php.min", php_max as "php.max",' .
-            ' php_excludes as "php.excludes"' .
+            ' php_excludes as "php.excludes",' .
+            ' optional' .
             ' FROM bartlett_compatinfo_constants c,  bartlett_compatinfo_extensions e' .
             ' WHERE c.ext_name_fk = e.id AND e.name = :name COLLATE NOCASE'
         );

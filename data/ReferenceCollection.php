@@ -248,6 +248,10 @@ class ReferenceCollection
         $this->stmtConstant->execute($criteria);
         $row = $this->stmtConstant->fetch(\PDO::FETCH_ASSOC);
 
+        if (!isset($rec['optional'])) {
+            $rec['optional'] = false;
+        }
+
         if (is_array($row)) {
             if ($row == $rec) {
                 // nothing to do
@@ -339,6 +343,7 @@ class ReferenceCollection
             ' ext_min VARCHAR(16), ext_max VARCHAR(16),' .
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' php_excludes VARCHAR(255), ' .
+            ' optional INTEGER, ' .
             ' PRIMARY KEY (ext_name_fk, name))'
         );
         $this->dbal->exec(
@@ -390,8 +395,8 @@ class ReferenceCollection
         );
         $this->stmtConstants = $this->dbal->prepare(
             'REPLACE INTO ' . $tblConstants .
-            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, php_excludes)' .
-            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :php_excludes)'
+            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, php_excludes, optional)' .
+            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :php_excludes, :optional)'
         );
         $this->stmtClassConstant = $this->dbal->prepare(
             'REPLACE INTO ' . $tblClassConst .

@@ -189,6 +189,10 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
 
         $dataset = array();
         foreach ($elements as $name => $range) {
+            if (!empty($range['optional'])) {
+                self::$optionalconstants[] = $name;
+                continue;
+            }
 
             if (array_key_exists('lib.requires', $range)
                 && !empty($range['lib.requires'])
