@@ -196,6 +196,10 @@ class ReferenceCollection
         $this->stmtClassConst->execute($criteria);
         $row = $this->stmtClassConst->fetch(\PDO::FETCH_ASSOC);
 
+        if (!isset($rec['optional'])) {
+            $rec['optional'] = false;
+        }
+
         if (is_array($row)) {
             if ($row == $rec) {
                 // nothing to do
@@ -351,6 +355,7 @@ class ReferenceCollection
             ' (ext_name_fk INTEGER, class_name VARCHAR(32), name VARCHAR(32),' .
             ' ext_min VARCHAR(16), ext_max VARCHAR(16),' .
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
+            ' optional INTEGER, ' .
             ' PRIMARY KEY (ext_name_fk, class_name, name))'
         );
         $this->stmtVersions = $this->dbal->prepare(
@@ -400,8 +405,8 @@ class ReferenceCollection
         );
         $this->stmtClassConstant = $this->dbal->prepare(
             'REPLACE INTO ' . $tblClassConst .
-            ' (ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max)' .
-            ' VALUES (:ext_name_fk, :class_name, :name, :ext_min, :ext_max, :php_min, :php_max)'
+            ' (ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional)' .
+            ' VALUES (:ext_name_fk, :class_name, :name, :ext_min, :ext_max, :php_min, :php_max, :optional)'
         );
 
         $this->stmtRelease = $this->dbal->prepare(
