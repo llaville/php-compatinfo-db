@@ -915,7 +915,8 @@
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": "",
-        "php_excludes": ""
+        "php_excludes": "",
+        "optional": true
     },
     {
         "ext_name_fk": 53,

@@ -35,17 +35,4 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  */
 class PcntlExtensionTest extends GenericTest
 {
-    /**
-     * Sets up the shared fixture.
-     *
-     * @return void
-     */
-    public static function setUpBeforeClass()
-    {
-        self::$optionalconstants = array(
-            'SI_NOINFO'
-        );
-
-        parent::setUpBeforeClass();
-    }
 }
