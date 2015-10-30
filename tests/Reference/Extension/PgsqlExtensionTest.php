@@ -35,18 +35,4 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  */
 class PgsqlExtensionTest extends GenericTest
 {
-    /**
-     * Sets up the shared fixture.
-     *
-     * @return void
-     */
-    public static function setUpBeforeClass()
-    {
-        self::$optionalconstants = array(
-            // Requires CONNECTION_SSL_STARTUP
-            'PGSQL_CONNECTION_SSL_STARTUP',
-        );
-
-        parent::setUpBeforeClass();
-    }
 }

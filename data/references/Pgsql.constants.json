@@ -96,7 +96,8 @@
         "ext_max": "",
         "php_min": "5.6.0beta1",
         "php_max": "",
-        "php_excludes": ""
+        "php_excludes": "",
+        "optional": true
     },
     {
         "ext_name_fk": 57,
