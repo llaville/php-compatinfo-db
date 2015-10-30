@@ -132,7 +132,8 @@
         "ext_min": "2.2.3",
         "ext_max": "",
         "php_min": "5.2.0",
-        "php_max": ""
+        "php_max": "",
+        "optional": true
     },
     {
         "ext_name_fk": 104,
