@@ -42,12 +42,6 @@ class LdapExtensionTest extends GenericTest
      */
     public static function setUpBeforeClass()
     {
-        self::$optionalconstants = array(
-            'LDAP_OPT_X_SASL_AUTHCID',
-            'LDAP_OPT_X_SASL_AUTHZID',
-            'LDAP_OPT_X_SASL_MECH',
-            'LDAP_OPT_X_SASL_REALM',
-        );
         self::$optionalfunctions = array(
             // Requires LDAP SASL
             'ldap_sasl_bind',
