@@ -15,7 +15,7 @@
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 require_once __DIR__ . '/ReferenceCollection.php';
 
-use Bartlett\CompatInfo\Reference\ExtensionFactory;
+use Bartlett\CompatInfoDb\ExtensionFactory;
 
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Application;
