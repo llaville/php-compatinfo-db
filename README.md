@@ -29,3 +29,9 @@ E.g:
 ```
 $ php phing-2.12.0.phar -Dphpunit.pharlocation=phpunit-library-5.0.8.phar -f tests/build.xml runtests
 ```
+
+## 1.0.0-alpha1
+
+```
+Results OK. Tests: 6831, Assertions: 7844, Skipped: 314
+```
