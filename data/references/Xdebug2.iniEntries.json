@@ -310,5 +310,21 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug.show_error_trace",
+        "ext_min": "2.4.0beta1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug.remote_addr_header",
+        "ext_min": "2.4.0beta1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
     }
 ]

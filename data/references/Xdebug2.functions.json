@@ -178,5 +178,35 @@
         "php_max": "",
         "parameters": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_start_function_monitor",
+        "ext_min": "2.4.0beta1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_stop_function_monitor",
+        "ext_min": "2.4.0beta1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_get_monitored_functions",
+        "ext_min": "2.4.0beta1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
     }
 ]
