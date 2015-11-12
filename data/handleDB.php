@@ -315,7 +315,7 @@ class DbInitCommand extends Command
             'jsmin' => array(
                 'constants'  => array(''),
                 'functions'  => array(''),
-                'releases'   => array('', '1'),
+                'releases'   => array('', '1', '2'),
             ),
             'lzf' => array(
                 'functions'  => array('', '1'),
