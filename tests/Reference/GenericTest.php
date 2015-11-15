@@ -19,6 +19,8 @@ namespace Bartlett\Tests\CompatInfoDb\Reference;
 use Bartlett\CompatInfoDb\ReferenceInterface;
 use Bartlett\CompatInfoDb\ExtensionFactory;
 
+use Composer\Semver\Semver;
+
 /**
  * Tests for the PHP_CompatInfo, retrieving components informations
  * about any extension.
@@ -157,18 +159,23 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
 
         if ('testGetIniEntriesFromReference' === $methodName) {
             $elements = self::$obj->getIniEntries();
+            $opt = 'optionalcfgs';
 
         } elseif ('testGetFunctionsFromReference'  === $methodName) {
             $elements = self::$obj->getFunctions();
+            $opt = 'optionalfunctions';
 
         } elseif ('testGetConstantsFromReference'  === $methodName) {
             $elements = self::$obj->getConstants();
+            $opt = 'optionalconstants';
 
         } elseif ('testGetClassesFromReference' == $methodName) {
             $elements = self::$obj->getClasses();
+            $opt = 'optionalclasses';
 
         } elseif ('testGetInterfacesFromReference' == $methodName) {
             $elements = self::$obj->getInterfaces();
+            $opt = 'optionalinterfaces';
 
         } else {
             $elements = array();
@@ -190,18 +197,26 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
         $dataset = array();
         foreach ($elements as $name => $range) {
             if (!empty($range['optional'])) {
-                self::$optionalconstants[] = $name;
+                self::${$opt}[] = $name;
                 continue;
             }
 
-            if (array_key_exists('lib.requires', $range)
-                && !empty($range['lib.requires'])
-            ) {
-                list($libname, $vnumber) = explode(':', $range['lib.requires']);
+            $libs = array_filter($range, function($val, $key) {
+                    if (strpos($key, 'lib_') === 0) {
+                        return !empty($val);
+                    }
+                    return false;
+                },
+                ARRAY_FILTER_USE_BOTH
+            );
 
-                if (self::lib($libname) < $vnumber) {
-                    // not supported by current platform
-                    continue;
+            foreach($libs as $lib => $constraint) {
+                $lib = str_replace('lib_', '', $lib);
+                $ver = self::lib($lib, 'version_text');
+
+                if (!Semver::satisfies($ver, $constraint)) {
+                    self::${$opt}[] = $name;
+                    continue 2;
                 }
             }
             $dataset[] = array($name, $range);
