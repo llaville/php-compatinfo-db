@@ -191,7 +191,8 @@ class SqliteStorage
             ' e.name as "ext.name", ext_min as "ext.min", ext_max as "ext.max",' .
             ' php_min as "php.min", php_max as "php.max",' .
             ' parameters, php_excludes as "php.excludes",' .
-            ' deprecated' .
+            ' deprecated,' .
+            ' lib_curl' .
             ' FROM bartlett_compatinfo_functions f,  bartlett_compatinfo_extensions e' .
             ' WHERE f.ext_name_fk = e.id AND e.name = :name COLLATE NOCASE'
         );
@@ -201,7 +202,8 @@ class SqliteStorage
             ' e.name as "ext.name", ext_min as "ext.min", ext_max as "ext.max",' .
             ' php_min as "php.min", php_max as "php.max",' .
             ' php_excludes as "php.excludes",' .
-            ' optional' .
+            ' optional,' .
+            ' lib_curl' .
             ' FROM bartlett_compatinfo_constants c,  bartlett_compatinfo_extensions e' .
             ' WHERE c.ext_name_fk = e.id AND e.name = :name COLLATE NOCASE'
         );

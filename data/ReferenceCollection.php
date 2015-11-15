@@ -227,6 +227,9 @@ class ReferenceCollection
         if (!isset($rec['deprecated'])) {
             $rec['deprecated'] = '';
         }
+        if (!isset($rec['lib_curl'])) {
+            $rec['lib_curl'] = '';
+        }
 
         if (is_array($row)) {
             if ($row == $rec) {
@@ -254,6 +257,9 @@ class ReferenceCollection
 
         if (!isset($rec['optional'])) {
             $rec['optional'] = false;
+        }
+        if (!isset($rec['lib_curl'])) {
+            $rec['lib_curl'] = '';
         }
 
         if (is_array($row)) {
@@ -339,6 +345,7 @@ class ReferenceCollection
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' parameters VARCHAR(255), php_excludes VARCHAR(255),' .
             ' deprecated VARCHAR(16),' .
+            ' lib_curl VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, name))'
         );
         $this->dbal->exec(
@@ -348,6 +355,7 @@ class ReferenceCollection
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' php_excludes VARCHAR(255), ' .
             ' optional INTEGER, ' .
+            ' lib_curl VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, name))'
         );
         $this->dbal->exec(
@@ -395,13 +403,13 @@ class ReferenceCollection
         );
         $this->stmtFunctions = $this->dbal->prepare(
             'REPLACE INTO ' . $tblFunctions .
-            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, parameters, php_excludes, deprecated)' .
-            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :parameters, :php_excludes, :deprecated)'
+            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, parameters, php_excludes, deprecated, lib_curl)' .
+            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :parameters, :php_excludes, :deprecated, :lib_curl)'
         );
         $this->stmtConstants = $this->dbal->prepare(
             'REPLACE INTO ' . $tblConstants .
-            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, php_excludes, optional)' .
-            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :php_excludes, :optional)'
+            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, php_excludes, optional, lib_curl)' .
+            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :php_excludes, :optional, :lib_curl)'
         );
         $this->stmtClassConstant = $this->dbal->prepare(
             'REPLACE INTO ' . $tblClassConst .
@@ -447,13 +455,13 @@ class ReferenceCollection
         );
         $this->stmtFunction = $this->dbal->prepare(
             'SELECT' .
-            ' ext_name_fk, name, ext_min, ext_max, php_min, php_max, parameters, php_excludes, deprecated' .
+            ' ext_name_fk, name, ext_min, ext_max, php_min, php_max, parameters, php_excludes, deprecated, lib_curl' .
             ' FROM ' . $tblFunctions .
             ' WHERE ext_name_fk = :ext_name_fk AND name = :name COLLATE NOCASE'
         );
         $this->stmtConstant = $this->dbal->prepare(
             'SELECT' .
-            ' ext_name_fk, name, ext_min, ext_max, php_min, php_max, php_excludes' .
+            ' ext_name_fk, name, ext_min, ext_max, php_min, php_max, php_excludes, optional, lib_curl' .
             ' FROM ' . $tblConstants .
             ' WHERE ext_name_fk = :ext_name_fk AND name = :name COLLATE NOCASE'
         );
