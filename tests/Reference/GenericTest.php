@@ -201,14 +201,14 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
                 continue;
             }
 
-            $libs = array_filter($range, function($val, $key) {
-                    if (strpos($key, 'lib_') === 0) {
-                        return !empty($val);
+            $libs = array();
+            foreach ($range as $key => $val) {
+                if (strpos($key, 'lib_') === 0) {
+                    if (!empty($val)) {
+                        $libs[$key] = $val;
                     }
-                    return false;
-                },
-                ARRAY_FILTER_USE_BOTH
-            );
+                }
+            }
 
             foreach($libs as $lib => $constraint) {
                 $lib = str_replace('lib_', '', $lib);
