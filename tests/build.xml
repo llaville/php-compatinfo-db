@@ -14,7 +14,6 @@
         <echo>                                                              </echo>
         <echo>targets:                                                      </echo>
         <echo>  runtests     Run all Reference tests                        </echo>
-        <echo>  ${phing.home}                       </echo>
     </target>
 
     <target name="runtests">
