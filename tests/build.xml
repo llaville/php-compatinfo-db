@@ -4,6 +4,7 @@
     <property name="phpunit.formatter.type"     value="summary" />
     <property name="phpunit.formatter.todir"    value="reports" />
     <property name="phpunit.printsummary"       value="false" />
+    <property name="phpunit.report.styledir"    value="${phing.home}/etc" />
 
     <target name="help">
         <echo>A toolchain manager for unit tests of ${phing.project.name}   </echo>
@@ -13,6 +14,7 @@
         <echo>                                                              </echo>
         <echo>targets:                                                      </echo>
         <echo>  runtests     Run all Reference tests                        </echo>
+        <echo>  ${phing.home}                       </echo>
     </target>
 
     <target name="runtests">
@@ -41,7 +43,6 @@
                 <property name="phpunit.formatter.outfile"  value="testsuites.xml" />
                 <property name="phpunit.report.format"      value="frames" />
                 <property name="phpunit.report.todir"       value="reports/html" />
-                <property name="phpunit.report.styledir"    value="/home/github/phing/etc" />
             </then>
         </if>
 
