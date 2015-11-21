@@ -13,11 +13,10 @@
         <echo>Either 'summary', 'plain' or 'xml' (default to summary)       </echo>
         <echo>                                                              </echo>
         <echo>targets:                                                      </echo>
-        <echo>  runtests     Run all Reference tests                        </echo>
+        <echo>  runAllTests  Run all Reference tests                        </echo>
     </target>
 
-    <target name="runtests">
-
+    <target name="runAllTests">
         <if>
             <equals arg1="${phpunit.formatter.type}" arg2="summary" />
             <then>
@@ -41,7 +40,9 @@
                 <property name="phpunit.formatter.usefile"  value="true" />
                 <property name="phpunit.formatter.outfile"  value="testsuites.xml" />
                 <property name="phpunit.report.format"      value="frames" />
-                <property name="phpunit.report.todir"       value="reports/html" />
+                <property name="phpunit.report.todir"       value="${phpunit.formatter.todir}/html" />
+
+                <mkdir dir="${phpunit.report.todir}" />
             </then>
         </if>
 
@@ -76,7 +77,6 @@
                 />
             </then>
         </if>
-
     </target>
 
 </project>
