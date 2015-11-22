@@ -16,6 +16,7 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 require_once __DIR__ . '/ReferenceCollection.php';
 
 use Bartlett\CompatInfoDb\ExtensionFactory;
+use Bartlett\CompatInfoDb\Environment;
 
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Application;
@@ -836,7 +837,19 @@ class DbHandleApplication extends Application
     {
         return __DIR__ . '/references';
     }
+
+    public function getLongVersion()
+    {
+        $v = Environment::versionRefDb();
+
+        return sprintf(
+            '<info>%s</info> version <comment>%s</comment> DB built <comment>%s</comment>',
+            $this->getName(),
+            $this->getVersion(),
+            $v['build.string']
+        );
+    }
 }
 
-$application = new DbHandleApplication();
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.0.0-alpha2');
 $application->run();
