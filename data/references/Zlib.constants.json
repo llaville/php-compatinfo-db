@@ -43,5 +43,122 @@
         "php_min": "5.4.0",
         "php_max": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_NO_FLUSH",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_PARTIAL_FLUSH",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_SYNC_FLUSH",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_FULL_FLUSH",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_BLOCK",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_FINISH",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_FILTERED",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_HUFFMAN_ONLY",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_RLE",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_FIXED",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_DEFAULT_STRATEGY",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_VERSION",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "ZLIB_VERNUM",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
     }
 ]

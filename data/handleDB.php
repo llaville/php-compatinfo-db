@@ -265,14 +265,14 @@ class DbInitCommand extends Command
                 'functions'  => array('4', '5'),
                 'iniEntries' => array('4', '5'),
                 'interfaces' => array('5'),
-                'releases'   => array('4', '5'),
+                'releases'   => array('4', '5', '7'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5'),
                 'constants'  => array('4', '5'),
                 'functions'  => array('4', '5'),
                 'iniEntries' => array('4', '5'),
-                'releases'   => array('4', '5'),
+                'releases'   => array('4', '5', '7'),
                 'methods'    => array('4', '5'),
             ),
             'gender' => array(
@@ -535,6 +535,9 @@ class DbReleaseCommand extends Command
             'y2k_compliance'                        => ExtensionFactory::LATEST_PHP_5_3,
             'safe_mode_gid'                         => ExtensionFactory::LATEST_PHP_5_3,
             'safe_mode_include_dir'                 => ExtensionFactory::LATEST_PHP_5_3,
+
+            'always_populate_raw_post_data'         => ExtensionFactory::LATEST_PHP_5_6,
+            'asp_tags'                              => ExtensionFactory::LATEST_PHP_5_6,
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
@@ -660,6 +663,28 @@ class DbReleaseCommand extends Command
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
+        $refName = 'Intl';
+        $ext     = 'functions';
+        $major   = '1';
+        $entry   = 'php_max';
+        $names   = array(
+            'datefmt_set_timezone_id'               => ExtensionFactory::LATEST_PHP_5_6,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
+        $refName = 'Mcrypt';
+        $ext     = 'functions';
+        $major   = '';
+        $entry   = 'php_max';
+        $names   = array(
+            'mcrypt_ecb'                            => ExtensionFactory::LATEST_PHP_5_6,
+            'mcrypt_cbc'                            => ExtensionFactory::LATEST_PHP_5_6,
+            'mcrypt_cfb'                            => ExtensionFactory::LATEST_PHP_5_6,
+            'mcrypt_ofb'                            => ExtensionFactory::LATEST_PHP_5_6,
+            'mcrypt_generic_end'                    => ExtensionFactory::LATEST_PHP_5_6,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
         $refName = 'Mysqli';
         $ext     = 'functions';
         $major   = '';
@@ -750,6 +775,12 @@ class DbReleaseCommand extends Command
             'zend_logo_guid'                        => ExtensionFactory::LATEST_PHP_5_4,
             'php_egg_logo_guid'                     => ExtensionFactory::LATEST_PHP_5_4,
             'import_request_variables'              => ExtensionFactory::LATEST_PHP_5_3,
+
+            'call_user_method'                      => ExtensionFactory::LATEST_PHP_5_6,
+            'call_user_method_array'                => ExtensionFactory::LATEST_PHP_5_6,
+            'magic_quotes_runtime'                  => ExtensionFactory::LATEST_PHP_5_6,
+            'set_magic_quotes_runtime'              => ExtensionFactory::LATEST_PHP_5_6,
+            'set_socket_blocking'                   => ExtensionFactory::LATEST_PHP_5_6,
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
@@ -768,6 +799,34 @@ class DbReleaseCommand extends Command
         $entry   = 'php_max';
         $names   = array(
             'ob_tidyhandler'                        => ExtensionFactory::LATEST_PHP_5_3,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
+        $refName = 'Tokenizer';
+        $ext     = 'constants';
+        $major   = '';
+        $entry   = 'php_max';
+        $names   = array(
+            'T_BAD_CHARACTER'                       => ExtensionFactory::LATEST_PHP_5_6,
+            'T_CHARACTER'                           => ExtensionFactory::LATEST_PHP_5_6,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
+        $refName = 'Xsl';
+        $ext     = 'iniEntries';
+        $major   = '';
+        $entry   = 'php_max';
+        $names   = array(
+            'xsl.security_prefs'                    => ExtensionFactory::LATEST_PHP_5_6,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
+        $refName = 'Zendopcache';
+        $ext     = 'iniEntries';
+        $major   = '7';
+        $entry   = 'php_max';
+        $names   = array(
+            'opcache.load_comments'                 => ExtensionFactory::LATEST_PHP_5_6,
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 

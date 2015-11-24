@@ -32,6 +32,7 @@ class ExtensionFactory implements ReferenceInterface
     const LATEST_PHP_5_4 = '5.4.45';
     const LATEST_PHP_5_5 = '5.5.30';
     const LATEST_PHP_5_6 = '5.6.15';
+    const LATEST_PHP_7_0 = '7.0.0RC7';
 
     protected $storage;
 
@@ -140,7 +141,10 @@ class ExtensionFactory implements ReferenceInterface
         if (version_compare($phpVersion, '5.6', 'lt')) {
             return self::LATEST_PHP_5_5;
         }
-        return self::LATEST_PHP_5_6;
+        if (version_compare($phpVersion, '7.0', 'lt')) {
+            return self::LATEST_PHP_5_6;
+        }
+        return self::LATEST_PHP_7_0;
     }
 
     /**

@@ -248,5 +248,45 @@
         "php_max": "",
         "parameters": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "deflate_init",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "deflate_add",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "inflate_init",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 102,
+        "name": "inflate_add",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
     }
 ]
