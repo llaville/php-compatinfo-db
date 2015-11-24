@@ -1402,5 +1402,14 @@
         "ext_max": "",
         "php_min": "5.6.14",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
+        "rel_version": "5.6.15",
+        "rel_date": "2015-10-29",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.6.15",
+        "php_max": ""
     }
 ]
