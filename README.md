@@ -1,47 +1,63 @@
 # Introduction
 
-Main goal is to extract database of this project and maintain it as a separated project.
-It can be updated when needed, without relation to php-compatinfo life cycle.
+Main goal of this project is to provide a standalone database (SQLite3) that references
+all functions, constants, classes, interfaces on PHP standard distribution and about 100 extensions.
 
-# Status
+This database is currently only supported by its initial project php-compatinfo on version 5.0
 
-Currently under development. An alpha version should be available soon, before reaching final milestone 
-[5.0.0](https://github.com/llaville/php-compat-info/milestones/5.0.0) of php-compatinfo
+# Features
+
+* a Symfony console application to handle data (json files) of the SQLite3 database (see `data/handleDB.php` script)
+
+More than 100 extensions (PHP standard distribution, but also PECL) are currently supported :
+
+* reference all functions
+* reference all constants
+* reference all classes
+* reference all classes constants
+* reference all interfaces
+* reference all methods
+* reference all ini entries
+* reference all releases
+
+First stable version 1.0.0 support informations to latest PHP versions :
+
+* PHP 5.2.17 
+* PHP 5.3.29 
+* PHP 5.4.45 
+* PHP 5.5.30 
+* PHP 5.6.15 
+* PHP 7.0.0RC7 
+
+Currently 105 extensions are referenced in the database.
+
+# Example
+
+See `examples/useExtensionFactory.php` script to learn how to access to informations in database.
+
+# Requirements
+
+PHP 5.4 or greater
 
 # Unit Tests
 
-Each extension (currently 105) supported has its own Test case file.
-If you launch all tests, depending of your platform (CPU, memory), you may have sensation 
+Each extension supported has its own Test case file.
+If you launch all tests, depending of your platform (CPU, memory), you may have sensation
 that PHPUnit do nothing for a long time.
 
-Reason is PHPUnit count all tests before running them. Sebastian Bergmann has opened 
+Reason is PHPUnit count all tests before running them. Sebastian Bergmann has opened
 a [ticket](https://github.com/sebastianbergmann/phpunit/issues/10) to solve this situation.
 
-Alternative to this issue, is to used the Phing PHPUnitTask. This is really possible now PHPUnit 
+Alternative to this issue, is to used the Phing PHPUnitTask. This is really possible now PHPUnit
 provide a library-only PHAR (see ticket [#1925](https://github.com/sebastianbergmann/phpunit/issues/1925)).
 
 Download the PHPUnit PHAR library at https://phar.phpunit.de/phpunit-library.phar
 
-Invoke the `build.xml` phing script with property `phpunit.pharlocation` set.
+# Authors
 
-E.g:
+* Laurent Laville
+* Remi Collet (contributor on many extensions and unit tests)
 
-```
-$ php phing-2.12.0.phar -Dphpunit.pharlocation=phpunit-library-5.0.8.phar -f tests/build.xml runtests
-```
+# License
 
-## 1.0.0-alpha1 (2015-10-31)
-
-With xdebug
-
-```
-Results OK. Tests: 6831, Assertions: 7844, Skipped: 314
-```
-
-## 1.0.0-alpha2 (2015-11-17)
-
-Without xdebug
-
-```
-Results OK. Tests: 6595, Assertions: 7608, Skipped: 317
-```
+This handler is licensed under the BSD-3-clauses License - see the `LICENSE` file for details
