@@ -22,14 +22,16 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 
 First stable version 1.0.0 support informations to latest PHP versions :
 
-* PHP 5.2.17 
-* PHP 5.3.29 
-* PHP 5.4.45 
-* PHP 5.5.30 
-* PHP 5.6.15 
-* PHP 7.0.0RC7 
+* PHP 5.2.17
+* PHP 5.3.29
+* PHP 5.4.45
+* PHP 5.5.30
+* PHP 5.6.15
+* PHP 7.0.0RC7
 
 Currently 105 extensions are referenced in the database.
+
+For future versions, see the `CHANGELOG` file.
 
 # Example
 
