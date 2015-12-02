@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/),
 using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
+## [Unreleased]
+
+### Changed
+
+- Solr reference updated to version 2.3.0 (stable)
+
 ## [1.1.0] - 2015-11-26
 
 ### Added
