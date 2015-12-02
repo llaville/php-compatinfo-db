@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Solr reference updated to version 2.3.0 (stable)
+- Pthreads reference updated to version 3.1.4 (stable)
 
 ## [1.1.0] - 2015-11-26
 
@@ -20,7 +21,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Mongo reference updated to version 1.6.12 (stable)
-- Pthreads reference updated to version 3.1.13 (stable)
+- Pthreads reference updated to version 3.1.3 (stable)
 
 ## [1.0.0] - 2015-11-24
 
