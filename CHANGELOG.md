@@ -8,8 +8,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Solr reference updated to version 2.3.0 (stable)
 - Pthreads reference updated to version 3.1.4 (stable)
+- Solr reference updated to version 2.3.0 (stable)
+- Xdebug reference updated to version 2.4.0RC2 (beta)
 
 ## [1.1.0] - 2015-11-26
 
