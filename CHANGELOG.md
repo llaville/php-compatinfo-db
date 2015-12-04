@@ -6,6 +6,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+
+## [1.2.0] - 2015-12-04
+
+### Added
+
+- Support to PHP 7.0.0
+
 ### Changed
 
 - Pthreads reference updated to version 3.1.4 (stable)
