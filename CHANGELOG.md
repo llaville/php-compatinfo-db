@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- APCu reference updated to version 4.0.10 (stable)
 - Http reference updated to version 2.5.5 (stable)
 
 ## [1.2.0] - 2015-12-04
