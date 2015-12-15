@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - APCu reference updated to version 4.0.10 (stable)
 - Http reference updated to version 2.5.5 (stable)
+- Xdebug reference updated to version 2.4.0RC3 (beta)
 
 ## [1.2.0] - 2015-12-04
 
