@@ -115,5 +115,14 @@
         "ext_max": "",
         "php_min": "7.0.0RC8",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
+        "rel_version": "7.0.0",
+        "rel_date": "2015-12-03",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
     }
 ]
