@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 5.6.17
+
 ### Changed
 
 - Stomp reference updated to version 1.0.9 (stable)
