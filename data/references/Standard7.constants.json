@@ -1,0 +1,11 @@
+[
+    {
+        "ext_name_fk": 78,
+        "name": "ASSERT_EXCEPTION",
+        "ext_min": "7.0.2",
+        "ext_max": "",
+        "php_min": "7.0.2",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

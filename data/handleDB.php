@@ -260,18 +260,18 @@ class DbInitCommand extends Command
     {
         $majorReleases = array(
             'core' => array(
-                'classes'    => array('4', '5'),
+                'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5'),
-                'functions'  => array('4', '5'),
-                'iniEntries' => array('4', '5'),
-                'interfaces' => array('5'),
+                'functions'  => array('4', '5', '7'),
+                'iniEntries' => array('4', '5', '7'),
+                'interfaces' => array('5', '7'),
                 'releases'   => array('4', '5', '7'),
             ),
             'standard' => array(
-                'classes'    => array('4', '5'),
-                'constants'  => array('4', '5'),
-                'functions'  => array('4', '5'),
-                'iniEntries' => array('4', '5'),
+                'classes'    => array('4', '5', '7'),
+                'constants'  => array('4', '5', '7'),
+                'functions'  => array('4', '5', '7'),
+                'iniEntries' => array('4', '5', '7'),
                 'releases'   => array('4', '5', '7'),
                 'methods'    => array('4', '5'),
             ),

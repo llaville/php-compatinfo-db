@@ -32,7 +32,7 @@ class ExtensionFactory implements ReferenceInterface
     const LATEST_PHP_5_4 = '5.4.45';
     const LATEST_PHP_5_5 = '5.5.31';
     const LATEST_PHP_5_6 = '5.6.17';
-    const LATEST_PHP_7_0 = '7.0.1';
+    const LATEST_PHP_7_0 = '7.0.2';
 
     protected $storage;
 
