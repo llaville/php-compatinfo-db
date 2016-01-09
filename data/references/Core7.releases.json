@@ -129,7 +129,7 @@
         "ext_name_fk": 7,
         "rel_version": "7.0.1RC1",
         "rel_date": "2015-12-08",
-        "rel_state": "stable",
+        "rel_state": "beta",
         "ext_max": "",
         "php_min": "7.0.1RC1",
         "php_max": ""
