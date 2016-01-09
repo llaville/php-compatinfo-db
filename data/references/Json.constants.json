@@ -195,6 +195,7 @@
         "ext_max": "",
         "php_min": "5.6.6RC1",
         "php_max": "",
-        "php_excludes": ""
+        "php_excludes": "",
+        "optional": true
     }
 ]

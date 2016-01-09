@@ -14,6 +14,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Stomp reference updated to version 1.0.9 (stable)
 
+### Fixed
+
+- [Issue 3](https://github.com/llaville/php-compatinfo-db/issues/3) : Json Failed test
+
 ## [1.3.0] - 2015-12-17
 
 ### Added
