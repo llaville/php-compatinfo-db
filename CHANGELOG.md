@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Stomp reference updated to version 1.0.9 (stable)
+
 ## [1.3.0] - 2015-12-17
 
 ### Added
