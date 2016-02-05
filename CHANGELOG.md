@@ -6,6 +6,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+
+## [1.5.0] - 2016-02-05
+
+### Added
+
+- Support to PHP 5.5.32
+
 ### Changed
 
 - Xdebug reference updated to version 2.4.0RC4 (beta)
