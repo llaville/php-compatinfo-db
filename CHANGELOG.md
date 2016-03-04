@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 5.5.33
+
+### Changed
+
 - Xdebug reference updated to version 2.4.0 (stable)
 - Zip reference updated to version 1.13.2 (stable)
 
