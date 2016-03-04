@@ -6,6 +6,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+- Xdebug reference updated to version 2.4.0 (stable)
 - Zip reference updated to version 1.13.2 (stable)
 
 ## [1.5.0] - 2016-02-05
