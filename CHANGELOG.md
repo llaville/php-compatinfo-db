@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.6.0] - 2016-03-05
+
 ### Added
 
 - Support to PHP 7.0.4
@@ -14,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Pthreads reference updated to version 3.1.6 (stable)
 - Xdebug reference updated to version 2.4.0 (stable)
 - Zip reference updated to version 1.13.2 (stable)
 
