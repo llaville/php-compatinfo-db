@@ -70,6 +70,7 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
         'gender',
         'haru',
         'htscanner',
+        'imagick',
         'igbinary',
         'inclued',
         'intl',
