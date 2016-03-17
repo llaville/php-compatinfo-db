@@ -7,6 +7,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 - Imagick reference updated to version 3.4.1 (stable)
+- Mongo reference updated to version 1.6.13 (stable)
 
 ## [1.6.0] - 2016-03-05
 
