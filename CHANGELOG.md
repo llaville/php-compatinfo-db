@@ -6,6 +6,15 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+
+## [1.7.0] - 2016-04-11
+
+### Added
+
+- Support to PHP 5.5.34
+
+### Changed
+
 - Imagick reference updated to version 3.4.1 (stable)
 - Lzf reference updated to version 1.6.5 (stable)
 - Mongo reference updated to version 1.6.13 (stable)
