@@ -6,6 +6,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+- Mongo reference updated to version 1.6.14 (stable)
 
 ## [1.7.0] - 2016-04-11
 
