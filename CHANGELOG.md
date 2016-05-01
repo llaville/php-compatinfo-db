@@ -6,6 +6,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.8.0] - 2016-05-02
+
+### Added
+
+- Support to PHP 5.5.35
+
+### Changed
+
 - Mongo reference updated to version 1.6.14 (stable)
 
 ## [1.7.0] - 2016-04-11
