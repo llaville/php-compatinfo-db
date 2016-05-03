@@ -2675,15 +2675,6 @@
     {
         "ext_name_fk": 29,
         "class_name": "Imagick",
-        "name": "COLORSPACE_LAB",
-        "ext_min": "3.4.2",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
         "name": "COLORSPACE_LOG",
         "ext_min": "3.4.0",
         "ext_max": "",
@@ -3575,24 +3566,6 @@
     {
         "ext_name_fk": 29,
         "class_name": "Imagick",
-        "name": "RESOURCETYPE_WIDTH",
-        "ext_min": "3.4.2",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "RESOURCETYPE_HEIGHT",
-        "ext_min": "3.4.2",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
         "name": "DISPOSE_UNRECOGNIZED",
         "ext_min": "3.4.0",
         "ext_max": "",
@@ -4345,16 +4318,6 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "SPARSECOLORMETHOD_MANHATTAN",
-        "ext_min": "3.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "optional": true
     },
     {
         "ext_name_fk": 29,

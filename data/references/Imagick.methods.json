@@ -2352,17 +2352,6 @@
     {
         "ext_name_fk": 29,
         "class_name": "Imagick",
-        "name": "getimagematte",
-        "static": false,
-        "ext_min": "3.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
         "name": "getimagepage",
         "static": false,
         "ext_min": "3.4.0",
@@ -3419,116 +3408,6 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "paintfloodfillimage",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "recolorimage",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "getimagesize",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "getimageindex",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "setimageindex",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "radialblurimage",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "setimageattribute",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "mosaicimages",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "averageimages",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
-    },
-    {
-        "ext_name_fk": 29,
-        "class_name": "Imagick",
-        "name": "colorfloodfillimage",
-        "static": false,
-        "ext_min": "3.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "optional": true
     },
     {
         "ext_name_fk": 29,
@@ -4988,8 +4867,7 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "",
-        "optional": true
+        "php_max": ""
     },
     {
         "ext_name_fk": 29,
@@ -4999,8 +4877,7 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "",
-        "optional": true
+        "php_max": ""
     },
     {
         "ext_name_fk": 29,
