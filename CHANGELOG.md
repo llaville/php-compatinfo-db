@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.8.1] - 2016-05-03
+
+### Fixed
+
+- Rollback to Imagick references 3.4.1
+
 ## [1.8.0] - 2016-05-02
 
 ### Added
