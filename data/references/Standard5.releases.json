@@ -1306,11 +1306,11 @@
     },
     {
         "ext_name_fk": 78,
-        "rel_version": "5.5.35",
-        "rel_date": "2016-04-28",
+        "rel_version": "5.5.37",
+        "rel_date": "2016-06-23",
         "rel_state": "stable",
         "ext_max": "",
-        "php_min": "5.5.35",
+        "php_min": "5.5.37",
         "php_max": ""
     },
     {
