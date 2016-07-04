@@ -915,5 +915,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.9.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.10.0');
 $application->run();
