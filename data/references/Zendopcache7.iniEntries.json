@@ -157,7 +157,7 @@
         "ext_min": "7.0.1",
         "ext_max": "",
         "php_min": "5.2.0",
-        "php_max": "5.6.24"
+        "php_max": "5.6.25"
     },
     {
         "ext_name_fk": 100,
