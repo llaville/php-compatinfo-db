@@ -6,8 +6,16 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.12.0] - 2016-09-26
+
+### Added
+
 - Support to PHP 7.0.10
 - Support to PHP 5.6.25
+
+### Changed
+
+- Yaml reference updated to version 1.3.0 (stable)
 
 ## [1.11.0] - 2016-07-25
 
