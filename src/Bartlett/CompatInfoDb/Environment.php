@@ -94,14 +94,14 @@ class Environment
         $ext = 'pdo_sqlite';
         if (!extension_loaded($ext)) {
             $error .= sprintf(
-                "\n- Expected PHP extension %s loaded to use SQLite DataBase, is missing",
+                "\n- Expected PHP extension %s loaded to use SQLite DataBase, extension may be missing",
                 $ext
             );
         }
 
         if (!empty($error)) {
             throw new \RuntimeException(
-                'Your platform does not statisfy CompatInfo minimum requirements' .
+                'Your platform does not satisfy CompatInfo minimum requirements' .
                 $error
             );
         }
