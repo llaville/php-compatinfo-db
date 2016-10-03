@@ -6,12 +6,16 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [1.13.0] - 2016-09-29
+## [1.13.0] - 2016-10-03
 
 ### Added
 
 - Support to PHP 7.0.11
 - Support to PHP 5.6.26
+
+### Fixed
+
+- curl reference with libCurl dependency (see https://github.com/llaville/php-compatinfo-db/issues/7)
 
 ## [1.12.0] - 2016-09-26
 
