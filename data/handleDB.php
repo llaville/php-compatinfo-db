@@ -238,12 +238,7 @@ class DbInitCommand extends Command
             array(
                 'build_string'  => date('M d Y H:i:s T', $time),
                 'build_date'    => date('YmdHis', $time),
-                'build_version' => sprintf(
-                    '%4d.%4d.%6d',
-                    date('Y', $time),
-                    date('md', $time),
-                    date('His', $time)
-                )
+                'build_version' => $this->getApplication()->getVersion(),
             )
         );
         $progress->setMessage('Database is built');
@@ -915,5 +910,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.14.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.15.0');
 $application->run();
