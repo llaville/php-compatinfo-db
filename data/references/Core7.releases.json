@@ -245,7 +245,7 @@
     {
         "ext_name_fk": 7,
         "rel_version": "7.0.12",
-        "rel_date": "2016-09-13",
+        "rel_date": "2016-10-14",
         "rel_state": "stable",
         "ext_max": "",
         "php_min": "7.0.12",
