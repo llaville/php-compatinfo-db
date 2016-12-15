@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.16.0] - 2016-12-15
+
+### Added
+
+- Support to PHP 5.6.29
+
 ## [1.15.0] - 2016-11-22
 
 ### Added
