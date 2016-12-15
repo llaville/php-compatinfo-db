@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- Support to PHP 7.0.14
 - Support to PHP 5.6.29
 
 ## [1.15.0] - 2016-11-22
