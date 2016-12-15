@@ -13,6 +13,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Support to PHP 7.0.14
 - Support to PHP 5.6.29
 
+### Changed
+
+- Xdebug reference updated to version 2.5.0 (stable)
+
 ## [1.15.0] - 2016-11-22
 
 ### Added
