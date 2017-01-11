@@ -302,7 +302,7 @@ class DbInitCommand extends Command
             'igbinary' => array(
                 'functions'  => array('1'),
                 'iniEntries' => array('1'),
-                'releases'   => array('1'),
+                'releases'   => array('1', '2'),
             ),
             'intl' => array(
                 'classes'    => array('1', '2', '5'),
@@ -910,5 +910,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.16.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.17.0');
 $application->run();
