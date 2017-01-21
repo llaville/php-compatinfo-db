@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.17.0] - 2017-01-23
+
+### Added
+
+- Support to PHP 5.6.30
+
 ### Changed
 
 - Igbinary reference updated to version 2.0.1 (stable)
