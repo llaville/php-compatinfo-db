@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Xdebug reference updated to version 2.5.1 (stable)
+
 ## [1.18.0] - 2017-02-24
 
 ### Added
