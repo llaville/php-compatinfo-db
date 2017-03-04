@@ -6,9 +6,19 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+
+### News
+
+- add command `db:clean` to remove all SQLite php-compatinfo DB files in temporary folder
+
 ### Changed
 
 - Xdebug reference updated to version 2.5.1 (stable)
+- command `db:backup` required now to specify a filename (`db*.tmp`) to backup
+
+### Fixed
+
+[security: uses db from known path](https://github.com/llaville/php-compatinfo-db/issues/9)
 
 ## [1.18.0] - 2017-02-24
 
