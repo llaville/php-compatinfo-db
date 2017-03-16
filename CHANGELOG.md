@@ -8,6 +8,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [1.19.0] - 2017-03-16
 
+### Added
+
+- Support to PHP 7.0.17
+
 ### Changed
 
 - Xdebug reference updated to version 2.5.1 (stable)
