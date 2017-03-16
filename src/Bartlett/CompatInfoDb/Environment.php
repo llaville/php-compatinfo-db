@@ -13,6 +13,7 @@
 namespace Bartlett\CompatInfoDb;
 
 use PDO;
+use Phar;
 
 /**
  * Application Environment.
@@ -38,19 +39,24 @@ class Environment
     public static function initRefDb()
     {
         $database = 'compatinfo.sqlite';
-        $tempDir  = sys_get_temp_dir() . '/bartlett';
 
-        if (!file_exists($tempDir)) {
-            mkdir($tempDir);
-        }
-        $source = dirname(dirname(dirname(__DIR__))) . '/data/' . $database;
-        $dest   = $tempDir . '/' . $database;
+        if (Phar::running()) {
+            $tempDir  = sys_get_temp_dir() . '/bartlett';
 
-        if (!file_exists($dest)
-            || sha1_file($source) !== sha1_file($dest)
-        ) {
-            // install DB only if necessary (missing or modified)
-            copy($source, $dest);
+            if (!file_exists($tempDir)) {
+                mkdir($tempDir);
+            }
+            $source = dirname(dirname(dirname(__DIR__))) . '/data/' . $database;
+            $dest   = $tempDir . '/' . $database;
+
+            if (!file_exists($dest)
+                || sha1_file($source) !== sha1_file($dest)
+            ) {
+                // install DB only if necessary (missing or modified)
+                copy($source, $dest);
+            }
+        } else {
+            $tempDir = dirname(dirname(dirname(__DIR__))) . '/data';
         }
 
         $pdo = new PDO('sqlite:' . $tempDir . '/' . $database);
