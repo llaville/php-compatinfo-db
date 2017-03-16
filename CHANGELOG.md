@@ -6,9 +6,15 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.19.0] - 2017-03-16
+
 ### Changed
 
 - Xdebug reference updated to version 2.5.1 (stable)
+
+### Fixed
+
+[security: uses db from known path](https://github.com/llaville/php-compatinfo-db/issues/9)
 
 ## [1.18.0] - 2017-02-24
 
