@@ -30,47 +30,31 @@ class Environment
 {
     const PHP_MIN = '5.4.0';
 
-    private static $dbFile;
-
     /**
      * Initializes installation of the Reference database
      *
      * @return PDO Instance of pdo_sqlite
      */
-    public static function initRefDb($empty = false)
+    public static function initRefDb()
     {
-        if (static::$dbFile === null
-            || !file_exists(static::$dbFile)
+        $database = 'compatinfo.sqlite';
+        $tempDir  = sys_get_temp_dir() . '/bartlett';
+
+        if (!file_exists($tempDir)) {
+            mkdir($tempDir);
+        }
+        $source = dirname(dirname(dirname(__DIR__))) . '/data/' . $database;
+        $dest   = $tempDir . '/' . $database;
+
+        if (!file_exists($dest)
+            || sha1_file($source) !== sha1_file($dest)
         ) {
-            // install DB only if necessary
-            $tempDir = sys_get_temp_dir() . '/bartlett';
-
-            if (!file_exists($tempDir)) {
-                mkdir($tempDir);
-            }
-
-            $dest   = tempnam($tempDir, 'db');
-            $source = dirname(dirname(dirname(__DIR__))) . '/data/compatinfo.sqlite';
-
-            if (!$empty) {
-                copy($source, $dest);
-            }
-            static::$dbFile = $dest;
+            // install DB only if necessary (missing or modified)
+            copy($source, $dest);
         }
 
-        $pdo = new PDO('sqlite:' . static::$dbFile);
+        $pdo = new PDO('sqlite:' . $tempDir . '/' . $database);
         return $pdo;
-    }
-
-    /**
-     * Return current DB filename
-     *
-     * @return string
-     * @since  1.19.0
-     */
-    public static function getDbFilename()
-    {
-        return static::$dbFile;
     }
 
     /**

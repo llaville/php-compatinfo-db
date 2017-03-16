@@ -66,25 +66,19 @@ class DbBackupCommand extends Command
     {
         $this->setName('db:backup')
             ->setDescription('Backup the current SQLite compatinfo database')
-            ->addArgument(
-                'source',
-                InputArgument::REQUIRED,
-                'database source file to copy'
-            )
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $source  = $this->getApplication()->getAppTempDir() . '/' . $input->getArgument('source');
+        $source  = $this->getApplication()->getDbFilename();
         $tempDir = $this->getApplication()->getAppTempDir() . '/backups';
 
         if (!file_exists($tempDir)) {
-            mkdir($tempDir);
+            mkdir($tempDir, 0755, true);
         }
-
         $sha1 = sha1_file($source);
-        $dest = tempnam($tempDir, 'db');
+        $dest = $tempDir . '/' . basename($source) . ".$sha1";
 
         copy($source, $dest);
 
@@ -95,41 +89,6 @@ class DbBackupCommand extends Command
                 $source,
                 $sha1,
                 $dest
-            )
-        );
-    }
-}
-
-/**
- * Clean copies of the database
- */
-class DbCleanCommand extends Command
-{
-    protected function configure()
-    {
-        $this->setName('db:clean')
-            ->setDescription('Clean all copies of SQLite compatinfo database')
-        ;
-    }
-
-    protected function execute(InputInterface $input, OutputInterface $output)
-    {
-        $source  = $this->getApplication()->getAppTempDir();
-        $count   = 0;
-
-        if (file_exists($source)) {
-            foreach (glob("$source/db*.tmp") as $file) {
-                unlink($file);
-                $count++;
-            }
-        }
-
-        $output->writeln(
-            sprintf(
-                '<info>%d</info> database copie(s)' .
-                ' were removed from <comment>%s</comment>',
-                $count,
-                $source
             )
         );
     }
@@ -185,8 +144,23 @@ class DbInitCommand extends Command
             $extensions = array($extension);
         }
 
-        $pdo = Environment::initRefDb(true);
+        // do a DB backup first
+        $command = $this->getApplication()->find('db:backup');
+        $arguments = array(
+            'command' => 'db:backup',
+        );
+        $input = new ArrayInput($arguments);
+        $returnCode = $command->run($input, $output);
 
+        if ($returnCode !== 0) {
+            $output->writeln('<error>DB backup not performed</error>');
+            return;
+        }
+
+        // then delete current DB before to init a new copy again
+        unlink($this->getApplication()->getDbFilename());
+
+        $pdo = new \PDO('sqlite:' . $this->getApplication()->getDbFilename());
         $ref = new ReferenceCollection($pdo);
 
         $max = count($extensions);
@@ -267,7 +241,7 @@ class DbInitCommand extends Command
                 'build_version' => $this->getApplication()->getVersion(),
             )
         );
-        $progress->setMessage('Database is built to file ' . Environment::getDbFilename());
+        $progress->setMessage('Database is built');
         $progress->display();
         $progress->finish();
         $output->writeln('');
@@ -899,7 +873,6 @@ class DbHandleApplication extends Application
         $defaultCommands = parent::getDefaultCommands();
 
         $defaultCommands[] = new DbBackupCommand();
-        $defaultCommands[] = new DbCleanCommand();
         $defaultCommands[] = new DbInitCommand();
         $defaultCommands[] = new DbReleaseCommand();
 
@@ -908,7 +881,10 @@ class DbHandleApplication extends Application
 
     public function getDbFilename()
     {
-        // @deprecated : do not use anymore
+        $database = 'compatinfo.sqlite';
+        $source   = __DIR__ . '/' . $database;
+
+        return $source;
     }
 
     public function getAppTempDir()
@@ -924,7 +900,6 @@ class DbHandleApplication extends Application
     public function getLongVersion()
     {
         $v = Environment::versionRefDb();
-        unlink(Environment::getDbFilename());
 
         return sprintf(
             '<info>%s</info> version <comment>%s</comment> DB built <comment>%s</comment>',
@@ -935,5 +910,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.19.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.18.0');
 $application->run();
