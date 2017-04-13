@@ -8,6 +8,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [1.20.0] - 2017-04-14
 
+### Added
+
+- Support to PHP 7.0.18
+
 ### Fixed
 
 [security: uses db from known path](https://github.com/llaville/php-compatinfo-db/issues/9)
