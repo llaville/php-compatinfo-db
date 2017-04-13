@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.20.0] - 2017-04-14
+
+### Fixed
+
+[security: uses db from known path](https://github.com/llaville/php-compatinfo-db/issues/9)
+
 ## [1.19.0] - 2017-03-16
 
 ### Added

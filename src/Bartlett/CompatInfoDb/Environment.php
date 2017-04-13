@@ -41,7 +41,14 @@ class Environment
         $database = 'compatinfo.sqlite';
 
         if (Phar::running()) {
-            $tempDir  = sys_get_temp_dir() . '/bartlett';
+            if (PATH_SEPARATOR == ';') {
+                // windows
+                $userHome = getenv('USERPROFILE');
+            } else {
+                // unix
+                $userHome = getenv('HOME');
+            }
+            $tempDir = $userHome . '/.bartlett';
 
             if (!file_exists($tempDir)) {
                 mkdir($tempDir);
