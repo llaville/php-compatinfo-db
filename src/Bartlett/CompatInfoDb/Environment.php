@@ -13,7 +13,6 @@
 namespace Bartlett\CompatInfoDb;
 
 use PDO;
-use Phar;
 
 /**
  * Application Environment.
@@ -40,30 +39,26 @@ class Environment
     {
         $database = 'compatinfo.sqlite';
 
-        if (Phar::running()) {
-            if (PATH_SEPARATOR == ';') {
-                // windows
-                $userHome = getenv('USERPROFILE');
-            } else {
-                // unix
-                $userHome = getenv('HOME');
-            }
-            $tempDir = $userHome . '/.bartlett';
-
-            if (!file_exists($tempDir)) {
-                mkdir($tempDir);
-            }
-            $source = dirname(dirname(dirname(__DIR__))) . '/data/' . $database;
-            $dest   = $tempDir . '/' . $database;
-
-            if (!file_exists($dest)
-                || sha1_file($source) !== sha1_file($dest)
-            ) {
-                // install DB only if necessary (missing or modified)
-                copy($source, $dest);
-            }
+        if (PATH_SEPARATOR == ';') {
+            // windows
+            $userHome = getenv('USERPROFILE');
         } else {
-            $tempDir = dirname(dirname(dirname(__DIR__))) . '/data';
+            // unix
+            $userHome = getenv('HOME');
+        }
+        $tempDir = $userHome . '/.bartlett';
+
+        if (!file_exists($tempDir)) {
+            mkdir($tempDir);
+        }
+        $source = dirname(dirname(dirname(__DIR__))) . '/data/' . $database;
+        $dest   = $tempDir . '/' . $database;
+
+        if (!file_exists($dest)
+            || sha1_file($source) !== sha1_file($dest)
+        ) {
+            // install DB only if necessary (missing or modified)
+            copy($source, $dest);
         }
 
         $pdo = new PDO('sqlite:' . $tempDir . '/' . $database);
