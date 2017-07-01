@@ -88,6 +88,7 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
         'riak',
         'solr',
         'sphinx',
+        'spl',
         'stomp',
         'uopz',
         'uploadprogress',
