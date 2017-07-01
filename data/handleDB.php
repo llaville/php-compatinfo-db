@@ -489,6 +489,8 @@ class DbInitCommand extends Command
  */
 class DbBuildExtCommand extends Command
 {
+    private $stmtClass;
+
     protected function configure()
     {
         $this->setName('db:build:ext')
@@ -525,6 +527,12 @@ class DbBuildExtCommand extends Command
             'SELECT e.id as "ext_name_fk", e.name as "name"' .
             ' FROM bartlett_compatinfo_extensions e' .
             ' WHERE e.name = :name COLLATE NOCASE'
+        );
+
+        $this->stmtClass = $pdo->prepare(
+            'SELECT c.ext_min as "ext_min", c.php_min as "php_min"' .
+            ' FROM bartlett_compatinfo_classes c' .
+            ' WHERE c.name = :name COLLATE NOCASE'
         );
 
         $inputParameters = array(':name' => $extension);
@@ -649,12 +657,25 @@ class DbBuildExtCommand extends Command
         );
     }
 
-    private function buildMethods($extId, $extMin, $phpMin, array $classes, OutputInterface $output)
+    private function buildMethods($extId, $extMinDefault, $phpMinDefault, array $classes, OutputInterface $output)
     {
         $methods = [];
 
         foreach ($classes as $className) {
             $rc = new \ReflectionClass($className);
+
+            $inputParameters = array(':name' => $className);
+            $this->stmtClass->execute($inputParameters);
+            $result = $this->stmtClass->fetch(PDO::FETCH_ASSOC);
+
+            if ($result) {
+                // pre-set ext and php MIN versions to better values than user custom (console inputs)
+                $extMin = $result['ext_min'];
+                $phpMin = $result['php_min'];
+            } else {
+                $extMin = $extMinDefault;
+                $phpMin = $phpMinDefault;
+            }
 
             $meth = $rc->getMethods(\ReflectionMethod::IS_PUBLIC);
             natsort($meth);
@@ -706,12 +727,25 @@ class DbBuildExtCommand extends Command
         );
     }
 
-    private function buildClassConstants($extId, $extMin, $phpMin, array $classes, OutputInterface $output)
+    private function buildClassConstants($extId, $extMinDefault, $phpMinDefault, array $classes, OutputInterface $output)
     {
         $constants = [];
 
         foreach ($classes as $className) {
             $rc = new \ReflectionClass($className);
+
+            $inputParameters = array(':name' => $className);
+            $this->stmtClass->execute($inputParameters);
+            $result = $this->stmtClass->fetch(PDO::FETCH_ASSOC);
+
+            if ($result) {
+                // pre-set ext and php MIN versions to better values than user custom (console inputs)
+                $extMin = $result['ext_min'];
+                $phpMin = $result['php_min'];
+            } else {
+                $extMin = $extMinDefault;
+                $phpMin = $phpMinDefault;
+            }
 
             $const = array_keys($rc->getConstants());
             natsort($const);
