@@ -8,7 +8,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-DataBase `compatinfo.sqlite` is copied in same directory (<user>\.bartlett) for both phar and non phar versions.
+- DataBase `compatinfo.sqlite` is copied in same directory (<user>\.bartlett) for both phar and non phar versions.
+- Console `db:backup` command did not used anymore the system temporary folder to save DB backup files (save in same folder as DB)
 
 ## [1.22.0] - 2017-06-10
 

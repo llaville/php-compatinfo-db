@@ -72,13 +72,9 @@ class DbBackupCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $source  = $this->getApplication()->getDbFilename();
-        $tempDir = $this->getApplication()->getAppTempDir() . '/backups';
 
-        if (!file_exists($tempDir)) {
-            mkdir($tempDir, 0755, true);
-        }
         $sha1 = sha1_file($source);
-        $dest = $tempDir . '/' . basename($source) . ".$sha1";
+        $dest = dirname($source) . DIRECTORY_SEPARATOR . basename($source) . ".$sha1";
 
         copy($source, $dest);
 
@@ -887,6 +883,7 @@ class DbHandleApplication extends Application
         return $source;
     }
 
+    // @deprecated Will be release in next major version
     public function getAppTempDir()
     {
         return sys_get_temp_dir() . '/bartlett';
