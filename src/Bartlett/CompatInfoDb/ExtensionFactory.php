@@ -218,4 +218,46 @@ class ExtensionFactory implements ReferenceInterface
     {
         return $this->storage->getMetaData('classMethods', false);
     }
+
+    public function getExtensions()
+    {
+        $records = $this->storage->getMetaData('extensions');
+
+        $rows = array();
+
+        foreach ($records as $rec) {
+            $key = strtolower($rec['name']);
+
+            if (!empty($rec['date']) && !array_key_exists($key, $rows)) {
+                $ref = new \stdClass;
+                $ref->name    = $rec['name'];
+                $ref->version = $rec['ext.min'];
+                $ref->state   = $rec['state'];
+                $ref->date    = $rec['date'];
+
+                if (extension_loaded($ref->name)) {
+                    $version = phpversion($ref->name);
+                    $pattern = '/^[0-9]+\.[0-9]+/';
+                    if (!preg_match($pattern, $version)) {
+                        /**
+                         * When version is not provided by the extension,
+                         * or not standard format or we don't have it
+                         * in our reference (ex snmp) because have no sense
+                         * be sure at least to return latest PHP version supported.
+                         */
+                        $version = self::getLatestPhpVersion();
+                    }
+                } else {
+                    $version = '';
+                }
+                $ref->loaded   = $version;
+                $ref->outdated = version_compare($ref->version, $version, 'gt') ;
+
+                $rows[$key] = $ref;
+            }
+        }
+
+        ksort($rows);
+        return array_values($rows);
+    }
 }

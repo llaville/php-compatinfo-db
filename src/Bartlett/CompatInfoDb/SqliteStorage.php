@@ -40,6 +40,7 @@ class SqliteStorage
     private $stmtClassConstants;
     private $stmtFunctions;
     private $stmtConstants;
+    private $stmtExtensions;
 
     /**
      * Creates a new storage corresponding to an extension in the database
@@ -64,7 +65,11 @@ class SqliteStorage
     {
         $stmt = 'stmt' . ucfirst($meta);
 
-        $this->$stmt->execute(array(':name' => $this->name));
+        if (empty($this->name)) {
+            $this->$stmt->execute();
+        } else {
+            $this->$stmt->execute(array(':name' => $this->name));
+        }
         $rows = $this->$stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($rows as &$row) {
@@ -103,6 +108,8 @@ class SqliteStorage
                 $name = $row['ext.min'];
                 $result[$name] = $row;
             }
+        } elseif ('extensions' == $meta) {
+            $result = $rows;
         } else {
             foreach ($rows as &$row) {
                 $name = $row['name'];
@@ -206,6 +213,15 @@ class SqliteStorage
             ' lib_curl' .
             ' FROM bartlett_compatinfo_constants c,  bartlett_compatinfo_extensions e' .
             ' WHERE c.ext_name_fk = e.id AND e.name = :name COLLATE NOCASE'
+        );
+
+        $this->stmtExtensions = $pdo->prepare(
+            'SELECT e.name, rel_date as "date", rel_state as "state",' .
+            ' rel_version as "ext.min", ext_max as "ext.max",' .
+            ' php_min as "php.min", php_max as "php.max"' .
+            ' FROM bartlett_compatinfo_releases r,  bartlett_compatinfo_extensions e' .
+            ' WHERE r.ext_name_fk = e.id' .
+            ' ORDER BY e.name asc, date desc, rel_version desc'
         );
     }
 }

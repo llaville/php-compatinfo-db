@@ -10,12 +10,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Support to PHP 7.0.21
 - Support to PHP 5.6.31
+- New `db:build:ext` command to generate a draft (json format) of each components in one extension.
+- New `db:list` command to see what are extensions supported by the database.
+- New `ExtensionFactory::getExtensions()` method to retrieve all extensions informations (status/versions)
 
 ### Changed
 
 - DataBase `compatinfo.sqlite` is copied in same directory (<user>\.bartlett) for both phar and non phar versions.
 - Console `db:backup` command did not used anymore the system temporary folder to save DB backup files (save in same folder as DB)
-- New `db:build:ext` command to generate a draft (json format) of each components in one extension.
 
 ## [1.22.0] - 2017-06-10
 

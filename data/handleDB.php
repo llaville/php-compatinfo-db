@@ -25,6 +25,8 @@ use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Helper\Table;
+use Symfony\Component\Console\Helper\TableSeparator;
 
 /**
  * Common class to all 'db' commands
@@ -1146,6 +1148,68 @@ class DbReleaseCommand extends Command
 }
 
 /**
+ * List all references supported by the Database.
+ */
+class DbListCommand extends Command
+{
+    protected function configure()
+    {
+        $this->setName('db:list')
+            ->setDescription('List all references supported by the Database')
+        ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $factory = new ExtensionFactory(null);
+        $refs    = $factory->getExtensions();
+        $loaded  = 0;
+        $headers = array('Reference', 'Version', 'State', 'Release Date', 'Loaded');
+        $rows    = array();
+
+        foreach ($refs as $ref) {
+            $rows[] = array(
+                $ref->name,
+                $ref->version,
+                $ref->state,
+                $ref->date,
+                $ref->loaded,
+            );
+            if (!empty($ref->loaded)) {
+                $loaded++;
+            }
+        }
+
+        $footers = array(
+            '<info>Total</info>',
+            sprintf('<info>[%d]</info>', count($refs)),
+            '',
+            '',
+            sprintf('<info>[%d]</info>', $loaded)
+        );
+
+        $rows[] = new TableSeparator();
+        $rows[] = $footers;
+
+
+        $output->writeln(
+            sprintf(
+                '<info>Reference Database Version</info> => %s%s',
+                Environment::versionRefDb()['build.version'],
+                PHP_EOL
+            )
+        );
+
+        $table = new Table($output);
+        $table->setStyle('compact')
+            ->setHeaders($headers)
+            ->setRows($rows)
+            ->render()
+        ;
+    }
+}
+
+/**
  * Symfony Console Application to handle the SQLite compatinfo database.
  */
 class DbHandleApplication extends Application
@@ -1158,6 +1222,7 @@ class DbHandleApplication extends Application
         $defaultCommands[] = new DbInitCommand();
         $defaultCommands[] = new DbBuildExtCommand();
         $defaultCommands[] = new DbReleaseCommand();
+        $defaultCommands[] = new DbListCommand();
 
         return $defaultCommands;
     }
