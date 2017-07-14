@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.0.21
+
 ### Changed
 
 - DataBase `compatinfo.sqlite` is copied in same directory (<user>\.bartlett) for both phar and non phar versions.
