@@ -12,6 +12,76 @@
     {
         "ext_name_fk": 1,
         "class_name": "AMQPChannel",
+        "name": "basicRecover",
+        "static": false,
+        "ext_min": "1.6.0beta3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
+        "name": "close",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
+        "name": "confirmSelect",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
+        "name": "setReturnCallback",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
+        "name": "setConfirmCallback",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
+        "name": "waitForConfirm",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
+        "name": "waitForBasicReturn",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPChannel",
         "name": "isConnected",
         "static": false,
         "ext_min": "1.0.0",
@@ -211,10 +281,40 @@
     },
     {
         "ext_name_fk": 1,
+        "class_name": "AMQPChannelException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
         "class_name": "AMQPConnection",
         "name": "__construct",
         "static": false,
         "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getMaxFrameSize",
+        "static": false,
+        "ext_min": "1.6.0beta4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getHeartbeatInterval",
+        "static": false,
+        "ext_min": "1.6.0beta4",
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
@@ -441,6 +541,126 @@
     },
     {
         "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "preconnect",
+        "static": false,
+        "ext_min": "1.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getUsedChannels",
+        "static": false,
+        "ext_min": "1.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getMaxChannels",
+        "static": false,
+        "ext_min": "1.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "isPersistent",
+        "static": false,
+        "ext_min": "1.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getCACert",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "setCACert",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getCert",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "setCert",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getKey",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "setKey",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "getVerify",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnection",
+        "name": "setVerify",
+        "static": false,
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
         "class_name": "AMQPConnectionException",
         "name": "__construct",
         "static": false,
@@ -523,6 +743,16 @@
         "ext_name_fk": 1,
         "class_name": "AMQPConnectionException",
         "name": "__toString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPConnectionException",
+        "name": "__wakeup",
         "static": false,
         "ext_min": "0.1.0",
         "ext_max": "",
@@ -565,7 +795,7 @@
         "name": "getDeliveryMode",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -592,6 +822,16 @@
     {
         "ext_name_fk": 1,
         "class_name": "AMQPEnvelope",
+        "name": "hasHeader",
+        "static": false,
+        "ext_min": "1.7.0alpha1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPEnvelope",
         "name": "isRedelivery",
         "static": false,
         "ext_min": "1.0.0",
@@ -605,7 +845,7 @@
         "name": "getContentType",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -615,7 +855,7 @@
         "name": "getContentEncoding",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -625,7 +865,7 @@
         "name": "getType",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -635,7 +875,7 @@
         "name": "getTimestamp",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -645,7 +885,7 @@
         "name": "getPriority",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -655,7 +895,7 @@
         "name": "getExpiration",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -665,7 +905,7 @@
         "name": "getUserId",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -675,7 +915,7 @@
         "name": "getAppId",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -685,7 +925,7 @@
         "name": "getMessageId",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -695,7 +935,7 @@
         "name": "getReplyTo",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -705,7 +945,7 @@
         "name": "getCorrelationId",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -725,7 +965,7 @@
         "name": "getHeaders",
         "static": false,
         "ext_min": "1.0.0",
-        "ext_max": "",
+        "ext_max": "1.8.0beta1",
         "php_min": "5.2.0",
         "php_max": ""
     },
@@ -813,6 +1053,16 @@
         "ext_name_fk": 1,
         "class_name": "AMQPException",
         "name": "__toString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPException",
+        "name": "__wakeup",
         "static": false,
         "ext_min": "0.1.0",
         "ext_max": "",
@@ -892,6 +1142,16 @@
     {
         "ext_name_fk": 1,
         "class_name": "AMQPExchange",
+        "name": "hasArgument",
+        "static": false,
+        "ext_min": "1.7.0alpha1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPExchange",
         "name": "getArgument",
         "static": false,
         "ext_min": "1.0.0",
@@ -945,6 +1205,16 @@
         "name": "bind",
         "static": false,
         "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPExchange",
+        "name": "unbind",
+        "static": false,
+        "ext_min": "1.6.0beta1",
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
@@ -1091,10 +1361,30 @@
     },
     {
         "ext_name_fk": 1,
+        "class_name": "AMQPExchangeException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
         "class_name": "AMQPQueue",
         "name": "__construct",
         "static": false,
         "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPQueue",
+        "name": "getConsumerTag",
+        "static": false,
+        "ext_min": "1.6.0beta4",
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
@@ -1135,6 +1425,16 @@
         "name": "setFlags",
         "static": false,
         "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPQueue",
+        "name": "hasArgument",
+        "static": false,
+        "ext_min": "1.7.0alpha1",
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
@@ -1407,6 +1707,326 @@
         "ext_min": "0.1.0",
         "ext_max": "",
         "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPQueueException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getContentType",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getContentEncoding",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getHeaders",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getDeliveryMode",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getPriority",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getCorrelationId",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getReplyTo",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getExpiration",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getMessageId",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getTimestamp",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getType",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getUserId",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getAppId",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPBasicProperties",
+        "name": "getClusterId",
+        "static": false,
+        "ext_min": "1.8.0beta2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPTimestamp",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPTimestamp",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPTimestamp",
+        "name": "getTimestamp",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPDecimal",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPDecimal",
+        "name": "getExponent",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPDecimal",
+        "name": "getSignificand",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getMessage",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getCode",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getFile",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getLine",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getTrace",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getPrevious",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "getTraceAsString",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "class_name": "AMQPValueException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "1.9.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
         "php_max": ""
     }
 ]

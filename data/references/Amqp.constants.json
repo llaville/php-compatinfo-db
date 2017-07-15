@@ -178,5 +178,23 @@
         "php_min": "5.2.0",
         "php_max": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "PHP_AMQP_MAX_CHANNELS",
+        "ext_min": "1.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "AMQP_JUST_CONSUME",
+        "ext_min": "1.6.0beta4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": ""
     }
 ]

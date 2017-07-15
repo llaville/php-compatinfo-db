@@ -86,5 +86,61 @@
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.channel_max",
+        "ext_min": "1.6.0beta4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.frame_max",
+        "ext_min": "1.6.0beta4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.heartbeat",
+        "ext_min": "1.6.0beta4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.cacert",
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.cert",
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.key",
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.verify",
+        "ext_min": "1.8.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
     }
 ]
