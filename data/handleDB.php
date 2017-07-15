@@ -57,6 +57,60 @@ class Command extends BaseCommand
         $jsonStr = json_encode($data, JSON_PRETTY_PRINT);
         file_put_contents($filename, $jsonStr);
     }
+
+    /**
+     * Prints the database current build version
+     *
+     * @param OutputInterface $output Console Output concrete instance
+     */
+    protected function printDbBuildVersion(OutputInterface $output)
+    {
+        $output->writeln(
+            sprintf(
+                '<info>Reference Database Version</info> => %s%s',
+                Environment::versionRefDb()['build.version'],
+                PHP_EOL
+            )
+        );
+    }
+
+    /**
+     * Helper that convert analyser results to a console table
+     *
+     * @param OutputInterface $output  Console Output concrete instance
+     * @param array           $headers All table headers
+     * @param array           $rows    All table rows
+     * @param string          $style   The default style name to render tables
+     *
+     * @return void
+     */
+    protected function tableHelper(OutputInterface $output, $headers, $rows, $style = 'compact')
+    {
+        $table = new Table($output);
+        $table->setStyle($style)
+            ->setHeaders($headers)
+            ->setRows($rows)
+            ->render()
+        ;
+    }
+
+    /**
+     * Helper that convert an array key-value pairs to a console report.
+     *
+     * See Structure and Loc analysers for implementation examples
+     *
+     * @param OutputInterface $output Console Output concrete instance
+     * @param array           $lines  Any analyser formatted metrics
+     *
+     * @return void
+     */
+    protected function printFormattedLines(OutputInterface $output, array $lines)
+    {
+        foreach ($lines as $ident => $contents) {
+            list ($format, $args) = $contents;
+            $output->writeln(vsprintf($format, $args));
+        }
+    }
 }
 
 /**
@@ -1191,21 +1245,234 @@ class DbListCommand extends Command
         $rows[] = new TableSeparator();
         $rows[] = $footers;
 
+        // print results
+        $this->printDbBuildVersion($output);
+        $this->tableHelper($output, $headers, $rows);
+    }
+}
 
-        $output->writeln(
-            sprintf(
-                '<info>Reference Database Version</info> => %s%s',
-                Environment::versionRefDb()['build.version'],
-                PHP_EOL
+/**
+ * Show details of a reference supported in the Database.
+ */
+class DbShowCommand extends Command
+{
+    protected function configure()
+    {
+        $this->setName('db:show')
+            ->setDescription('Show details of a reference supported in the Database.')
+            ->addArgument(
+                'extension',
+                InputArgument::REQUIRED,
+                'extension to extract components (case insensitive)'
             )
-        );
-
-        $table = new Table($output);
-        $table->setStyle('compact')
-            ->setHeaders($headers)
-            ->setRows($rows)
-            ->render()
+            ->addOption('releases', null, null, 'Show releases')
+            ->addOption('ini', null, null, 'Show ini Entries')
+            ->addOption('constants', null, null, 'Show constants')
+            ->addOption('functions', null, null, 'Show functions')
+            ->addOption('interfaces', null, null, 'Show interfaces')
+            ->addOption('classes', null, null, 'Show classes')
+            ->addOption('methods', null, null, 'Show methods')
+            ->addOption('class-constants', null, null, 'Show class constants')
         ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $releases       = $input->getOption('releases');
+        $ini            = $input->getOption('ini');
+        $constants      = $input->getOption('constants');
+        $functions      = $input->getOption('functions');
+        $interfaces     = $input->getOption('interfaces');
+        $classes        = $input->getOption('classes');
+        $methods        = $input->getOption('methods');
+        $classConstants = $input->getOption('class-constants');
+
+
+        $reference = new ExtensionFactory($input->getArgument('extension'));
+        $results   = array();
+        $summary   = array();
+
+        $raw = $reference->getReleases();
+        $summary['releases'] = count($raw);
+        if ($releases) {
+            $results['releases'] = $raw;
+        }
+
+        $raw = $reference->getIniEntries();
+        $summary['iniEntries'] = count($raw);
+        if ($ini) {
+            $results['iniEntries'] = $raw;
+        }
+
+        $raw = $reference->getConstants();
+        $summary['constants'] = count($raw);
+        if ($constants) {
+            $results['constants'] = $raw;
+        }
+
+        $raw = $reference->getFunctions();
+        $summary['functions'] = count($raw);
+        if ($functions) {
+            $results['functions'] = $raw;
+        }
+
+        $raw = $reference->getInterfaces();
+        $summary['interfaces'] = count($raw);
+        if ($interfaces) {
+            $results['interfaces'] = $raw;
+        }
+
+        $raw = $reference->getClasses();
+        $summary['classes'] = count($raw);
+        if ($classes) {
+            $results['classes'] = $raw;
+        }
+
+        $raw = $reference->getClassConstants();
+        $summary['class-constants'] = 0;
+        foreach ($raw as $values) {
+            $summary['class-constants'] += count($values);
+        }
+        if ($classConstants) {
+            $results['class-constants'] = $raw;
+        }
+
+        $raw = $reference->getClassMethods();
+        $summary['methods'] = 0;
+        foreach ($raw as $values) {
+            $summary['methods'] += count($values);
+        }
+        if ($methods) {
+            $results['methods'] = $raw;
+        }
+
+        $raw = $reference->getClassStaticMethods();
+        $summary['static methods'] = 0;
+        foreach ($raw as $values) {
+            $summary['static methods'] += count($values);
+        }
+        if ($methods) {
+            $results['static methods'] = $raw;
+        }
+
+        if (empty($results)) {
+            $results = array('summary' => $summary);
+        }
+
+        // print results
+        $this->printDbBuildVersion($output);
+
+        if (array_key_exists('summary', $results)) {
+            $summary = $results['summary'];
+            $output->writeln(sprintf('%s<info>Reference Summary</info>', PHP_EOL));
+            $summary['releases'] = array(
+                '  Releases                                  %10d',
+                array($summary['releases'])
+            );
+            $summary['iniEntries'] = array(
+                '  INI entries                               %10d',
+                array($summary['iniEntries'])
+            );
+            $summary['constants'] = array(
+                '  Constants                                 %10d',
+                array($summary['constants'])
+            );
+            $summary['functions'] = array(
+                '  Functions                                 %10d',
+                array($summary['functions'])
+            );
+            $summary['interfaces'] = array(
+                '  Interfaces                                %10d',
+                array($summary['interfaces'])
+            );
+            $summary['classes'] = array(
+                '  Classes                                   %10d',
+                array($summary['classes'])
+            );
+            $summary['class-constants'] = array(
+                '  Class Constants                           %10d',
+                array($summary['class-constants'])
+            );
+            $summary['methods'] = array(
+                '  Methods                                   %10d',
+                array($summary['methods'])
+            );
+            $summary['static methods'] = array(
+                '  Static Methods                            %10d',
+                array($summary['static methods'])
+            );
+            $this->printFormattedLines($output, $summary);
+            return;
+        }
+
+        foreach ($results as $title => $values) {
+            $args = array();
+
+            foreach ($values as $key => $val) {
+                if (strcasecmp($title, 'releases') == 0) {
+                    $key = sprintf('%s (%s)', $val['date'], $val['state']);
+
+                } elseif (strcasecmp($title, 'methods') == 0
+                    || strcasecmp($title, 'static methods') == 0
+                    || strcasecmp($title, 'class-constants') == 0
+                ) {
+                    foreach ($val as $meth => $v) {
+                        $k = sprintf('%s::%s', $key, $meth);
+                        $args[$k] = $v;
+                    }
+                    continue;
+                }
+                $args[$key] = $val;
+            }
+
+            $rows = array();
+            ksort($args);
+
+            foreach ($args as $arg => $versions) {
+                $row = array(
+                    $arg,
+                    self::ext($versions),
+                    self::php($versions),
+                    self::deprecated($versions),
+                );
+                $rows[] = $row;
+            }
+
+            $headers = array(ucfirst($title), 'EXT min/Max', 'PHP min/Max', 'Deprecated');
+            $footers = array(
+                sprintf('<info>Total [%d]</info>', count($args)),
+                '',
+                '',
+                ''
+            );
+            $rows[] = new TableSeparator();
+            $rows[] = $footers;
+
+            $this->tableHelper($output, $headers, $rows);
+            $output->writeln('');
+        }
+    }
+
+    private static function ext($versions)
+    {
+        return empty($versions['ext.max'])
+            ? $versions['ext.min']
+            : $versions['ext.min'] . ' => ' . $versions['ext.max'];
+    }
+
+    private static function php($versions)
+    {
+        return empty($versions['php.max'])
+            ? $versions['php.min']
+            : $versions['php.min'] . ' => ' . $versions['php.max'];
+    }
+
+    private static function deprecated($versions)
+    {
+        if (isset($versions['deprecated'])) {
+            return $versions['deprecated'];
+        }
+        return '';
     }
 }
 
@@ -1223,6 +1490,7 @@ class DbHandleApplication extends Application
         $defaultCommands[] = new DbBuildExtCommand();
         $defaultCommands[] = new DbReleaseCommand();
         $defaultCommands[] = new DbListCommand();
+        $defaultCommands[] = new DbShowCommand();
 
         return $defaultCommands;
     }
