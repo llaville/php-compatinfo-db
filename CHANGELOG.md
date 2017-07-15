@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Zip reference updated to version 1.15.1 (stable)
 - DataBase `compatinfo.sqlite` is copied in same directory (<user>\.bartlett) for both phar and non phar versions.
 - Console `db:backup` command did not used anymore the system temporary folder to save DB backup files (save in same folder as DB)
 

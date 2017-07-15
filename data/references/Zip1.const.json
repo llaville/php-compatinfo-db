@@ -74,6 +74,51 @@
     {
         "ext_name_fk": 101,
         "class_name": "ZipArchive",
+        "name": "FL_ENC_GUESS",
+        "ext_min": "1.13.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_ENC_RAW",
+        "ext_min": "1.13.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_ENC_STRICT",
+        "ext_min": "1.13.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_ENC_UTF_8",
+        "ext_min": "1.13.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_ENC_CP437",
+        "ext_min": "1.13.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
         "name": "CM_DEFAULT",
         "ext_min": "1.6.0",
         "ext_max": "",
@@ -634,6 +679,42 @@
         "class_name": "ZipArchive",
         "name": "OPSYS_Z_CPM",
         "ext_min": "1.12.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "EM_NONE",
+        "ext_min": "1.14.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "EM_AES_128",
+        "ext_min": "1.14.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "EM_AES_192",
+        "ext_min": "1.14.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "EM_AES_256",
+        "ext_min": "1.14.0",
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
