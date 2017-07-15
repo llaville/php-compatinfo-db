@@ -18,6 +18,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Amqp reference updated to version 1.9.1 (stable)
+- Lzf reference updated to version 1.6.6 (stable)
 - Ssh2 reference updated to version 1.1 (alpha)
 - Zip reference updated to version 1.15.1 (stable)
 - DataBase `compatinfo.sqlite` is copied in same directory (<user>\.bartlett) for both phar and non phar versions.
