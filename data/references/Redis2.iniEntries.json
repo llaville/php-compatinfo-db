@@ -46,5 +46,29 @@
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.clusters.seeds",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.clusters.timeout",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.clusters.read_timeout",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
     }
 ]

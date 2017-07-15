@@ -430,9 +430,9 @@ class DbInitCommand extends Command
             'redis' => array(
                 'classes'    => array('2'),
                 'iniEntries' => array('2'),
-                'releases'   => array('2'),
+                'releases'   => array('2', '3'),
                 'const'      => array('2'),
-                'methods'    => array('2'),
+                'methods'    => array('2', '3'),
             ),
             'riak' => array(
                 'classes'    => array('', '1'),

@@ -19,6 +19,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Amqp reference updated to version 1.9.1 (stable)
 - Lzf reference updated to version 1.6.6 (stable)
+- Redis reference updated to version 3.1.2 (stable)
 - Ssh2 reference updated to version 1.1 (alpha)
 - Stomp reference updated to version 2.0.1 (stable)
 - Zip reference updated to version 1.15.1 (stable)
