@@ -459,7 +459,7 @@ class DbInitCommand extends Command
                 'classes'    => array(''),
                 'iniEntries' => array('', '1'),
                 'functions'  => array('', '1'),
-                'releases'   => array('', '1'),
+                'releases'   => array('', '1', '2'),
                 'methods'    => array('', '1'),
             ),
             'svn' => array(
