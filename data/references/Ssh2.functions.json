@@ -61,6 +61,16 @@
     },
     {
         "ext_name_fk": 77,
+        "name": "ssh2_disconnect",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 77,
         "name": "ssh2_exec",
         "ext_min": "0.5",
         "ext_max": "",
