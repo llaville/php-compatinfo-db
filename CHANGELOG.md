@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Support to PHP 7.0.23
 - Support to PHP 7.0.22
+- Mongo reference updated to version 1.6.15 (stable)
 - Redis reference updated to version 3.1.3 (stable)
 - Xdebug reference updated to version 2.5.4 (stable)
 
