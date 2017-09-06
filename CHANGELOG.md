@@ -6,6 +6,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+- Support to PHP 7.0.23
 - Support to PHP 7.0.22
 - Redis reference updated to version 3.1.3 (stable)
 
