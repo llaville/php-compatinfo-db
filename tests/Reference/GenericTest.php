@@ -43,6 +43,7 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
     const REF_ELEMENT_FUNCTION  = 3;
     const REF_ELEMENT_INTERFACE = 4;
     const REF_ELEMENT_CLASS     = 5;
+    const REF_ELEMENT_METHOD    = 6;
 
     protected static $obj = null;
     protected static $ref = null;
@@ -55,6 +56,7 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
     protected static $optionalfunctions   = array();
     protected static $optionalclasses     = array();
     protected static $optionalinterfaces  = array();
+    protected static $optionalmethods     = array();
 
     // Could be present but missing in Reference (alias, ...)
     protected static $ignoredcfgs          = array();
@@ -62,6 +64,7 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
     protected static $ignoredfunctions     = array();
     protected static $ignoredclasses       = array();
     protected static $ignoredinterfaces    = array();
+    protected static $ignoredmethods       = array();
 
     // References fully documented
     protected static $extensions =  array(
@@ -180,6 +183,21 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
             $elements = self::$obj->getInterfaces();
             $opt = 'optionalinterfaces';
 
+        } elseif ('testGetClassMethodsFromReference' == $methodName) {
+            $elements = array();
+
+            $methods = array_merge(
+                self::$obj->getClassMethods(),
+                self::$obj->getClassStaticMethods()
+            );
+
+            foreach ($methods as $class => $values) {
+                foreach ($values as $method => $range) {
+                    $elements[$class.'::'.$method] = $range;
+                }
+            }
+            $opt = 'optionalmethods';
+
         } else {
             $elements = array();
         }
@@ -197,6 +215,11 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
             );
         }
 
+        return $this->buildDataset($elements, $opt);
+    }
+
+    protected function buildDataset($elements, $opt)
+    {
         $dataset = array();
         foreach ($elements as $name => $range) {
             if (!empty($range['optional'])) {
@@ -376,6 +399,13 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
                 interface_exists($element, false),
                 "Interface '$element', found in Reference, does not exists."
             );
+
+        } elseif (self::REF_ELEMENT_METHOD == $refElementType) {
+            list ($object, $method) = explode('::', $element);
+            $this->assertTrue(
+                method_exists($object, $method),
+                "Class Method '$element', found in Reference, does not exists."
+            );
         }
     }
 
@@ -409,6 +439,13 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
             $this->assertFalse(
                 interface_exists($element, false),
                 "Interface '$element', found in Reference ($min,$max), exists."
+            );
+
+        } elseif (self::REF_ELEMENT_METHOD == $refElementType) {
+            list ($object, $method) = explode('::', $element);
+            $this->assertFalse(
+                method_exists($object, $method),
+                "Class Method '$element', found in Reference, exists."
             );
         }
     }
@@ -632,6 +669,24 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
                 }
             }
         }
+    }
+
+    /**
+     * Test than all referenced class methods exists
+     *
+     * @dataProvider provideReferenceValues
+     * @group  reference
+     * @return void
+     */
+    public function testGetClassMethodsFromReference($name, $range)
+    {
+        $this->checkValuesFromReference(
+            $name,
+            $range,
+            self::$optionalmethods,
+            self::$ignoredmethods,
+            self::REF_ELEMENT_METHOD
+        );
     }
 
     /**
