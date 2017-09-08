@@ -88,7 +88,19 @@ class ExtensionFactory implements ReferenceInterface
                 'version_text'   => defined('OPENSSL_VERSION_TEXT')
                     ? OPENSSL_VERSION_TEXT : false,
             );
+
+        } elseif ('imagemagick' == $name) {
+            if (method_exists('Imagick', 'getVersion')) {
+                $v = \Imagick::getVersion();
+                if (preg_match('/ImageMagick ([0-9]+\.[0-9]+\.[0-9]+)/', $v['versionString'], $matches)) {
+                    $meta = array(
+                        'version_number' => $v['versionNumber'],
+                        'version_text'   => $matches[1],
+                    );
+                }
+            }
         }
+
         if (isset($meta)) {
             if (isset($key) && array_key_exists($key, $meta)) {
                 return $meta[$key];

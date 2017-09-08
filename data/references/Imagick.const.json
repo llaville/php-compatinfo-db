@@ -2,6 +2,36 @@
     {
         "ext_name_fk": 29,
         "class_name": "Imagick",
+        "name": "COLORSPACE_LAB",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "RESOURCETYPE_WIDTH",
+        "ext_min": "3.4.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">6.9.1"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "RESOURCETYPE_HEIGHT",
+        "ext_min": "3.4.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">6.9.1"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
         "name": "COLOR_BLACK",
         "ext_min": "3.4.0",
         "ext_max": "",
@@ -69,7 +99,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -159,7 +190,18 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "COMPOSITE_COPYALPHA",
+        "ext_min": "3.4.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -285,7 +327,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -444,10 +487,11 @@
         "ext_name_fk": 29,
         "class_name": "Imagick",
         "name": "COMPOSITE_MINUS",
-        "ext_min": "3.4.0",
+        "ext_min": "2.0.0a1",
         "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.1.3",
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -588,10 +632,11 @@
         "ext_name_fk": 29,
         "class_name": "Imagick",
         "name": "COMPOSITE_SUBTRACT",
-        "ext_min": "3.4.0",
+        "ext_min": "2.0.0a1",
         "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.1.3",
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -618,7 +663,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.4"
     },
     {
         "ext_name_fk": 29,
@@ -627,7 +673,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.6"
     },
     {
         "ext_name_fk": 29,
@@ -636,7 +683,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -645,7 +693,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.4"
     },
     {
         "ext_name_fk": 29,
@@ -654,7 +703,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.4"
     },
     {
         "ext_name_fk": 29,
@@ -663,7 +713,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -672,7 +723,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -681,7 +733,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -690,7 +743,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -699,7 +753,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -708,7 +763,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -717,7 +773,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.2"
     },
     {
         "ext_name_fk": 29,
@@ -726,7 +783,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.2"
     },
     {
         "ext_name_fk": 29,
@@ -735,7 +793,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -744,7 +803,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -753,7 +813,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -762,7 +823,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -771,7 +833,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -780,7 +843,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -789,7 +853,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -1005,7 +1070,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.7"
     },
     {
         "ext_name_fk": 29,
@@ -1014,7 +1080,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.7"
     },
     {
         "ext_name_fk": 29,
@@ -1023,7 +1090,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.7"
     },
     {
         "ext_name_fk": 29,
@@ -1032,7 +1100,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.7"
     },
     {
         "ext_name_fk": 29,
@@ -1041,7 +1110,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.7"
     },
     {
         "ext_name_fk": 29,
@@ -1050,7 +1120,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.8"
     },
     {
         "ext_name_fk": 29,
@@ -1059,7 +1130,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.3.8"
     },
     {
         "ext_name_fk": 29,
@@ -1068,7 +1140,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -1077,7 +1150,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -1086,7 +1160,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -1095,7 +1170,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -1104,7 +1180,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -1113,7 +1190,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -1122,7 +1200,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.7"
     },
     {
         "ext_name_fk": 29,
@@ -1131,7 +1210,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.7"
     },
     {
         "ext_name_fk": 29,
@@ -1140,7 +1220,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.8"
     },
     {
         "ext_name_fk": 29,
@@ -1149,7 +1230,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.1"
     },
     {
         "ext_name_fk": 29,
@@ -1185,7 +1267,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -1203,7 +1286,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -1221,7 +1305,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -1239,7 +1324,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -1257,7 +1343,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -1392,7 +1479,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.9"
     },
     {
         "ext_name_fk": 29,
@@ -1401,7 +1489,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.9"
     },
     {
         "ext_name_fk": 29,
@@ -1410,7 +1499,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.9"
     },
     {
         "ext_name_fk": 29,
@@ -1419,7 +1509,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.6"
     },
     {
         "ext_name_fk": 29,
@@ -1428,7 +1519,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.6"
     },
     {
         "ext_name_fk": 29,
@@ -1437,7 +1529,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.6"
     },
     {
         "ext_name_fk": 29,
@@ -1446,7 +1539,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.6"
     },
     {
         "ext_name_fk": 29,
@@ -1455,7 +1549,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.6"
     },
     {
         "ext_name_fk": 29,
@@ -1464,7 +1559,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.7"
     },
     {
         "ext_name_fk": 29,
@@ -1473,7 +1569,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -1482,7 +1579,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -1626,7 +1724,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -1860,7 +1959,8 @@
         "ext_min": "2.1.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -1959,7 +2059,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2013,7 +2114,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.4.4"
     },
     {
         "ext_name_fk": 29,
@@ -2022,7 +2124,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.4.4"
     },
     {
         "ext_name_fk": 29,
@@ -2031,7 +2134,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.5"
     },
     {
         "ext_name_fk": 29,
@@ -2040,7 +2144,38 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.6"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "CHANNEL_READ_MASK",
+        "ext_min": "3.4.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=7.0.0"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "CHANNEL_WRITE_MASK",
+        "ext_min": "3.4.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=7.0.0"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "CHANNEL_META",
+        "ext_min": "3.4.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2049,7 +2184,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -2058,7 +2194,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2085,7 +2222,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2112,7 +2250,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2130,7 +2269,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.7"
     },
     {
         "ext_name_fk": 29,
@@ -2139,7 +2279,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.7"
     },
     {
         "ext_name_fk": 29,
@@ -2148,7 +2289,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -2184,7 +2326,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2337,7 +2480,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2346,7 +2490,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2355,7 +2500,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2364,7 +2510,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2373,7 +2520,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2382,7 +2530,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2391,7 +2540,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2400,7 +2550,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2409,7 +2560,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2418,7 +2570,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2427,7 +2580,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.3"
     },
     {
         "ext_name_fk": 29,
@@ -2436,7 +2590,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.8"
     },
     {
         "ext_name_fk": 29,
@@ -2445,7 +2600,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.8"
     },
     {
         "ext_name_fk": 29,
@@ -2454,7 +2610,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.8"
     },
     {
         "ext_name_fk": 29,
@@ -2463,7 +2620,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.1"
     },
     {
         "ext_name_fk": 29,
@@ -2472,7 +2630,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.4"
     },
     {
         "ext_name_fk": 29,
@@ -2481,7 +2640,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -2490,7 +2650,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.6.6"
     },
     {
         "ext_name_fk": 29,
@@ -2499,7 +2660,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.6"
     },
     {
         "ext_name_fk": 29,
@@ -2508,7 +2670,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -2661,7 +2824,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2670,7 +2834,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2688,7 +2853,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.4.2"
     },
     {
         "ext_name_fk": 29,
@@ -2697,7 +2863,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.9"
     },
     {
         "ext_name_fk": 29,
@@ -2706,7 +2873,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.9"
     },
     {
         "ext_name_fk": 29,
@@ -2715,7 +2883,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.0"
     },
     {
         "ext_name_fk": 29,
@@ -2724,7 +2893,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.0"
     },
     {
         "ext_name_fk": 29,
@@ -2733,7 +2903,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2742,7 +2913,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2751,7 +2923,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2760,7 +2933,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2769,7 +2943,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2778,7 +2953,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2787,7 +2963,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.6"
     },
     {
         "ext_name_fk": 29,
@@ -2814,7 +2991,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -2841,7 +3019,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -2886,7 +3065,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.1"
     },
     {
         "ext_name_fk": 29,
@@ -2895,7 +3075,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.1"
     },
     {
         "ext_name_fk": 29,
@@ -2904,7 +3085,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.1"
     },
     {
         "ext_name_fk": 29,
@@ -2913,7 +3095,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.1"
     },
     {
         "ext_name_fk": 29,
@@ -2922,7 +3105,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.2"
     },
     {
         "ext_name_fk": 29,
@@ -2931,7 +3115,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.2"
     },
     {
         "ext_name_fk": 29,
@@ -2940,7 +3125,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.1"
     },
     {
         "ext_name_fk": 29,
@@ -2949,7 +3135,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.1"
     },
     {
         "ext_name_fk": 29,
@@ -2958,7 +3145,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.1"
     },
     {
         "ext_name_fk": 29,
@@ -3327,7 +3515,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.3"
     },
     {
         "ext_name_fk": 29,
@@ -3336,7 +3525,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.3"
     },
     {
         "ext_name_fk": 29,
@@ -3345,7 +3535,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.3"
     },
     {
         "ext_name_fk": 29,
@@ -3543,7 +3734,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.5"
     },
     {
         "ext_name_fk": 29,
@@ -3552,7 +3744,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.5"
     },
     {
         "ext_name_fk": 29,
@@ -3561,7 +3754,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.7.8"
     },
     {
         "ext_name_fk": 29,
@@ -3615,7 +3809,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.1"
     },
     {
         "ext_name_fk": 29,
@@ -3633,7 +3828,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -3651,7 +3847,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -3678,7 +3875,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -3687,7 +3885,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.4"
     },
     {
         "ext_name_fk": 29,
@@ -3696,7 +3895,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -3705,7 +3905,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -3714,7 +3915,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -3723,7 +3925,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -3732,7 +3935,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.7"
     },
     {
         "ext_name_fk": 29,
@@ -3741,7 +3945,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3750,7 +3955,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3759,7 +3965,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3768,7 +3975,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3777,7 +3985,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3786,7 +3995,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3795,7 +4005,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3804,7 +4015,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.8"
     },
     {
         "ext_name_fk": 29,
@@ -3813,7 +4025,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.2"
     },
     {
         "ext_name_fk": 29,
@@ -3822,7 +4035,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.2"
     },
     {
         "ext_name_fk": 29,
@@ -3831,7 +4045,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.2"
     },
     {
         "ext_name_fk": 29,
@@ -3840,7 +4055,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.2"
     },
     {
         "ext_name_fk": 29,
@@ -3849,7 +4065,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.2"
     },
     {
         "ext_name_fk": 29,
@@ -3858,7 +4075,8 @@
         "ext_min": "2.0.0RC2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.4.4"
     },
     {
         "ext_name_fk": 29,
@@ -3867,7 +4085,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3876,7 +4095,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3885,7 +4105,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3894,7 +4115,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3903,7 +4125,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3912,7 +4135,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3921,7 +4145,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3930,7 +4155,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3939,7 +4165,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.2.9"
     },
     {
         "ext_name_fk": 29,
@@ -3948,7 +4175,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -3957,7 +4185,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -3966,7 +4195,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -3975,7 +4205,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -3984,7 +4215,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -3993,7 +4225,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -4002,7 +4235,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -4011,7 +4245,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.5"
     },
     {
         "ext_name_fk": 29,
@@ -4020,7 +4255,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4029,7 +4265,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4038,7 +4275,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4047,7 +4285,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4056,7 +4295,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4074,7 +4314,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.4.4"
     },
     {
         "ext_name_fk": 29,
@@ -4083,7 +4324,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.4"
     },
     {
         "ext_name_fk": 29,
@@ -4092,7 +4334,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.4"
     },
     {
         "ext_name_fk": 29,
@@ -4101,7 +4344,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.0"
     },
     {
         "ext_name_fk": 29,
@@ -4110,7 +4354,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.1"
     },
     {
         "ext_name_fk": 29,
@@ -4119,7 +4364,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.7.1"
     },
     {
         "ext_name_fk": 29,
@@ -4128,7 +4374,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.6"
     },
     {
         "ext_name_fk": 29,
@@ -4137,7 +4384,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.6"
     },
     {
         "ext_name_fk": 29,
@@ -4146,7 +4394,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.6"
     },
     {
         "ext_name_fk": 29,
@@ -4155,7 +4404,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.3.7"
     },
     {
         "ext_name_fk": 29,
@@ -4164,7 +4414,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": "<7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -4182,7 +4433,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4191,7 +4443,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4200,7 +4453,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4209,7 +4463,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4218,7 +4473,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4227,7 +4483,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4236,7 +4493,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.5"
     },
     {
         "ext_name_fk": 29,
@@ -4245,7 +4503,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -4254,7 +4513,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -4317,7 +4577,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.7"
     },
     {
         "ext_name_fk": 29,
@@ -4362,7 +4623,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.8"
     },
     {
         "ext_name_fk": 29,
@@ -4371,7 +4633,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.8"
     },
     {
         "ext_name_fk": 29,
@@ -4380,7 +4643,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.4.8"
     },
     {
         "ext_name_fk": 29,
@@ -4389,7 +4653,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.3"
     },
     {
         "ext_name_fk": 29,
@@ -4398,7 +4663,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.3"
     },
     {
         "ext_name_fk": 29,
@@ -4407,7 +4673,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.5.3"
     },
     {
         "ext_name_fk": 29,
@@ -4416,7 +4683,8 @@
         "ext_min": "3.2.0b2",
         "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.8.0 <7.0.0"
     },
     {
         "ext_name_fk": 29,
@@ -4434,7 +4702,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4443,7 +4712,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4452,7 +4722,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4461,7 +4732,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4470,7 +4742,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4479,7 +4752,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4488,7 +4762,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4497,7 +4772,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">6.8.3"
     },
     {
         "ext_name_fk": 29,
@@ -4506,7 +4782,8 @@
         "ext_min": "3.4.0",
         "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": ""
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.0"
     },
     {
         "ext_name_fk": 29,
@@ -5092,5 +5369,15 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "SPARSECOLORMETHOD_MANHATTAN",
+        "ext_min": "3.4.1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.3"
     }
 ]
