@@ -1652,7 +1652,7 @@
     {
         "ext_name_fk": 104,
         "class_name": "Redis",
-        "name": "rawcommand",
+        "name": "rawCommand",
         "static": false,
         "ext_min": "2.2.7",
         "ext_max": "",
@@ -2022,7 +2022,7 @@
     {
         "ext_name_fk": 104,
         "class_name": "Redis",
-        "name": "zRevRange",
+        "name": "zrevrange",
         "static": false,
         "ext_min": "2.2.3",
         "ext_max": "",
