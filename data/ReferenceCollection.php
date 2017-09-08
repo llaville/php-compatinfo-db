@@ -200,6 +200,10 @@ class ReferenceCollection
             $rec['optional'] = false;
         }
 
+        if (!isset($rec['lib_imagemagick'])) {
+            $rec['lib_imagemagick'] = '';
+        }
+
         if (is_array($row)) {
             if ($row == $rec) {
                 // nothing to do
@@ -336,6 +340,7 @@ class ReferenceCollection
             ' ext_min VARCHAR(16), ext_max VARCHAR(16),' .
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' prototype VARCHAR(32), proto_since VARCHAR(16),' .
+            ' lib_imagemagick VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, class_name, name))'
         );
         $this->dbal->exec(
@@ -364,6 +369,7 @@ class ReferenceCollection
             ' ext_min VARCHAR(16), ext_max VARCHAR(16),' .
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' optional INTEGER, ' .
+            ' lib_imagemagick VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, class_name, name))'
         );
         $this->stmtVersions = $this->dbal->prepare(
@@ -398,8 +404,8 @@ class ReferenceCollection
         );
         $this->stmtMethods = $this->dbal->prepare(
             'REPLACE INTO ' . $tblMethods .
-            ' (ext_name_fk, class_name, name, static, ext_min, ext_max, php_min, php_max, prototype, proto_since)' .
-            ' VALUES (:ext_name_fk, :class_name, :name, :static, :ext_min, :ext_max, :php_min, :php_max, :prototype, :proto_since)'
+            ' (ext_name_fk, class_name, name, static, ext_min, ext_max, php_min, php_max, prototype, proto_since, lib_imagemagick)' .
+            ' VALUES (:ext_name_fk, :class_name, :name, :static, :ext_min, :ext_max, :php_min, :php_max, :prototype, :proto_since, :lib_imagemagick)'
         );
         $this->stmtFunctions = $this->dbal->prepare(
             'REPLACE INTO ' . $tblFunctions .
@@ -413,8 +419,8 @@ class ReferenceCollection
         );
         $this->stmtClassConstant = $this->dbal->prepare(
             'REPLACE INTO ' . $tblClassConst .
-            ' (ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional)' .
-            ' VALUES (:ext_name_fk, :class_name, :name, :ext_min, :ext_max, :php_min, :php_max, :optional)'
+            ' (ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional, lib_imagemagick)' .
+            ' VALUES (:ext_name_fk, :class_name, :name, :ext_min, :ext_max, :php_min, :php_max, :optional, :lib_imagemagick)'
         );
 
         $this->stmtRelease = $this->dbal->prepare(
@@ -444,12 +450,13 @@ class ReferenceCollection
         $this->stmtMethod = $this->dbal->prepare(
             'SELECT' .
             ' ext_name_fk, class_name, name, static, ext_min, ext_max, php_min, php_max' .
+            ' prototype, proto_since, lib_imagemagick' .
             ' FROM ' . $tblMethods .
             ' WHERE ext_name_fk = :ext_name_fk AND class_name = :class_name AND name = :name COLLATE NOCASE'
         );
         $this->stmtClassConst = $this->dbal->prepare(
             'SELECT' .
-            ' ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max' .
+            ' ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional, lib_imagemagick' .
             ' FROM ' . $tblClassConst .
             ' WHERE ext_name_fk = :ext_name_fk AND class_name = :class_name AND name = :name COLLATE NOCASE'
         );
