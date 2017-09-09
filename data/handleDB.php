@@ -449,6 +449,9 @@ class DbInitCommand extends Command
                 'const'      => array('', '2'),
                 'methods'    => array('', '1', '2'),
             ),
+            'spl' => array(
+                'methods'    => array('5', '7'),
+            ),
             'sphinx' => array(
                 'classes'    => array(''),
                 'constants'  => array('', '1'),
@@ -1527,5 +1530,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.23.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.24.0');
 $application->run();
