@@ -344,6 +344,8 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
         $min = $range['php.min'];
         $max = $range['php.max'];
 
+        $EXT_VERSION = self::$obj->getCurrentVersion();
+
         if (array_key_exists('php.excludes', $range)) {
             if (in_array(PHP_VERSION, $range['php.excludes'])) {
                 // We are in min/max, so add it as optional
@@ -353,6 +355,8 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
         if (!in_array($element, $optional)
             && (empty($min) || version_compare(PHP_VERSION, $min) >= 0)
             && (empty($max) || version_compare(PHP_VERSION, $max) <= 0)
+            && (version_compare($EXT_VERSION, $range['ext.min']) >= 0)
+            && (version_compare($EXT_VERSION, $range['ext.max']) <= 0)
         ) {
             // Should be there except if set as optional
             $this->assertShouldBeThere($element, $refElementType);
