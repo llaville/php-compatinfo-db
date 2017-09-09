@@ -115,7 +115,12 @@ class ExtensionFactory implements ReferenceInterface
      */
     public function getCurrentVersion()
     {
-        $version = phpversion($this->name);
+        return $this->getVersion($this->name);
+    }
+
+    private function getVersion($name)
+    {
+        $version = phpversion($name);
         $pattern = '/^[0-9]+\.[0-9]+/';
         if (!preg_match($pattern, $version)) {
             /**
@@ -248,17 +253,7 @@ class ExtensionFactory implements ReferenceInterface
                 $ref->date    = $rec['date'];
 
                 if (extension_loaded($ref->name)) {
-                    $version = phpversion($ref->name);
-                    $pattern = '/^[0-9]+\.[0-9]+/';
-                    if (!preg_match($pattern, $version)) {
-                        /**
-                         * When version is not provided by the extension,
-                         * or not standard format or we don't have it
-                         * in our reference (ex snmp) because have no sense
-                         * be sure at least to return latest PHP version supported.
-                         */
-                        $version = self::getLatestPhpVersion();
-                    }
+                    $version = $this->getVersion($ref->name);
                 } else {
                     $version = '';
                 }
