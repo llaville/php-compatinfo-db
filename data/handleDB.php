@@ -424,8 +424,8 @@ class DbInitCommand extends Command
                 'constants'  => array('2'),
                 'functions'  => array('2', '3'),
                 'releases'   => array('', '1', '2', '3'),
-                'const'      => array('', '2'),
-                'methods'    => array('', '2', '3'),
+                'const'      => array('', '2', '4'),
+                'methods'    => array('', '2', '3', '4'),
             ),
             'redis' => array(
                 'classes'    => array('2'),
