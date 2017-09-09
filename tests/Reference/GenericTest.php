@@ -358,8 +358,8 @@ abstract class GenericTest extends \PHPUnit_Framework_TestCase
         if (!in_array($element, $optional)
             && (empty($min) || version_compare(PHP_VERSION, $min) >= 0)
             && (empty($max) || version_compare(PHP_VERSION, $max) <= 0)
-            && (empty($emin) || version_compare($EXT_VERSION, $emin) >= 0)
-            && (empty($emax) || version_compare($EXT_VERSION, $emax) <= 0)
+            && (!empty($emin) && version_compare($EXT_VERSION, $emin) >= 0)
+            && (!empty($emax) && version_compare($EXT_VERSION, $emax) <= 0)
         ) {
             // Should be there except if set as optional
             $this->assertShouldBeThere($element, $refElementType);
