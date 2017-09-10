@@ -1,0 +1,42 @@
+[
+    {
+        "ext_name_fk": 106,
+        "name": "ast\\get_kind_name",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 106,
+        "name": "ast\\kind_uses_flags",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 106,
+        "name": "ast\\parse_code",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 106,
+        "name": "ast\\parse_file",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]
