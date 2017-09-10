@@ -667,6 +667,24 @@ class DbBuildExtCommand extends Command
             );
             $this->buildClassConstants($extId, $extMin, $phpMin, $classes, $output);
         }
+
+        // CONSTANTS
+        $output->writeln(
+            sprintf(
+                '<info>%s.constants.json</info>',
+                ucfirst(strtolower($extension))
+            )
+        );
+        $this->buildConstants($extId, $extMin, $phpMin, $re, $output);
+
+        // FUNCTIONS
+        $output->writeln(
+            sprintf(
+                '<info>%s.functions.json</info>',
+                ucfirst(strtolower($extension))
+            )
+        );
+        $this->buildFunctions($extId, $extMin, $phpMin, $re, $output);
     }
 
     private function buildClasses($extId, $extMin, $phpMin, \ReflectionExtension $re, OutputInterface $output)
@@ -832,6 +850,57 @@ class DbBuildExtCommand extends Command
 
         $output->writeln(
             json_encode($constants, JSON_PRETTY_PRINT)
+        );
+    }
+
+    private function buildConstants($extId, $extMin, $phpMin, \ReflectionExtension $re, OutputInterface $output)
+    {
+        $objects = [];
+
+        foreach ($re->getConstants() as $name => $value) {
+
+            $data = [
+                'ext_name_fk' => $extId,
+                'name' => $name,
+                'ext_min' => $extMin,
+                'ext_max' => '',
+                'php_min' => $phpMin,
+                'php_max' => '',
+                'php_excludes' => '',
+            ];
+            $objects[$name] = $data;
+        }
+
+        ksort($objects, SORT_NATURAL);
+
+        $output->writeln(
+            json_encode(array_values($objects), JSON_PRETTY_PRINT)
+        );
+    }
+
+    private function buildFunctions($extId, $extMin, $phpMin, \ReflectionExtension $re, OutputInterface $output)
+    {
+        $objects = [];
+
+        foreach ($re->getFunctions() as $name => $rf) {
+
+            $data = [
+                'ext_name_fk' => $extId,
+                'name' => $name,
+                'ext_min' => $extMin,
+                'ext_max' => '',
+                'php_min' => $phpMin,
+                'php_max' => '',
+                'parameters' => '',
+                'php_excludes' => '',
+            ];
+            $objects[$name] = $data;
+        }
+
+        ksort($objects, SORT_NATURAL);
+
+        $output->writeln(
+            json_encode(array_values($objects), JSON_PRETTY_PRINT)
         );
     }
 }
