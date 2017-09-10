@@ -321,6 +321,13 @@ class DbInitCommand extends Command
                 'releases'   => array('4', '5', '7'),
                 'methods'    => array('4', '5'),
             ),
+            'apcu' => array(
+                'classes'    => array('5'),
+                'constants'  => array(''),
+                'functions'  => array('', '5'),
+                'methods'    => array('5'),
+                'releases'   => array('', '5'),
+            ),
             'gender' => array(
                 'classes'    => array(''),
                 'releases'   => array('', '1'),
