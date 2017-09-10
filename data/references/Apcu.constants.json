@@ -1,6 +1,141 @@
 [
     {
         "ext_name_fk": 3,
+        "name": "APC_ITER_ALL",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_ATIME",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_CTIME",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_DTIME",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_KEY",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_MEM_SIZE",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_MTIME",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_NONE",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_NUM_HITS",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_REFCOUNT",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_TTL",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_TYPE",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_ITER_VALUE",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_LIST_ACTIVE",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
+        "name": "APC_LIST_DELETED",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 3,
         "name": "APCU_APC_FULL_BC",
         "ext_min": "4.0.1",
         "ext_max": "",
