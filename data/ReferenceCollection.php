@@ -163,6 +163,10 @@ class ReferenceCollection
             $rec['proto_since'] = '';
         }
 
+        if (!isset($rec['lib_imagemagick'])) {
+            $rec['lib_imagemagick'] = '';
+        }
+
         $criteria = array(
             'ext_name_fk' => $rec['ext_name_fk'],
             'class_name'  => $rec['class_name'],
