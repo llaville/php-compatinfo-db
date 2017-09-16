@@ -4,7 +4,7 @@
         "class_name": "SplPriorityQueue",
         "name": "getExtractFlags",
         "static": false,
-        "ext_min": "7.0.0alpha1",
+        "ext_min": "7.0.0",
         "ext_max": "",
         "php_min": "7.0.0alpha1",
         "php_max": ""
@@ -14,7 +14,7 @@
         "class_name": "SplPriorityQueue",
         "name": "isCorrupted",
         "static": false,
-        "ext_min": "7.0.0alpha1",
+        "ext_min": "7.0.0",
         "ext_max": "",
         "php_min": "7.0.0alpha1",
         "php_max": ""
@@ -24,7 +24,7 @@
         "class_name": "SplHeap",
         "name": "isCorrupted",
         "static": false,
-        "ext_min": "7.0.0alpha1",
+        "ext_min": "7.0.0",
         "ext_max": "",
         "php_min": "7.0.0alpha1",
         "php_max": ""
