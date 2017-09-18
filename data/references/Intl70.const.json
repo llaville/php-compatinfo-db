@@ -1,0 +1,5969 @@
+[
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_AEGEAN_NUMBERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ALCHEMICAL_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ALPHABETIC_PRESENTATION_FORMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ANCIENT_GREEK_MUSICAL_NOTATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ANCIENT_GREEK_NUMBERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ANCIENT_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARABIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARABIC_EXTENDED_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARABIC_PRESENTATION_FORMS_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARABIC_PRESENTATION_FORMS_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARABIC_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARMENIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ARROWS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_AVESTAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BALINESE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BAMUM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BAMUM_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BASIC_LATIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BASSA_VAH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BATAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BENGALI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BLOCK_ELEMENTS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BOPOMOFO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BOPOMOFO_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BOX_DRAWING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BRAHMI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BRAILLE_PATTERNS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BUGINESE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BUHID",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_BYZANTINE_MUSICAL_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CARIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CAUCASIAN_ALBANIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CHAKMA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CHAM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CHEROKEE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_COMPATIBILITY",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_COMPATIBILITY_FORMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_COMPATIBILITY_IDEOGRAPHS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_RADICALS_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_STROKES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_SYMBOLS_AND_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_UNIFIED_IDEOGRAPHS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COMBINING_DIACRITICAL_MARKS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COMBINING_DIACRITICAL_MARKS_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COMBINING_DIACRITICAL_MARKS_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COMBINING_HALF_MARKS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COMBINING_MARKS_FOR_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COMMON_INDIC_NUMBER_FORMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CONTROL_PICTURES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COPTIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COPTIC_EPACT_NUMBERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_COUNTING_ROD_NUMERALS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CUNEIFORM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CUNEIFORM_NUMBERS_AND_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CURRENCY_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CYPRIOT_SYLLABARY",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CYRILLIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CYRILLIC_EXTENDED_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CYRILLIC_EXTENDED_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CYRILLIC_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_CYRILLIC_SUPPLEMENTARY",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_DESERET",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_DEVANAGARI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_DEVANAGARI_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_DINGBATS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_DOMINO_TILES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_DUPLOYAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_EGYPTIAN_HIEROGLYPHS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ELBASAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_EMOTICONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ENCLOSED_ALPHANUMERICS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ENCLOSED_ALPHANUMERIC_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ENCLOSED_CJK_LETTERS_AND_MONTHS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ENCLOSED_IDEOGRAPHIC_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ETHIOPIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ETHIOPIC_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ETHIOPIC_EXTENDED_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ETHIOPIC_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GENERAL_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GEOMETRIC_SHAPES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GEOMETRIC_SHAPES_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GEORGIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GEORGIAN_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GLAGOLITIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GOTHIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GRANTHA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GREEK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GREEK_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GUJARATI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_GURMUKHI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HALFWIDTH_AND_FULLWIDTH_FORMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HANGUL_COMPATIBILITY_JAMO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HANGUL_JAMO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HANGUL_JAMO_EXTENDED_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HANGUL_JAMO_EXTENDED_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HANGUL_SYLLABLES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HANUNOO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HEBREW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HIGH_PRIVATE_USE_SURROGATES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HIGH_SURROGATES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_HIRAGANA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_IDEOGRAPHIC_DESCRIPTION_CHARACTERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_IMPERIAL_ARAMAIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_INSCRIPTIONAL_PAHLAVI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_INSCRIPTIONAL_PARTHIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_INVALID_CODE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_IPA_EXTENSIONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_JAVANESE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KAITHI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KANA_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KANBUN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KANGXI_RADICALS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KANNADA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KATAKANA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KATAKANA_PHONETIC_EXTENSIONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KAYAH_LI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KHAROSHTHI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KHMER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KHMER_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KHOJKI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_KHUDAWADI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LAO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_1_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_EXTENDED_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_EXTENDED_ADDITIONAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_EXTENDED_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_EXTENDED_C",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_EXTENDED_D",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LATIN_EXTENDED_E",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LEPCHA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LETTERLIKE_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LIMBU",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LINEAR_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LINEAR_B_IDEOGRAMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LINEAR_B_SYLLABARY",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LISU",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LOW_SURROGATES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LYCIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_LYDIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MAHAJANI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MAHJONG_TILES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MALAYALAM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MANDAIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MANICHAEAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MATHEMATICAL_ALPHANUMERIC_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MATHEMATICAL_OPERATORS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MEETEI_MAYEK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MEETEI_MAYEK_EXTENSIONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MENDE_KIKAKUI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MEROITIC_CURSIVE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MEROITIC_HIEROGLYPHS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MIAO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MISCELLANEOUS_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MISCELLANEOUS_SYMBOLS_AND_ARROWS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MISCELLANEOUS_TECHNICAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MODI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MODIFIER_TONE_LETTERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MONGOLIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MRO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MUSICAL_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MYANMAR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MYANMAR_EXTENDED_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_MYANMAR_EXTENDED_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_NABATAEAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_NEW_TAI_LUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_NKO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_NO_BLOCK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_NUMBER_FORMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OGHAM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OLD_ITALIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OLD_NORTH_ARABIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OLD_PERMIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OLD_PERSIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OLD_SOUTH_ARABIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OLD_TURKIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OL_CHIKI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OPTICAL_CHARACTER_RECOGNITION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ORIYA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_ORNAMENTAL_DINGBATS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_OSMANYA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PAHAWH_HMONG",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PALMYRENE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PAU_CIN_HAU",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PHAGS_PA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PHAISTOS_DISC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PHOENICIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PHONETIC_EXTENSIONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PHONETIC_EXTENSIONS_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PLAYING_CARDS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PRIVATE_USE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PRIVATE_USE_AREA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_PSALTER_PAHLAVI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_REJANG",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_RUMI_NUMERAL_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_RUNIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SAMARITAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SAURASHTRA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SHARADA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SHAVIAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SHORTHAND_FORMAT_CONTROLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SIDDHAM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SINHALA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SINHALA_ARCHAIC_NUMBERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SMALL_FORM_VARIANTS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SORA_SOMPENG",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SPACING_MODIFIER_LETTERS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SPECIALS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUNDANESE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUNDANESE_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPERSCRIPTS_AND_SUBSCRIPTS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTAL_ARROWS_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTAL_ARROWS_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTAL_ARROWS_C",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTAL_MATHEMATICAL_OPERATORS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTAL_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTARY_PRIVATE_USE_AREA_A",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SUPPLEMENTARY_PRIVATE_USE_AREA_B",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SYLOTI_NAGRI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_SYRIAC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAGALOG",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAGBANWA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAGS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAI_LE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAI_THAM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAI_VIET",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAI_XUAN_JING_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAKRI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TAMIL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TELUGU",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_THAANA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_THAI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TIBETAN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TIFINAGH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TIRHUTA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_TRANSPORT_AND_MAP_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_UGARITIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_VAI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_VARIATION_SELECTORS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_VARIATION_SELECTORS_SUPPLEMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_VEDIC_EXTENSIONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_VERTICAL_FORMS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_WARANG_CITI",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_YIJING_HEXAGRAM_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_YI_RADICALS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BLOCK_CODE_YI_SYLLABLES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BPT_CLOSE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BPT_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BPT_NONE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "BPT_OPEN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_CHAR_CATEGORY_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_COMBINING_SPACING_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_CONNECTOR_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_CONTROL_CHAR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_CURRENCY_SYMBOL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_DASH_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_DECIMAL_DIGIT_NUMBER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_ENCLOSING_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_END_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_FINAL_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_FORMAT_CHAR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_GENERAL_OTHER_TYPES",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_INITIAL_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_LETTER_NUMBER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_LINE_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_LOWERCASE_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_MATH_SYMBOL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_MODIFIER_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_MODIFIER_SYMBOL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_NON_SPACING_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_OTHER_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_OTHER_NUMBER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_OTHER_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_OTHER_SYMBOL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_PARAGRAPH_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_PRIVATE_USE_CHAR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_SPACE_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_START_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_SURROGATE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_TITLECASE_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_UNASSIGNED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_CATEGORY_UPPERCASE_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_ARABIC_NUMBER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_BLOCK_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_BOUNDARY_NEUTRAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_CHAR_DIRECTION_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_COMMON_NUMBER_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_DIR_NON_SPACING_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_EUROPEAN_NUMBER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_EUROPEAN_NUMBER_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_EUROPEAN_NUMBER_TERMINATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_FIRST_STRONG_ISOLATE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_LEFT_TO_RIGHT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_LEFT_TO_RIGHT_EMBEDDING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_LEFT_TO_RIGHT_ISOLATE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_LEFT_TO_RIGHT_OVERRIDE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_OTHER_NEUTRAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_POP_DIRECTIONAL_FORMAT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_POP_DIRECTIONAL_ISOLATE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_RIGHT_TO_LEFT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_RIGHT_TO_LEFT_ARABIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_RIGHT_TO_LEFT_EMBEDDING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_RIGHT_TO_LEFT_ISOLATE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_RIGHT_TO_LEFT_OVERRIDE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_SEGMENT_SEPARATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_DIRECTION_WHITE_SPACE_NEUTRAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_NAME_ALIAS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CHAR_NAME_CHOICE_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CODEPOINT_MAX",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "CODEPOINT_MIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_CANONICAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_CIRCLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_COMPAT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_FINAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_FONT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_FRACTION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_INITIAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_ISOLATED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_MEDIAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_NARROW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_NOBREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_NONE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_SMALL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_SQUARE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_SUB",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_SUPER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_VERTICAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "DT_WIDE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_AMBIGUOUS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_FULLWIDTH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_HALFWIDTH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_NARROW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_NEUTRAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EA_WIDE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "EXTENDED_CHAR_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "FOLD_CASE_DEFAULT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "FOLD_CASE_EXCLUDE_SPECIAL_I",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_CONTROL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_CR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_EXTEND",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_L",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_LF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_LV",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_LVT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_OTHER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_PREPEND",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_REGIONAL_INDICATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_SPACING_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_T",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "GCB_V",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_LEADING_JAMO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_LVT_SYLLABLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_LV_SYLLABLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_NOT_APPLICABLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_TRAILING_JAMO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "HST_VOWEL_JAMO",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_AIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_ALAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_ALEF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_BEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_BETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_BURUSHASKI_YEH_BARREE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_DAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_DALATH_RISH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_E",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_FARSI_YEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_FE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_FEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_FINAL_SEMKATH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_GAF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_GAMAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_HAH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_HAMZA_ON_HEH_GOAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_HE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_HEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_HEH_GOAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_HETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_KAF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_KAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_KHAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_KNOTTED_HEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_LAM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_LAMADH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_ALEPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_AYIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_BETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_DALETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_DHAMEDH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_FIVE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_GIMEL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_HETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_HUNDRED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_KAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_LAMEDH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_MEM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_NUN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_ONE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_PE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_QOPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_RESH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_SADHE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_SAMEKH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_TAW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_TEN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_TETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_THAMEDH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_TWENTY",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_WAW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_YODH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MANICHAEAN_ZAYIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MEEM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_MIM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_NOON",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_NO_JOINING_GROUP",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_NUN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_NYA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_PE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_QAF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_QAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_REH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_REVERSED_PE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_ROHINGYA_YEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SAD",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SADHE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SEEN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SEMKATH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SHIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_STRAIGHT_WAW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SWASH_KAF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_SYRIAC_WAW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_TAH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_TAW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_TEH_MARBUTA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_TEH_MARBUTA_GOAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_TETH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_WAW",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_YEH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_YEH_BARREE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_YEH_WITH_TAIL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_YUDH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_YUDH_HE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_ZAIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JG_ZHAIN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_DUAL_JOINING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_JOIN_CAUSING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_LEFT_JOINING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_NON_JOINING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_RIGHT_JOINING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "JT_TRANSPARENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_ALPHABETIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_AMBIGUOUS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_BREAK_AFTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_BREAK_BEFORE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_BREAK_BOTH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_BREAK_SYMBOLS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_CARRIAGE_RETURN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_CLOSE_PARENTHESIS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_CLOSE_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_COMBINING_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_COMPLEX_CONTEXT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_CONDITIONAL_JAPANESE_STARTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_CONTINGENT_BREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_EXCLAMATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_GLUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_H2",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_H3",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_HEBREW_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_HYPHEN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_IDEOGRAPHIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_INFIX_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_INSEPARABLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_INSEPERABLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_JL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_JT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_JV",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_LINE_FEED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_MANDATORY_BREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_NEXT_LINE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_NONSTARTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_OPEN_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_POSTFIX_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_PREFIX_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_QUOTATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_REGIONAL_INDICATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_SPACE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_SURROGATE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_UNKNOWN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_WORD_JOINER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LB_ZWSPACE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "LONG_PROPERTY_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "NO_NUMERIC_VALUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "NT_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "NT_DECIMAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "NT_DIGIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "NT_NONE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "NT_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_AGE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ALPHABETIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ASCII_HEX_DIGIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BIDI_CLASS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BIDI_CONTROL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BIDI_MIRRORED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BIDI_MIRRORING_GLYPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BIDI_PAIRED_BRACKET",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BIDI_PAIRED_BRACKET_TYPE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BINARY_LIMIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BINARY_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_BLOCK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CANONICAL_COMBINING_CLASS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CASED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CASE_FOLDING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CASE_IGNORABLE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CASE_SENSITIVE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CHANGES_WHEN_CASEFOLDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CHANGES_WHEN_CASEMAPPED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CHANGES_WHEN_LOWERCASED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CHANGES_WHEN_NFKC_CASEFOLDED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CHANGES_WHEN_TITLECASED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_CHANGES_WHEN_UPPERCASED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DASH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DECOMPOSITION_TYPE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DEFAULT_IGNORABLE_CODE_POINT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DEPRECATED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DIACRITIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DOUBLE_LIMIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_DOUBLE_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_EAST_ASIAN_WIDTH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_EXTENDER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_FULL_COMPOSITION_EXCLUSION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_GENERAL_CATEGORY",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_GENERAL_CATEGORY_MASK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_GRAPHEME_BASE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_GRAPHEME_CLUSTER_BREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_GRAPHEME_EXTEND",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_GRAPHEME_LINK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_HANGUL_SYLLABLE_TYPE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_HEX_DIGIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_HYPHEN",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_IDEOGRAPHIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_IDS_BINARY_OPERATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_IDS_TRINARY_OPERATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ID_CONTINUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ID_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_INT_LIMIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_INT_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_INVALID_CODE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ISO_COMMENT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_JOINING_GROUP",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_JOINING_TYPE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_JOIN_CONTROL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_LEAD_CANONICAL_COMBINING_CLASS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_LINE_BREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_LOGICAL_ORDER_EXCEPTION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_LOWERCASE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_LOWERCASE_MAPPING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_MASK_LIMIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_MASK_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_MATH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NAME_CHOICE_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFC_INERT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFC_QUICK_CHECK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFD_INERT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFD_QUICK_CHECK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFKC_INERT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFKC_QUICK_CHECK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFKD_INERT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NFKD_QUICK_CHECK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NONCHARACTER_CODE_POINT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NUMERIC_TYPE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_NUMERIC_VALUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_OTHER_PROPERTY_LIMIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_OTHER_PROPERTY_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_PATTERN_SYNTAX",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_PATTERN_WHITE_SPACE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_POSIX_ALNUM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_POSIX_BLANK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_POSIX_GRAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_POSIX_PRINT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_POSIX_XDIGIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_QUOTATION_MARK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_RADICAL",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SCRIPT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SCRIPT_EXTENSIONS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SEGMENT_STARTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SENTENCE_BREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SIMPLE_CASE_FOLDING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SIMPLE_LOWERCASE_MAPPING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SIMPLE_TITLECASE_MAPPING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SIMPLE_UPPERCASE_MAPPING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_SOFT_DOTTED",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_STRING_LIMIT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_STRING_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_S_TERM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_TERMINAL_PUNCTUATION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_TITLECASE_MAPPING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_TRAIL_CANONICAL_COMBINING_CLASS",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_UNICODE_1_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_UNIFIED_IDEOGRAPH",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_UPPERCASE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_UPPERCASE_MAPPING",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_VARIATION_SELECTOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_WHITE_SPACE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_WORD_BREAK",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_XID_CONTINUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "PROPERTY_XID_START",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_ATERM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_CLOSE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_CR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_EXTEND",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_FORMAT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_LF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_LOWER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_OLETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_OTHER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_SCONTINUE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_SEP",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_SP",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_STERM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SB_UPPER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "SHORT_PROPERTY_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "UNICODE_10_CHAR_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "UNICODE_CHAR_NAME",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "UNICODE_VERSION",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_ALETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_COUNT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_CR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_DOUBLE_QUOTE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_EXTEND",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_EXTENDNUMLET",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_FORMAT",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_HEBREW_LETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_KATAKANA",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_LF",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_MIDLETTER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_MIDNUM",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_MIDNUMLET",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_NEWLINE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_NUMERIC",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_OTHER",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_REGIONAL_INDICATOR",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 32,
+        "class_name": "IntlChar",
+        "name": "WB_SINGLE_QUOTE",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    }
+]
