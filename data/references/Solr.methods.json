@@ -2562,6 +2562,16 @@
     {
         "ext_name_fk": 72,
         "class_name": "SolrUtils",
+        "name": "getSolrStats",
+        "static": true,
+        "ext_min": "0.9.11",
+        "ext_max": "",
+        "php_min": "5.2.3",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 72,
+        "class_name": "SolrUtils",
         "name": "getSolrVersion",
         "static": true,
         "ext_min": "0.9.11",
