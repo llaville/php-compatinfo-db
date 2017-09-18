@@ -1,0 +1,11 @@
+[
+    {
+        "ext_name_fk": 20,
+        "name": "GEOIP_NETSPEED_EDITION_REV1",
+        "ext_min": "1.1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]
