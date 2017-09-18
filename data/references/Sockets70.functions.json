@@ -1,0 +1,12 @@
+[
+    {
+        "ext_name_fk": 71,
+        "name": "socket_export_stream",
+        "ext_min": "7.0.7",
+        "ext_max": "",
+        "php_min": "7.0.7RC1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]
