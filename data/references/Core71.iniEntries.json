@@ -1,0 +1,10 @@
+[
+    {
+        "ext_name_fk": 7,
+        "name": "hard_timeout",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": ""
+    }
+]
