@@ -1,0 +1,218 @@
+[
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_KEEPALIVE_IDLE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_KEEPALIVE_INTERVAL",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_KEEPALIVE_PROBES",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_SASL_NOCANON",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_SASL_USERNAME",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CACERTDIR",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CACERTFILE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CERTFILE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CIPHER_SUITE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CRLCHECK",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CRLFILE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CRL_ALL",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CRL_NONE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_CRL_PEER",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_DHFILE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_KEYFILE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PACKAGE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_MIN",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_SSL2",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_SSL3",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_TLS1_0",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_TLS1_1",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_TLS1_2",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 35,
+        "name": "LDAP_OPT_X_TLS_RANDOM_FILE",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]
