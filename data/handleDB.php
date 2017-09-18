@@ -306,12 +306,12 @@ class DbInitCommand extends Command
     {
         $majorReleases = array(
             'core' => array(
-                'classes'    => array('4', '5', '7'),
-                'constants'  => array('4', '5'),
+                'classes'    => array('4', '5', '7', '71'),
+                'constants'  => array('4', '5', '71'),
                 'functions'  => array('4', '5', '7'),
-                'iniEntries' => array('4', '5', '7'),
+                'iniEntries' => array('4', '5', '7', '71'),
                 'interfaces' => array('5', '7'),
-                'releases'   => array('4', '5', '7'),
+                'releases'   => array('4', '5', '70', '71'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
@@ -319,7 +319,7 @@ class DbInitCommand extends Command
                 'functions'  => array('4', '5', '7'),
                 'iniEntries' => array('4', '5', '7'),
                 'releases'   => array('4', '5', '7'),
-                'methods'    => array('4', '5'),
+                'methods'    => array('4', '5', '7', '71'),
             ),
             'apcu' => array(
                 'classes'    => array('5'),
@@ -335,6 +335,24 @@ class DbInitCommand extends Command
                 'methods'    => array(''),
                 'releases'   => array(''),
             ),
+            'bcmath' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'bz2' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'calendar' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'ctype' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'curl' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'date' => array(
+                'releases'   => array('', '70', '71'),
+            ),
             'dom' => array(
                 'classes'    => array(''),
                 'constants'  => array(''),
@@ -342,11 +360,31 @@ class DbInitCommand extends Command
                 'methods'    => array(''),
                 'releases'   => array(''),
             ),
+            'filter' => array(
+                'constants'  => array('', '70', '71'),
+                'releases'   => array('', '70', '71'),
+            ),
+            'ftp' => array(
+                'constants'  => array('', '56'),
+                'releases'   => array('', '70', '71'),
+            ),
+            'gd' => array(
+                'releases'   => array('', '70', '71'),
+            ),
             'gender' => array(
                 'classes'    => array(''),
                 'releases'   => array('', '1'),
                 'const'      => array('', '1'),
                 'methods'    => array(''),
+            ),
+            'geoip' => array(
+                'iniEntries' => array('1'),
+                'constants'  => array('', '1'),
+                'functions'  => array('', '1'),
+                'releases'   => array('', '1'),
+            ),
+            'gmp' => array(
+                'releases'   => array('', '70', '71'),
             ),
             'haru' => array(
                 'releases'   => array('', '1'),
@@ -378,18 +416,22 @@ class DbInitCommand extends Command
                 'releases'   => array('1', '2'),
             ),
             'intl' => array(
-                'classes'    => array('1', '2', '5'),
+                'classes'    => array('1', '2', '5', '70'),
                 'constants'  => array('1', '2'),
                 'functions'  => array('1', '2', '5'),
                 'iniEntries' => array('1', '3'),
                 'releases'   => array('1', '2', '3', '5'),
-                'const'      => array('1', '2', '5'),
-                'methods'    => array('1', '2', '5'),
+                'const'      => array('1', '2', '5', '70'),
+                'methods'    => array('1', '2', '5', '70', '71'),
             ),
             'jsmin' => array(
                 'constants'  => array(''),
                 'functions'  => array(''),
                 'releases'   => array('', '1', '2'),
+            ),
+            'ldap' => array(
+                'constants'  => array('', '70', '71'),
+                'releases'   => array('', '70', '71'),
             ),
             'lzf' => array(
                 'functions'  => array('', '1'),
@@ -400,8 +442,11 @@ class DbInitCommand extends Command
                 'constants'  => array(''),
                 'functions'  => array(''),
                 'iniEntries' => array(''),
-                'releases'   => array('', '2'),
+                'releases'   => array('', '2', '3'),
                 'methods'    => array(''),
+            ),
+            'mbstring' => array(
+                'releases'   => array('', '70', '71'),
             ),
             'mongo' => array(
                 'classes'    => array('', '1'),
@@ -415,17 +460,25 @@ class DbInitCommand extends Command
             ),
             'msgpack' => array(
                 'classes'    => array(''),
+                'constants'  => array('2'),
                 'functions'  => array(''),
                 'iniEntries' => array(''),
-                'releases'   => array(''),
+                'releases'   => array('', '2'),
                 'const'      => array(''),
                 'methods'    => array(''),
+            ),
+            'mysqli' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'openssl' => array(
+                'constants'  => array('', '71'),
+                'releases'   => array('', '70', '71'),
             ),
             'oauth' => array(
                 'classes'    => array('', '1'),
                 'constants'  => array('', '1'),
                 'functions'  => array(''),
-                'releases'   => array('', '1'),
+                'releases'   => array('', '1', '2'),
                 'methods'    => array('', '1'),
             ),
             'pdflib' => array(
@@ -433,6 +486,10 @@ class DbInitCommand extends Command
                 'functions'  => array('2', '3'),
                 'releases'   => array('1', '2', '3'),
                 'methods'    => array('2', '3'),
+            ),
+            'pgsql' => array(
+                'constants'  => array('', '71'),
+                'releases'   => array('', '70', '71'),
             ),
             'pthreads' => array(
                 'classes'    => array('', '1', '2'),
@@ -462,6 +519,18 @@ class DbInitCommand extends Command
                 'releases'   => array('', '1'),
                 'methods'    => array('', '1'),
             ),
+            'shmop' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'soap' => array(
+                'methods'    => array(''),
+                'releases'   => array('', '70', '71'),
+            ),
+            'sockets' => array(
+                'constants'  => array('', '70'),
+                'functions'  => array('', '70'),
+                'releases'   => array('', '70', '71'),
+            ),
             'solr' => array(
                 'classes'    => array('', '1', '2'),
                 'constants'  => array(''),
@@ -470,14 +539,23 @@ class DbInitCommand extends Command
                 'const'      => array('', '2'),
                 'methods'    => array('', '1', '2'),
             ),
-            'spl' => array(
-                'methods'    => array('5', '7'),
-            ),
             'sphinx' => array(
                 'classes'    => array(''),
                 'constants'  => array('', '1'),
                 'releases'   => array('', '1'),
                 'methods'    => array(''),
+            ),
+            'spl' => array(
+                'methods'    => array('5', '70'),
+                'releases'   => array('', '70', '71'),
+            ),
+            'sqlite3' => array(
+                'constants'  => array('', '71'),
+                'methods'    => array(''),
+                'releases'   => array('', '70', '71'),
+            ),
+            'ssh2' => array(
+                'releases'   => array('', '1'),
             ),
             'stomp' => array(
                 'classes'    => array(''),
@@ -491,6 +569,10 @@ class DbInitCommand extends Command
                 'constants'  => array('', '1'),
                 'functions'  => array(''),
                 'releases'   => array('', '1'),
+            ),
+            'tidy' => array(
+                'releases'   => array('', '70', '71'),
+                'methods'    => array(''),
             ),
             'uopz' => array(
                 'constants'  => array('2'),
@@ -520,10 +602,17 @@ class DbInitCommand extends Command
                 'releases'   => array('', '1'),
                 'methods'    => array(''),
             ),
+            'xmlrpc' => array(
+                'releases'   => array('', '70', '71'),
+            ),
+            'xsl' => array(
+                'releases'   => array('', '70', '71'),
+            ),
             'zendopcache' => array(
                 'functions'  => array('7'),
                 'releases'   => array('7'),
                 'iniEntries' => array('7'),
+                'releases'   => array('', '7', '71'),
             ),
             'zip' => array(
                 'functions'  => array('1'),
@@ -969,6 +1058,8 @@ class DbReleaseCommand extends Command
 
             'always_populate_raw_post_data'         => ExtensionFactory::LATEST_PHP_5_6,
             'asp_tags'                              => ExtensionFactory::LATEST_PHP_5_6,
+
+            'exit_on_timeout'                       => ExtensionFactory::LATEST_PHP_7_0,
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
@@ -1103,6 +1194,16 @@ class DbReleaseCommand extends Command
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
+        $refName = 'Intl';
+        $ext     = 'methods';
+        $major   = '1';
+        $entry   = 'php_max';
+        $names   = array(
+            // IntlDateFormatter
+            'setTimeZoneId'                         => ExtensionFactory::LATEST_PHP_5_6,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
         $refName = 'Mcrypt';
         $ext     = 'functions';
         $major   = '';
@@ -1149,6 +1250,16 @@ class DbReleaseCommand extends Command
             'MYSQLI_RPL_ADMIN'                      => ExtensionFactory::LATEST_PHP_5_2,
             'MYSQLI_RPL_MASTER'                     => ExtensionFactory::LATEST_PHP_5_2,
             'MYSQLI_RPL_SLAVE'                      => ExtensionFactory::LATEST_PHP_5_2,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
+        $refName = 'Oauth';
+        $ext     = 'methods';
+        $major   = '';
+        $entry   = 'php_max';
+        $names   = array(
+            // OAuth
+            '__destruct'                            => ExtensionFactory::LATEST_PHP_5_6,
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
@@ -1289,6 +1400,235 @@ class DbReleaseCommand extends Command
                     $element[$entry] = $names['*'];
                 }
             }
+            $this->writeJsonFile($refName, $ext, $major, $data);
+        }
+    }
+}
+
+/**
+ * Add NEW release on each extensions that follow PHP version tagging strategy
+ */
+class DbPublishCommand extends Command
+{
+    protected function configure()
+    {
+        $this->setName('db:publish:php')
+            ->setDescription('Add new PHP release')
+            ->addArgument(
+                'rel_version',
+                InputArgument::REQUIRED,
+                'New PHP release version'
+            )
+            ->addArgument(
+                'rel_date',
+                InputArgument::OPTIONAL,
+                'New PHP release date',
+                date('Y-m-d')
+            )
+            ->addArgument(
+                'rel_state',
+                InputArgument::OPTIONAL,
+                'New PHP release state (alpha, beta, RC, stable)',
+                'stable'
+            )
+        ;
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        $relVersion = trim($input->getArgument('rel_version'));
+        $relDate    = trim($input->getArgument('rel_date'));
+        $relState   = trim($input->getArgument('rel_state'));
+
+        list($maj, $min, $rel) = sscanf($relVersion, '%d.%d.%s');
+
+        $release = [];
+        $refs    = [];
+
+        $extId   = 7;
+        $refName = 'Core';
+        $ext     = 'releases';
+        $major   = $maj . $min;
+        $release[] = array($extId, $refName, $ext, $major);
+
+        $extId   = 78;
+        $refName = 'Standard';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // @see  i.e: opcache extension version is now PHP version since 7.0.8RC1
+        // @link https://github.com/llaville/php-compatinfo-db/issues/5
+        $extId   = 100;
+        $refName = 'Zendopcache';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // bcmath extension version is now PHP version since 7.0.0alpha1
+        $extId   = 4;
+        $refName = 'Bcmath';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // bz2 extension version is now PHP version since 7.0.0alpha1
+        $extId   = 5;
+        $refName = 'Bz2';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // calendar extension version is now PHP version since 7.0.0alpha1
+        $extId   = 6;
+        $refName = 'Calendar';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // ctype extension version is now PHP version since 7.0.0alpha1
+        $extId   = 8;
+        $refName = 'Ctype';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // curl extension version is now PHP version since 7.0.0alpha1
+        $extId   = 9;
+        $refName = 'Curl';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // date extension version is now PHP version since 7.0.0alpha1
+        $extId   = 10;
+        $refName = 'Date';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // dom extension version does not follow PHP Version
+        $extId   = 11;
+
+        // enchant extension version does not follow PHP Version
+        $extId   = 12;
+
+        // ereg extension was deprecated since PHP 5.3 and was removed in PHP 7
+        $extId   = 13;
+
+        // exif extension version does not follow PHP Version
+        $extId   = 14;
+
+        // fileinfo extension version does not follow PHP Version
+        $extId   = 15;
+
+        // filter extension version is now PHP version since 7.0.0alpha1
+        $extId   = 16;
+        $refName = 'Filter';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // ftp extension version is now PHP version since 7.0.0alpha1
+        $extId   = 17;
+        $refName = 'Ftp';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // gd extension version is now PHP version since 7.0.0alpha1
+        $extId   = 18;
+        $refName = 'Gd';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // geoip extension version does not follow PHP Version
+        $extId   = 20;
+
+        // gmp extension version is now PHP version since 7.0.0alpha1
+        $extId   = 22;
+        $refName = 'Gmp';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // intl extension version does not follow PHP Version
+        $extId   = 32;
+
+        // ldap extension version is now PHP version since 7.0.0alpha1
+        $extId   = 35;
+        $refName = 'Ldap';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // lzf extension version does not follow PHP Version
+        $extId   = 38;
+
+        // mailparse extension version does not follow PHP Version
+        $extId   = 39;
+
+        // mbstring extension version is now PHP version since 7.0.0alpha1
+        $extId   = 40;
+        $refName = 'Mbstring';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // mysqli extension version is now PHP version since 7.0.0alpha1
+        $extId   = 49;
+        $refName = 'Mysqli';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // openssl extension version is now PHP version since 7.0.0alpha1
+        $extId   = 52;
+        $refName = 'Openssl';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // pgsql extension version is now PHP version since 7.0.0alpha1
+        $extId   = 57;
+        $refName = 'Pgsql';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // shmop extension version is now PHP version since 7.0.0alpha1
+        $extId   = 67;
+        $refName = 'Shmop';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // soap extension version is now PHP version since 7.0.0alpha1
+        $extId   = 70;
+        $refName = 'Soap';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // sockets extension version is now PHP version since 7.0.0alpha1
+        $extId   = 71;
+        $refName = 'Sockets';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // spl extension version is now PHP version since 7.0.0alpha1
+        $extId   = 74;
+        $refName = 'Spl';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // sqlite3 extension version is now PHP version since 7.0.0alpha1
+        $extId   = 75;
+        $refName = 'Sqlite3';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // tidy extension version is now PHP version since 7.0.0alpha1
+        $extId   = 85;
+        $refName = 'Tidy';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // xmlrpc extension version is now PHP version since 7.0.0alpha1
+        $extId   = 95;
+        $refName = 'Xmlrpc';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // xsl extension version is now PHP version since 7.0.0alpha1
+        $extId   = 97;
+        $refName = 'Xsl';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // Add NEW release on each extensions that follow PHP version tagging strategy
+        while (!empty($release)) {
+            list($extId, $refName, $ext, $major) = array_pop($release);
+
+            $data = $this->readJsonFile($refName, $ext, $major);
+
+            if (!$data) {
+                if (json_last_error() !== JSON_ERROR_NONE) {
+                    $error = sprintf('Cannot decode file %s.%s.json', $refName . $major, $ext);
+                    $output->writeln(
+                        sprintf('<error>%s</error>', $error)
+                    );
+                    return;
+                }
+                $data = [];
+            }
+
+            $data[] = [
+                'ext_name_fk'   => $extId,
+                'rel_version'   => $relVersion,
+                'rel_date'      => $relDate,
+                'rel_state'     => $relState,
+                'ext_max'       => '',
+                'php_min'       => $relVersion,
+                'php_max'       => '',
+            ];
             $this->writeJsonFile($refName, $ext, $major, $data);
         }
     }
@@ -1582,6 +1922,7 @@ class DbHandleApplication extends Application
         $defaultCommands[] = new DbInitCommand();
         $defaultCommands[] = new DbBuildExtCommand();
         $defaultCommands[] = new DbReleaseCommand();
+        $defaultCommands[] = new DbPublishCommand();
         $defaultCommands[] = new DbListCommand();
         $defaultCommands[] = new DbShowCommand();
 
@@ -1620,5 +1961,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.24.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.24.0RC1');
 $application->run();
