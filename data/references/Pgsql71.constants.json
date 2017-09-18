@@ -1,0 +1,29 @@
+[
+    {
+        "ext_name_fk": 57,
+        "name": "PGSQL_NOTICE_LAST",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 57,
+        "name": "PGSQL_NOTICE_ALL",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 57,
+        "name": "PGSQL_NOTICE_CLEAR",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]
