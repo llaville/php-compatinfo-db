@@ -6,11 +6,47 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.1.9
 - Support to PHP 7.0.23
 - Support to PHP 7.0.22
-- Mongo reference updated to version 1.6.15 (stable)
+
+### Changed
+
+- APCu reference updated to version 5.1.8 (stable)
+- APCu reference updated to version 4.0.11 (stable)
+- Filter reference updated
+- Ftp reference updated
+- GD reference updated
+- Geoip reference updated
+- Gmp reference updated
+- Imagick reference updated to version 3.4.3 (stable)
+- Intl reference updated
+- Ldap reference updated
+- Mailparse reference updated
+- Mbstring reference updated
+- Mongo reference updated to version 1.6.16 (stable)
+- Msgpack reference updated
+- Mysqli reference updated
+- OAuth reference updated
+- Openssl reference updated
+- Pgsql reference updated
+- SPL reference updated
+- Rar reference updated to version 4.0.0 (stable)
 - Redis reference updated to version 3.1.3 (stable)
+- Soap reference updated
+- Sockets reference updated
+- Solr reference updated
+- Sphinx reference updated
+- SQLite3 reference updated
+- SSH2 reference updated
+- Sync reference updated
+- Tidy reference updated
+- Varnish reference updated
 - Xdebug reference updated to version 2.5.4 (stable)
+- Xsl reference updated
+- Zend OPCache reference updated
 
 ## [1.23.0] - 2017-07-17
 
