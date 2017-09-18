@@ -42,6 +42,15 @@ class ZendopcacheExtensionTest extends GenericTest
      */
     public static function setUpBeforeClass()
     {
+        self::$optionalcfgs = array(
+            // if HAVE_OPCACHE_FILE_CACHE
+            'opcache.file_cache',
+            'opcache.file_cache_only',
+            'opcache.file_cache_consistency_checks',
+            // if ENABLE_FILE_CACHE_FALLBACK
+            'opcache.file_cache_fallback',
+        );
+
         if (PATH_SEPARATOR == ':') {
             // Windows only
             self::$optionalcfgs = array(

@@ -52,5 +52,167 @@
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": "5.5.0"
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.6",
+        "rel_date": "2016-04-28",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.7",
+        "rel_date": "2016-05-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.8",
+        "rel_date": "2016-06-23",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.8",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.9",
+        "rel_date": "2016-07-21",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.9",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.10",
+        "rel_date": "2016-08-18",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.10",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.11",
+        "rel_date": "2016-09-15",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.11",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.12",
+        "rel_date": "2016-10-14",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.12",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.13",
+        "rel_date": "2016-11-10",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.13",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.14",
+        "rel_date": "2016-12-08",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.14",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.15",
+        "rel_date": "2017-01-19",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.15",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.16",
+        "rel_date": "2017-02-16",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.16",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.17",
+        "rel_date": "2017-03-16",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.17",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.18",
+        "rel_date": "2017-04-13",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.18",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.19",
+        "rel_date": "2017-05-11",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.19",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.20",
+        "rel_date": "2017-06-08",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.20",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.21",
+        "rel_date": "2017-07-06",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.21",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.22",
+        "rel_date": "2017-08-03",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.22",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "rel_version": "7.0.23",
+        "rel_date": "2017-08-31",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.23",
+        "php_max": ""
     }
 ]
