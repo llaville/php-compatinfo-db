@@ -736,5 +736,14 @@
         "php_min": "4.0.0",
         "php_max": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 18,
+        "name": "IMG_WEBP",
+        "ext_min": "5.6.18",
+        "ext_max": "",
+        "php_min": "5.6.18",
+        "php_max": "",
+        "php_excludes": ""
     }
 ]
