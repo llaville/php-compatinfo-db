@@ -48,16 +48,37 @@ class MysqliExtensionTest extends GenericTest
             'MYSQLI_OPT_NET_READ_BUFFER_SIZE',
             'MYSQLI_OPT_INT_AND_FLOAT_NATIVE',
             'MYSQLI_ASYNC',
+            'MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT',
+            // Requires CLIENT_SSL_VERIFY_SERVER_CERT
+            'MYSQLI_CLIENT_SSL_VERIFY_SERVER_CERT',
+            // Requires (MYSQL_VERSION_ID > 51122 and MYSQL_VERSION_ID < 60000) or MYSQL_VERSION_ID > 60003 or MYSQLI_USE_MYSQLND
             'MYSQLI_ON_UPDATE_NOW_FLAG',
             // Requires REFRESH_BACKUP_LOG
             'MYSQLI_REFRESH_BACKUP_LOG',
             // Requires SERVER_QUERY_WAS_SLOW
             'MYSQLI_SERVER_QUERY_WAS_SLOW',
-            // requires SERVER_PS_OUT_PARAMS
+            // Requires SERVER_PS_OUT_PARAMS
             'MYSQLI_SERVER_PS_OUT_PARAMS',
-            // requires MYSQL_VERSION_ID >= 50611 or MYSQLI_USE_MYSQLND
+            // Requires MYSQL_VERSION_ID >= 50611 or MYSQLI_USE_MYSQLND
             'MYSQLI_OPT_CAN_HANDLE_EXPIRED_PASSWORDS',
             'MYSQLI_CLIENT_CAN_HANDLE_EXPIRED_PASSWORDS',
+            // Requires MYSQL_VERSION_ID >= 50605 or MYSQLI_USE_MYSQLND
+            'MYSQLI_SERVER_PUBLIC_KEY',
+            // Requires MYSQL_VERSION_ID >= 50110 or MYSQLI_USE_MYSQLND
+            'MYSQLI_OPT_SSL_VERIFY_SERVER_CERT',
+            // Requires MYSQL_VERSION_ID >= 50007 or MYSQLI_USE_MYSQLND
+            'MYSQLI_STMT_ATTR_PREFETCH_ROWS',
+            // Requires MYSQL_VERSION_ID >= 50003 or MYSQLI_USE_MYSQLND
+            'MYSQLI_STMT_ATTR_CURSOR_TYPE',
+            'MYSQLI_CURSOR_TYPE_NO_CURSOR',
+            'MYSQLI_CURSOR_TYPE_READ_ONLY',
+            'MYSQLI_CURSOR_TYPE_FOR_UPDATE',
+            'MYSQLI_CURSOR_TYPE_SCROLLABLE',
+            // Requires MYSQL_VERSION_ID > 50002 or MYSQLI_USE_MYSQLND
+            'MYSQLI_TYPE_NEWDECIMAL',
+            'MYSQLI_TYPE_BIT',
+            // Requires MYSQL_VERSION_ID >= 50001 or MYSQLI_USE_MYSQLND
+            'MYSQLI_NO_DEFAULT_VALUE_FLAG',
         );
         self::$optionalfunctions = array(
             // Requires HAVE_EMBEDDED_MYSQLI

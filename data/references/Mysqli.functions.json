@@ -259,7 +259,7 @@
         "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "",
-        "parameters": "",
+        "parameters": "5.0.0, 5.0.0, 7.1.6RC1",
         "php_excludes": ""
     },
     {
@@ -702,7 +702,7 @@
         "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "",
-        "parameters": "",
+        "parameters": "5.0.0, 5.0.0, 7.1.6RC1",
         "php_excludes": ""
     },
     {
@@ -722,7 +722,7 @@
         "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "",
-        "parameters": "",
+        "parameters": "5.0.0, 5.0.0, 7.1.6RC1",
         "php_excludes": ""
     },
     {
