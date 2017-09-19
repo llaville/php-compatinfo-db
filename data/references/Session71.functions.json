@@ -1,0 +1,22 @@
+[
+    {
+        "ext_name_fk": 66,
+        "name": "session_create_id",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 66,
+        "name": "session_gc",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

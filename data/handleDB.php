@@ -519,6 +519,12 @@ class DbInitCommand extends Command
                 'releases'   => array('', '1'),
                 'methods'    => array('', '1'),
             ),
+            'session' => array(
+                'interfaces' => array('', '70'),
+                'functions'  => array('', '71'),
+                'iniEntries' => array('', '70', '71'),
+                'releases'   => array('', '70', '71'),
+            ),
             'shmop' => array(
                 'releases'   => array('', '70', '71'),
             ),
@@ -1274,6 +1280,18 @@ class DbReleaseCommand extends Command
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
+        $refName = 'Session';
+        $ext     = 'iniEntries';
+        $major   = '';
+        $entry   = 'php_max';
+        $names   = array(
+            'session.entropy_file'                  => ExtensionFactory::LATEST_PHP_7_0,
+            'session.entropy_length'                => ExtensionFactory::LATEST_PHP_7_0,
+            'session.hash_function'                 => ExtensionFactory::LATEST_PHP_7_0,
+            'session.hash_bits_per_character'       => ExtensionFactory::LATEST_PHP_7_0,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
         $refName = 'Spl';
         $ext     = 'interfaces';
         $major   = '';
@@ -1561,6 +1579,11 @@ class DbPublishCommand extends Command
         // pgsql extension version is now PHP version since 7.0.0alpha1
         $extId   = 57;
         $refName = 'Pgsql';
+        $release[] = array($extId, $refName, $ext, $major);
+
+        // session extension version is now PHP version since 7.0.0alpha1
+        $extId   = 66;
+        $refName = 'Session';
         $release[] = array($extId, $refName, $ext, $major);
 
         // shmop extension version is now PHP version since 7.0.0alpha1

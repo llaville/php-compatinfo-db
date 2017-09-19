@@ -35,6 +35,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - SPL reference updated
 - Rar reference updated to version 4.0.0 (stable)
 - Redis reference updated to version 3.1.3 (stable)
+- Session reference updated
 - Soap reference updated
 - Sockets reference updated
 - Solr reference updated
