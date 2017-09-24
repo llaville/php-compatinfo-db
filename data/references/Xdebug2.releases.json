@@ -466,5 +466,14 @@
         "ext_max": "",
         "php_min": "5.5.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "rel_version": "2.5.5",
+        "rel_date": "2017-06-21",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": ""
     }
 ]
