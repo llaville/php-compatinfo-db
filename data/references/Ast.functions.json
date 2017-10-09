@@ -38,5 +38,25 @@
         "php_max": "",
         "parameters": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 106,
+        "name": "ast\\get_metadata",
+        "ext_min": "0.1.6",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 106,
+        "name": "ast\\get_supported_versions",
+        "ext_min": "0.1.6",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
     }
 ]
