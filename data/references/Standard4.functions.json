@@ -585,7 +585,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "5.6.31",
+        "php_max": "5.6.32",
         "parameters": "",
         "php_excludes": "",
         "deprecated": "5.3.0"
@@ -596,7 +596,7 @@
         "ext_min": "4.0.5",
         "ext_max": "",
         "php_min": "4.0.5",
-        "php_max": "5.6.31",
+        "php_max": "5.6.32",
         "parameters": "",
         "php_excludes": "",
         "deprecated": "5.3.0"
@@ -2470,7 +2470,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "5.6.31",
+        "php_max": "5.6.32",
         "parameters": "",
         "php_excludes": "",
         "deprecated": "5.3.0"
@@ -3391,7 +3391,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "5.6.31",
+        "php_max": "5.6.32",
         "parameters": "",
         "php_excludes": "",
         "deprecated": "5.3.0"
@@ -3402,7 +3402,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "5.6.31",
+        "php_max": "5.6.32",
         "parameters": "",
         "php_excludes": "",
         "deprecated": "5.3.0"
