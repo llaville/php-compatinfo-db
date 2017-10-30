@@ -192,6 +192,7 @@ class StandardExtensionTest extends GenericTest
                 'DNS_SOA',
                 'DNS_PTR',
                 'DNS_HINFO',
+                'DNS_CAA',
                 'DNS_MX',
                 'DNS_TXT',
                 'DNS_SRV',
