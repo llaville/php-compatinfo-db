@@ -27,8 +27,8 @@ Version 1.25.0 support informations to latest PHP versions :
 * PHP 5.4.45
 * PHP 5.5.38
 * PHP 5.6.32
-* PHP 7.0.25
-* PHP 7.1.11
+* PHP 7.0.26
+* PHP 7.1.12
 
 Currently 106 extensions are referenced in the database.
 
