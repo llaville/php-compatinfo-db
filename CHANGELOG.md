@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Zip reference updated to version 1.15.2 (stable)
+
 ## [1.26.0] - 2017-11-24
 
 ### Added
