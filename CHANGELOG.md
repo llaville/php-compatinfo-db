@@ -8,7 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Redis reference updated to version 3.1.5 (stable)
+- Redis reference updated to version 3.1.6 (stable)
 - Zip reference updated to version 1.15.2 (stable)
 
 ## [1.26.0] - 2017-11-24
