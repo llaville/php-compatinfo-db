@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.27.0] - 2018-01-04
+
+### Added
+
+- Support to PHP 7.0.27
+
 ### Changed
 
 - APCu reference updated to version 5.1.9 (stable)

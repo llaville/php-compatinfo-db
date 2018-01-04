@@ -223,7 +223,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.0.26"
+        "php_max": "7.0.27"
     },
     {
         "ext_name_fk": 7,
