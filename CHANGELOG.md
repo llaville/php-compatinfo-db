@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.28.0] - 2018-01-08
+
+### Added
+
+- Support to PHP 5.6.33
+
 ## [1.27.0] - 2018-01-04
 
 ### Added
