@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Fixed
+
+- issue [GH-12](https://github.com/llaville/php-compatinfo-db/issues/12) $escape_char param of fputcsv() requires PHP = 5.5.4
+
 ## [1.28.0] - 2018-01-08
 
 ### Added
