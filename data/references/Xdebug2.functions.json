@@ -208,5 +208,75 @@
         "php_max": "",
         "parameters": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_is_debugger_active",
+        "ext_min": "2.6.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_set_filter",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_start_gcstats",
+        "ext_min": "2.6.0RC2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_stop_gcstats",
+        "ext_min": "2.6.0RC2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_get_gcstats_filename",
+        "ext_min": "2.6.0RC2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_get_gc_run_count",
+        "ext_min": "2.6.0RC2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 91,
+        "name": "xdebug_get_gc_total_collected_roots",
+        "ext_min": "2.6.0RC2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
     }
 ]

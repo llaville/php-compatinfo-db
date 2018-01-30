@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Xdebug reference updated to version 2.6.0 (stable)
+
 ### Fixed
 
 - issue [GH-12](https://github.com/llaville/php-compatinfo-db/issues/12) $escape_char param of fputcsv() requires PHP = 5.5.4
