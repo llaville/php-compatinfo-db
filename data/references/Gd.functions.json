@@ -766,7 +766,7 @@
         "ext_max": "",
         "php_min": "4.0.0",
         "php_max": "",
-        "parameters": "4.0.0, 4.0.0, 7.1.9, 7.1.9",
+        "parameters": "4.0.0, 4.0.0, 5.1.2, 5.1.3",
         "php_excludes": ""
     },
     {

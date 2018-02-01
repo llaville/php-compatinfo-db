@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Fixed
 
+- issue [GH-241](https://github.com/llaville/php-compat-info/issues/241) about imagepng (declared in php-compat-info project)
 - issue [GH-12](https://github.com/llaville/php-compatinfo-db/issues/12) $escape_char param of fputcsv() requires PHP = 5.5.4
 
 ## [1.28.0] - 2018-01-08
