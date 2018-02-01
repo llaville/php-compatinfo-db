@@ -124,5 +124,14 @@
         "ext_max": "",
         "php_min": "7.1.13",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 9,
+        "rel_version": "7.1.14",
+        "rel_date": "2018-02-01",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.14",
+        "php_max": ""
     }
 ]

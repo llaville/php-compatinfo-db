@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.29.0] - 2018-02-01
+
+### Added
+
+- Support to PHP 7.1.14
+
 ### Changed
 
 - Xdebug reference updated to version 2.6.0 (stable)
