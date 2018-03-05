@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Varnish reference updated to version 1.2.3 (stable)
+
 ## [1.30.0] - 2018-03-01
 
 ### Added
