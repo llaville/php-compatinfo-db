@@ -87,7 +87,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.0.28"
+        "php_max": "7.0.29"
     },
     {
         "ext_name_fk": 66,
@@ -95,7 +95,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.0.28"
+        "php_max": "7.0.29"
     },
     {
         "ext_name_fk": 66,
@@ -127,7 +127,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.0.28"
+        "php_max": "7.0.29"
     },
     {
         "ext_name_fk": 66,
@@ -135,7 +135,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.0.28"
+        "php_max": "7.0.29"
     },
     {
         "ext_name_fk": 66,
