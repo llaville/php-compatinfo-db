@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 5.6.35
+
 ### Changed
 
 - Varnish reference updated to version 1.2.3 (stable)
