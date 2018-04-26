@@ -50,7 +50,7 @@
         "ext_min": "4.2.0",
         "ext_max": "",
         "php_min": "4.2.0",
-        "php_max": "5.6.35",
+        "php_max": "5.6.36",
         "php_excludes": ""
     },
     {
@@ -122,7 +122,7 @@
         "ext_min": "4.2.0",
         "ext_max": "",
         "php_min": "4.2.0",
-        "php_max": "5.6.35",
+        "php_max": "5.6.36",
         "php_excludes": ""
     },
     {

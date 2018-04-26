@@ -20,13 +20,13 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * reference all ini entries
 * reference all releases
 
-Version 1.31.0 support informations to latest PHP versions :
+Version 1.32.0 support informations to latest PHP versions :
 
 * PHP 5.2.17
 * PHP 5.3.29
 * PHP 5.4.45
 * PHP 5.5.38
-* PHP 5.6.35
+* PHP 5.6.36
 * PHP 7.0.29
 * PHP 7.1.16
 
