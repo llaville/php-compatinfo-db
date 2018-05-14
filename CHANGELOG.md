@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Igbinary reference updated to version 2.0.6 (stable)
+
 ## [1.32.0] - 2018-04-26
 
 ### Added
