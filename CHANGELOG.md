@@ -14,7 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Igbinary reference updated to version 2.0.6 (stable)
+- Igbinary reference updated to version 2.0.7 (stable)
 - Varnish reference updated to version 1.2.4 (stable)
 
 ## [1.32.0] - 2018-04-26
