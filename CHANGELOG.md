@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- Support to PHP 7.1.20
 - Support to PHP 7.0.31
 
 ## [1.33.0] - 2018-07-05
