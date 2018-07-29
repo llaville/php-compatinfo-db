@@ -36,7 +36,7 @@ use Composer\Semver\Semver;
  * @since      Class available since Release 3.0.0RC1 of PHP_CompatInfo
  * @since      Class available since Release 1.0.0alpha1 of PHP_CompatInfo_Db
  */
-abstract class GenericTest extends \PHPUnit_Framework_TestCase
+abstract class GenericTest extends \PHPUnit\Framework\TestCase
 {
     const REF_ELEMENT_INI       = 1;
     const REF_ELEMENT_CONSTANT  = 2;

@@ -10,6 +10,7 @@
     stopOnRisky="false"
     stopOnSkipped="false"
     verbose="true"
+    beStrictAboutTestsThatDoNotTestAnything="false"
 >
     <filter>
         <whitelist>
