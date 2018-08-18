@@ -41,6 +41,7 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 # Requirements
 
 PHP 5.4 or greater
+PHPUnit 6 or greater (if you want to run unit tests)
 
 # Unit Tests
 
