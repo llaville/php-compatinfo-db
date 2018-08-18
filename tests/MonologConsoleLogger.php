@@ -8,7 +8,7 @@
  * @package    PHP_CompatInfo_Db
  * @subpackage Tests
  * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
+ * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
  * @version    GIT: $Id$
  * @link       http://php5.laurent-laville.org/compatinfo/
  */
@@ -37,7 +37,7 @@ use Bartlett\Monolog\Handler\GrowlHandler;
  * @package    PHP_CompatInfo_Db
  * @subpackage Tests
  * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
+ * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
  * @version    Release: @package_version@
  * @link       http://php5.laurent-laville.org/compatinfo/
  * @since      Class available since Release 4.2.0 of PHP_CompatInfo

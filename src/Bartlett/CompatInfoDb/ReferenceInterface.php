@@ -5,7 +5,7 @@
  * @category PHP
  * @package  PHP_CompatInfo_Db
  * @author   Laurent Laville <pear@laurent-laville.org>
- * @license  http://www.opensource.org/licenses/bsd-license.php  BSD License
+ * @license  https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
  * @version  GIT: $Id$
  * @link     http://php5.laurent-laville.org/compatinfo/
  */
@@ -18,7 +18,7 @@ namespace Bartlett\CompatInfoDb;
  * @category PHP
  * @package  PHP_CompatInfo_Db
  * @author   Laurent Laville <pear@laurent-laville.org>
- * @license  http://www.opensource.org/licenses/bsd-license.php  BSD License
+ * @license  https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
  * @version  Release: @package_version@
  * @link     http://php5.laurent-laville.org/compatinfo/
  * @since    Class available since Release 3.0.0RC1 of PHP_CompatInfo
