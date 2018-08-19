@@ -6,7 +6,6 @@
  * @package  PHP_CompatInfo_Db
  * @author   Laurent Laville <pear@laurent-laville.org>
  * @license  https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @version  GIT: $Id$
  * @link     http://php5.laurent-laville.org/compatinfo/
  */
 
@@ -21,7 +20,6 @@ use PDO;
  * @package  PHP_CompatInfo_Db
  * @author   Laurent Laville <pear@laurent-laville.org>
  * @license  https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @version  Release: @package_version@
  * @link     http://php5.laurent-laville.org/compatinfo/
  * @since    Class available since Release 3.6.0 of PHP_CompatInfo
  * @since    Class available since Release 1.0.0alpha1 of PHP_CompatInfo_Db

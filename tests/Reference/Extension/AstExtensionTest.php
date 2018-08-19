@@ -9,7 +9,6 @@
  * @subpackage Tests
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @version    GIT: $Id$
  * @link       http://php5.laurent-laville.org/compatinfo/
  * @since      Class available since Release 1.24.0 of PHP_CompatInfo_Db
  */
@@ -27,7 +26,6 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  * @subpackage Tests
  * @author     Laurent Laville <pear@laurent-laville.org>
  * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @version    Release: @package_version@
  * @link       http://php5.laurent-laville.org/compatinfo/
  */
 class AstExtensionTest extends GenericTest
