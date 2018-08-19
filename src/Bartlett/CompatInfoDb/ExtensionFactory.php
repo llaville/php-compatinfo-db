@@ -88,7 +88,7 @@ class ExtensionFactory implements ReferenceInterface
                     ? OPENSSL_VERSION_TEXT : false,
             );
 
-        } elseif ('imagemagick' == $name) {
+        } elseif (in_array('imagick', array($this->name, $extname))) {
             if (method_exists('Imagick', 'getVersion')) {
                 $v = \Imagick::getVersion();
                 if (preg_match('/ImageMagick ([0-9]+\.[0-9]+\.[0-9]+)/', $v['versionString'], $matches)) {

@@ -6,7 +6,7 @@ use Bartlett\CompatInfoDb\ExtensionFactory;
 
 $dump = false;
 
-$name = 'curl';
+$name = 'imagick';
 $ext  = new ExtensionFactory($name);
 
 printf('== Latest PHP platforms supported');
@@ -21,6 +21,9 @@ printf('== Details of %s extension', $name);
 echo PHP_EOL;
 
 printf('= Current version : %s', $ext->getCurrentVersion());
+echo PHP_EOL;
+
+printf('= Meta version : %s', var_export($ext->getMetaVersion(), true));
 echo PHP_EOL;
 
 $results = $dump ? print_r($ext->getReleases(), true) : count($ext->getReleases());
