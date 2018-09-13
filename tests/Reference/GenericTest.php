@@ -187,15 +187,15 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
             $elements = self::$obj->getConstants();
             $opt = 'optionalconstants';
 
-        } elseif ('testGetClassesFromReference' == $methodName) {
+        } elseif ('testGetClassesFromReference' === $methodName) {
             $elements = self::$obj->getClasses();
             $opt = 'optionalclasses';
 
-        } elseif ('testGetInterfacesFromReference' == $methodName) {
+        } elseif ('testGetInterfacesFromReference' === $methodName) {
             $elements = self::$obj->getInterfaces();
             $opt = 'optionalinterfaces';
 
-        } elseif ('testGetClassMethodsFromReference' == $methodName) {
+        } elseif ('testGetClassMethodsFromReference' === $methodName) {
             $elements = array();
 
             $methods = array_merge(
