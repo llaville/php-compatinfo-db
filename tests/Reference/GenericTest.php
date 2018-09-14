@@ -133,7 +133,8 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
             self::$ext = $name = 'zend opcache';
         }
 
-        self::$obj = new ExtensionFactory($name);
+        // delegate extension object instantiation later (on setUpBeforeClass)
+        self::$obj = $name;
     }
 
     /**
@@ -162,10 +163,28 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         }
     }
 
+    public static function tearDownAfterClass()
+    {
+        self::$optionalreleases    = array();
+        self::$optionalcfgs        = array();
+        self::$optionalconstants   = array();
+        self::$optionalfunctions   = array();
+        self::$optionalclasses     = array();
+        self::$optionalinterfaces  = array();
+        self::$optionalmethods     = array();
+
+        self::$ignoredcfgs         = array();
+        self::$ignoredconstants    = array();
+        self::$ignoredfunctions    = array();
+        self::$ignoredclasses      = array();
+        self::$ignoredinterfaces   = array();
+        self::$ignoredmethods      = array();
+    }
+
     /**
      * Generic Reference validator and producer
      *
-     * @return array()
+     * @return array
      */
     public function provideReferenceValues($methodName)
     {
@@ -173,6 +192,10 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
             $this->markTestSkipped(
                 sprintf('Extension %s is required.', self::$ext)
             );
+        }
+
+        if (is_string(self::$obj)) {
+            self::$obj = new ExtensionFactory(self::$obj);
         }
 
         if ('testGetIniEntriesFromReference' === $methodName) {
@@ -227,12 +250,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
             );
         }
 
-        return $this->buildDataset($elements, $opt);
-    }
-
-    protected function buildDataset($elements, $opt)
-    {
-        $dataset = array();
         foreach ($elements as $name => $range) {
             if (!empty($range['optional'])) {
                 self::${$opt}[] = $name;
@@ -257,9 +274,8 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
                     continue 2;
                 }
             }
-            $dataset[] = array($name, $range);
+            yield array($name, $range);
         }
-        return $dataset;
     }
 
     protected static function lib($name, $key = 'version_number')
@@ -347,10 +363,30 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
     /**
      *
      */
-    protected function checkValuesFromReference($element, $range, &$optional, &$ignored, $refElementType)
+    protected function checkValuesFromReference($element, $range, $refElementType)
     {
         if (in_array($range['ext.min'], self::$optionalreleases)) {
             return;
+        }
+
+        if (self::REF_ELEMENT_INI == $refElementType) {
+            $optional = self::$optionalcfgs;
+            $ignored = self::$ignoredcfgs;
+        } elseif (self::REF_ELEMENT_CONSTANT == $refElementType) {
+            $optional = self::$optionalconstants;
+            $ignored = self::$ignoredconstants;
+        } elseif (self::REF_ELEMENT_FUNCTION == $refElementType) {
+            $optional = self::$optionalfunctions;
+            $ignored = self::$ignoredfunctions;
+        } elseif (self::REF_ELEMENT_INTERFACE == $refElementType) {
+            $optional = self::$optionalinterfaces;
+            $ignored = self::$ignoredinterfaces;
+        } elseif (self::REF_ELEMENT_CLASS == $refElementType) {
+            $optional = self::$optionalclasses;
+            $ignored = self::$ignoredclasses;
+        } elseif (self::REF_ELEMENT_METHOD == $refElementType) {
+            $optional = self::$optionalmethods;
+            $ignored = self::$ignoredmethods;
         }
 
         $min = $range['php.min'];
@@ -496,8 +532,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         $this->checkValuesFromReference(
             $name,
             $range,
-            self::$optionalcfgs,
-            self::$ignoredcfgs,
             self::REF_ELEMENT_INI
         );
     }
@@ -545,8 +579,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         $this->checkValuesFromReference(
             $name,
             $range,
-            self::$optionalfunctions,
-            self::$ignoredfunctions,
             self::REF_ELEMENT_FUNCTION
         );
     }
@@ -591,8 +623,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         $this->checkValuesFromReference(
             $name,
             $range,
-            self::$optionalconstants,
-            self::$ignoredconstants,
             self::REF_ELEMENT_CONSTANT
         );
     }
@@ -642,8 +672,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         $this->checkValuesFromReference(
             $name,
             $range,
-            self::$optionalclasses,
-            self::$ignoredclasses,
             self::REF_ELEMENT_CLASS
         );
     }
@@ -702,8 +730,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         $this->checkValuesFromReference(
             $name,
             $range,
-            self::$optionalmethods,
-            self::$ignoredmethods,
             self::REF_ELEMENT_METHOD
         );
     }
@@ -843,8 +869,6 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         $this->checkValuesFromReference(
             $name,
             $range,
-            self::$optionalinterfaces,
-            self::$ignoredinterfaces,
             self::REF_ELEMENT_INTERFACE
         );
     }

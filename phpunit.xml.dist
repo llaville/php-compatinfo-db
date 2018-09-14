@@ -11,6 +11,7 @@
     stopOnSkipped="false"
     verbose="true"
     beStrictAboutTestsThatDoNotTestAnything="false"
+    processIsolation="false"
 >
     <filter>
         <whitelist>
@@ -19,7 +20,7 @@
     </filter>
     <testsuites>
         <testsuite name="CompatInfo Reference Test Suite">
-            <directory suffix="Test.php">tests/</directory>
+            <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
