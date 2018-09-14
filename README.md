@@ -40,7 +40,7 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 
 # Requirements
 
-PHP 5.4 or greater
+PHP 5.5 or greater
 PHPUnit 6 or greater (if you want to run unit tests)
 
 # Unit Tests
@@ -50,7 +50,7 @@ If you launch all tests, depending of your platform (CPU, memory), you may have 
 that PHPUnit do nothing for a long time.
 
 Reason is PHPUnit count all tests before running them. Sebastian Bergmann has opened
-a [ticket](https://github.com/sebastianbergmann/phpunit/issues/10) to solve this situation.
+a [ticket](https://github.com/sebastianbergmann/phpunit/issues/3213) to solve this situation.
 
 Alternative to this issue, is to used the Phing PHPUnitTask. This is really possible now PHPUnit
 provide a library-only PHAR (see ticket [#1925](https://github.com/sebastianbergmann/phpunit/issues/1925)).
