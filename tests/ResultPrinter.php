@@ -1,8 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Prints the result of a TestRunner run using a PSR-3 logger.
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category   PHP
  * @package    PHP_CompatInfo_Db
@@ -16,8 +19,10 @@ namespace Bartlett\Tests\CompatInfoDb;
 
 use Bartlett\LoggerTestListenerTrait;
 
+use PHPUnit\Framework\TestResult;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LogLevel;
+use SebastianBergmann\Timer\Timer;
 
 /**
  * Prints the result of a TestRunner run using a PSR-3 logger.
@@ -34,23 +39,23 @@ use Psr\Log\LogLevel;
  * @since      Class available since Release 4.2.0 of PHP_CompatInfo
  * @since      Class available since Release 1.0.0alpha1 of PHP_CompatInfo_Db
  */
-class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
+class ResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 {
     use LoggerTestListenerTrait, LoggerAwareTrait;
 
     /**
      * {@inheritDoc}
      */
-    public function __construct($out = null, $verbose = false, $colors = self::COLOR_DEFAULT, $debug = false, $numberOfColumns = 80)
+    public function __construct($out = null, bool $verbose = false, $colors = self::COLOR_DEFAULT, bool $debug = false, $numberOfColumns = 80, bool $reverse = false)
     {
-        parent::__construct($out, $verbose, $colors, $debug, $numberOfColumns);
+        parent::__construct($out, $verbose, $colors, $debug, $numberOfColumns, $reverse);
 
         if ($this->debug) {
             $minLevelOrList = LogLevel::INFO;
         } elseif ($this->verbose) {
             $minLevelOrList = LogLevel::NOTICE;
         } else {
-            $minLevelOrList = array(LogLevel::NOTICE, LogLevel::ERROR);
+            $minLevelOrList = [LogLevel::NOTICE, LogLevel::ERROR];
         }
 
         $console = new MonologConsoleLogger('ResultPrinter');
@@ -58,7 +63,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
 
         $handlers = $console->getHandlers();
         foreach ($handlers as &$handler) {
-            // attachs processors only to console handler
+            // attach processors only to console handler
             if ($handler instanceof \Monolog\Handler\FilterHandler) {
                 // new results presentation when color is supported or not
                 $handler->pushProcessor(array($this, 'messageProcessor'));
@@ -73,13 +78,13 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritDoc}
      */
-    public function printResult(\PHPUnit_Framework_TestResult $result)
+    public function printResult(TestResult $result): void
     {
         $this->printHeader();
         $this->printFooter($result);
     }
 
-    protected function printHeader()
+    protected function printHeader(): void
     {
         $stats  = $this->getStats();
         $suites = array_keys($stats);
@@ -97,14 +102,14 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
         }
 
         $this->logger->notice(
-            \PHP_Timer::resourceUsage() .
+            Timer::resourceUsage() .
             sprintf(", References: %d", $numReferences) .
             "\n",
             array('operation' => __FUNCTION__)
         );
     }
 
-    public function messageProcessor(array $record)
+    public function messageProcessor(array $record): array
     {
         $self  = $this;
         $debug = $this->debug;
@@ -209,7 +214,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
         return $record;
     }
 
-    public function suiteNameProcessor(array $record)
+    public function suiteNameProcessor(array $record): array
     {
         $context = $record['context'];
 
