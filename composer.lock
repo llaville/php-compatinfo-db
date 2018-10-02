@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cd86288bb767e9e1231221cf5e454e1",
+    "content-hash": "0fab45207d93cdf77caa07207da30f1c",
     "packages": [
         {
             "name": "composer/semver",
@@ -72,26 +72,26 @@
     "packages-dev": [
         {
             "name": "bartlett/phpunit-loggertestlistener",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/llaville/phpunit-LoggerTestListener.git",
-                "reference": "cb7e9332f2267f45f94a98f5f447c12dfbae2906"
+                "reference": "fb5ae201e67e379b490c205be662f6470b352c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/llaville/phpunit-LoggerTestListener/zipball/cb7e9332f2267f45f94a98f5f447c12dfbae2906",
-                "reference": "cb7e9332f2267f45f94a98f5f447c12dfbae2906",
+                "url": "https://api.github.com/repos/llaville/phpunit-LoggerTestListener/zipball/fb5ae201e67e379b490c205be662f6470b352c0e",
+                "reference": "fb5ae201e67e379b490c205be662f6470b352c0e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
+                "php": "^5.4||^7.0",
+                "psr/log": "^1.0"
             },
             "require-dev": {
-                "bartlett/monolog-callbackfilterhandler": "~1.0",
-                "bartlett/monolog-growlhandler": "~1.0",
-                "monolog/monolog": "~1.10"
+                "bartlett/monolog-callbackfilterhandler": "^1.0",
+                "bartlett/monolog-growlhandler": "^1.0",
+                "monolog/monolog": "^1.10"
             },
             "suggest": {
                 "bartlett/monolog-callbackfilterhandler": "Advanced filtering strategies for Monolog",
@@ -101,7 +101,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Bartlett\\": "src/Bartlett"
+                    "Bartlett\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -118,7 +118,7 @@
             ],
             "description": "PHPUnit Test Suite listener for compatible PSR-3 logger",
             "homepage": "https://github.com/llaville/phpunit-LoggerTestListener",
-            "time": "2015-10-23T18:14:09+00:00"
+            "time": "2018-10-01T19:53:31+00:00"
         },
         {
             "name": "monolog/monolog",

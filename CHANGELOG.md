@@ -6,6 +6,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Memcached reference updated to version 3.0.4 (stable)
+- Redis reference updated to version 4.1.1 (stable)
+
 ## [1.35.0] - 2018-08-28
 
 ### Added

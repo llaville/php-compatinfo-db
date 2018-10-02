@@ -81,6 +81,86 @@
     },
     {
         "ext_name_fk": 42,
+        "name": "memcached.sess_lock_wait_min",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.sess_lock_wait_max",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.sess_lock_retries",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.sess_binary_protocol",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.sess_remove_failed_servers",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.sess_server_failure_limit",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.sess_persistent",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.default_consistent_hash",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.default_binary_protocol",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
+        "name": "memcached.default_connect_timeout",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 42,
         "name": "memcached.sess_locking",
         "ext_min": "2.0.0",
         "ext_max": "",

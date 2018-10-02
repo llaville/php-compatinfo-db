@@ -49,6 +49,54 @@
     },
     {
         "ext_name_fk": 104,
+        "name": "redis.arrays.distributor",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.arrays.retryinterval",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.arrays.lazyconnect",
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.arrays.pconnect",
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.arrays.connecttimeout",
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
+        "name": "redis.clusters.persistent",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 104,
         "name": "redis.clusters.seeds",
         "ext_min": "2.2.8",
         "ext_max": "",

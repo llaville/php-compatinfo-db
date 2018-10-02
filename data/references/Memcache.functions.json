@@ -228,5 +228,15 @@
         "php_max": "",
         "parameters": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 43,
+        "name": "memcache_set_sasl_auth_data",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
     }
 ]

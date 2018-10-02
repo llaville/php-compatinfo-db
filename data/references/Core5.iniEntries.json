@@ -26,6 +26,14 @@
     },
     {
         "ext_name_fk": 7,
+        "name": "zend.signal_check",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
         "name": "sys_temp_dir",
         "ext_min": "5.5.0",
         "ext_max": "",

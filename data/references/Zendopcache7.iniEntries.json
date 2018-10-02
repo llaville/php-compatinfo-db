@@ -1,6 +1,14 @@
 [
     {
         "ext_name_fk": 100,
+        "name": "opcache.huge_code_pages",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0RC3",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
         "name": "opcache.enable",
         "ext_min": "7.0.1",
         "ext_max": "",
@@ -261,14 +269,6 @@
         "ext_min": "7.0.6",
         "ext_max": "",
         "php_min": "7.0.0RC5",
-        "php_max": ""
-    },
-    {
-        "ext_name_fk": 100,
-        "name": "opcache.opt_debug_level",
-        "ext_min": "7.1.0",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
         "php_max": ""
     }
 ]

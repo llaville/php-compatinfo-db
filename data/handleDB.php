@@ -316,8 +316,8 @@ class DbInitCommand extends Command
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5', '7'),
-                'functions'  => array('4', '5', '7'),
-                'iniEntries' => array('4', '5', '7'),
+                'functions'  => array('4', '5', '7', '71'),
+                'iniEntries' => array('4', '5', '7', '71'),
                 'releases'   => array('4', '5', '7'),
                 'methods'    => array('4', '5', '7', '71'),
             ),
@@ -348,6 +348,7 @@ class DbInitCommand extends Command
                 'releases'   => array('', '70', '71'),
             ),
             'curl' => array(
+                'functions'  => array('', '71'),
                 'releases'   => array('', '70', '71'),
             ),
             'date' => array(
@@ -385,6 +386,9 @@ class DbInitCommand extends Command
             ),
             'gmp' => array(
                 'releases'   => array('', '70', '71'),
+            ),
+            'hash' => array(
+                'functions'  => array('', '71'),
             ),
             'haru' => array(
                 'releases'   => array('', '1'),
@@ -481,6 +485,16 @@ class DbInitCommand extends Command
                 'releases'   => array('', '1', '2'),
                 'methods'    => array('', '1'),
             ),
+            'pcre' => array(
+                'iniEntries' => array('', '70'),
+                'functions'  => array('', '70'),
+            ),
+            'pcntl' => array(
+                'functions' => array('', '70', '71'),
+            ),
+            'posix' => array(
+                'functions' => array('', '70'),
+            ),
             'pdflib' => array(
                 'classes'    => array('2'),
                 'functions'  => array('2', '3'),
@@ -507,8 +521,8 @@ class DbInitCommand extends Command
             ),
             'redis' => array(
                 'classes'    => array('2'),
-                'iniEntries' => array('2'),
-                'releases'   => array('2', '3'),
+                'iniEntries' => array('2', '3', '4'),
+                'releases'   => array('2', '3', '4'),
                 'const'      => array('2'),
                 'methods'    => array('2', '3'),
             ),
@@ -617,7 +631,7 @@ class DbInitCommand extends Command
             'zendopcache' => array(
                 'functions'  => array('7'),
                 'releases'   => array('7'),
-                'iniEntries' => array('7'),
+                'iniEntries' => array('7', '71'),
                 'releases'   => array('', '7', '71'),
             ),
             'zip' => array(
@@ -1984,5 +1998,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.35.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.36.0');
 $application->run();

@@ -1,0 +1,22 @@
+[
+    {
+        "ext_name_fk": 53,
+        "name": "pcntl_signal_get_handler",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0beta1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 53,
+        "name": "pcntl_async_signals",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0beta1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]
