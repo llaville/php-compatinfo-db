@@ -945,7 +945,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
      * @group  reference
      * @return void
      */
-    public function _testGetClassConstantsFromExtension($name)
+    public function testGetClassConstantsFromExtension($name)
     {
         static $obj;
         static $dict;
@@ -990,7 +990,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
      * @group  reference
      * @return void
      */
-    public function _testGetInterfacesFromExtension($name)
+    public function testGetInterfacesFromExtension($name)
     {
         static $obj;
         static $dict;

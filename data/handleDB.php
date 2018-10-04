@@ -352,6 +352,7 @@ class DbInitCommand extends Command
                 'releases'   => array('', '70', '71'),
             ),
             'date' => array(
+                'const'      => array('', '70', '71'),
                 'releases'   => array('', '70', '71'),
             ),
             'dom' => array(
@@ -523,7 +524,7 @@ class DbInitCommand extends Command
                 'classes'    => array('2'),
                 'iniEntries' => array('2', '3', '4'),
                 'releases'   => array('2', '3', '4'),
-                'const'      => array('2'),
+                'const'      => array('2', '4'),
                 'methods'    => array('2', '3'),
             ),
             'riak' => array(
