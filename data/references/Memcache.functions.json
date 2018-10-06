@@ -238,5 +238,15 @@
         "php_max": "",
         "parameters": "",
         "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 43,
+        "name": "memcache_setoptimeout",
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
     }
 ]
