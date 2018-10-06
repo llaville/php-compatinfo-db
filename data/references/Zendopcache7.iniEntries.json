@@ -270,5 +270,13 @@
         "ext_max": "",
         "php_min": "7.0.0RC5",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 100,
+        "name": "opcache.lockfile_path",
+        "ext_min": "7.0.6",
+        "ext_max": "",
+        "php_min": "7.0.6RC1",
+        "php_max": ""
     }
 ]

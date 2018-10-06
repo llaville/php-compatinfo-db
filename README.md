@@ -27,7 +27,7 @@ Version 1.36.0 support informations to latest PHP versions :
 * PHP 5.4.45
 * PHP 5.5.38
 * PHP 5.6.37
-* PHP 7.0.31
+* PHP 7.0.32
 * PHP 7.1.22
 
 Currently 106 extensions are referenced in the database.

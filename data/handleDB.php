@@ -632,7 +632,7 @@ class DbInitCommand extends Command
             'zendopcache' => array(
                 'functions'  => array('7'),
                 'releases'   => array('7'),
-                'iniEntries' => array('7', '71'),
+                'iniEntries' => array('', '7', '71'),
                 'releases'   => array('', '7', '71'),
             ),
             'zip' => array(
