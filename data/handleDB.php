@@ -310,7 +310,7 @@ class DbInitCommand extends Command
                 'constants'  => array('4', '5', '71'),
                 'functions'  => array('4', '5', '7'),
                 'iniEntries' => array('4', '5', '7', '71'),
-                'interfaces' => array('5', '7'),
+                'interfaces' => array('5', '7', '72'),
                 'releases'   => array('4', '5', '70', '71'),
             ),
             'standard' => array(
@@ -352,7 +352,7 @@ class DbInitCommand extends Command
                 'releases'   => array('', '70', '71'),
             ),
             'date' => array(
-                'const'      => array('', '70', '71'),
+                'const'      => array('', '70', '71', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'dom' => array(
@@ -1313,6 +1313,7 @@ class DbReleaseCommand extends Command
         $entry   = 'ext_max';
         $names   = array(
             'ArrayAccess'                           => ExtensionFactory::LATEST_PHP_5_2,
+            'Countable'                             => ExtensionFactory::LATEST_PHP_7_1,
             'Iterator'                              => ExtensionFactory::LATEST_PHP_5_2,
             'IteratorAggregate'                     => ExtensionFactory::LATEST_PHP_5_2,
             'Serializable'                          => ExtensionFactory::LATEST_PHP_5_2,

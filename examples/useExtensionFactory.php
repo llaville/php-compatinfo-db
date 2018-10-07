@@ -11,7 +11,7 @@ $ext  = new ExtensionFactory($name);
 
 printf('== Latest PHP platforms supported');
 echo PHP_EOL;
-foreach (array('5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1') as $phpVersion) {
+foreach (array('5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2') as $phpVersion) {
     printf('= PHP %s : %s', $phpVersion, ExtensionFactory::getLatestPhpVersion($phpVersion));
     echo PHP_EOL;
 }
