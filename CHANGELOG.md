@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed 
 
 - issue [GH-16](https://github.com/llaville/php-compatinfo-db/issues/16)
+- issue [GH-14](https://github.com/llaville/php-compatinfo-db/issues/14)
 
 ## [1.36.0] - 2018-10-06
 
