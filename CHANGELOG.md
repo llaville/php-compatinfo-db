@@ -10,6 +10,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Support to PHP 7.2.10
 
+### Changed
+
+- Zip reference updated to version 1.15.4 (stable)
+
 ### Fixed 
 
 - issue [GH-16](https://github.com/llaville/php-compatinfo-db/issues/16)
