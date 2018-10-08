@@ -65,6 +65,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
     protected static $ignoredclasses       = array();
     protected static $ignoredinterfaces    = array();
     protected static $ignoredmethods       = array();
+    protected static $ignoredconsts        = array();
 
     // References fully documented
     protected static $extensions =  array(
@@ -185,6 +186,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         self::$ignoredclasses     = [];
         self::$ignoredinterfaces  = [];
         self::$ignoredmethods     = [];
+        self::$ignoreconsts       = [];
     }
 
     /**
@@ -958,7 +960,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
 
         list ($classname, $name) = explode('::', $name);
 
-        if (!in_array($name, self::$ignoredconstants)) {
+        if (!in_array($name, self::$ignoredconsts)) {
             $this->assertArrayHasKey(
                 $name,
                 $dict[$classname],

@@ -33,4 +33,16 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  */
 class RedisExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass()
+    {
+        // depends on HAVE_REDIS_LZF
+        array_push(self::$ignoredconsts, 'COMPRESSION_LZF');
+
+        parent::setUpBeforeClass();
+    }
 }
