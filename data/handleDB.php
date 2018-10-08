@@ -405,7 +405,7 @@ class DbInitCommand extends Command
                 'functions'  => array(''),
                 'iniEntries' => array('', '2'),
                 'interfaces' => array('2'),
-                'releases'   => array('', '1', '2'),
+                'releases'   => array('', '1', '2', '3'),
                 'const'      => array('2'),
                 'methods'    => array('2'),
             ),

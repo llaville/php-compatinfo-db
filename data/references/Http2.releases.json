@@ -268,5 +268,50 @@
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": "7.0.0"
+    },
+    {
+        "ext_name_fk": 26,
+        "rel_version": "2.5.6",
+        "rel_date": "2016-03-09",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "7.0.0"
+    },
+    {
+        "ext_name_fk": 26,
+        "rel_version": "2.6.0beta1",
+        "rel_date": "2016-08-22",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "7.0.0"
+    },
+    {
+        "ext_name_fk": 26,
+        "rel_version": "2.6.0beta2",
+        "rel_date": "2016-09-07",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "7.0.0"
+    },
+    {
+        "ext_name_fk": 26,
+        "rel_version": "2.6.0RC1",
+        "rel_date": "2016-10-04",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "7.0.0"
+    },
+    {
+        "ext_name_fk": 26,
+        "rel_version": "2.6.0",
+        "rel_date": "2016-12-12",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "7.0.0"
     }
 ]
