@@ -10,6 +10,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Support to PHP 7.2.10
 
+### Fixed 
+
+- issue [GH-16](https://github.com/llaville/php-compatinfo-db/issues/16)
+
 ## [1.36.0] - 2018-10-06
 
 ### Added
