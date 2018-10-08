@@ -186,7 +186,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         self::$ignoredclasses     = [];
         self::$ignoredinterfaces  = [];
         self::$ignoredmethods     = [];
-        self::$ignoreconsts       = [];
+        self::$ignoredconsts      = [];
     }
 
     /**
