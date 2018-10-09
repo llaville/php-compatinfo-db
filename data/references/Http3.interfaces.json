@@ -1,0 +1,10 @@
+[
+    {
+        "ext_name_fk": 26,
+        "name": "http\\Client\\Curl\\User",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

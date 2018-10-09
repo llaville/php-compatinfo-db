@@ -47,6 +47,10 @@ class HttpExtensionTest extends GenericTest
             'http\\Client\\Curl\\SSL_VERSION_TLSv1_2',
             // PHP_HTTP_CURL_VERSION(7,38,0)
             'http\\Client\\Curl\\AUTH_SPNEGO',
+            // when age >=1
+            'http\\Client\\Curl\\Versions\\ARES',
+            // when age >=2
+            'http\\Client\\Curl\\Versions\\IDN',
         );
 
         parent::setUpBeforeClass();

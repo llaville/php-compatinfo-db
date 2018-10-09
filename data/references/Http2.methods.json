@@ -78,5 +78,15 @@
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "setDebug",
+        "static": true,
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
     }
 ]

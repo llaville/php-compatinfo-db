@@ -223,5 +223,77 @@
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "DEBUG_INFO",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "DEBUG_IN",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "DEBUG_OUT",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "DEBUG_HEADER",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "DEBUG_BODY",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client",
+        "name": "DEBUG_SSL",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client\\Curl",
+        "name": "FEATURES",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 26,
+        "class_name": "http\\Client\\Curl",
+        "name": "VERSIONS",
+        "ext_min": "2.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
     }
 ]
