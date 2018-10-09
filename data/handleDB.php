@@ -438,6 +438,7 @@ class DbInitCommand extends Command
             ),
             'ldap' => array(
                 'constants'  => array('', '70', '71'),
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'lzf' => array(
