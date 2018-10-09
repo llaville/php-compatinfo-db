@@ -481,6 +481,7 @@ class DbInitCommand extends Command
             ),
             'openssl' => array(
                 'constants'  => array('', '71'),
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'oauth' => array(
