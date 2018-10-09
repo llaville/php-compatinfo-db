@@ -368,6 +368,7 @@ class DbInitCommand extends Command
             ),
             'ftp' => array(
                 'constants'  => array('', '56'),
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'gd' => array(
