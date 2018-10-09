@@ -83,6 +83,25 @@
     {
         "ext_name_fk": 88,
         "class_name": "VarnishLog",
+        "name": "TAG_Proxy",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_ProxyGarbage",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
         "name": "TAG_Backend",
         "ext_min": "0.3",
         "ext_max": "",
@@ -732,6 +751,78 @@
         "ext_name_fk": 88,
         "class_name": "VarnishLog",
         "name": "TAG_BereqAcct",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_VfpAcct",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_Witness",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_BackendStart",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_H2RxHdr",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_H2RxBody",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_H2TxHdr",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_H2TxBody",
+        "ext_min": "0.3",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 88,
+        "class_name": "VarnishLog",
+        "name": "TAG_HitMiss",
         "ext_min": "0.3",
         "ext_max": "",
         "php_min": "5.3.0",
