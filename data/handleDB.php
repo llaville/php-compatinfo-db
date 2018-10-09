@@ -372,6 +372,7 @@ class DbInitCommand extends Command
                 'releases'   => array('', '70', '71'),
             ),
             'gd' => array(
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'gender' => array(
