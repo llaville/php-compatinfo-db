@@ -1,0 +1,32 @@
+[
+    {
+        "ext_name_fk": 78,
+        "name": "utf8_decode",
+        "ext_min": "7.2.0",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "name": "utf8_encode",
+        "ext_min": "7.2.0",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "name": "stream_isatty",
+        "ext_min": "7.2.0",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

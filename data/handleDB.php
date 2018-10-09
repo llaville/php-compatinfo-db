@@ -316,7 +316,7 @@ class DbInitCommand extends Command
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5', '7'),
-                'functions'  => array('4', '5', '7', '71'),
+                'functions'  => array('4', '5', '7', '71', '72'),
                 'iniEntries' => array('4', '5', '7', '71'),
                 'releases'   => array('4', '5', '7'),
                 'methods'    => array('4', '5', '7', '71'),
@@ -1396,6 +1396,16 @@ class DbReleaseCommand extends Command
         $names   = array(
             'T_BAD_CHARACTER'                       => ExtensionFactory::LATEST_PHP_5_6,
             'T_CHARACTER'                           => ExtensionFactory::LATEST_PHP_5_6,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
+        $refName = 'Xml';
+        $ext     = 'functions';
+        $major   = '';
+        $entry   = 'php_max';
+        $names   = array(
+            'utf8_encode'                           => ExtensionFactory::LATEST_PHP_7_1,
+            'utf8_decode'                           => ExtensionFactory::LATEST_PHP_7_1,
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
