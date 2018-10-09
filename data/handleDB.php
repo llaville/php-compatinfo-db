@@ -559,7 +559,7 @@ class DbInitCommand extends Command
             ),
             'sockets' => array(
                 'constants'  => array('', '70'),
-                'functions'  => array('', '70'),
+                'functions'  => array('', '70', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'solr' => array(
