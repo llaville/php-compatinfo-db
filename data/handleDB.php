@@ -454,6 +454,7 @@ class DbInitCommand extends Command
                 'methods'    => array(''),
             ),
             'mbstring' => array(
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'mongo' => array(
