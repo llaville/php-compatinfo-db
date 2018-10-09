@@ -577,6 +577,7 @@ class DbInitCommand extends Command
                 'methods'    => array(''),
             ),
             'spl' => array(
+                'functions'  => array('', '72'),
                 'methods'    => array('5', '70'),
                 'releases'   => array('', '70', '71'),
             ),

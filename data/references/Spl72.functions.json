@@ -1,0 +1,12 @@
+[
+    {
+        "ext_name_fk": 74,
+        "name": "spl_object_id",
+        "ext_min": "7.2.0",
+        "ext_max": "",
+        "php_min": "7.2.0beta3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]
