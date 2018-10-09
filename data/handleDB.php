@@ -653,6 +653,10 @@ class DbInitCommand extends Command
                 'methods'    => array('1'),
                 'const'      => array('1'),
             ),
+            'zlib' => array(
+                'functions'  => array('', '72'),
+                'releases'   => array(''),
+            ),
         );
 
         if (array_key_exists($refName, $majorReleases)) {
