@@ -391,7 +391,7 @@ class DbInitCommand extends Command
                 'releases'   => array('', '70', '71'),
             ),
             'hash' => array(
-                'functions'  => array('', '71'),
+                'functions'  => array('', '71', '72'),
             ),
             'haru' => array(
                 'releases'   => array('', '1'),
