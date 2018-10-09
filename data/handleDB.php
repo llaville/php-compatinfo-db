@@ -1403,16 +1403,6 @@ class DbReleaseCommand extends Command
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
-        $refName = 'Xml';
-        $ext     = 'functions';
-        $major   = '';
-        $entry   = 'php_max';
-        $names   = array(
-            'utf8_encode'                           => ExtensionFactory::LATEST_PHP_7_1,
-            'utf8_decode'                           => ExtensionFactory::LATEST_PHP_7_1,
-        );
-        $latest[] = array($refName, $ext, $major, $entry, $names);
-
         $refName = 'Xsl';
         $ext     = 'iniEntries';
         $major   = '';
