@@ -1,0 +1,22 @@
+[
+  {
+    "ext_name_fk": 107,
+    "name": "raphf\\clean_persistent_handles",
+    "ext_min": "2.0.0",
+    "ext_max": "",
+    "php_min": "7.0.0",
+    "php_max": "",
+    "parameters": "",
+    "php_excludes": ""
+  },
+  {
+    "ext_name_fk": 107,
+    "name": "raphf\\stat_persistent_handles",
+    "ext_min": "2.0.0",
+    "ext_max": "",
+    "php_min": "7.0.0",
+    "php_max": "",
+    "parameters": "",
+    "php_excludes": ""
+  }
+]

@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - Support to PHP 7.2.10
+- New reference to Raphf 2.0.0 (stable)
 
 ### Changed
 

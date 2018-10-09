@@ -512,6 +512,11 @@ class DbInitCommand extends Command
                 'releases'   => array('', '1', '2', '3'),
                 'methods'    => array('', '1', '2', '3'),
             ),
+            'raphf' => array(
+                'iniEntries' => array('2'),
+                'functions'  => array('2'),
+                'releases'   => array('2'),
+            ),
             'rar' => array(
                 'classes'    => array('2'),
                 'constants'  => array('2'),
