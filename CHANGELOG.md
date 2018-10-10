@@ -13,10 +13,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Uopz reference updated to version 5.0.2 (stable)
 - Zip reference updated to version 1.15.4 (stable)
 
 ### Fixed 
 
+- issue [GH-17](https://github.com/llaville/php-compatinfo-db/issues/17)
 - issue [GH-16](https://github.com/llaville/php-compatinfo-db/issues/16)
 - issue [GH-15](https://github.com/llaville/php-compatinfo-db/issues/15)
 - issue [GH-14](https://github.com/llaville/php-compatinfo-db/issues/14)
