@@ -608,9 +608,9 @@ class DbInitCommand extends Command
             ),
             'uopz' => array(
                 'constants'  => array('2'),
-                'functions'  => array('2'),
-                'iniEntries' => array('2'),
-                'releases'   => array('2'),
+                'functions'  => array('2', '5'),
+                'iniEntries' => array('2', '5'),
+                'releases'   => array('2', '5'),
             ),
             'uploadprogress' => array(
                 'functions'  => array(''),

@@ -1,0 +1,192 @@
+[
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_get_return",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_set_return",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_unset_return",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_get_mock",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_set_mock",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_unset_mock",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_get_static",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_set_static",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_get_hook",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_set_hook",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_unset_hook",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_add_function",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_del_function",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_get_property",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_set_property",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_get_exit_status",
+        "ext_min": "5.0.2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_allow_exit",
+        "ext_min": "5.0.2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_call_user_func",
+        "ext_min": "5.0.2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 105,
+        "name": "uopz_call_user_func_array",
+        "ext_min": "5.0.2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

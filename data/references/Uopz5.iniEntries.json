@@ -1,0 +1,10 @@
+[
+    {
+        "ext_name_fk": 105,
+        "name": "uopz.disable",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]
