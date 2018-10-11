@@ -14,6 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Apcu reference updated to version 5.1.12 (stable)
+- Ast reference updated to version 0.1.7 (stable)
 - Uopz reference updated to version 5.0.2 (stable)
 - Zip reference updated to version 1.15.4 (stable)
 
