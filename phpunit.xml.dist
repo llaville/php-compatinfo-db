@@ -9,7 +9,7 @@
     stopOnIncomplete="false"
     stopOnRisky="false"
     stopOnSkipped="false"
-    verbose="true"
+    verbose="false"
     beStrictAboutTestsThatDoNotTestAnything="false"
     processIsolation="false"
 >
@@ -21,6 +21,7 @@
     <testsuites>
         <testsuite name="CompatInfo Reference Test Suite">
             <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
+            <exclude>tests/Reference/Extension/ApcExtensionTest.php</exclude>
         </testsuite>
     </testsuites>
 </phpunit>
