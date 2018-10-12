@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- Support to PHP 7.1.23
 - Support to PHP 7.2.10, 7.2.11
 - New reference to Raphf 2.0.0 (stable)
 
