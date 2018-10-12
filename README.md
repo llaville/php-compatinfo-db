@@ -31,8 +31,8 @@ Version 1.37.0 support informations to latest PHP versions :
 * PHP 5.5.38
 * PHP 5.6.38
 * PHP 7.0.32
-* PHP 7.1.22
-* PHP 7.2.10
+* PHP 7.1.23
+* PHP 7.2.11
 
 Currently 107 extensions are referenced in the database.
 
