@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db.svg?style=flat-square)](https://packagist.org/packages/bartlett/php-compatinfo-db)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.5-8892BF.svg?style=flat-square)](https://php.net/)
+
 # Introduction
 
 Main goal of this project is to provide a standalone database (SQLite3) that references
