@@ -311,14 +311,14 @@ class DbInitCommand extends Command
                 'functions'  => array('4', '5', '7'),
                 'iniEntries' => array('4', '5', '7', '71'),
                 'interfaces' => array('5', '7', '72'),
-                'releases'   => array('4', '5', '70', '71'),
+                'releases'   => array('4', '5', '70', '71', '72'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5', '7'),
                 'functions'  => array('4', '5', '7', '71', '72'),
                 'iniEntries' => array('4', '5', '7', '71'),
-                'releases'   => array('4', '5', '7'),
+                'releases'   => array('4', '5', '7', '72'),
                 'methods'    => array('4', '5', '7', '71'),
             ),
             'apcu' => array(
@@ -1492,7 +1492,6 @@ class DbPublishCommand extends Command
         list($maj, $min, $rel) = sscanf($relVersion, '%d.%d.%s');
 
         $release = [];
-        $refs    = [];
 
         $extId   = 7;
         $refName = 'Core';
@@ -2015,5 +2014,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.36.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.37.0');
 $application->run();
