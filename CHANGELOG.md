@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Ast reference updated to version 1.0.0 (stable)
+- Igbinary reference updated to version 2.0.8 (stable)
 
 ## [1.37.0] - 2018-10-12
 
