@@ -19,6 +19,7 @@ namespace Bartlett\Tests\CompatInfoDb;
 
 use Bartlett\LoggerTestListenerTrait;
 
+use Monolog\Logger;
 use PHPUnit\Framework\TestResult;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LogLevel;
@@ -58,7 +59,7 @@ class ResultPrinter extends \PHPUnit\TextUI\ResultPrinter
             $minLevelOrList = [LogLevel::NOTICE, LogLevel::ERROR];
         }
 
-        $console = new MonologConsoleLogger('ResultPrinter');
+        $console = new MonologConsoleLogger('ResultPrinter', !$debug ? Logger::ERROR : Logger::DEBUG);
         $console->setAcceptedLevels($minLevelOrList);
 
         $handlers = $console->getHandlers();

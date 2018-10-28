@@ -60,7 +60,7 @@ class MonologConsoleLogger extends Logger
             }
         );
 
-        $stream = new RotatingFileHandler(__DIR__ . '/phpunit-phpcompatinfodb-php' . PHP_VERSION_ID . '.log', 30);
+        $stream = new RotatingFileHandler(__DIR__ . '/phpunit-phpcompatinfodb-php' . PHP_VERSION_ID . '.log', 30, $level);
         $stream->setFilenameFormat('{filename}-{date}', 'Ymd');
 
         $console = new StreamHandler('php://stdout');
