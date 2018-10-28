@@ -47,20 +47,6 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 PHP 5.5 or greater
 PHPUnit 6 or greater (if you want to run unit tests)
 
-# Unit Tests
-
-Each extension supported has its own Test case file.
-If you launch all tests, depending of your platform (CPU, memory), you may have sensation
-that PHPUnit do nothing for a long time.
-
-Reason is PHPUnit count all tests before running them. Sebastian Bergmann has opened
-a [ticket](https://github.com/sebastianbergmann/phpunit/issues/3213) to solve this situation.
-
-Alternative to this issue, is to used the Phing PHPUnitTask. This is really possible now PHPUnit
-provide a library-only PHAR (see ticket [#1925](https://github.com/sebastianbergmann/phpunit/issues/1925)).
-
-Download the PHPUnit PHAR library at https://phar.phpunit.de/phpunit-library.phar
-
 # Authors
 
 * Laurent Laville
