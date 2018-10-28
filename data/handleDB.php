@@ -606,6 +606,9 @@ class DbInitCommand extends Command
                 'releases'   => array('', '70', '71'),
                 'methods'    => array(''),
             ),
+            'tokenizer' => array(
+                'constants'  => array('', '70')
+            ),
             'uopz' => array(
                 'constants'  => array('2'),
                 'functions'  => array('2', '5'),
