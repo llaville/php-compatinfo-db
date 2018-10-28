@@ -315,7 +315,7 @@ class DbInitCommand extends Command
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
-                'constants'  => array('4', '5', '7'),
+                'constants'  => array('4', '5', '7', '71'),
                 'functions'  => array('4', '5', '7', '71', '72'),
                 'iniEntries' => array('4', '5', '7', '71'),
                 'releases'   => array('4', '5', '7', '72'),
