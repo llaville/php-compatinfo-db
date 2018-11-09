@@ -1406,6 +1406,16 @@ class DbReleaseCommand extends Command
         );
         $latest[] = array($refName, $ext, $major, $entry, $names);
 
+        $refName = 'Xml';
+        $ext     = 'functions';
+        $major   = '';
+        $entry   = 'ext_max';
+        $names   = array(
+            'utf8_decode'                           => ExtensionFactory::LATEST_PHP_7_1,
+            'utf8_encode'                           => ExtensionFactory::LATEST_PHP_7_1,
+        );
+        $latest[] = array($refName, $ext, $major, $entry, $names);
+
         $refName = 'Xsl';
         $ext     = 'iniEntries';
         $major   = '';
@@ -2017,5 +2027,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.37.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.38.0');
 $application->run();

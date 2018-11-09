@@ -2,7 +2,7 @@
     {
         "ext_name_fk": 40,
         "name": "mb_ord",
-        "ext_min": "7.2.0",
+        "ext_min": "7.2.0alpha1",
         "ext_max": "",
         "php_min": "7.2.0alpha1",
         "php_max": "",
@@ -12,7 +12,7 @@
     {
         "ext_name_fk": 40,
         "name": "mb_chr",
-        "ext_min": "7.2.0",
+        "ext_min": "7.2.0alpha1",
         "ext_max": "",
         "php_min": "7.2.0alpha1",
         "php_max": "",

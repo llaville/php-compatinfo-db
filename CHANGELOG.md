@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.38.0] - 2018-11-09
+
+### Added
+
+- Support to PHP 7.1.24
+
 ### Changed
 
 - Ast reference updated to version 1.0.0 (stable)

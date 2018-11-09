@@ -33,4 +33,20 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  */
 class MbstringExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass()
+    {
+        // WARNING: strange to found it on PHP 7.1.x versions, while it supposed to appears since PHP 7.2.0alpha1
+        self::$ignoredfunctions = array(
+            'mb_chr',
+            'mb_ord',
+            'mb_scrub',
+        );
+
+        parent::setUpBeforeClass();
+    }
 }
