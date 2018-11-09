@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - Support to PHP 7.1.24
+- Support to PHP 7.2.12
 
 ### Changed
 
