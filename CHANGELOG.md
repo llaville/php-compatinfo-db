@@ -6,7 +6,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [1.38.0] - 2018-11-09
+## [1.38.0] - 2018-11-12
 
 ### Added
 
