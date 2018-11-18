@@ -10,7 +10,7 @@
         "issues": "https://github.com/llaville/php-compatinfo-db/issues"
     },
     "require": {
-        "php": ">=5.5",
+        "php": "^5.5|^7.0",
         "composer/semver": "^1.0",
         "ext-curl": "*",
         "ext-intl": "*",
@@ -22,11 +22,11 @@
         "ext-pdo_sqlite": "*"
     },
     "require-dev": {
-        "symfony/console": "^2.5||^3.0",
+        "symfony/console": "^2.5||^3.0||^4.0",
         "psr/log": "^1.0",
         "monolog/monolog": "^1.10",
         "bartlett/phpunit-loggertestlistener": "^1.7",
-        "phpunit/php-timer": "^2.0"
+        "phpunit/php-timer": "^1.0||^2.0"
     },
     "suggest": {
         "symfony/console": "Allow to rebuild the Reference CompatInfo Database",

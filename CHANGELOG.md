@@ -6,6 +6,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.38.1] - 2018-11-18
+
+### Changed
+
+- Only support PHPUnit v5 and v6 to run unit tests.
+- Upgrade and clean some dependencies.
+
 ## [1.38.0] - 2018-11-12
 
 ### Added
