@@ -47,6 +47,12 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 PHP 5.5 or greater
 PHPUnit 5 or 6 (if you want to run unit tests)
 
+# PHP5 users only
+
+Remove `composer.lock` to be able to install correct dependencies.
+
+Content of this file in repository if for PHP7 users.
+
 # Authors
 
 * Laurent Laville
