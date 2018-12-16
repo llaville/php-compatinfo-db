@@ -412,7 +412,7 @@ class DbInitCommand extends Command
                 'methods'    => array('2'),
             ),
             'imap' => array(
-                'iniEntries' => array('70'),
+                'iniEntries' => array('56'),
             ),
             'imagick' => array(
                 'classes'    => array(''),
