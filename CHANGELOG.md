@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - APCu reference updated to version 5.1.5 (stable)
 - Redis reference updated to version 4.2.0 (stable)
+- Yaml reference updated to version 1.3.2 (stable)
 
 ## [1.38.1] - 2018-11-18
 
