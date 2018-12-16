@@ -411,6 +411,9 @@ class DbInitCommand extends Command
                 'const'      => array('2', '3'),
                 'methods'    => array('2'),
             ),
+            'imap' => array(
+                'iniEntries' => array('70'),
+            ),
             'imagick' => array(
                 'classes'    => array(''),
                 'const'      => array(''),
