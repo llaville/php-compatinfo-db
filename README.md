@@ -51,7 +51,7 @@ PHPUnit 5 or 6 (if you want to run unit tests)
 
 Remove `composer.lock` to be able to install correct dependencies.
 
-Content of this file in repository if for PHP7 users.
+Content of this file in repository is for PHP7 users.
 
 # Authors
 
