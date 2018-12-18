@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- APCu reference updated to version 5.1.6 (stable)
+
 ## [1.39.0] - 2018-12-16
 
 ### Added
