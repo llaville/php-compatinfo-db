@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - APCu reference updated to version 5.1.6 (stable)
+- Lzf reference updated to version 1.6.7 (stable)
 - Msgpack reference updated to version 2.0.3 (stable)
 
 ## [1.39.0] - 2018-12-16
