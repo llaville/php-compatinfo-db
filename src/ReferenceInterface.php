@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Reference Interface.
  *
@@ -36,68 +39,68 @@ interface ReferenceInterface
      *
      * @return string
      */
-    public function getLatestVersion();
+    public function getLatestVersion() : string;
 
     /**
      * Gets a list of releases from an extension.
      *
      * @return array
      */
-    public function getReleases();
+    public function getReleases() : array;
 
     /**
      * Gets a list of interfaces from an extension.
      *
      * @return array
      */
-    public function getInterfaces();
+    public function getInterfaces() : array;
 
     /**
      * Gets a list of classes from an extension.
      *
      * @return array
      */
-    public function getClasses();
+    public function getClasses() : array;
 
     /**
      * Gets a list of functions from an extension.
      *
      * @return array
      */
-    public function getFunctions();
+    public function getFunctions() : array;
 
     /**
      * Gets a list of constants from an extension.
      *
      * @return array
      */
-    public function getConstants();
+    public function getConstants() : array;
 
     /**
      * Gets a list of ini entries from an extension.
      *
      * @return array
      */
-    public function getIniEntries();
+    public function getIniEntries() : array;
 
     /**
      * Gets a list of class constants from an extension.
      *
      * @return array
      */
-    public function getClassConstants();
+    public function getClassConstants() : array;
 
     /**
      * Gets a list of static class methods from an extension.
      *
      * @return array
      */
-    public function getClassStaticMethods();
+    public function getClassStaticMethods() : array;
 
     /**
      * Gets a list of non-static class methods from an extension.
      *
      * @return array
      */
-    public function getClassMethods();
+    public function getClassMethods() : array;
 }

@@ -1,4 +1,9 @@
 <?php
+
+declare(strict_types=1);
+
+namespace Bartlett\CompatInfoDb;
+
 /**
  * Helper for script that handle compatinfo.sqlite file.
  *

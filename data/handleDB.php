@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Script to handle compatinfo.sqlite file, that provides all references.
  *
@@ -13,10 +16,10 @@
  */
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
-require_once __DIR__ . '/ReferenceCollection.php';
 
 use Bartlett\CompatInfoDb\ExtensionFactory;
 use Bartlett\CompatInfoDb\Environment;
+use Bartlett\CompatInfoDb\ReferenceCollection;
 
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Application;
@@ -174,19 +177,20 @@ class DbInitCommand extends Command
 
         foreach ($iterator as $file) {
             if (fnmatch('*'.$suffix, $file->getPathName())) {
-                $className = str_replace($suffix, '', basename($file));
+                $className = str_replace($suffix, '', $file->getBasename());
                 $extName   = strtolower($className);
 
                 $this->extensions[] = $extName;
             }
         }
 
-        $extension = trim($input->getArgument('extension'));
-        $extension = strtolower($extension);
+        $extension = $input->getArgument('extension');
 
         if (empty($extension)) {
             $extensions = $this->extensions;
         } else {
+            $extension = trim($extension);
+            $extension = strtolower($extension);
             if (!in_array($extension, $this->extensions)) {
                 $output->writeln(
                     sprintf('<error>Extension %s does not exist.</error>', $extension)
@@ -1717,7 +1721,7 @@ class DbListCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $factory = new ExtensionFactory(null);
+        $factory = new ExtensionFactory('');
         $refs    = $factory->getExtensions();
         $loaded  = 0;
         $headers = array('Reference', 'Version', 'State', 'Release Date', 'Loaded');

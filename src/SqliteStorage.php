@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Reference DB Storage.
  *
@@ -10,8 +13,6 @@
  */
 
 namespace Bartlett\CompatInfoDb;
-
-use Bartlett\CompatInfoDb\Environment;
 
 use PDO;
 
@@ -29,7 +30,7 @@ use PDO;
 class SqliteStorage
 {
     private $name;
-    private $initialized = false;
+    private $initialized;
     private $stmtReleases;
     private $stmtIniEntries;
     private $stmtClasses;
@@ -45,9 +46,10 @@ class SqliteStorage
      *
      * @param string $name Name of extension
      */
-    public function __construct($name)
+    public function __construct(string $name)
     {
         $this->name = $name;
+        $this->initialized = false;
         $this->initialize();
     }
 
@@ -59,7 +61,7 @@ class SqliteStorage
      *
      * @return array of meta informations
      */
-    public function getMetaData($meta, $static = false)
+    public function getMetaData(string $meta, bool $static = false) : array
     {
         $stmt = 'stmt' . ucfirst($meta);
 
@@ -123,7 +125,7 @@ class SqliteStorage
      *
      * @return void
      */
-    protected function initialize()
+    protected function initialize() : void
     {
         if (!$this->initialized) {
             $this->doInitialize();
@@ -136,9 +138,9 @@ class SqliteStorage
      *
      * @return void
      */
-    protected function doInitialize()
+    protected function doInitialize() : void
     {
-        $pdo = Environment::initRefDb();
+        $pdo = DatabaseFactory::create('sqlite');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $this->stmtReleases = $pdo->prepare(

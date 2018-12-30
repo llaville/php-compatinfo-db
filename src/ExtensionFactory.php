@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Extension Factory.
  *
@@ -43,7 +46,7 @@ class ExtensionFactory implements ReferenceInterface
      *
      * @param string $name Name of extension
      */
-    public function __construct($name)
+    public function __construct(string $name)
     {
         $this->storage = new SqliteStorage($name);
         $this->name    = $name;
@@ -54,13 +57,15 @@ class ExtensionFactory implements ReferenceInterface
      *
      * @return string
      */
-    public function getName()
+    public function getName() : string
     {
         return $this->name;
     }
 
-    public function getMetaVersion($key = null, $extname = null)
+    public function getMetaVersion(?string $key = null, ?string $extname = null) : array
     {
+        $meta = [];
+
         if (in_array('curl', array($this->name, $extname))
             && function_exists('curl_version')
         ) {
@@ -101,28 +106,25 @@ class ExtensionFactory implements ReferenceInterface
             }
         }
 
-        if (isset($meta)) {
-            if (isset($key) && array_key_exists($key, $meta)) {
-                return $meta[$key];
-            }
-            return $meta;
+        if (isset($key) && array_key_exists($key, $meta)) {
+            return $meta[$key];
         }
-        return false;
+        return $meta;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getCurrentVersion()
+    public function getCurrentVersion() : string
     {
         return $this->getVersion($this->name);
     }
 
-    private function getVersion($name)
+    private function getVersion(string $name) : string
     {
         $version = phpversion($name);
         $pattern = '/^[0-9]+\.[0-9]+/';
-        if (!preg_match($pattern, $version)) {
+        if (false === $version || !preg_match($pattern, $version)) {
             /**
              * When version is not provided by the extension, or not standard format
              * or we don't have it in our reference (ex snmp) because have no sense
@@ -136,7 +138,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getLatestVersion()
+    public function getLatestVersion() : string
     {
         if (!empty($this->version)) {
             return $this->version;
@@ -144,7 +146,7 @@ class ExtensionFactory implements ReferenceInterface
         return $this->getLatestPhpVersion();
     }
 
-    public static function getLatestPhpVersion($phpVersion = PHP_VERSION)
+    public static function getLatestPhpVersion($phpVersion = PHP_VERSION) : string
     {
         if (version_compare($phpVersion, '5.3', 'lt')) {
             return self::LATEST_PHP_5_2;
@@ -173,7 +175,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getReleases()
+    public function getReleases() : array
     {
         return $this->storage->getMetaData('releases');
     }
@@ -181,7 +183,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getInterfaces()
+    public function getInterfaces() : array
     {
         return $this->storage->getMetaData('interfaces');
     }
@@ -189,7 +191,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getClasses()
+    public function getClasses() : array
     {
         return $this->storage->getMetaData('classes');
     }
@@ -197,7 +199,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getFunctions()
+    public function getFunctions() : array
     {
         return $this->storage->getMetaData('functions');
     }
@@ -205,7 +207,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getConstants()
+    public function getConstants() : array
     {
         return $this->storage->getMetaData('constants');
     }
@@ -213,7 +215,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getIniEntries()
+    public function getIniEntries() : array
     {
         return $this->storage->getMetaData('iniEntries');
     }
@@ -221,7 +223,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getClassConstants()
+    public function getClassConstants() : array
     {
         return $this->storage->getMetaData('classConstants');
     }
@@ -229,7 +231,7 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getClassStaticMethods()
+    public function getClassStaticMethods() : array
     {
         return $this->storage->getMetaData('classMethods', true);
     }
@@ -237,12 +239,12 @@ class ExtensionFactory implements ReferenceInterface
     /**
      * {@inheritdoc}
      */
-    public function getClassMethods()
+    public function getClassMethods() : array
     {
         return $this->storage->getMetaData('classMethods', false);
     }
 
-    public function getExtensions()
+    public function getExtensions() : array
     {
         $records = $this->storage->getMetaData('extensions');
 
