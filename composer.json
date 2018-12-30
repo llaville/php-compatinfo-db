@@ -20,7 +20,10 @@
         "ext-spl": "*",
         "ext-json": "*",
         "ext-pdo_sqlite": "*",
-        "symfony/console": "^3.0||^4.0"
+        "symfony/console": "^3.0||^4.0",
+        "jean85/pretty-package-versions": "^1.2",
+        "league/tactician": "^1.0",
+        "zendframework/zenddiagnostics": "^1.3"
     },
     "require-dev": {
         "psr/log": "^1.0",
