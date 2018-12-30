@@ -1,5 +1,5 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db.svg?style=flat-square)](https://packagist.org/packages/bartlett/php-compatinfo-db)
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.5-8892BF.svg?style=flat-square)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://php.net/)
 
 # Introduction
 
@@ -44,14 +44,8 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 
 # Requirements
 
-PHP 5.5 or greater
-PHPUnit 5 or 6 (if you want to run unit tests)
-
-# PHP5 users only
-
-Remove `composer.lock` to be able to install correct dependencies.
-
-Content of this file in repository is for PHP7 users.
+* PHP 7.1 or greater
+* PHPUnit 7 or greater (if you want to run unit tests)
 
 # Authors
 

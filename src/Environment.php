@@ -49,7 +49,7 @@ class Environment
         if (!file_exists($tempDir)) {
             mkdir($tempDir);
         }
-        $source = dirname(dirname(dirname(__DIR__))) . '/data/' . $database;
+        $source = dirname(__DIR__) . '/data/' . $database;
         $dest   = $tempDir . '/' . $database;
 
         if (!file_exists($dest)
