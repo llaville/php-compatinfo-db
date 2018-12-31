@@ -148,15 +148,15 @@ class InitHandler implements CommandHandlerInterface
                 'constants'  => array('4', '5', '71'),
                 'functions'  => array('4', '5', '7'),
                 'iniEntries' => array('4', '5', '7', '71'),
-                'interfaces' => array('5', '7'),
-                'releases'   => array('4', '5', '70', '71'),
+                'interfaces' => array('5', '7', '72'),
+                'releases'   => array('4', '5', '70', '71', '72'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
-                'constants'  => array('4', '5', '7'),
-                'functions'  => array('4', '5', '7'),
-                'iniEntries' => array('4', '5', '7'),
-                'releases'   => array('4', '5', '7'),
+                'constants'  => array('4', '5', '7', '71'),
+                'functions'  => array('4', '5', '7', '71', '72'),
+                'iniEntries' => array('4', '5', '7', '71'),
+                'releases'   => array('4', '5', '7', '72'),
                 'methods'    => array('4', '5', '7', '71'),
             ),
             'apcu' => array(
@@ -186,10 +186,11 @@ class InitHandler implements CommandHandlerInterface
                 'releases'   => array('', '70', '71'),
             ),
             'curl' => array(
+                'functions'  => array('', '71'),
                 'releases'   => array('', '70', '71'),
             ),
             'date' => array(
-                'const'      => array('', '70'),
+                'const'      => array('', '70', '71', '72'),
                 'constants'  => array('', '70'),
                 'releases'   => array('', '70', '71'),
             ),
@@ -206,9 +207,11 @@ class InitHandler implements CommandHandlerInterface
             ),
             'ftp' => array(
                 'constants'  => array('', '56'),
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'gd' => array(
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'gender' => array(
@@ -226,6 +229,9 @@ class InitHandler implements CommandHandlerInterface
             'gmp' => array(
                 'releases'   => array('', '70', '71'),
             ),
+            'hash' => array(
+                'functions'  => array('', '71', '72'),
+            ),
             'haru' => array(
                 'releases'   => array('', '1'),
                 'methods'    => array('', '1'),
@@ -239,10 +245,13 @@ class InitHandler implements CommandHandlerInterface
                 'constants'  => array('', '2'),
                 'functions'  => array(''),
                 'iniEntries' => array('', '2'),
-                'interfaces' => array('2'),
-                'releases'   => array('', '1', '2'),
-                'const'      => array('2'),
+                'interfaces' => array('2', '3'),
+                'releases'   => array('', '1', '2', '3'),
+                'const'      => array('2', '3'),
                 'methods'    => array('2'),
+            ),
+            'imap' => array(
+                'iniEntries' => array('56'),
             ),
             'imagick' => array(
                 'classes'    => array(''),
@@ -271,6 +280,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'ldap' => array(
                 'constants'  => array('', '70', '71'),
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'lzf' => array(
@@ -286,6 +296,7 @@ class InitHandler implements CommandHandlerInterface
                 'methods'    => array(''),
             ),
             'mbstring' => array(
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'mongo' => array(
@@ -312,6 +323,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'openssl' => array(
                 'constants'  => array('', '71'),
+                'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'oauth' => array(
@@ -320,6 +332,16 @@ class InitHandler implements CommandHandlerInterface
                 'functions'  => array(''),
                 'releases'   => array('', '1', '2'),
                 'methods'    => array('', '1'),
+            ),
+            'pcre' => array(
+                'iniEntries' => array('', '70'),
+                'functions'  => array('', '70'),
+            ),
+            'pcntl' => array(
+                'functions' => array('', '70', '71'),
+            ),
+            'posix' => array(
+                'functions' => array('', '70'),
             ),
             'pdflib' => array(
                 'classes'    => array('2'),
@@ -337,6 +359,11 @@ class InitHandler implements CommandHandlerInterface
                 'releases'   => array('', '1', '2', '3'),
                 'methods'    => array('', '1', '2', '3'),
             ),
+            'raphf' => array(
+                'iniEntries' => array('2'),
+                'functions'  => array('2'),
+                'releases'   => array('2'),
+            ),
             'rar' => array(
                 'classes'    => array('2'),
                 'constants'  => array('2'),
@@ -347,9 +374,9 @@ class InitHandler implements CommandHandlerInterface
             ),
             'redis' => array(
                 'classes'    => array('2'),
-                'iniEntries' => array('2'),
-                'releases'   => array('2', '3'),
-                'const'      => array('2'),
+                'iniEntries' => array('2', '3', '4'),
+                'releases'   => array('2', '3', '4'),
+                'const'      => array('2', '4'),
                 'methods'    => array('2', '3'),
             ),
             'riak' => array(
@@ -374,7 +401,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'sockets' => array(
                 'constants'  => array('', '70'),
-                'functions'  => array('', '70'),
+                'functions'  => array('', '70', '72'),
                 'releases'   => array('', '70', '71'),
             ),
             'solr' => array(
@@ -392,6 +419,7 @@ class InitHandler implements CommandHandlerInterface
                 'methods'    => array(''),
             ),
             'spl' => array(
+                'functions'  => array('', '72'),
                 'methods'    => array('5', '70'),
                 'releases'   => array('', '70', '71'),
             ),
@@ -420,11 +448,14 @@ class InitHandler implements CommandHandlerInterface
                 'releases'   => array('', '70', '71'),
                 'methods'    => array(''),
             ),
+            'tokenizer' => array(
+                'constants'  => array('', '70')
+            ),
             'uopz' => array(
                 'constants'  => array('2'),
-                'functions'  => array('2'),
-                'iniEntries' => array('2'),
-                'releases'   => array('2'),
+                'functions'  => array('2', '5'),
+                'iniEntries' => array('2', '5'),
+                'releases'   => array('2', '5'),
             ),
             'uploadprogress' => array(
                 'functions'  => array(''),
@@ -456,7 +487,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'zendopcache' => array(
                 'functions'  => array('7'),
-                'iniEntries' => array('7'),
+                'iniEntries' => array('', '7', '71'),
                 'releases'   => array('', '7', '71'),
             ),
             'zip' => array(
@@ -465,6 +496,10 @@ class InitHandler implements CommandHandlerInterface
                 'classes'    => array('1'),
                 'methods'    => array('1'),
                 'const'      => array('1'),
+            ),
+            'zlib' => array(
+                'functions'  => array('', '72'),
+                'releases'   => array(''),
             ),
         );
 
