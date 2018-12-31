@@ -873,7 +873,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
 
         if (!is_object($obj) || $obj->getName() !== $this->extension) {
             $obj = new ExtensionFactory($this->extension);
-            $dict = $obj>getClasses();
+            $dict = $obj->getClasses();
             $this->assertTrue(is_array($dict));
         }
 
