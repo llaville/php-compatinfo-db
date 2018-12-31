@@ -2,7 +2,7 @@
 /**
  * Unit tests for PHP_CompatInfo, Generic extension base class.
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category   PHP
  * @package    PHP_CompatInfo_Db
@@ -121,7 +121,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
     /**
      * {@inheritDoc}
      */
-    public function __construct($name = null, array $data = array(), $dataName = '')
+    public function __construct($name = null, array $data = [], $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
 

@@ -1,8 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Prints the result of a TestRunner run using Monolog.
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category   PHP
  * @package    PHP_CompatInfo_Db
@@ -47,18 +50,18 @@ class MonologConsoleLogger extends Logger
      * Console logger class constructor
      *
      * @param string $name  The logging channel
-     * @param string $level The minimum logging level
+     * @param int    $level The minimum logging level
      */
-    public function __construct($name = 'YourLogger', $level = Logger::DEBUG)
+    public function __construct(string $name = 'YourLogger', int $level = Logger::DEBUG)
     {
-        $filterRules = array(
+        $filterRules = [
             function ($record) {
                 if (!array_key_exists('operation', $record['context'])) {
                     return false;
                 }
                 return ('printFooter' === $record['context']['operation']);
             }
-        );
+        ];
 
         $stream = new RotatingFileHandler(__DIR__ . '/phpunit-phpcompatinfodb-php' . PHP_VERSION_ID . '.log', 30, $level);
         $stream->setFilenameFormat('{filename}-{date}', 'Ymd');
@@ -74,10 +77,10 @@ class MonologConsoleLogger extends Logger
             && class_exists('CallbackFilterHandler')
         ) {
             try {
-                $options = array(
+                $options = [
                     'resourceDir' => dirname(__DIR__) . '/vendor/pear-pear.php.net/Net_Growl/data/Net_Growl/data',
                     'defaultIcon' => '80/growl_phpunit.png',
-                );
+                ];
 
                 $growl = new GrowlHandler(
                     array(
@@ -111,7 +114,7 @@ class MonologConsoleLogger extends Logger
      *
      * @return array
      */
-    public function getAcceptedLevels()
+    public function getAcceptedLevels() : array
     {
         $handlers = $this->getHandlers();
         foreach ($handlers as &$handler) {
@@ -119,7 +122,7 @@ class MonologConsoleLogger extends Logger
                 return $handler->getAcceptedLevels();
             }
         }
-        return array();
+        return [];
     }
 
     /**
@@ -130,7 +133,7 @@ class MonologConsoleLogger extends Logger
      *
      * @return void
      */
-    public function setAcceptedLevels($minLevelOrList = Logger::DEBUG, $maxLevel = Logger::EMERGENCY)
+    public function setAcceptedLevels($minLevelOrList = Logger::DEBUG, $maxLevel = Logger::EMERGENCY) : void
     {
         $handlers = $this->getHandlers();
         foreach ($handlers as &$handler) {

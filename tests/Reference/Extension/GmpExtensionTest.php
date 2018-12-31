@@ -1,8 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Unit tests for PHP_CompatInfo, gmp extension Reference
  *
- * PHP version 5
+ * PHP version 7
  *
  * @category   PHP
  * @package    PHP_CompatInfo_Db
