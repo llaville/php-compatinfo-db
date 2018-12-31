@@ -146,15 +146,15 @@ class InitHandler implements CommandHandlerInterface
             'core' => array(
                 'classes'    => array('4', '5', '7', '71'),
                 'constants'  => array('4', '5', '71'),
-                'functions'  => array('4', '5', '7'),
-                'iniEntries' => array('4', '5', '7', '71'),
+                'functions'  => array('4', '5', '7', '73'),
+                'iniEntries' => array('4', '5', '7', '71', '73'),
                 'interfaces' => array('5', '7', '72'),
                 'releases'   => array('4', '5', '70', '71', '72'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5', '7', '71'),
-                'functions'  => array('4', '5', '7', '71', '72'),
+                'functions'  => array('4', '5', '7', '71', '72', '73'),
                 'iniEntries' => array('4', '5', '7', '71'),
                 'releases'   => array('4', '5', '7', '72'),
                 'methods'    => array('4', '5', '7', '71'),
@@ -227,6 +227,7 @@ class InitHandler implements CommandHandlerInterface
                 'releases'   => array('', '1'),
             ),
             'gmp' => array(
+                'functions'  => array('', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'hash' => array(
@@ -267,7 +268,7 @@ class InitHandler implements CommandHandlerInterface
             'intl' => array(
                 'classes'    => array('1', '2', '5', '70'),
                 'constants'  => array('1', '2'),
-                'functions'  => array('1', '2', '5'),
+                'functions'  => array('1', '2', '5', '73'),
                 'iniEntries' => array('1', '3'),
                 'releases'   => array('1', '2', '3', '5'),
                 'const'      => array('1', '2', '5', '70'),
@@ -280,7 +281,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'ldap' => array(
                 'constants'  => array('', '70', '71'),
-                'functions'  => array('', '72'),
+                'functions'  => array('', '72', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'lzf' => array(
@@ -298,6 +299,11 @@ class InitHandler implements CommandHandlerInterface
             'mbstring' => array(
                 'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
+            ),
+            'memcached' => array(
+                'functions'  => array('3'),
+                'iniEntries' => array('', '3'),
+                'releases'   => array('', '3'),
             ),
             'mongo' => array(
                 'classes'    => array('', '1'),
@@ -323,7 +329,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'openssl' => array(
                 'constants'  => array('', '71'),
-                'functions'  => array('', '72'),
+                'functions'  => array('', '72', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'oauth' => array(
@@ -389,7 +395,7 @@ class InitHandler implements CommandHandlerInterface
             'session' => array(
                 'interfaces' => array('', '70'),
                 'functions'  => array('', '71'),
-                'iniEntries' => array('', '70', '71'),
+                'iniEntries' => array('', '70', '71', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'shmop' => array(
