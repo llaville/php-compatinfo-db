@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Uopz reference updated to version 5.1.0 (stable)
+
 ## [2.0.0RC1] - 2018-12-31
 
 ### Added
