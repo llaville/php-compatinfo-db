@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Amqp reference updated to version 1.9.4 (stable)
 - Uopz reference updated to version 5.1.0 (stable)
 
 ## [2.0.0RC1] - 2018-12-31
