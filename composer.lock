@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4af504414aa01f9bbf30b91a05993d63",
+    "content-hash": "e8ce54c6da532c06fb605b99e22df995",
     "packages": [
         {
             "name": "composer/semver",
@@ -484,16 +484,16 @@
     "packages-dev": [
         {
             "name": "bartlett/phpunit-loggertestlistener",
-            "version": "2.0.0RC1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/llaville/phpunit-LoggerTestListener.git",
-                "reference": "6bad9b2888f4647a541367c66fbfd3adb0f378fb"
+                "reference": "03e66b8aa25664cf9d648aa178d9a5b9f37a4976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/llaville/phpunit-LoggerTestListener/zipball/6bad9b2888f4647a541367c66fbfd3adb0f378fb",
-                "reference": "6bad9b2888f4647a541367c66fbfd3adb0f378fb",
+                "url": "https://api.github.com/repos/llaville/phpunit-LoggerTestListener/zipball/03e66b8aa25664cf9d648aa178d9a5b9f37a4976",
+                "reference": "03e66b8aa25664cf9d648aa178d9a5b9f37a4976",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
             ],
             "description": "PHPUnit Test Suite listener for compatible PSR-3 logger",
             "homepage": "https://github.com/llaville/phpunit-LoggerTestListener",
-            "time": "2018-12-30T10:06:46+00:00"
+            "time": "2019-01-05T08:01:43+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -2127,9 +2127,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bartlett/phpunit-loggertestlistener": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
