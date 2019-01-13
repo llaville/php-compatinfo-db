@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.1.26
+
 ### Changed
 
 - Amqp reference updated to version 1.9.4 (stable)
