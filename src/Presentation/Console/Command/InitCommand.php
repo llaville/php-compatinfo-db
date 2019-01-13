@@ -18,20 +18,13 @@ class InitCommand extends AbstractCommand
     {
         $this->setName('bartlett:db:init')
             ->setDescription('Load JSON file(s) in SQLite database')
-            ->addArgument(
-                'extension',
-                InputArgument::OPTIONAL,
-                'extension to load in database (case insensitive)'
-            )
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output) : void
     {
-        $extension = trim($input->getArgument('extension') ?? '');
-
         $initCommand = new AppInitCommand();
-        $initCommand->extension = strtolower($extension);
+        $initCommand->extension = '';
         $initCommand->refDir = $this->getApplication()->getRefDir();
         $initCommand->dbFilename = $this->getApplication()->getDbFilename();
         $initCommand->appVersion = $this->getApplication()->getVersion();

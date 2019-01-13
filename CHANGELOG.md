@@ -14,6 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- `bartlett:db:init` command does not accept to build a specific extension anymore 
 - Amqp reference updated to version 1.9.4 (stable)
 - Uopz reference updated to version 5.1.0 (stable)
 
