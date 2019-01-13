@@ -14,10 +14,18 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class InitCommand extends AbstractCommand
 {
+    private const DEFAULT_REL_VERSION = '2.x-dev';
+
     protected function configure() : void
     {
         $this->setName('bartlett:db:init')
             ->setDescription('Load JSON file(s) in SQLite database')
+            ->addArgument(
+                'rel_version',
+                InputArgument::OPTIONAL,
+                'New DB version',
+                self::DEFAULT_REL_VERSION
+            )
         ;
     }
 
@@ -27,7 +35,13 @@ class InitCommand extends AbstractCommand
         $initCommand->extension = '';
         $initCommand->refDir = $this->getApplication()->getRefDir();
         $initCommand->dbFilename = $this->getApplication()->getDbFilename();
-        $initCommand->appVersion = $this->getApplication()->getVersion();
+
+        $relVersion = trim($input->getArgument('rel_version'));
+        if (self::DEFAULT_REL_VERSION == $relVersion) {
+            $initCommand->appVersion = $this->getApplication()->getVersion();
+        } else {
+            $initCommand->appVersion = $relVersion;
+        }
         $initCommand->output = $output;
 
         $this->commandBus->handle($initCommand);
