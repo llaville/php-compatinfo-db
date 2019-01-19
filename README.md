@@ -1,5 +1,5 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db.svg?style=flat-square)](https://packagist.org/packages/bartlett/php-compatinfo-db)
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.5-8892BF.svg?style=flat-square)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://php.net/)
 
 # Introduction
 
@@ -23,16 +23,17 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * reference all ini entries
 * reference all releases
 
-Version 1.39.0 support informations to latest PHP versions :
+Version 2.0.0 support informations to latest PHP versions :
 
 * PHP 5.2.17
 * PHP 5.3.29
 * PHP 5.4.45
 * PHP 5.5.38
-* PHP 5.6.39
+* PHP 5.6.40
 * PHP 7.0.33
-* PHP 7.1.25
-* PHP 7.2.13
+* PHP 7.1.26
+* PHP 7.2.14
+* PHP 7.3.1
 
 Currently 107 extensions are referenced in the database.
 
@@ -44,14 +45,8 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 
 # Requirements
 
-PHP 5.5 or greater
-PHPUnit 5 or 6 (if you want to run unit tests)
-
-# PHP5 users only
-
-Remove `composer.lock` to be able to install correct dependencies.
-
-Content of this file in repository is for PHP7 users.
+* PHP 7.1 or greater
+* PHPUnit 7 or greater (if you want to run unit tests)
 
 # Authors
 

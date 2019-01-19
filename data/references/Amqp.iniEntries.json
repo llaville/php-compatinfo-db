@@ -142,5 +142,13 @@
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 1,
+        "name": "amqp.sasl_method",
+        "ext_min": "1.9.4",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
     }
 ]

@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+// @link https://www.tomasvotruba.cz/blog/2018/08/02/5-gotchas-of-the-bin-file-in-php-cli-applications/
+
+declare(strict_types=1);
+
+gc_disable(); // performance boost
+
+$possibleAutoloadPaths = [
+    // local dev repository
+    __DIR__ . '/../vendor/autoload.php',
+    // dependency
+    __DIR__ . '/../../../../vendor/autoload.php',
+];
+
+$isAutoloadFound = false;
+foreach ($possibleAutoloadPaths as $possibleAutoloadPath) {
+    if (file_exists($possibleAutoloadPath)) {
+        require_once $possibleAutoloadPath;
+        $isAutoloadFound = true;
+        break;
+    }
+}
+
+if ($isAutoloadFound === false) {
+    throw new RuntimeException(sprintf(
+        'Unable to find "vendor/autoload.php" in "%s" paths.',
+        implode('", "', $possibleAutoloadPaths)
+    ));
+}
+
+$application = new \Bartlett\CompatInfoDb\Presentation\Console\Application('Database handler for CompatInfo');
+$application->run();
