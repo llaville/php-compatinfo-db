@@ -29,7 +29,7 @@ Version 2.0.0 support informations to latest PHP versions :
 * PHP 5.3.29
 * PHP 5.4.45
 * PHP 5.5.38
-* PHP 5.6.39
+* PHP 5.6.40
 * PHP 7.0.33
 * PHP 7.1.26
 * PHP 7.2.14
