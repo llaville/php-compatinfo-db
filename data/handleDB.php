@@ -308,15 +308,15 @@ class DbInitCommand extends Command
             'core' => array(
                 'classes'    => array('4', '5', '7', '71'),
                 'constants'  => array('4', '5', '71'),
-                'functions'  => array('4', '5', '7'),
-                'iniEntries' => array('4', '5', '7', '71'),
+                'functions'  => array('4', '5', '7', '73'),
+                'iniEntries' => array('4', '5', '7', '71', '73'),
                 'interfaces' => array('5', '7', '72'),
                 'releases'   => array('4', '5', '70', '71', '72'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5', '7', '71'),
-                'functions'  => array('4', '5', '7', '71', '72'),
+                'functions'  => array('4', '5', '7', '71', '72', '73'),
                 'iniEntries' => array('4', '5', '7', '71'),
                 'releases'   => array('4', '5', '7', '72'),
                 'methods'    => array('4', '5', '7', '71'),
@@ -353,6 +353,7 @@ class DbInitCommand extends Command
             ),
             'date' => array(
                 'const'      => array('', '70', '71', '72'),
+                'constants'  => array('', '70'),
                 'releases'   => array('', '70', '71'),
             ),
             'dom' => array(
@@ -388,6 +389,7 @@ class DbInitCommand extends Command
                 'releases'   => array('', '1'),
             ),
             'gmp' => array(
+                'functions'  => array('', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'hash' => array(
@@ -428,7 +430,7 @@ class DbInitCommand extends Command
             'intl' => array(
                 'classes'    => array('1', '2', '5', '70'),
                 'constants'  => array('1', '2'),
-                'functions'  => array('1', '2', '5'),
+                'functions'  => array('1', '2', '5', '73'),
                 'iniEntries' => array('1', '3'),
                 'releases'   => array('1', '2', '3', '5'),
                 'const'      => array('1', '2', '5', '70'),
@@ -441,7 +443,7 @@ class DbInitCommand extends Command
             ),
             'ldap' => array(
                 'constants'  => array('', '70', '71'),
-                'functions'  => array('', '72'),
+                'functions'  => array('', '72', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'lzf' => array(
@@ -459,6 +461,11 @@ class DbInitCommand extends Command
             'mbstring' => array(
                 'functions'  => array('', '72'),
                 'releases'   => array('', '70', '71'),
+            ),
+            'memcached' => array(
+                'functions'  => array('3'),
+                'iniEntries' => array('', '3'),
+                'releases'   => array('', '3'),
             ),
             'mongo' => array(
                 'classes'    => array('', '1'),
@@ -484,7 +491,7 @@ class DbInitCommand extends Command
             ),
             'openssl' => array(
                 'constants'  => array('', '71'),
-                'functions'  => array('', '72'),
+                'functions'  => array('', '72', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'oauth' => array(
@@ -550,7 +557,7 @@ class DbInitCommand extends Command
             'session' => array(
                 'interfaces' => array('', '70'),
                 'functions'  => array('', '71'),
-                'iniEntries' => array('', '70', '71'),
+                'iniEntries' => array('', '70', '71', '73'),
                 'releases'   => array('', '70', '71'),
             ),
             'shmop' => array(
@@ -648,7 +655,6 @@ class DbInitCommand extends Command
             ),
             'zendopcache' => array(
                 'functions'  => array('7'),
-                'releases'   => array('7'),
                 'iniEntries' => array('', '7', '71'),
                 'releases'   => array('', '7', '71'),
             ),
@@ -2030,5 +2036,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.39.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.40.0');
 $application->run();

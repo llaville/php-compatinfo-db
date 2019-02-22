@@ -6,11 +6,26 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [1.40.0] - 2019-02-22
+
+### Added
+
+- Support to PHP 7.3.2
+- Support to PHP 7.3.1
+- Support to PHP 7.3.0
+- Support to PHP 7.2.15
+- Support to PHP 7.2.14
+- Support to PHP 7.1.26
+- Support to PHP 5.6.40
+
 ### Changed
 
+- Amqp reference updated to version 1.9.4 (stable)
 - APCu reference updated to version 5.1.6 (stable)
 - Lzf reference updated to version 1.6.7 (stable)
+- Memcached reference updated to version 3.1.3 (stable)
 - Msgpack reference updated to version 2.0.3 (stable)
+- Uopz reference updated to version 5.1.0 (stable)
 
 ## [1.39.0] - 2018-12-16
 

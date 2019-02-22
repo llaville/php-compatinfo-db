@@ -1,0 +1,26 @@
+[
+    {
+        "ext_name_fk": 7,
+        "name": "syslog.ident",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha3",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
+        "name": "syslog.facility",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha3",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
+        "name": "syslog.filter",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0beta1",
+        "php_max": ""
+    }
+]

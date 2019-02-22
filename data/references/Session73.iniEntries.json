@@ -1,0 +1,10 @@
+[
+    {
+        "ext_name_fk": 66,
+        "name": "session.cookie_samesite",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.beta1",
+        "php_max": ""
+    }
+]
