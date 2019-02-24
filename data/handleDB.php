@@ -622,8 +622,8 @@ class DbInitCommand extends Command
             'uopz' => array(
                 'constants'  => array('2'),
                 'functions'  => array('2', '5'),
-                'iniEntries' => array('2', '5'),
-                'releases'   => array('2', '5'),
+                'iniEntries' => array('2', '5', '6'),
+                'releases'   => array('2', '5', '6'),
             ),
             'uploadprogress' => array(
                 'functions'  => array(''),
@@ -2036,5 +2036,5 @@ class DbHandleApplication extends Application
     }
 }
 
-$application = new DbHandleApplication('Database handler for CompatInfo', '1.40.0');
+$application = new DbHandleApplication('Database handler for CompatInfo', '1.40.1');
 $application->run();
