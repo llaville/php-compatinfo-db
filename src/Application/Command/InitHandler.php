@@ -460,8 +460,8 @@ class InitHandler implements CommandHandlerInterface
             'uopz' => array(
                 'constants'  => array('2'),
                 'functions'  => array('2', '5'),
-                'iniEntries' => array('2', '5'),
-                'releases'   => array('2', '5'),
+                'iniEntries' => array('2', '5', '6'),
+                'releases'   => array('2', '5', '6'),
             ),
             'uploadprogress' => array(
                 'functions'  => array(''),

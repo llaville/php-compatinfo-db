@@ -18,6 +18,7 @@ namespace Bartlett\Tests\CompatInfoDb\Reference;
 use Bartlett\CompatInfoDb\ExtensionFactory;
 
 use Composer\Semver\Semver;
+use PHPUnit\Framework\ExpectationFailedException;
 
 /**
  * Tests for the PHP_CompatInfo, retrieving components informations
@@ -748,10 +749,11 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         }
 
         if (!in_array($name, self::$ignoredcfgs)) {
-            $this->assertArrayHasKey(
+            $this->assertExtensionComponentHasKey(
                 $name,
                 $dict,
-                "Defined INI '$name' not known in Reference."
+                "Defined INI '$name' not known in Reference.",
+                $obj
             );
         }
     }
@@ -791,10 +793,11 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         }
 
         if (!in_array($name, self::$ignoredfunctions)) {
-            $this->assertArrayHasKey(
+            $this->assertExtensionComponentHasKey(
                 $name,
                 $dict,
-                "Defined function '$name' not known in Reference."
+                "Defined function '$name' not known in Reference.",
+                $obj
             );
         }
     }
@@ -961,10 +964,11 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         list ($classname, $name) = explode('::', $name);
 
         if (!in_array($name, self::$ignoredconsts)) {
-            $this->assertArrayHasKey(
+            $this->assertExtensionComponentHasKey(
                 $name,
                 $dict[$classname],
-                "Defined class constant '$classname::$name' not known in Reference."
+                "Defined class constant '$classname::$name' not known in Reference.",
+                $obj
             );
         }
     }
@@ -1004,11 +1008,54 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         }
 
         if (!in_array($name, self::$ignoredinterfaces)) {
-            $this->assertArrayHasKey(
+            $this->assertExtensionComponentHasKey(
                 $name,
                 $dict,
-                "Defined interface '$name' not known in Reference."
+                "Defined interface '$name' not known in Reference.",
+                $obj
             );
         }
+    }
+
+    public function assertExtensionComponentHasKey($key, $array, $message, $obj)
+    {
+        try {
+            $this->assertArrayHasKey($key, $array, $message);
+        } catch (ExpectationFailedException $e) {
+            $warning = $this->checkUpdateExtension($obj);
+
+            if (is_string($warning)) {
+                $this->markTestSkipped($warning);
+            } else {
+                throw $e;
+            }
+        }
+    }
+
+    protected function checkUpdateExtension($obj)
+    {
+        $currentVersion = $obj->getCurrentVersion();
+
+        if ($currentVersion === false) {
+            // extension did not provide any version information
+            return;
+        }
+
+        $releases = array_keys($obj->getReleases());
+
+        $latestReleaseReferenced = array_pop($releases);
+        // check if extension installed is more recent than the one declared in compatinfo-db
+        if (version_compare($currentVersion, $latestReleaseReferenced, 'le')) {
+            return;
+        }
+
+        return sprintf(
+            'Extension %s tested is version %s, while latest version referenced is %s and has need update.',
+            $obj->getName(),
+            $obj->getCurrentVersion(),
+            $latestReleaseReferenced
+        );
+
+        return $warning;
     }
 }

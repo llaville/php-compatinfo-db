@@ -6,6 +6,16 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.1.1] - 2019-02-24
+
+### Added
+
+- Do not failed tests related to current installed extensions, when versions referenced are lowest
+
+### Changed
+
+- Uopz reference updated to version 6.0.1 (stable)
+
 ## [2.1.0] - 2019-02-13
 
 ### Added
