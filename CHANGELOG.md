@@ -6,7 +6,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [2.1.2] - 2019-03-10
+## [2.2.0] - 2019-03-10
 
 ### Added
 
