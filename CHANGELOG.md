@@ -12,6 +12,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Support to PHP 7.2.16
 - Support to PHP 7.1.27
 
+### Changed
+
+- Xdebug reference updated to version 2.7.0 (stable)
+
 ## [2.1.1] - 2019-02-24
 
 ### Added
