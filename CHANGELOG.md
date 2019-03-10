@@ -6,7 +6,19 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [1.4.1] - 2019-02-24
+## [1.41.0] - 2019-03-10
+
+### Added
+
+- Support to PHP 7.3.3
+- Support to PHP 7.2.16
+- Support to PHP 7.1.27
+
+### Changed
+
+- Xdebug reference updated to version 2.7.0 (stable)
+
+## [1.40.1] - 2019-02-24
 
 ### Added
 
