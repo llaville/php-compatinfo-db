@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- Support to PHP 7.2.16
 - Support to PHP 7.1.27
 
 ## [2.1.1] - 2019-02-24
