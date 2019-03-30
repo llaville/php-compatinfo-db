@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Igbinary reference updated to version 3.0.1 (stable)
 - Redis reference updated to version 4.3.0 (stable)
 
 ## [2.2.0] - 2019-03-10
