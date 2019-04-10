@@ -11,7 +11,7 @@
         "ext_name_fk": 74,
         "name": "Countable",
         "ext_min": "5.1.0",
-        "ext_max": "7.1.27",
+        "ext_max": "7.1.28",
         "php_min": "5.1.0",
         "php_max": ""
     },
