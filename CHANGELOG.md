@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Igbinary reference updated to version 3.0.1 (stable)
 - Mailparse reference updated to version 3.0.3 (stable)
 - Redis reference updated to version 4.3.0 (stable)
+- Xdebug reference updated to version 2.7.1 (stable)
 
 ## [2.2.0] - 2019-03-10
 
