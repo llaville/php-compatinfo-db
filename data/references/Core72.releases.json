@@ -151,5 +151,14 @@
         "ext_max": "",
         "php_min": "7.2.16",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
+        "rel_version": "7.2.17",
+        "rel_date": "2019-04-04",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.2.17",
+        "php_max": ""
     }
 ]
