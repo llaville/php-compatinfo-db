@@ -6,9 +6,18 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
 - Support to PHP 7.3.4
 - Support to PHP 7.2.17
 - Support to PHP 7.1.28
+
+### Changed
+
+- Igbinary reference updated to version 3.0.1 (stable)
+- Mailparse reference updated to version 3.0.3 (stable)
+- Redis reference updated to version 4.3.0 (stable)
+- Xdebug reference updated to version 2.7.1 (stable)
 
 ## [1.41.0] - 2019-03-10
 
