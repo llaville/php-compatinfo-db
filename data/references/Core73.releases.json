@@ -34,5 +34,14 @@
         "ext_max": "",
         "php_min": "7.3.3",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 7,
+        "rel_version": "7.3.4",
+        "rel_date": "2019-04-04",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.4",
+        "php_max": ""
     }
 ]

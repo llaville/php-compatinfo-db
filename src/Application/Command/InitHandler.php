@@ -263,7 +263,7 @@ class InitHandler implements CommandHandlerInterface
             'igbinary' => array(
                 'functions'  => array('1'),
                 'iniEntries' => array('1'),
-                'releases'   => array('1', '2'),
+                'releases'   => array('1', '2', '3'),
             ),
             'intl' => array(
                 'classes'    => array('1', '2', '5', '70'),
