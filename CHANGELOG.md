@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.4.0] - 2019-05-18
+
 ### Added
 
 - Support to PHP 7.1.29
@@ -14,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Imagick reference updated to version 3.4.4 (stable)
 - Xdebug reference updated to version 2.7.2 (stable)
 
 ## [2.3.0] - 2019-04-10
