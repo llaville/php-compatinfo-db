@@ -98,8 +98,8 @@ class ReferenceCollection
             $rec['deprecated'] = '';
         }
 
-        if (!isset($rec['lib_sqlite'])) {
-            $rec['lib_sqlite'] = '';
+        if (!isset($rec['lib_sqlite3'])) {
+            $rec['lib_sqlite3'] = '';
         }
 
         if (is_array($row)) {
@@ -330,7 +330,7 @@ class ReferenceCollection
             ' ext_min VARCHAR(16), ext_max VARCHAR(16),' .
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' deprecated VARCHAR(16),' .
-            ' lib_sqlite VARCHAR(16), ' .
+            ' lib_sqlite3 VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, name))'
         );
         $this->dbal->exec(
@@ -403,8 +403,8 @@ class ReferenceCollection
         );
         $this->stmtIniEntries = $this->dbal->prepare(
             'REPLACE INTO ' . $tblIniEntries .
-            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, deprecated, lib_sqlite)' .
-            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :deprecated, :lib_sqlite)'
+            ' (ext_name_fk, name, ext_min, ext_max, php_min, php_max, deprecated, lib_sqlite3)' .
+            ' VALUES (:ext_name_fk, :name, :ext_min, :ext_max, :php_min, :php_max, :deprecated, :lib_sqlite3)'
         );
         $this->stmtClasses = $this->dbal->prepare(
             'REPLACE INTO ' . $tblClasses .
@@ -445,7 +445,7 @@ class ReferenceCollection
         );
         $this->stmtIniEntry = $this->dbal->prepare(
             'SELECT' .
-            ' ext_name_fk, name, ext_min, ext_max, php_min, php_max, deprecated, lib_sqlite' .
+            ' ext_name_fk, name, ext_min, ext_max, php_min, php_max, deprecated, lib_sqlite3' .
             ' FROM ' . $tblIniEntries .
             ' WHERE ext_name_fk = :ext_name_fk AND name = :name COLLATE NOCASE'
         );

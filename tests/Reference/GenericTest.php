@@ -318,6 +318,15 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
                     );
                 }
             }
+
+        } elseif ('sqlite3' == $name) {
+            if (method_exists('sqlite3', 'version')) {
+                $v = \SQLite3::version();
+                $meta = array(
+                    'version_number' => $v['versionNumber'],
+                    'version_text'   => $v['versionString'],
+                );
+            }
         }
         if (isset($meta)) {
             if (isset($key) && array_key_exists($key, $meta)) {
