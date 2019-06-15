@@ -1064,7 +1064,5 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
             $obj->getCurrentVersion(),
             $latestReleaseReferenced
         );
-
-        return $warning;
     }
 }
