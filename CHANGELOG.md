@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.5.0] - 2019-06-15
+
 ### Added
 
 - Support to PHP 7.1.30
