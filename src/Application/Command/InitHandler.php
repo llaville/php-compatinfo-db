@@ -298,6 +298,7 @@ class InitHandler implements CommandHandlerInterface
             ),
             'mbstring' => array(
                 'functions'  => array('', '72'),
+                'iniEntries' => array('', '73'),
                 'releases'   => array('', '70', '71', '72', '73'),
             ),
             'memcached' => array(

@@ -1,0 +1,10 @@
+[
+    {
+        "ext_name_fk": 40,
+        "name": "mbstring.regex_stack_limit",
+        "ext_min": "7.3.6",
+        "ext_max": "",
+        "php_min": "7.3.6",
+        "php_max": ""
+    }
+]
