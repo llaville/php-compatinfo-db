@@ -5379,5 +5379,45 @@
         "php_min": "5.4.0",
         "php_max": "",
         "lib_imagemagick": ">=6.9.3"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "COMPOSITE_STEREO",
+        "ext_min": "3.4.4RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.10"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "STYLE_BOLD",
+        "ext_min": "3.4.4RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.11"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "COLORSPACE_LINEARGRAY",
+        "ext_min": "3.4.4RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.9"
+    },
+    {
+        "ext_name_fk": 29,
+        "class_name": "Imagick",
+        "name": "RESOURCETYPE_LISTLENGTH",
+        "ext_min": "3.4.4RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "lib_imagemagick": ">=6.9.10"
     }
 ]

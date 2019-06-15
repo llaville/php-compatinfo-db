@@ -34,9 +34,9 @@ class ExtensionFactory implements ReferenceInterface
     const LATEST_PHP_5_5 = '5.5.38';
     const LATEST_PHP_5_6 = '5.6.40';
     const LATEST_PHP_7_0 = '7.0.33';
-    const LATEST_PHP_7_1 = '7.1.29';
-    const LATEST_PHP_7_2 = '7.2.18';
-    const LATEST_PHP_7_3 = '7.3.5';
+    const LATEST_PHP_7_1 = '7.1.30';
+    const LATEST_PHP_7_2 = '7.2.19';
+    const LATEST_PHP_7_3 = '7.3.6';
 
     protected $storage;
 
@@ -104,6 +104,15 @@ class ExtensionFactory implements ReferenceInterface
                         'version_text'   => $matches[1],
                     );
                 }
+            }
+
+        } elseif (in_array('sqlite3', array($this->name, $extname))) {
+            if (method_exists('sqlite3', 'version')) {
+                $v = \SQLite3::version();
+                $meta = array(
+                    'version_number' => $v['versionNumber'],
+                    'version_text'   => $v['versionString'],
+                );
             }
         }
 
