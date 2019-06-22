@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+- Added missing classes in Reflection reference (Fixed [issue](https://github.com/llaville/php-compat-info/issues/250))
+
 ## [2.5.0] - 2019-06-15
 
 ### Added
