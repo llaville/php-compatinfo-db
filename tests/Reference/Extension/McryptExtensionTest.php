@@ -33,6 +33,8 @@ use Bartlett\Tests\CompatInfoDb\Reference\GenericTest;
  * @author     Remi Collet <Remi@FamilleCollet.com>
  * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
  * @link       http://php5.laurent-laville.org/compatinfo/
+ *
+ * @requires PHP < 7.2
  */
 class McryptExtensionTest extends GenericTest
 {
