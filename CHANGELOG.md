@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.2.20
+
+### Changed
+
 - Added missing classes in Reflection reference (Fixed [issue](https://github.com/llaville/php-compat-info/issues/250))
 - Mcrypt Reference was deprecated in PHP 7.1.0 and removed in PHP 7.2.0 (excluding pecl extension)
 
