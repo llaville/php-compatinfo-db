@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.6.0] - 2019-07-25
+
 ### Added
 
 - Support to PHP 7.2.20
@@ -15,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Added missing classes in Reflection reference (Fixed [issue](https://github.com/llaville/php-compat-info/issues/250))
 - Mcrypt Reference was deprecated in PHP 7.1.0 and removed in PHP 7.2.0 (excluding pecl extension)
+- Avoid to run unit tests on Mcrypt reference for PHP 7.2 or greater (for https://pecl.php.net/package/mcrypt)
 
 ## [2.5.0] - 2019-06-15
 
