@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Solr reference updated to version 2.5.0 (stable) - See https://github.com/llaville/php-compatinfo-db/issues/33
+
 ## [2.6.0] - 2019-07-25
 
 ### Added
