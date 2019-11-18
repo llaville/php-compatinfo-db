@@ -22,6 +22,7 @@
         <testsuite name="CompatInfo Reference Test Suite">
             <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
             <exclude>tests/Reference/Extension/ApcExtensionTest.php</exclude>
+            <exclude>tests/Reference/Extension/McryptExtensionTest.php</exclude>
         </testsuite>
     </testsuites>
 </phpunit>
