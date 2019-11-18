@@ -277,5 +277,32 @@
         "ext_max": "",
         "php_min": "7.1.30",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 6,
+        "rel_version": "7.1.31",
+        "rel_date": "2019-08-01",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.31",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 6,
+        "rel_version": "7.1.32",
+        "rel_date": "2019-08-29",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.32",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 6,
+        "rel_version": "7.1.33",
+        "rel_date": "2019-10-24",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.33",
+        "php_max": ""
     }
 ]
