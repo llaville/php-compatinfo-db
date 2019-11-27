@@ -459,7 +459,7 @@ class InitHandler implements CommandHandlerInterface
                 'methods'    => array(''),
             ),
             'tokenizer' => array(
-                'constants'  => array('', '70')
+                'constants'  => array('', '70', '74')
             ),
             'uopz' => array(
                 'constants'  => array('2'),
