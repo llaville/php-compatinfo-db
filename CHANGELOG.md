@@ -14,6 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Solr reference updated to version 2.5.0 (stable) - See https://github.com/llaville/php-compatinfo-db/issues/33
+- Xdebug reference updated to version 2.8.0 (stable)
 
 ## [2.6.0] - 2019-07-25
 
