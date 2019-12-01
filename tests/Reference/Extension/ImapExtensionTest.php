@@ -41,7 +41,7 @@ class ImapExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array(
             'imap_mutf7_to_utf8', // build option, HAVE_IMAP_MUTF7

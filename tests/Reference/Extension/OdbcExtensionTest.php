@@ -41,7 +41,7 @@ class OdbcExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         // This constants require ODBC >= 3.0.0
         self::$optionalconstants = array(

@@ -41,7 +41,7 @@ class HttpExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = array(
             // PHP_HTTP_CURL_VERSION(7,34,0)

@@ -41,7 +41,7 @@ class XslExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         if (version_compare(PHP_VERSION, '5.3.3', 'eq')) {
             // Security fix backported in PHP 5.3.3 / RHEL-6

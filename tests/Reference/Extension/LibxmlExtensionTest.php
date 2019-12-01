@@ -41,7 +41,7 @@ class LibxmlExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         if (PATH_SEPARATOR == ';') {
             self::$optionalconstants = array(

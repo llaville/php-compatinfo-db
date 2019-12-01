@@ -41,7 +41,7 @@ class RedisExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         // depends on HAVE_REDIS_LZF
         array_push(self::$ignoredconsts, 'COMPRESSION_LZF');

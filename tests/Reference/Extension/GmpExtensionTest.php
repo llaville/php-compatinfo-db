@@ -41,7 +41,7 @@ class GmpExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$ignoredclasses = array(
             'GMP',  // empty class in PHP 5.6

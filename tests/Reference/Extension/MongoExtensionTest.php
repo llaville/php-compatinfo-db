@@ -41,7 +41,7 @@ class MongoExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalclasses = array(
             // only available with 0.9.0

@@ -41,7 +41,7 @@ class SessionExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = array(
             // Only defined after session_start

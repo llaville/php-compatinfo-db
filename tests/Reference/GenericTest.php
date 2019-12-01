@@ -146,7 +146,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
      * @return void
      * @link   http://phpunit.de/manual/current/en/fixtures.html#fixtures.sharing-fixture
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalreleases = array();
 
@@ -171,7 +171,7 @@ abstract class GenericTest extends \PHPUnit\Framework\TestCase
         }
     }
 
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         self::$optionalreleases   = [];
         self::$optionalcfgs       = [];

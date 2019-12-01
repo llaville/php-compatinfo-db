@@ -41,7 +41,7 @@ class HashExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $mhashconstants = array(
             'MHASH_CRC32',

@@ -41,7 +41,7 @@ class SoapExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$ignoredfunctions = array(
             // Found in php < 5.1.6, nothing in doc

@@ -41,7 +41,7 @@ class PdflibExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         // functions only available if PDFLIB_MAJORVERSION >= 8
         // so not available with pdflib-lite free library

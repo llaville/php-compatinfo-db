@@ -41,7 +41,7 @@ class MssqlExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalcfgs = array(
             'mssql.charset',  // build option, only when HAVE_FREETDS

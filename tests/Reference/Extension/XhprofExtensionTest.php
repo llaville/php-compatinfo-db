@@ -41,7 +41,7 @@ class XhprofExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         if (PATH_SEPARATOR == ';') {
             // Win*

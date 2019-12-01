@@ -41,7 +41,7 @@ class PharExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalcfgs = array(
             // Available from phar 1.1.0 to 1.2.3, removed in 2.0.0

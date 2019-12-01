@@ -41,7 +41,7 @@ class MbstringExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         // WARNING: strange to found it on PHP 7.1.x versions, while it supposed to appears since PHP 7.2.0alpha1
         self::$ignoredfunctions = array(

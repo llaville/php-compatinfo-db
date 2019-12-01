@@ -41,7 +41,7 @@ class XcacheExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalcfgs = array(
             'xcache.admin.user',
