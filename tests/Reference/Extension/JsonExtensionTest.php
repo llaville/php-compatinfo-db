@@ -41,7 +41,7 @@ class JsonExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         // New features of JSONC alternative extension
         self::$ignoredconstants = array(

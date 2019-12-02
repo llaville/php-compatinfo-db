@@ -41,7 +41,7 @@ class Ssh2ExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array(
             // Requires PHP_SSH2_REMOTE_FORWARDING

@@ -41,7 +41,7 @@ class OpensslExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = array(
             // requires HAVE_OPENSSL_MD2_H

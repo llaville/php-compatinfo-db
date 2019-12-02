@@ -41,7 +41,7 @@ class FilterExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = array(
             'FILTER_SANITIZE_ALL',

@@ -41,7 +41,7 @@ class XdebugExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array();
         $extname = 'xdebug';

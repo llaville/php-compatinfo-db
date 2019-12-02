@@ -41,7 +41,7 @@ class SphinxExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         // Constants conditionnaly exists (according to libsphinx version)
         self::$optionalconstants = array(

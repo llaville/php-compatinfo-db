@@ -70,5 +70,50 @@
         "ext_max": "",
         "php_min": "7.3.7",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "rel_version": "7.3.8",
+        "rel_date": "2019-08-01",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.8",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "rel_version": "7.3.9",
+        "rel_date": "2019-08-29",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.9",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "rel_version": "7.3.10",
+        "rel_date": "2019-09-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.10",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "rel_version": "7.3.11",
+        "rel_date": "2019-10-24",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.11",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "rel_version": "7.3.12",
+        "rel_date": "2019-11-21",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.12",
+        "php_max": ""
     }
 ]

@@ -41,7 +41,7 @@ class StandardExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$ignoredfunctions = array(
             // functions moved from internal to ereg extension in 5.3.0

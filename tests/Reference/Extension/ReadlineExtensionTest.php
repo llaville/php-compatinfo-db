@@ -41,7 +41,7 @@ class ReadlineExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array(
             // Not available with libedit (only with readline)

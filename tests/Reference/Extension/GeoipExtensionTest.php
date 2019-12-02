@@ -41,7 +41,7 @@ class GeoipExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array(
             // requires GeoIP C library 1.4.1 or higher (LIBGEOIP_VERSION >= 1004001)

@@ -41,7 +41,7 @@ class FtpExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array(
             // This requires HAVE_OPENSSL_EXT (PHP 5.6) or HAVE_FTP_SSL (PHP 7)

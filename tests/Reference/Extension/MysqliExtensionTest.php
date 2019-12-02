@@ -41,7 +41,7 @@ class MysqliExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = array(
             // Requires MYSQLI_USE_MYSQLND

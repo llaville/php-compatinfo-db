@@ -41,7 +41,7 @@ class MysqlExtensionTest extends GenericTest
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$optionalfunctions = array(
             // deprecated, requires MySQL < 4

@@ -149,14 +149,14 @@ class InitHandler implements CommandHandlerInterface
                 'functions'  => array('4', '5', '7', '73'),
                 'iniEntries' => array('4', '5', '7', '71', '73'),
                 'interfaces' => array('5', '7', '72'),
-                'releases'   => array('4', '5', '70', '71', '72'),
+                'releases'   => array('4', '5', '70', '71', '72', '73', '74'),
             ),
             'standard' => array(
                 'classes'    => array('4', '5', '7'),
                 'constants'  => array('4', '5', '7', '71'),
                 'functions'  => array('4', '5', '7', '71', '72', '73'),
                 'iniEntries' => array('4', '5', '7', '71'),
-                'releases'   => array('4', '5', '7', '72'),
+                'releases'   => array('4', '5', '7', '72', '73', '74'),
                 'methods'    => array('4', '5', '7', '71'),
             ),
             'apcu' => array(
@@ -459,7 +459,7 @@ class InitHandler implements CommandHandlerInterface
                 'methods'    => array(''),
             ),
             'tokenizer' => array(
-                'constants'  => array('', '70')
+                'constants'  => array('', '70', '74')
             ),
             'uopz' => array(
                 'constants'  => array('2'),
