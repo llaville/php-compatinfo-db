@@ -6,10 +6,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.7.0] - 2019-12-02
+
 ### Added
 
 - Support to PHP 7.2.21, 7.2.22, 7.2.23, 7.2.24, 7.2.25
 - Support to PHP 7.3.8, 7.3.9, 7.3.10, 7.3.11, 7.3.12 
+- Support to PHP 7.4
 
 ### Changed
 
