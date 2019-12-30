@@ -1,0 +1,12 @@
+[
+    {
+        "ext_name_fk": 40,
+        "name": "mb_str_split",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]
