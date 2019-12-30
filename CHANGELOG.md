@@ -6,12 +6,16 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.4.1
+
 ## [2.7.0] - 2019-12-02
 
 ### Added
 
 - Support to PHP 7.2.21, 7.2.22, 7.2.23, 7.2.24, 7.2.25
-- Support to PHP 7.3.8, 7.3.9, 7.3.10, 7.3.11, 7.3.12 
+- Support to PHP 7.3.8, 7.3.9, 7.3.10, 7.3.11, 7.3.12
 - Support to PHP 7.4
 
 ### Changed
@@ -108,8 +112,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- `bartlett:db:init` command allow to specify a final DB version to tag rather than temporary package version (2.x-dev@commit) 
-- `bartlett:db:init` command does not accept to build a specific extension anymore 
+- `bartlett:db:init` command allow to specify a final DB version to tag rather than temporary package version (2.x-dev@commit)
+- `bartlett:db:init` command does not accept to build a specific extension anymore
 - Amqp reference updated to version 1.9.4 (stable)
 - Uopz reference updated to version 5.1.0 (stable)
 
@@ -176,7 +180,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Uopz reference updated to version 5.0.2 (stable)
 - Zip reference updated to version 1.15.4 (stable)
 
-### Fixed 
+### Fixed
 
 - issue [GH-17](https://github.com/llaville/php-compatinfo-db/issues/17)
 - issue [GH-16](https://github.com/llaville/php-compatinfo-db/issues/16)
