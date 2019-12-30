@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Igbinary reference updated to version 3.1.0 (stable)
+- Xdebug reference updated to version 2.9.0 (stable)
 
 ## [2.7.0] - 2019-12-02
 
