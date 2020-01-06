@@ -106,5 +106,23 @@
         "ext_max": "",
         "php_min": "4.3.11",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 43,
+        "rel_version": "4.0.5.1",
+        "rel_date": "2019-12-19",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 43,
+        "rel_version": "4.0.5.2",
+        "rel_date": "2019-12-20",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
     }
 ]

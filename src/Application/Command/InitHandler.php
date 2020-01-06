@@ -301,6 +301,10 @@ class InitHandler implements CommandHandlerInterface
                 'iniEntries' => array('', '73', '74'),
                 'releases'   => array('', '70', '71', '72', '73'),
             ),
+            'memcache' => array(
+                'iniEntries' => array('', '70'),
+                'releases'   => array(''),
+            ),
             'memcached' => array(
                 'functions'  => array('3'),
                 'iniEntries' => array('', '3'),

@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - [GH-37](https://github.com/llaville/php-compatinfo-db/issues/37) opcache reference outdated information
+- [GH-34](https://github.com/llaville/php-compatinfo-db/issues/34) memcache reference outdated information
 
 ## [2.8.0] - 2019-12-30
 
