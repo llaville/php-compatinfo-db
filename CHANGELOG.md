@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- [GH-37](https://github.com/llaville/php-compatinfo-db/issues/37) opcache reference outdated information
+
 ## [2.8.0] - 2019-12-30
 
 ### Added
