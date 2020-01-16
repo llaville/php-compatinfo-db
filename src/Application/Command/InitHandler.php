@@ -502,8 +502,8 @@ class InitHandler implements CommandHandlerInterface
             ),
             'zendopcache' => array(
                 'functions'  => array('7'),
-                'iniEntries' => array('', '7', '71', '7.4'),
-                'releases'   => array('', '7', '71'),
+                'iniEntries' => array('', '7', '71', '74'),
+                'releases'   => array('', '7', '71', '74'),
             ),
             'zip' => array(
                 'functions'  => array('1'),
