@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [GH-37](https://github.com/llaville/php-compatinfo-db/issues/37) opcache reference outdated information
 - [GH-34](https://github.com/llaville/php-compatinfo-db/issues/34) memcache reference outdated information
+- Xdebug reference updated to version 2.9.1 (stable)
 
 ## [2.8.0] - 2019-12-30
 
