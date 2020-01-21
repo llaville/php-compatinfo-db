@@ -1,0 +1,38 @@
+[
+    {
+        "ext_name_fk": 104,
+        "class_name": "Redis",
+        "name": "REDIS_STREAM",
+        "ext_min": "5.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "Redis",
+        "name": "OPT_REPLY_LITERAL",
+        "ext_min": "5.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "Redis",
+        "name": "OPT_COMPRESSION_LEVEL",
+        "ext_min": "5.1.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "Redis",
+        "name": "SERIALIZER_JSON",
+        "ext_min": "5.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]
