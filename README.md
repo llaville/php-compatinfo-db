@@ -23,7 +23,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * reference all ini entries
 * reference all releases
 
-Version 2.8.0 support informations to latest PHP versions :
+Version 2.9.0 support informations to latest PHP versions :
 
 * PHP 5.2.17
 * PHP 5.3.29
