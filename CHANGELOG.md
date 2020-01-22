@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.9.0] - 2020-01-22
+
 ### Added
 
 - Support to Redis 5
