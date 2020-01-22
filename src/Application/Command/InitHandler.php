@@ -301,6 +301,10 @@ class InitHandler implements CommandHandlerInterface
                 'iniEntries' => array('', '73', '74'),
                 'releases'   => array('', '70', '71', '72', '73'),
             ),
+            'memcache' => array(
+                'iniEntries' => array('', '70'),
+                'releases'   => array(''),
+            ),
             'memcached' => array(
                 'functions'  => array('3'),
                 'iniEntries' => array('', '3'),
@@ -385,9 +389,9 @@ class InitHandler implements CommandHandlerInterface
             ),
             'redis' => array(
                 'classes'    => array('2'),
-                'iniEntries' => array('2', '3', '4'),
-                'releases'   => array('2', '3', '4'),
-                'const'      => array('2', '4'),
+                'iniEntries' => array('2', '3', '4', '5'),
+                'releases'   => array('2', '3', '4', '5'),
+                'const'      => array('2', '4', '5'),
                 'methods'    => array('2', '3'),
             ),
             'riak' => array(
@@ -498,8 +502,8 @@ class InitHandler implements CommandHandlerInterface
             ),
             'zendopcache' => array(
                 'functions'  => array('7'),
-                'iniEntries' => array('', '7', '71'),
-                'releases'   => array('', '7', '71'),
+                'iniEntries' => array('', '7', '71', '74'),
+                'releases'   => array('', '7', '71', '74'),
             ),
             'zip' => array(
                 'functions'  => array('1'),

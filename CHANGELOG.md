@@ -6,6 +6,21 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.9.0] - 2020-01-22
+
+### Added
+
+- Support to Redis 5
+
+### Changed
+
+- [GH-37](https://github.com/llaville/php-compatinfo-db/issues/37) opcache reference outdated information
+- [GH-36](https://github.com/llaville/php-compatinfo-db/issues/36) varnish reference outdated information
+- [GH-35](https://github.com/llaville/php-compatinfo-db/issues/35) redis reference outdated information
+- [GH-34](https://github.com/llaville/php-compatinfo-db/issues/34) memcache reference outdated information
+- Igbinary reference updated to version 3.1.1 (stable)
+- Xdebug reference updated to version 2.9.1 (stable)
+
 ## [2.8.0] - 2019-12-30
 
 ### Added

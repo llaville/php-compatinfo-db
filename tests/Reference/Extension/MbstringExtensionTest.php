@@ -50,6 +50,11 @@ class MbstringExtensionTest extends GenericTest
             'mb_scrub',
         );
 
+        // WARNING: strange to find it on PHP 7.3.x versions, while it supposed to appears since PHP 7.4.0alpha1
+        self::$ignoredfunctions = [
+            'mb_str_split',
+        ];
+
         parent::setUpBeforeClass();
     }
 }

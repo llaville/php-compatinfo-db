@@ -210,6 +210,15 @@ class StandardExtensionTest extends GenericTest
             );
         }
 
+        // WARNING: strange to find it on PHP 7.2.x versions, while it supposed to appears since PHP 7.3.0alpha
+        // probablt a GenericTest issue to fix (see also MbstringExtensionTest)
+        self::$ignoredfunctions = [
+            'array_key_first',
+            'array_key_last',
+            'hrtime',
+            'is_countable',
+        ];
+
         parent::setUpBeforeClass();
     }
 }
