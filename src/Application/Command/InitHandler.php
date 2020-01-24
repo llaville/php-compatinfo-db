@@ -457,7 +457,7 @@ class InitHandler implements CommandHandlerInterface
                 'classes'    => array(''),
                 'constants'  => array('', '1'),
                 'functions'  => array('', '1'),
-                'releases'   => array('', '1'),
+                'releases'   => array('', '1', '2'),
                 'const'      => array('1'),
                 'methods'    => array('1'),
             ),
