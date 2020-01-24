@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Igbinary reference updated to version 3.1.2 (stable)
+- Svn reference updated to version 1.0.3 (stable)
 
 ## [2.9.0] - 2020-01-22
 

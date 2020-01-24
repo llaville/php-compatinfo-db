@@ -456,8 +456,10 @@ class InitHandler implements CommandHandlerInterface
             'svn' => array(
                 'classes'    => array(''),
                 'constants'  => array('', '1'),
-                'functions'  => array(''),
+                'functions'  => array('', '1'),
                 'releases'   => array('', '1'),
+                'const'      => array('1'),
+                'methods'    => array('1'),
             ),
             'tidy' => array(
                 'releases'   => array('', '70', '71'),
