@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.3.14
+
 ### Changed
 
 - [GH-38](https://github.com/llaville/php-compatinfo-db/issues/38) redis reference (optional part)
