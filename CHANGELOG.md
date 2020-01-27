@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [GH-38](https://github.com/llaville/php-compatinfo-db/issues/38) redis reference (optional part)
 - Igbinary reference updated to version 3.1.2 (stable)
 - Svn reference updated to version 2.0.3 (beta)
+- Uploadprogress reference updated to version 1.1.2 (stable)
 
 ## [2.9.0] - 2020-01-22
 
