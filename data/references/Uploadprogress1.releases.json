@@ -43,5 +43,32 @@
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 87,
+        "rel_version": "1.1.0",
+        "rel_date": "2020-01-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 87,
+        "rel_version": "1.1.1",
+        "rel_date": "2020-01-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 87,
+        "rel_version": "1.1.2",
+        "rel_date": "2020-01-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
     }
 ]
