@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Bartlett\CompatInfoDb\Application\Command;
 
-use ZendDiagnostics\Check\Callback;
-use ZendDiagnostics\Check\ExtensionLoaded;
-use ZendDiagnostics\Check\PDOCheck;
-use ZendDiagnostics\Check\PhpVersion;
-use ZendDiagnostics\Result\Collection as ResultCollection;
-use ZendDiagnostics\Result\Failure;
-use ZendDiagnostics\Result\Success;
-use ZendDiagnostics\Runner\Runner;
+use Laminas\Diagnostics\Check\Callback;
+use Laminas\Diagnostics\Check\ExtensionLoaded;
+use Laminas\Diagnostics\Check\PDOCheck;
+use Laminas\Diagnostics\Check\PhpVersion;
+use Laminas\Diagnostics\Result\Collection as ResultCollection;
+use Laminas\Diagnostics\Result\Failure;
+use Laminas\Diagnostics\Result\Success;
+use Laminas\Diagnostics\Runner\Runner;
 
 class DiagnoseHandler implements CommandHandlerInterface
 {

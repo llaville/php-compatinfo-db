@@ -8,8 +8,8 @@ use Bartlett\CompatInfoDb\Application\Command\DiagnoseCommand as AppDiagnoseComm
 use Bartlett\CompatInfoDb\DatabaseFactory;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use ZendDiagnostics\Result\FailureInterface;
-use ZendDiagnostics\Result\SuccessInterface;
+use Laminas\Diagnostics\Result\FailureInterface;
+use Laminas\Diagnostics\Result\SuccessInterface;
 
 /**
  * Checks the minimum requirements on current platform for the phar distribution
