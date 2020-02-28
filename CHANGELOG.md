@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Zip reference updated to version 1.17.2 (stable)
+
 ## [2.10.0] - 2020-01-27
 
 ### Added
