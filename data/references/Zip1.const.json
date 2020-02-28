@@ -727,5 +727,130 @@
         "ext_max": "",
         "php_min": "4.3.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "CM_LZMA2",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.6.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "CM_XZ",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.6.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_ENCRNOTSUPP",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_RDONLY",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_NOPASSWD",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_WRONGPASSWD",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_OPNOTSUPP",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.0.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_INUSE",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.0.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_TELL",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.0.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_COMPRESSED_DATA",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.6.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "ER_CANCELLED",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.6.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "LIBZIP_VERSION",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "RDONLY",
+        "ext_min": "1.15.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "lib_zip": "1.0.0"
     }
 ]
