@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [GH-40](https://github.com/llaville/php-compatinfo-db/issues/40) zip reference (thanks to @remicollet)
 - Zip reference updated to version 1.17.2 (stable)
+- Msgpack reference updated to version 2.1.0 (stable)
 
 ## [2.10.0] - 2020-01-27
 
