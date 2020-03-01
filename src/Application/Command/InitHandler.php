@@ -502,6 +502,9 @@ class InitHandler implements CommandHandlerInterface
             'xsl' => array(
                 'releases'   => array('', '70', '71'),
             ),
+            'yaml' => array(
+                'releases'   => array('', '2'),
+            ),
             'zendopcache' => array(
                 'functions'  => array('7'),
                 'iniEntries' => array('', '7', '71', '74'),
