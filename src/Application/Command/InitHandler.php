@@ -388,11 +388,11 @@ class InitHandler implements CommandHandlerInterface
                 'methods'    => ['', '74'],
             ),
             'redis' => array(
-                'classes'    => array('2'),
+                'classes'    => array('2', '5'),
                 'iniEntries' => array('2', '3', '4', '5'),
                 'releases'   => array('2', '3', '4', '5'),
                 'const'      => array('2', '4', '5'),
-                'methods'    => array('2', '3'),
+                'methods'    => array('2', '3', '5'),
             ),
             'riak' => array(
                 'classes'    => array('', '1'),
