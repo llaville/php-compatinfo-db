@@ -475,5 +475,59 @@
         "ext_max": "",
         "php_min": "4.3.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.15.5",
+        "rel_date": "2019-09-09",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.16.0",
+        "rel_date": "2020-01-28",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.16.1",
+        "rel_date": "2020-01-29",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.17.0",
+        "rel_date": "2020-01-31",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.17.1",
+        "rel_date": "2020-02-03",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.17.2",
+        "rel_date": "2020-02-28",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
     }
 ]

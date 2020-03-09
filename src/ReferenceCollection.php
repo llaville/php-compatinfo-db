@@ -172,8 +172,16 @@ class ReferenceCollection
             $rec['proto_since'] = '';
         }
 
+        if (!isset($rec['optional'])) {
+            $rec['optional'] = false;
+        }
+
         if (!isset($rec['lib_imagemagick'])) {
             $rec['lib_imagemagick'] = '';
+        }
+
+        if (!isset($rec['lib_zip'])) {
+            $rec['lib_zip'] = '';
         }
 
         $criteria = array(
@@ -215,6 +223,10 @@ class ReferenceCollection
 
         if (!isset($rec['lib_imagemagick'])) {
             $rec['lib_imagemagick'] = '';
+        }
+
+        if (!isset($rec['lib_zip'])) {
+            $rec['lib_zip'] = '';
         }
 
         if (is_array($row)) {
@@ -354,7 +366,9 @@ class ReferenceCollection
             ' ext_min VARCHAR(16), ext_max VARCHAR(16),' .
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' prototype VARCHAR(32), proto_since VARCHAR(16),' .
+            ' optional INTEGER,'.
             ' lib_imagemagick VARCHAR(16), ' .
+            ' lib_zip VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, class_name, name))'
         );
         $this->dbal->exec(
@@ -384,6 +398,7 @@ class ReferenceCollection
             ' php_min VARCHAR(16), php_max VARCHAR(16),' .
             ' optional INTEGER, ' .
             ' lib_imagemagick VARCHAR(16), ' .
+            ' lib_zip VARCHAR(16), ' .
             ' PRIMARY KEY (ext_name_fk, class_name, name))'
         );
         $this->stmtVersions = $this->dbal->prepare(
@@ -418,8 +433,8 @@ class ReferenceCollection
         );
         $this->stmtMethods = $this->dbal->prepare(
             'REPLACE INTO ' . $tblMethods .
-            ' (ext_name_fk, class_name, name, static, ext_min, ext_max, php_min, php_max, prototype, proto_since, lib_imagemagick)' .
-            ' VALUES (:ext_name_fk, :class_name, :name, :static, :ext_min, :ext_max, :php_min, :php_max, :prototype, :proto_since, :lib_imagemagick)'
+            ' (ext_name_fk, class_name, name, static, ext_min, ext_max, php_min, php_max, prototype, proto_since, optional, lib_imagemagick, lib_zip)' .
+            ' VALUES (:ext_name_fk, :class_name, :name, :static, :ext_min, :ext_max, :php_min, :php_max, :prototype, :proto_since, :optional, :lib_imagemagick, :lib_zip)'
         );
         $this->stmtFunctions = $this->dbal->prepare(
             'REPLACE INTO ' . $tblFunctions .
@@ -433,8 +448,8 @@ class ReferenceCollection
         );
         $this->stmtClassConstant = $this->dbal->prepare(
             'REPLACE INTO ' . $tblClassConst .
-            ' (ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional, lib_imagemagick)' .
-            ' VALUES (:ext_name_fk, :class_name, :name, :ext_min, :ext_max, :php_min, :php_max, :optional, :lib_imagemagick)'
+            ' (ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional, lib_imagemagick, lib_zip)' .
+            ' VALUES (:ext_name_fk, :class_name, :name, :ext_min, :ext_max, :php_min, :php_max, :optional, :lib_imagemagick, :lib_zip)'
         );
 
         $this->stmtRelease = $this->dbal->prepare(
@@ -464,13 +479,13 @@ class ReferenceCollection
         $this->stmtMethod = $this->dbal->prepare(
             'SELECT' .
             ' ext_name_fk, class_name, name, static, ext_min, ext_max, php_min, php_max' .
-            ' prototype, proto_since, lib_imagemagick' .
+            ' prototype, proto_since, optional, lib_imagemagick, lib_zip' .
             ' FROM ' . $tblMethods .
             ' WHERE ext_name_fk = :ext_name_fk AND class_name = :class_name AND name = :name COLLATE NOCASE'
         );
         $this->stmtClassConst = $this->dbal->prepare(
             'SELECT' .
-            ' ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional, lib_imagemagick' .
+            ' ext_name_fk, class_name, name, ext_min, ext_max, php_min, php_max, optional, lib_imagemagick, lib_zip' .
             ' FROM ' . $tblClassConst .
             ' WHERE ext_name_fk = :ext_name_fk AND class_name = :class_name AND name = :name COLLATE NOCASE'
         );
