@@ -442,5 +442,15 @@
         "php_max": "",
         "optional": true,
         "lib_zip": "1.6.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "replaceFile",
+        "static": false,
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
     }
 ]

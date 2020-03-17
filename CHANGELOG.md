@@ -9,7 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - [GH-40](https://github.com/llaville/php-compatinfo-db/issues/40) zip reference (thanks to @remicollet)
-- Zip reference updated to version 1.17.2 (stable)
+- Zip reference updated to version 1.18.0 (stable)
 - Msgpack reference updated to version 2.1.0 (stable)
 - Xdebug reference updated to version 2.9.2 (stable)
 - OAuth reference updated to version 2.0.5 (stable)
