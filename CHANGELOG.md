@@ -6,17 +6,25 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.11.0] - 2020-03-20
+
+### Added
+
+- Support to PHP 7.2.28
+- Support to PHP 7.3.15
+- Support to PHP 7.4.3
+
 ### Changed
 
 - [GH-40](https://github.com/llaville/php-compatinfo-db/issues/40) zip reference (thanks to @remicollet)
-- Zip reference updated to version 1.17.2 (stable)
+- Zip reference updated to version 1.18.1 (stable)
 - Msgpack reference updated to version 2.1.0 (stable)
 - Xdebug reference updated to version 2.9.2 (stable)
 - OAuth reference updated to version 2.0.5 (stable)
 - SSH2 reference updated to version 1.2 (beta)
 - Uploadprogress reference updated to version 1.1.3 (stable)
 - Yaml reference updated to version 2.0.4 (stable)
-- Redis reference updated to version 5.2.0 (stable)
+- Redis reference updated to version 5.2.1 (stable)
 
 ## [2.10.0] - 2020-01-27
 

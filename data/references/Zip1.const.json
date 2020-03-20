@@ -852,5 +852,50 @@
         "php_min": "4.3.0",
         "php_max": "",
         "lib_zip": "1.0.0"
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_RECOMPRESS",
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_ENCRYPTED",
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_OVERWRITE",
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_LOCAL",
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "FL_CENTRAL",
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
     }
 ]
