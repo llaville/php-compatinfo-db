@@ -22,7 +22,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - SSH2 reference updated to version 1.2 (beta)
 - Uploadprogress reference updated to version 1.1.3 (stable)
 - Yaml reference updated to version 2.0.4 (stable)
-- Redis reference updated to version 5.2.0 (stable)
+- Redis reference updated to version 5.2.1 (stable)
 
 ## [2.10.0] - 2020-01-27
 
