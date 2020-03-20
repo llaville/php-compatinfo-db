@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.2.28
+
 ### Changed
 
 - [GH-40](https://github.com/llaville/php-compatinfo-db/issues/40) zip reference (thanks to @remicollet)
