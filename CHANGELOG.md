@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+- Xdebug reference updated to version 2.9.3 (stable)
+
 ## [2.12.0] - 2020-03-21
 
 ### Added
