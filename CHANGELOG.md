@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Amqp reference updated to version 1.10.0 (stable)
 - Xdebug reference updated to version 2.9.4 (stable)
+- Lzf reference updated to version 1.6.8 (stable)
 
 ## [2.12.0] - 2020-03-21
 
