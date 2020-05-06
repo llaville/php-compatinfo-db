@@ -14,9 +14,11 @@ use Symfony\Component\Console\Helper\TableSeparator;
  */
 class ListCommand extends AbstractCommand
 {
+    public const NAME = 'bartlett:db:list';
+
     protected function configure()
     {
-        $this->setName('bartlett:db:list')
+        $this->setName(self::NAME)
             ->setDescription('List all references supported by the Database')
         ;
     }

@@ -29,5 +29,8 @@ if ($isAutoloadFound === false) {
     ));
 }
 
-$application = new \Bartlett\CompatInfoDb\Presentation\Console\Application('Database handler for CompatInfo');
+use Bartlett\CompatInfoDb\Presentation\Console\Application;
+use Bartlett\CompatInfoDb\Application\Service\ContainerService;
+
+$application = new Application(new ContainerService(__DIR__ . '/../data/references'));
 $application->run();

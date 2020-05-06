@@ -12,9 +12,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class ShowCommand extends AbstractCommand
 {
+    public const NAME = 'bartlett:db:show';
+
     protected function configure()
     {
-        $this->setName('bartlett:db:show')
+        $this->setName(self::NAME)
             ->setDescription('Show details of a reference supported in the Database.')
             ->addArgument(
                 'extension',

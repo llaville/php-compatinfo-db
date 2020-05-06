@@ -14,6 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Yaml reference updated to version 2.1.0 (stable)
 - remove Symfony 3.x compatibility and add support to Symfony 5.x
 - remove `bartlett:db:backup` command
+- make commands lazily loaded (see https://symfony.com/doc/current/console/lazy_commands.html)
 
 ## [2.12.0] - 2020-03-21
 

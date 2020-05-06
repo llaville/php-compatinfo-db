@@ -16,10 +16,12 @@ use Laminas\Diagnostics\Result\SuccessInterface;
  */
 class DiagnoseCommand extends AbstractCommand
 {
+    public const NAME = 'bartlett:diagnose';
+
     protected function configure()
     {
         $this
-            ->setName('bartlett:diagnose')
+            ->setName(self::NAME)
             ->setDescription('Diagnoses the system to identify common errors')
         ;
     }

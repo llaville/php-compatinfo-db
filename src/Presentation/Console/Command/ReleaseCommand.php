@@ -13,9 +13,11 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class ReleaseCommand extends AbstractCommand
 {
+    public const NAME = 'bartlett:db:release:php';
+
     protected function configure()
     {
-        $this->setName('bartlett:db:release:php')
+        $this->setName(self::NAME)
             ->setDescription('Fix php.max versions on new PHP release')
         ;
     }

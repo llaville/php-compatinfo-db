@@ -11,9 +11,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class PublishCommand extends AbstractCommand
 {
+    public const NAME = 'bartlett:db:publish:php';
+
     protected function configure()
     {
-        $this->setName('bartlett:db:publish:php')
+        $this->setName(self::NAME)
             ->setDescription('Add new PHP release')
             ->addArgument(
                 'rel_version',
