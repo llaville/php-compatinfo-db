@@ -14,14 +14,14 @@ use Symfony\Component\Console\Helper\TableSeparator;
  */
 class ListCommand extends AbstractCommand
 {
-    protected function configure() : void
+    protected function configure()
     {
         $this->setName('bartlett:db:list')
             ->setDescription('List all references supported by the Database')
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $listCommand = new AppListCommand();
 
@@ -43,5 +43,7 @@ class ListCommand extends AbstractCommand
         // print results
         $this->printDbBuildVersion($output);
         $this->tableHelper($output, $headers, $rows);
+
+        return 0;
     }
 }

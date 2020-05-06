@@ -13,14 +13,14 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class BackupCommand extends AbstractCommand
 {
-    protected function configure() : void
+    protected function configure()
     {
         $this->setName('bartlett:db:backup')
             ->setDescription('Backup the current SQLite compatinfo database')
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $backupCommand = new AppBackupCommand();
         $backupCommand->source = $this->getApplication()->getDbFilename();
@@ -44,5 +44,7 @@ class BackupCommand extends AbstractCommand
             );
         }
         $output->writeln($message);
+
+        return 0;
     }
 }

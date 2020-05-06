@@ -38,5 +38,7 @@ class DiagnoseCommand extends AbstractCommand
                 $output->writeln('- <info>OK</info> - ' . $results[$check]->getMessage());
             }
         }
+
+        return 0;
     }
 }

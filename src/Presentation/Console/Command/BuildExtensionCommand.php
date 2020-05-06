@@ -14,7 +14,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class BuildExtensionCommand extends AbstractCommand
 {
-    protected function configure() : void
+    protected function configure()
     {
         $this->setName('bartlett:db:build:ext')
             ->setDescription('Build Extension draft JSON data for SQLite compatinfo database')
@@ -38,7 +38,7 @@ class BuildExtensionCommand extends AbstractCommand
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $buildExtensionCommand = new AppBuildExtensionCommand();
         $buildExtensionCommand->extension = trim($input->getArgument('extension'));
@@ -47,5 +47,7 @@ class BuildExtensionCommand extends AbstractCommand
         $buildExtensionCommand->output = $output;
 
         $this->commandBus->handle($buildExtensionCommand);
+
+        return 0;
     }
 }
