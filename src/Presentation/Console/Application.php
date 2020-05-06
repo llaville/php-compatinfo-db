@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use Bartlett\CompatInfoDb\Application\Command\BackupHandler;
 use Bartlett\CompatInfoDb\Application\Command\BuildExtensionHandler;
 use Bartlett\CompatInfoDb\Application\Command\DiagnoseHandler;
 use Bartlett\CompatInfoDb\Application\Command\InitHandler;
@@ -22,7 +21,6 @@ use Bartlett\CompatInfoDb\Presentation\Console\Command\ListCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\PublishCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ReleaseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ShowCommand;
-use Bartlett\CompatInfoDb\Application\Command\BackupCommand as AppBackupCommand;
 use Bartlett\CompatInfoDb\Application\Command\ListCommand as AppListCommand;
 use Bartlett\CompatInfoDb\Application\Command\DiagnoseCommand as AppDiagnoseCommand;
 use Bartlett\CompatInfoDb\Application\Command\InitCommand as AppInitCommand;
@@ -60,7 +58,6 @@ class Application extends \Symfony\Component\Console\Application
     protected function getDefaultCommands() : array
     {
         $locator = new InMemoryLocator();
-        $locator->addHandler(new BackupHandler(), AppBackupCommand::class);
         $locator->addHandler(new ListHandler(), AppListCommand::class);
         $locator->addHandler(new DiagnoseHandler(), AppDiagnoseCommand::class);
         $locator->addHandler(new BuildExtensionHandler(), AppBuildExtensionCommand::class);
@@ -79,7 +76,6 @@ class Application extends \Symfony\Component\Console\Application
 
         $defaultCommands = parent::getDefaultCommands();
 
-        $defaultCommands[] = new BackupCommand($commandBus);
         $defaultCommands[] = new ListCommand($commandBus);
         $defaultCommands[] = new DiagnoseCommand($commandBus);
         $defaultCommands[] = new InitCommand($commandBus);
