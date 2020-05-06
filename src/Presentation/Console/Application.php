@@ -13,7 +13,6 @@ use Bartlett\CompatInfoDb\Application\Command\ReleaseHandler;
 use Bartlett\CompatInfoDb\Application\Command\ShowHandler;
 use Bartlett\CompatInfoDb\Application\JsonFileHandler;
 use Bartlett\CompatInfoDb\DatabaseFactory;
-use Bartlett\CompatInfoDb\Presentation\Console\Command\BackupCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\BuildExtensionCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DiagnoseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\InitCommand;
