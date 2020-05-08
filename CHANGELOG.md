@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Amqp reference updated to version 1.10.0 (stable)
 - Xdebug reference updated to version 2.9.4 (stable)
 - Lzf reference updated to version 1.6.8 (stable)
+- Redis reference updated to version 5.2.2 (stable)
 - Yaml reference updated to version 2.1.0 (stable)
 - remove Symfony 3.x compatibility and add support to Symfony 5.x
 - remove `bartlett:db:backup` command
