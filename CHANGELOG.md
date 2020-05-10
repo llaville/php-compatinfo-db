@@ -6,6 +6,25 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.13.0] - 2020-05-10
+
+### Added
+
+- Support to PHP 7.2.30
+- Support to PHP 7.3.17
+- Support to PHP 7.4.5
+
+### Changed
+
+- Amqp reference updated to version 1.10.0 (stable)
+- Xdebug reference updated to version 2.9.5 (stable)
+- Lzf reference updated to version 1.6.8 (stable)
+- Redis reference updated to version 5.2.2 (stable)
+- Yaml reference updated to version 2.1.0 (stable)
+- remove Symfony 3.x compatibility and add support to Symfony 5.x
+- remove `bartlett:db:backup` command
+- make commands lazily loaded (see https://symfony.com/doc/current/console/lazy_commands.html)
+
 ## [2.12.0] - 2020-03-21
 
 ### Added

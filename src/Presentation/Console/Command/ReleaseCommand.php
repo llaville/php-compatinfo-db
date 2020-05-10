@@ -13,16 +13,20 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class ReleaseCommand extends AbstractCommand
 {
-    protected function configure() : void
+    public const NAME = 'bartlett:db:release:php';
+
+    protected function configure()
     {
-        $this->setName('bartlett:db:release:php')
+        $this->setName(self::NAME)
             ->setDescription('Fix php.max versions on new PHP release')
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $releaseCommand = new AppReleaseCommand();
         $this->commandBus->handle($releaseCommand);
+
+        return 0;
     }
 }

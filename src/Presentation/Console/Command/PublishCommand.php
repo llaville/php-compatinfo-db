@@ -11,9 +11,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class PublishCommand extends AbstractCommand
 {
-    protected function configure() : void
+    public const NAME = 'bartlett:db:publish:php';
+
+    protected function configure()
     {
-        $this->setName('bartlett:db:publish:php')
+        $this->setName(self::NAME)
             ->setDescription('Add new PHP release')
             ->addArgument(
                 'rel_version',
@@ -35,7 +37,7 @@ class PublishCommand extends AbstractCommand
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $publishCommand = new AppPublishCommand();
         $publishCommand->relVersion = trim($input->getArgument('rel_version'));
@@ -43,6 +45,7 @@ class PublishCommand extends AbstractCommand
         $publishCommand->relState = trim($input->getArgument('rel_state'));
 
         $this->commandBus->handle($publishCommand);
-    }
 
+        return 0;
+    }
 }

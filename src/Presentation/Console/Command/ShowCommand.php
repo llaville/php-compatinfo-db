@@ -12,9 +12,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class ShowCommand extends AbstractCommand
 {
-    protected function configure() : void
+    public const NAME = 'bartlett:db:show';
+
+    protected function configure()
     {
-        $this->setName('bartlett:db:show')
+        $this->setName(self::NAME)
             ->setDescription('Show details of a reference supported in the Database.')
             ->addArgument(
                 'extension',
@@ -32,7 +34,7 @@ class ShowCommand extends AbstractCommand
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $showCommand = new AppShowCommand(
             trim($input->getArgument('extension')),
@@ -91,7 +93,7 @@ class ShowCommand extends AbstractCommand
                 array($summary['static methods'])
             );
             $this->printFormattedLines($output, $summary);
-            return;
+            return 0;
         }
 
         foreach ($results as $title => $values) {
@@ -140,6 +142,8 @@ class ShowCommand extends AbstractCommand
             $this->tableHelper($output, $headers, $rows);
             $output->writeln('');
         }
+
+        return 0;
     }
 
     private static function ext(array $versions) : string

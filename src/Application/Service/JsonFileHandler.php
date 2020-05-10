@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bartlett\CompatInfoDb\Application;
+namespace Bartlett\CompatInfoDb\Application\Service;
 
 class JsonFileHandler
 {

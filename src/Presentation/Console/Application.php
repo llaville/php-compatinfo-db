@@ -4,17 +4,7 @@ declare(strict_types=1);
 
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use Bartlett\CompatInfoDb\Application\Command\BackupHandler;
-use Bartlett\CompatInfoDb\Application\Command\BuildExtensionHandler;
-use Bartlett\CompatInfoDb\Application\Command\DiagnoseHandler;
-use Bartlett\CompatInfoDb\Application\Command\InitHandler;
-use Bartlett\CompatInfoDb\Application\Command\ListHandler;
-use Bartlett\CompatInfoDb\Application\Command\PublishHandler;
-use Bartlett\CompatInfoDb\Application\Command\ReleaseHandler;
-use Bartlett\CompatInfoDb\Application\Command\ShowHandler;
-use Bartlett\CompatInfoDb\Application\JsonFileHandler;
 use Bartlett\CompatInfoDb\DatabaseFactory;
-use Bartlett\CompatInfoDb\Presentation\Console\Command\BackupCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\BuildExtensionCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DiagnoseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\InitCommand;
@@ -22,19 +12,14 @@ use Bartlett\CompatInfoDb\Presentation\Console\Command\ListCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\PublishCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ReleaseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ShowCommand;
-use Bartlett\CompatInfoDb\Application\Command\BackupCommand as AppBackupCommand;
-use Bartlett\CompatInfoDb\Application\Command\ListCommand as AppListCommand;
-use Bartlett\CompatInfoDb\Application\Command\DiagnoseCommand as AppDiagnoseCommand;
-use Bartlett\CompatInfoDb\Application\Command\InitCommand as AppInitCommand;
-use Bartlett\CompatInfoDb\Application\Command\ReleaseCommand as AppReleaseCommand;
-use Bartlett\CompatInfoDb\Application\Command\PublishCommand as AppPublishCommand;
-use Bartlett\CompatInfoDb\Application\Command\ShowCommand as AppShowCommand;
-use Bartlett\CompatInfoDb\Application\Command\BuildExtensionCommand as AppBuildExtensionCommand;
-use League\Tactician\CommandBus;
-use League\Tactician\Handler\CommandHandlerMiddleware;
-use League\Tactician\Handler\Locator\InMemoryLocator;
-use League\Tactician\Handler\CommandNameExtractor\ClassNameExtractor;
-use League\Tactician\Handler\MethodNameInflector\InvokeInflector;
+
+use Psr\Container\ContainerInterface;
+
+use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
+use Symfony\Component\Console\CommandLoader\ContainerCommandLoader;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
 use PDO;
 
 /**
@@ -42,53 +27,27 @@ use PDO;
  */
 class Application extends \Symfony\Component\Console\Application
 {
+    public const NAME = 'Database handler for CompatInfo';
+    public const VERSION = '2.13.0';
+
     /** @var string */
     private $baseDir;
 
-    public function __construct(string $name = 'UNKNOWN')
+    /** @var ContainerInterface  */
+    private $container;
+
+    public function __construct(ContainerInterface $container)
     {
         try {
             $version = \Jean85\PrettyVersions::getVersion('bartlett/php-compatinfo-db')->getPrettyVersion();
         } catch (\OutOfBoundsException $e) {
-            $version = 'UNKNOWN';
+            $version = self::VERSION;
         }
-        parent::__construct($name, $version);
+        parent::__construct(self::NAME, $version);
 
-        $this->baseDir = dirname(dirname(dirname(__DIR__)));
-    }
-
-    protected function getDefaultCommands() : array
-    {
-        $locator = new InMemoryLocator();
-        $locator->addHandler(new BackupHandler(), AppBackupCommand::class);
-        $locator->addHandler(new ListHandler(), AppListCommand::class);
-        $locator->addHandler(new DiagnoseHandler(), AppDiagnoseCommand::class);
-        $locator->addHandler(new BuildExtensionHandler(), AppBuildExtensionCommand::class);
-        $locator->addHandler(new ShowHandler(), AppShowCommand::class);
-        $locator->addHandler(new InitHandler(new JsonFileHandler($this->getRefDir())), AppInitCommand::class);
-        $locator->addHandler(new ReleaseHandler(new JsonFileHandler($this->getRefDir())), AppReleaseCommand::class);
-        $locator->addHandler(new PublishHandler(new JsonFileHandler($this->getRefDir())), AppPublishCommand::class);
-
-        $handlerMiddleware = new CommandHandlerMiddleware(
-            new ClassNameExtractor(),
-            $locator,
-            new InvokeInflector()
-        );
-
-        $commandBus = new CommandBus([$handlerMiddleware]);
-
-        $defaultCommands = parent::getDefaultCommands();
-
-        $defaultCommands[] = new BackupCommand($commandBus);
-        $defaultCommands[] = new ListCommand($commandBus);
-        $defaultCommands[] = new DiagnoseCommand($commandBus);
-        $defaultCommands[] = new InitCommand($commandBus);
-        $defaultCommands[] = new BuildExtensionCommand($commandBus);
-        $defaultCommands[] = new ReleaseCommand($commandBus);
-        $defaultCommands[] = new PublishCommand($commandBus);
-        $defaultCommands[] = new ShowCommand($commandBus);
-
-        return $defaultCommands;
+        $this->container = $container;
+        $this->setCommandLoader($this->createCommandLoader($container));
+        $this->baseDir = dirname(__DIR__, 3);
     }
 
     public function getDbFilename() : string
@@ -131,5 +90,33 @@ class Application extends \Symfony\Component\Console\Application
         );
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function doRun(InputInterface $input, OutputInterface $output)
+    {
+        $this->container->set(InputInterface::class, $input);
+        $this->container->set(OutputInterface::class, $output);
+
+        return parent::doRun($input, $output);
+    }
+    /**
+     * @param ContainerInterface $container
+     * @return CommandLoaderInterface
+     * @see https://symfony.com/doc/current/console/lazy_commands.html#containercommandloader
+     */
+    private function createCommandLoader(ContainerInterface $container): CommandLoaderInterface
+    {
+        return new ContainerCommandLoader(
+            $container,
+            [
+                BuildExtensionCommand::NAME => BuildExtensionCommand::class,
+                DiagnoseCommand::NAME => DiagnoseCommand::class,
+                InitCommand::NAME => InitCommand::class,
+                ListCommand::NAME => ListCommand::class,
+                PublishCommand::NAME => PublishCommand::class,
+                ReleaseCommand::NAME => ReleaseCommand::class,
+                ShowCommand::NAME => ShowCommand::class,
+            ]
+        );
     }
 }
