@@ -33,7 +33,7 @@ Version 2.12.0 support informations to latest PHP versions :
 * PHP 7.0.33
 * PHP 7.1.33
 * PHP 7.2.30
-* PHP 7.3.16
+* PHP 7.3.17
 * PHP 7.4.4
 
 Currently 107 extensions are referenced in the database.
