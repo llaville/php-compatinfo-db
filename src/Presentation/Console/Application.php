@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use Bartlett\CompatInfoDb\Application\Command\BuildExtensionHandler;
-use Bartlett\CompatInfoDb\Application\Command\DiagnoseHandler;
-use Bartlett\CompatInfoDb\Application\Command\InitHandler;
-use Bartlett\CompatInfoDb\Application\Command\ListHandler;
-use Bartlett\CompatInfoDb\Application\Command\PublishHandler;
-use Bartlett\CompatInfoDb\Application\Command\ReleaseHandler;
-use Bartlett\CompatInfoDb\Application\Command\ShowHandler;
-use Bartlett\CompatInfoDb\Application\JsonFileHandler;
 use Bartlett\CompatInfoDb\DatabaseFactory;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\BuildExtensionCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DiagnoseCommand;
@@ -20,25 +12,15 @@ use Bartlett\CompatInfoDb\Presentation\Console\Command\ListCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\PublishCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ReleaseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ShowCommand;
-use Bartlett\CompatInfoDb\Application\Command\ListCommand as AppListCommand;
-use Bartlett\CompatInfoDb\Application\Command\DiagnoseCommand as AppDiagnoseCommand;
-use Bartlett\CompatInfoDb\Application\Command\InitCommand as AppInitCommand;
-use Bartlett\CompatInfoDb\Application\Command\ReleaseCommand as AppReleaseCommand;
-use Bartlett\CompatInfoDb\Application\Command\PublishCommand as AppPublishCommand;
-use Bartlett\CompatInfoDb\Application\Command\ShowCommand as AppShowCommand;
-use Bartlett\CompatInfoDb\Application\Command\BuildExtensionCommand as AppBuildExtensionCommand;
-use League\Tactician\CommandBus;
-use League\Tactician\Handler\CommandHandlerMiddleware;
-use League\Tactician\Handler\Locator\HandlerLocator;
-use League\Tactician\Handler\Locator\InMemoryLocator;
-use League\Tactician\Handler\CommandNameExtractor\ClassNameExtractor;
-use League\Tactician\Handler\MethodNameInflector\InvokeInflector;
-use PDO;
+
 use Psr\Container\ContainerInterface;
+
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\Console\CommandLoader\ContainerCommandLoader;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+
+use PDO;
 
 /**
  * Symfony Console Application to handle the SQLite compatinfo database.
@@ -46,7 +28,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Application extends \Symfony\Component\Console\Application
 {
     public const NAME = 'Database handler for CompatInfo';
-    public const VERSION = '2.13.0-dev';
+    public const VERSION = '2.13.0';
 
     /** @var string */
     private $baseDir;
