@@ -32,7 +32,7 @@ Version 2.12.0 support informations to latest PHP versions :
 * PHP 5.6.40
 * PHP 7.0.33
 * PHP 7.1.33
-* PHP 7.2.29
+* PHP 7.2.30
 * PHP 7.3.16
 * PHP 7.4.4
 
@@ -51,7 +51,7 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 
 # Contributors
 
-* Laurent Laville
+* Laurent Laville (Lead Developer)
 * Remi Collet (contributor on many extensions and unit tests)
 
 [![](https://sourcerer.io/fame/llaville/llaville/php-compatinfo-db/images/0)](https://sourcerer.io/fame/llaville/llaville/php-compatinfo-db/links/0)
