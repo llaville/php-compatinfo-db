@@ -15,7 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Amqp reference updated to version 1.10.0 (stable)
-- Xdebug reference updated to version 2.9.4 (stable)
+- Xdebug reference updated to version 2.9.5 (stable)
 - Lzf reference updated to version 1.6.8 (stable)
 - Redis reference updated to version 5.2.2 (stable)
 - Yaml reference updated to version 2.1.0 (stable)
