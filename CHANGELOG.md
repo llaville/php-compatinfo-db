@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.13.1] - 2020-05-11
+
+### Changed
+
+* [Outdated yac reference](https://github.com/llaville/php-compatinfo-db/issues/43). Thanks to @remicollet for his notification
+
 ## [2.13.0] - 2020-05-10
 
 ### Added

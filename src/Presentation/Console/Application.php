@@ -28,7 +28,7 @@ use PDO;
 class Application extends \Symfony\Component\Console\Application
 {
     public const NAME = 'Database handler for CompatInfo';
-    public const VERSION = '2.13.0';
+    public const VERSION = '2.13.1';
 
     /** @var string */
     private $baseDir;
