@@ -46,5 +46,13 @@
         "ext_max": "",
         "php_min": "5.2.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 98,
+        "name": "yac.serializer",
+        "ext_min": "2.2.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
     }
 ]
