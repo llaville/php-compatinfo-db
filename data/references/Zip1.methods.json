@@ -452,5 +452,25 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "isCompressionMethodSupported",
+        "static": true,
+        "ext_min": "1.19.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "isEncryptionMethodSupported",
+        "static": true,
+        "ext_min": "1.19.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
     }
 ]

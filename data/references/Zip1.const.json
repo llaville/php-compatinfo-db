@@ -897,5 +897,23 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "EM_TRAD_PKWARE",
+        "ext_min": "1.19.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "class_name": "ZipArchive",
+        "name": "EM_UNKNOWN",
+        "ext_min": "1.19.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
     }
 ]
