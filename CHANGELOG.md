@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Support to PHP 7.3.19
 - Support to PHP 7.4.7
+- Support to oci8 extension (version up to 2.2.0)
 
 ### Changed
 

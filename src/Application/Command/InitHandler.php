@@ -332,6 +332,14 @@ class InitHandler implements CommandHandlerInterface
             'mysqli' => array(
                 'releases'   => array('', '70', '71'),
             ),
+            'oci8' => array(
+                'classes'    => array(''),
+                'constants'  => array(''),
+                'functions'  => array(''),
+                'iniEntries' => array(''),
+                'releases'   => array('1', '2'),
+                'methods'    => array(''),
+            ),
             'openssl' => array(
                 'constants'  => array('', '71'),
                 'functions'  => array('', '72', '73', '74'),
