@@ -6,6 +6,19 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.15.0] - 2020-06-30
+
+### Added
+
+- Support to PHP 7.3.19
+- Support to PHP 7.4.7
+- Support to oci8 extension (version up to 2.2.0)
+
+### Changed
+
+- Xdebug reference updated to version 2.9.6 (stable)
+- Zip reference updated to version 1.19.0 (stable)
+
 ## [2.14.0] - 2020-05-17
 
 ### Added

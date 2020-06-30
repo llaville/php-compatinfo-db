@@ -1,0 +1,1252 @@
+[
+    {
+        "ext_name_fk": 108,
+        "name": "oci_bind_array_by_name",
+        "ext_min": "1.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_bind_by_name",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_cancel",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_client_version",
+        "ext_min": "1.4.6",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_close",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_append",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_assign",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_element_assign",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_element_get",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_max",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_size",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_collection_trim",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_commit",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_connect",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_define_by_name",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_error",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_execute",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_fetch",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_fetch_all",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_fetch_array",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_fetch_assoc",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_fetch_object",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_fetch_row",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_is_null",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_name",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_precision",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_scale",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_size",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_type",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_field_type_raw",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_free_collection",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_free_cursor",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_free_descriptor",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_free_statement",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_internal_debug",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_append",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_copy",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_eof",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_erase",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_export",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_flush",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_import",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_is_equal",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_load",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_read",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_rewind",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_save",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_seek",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_size",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_tell",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_truncate",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_lob_write",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_new_collection",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_new_connect",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_new_cursor",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_new_descriptor",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_num_fields",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_num_rows",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_parse",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_password_change",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_pconnect",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_result",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_rollback",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_server_version",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_action",
+        "ext_min": "1.4.0",
+        "ext_max": "",
+        "php_min": "4.3.9",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_client_identifier",
+        "ext_min": "1.4.0",
+        "ext_max": "",
+        "php_min": "4.3.9",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_client_info",
+        "ext_min": "1.4.0",
+        "ext_max": "",
+        "php_min": "4.3.9",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_edition",
+        "ext_min": "1.4.0",
+        "ext_max": "",
+        "php_min": "4.3.9",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_module_name",
+        "ext_min": "1.4.0",
+        "ext_max": "",
+        "php_min": "4.3.9",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_prefetch",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_statement_type",
+        "ext_min": "1.1",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocibindbyname",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicancel",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicollappend",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicollassignelem",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicollgetelem",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicollmax",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicollsize",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolltrim",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumnisnull",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumnname",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumnprecision",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumnscale",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumnsize",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumntype",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicolumntyperaw",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocicommit",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocidefinebyname",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocierror",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociexecute",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifetch",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifetchinto",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifetchstatement",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifreecollection",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifreecursor",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifreedesc",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocifreestatement",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocigetbufferinglob",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociinternaldebug",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociloadlob",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocilogoff",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocilogon",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocinewcollection",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocinewcursor",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocinewdescriptor",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocinlogon",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocinumcols",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociparse",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocipasswordchange",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociplogon",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociresult",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocirollback",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocirowcount",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocisavelob",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocisavelobfile",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociserverversion",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocisetbufferinglob",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocisetprefetch",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ocistatementtype",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "ociwritelobtofile",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_get_implicit_resultset",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_register_taf_callback",
+        "ext_min": "2.1.7",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_unregister_taf_callback",
+        "ext_min": "2.1.7",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_db_operation",
+        "ext_min": "2.2.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "name": "oci_set_call_timeout",
+        "ext_min": "2.2.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

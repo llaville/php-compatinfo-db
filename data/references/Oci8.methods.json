@@ -1,0 +1,302 @@
+[
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "append",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "assign",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "assignelem",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "free",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "getelem",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "max",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "size",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Collection",
+        "name": "trim",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "append",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "close",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "eof",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "erase",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "export",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "flush",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "free",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "getbuffering",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "import",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "load",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "read",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "rewind",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "save",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "savefile",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "seek",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "setbuffering",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "size",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "tell",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "truncate",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "write",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "writetemporary",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": 108,
+        "class_name": "OCI-Lob",
+        "name": "writetofile",
+        "static": "false",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    }
+]

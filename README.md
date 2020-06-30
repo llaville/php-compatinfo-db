@@ -23,7 +23,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * reference all ini entries
 * reference all releases
 
-Version 2.14.0 support informations to latest PHP versions :
+Version 2.15.0 support informations to latest PHP versions :
 
 * PHP 5.2.17
 * PHP 5.3.29
@@ -33,10 +33,10 @@ Version 2.14.0 support informations to latest PHP versions :
 * PHP 7.0.33
 * PHP 7.1.33
 * PHP 7.2.31
-* PHP 7.3.18
-* PHP 7.4.6
+* PHP 7.3.19
+* PHP 7.4.7
 
-Currently 107 extensions are referenced in the database.
+Currently 108 extensions are referenced in the database.
 
 For future versions, see the `CHANGELOG` file.
 

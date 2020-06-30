@@ -70,5 +70,14 @@
         "ext_max": "",
         "php_min": "7.4.6",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 78,
+        "rel_version": "7.4.7",
+        "rel_date": "2020-06-11",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.4.7",
+        "php_max": ""
     }
 ]
