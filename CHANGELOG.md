@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Redis reference updated to version 5.3.0 (stable)
+
 ## [2.15.0] - 2020-06-30
 
 ### Added
