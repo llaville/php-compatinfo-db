@@ -8,7 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Redis reference updated to version 5.3.0 (stable)
+- Redis reference updated to version 5.3.1 (stable)
 - Split ChangeLog files in release series 1 and 2, handle now with the [Git Semantic Versioning](https://github.com/markchalloner/git-semver/) tools.
 
 ## [2.15.0] - 2020-06-30
