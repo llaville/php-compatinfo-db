@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.2.32
+
 ### Changed
 
 - Redis reference updated to version 5.3.1 (stable)
