@@ -21,7 +21,7 @@
         "ext-json": "*",
         "ext-pdo_sqlite": "*",
         "symfony/console": "^4.4|^5.0",
-        "jean85/pretty-package-versions": "^1.5",
+        "composer/package-versions-deprecated": "^1.8",
         "league/tactician": "^1.0",
         "laminas/laminas-diagnostics": "^1.3"
     },

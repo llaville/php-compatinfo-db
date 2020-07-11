@@ -13,6 +13,8 @@ use Bartlett\CompatInfoDb\Presentation\Console\Command\PublishCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ReleaseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ShowCommand;
 
+use PackageVersions\Versions;
+
 use Psr\Container\ContainerInterface;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
@@ -28,7 +30,7 @@ use PDO;
 class Application extends \Symfony\Component\Console\Application
 {
     public const NAME = 'Database handler for CompatInfo';
-    public const VERSION = '2.15.0';
+    public const VERSION = '2.x-dev';
 
     /** @var string */
     private $baseDir;
@@ -36,12 +38,21 @@ class Application extends \Symfony\Component\Console\Application
     /** @var ContainerInterface  */
     private $container;
 
-    public function __construct(ContainerInterface $container)
+    public function __construct(ContainerInterface $container, string $version = 'UNKNOWN')
     {
-        try {
-            $version = \Jean85\PrettyVersions::getVersion('bartlett/php-compatinfo-db')->getPrettyVersion();
-        } catch (\OutOfBoundsException $e) {
+        if ('UNKNOWN' === $version) {
+            // composer or git outside world strategy
             $version = self::VERSION;
+        } elseif (substr_count($version, '.') === 2) {
+            // release is in X.Y.Z format
+        } else {
+            // composer or git strategy
+            $version = Versions::getVersion('bartlett/php-compatinfo-db');
+            list($ver, ) = explode('@', $version);
+
+            if (strpos($ver, 'dev') === false) {
+                $version = $ver;
+            }
         }
         parent::__construct(self::NAME, $version);
 

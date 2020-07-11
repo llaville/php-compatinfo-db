@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Redis reference updated to version 5.3.1 (stable)
 - Split ChangeLog files in release series 1 and 2, handle now with the [Git Semantic Versioning](https://github.com/markchalloner/git-semver/) tools.
 
+### Removed
+
+- removes `jean85/pretty-package-versions` constraint and add `composer/package-versions-deprecated` constraint for composer install strategy (and compatibility 1.x, 2.x)
+
 ## [2.15.0] - 2020-06-30
 
 ### Added
