@@ -1,16 +1,16 @@
-[![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db.svg?style=flat-square)](https://packagist.org/packages/bartlett/php-compatinfo-db)
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://php.net/)
+[![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db)](https://packagist.org/packages/bartlett/php-compatinfo-db)
+[![Minimum PHP Version)](https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db)](https://php.net/)
 
-# Introduction
+# PHP CompatInfoDB
 
 Main goal of this project is to provide a standalone database (SQLite3) that references
 all functions, constants, classes, interfaces on PHP standard distribution and about 100 extensions.
 
-This database is currently only supported by its initial project php-compatinfo on version 5.0
+This database is currently only supported by its initial project [php-compatinfo](https://github.com/llaville/php-compat-info) on versions 5.x-dev
 
-# Features
+## Features
 
-* a Symfony console application to handle data (json files) of the SQLite3 database (see `data/handleDB.php` script)
+* a Symfony console application to handle data (json files) of the SQLite3 database is provided on CLI API
 
 More than 100 extensions (PHP standard distribution, but also PECL) are currently supported :
 
@@ -40,16 +40,25 @@ Currently 108 extensions are referenced in the database.
 
 For future versions, see the `CHANGELOG` file.
 
-# Example
+## Examples
 
 See `examples/useExtensionFactory.php` script to learn how to access to informations in database.
 
-# Requirements
+## Requirements
 
 * PHP 7.1 or greater
 * PHPUnit 7 or greater (if you want to run unit tests)
 
-# Contributors
+## Installation
+
+The recommended way to install this library is [through composer](http://getcomposer.org).
+If you don't know yet what is composer, have a look [on introduction](http://getcomposer.org/doc/00-intro.md).
+
+```bash
+composer require bartlett/php-compatinfo-db
+```
+
+## Contributors
 
 * Laurent Laville (Lead Developer)
 * Remi Collet (contributor on many extensions and unit tests)
@@ -63,6 +72,6 @@ See `examples/useExtensionFactory.php` script to learn how to access to informat
 [![](https://sourcerer.io/fame/llaville/llaville/php-compatinfo-db/images/6)](https://sourcerer.io/fame/llaville/llaville/php-compatinfo-db/links/6)
 [![](https://sourcerer.io/fame/llaville/llaville/php-compatinfo-db/images/7)](https://sourcerer.io/fame/llaville/llaville/php-compatinfo-db/links/7)
 
-# License
+## License
 
-This handler is licensed under the BSD-3-clauses License - see the `LICENSE` file for details
+This project is licensed under the BSD-3-Clause License - see the [LICENSE](https://github.com/llaville/php-compatinfo-db/blob/master/LICENSE) file for details
