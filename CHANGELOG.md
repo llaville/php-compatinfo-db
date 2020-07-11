@@ -14,6 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Removed
 
 - removes `jean85/pretty-package-versions` constraint and add `composer/package-versions-deprecated` constraint for composer install strategy (and compatibility 1.x, 2.x)
+- removes `bartlett/phpunit-loggertestlistener`, loggers dev dependencies and clean-up composer suggestions
 
 ## [2.15.0] - 2020-06-30
 
