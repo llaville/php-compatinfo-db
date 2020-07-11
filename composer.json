@@ -21,21 +21,12 @@
         "ext-json": "*",
         "ext-pdo_sqlite": "*",
         "symfony/console": "^4.4|^5.0",
-        "jean85/pretty-package-versions": "~1.3",
+        "composer/package-versions-deprecated": "^1.8",
         "league/tactician": "^1.0",
         "laminas/laminas-diagnostics": "^1.3"
     },
     "require-dev": {
-        "psr/log": "^1.0",
-        "monolog/monolog": "^1.10",
-        "bartlett/phpunit-loggertestlistener": "^2.0",
         "phpunit/php-timer": "^2.0"
-    },
-    "suggest": {
-        "symfony/console": "Allow to rebuild the Reference CompatInfo Database",
-        "psr/log": "Allow logging events with the LogPlugin",
-        "monolog/monolog": "Allow logging events with the LogPlugin",
-        "bartlett/phpunit-loggertestlistener": "Allow logging unit tests to your favorite PSR-3 logger interface"
     },
     "authors": [
         {
