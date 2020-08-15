@@ -6,6 +6,20 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.17.0] - 2020-08-15
+
+### Added
+
+- Support to PHP 7.2.33
+- Support to PHP 7.3.21
+- Support to PHP 7.4.9
+
+### Changed
+
+- Ast reference updated to version 1.0.8 (stable)
+- Igbinary reference updated to version 3.1.4 (stable)
+- Msgpack reference updated to version 2.1.1 (stable)
+
 ## [2.16.0] - 2020-07-11
 
 ### Added
@@ -267,7 +281,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Memcached reference updated to version 3.1.3 (stable)
 - Msgpack reference updated to version 2.0.3 (stable)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/2.15.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/2.16.0...HEAD
+[2.16.0]: https://github.com/llaville/php-compatinfo-db/compare/2.15.0...2.16.0
 [2.15.0]: https://github.com/llaville/php-compatinfo-db/compare/2.14.0...2.15.0
 [2.14.0]: https://github.com/llaville/php-compatinfo-db/compare/2.13.1...2.14.0
 [2.13.1]: https://github.com/llaville/php-compatinfo-db/compare/2.13.0...2.13.1
