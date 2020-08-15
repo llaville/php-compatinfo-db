@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.4.9
+
 ### Changed
 
 - Ast reference updated to version 1.0.8 (stable)

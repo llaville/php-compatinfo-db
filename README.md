@@ -34,7 +34,7 @@ Version 2.16.0 support informations to latest PHP versions :
 * PHP 7.1.33
 * PHP 7.2.32
 * PHP 7.3.20
-* PHP 7.4.8
+* PHP 7.4.9
 
 Currently 108 extensions are referenced in the database.
 
