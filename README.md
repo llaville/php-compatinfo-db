@@ -32,7 +32,7 @@ Version 2.16.0 support informations to latest PHP versions :
 * PHP 5.6.40
 * PHP 7.0.33
 * PHP 7.1.33
-* PHP 7.2.32
+* PHP 7.2.33
 * PHP 7.3.21
 * PHP 7.4.9
 
