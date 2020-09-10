@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Ast reference updated to version 1.0.9 (stable)
 - Igbinary reference updated to version 3.1.5 (stable)
+- OAuth reference updated to version 2.0.6 (stable)
 
 ## [2.17.0] - 2020-08-15
 
