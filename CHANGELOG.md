@@ -8,7 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Ast reference updated to version 1.0.9 (stable)
+- Ast reference updated to version 1.0.10 (stable)
 - Igbinary reference updated to version 3.1.5 (stable)
 - OAuth reference updated to version 2.0.6 (stable)
 - Solr reference updated to version 2.5.1 (stable)
