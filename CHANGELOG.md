@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Mailparse reference updated to version 3.1.1 (stable)
+
 ## [2.18.0] - 2020-09-13
 
 ### Added
@@ -295,7 +299,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Memcached reference updated to version 3.1.3 (stable)
 - Msgpack reference updated to version 2.0.3 (stable)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/2.17.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/2.18.0...HEAD
+[2.18.0]: https://github.com/llaville/php-compatinfo-db/compare/2.17.0...2.18.0
 [2.17.0]: https://github.com/llaville/php-compatinfo-db/compare/2.16.0...2.17.0
 [2.16.0]: https://github.com/llaville/php-compatinfo-db/compare/2.15.0...2.16.0
 [2.15.0]: https://github.com/llaville/php-compatinfo-db/compare/2.14.0...2.15.0

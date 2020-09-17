@@ -5,7 +5,7 @@
         "name": "mimemessage",
         "static": false,
         "ext_min": "0.9",
-        "ext_max": "",
+        "ext_max": "3.0.4",
         "php_min": "4.3.0",
         "php_max": ""
     },
