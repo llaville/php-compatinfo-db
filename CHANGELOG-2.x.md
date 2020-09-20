@@ -6,11 +6,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [2.19.0] - 2020-10-03
+
 ### Added
 
 - Support to PHP 7.2.34
 - Support to PHP 7.3.23
 - Support to PHP 7.4.11
+- Start of PHP 8 support: backport commit 1f0c681 in master branch allows release 2.19 to run unit tests under PHP 8
 
 ### Changed
 

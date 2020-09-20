@@ -30,7 +30,7 @@ use PDO;
 class Application extends \Symfony\Component\Console\Application
 {
     public const NAME = 'Database handler for CompatInfo';
-    public const VERSION = '2.x-dev';
+    public const VERSION = '2.19.0';
 
     /** @var string */
     private $baseDir;
