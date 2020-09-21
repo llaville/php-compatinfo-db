@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Mailparse reference updated to version 3.1.1 (stable)
+- OAuth reference updated to version 2.0.7 (stable)
 - Xdebug reference updated to version 2.9.7 (stable)
 
 ## [2.18.0] - 2020-09-13
