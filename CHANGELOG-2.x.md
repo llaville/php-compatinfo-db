@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Mailparse reference updated to version 3.1.1 (stable)
 - OAuth reference updated to version 2.0.7 (stable)
 - Xdebug reference updated to version 2.9.8 (stable)
+- Zip reference updated to version 1.19.1 (stable)
 
 ## [2.18.0] - 2020-09-13
 

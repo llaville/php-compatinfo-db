@@ -574,5 +574,14 @@
         "ext_max": "",
         "php_min": "5.4.0",
         "php_max": ""
+    },
+    {
+        "ext_name_fk": 101,
+        "rel_version": "1.19.1",
+        "rel_date": "2020-09-30",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
     }
 ]
