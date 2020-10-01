@@ -5,6 +5,7 @@
 |:------:|:--------:|
 | [![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db)](https://packagist.org/packages/bartlett/php-compatinfo-db) | [![Unstable Version](https://img.shields.io/packagist/vpre/bartlett/php-compatinfo-db)](https://packagist.org/packages/bartlett/php-compatinfo-db) |
 | [![Minimum PHP Version)](https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db)](https://php.net/) | [![Minimum PHP Version)](https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db/3.x-dev?color=orange)](https://php.net/) |
+| [![Branch Master](https://img.shields.io/badge/branch-master-blue)](https://github.com/llaville/php-compatinfo-db) | [![Branch 3.x](https://img.shields.io/badge/branch-3.x-orange)](https://github.com/llaville/php-compatinfo-db/tree/3.x) |
 
 Main goal of this project is to provide a standalone database (SQLite3) that references
 all functions, constants, classes, interfaces on PHP standard distribution and about 100 extensions.
