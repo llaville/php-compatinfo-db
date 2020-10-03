@@ -38,7 +38,7 @@ Version 2.18.0 supports following PHP versions :
 * PHP 7.1.33
 * PHP 7.2.34
 * PHP 7.3.23
-* PHP 7.4.10
+* PHP 7.4.11
 
 Currently, 108 extensions referenced in the database.
 
