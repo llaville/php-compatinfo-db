@@ -36,7 +36,7 @@ Version 2.18.0 supports following PHP versions :
 * PHP 5.6.40
 * PHP 7.0.33
 * PHP 7.1.33
-* PHP 7.2.33
+* PHP 7.2.34
 * PHP 7.3.22
 * PHP 7.4.10
 

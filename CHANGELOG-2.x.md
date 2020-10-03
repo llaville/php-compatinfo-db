@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- Support to PHP 7.2.34
+
 ### Changed
 
 - Mailparse reference updated to version 3.1.1 (stable)
