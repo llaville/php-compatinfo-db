@@ -10,7 +10,7 @@
         "issues": "https://github.com/llaville/php-compatinfo-db/issues"
     },
     "require": {
-        "php": "^7.1",
+        "php": "^7.1|^8.0",
         "composer/semver": "^1.0|^2.0|^3.0",
         "ext-curl": "*",
         "ext-intl": "*",
