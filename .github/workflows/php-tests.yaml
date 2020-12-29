@@ -1,0 +1,61 @@
+name: Tests
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    php_tests:
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            fail-fast: false
+            matrix:
+                os:
+                    - "ubuntu-18.04"
+                php:
+                    - "7.2"
+                    - "7.3"
+                    - "7.4"
+                    - "8.0"
+
+        name: "Test PHP ${{ matrix.php }} on ${{ matrix.os }}"
+        steps:
+            # https://github.com/actions/checkout
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            # https://github.com/shivammathur/setup-php#heavy_plus_sign-php-extension-support
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: ${{ matrix.php }}
+                coverage: none
+
+            # https://github.com/actions/cache/blob/main/examples.md#php---composer
+            - name: Get Composer Cache Directory
+              id: composer-cache
+              run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+            - name: Cache dependencies
+              uses: actions/cache@v2
+              with:
+                path: ${{ steps.composer-cache.outputs.dir }}
+                key: ${{ matrix.os }}-composer-${{ hashFiles('**/composer.json') }}
+                restore-keys: ${{ matrix.php }}-composer-
+
+            - name: Install Composer dependencies
+              run: composer update --no-scripts --no-progress --prefer-dist --optimize-autoloader
+
+            - name: Setup Application
+              run: |
+                mkdir -p ${HOME}/.cache/bartlett/
+                touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite
+                export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite
+                vendor/bin/doctrine orm:schema-tool:create
+                bin/compatinfo-db db:init
+
+            - name: Unit tests
+              run: |
+                export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite
+                vendor/bin/simple-phpunit --verbose
