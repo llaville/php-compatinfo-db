@@ -1,0 +1,11 @@
+[
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "createFromMutable",
+        "static": true,
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": ""
+    }
+]

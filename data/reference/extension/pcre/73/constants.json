@@ -1,0 +1,26 @@
+[
+    {
+        "name": "PCRE_VERSION_MAJOR",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PCRE_VERSION_MINOR",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PCRE_JIT_SUPPORT",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "name": "pcntl_fork",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_signal",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_waitpid",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_wexitstatus",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_wifexited",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_wifsignaled",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_wifstopped",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_wstopsig",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "pcntl_wtermsig",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

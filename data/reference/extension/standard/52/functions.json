@@ -1,0 +1,65 @@
+[
+    {
+        "name": "array_fill_keys",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "error_get_last",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memory_get_peak_usage",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "php_ini_loaded_file",
+        "ext_min": "5.2.4",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "stream_is_local",
+        "ext_min": "5.2.4",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "stream_socket_shutdown",
+        "ext_min": "5.2.1",
+        "ext_max": "",
+        "php_min": "5.2.1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "sys_get_temp_dir",
+        "ext_min": "5.2.1",
+        "ext_max": "",
+        "php_min": "5.2.1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

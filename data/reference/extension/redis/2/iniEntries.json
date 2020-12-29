@@ -1,0 +1,107 @@
+[
+    {
+        "name": "redis.arrays.names",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.hosts",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.previous",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.functions",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.index",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.autorehash",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.distributor",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.retryinterval",
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.lazyconnect",
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.pconnect",
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.arrays.connecttimeout",
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.clusters.persistent",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.clusters.seeds",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.clusters.timeout",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.clusters.read_timeout",
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FILTER_SANITIZE_ADD_SLASHES",
+        "ext_min": "7.3.0alpha4",
+        "ext_max": "",
+        "php_min": "7.3.0alpha4",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

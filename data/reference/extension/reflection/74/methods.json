@@ -1,0 +1,47 @@
+[
+    {
+        "class_name": "ReflectionReference",
+        "name": "fromArrayElement",
+        "static": true,
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionReference",
+        "name": "getId",
+        "static": false,
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isInitialized",
+        "static": false,
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getType",
+        "static": false,
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "hasType",
+        "static": false,
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": ""
+    }
+]

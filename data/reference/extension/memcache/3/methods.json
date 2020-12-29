@@ -1,0 +1,209 @@
+[
+    {
+        "class_name": "MemcachePool",
+        "name": "add",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "addserver",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "append",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "cas",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "close",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "connect",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "decrement",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "delete",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "findserver",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "flush",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "get",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "getextendedstats",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "getserverstatus",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "getstats",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "getversion",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "increment",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "prepend",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "replace",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "setSaslAuthData",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "set",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "setcompressthreshold",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "setfailurecallback",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    },
+    {
+        "class_name": "MemcachePool",
+        "name": "setserverparams",
+        "static": "false",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    }
+]

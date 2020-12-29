@@ -1,0 +1,23 @@
+[
+    {
+        "name": "SessionUpdateTimestampHandlerInterface",
+        "ext_min": "7.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "name": "SessionUpdateTimestampHandlerInterface",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "name": "SessionUpdateTimestampHandlerInterface",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    }
+]

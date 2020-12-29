@@ -1,0 +1,34 @@
+[
+    {
+        "name": "MEMCACHE_USER1",
+        "ext_min": "3.0.8",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MEMCACHE_USER2",
+        "ext_min": "3.0.8",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MEMCACHE_USER3",
+        "ext_min": "3.0.8",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MEMCACHE_USER4",
+        "ext_min": "3.0.8",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

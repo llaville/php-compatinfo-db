@@ -1,0 +1,51 @@
+[
+    {
+        "name": "AMQPConnection",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "AMQPConnectionException",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "AMQPException",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "AMQPExchange",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "AMQPExchangeException",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "AMQPQueue",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "AMQPQueueException",
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    }
+]

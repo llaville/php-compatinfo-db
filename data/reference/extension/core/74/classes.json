@@ -1,0 +1,9 @@
+[
+    {
+        "name": "WeakReference",
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,155 @@
+[
+    {
+        "class_name": "IteratorAggregate",
+        "name": "getIterator",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Iterator",
+        "name": "current",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Iterator",
+        "name": "key",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Iterator",
+        "name": "next",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Iterator",
+        "name": "rewind",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Iterator",
+        "name": "valid",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ArrayAccess",
+        "name": "offsetExists",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ArrayAccess",
+        "name": "offsetGet",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ArrayAccess",
+        "name": "offsetSet",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ArrayAccess",
+        "name": "offsetUnset",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Serializable",
+        "name": "unserialize",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Serializable",
+        "name": "serialize",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Closure",
+        "name": "bindTo",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Closure",
+        "name": "call",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Closure",
+        "name": "bind",
+        "static": "true",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Closure",
+        "name": "fromCallable",
+        "static": "true",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Closure",
+        "name": "__invoke",
+        "static": "false",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

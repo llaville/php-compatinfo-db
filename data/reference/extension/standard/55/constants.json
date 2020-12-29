@@ -1,0 +1,26 @@
+[
+    {
+        "name": "PASSWORD_BCRYPT",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PASSWORD_BCRYPT_DEFAULT_COST",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PASSWORD_DEFAULT",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

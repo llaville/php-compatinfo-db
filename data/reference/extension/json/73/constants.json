@@ -1,0 +1,10 @@
+[
+    {
+        "name": "JSON_THROW_ON_ERROR",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

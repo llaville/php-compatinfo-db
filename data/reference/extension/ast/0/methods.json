@@ -1,0 +1,11 @@
+[
+    {
+        "class_name": "ast\\Node",
+        "name": "__construct",
+        "static": "false",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

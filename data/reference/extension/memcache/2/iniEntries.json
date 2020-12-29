@@ -1,0 +1,51 @@
+[
+    {
+        "name": "memcache.allow_failover",
+        "ext_min": "2.0.2",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "name": "memcache.chunk_size",
+        "ext_min": "2.0.2",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "name": "memcache.default_port",
+        "ext_min": "2.0.2",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "name": "memcache.hash_function",
+        "ext_min": "2.2.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "name": "memcache.hash_strategy",
+        "ext_min": "2.2.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "name": "memcache.max_failover_attempts",
+        "ext_min": "2.1.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "name": "memcache.default_timeout_ms",
+        "ext_min": "2.2.5",
+        "ext_max": "2.2.6",
+        "php_min": "4.3.11",
+        "php_max": ""
+    }
+]

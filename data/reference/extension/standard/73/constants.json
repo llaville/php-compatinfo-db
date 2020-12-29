@@ -1,0 +1,42 @@
+[
+    {
+        "name": "PASSWORD_ARGON2ID",
+        "ext_min": "7.3.0alpha3",
+        "ext_max": "",
+        "php_min": "7.3.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_PROTO_SSLv3",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_PROTO_TLSv1_0",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_PROTO_TLSv1_1",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_PROTO_TLSv1_2",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

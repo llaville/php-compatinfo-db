@@ -1,0 +1,388 @@
+[
+    {
+        "name": "CURLE_SSH",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.16.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLFTPMETHOD_MULTICWD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.3"
+            }
+        ]
+    },
+    {
+        "name": "CURLFTPMETHOD_NOCWD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.3"
+            }
+        ]
+    },
+    {
+        "name": "CURLFTPMETHOD_SINGLECWD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.3"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_CERTINFO",
+        "ext_min": "5.3.2",
+        "ext_max": "",
+        "php_min": "5.3.2",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_REDIRECT_URL",
+        "ext_min": "5.3.7",
+        "ext_max": "",
+        "php_min": "5.3.7",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.18.2"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_CERTINFO",
+        "ext_min": "5.3.2",
+        "ext_max": "",
+        "php_min": "5.3.2",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_FTP_FILEMETHOD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_FTP_SKIP_PASV_IP",
+        "ext_min": "5.3.2",
+        "ext_max": "",
+        "php_min": "5.3.2",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_IPRESOLVE",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.10.8"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_KEYPASSWD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_MAX_RECV_SPEED_LARGE",
+        "ext_min": "5.3.7",
+        "ext_max": "",
+        "php_min": "5.3.7",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.5"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_MAX_SEND_SPEED_LARGE",
+        "ext_min": "5.3.7",
+        "ext_max": "",
+        "php_min": "5.3.7",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.5"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_POSTREDIR",
+        "ext_min": "5.3.2",
+        "ext_max": "",
+        "php_min": "5.3.2",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROGRESSFUNCTION",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "CURLOPT_SSH_AUTH_TYPES",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.16.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSH_HOST_PUBLIC_KEY_MD5",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.17.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSH_PRIVATE_KEYFILE",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.16.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSH_PUBLIC_KEYFILE",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.16.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSH_AUTH_DEFAULT",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSH_AUTH_HOST",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSH_AUTH_KEYBOARD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSH_AUTH_NONE",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSH_AUTH_PASSWORD",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSH_AUTH_PUBLICKEY",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.19"
+            }
+        ]
+    },
+    {
+        "name": "CURL_IPRESOLVE_V4",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.10.8"
+            }
+        ]
+    },
+    {
+        "name": "CURL_IPRESOLVE_V6",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.10.8"
+            }
+        ]
+    },
+    {
+        "name": "CURL_IPRESOLVE_WHATEVER",
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.10.8"
+            }
+        ]
+    }
+]

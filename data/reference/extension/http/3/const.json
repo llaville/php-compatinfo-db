@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "http\\Url",
+        "name": "IGNORE_ERRORS",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "SILENT_ERRORS",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STDFLAGS",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

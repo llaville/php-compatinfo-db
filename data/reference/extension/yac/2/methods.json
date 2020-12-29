@@ -1,0 +1,20 @@
+[
+    {
+        "class_name": "Yac",
+        "name": "__get",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Yac",
+        "name": "__set",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

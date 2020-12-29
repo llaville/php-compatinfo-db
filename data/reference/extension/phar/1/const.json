@@ -1,0 +1,210 @@
+[
+    {
+        "class_name": "Phar",
+        "name": "BZ2",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "COMPRESSED",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "CURRENT_AS_FILEINFO",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "CURRENT_AS_PATHNAME",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "CURRENT_AS_SELF",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "CURRENT_MODE_MASK",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "FOLLOW_SYMLINKS",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "GZ",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "KEY_AS_FILENAME",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "KEY_AS_PATHNAME",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "KEY_MODE_MASK",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "MD5",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "NEW_CURRENT_AND_KEY",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "NONE",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "OPENSSL",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "OTHER_MODE_MASK",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "PHAR",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "PHP",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "PHPS",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "SHA1",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "SHA256",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "SHA512",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "SKIP_DOTS",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "TAR",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "UNIX_PATHS",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Phar",
+        "name": "ZIP",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    }
+]

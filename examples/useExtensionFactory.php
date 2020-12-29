@@ -1,63 +1,102 @@
-<?php
+<?php declare(strict_types=1);
 
-require_once dirname(__DIR__) . '/vendor/autoload.php';
+/**
+ * Procedural example script to demonstrates how to access API v3.
+ *
+ * PHP version 7
+ *
+ * @category   PHP
+ * @package    PHP_CompatInfo_Db
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
+ * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ */
 
-use Bartlett\CompatInfoDb\ExtensionFactory;
+use Bartlett\CompatInfoDb\Application\Query\Show\ShowQuery;
+use Bartlett\CompatInfoDb\Application\Query\Show\ShowHandler;
+use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 
-$dump = false;
+$container = require __DIR__ . '/bootstrap.php';
 
-$name = 'imagick';
-$ext  = new ExtensionFactory($name);
+$handler = new ShowHandler($container->get(ExtensionFactory::class));
 
-printf('== Latest PHP platforms supported');
-echo PHP_EOL;
-foreach (array('5.2', '5.3', '5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4') as $phpVersion) {
-    printf('= PHP %s : %s', $phpVersion, ExtensionFactory::getLatestPhpVersion($phpVersion));
-    echo PHP_EOL;
+// Specify what components to display
+$command = new ShowQuery(
+    'core',
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+);
+
+/** @var Extension $extension */
+$extension = $handler($command);
+
+$releases = array_keys($extension->getReleases());
+$iniEntries = array_keys($extension->getIniEntries());
+$constants = array_keys($extension->getConstants());
+$functions = array_keys($extension->getFunctions());
+$classes = array_keys($extension->getClasses());
+$interfaces = array_keys($extension->getInterfaces());
+$classConstants = array_keys($extension->getClassConstants());
+$methods = array_keys($extension->getMethods());
+
+
+printf('# %s extension', $extension->getName()); echo PHP_EOL, PHP_EOL;
+
+print('## Summary'); echo PHP_EOL, PHP_EOL;
+
+printf('* Latest version supported : %s', $extension->getVersion()); echo PHP_EOL;
+printf('* Releases : %d', count($releases)); echo PHP_EOL;
+printf('* INI Entries : %d', count($iniEntries)); echo PHP_EOL;
+printf('* Constants : %d', count($constants)); echo PHP_EOL;
+printf('* Functions : %d', count($functions)); echo PHP_EOL;
+printf('* Classes : %d', count($classes)); echo PHP_EOL;
+printf('* Interfaces : %d', count($interfaces)); echo PHP_EOL;
+printf('* Class constants : %d', count($classConstants)); echo PHP_EOL;
+printf('* Methods : %d', count($methods)); echo PHP_EOL, PHP_EOL;
+
+if ($command->isReleases()) {
+    $results = print_r($releases, true);
+    printf('## Releases : %s', $results); echo PHP_EOL, PHP_EOL;
 }
-echo PHP_EOL;
 
-printf('== Details of %s extension', $name);
-echo PHP_EOL;
+if ($command->isIni()) {
+    $results = print_r($iniEntries, true);
+    printf('## INI entries : %s', $results); echo PHP_EOL, PHP_EOL;
+}
 
-printf('= Current version : %s', $ext->getCurrentVersion());
-echo PHP_EOL;
+if ($command->isConstants()) {
+    $results = print_r($constants, true);
+    printf('## Constants : %s', $results); echo PHP_EOL, PHP_EOL;
+}
 
-printf('= Meta version : %s', var_export($ext->getMetaVersion(), true));
-echo PHP_EOL;
+if ($command->isFunctions()) {
+    $results = print_r($functions, true);
+    printf('## Functions : %s', $results); echo PHP_EOL, PHP_EOL;
+}
 
-$results = $dump ? print_r($ext->getReleases(), true) : count($ext->getReleases());
-printf('= Releases : %s', $results);
-echo PHP_EOL;
+if ($command->isClasses()) {
+    $results = print_r($classes, true);
+    printf('## Classes : %s', $results); echo PHP_EOL, PHP_EOL;
+}
 
-$results = $dump ? print_r($ext->getInterfaces(), true) : count($ext->getInterfaces());
-printf('= Interfaces : %s', $results);
-echo PHP_EOL;
+if ($command->isInterfaces()) {
+    $results = print_r($interfaces, true);
+    printf('## Interfaces : %s', $results); echo PHP_EOL, PHP_EOL;
+}
 
-$results = $dump ? print_r($ext->getClasses(), true) : count($ext->getClasses());
-printf('= Classes : %s', $results);
-echo PHP_EOL;
+if ($command->isClassConstants()) {
+    $results = print_r($classConstants, true);
+    printf('## Class Constants : %s', $results); echo PHP_EOL, PHP_EOL;
+}
 
-$results = $dump ? print_r($ext->getFunctions(), true) : count($ext->getFunctions());
-printf('= Functions : %s', $results);
-echo PHP_EOL;
-
-$results = $dump ? print_r($ext->getConstants(), true) : count($ext->getConstants());
-printf('= Constants : %s', $results);
-echo PHP_EOL;
-
-$results = $dump ? print_r($ext->getIniEntries(), true) : count($ext->getIniEntries());
-printf('= INI entries : %s', $results);
-echo PHP_EOL;
-
-$results = $dump ? print_r($ext->getClassConstants(), true) : count($ext->getClassConstants());
-printf('= Class Constants : %s', $results);
-echo PHP_EOL;
-
-$results = $dump ? print_r($ext->getClassStaticMethods(), true) : count($ext->getClassStaticMethods());
-printf('= Class Static Methods : %s', $results);
-echo PHP_EOL;
-
-$results = $dump ? print_r($ext->getClassMethods(), true) : count($ext->getClassMethods());
-printf('= Class Methods : %s', $results);
-echo PHP_EOL;
+if ($command->isMethods()) {
+    $results = print_r($methods, true);
+    printf('## Methods : %s', $results); echo PHP_EOL, PHP_EOL;
+}

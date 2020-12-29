@@ -1,0 +1,106 @@
+[
+    {
+        "rel_version": "8.0.0alpha1",
+        "rel_date": "2020-06-23",
+        "rel_state": "alpha",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0alpha2",
+        "rel_date": "2020-07-07",
+        "rel_state": "alpha",
+        "ext_max": "",
+        "php_min": "8.0.0alpha2",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0alpha3",
+        "rel_date": "2020-07-21",
+        "rel_state": "alpha",
+        "ext_max": "",
+        "php_min": "8.0.0alpha3",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0beta1",
+        "rel_date": "2020-08-04",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0beta1",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0beta2",
+        "rel_date": "2020-08-18",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0beta2",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0beta3",
+        "rel_date": "2020-09-01",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0beta3",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0beta4",
+        "rel_date": "2020-09-17",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0beta4",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0RC1",
+        "rel_date": "2020-10-01",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0RC1",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0RC2",
+        "rel_date": "2020-10-15",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0RC2",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0RC3",
+        "rel_date": "2020-10-29",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0RC3",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0RC4",
+        "rel_date": "2020-11-12",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0RC4",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0RC5",
+        "rel_date": "2020-11-19",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "8.0.0RC5",
+        "php_max": ""
+    },
+    {
+        "rel_version": "8.0.0",
+        "rel_date": "2020-11-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "8.0.0",
+        "php_max": ""
+    }
+]

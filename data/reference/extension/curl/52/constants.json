@@ -1,0 +1,96 @@
+[
+    {
+        "name": "CURLFTPSSL_ALL",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.11"
+            }
+        ]
+    },
+    {
+        "name": "CURLFTPSSL_CONTROL",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.11"
+            }
+        ]
+    },
+    {
+        "name": "CURLFTPSSL_NONE",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.11"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_PRIVATE",
+        "ext_min": "5.2.4",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "CURLOPT_FTP_SSL",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.11"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PRIVATE",
+        "ext_min": "5.2.4",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "CURLOPT_TCP_NODELAY",
+        "ext_min": "5.2.1",
+        "ext_max": "",
+        "php_min": "5.2.1",
+        "php_max": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.11.2"
+            }
+        ]
+    },
+    {
+        "name": "CURLPROXY_SOCKS4",
+        "ext_min": "5.2.10",
+        "ext_max": "",
+        "php_min": "5.2.10",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "class_name": "Directory",
+        "name": "close",
+        "static": false,
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Directory",
+        "name": "read",
+        "static": false,
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Directory",
+        "name": "rewind",
+        "static": false,
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "EnchantBroker",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "name": "EnchantDictionary",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    }
+]

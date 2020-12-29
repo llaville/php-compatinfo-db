@@ -1,0 +1,181 @@
+<?php declare(strict_types=1);
+
+namespace Bartlett\CompatInfoDb\Domain\ValueObject;
+
+use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
+
+use function sprintf;
+use function strtolower;
+use const PHP_VERSION;
+
+/**
+ * @since Release 3.0.0
+ */
+final class Extension implements ExtensionVersionProviderInterface
+{
+    private $name;
+    private $version;
+    private $type;
+    private $dependencies;
+    private $iniEntries;
+    private $constants;
+    private $functions;
+    private $classes;
+    private $releases;
+    private $interfaces;
+    private $methods;
+    private $classConstants;
+
+    public function __construct(
+        string $name,
+        string $version = PHP_VERSION,
+        string $type = 'bundle',
+        iterable $iniEntries = [],
+        iterable $constants = [],
+        iterable $functions = [],
+        iterable $classes = [],
+        iterable $dependencies = [],
+        iterable $releases = []
+    ) {
+        $this->name = $name;
+        $this->version = $version;
+        $this->type = strtolower($type);
+        $this->releases = $releases;
+        $this->dependencies = $dependencies;
+        $this->iniEntries = $iniEntries;
+
+        $this->constants = $this->classConstants = [];
+        foreach ($constants as $name => $domain) {
+            if (empty($domain->getDeclaringClass())) {
+                $this->constants[$name] = $domain;
+            } else {
+                $this->classConstants[$name] = $domain;
+            }
+        }
+
+        $this->functions = $this->methods = [];
+        foreach ($functions as $name => $domain) {
+            if (empty($domain->getDeclaringClass())) {
+                $this->functions[$name] = $domain;
+            } else {
+                $this->methods[$name] = $domain;
+            }
+        }
+
+        $this->classes = $this->interfaces = [];
+        foreach ($classes as $name => $domain) {
+            if ($domain->isInterface()) {
+                $this->interfaces[$name] = $domain;
+            } else {
+                $this->classes[$name] = $domain;
+            }
+        }
+    }
+
+    public function __toString(): string
+    {
+        return sprintf(
+            'Extension (name: %s, version: %s, type: %s) with %d releases, %d ini, %d constants, %d functions, %d classes',
+            $this->name,
+            $this->version,
+            $this->type,
+            count($this->releases),
+            count($this->iniEntries),
+            count($this->constants),
+            count($this->functions),
+            count($this->classes)
+        );
+    }
+
+    public function asArray(): array
+    {
+        return [
+            'name' => $this->name,
+            'version' => $this->version,
+            'type' => $this->type,
+            'dependencies' => $this->dependencies,
+            'ini_entries' => $this->iniEntries,
+            'constants' => $this->constants,
+            'functions' => $this->functions,
+            'classes' => $this->classes,
+            'interfaces' => $this->interfaces,
+            'class_constants' => $this->classConstants,
+            'methods' => $this->methods,
+            'releases' => $this->releases,
+        ];
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getVersion(): string
+    {
+        return $this->version;
+    }
+
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    public function getDependencies(): array
+    {
+        return $this->dependencies;
+    }
+
+    public function getIniEntries(): array
+    {
+        return $this->iniEntries;
+    }
+
+    public function getConstants(): array
+    {
+        return $this->constants;
+    }
+
+    public function getFunctions(): array
+    {
+        return $this->functions;
+    }
+
+    public function getClasses(): array
+    {
+        return $this->classes;
+    }
+
+    public function getReleases(): array
+    {
+        return $this->releases;
+    }
+
+    public function getLastRelease(): Release
+    {
+        return end($this->releases);
+    }
+
+    /**
+     * @return array
+     */
+    public function getInterfaces(): array
+    {
+        return $this->interfaces;
+    }
+
+    /**
+     * @return array
+     */
+    public function getMethods(): array
+    {
+        return $this->methods;
+    }
+
+    /**
+     * @return array
+     */
+    public function getClassConstants(): array
+    {
+        return $this->classConstants;
+    }
+}

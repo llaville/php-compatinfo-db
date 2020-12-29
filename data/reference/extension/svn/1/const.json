@@ -1,0 +1,338 @@
+[
+    {
+        "class_name": "Svn",
+        "name": "NON_RECURSIVE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DISCOVER_CHANGED_PATHS",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "OMIT_MESSAGES",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "STOP_ON_COPY",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "ALL",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "SHOW_UPDATES",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "NO_IGNORE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "IGNORE_EXTERNALS",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "INITIAL",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "HEAD",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "BASE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "COMMITTED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "PREV",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "UNSPECIFIED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DEPTH_UNKNOWN",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DEPTH_EXCLUDE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DEPTH_EMPTY",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DEPTH_FILES",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DEPTH_IMMEDIATES",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Svn",
+        "name": "DEPTH_INFINITY",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "NONE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "UNVERSIONED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "NORMAL",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "ADDED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "MISSING",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "DELETED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "REPLACED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "MODIFIED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "MERGED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "CONFLICTED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "IGNORED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "OBSTRUCTED",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "EXTERNAL",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWc",
+        "name": "INCOMPLETE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWcSchedule",
+        "name": "NORMAL",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWcSchedule",
+        "name": "ADD",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWcSchedule",
+        "name": "DELETE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnWcSchedule",
+        "name": "REPLACE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnNode",
+        "name": "NONE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnNode",
+        "name": "FILE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnNode",
+        "name": "DIR",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SvnNode",
+        "name": "UNKNOWN",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    }
+]

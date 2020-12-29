@@ -1,0 +1,929 @@
+[
+    {
+        "class_name": "AppendIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AppendIterator",
+        "name": "append",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AppendIterator",
+        "name": "getArrayIterator",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AppendIterator",
+        "name": "getIteratorIndex",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Countable",
+        "name": "count",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "FilterIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "FilterIterator",
+        "name": "accept",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "InfiniteIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "IteratorIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "LimitIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "LimitIterator",
+        "name": "getPosition",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "LimitIterator",
+        "name": "seek",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "NoRewindIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "OuterIterator",
+        "name": "getInnerIterator",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ParentIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "getSubPath",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "getSubPathname",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveFilterIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIterator",
+        "name": "getChildren",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIterator",
+        "name": "hasChildren",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "beginChildren",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "beginIteration",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "callGetChildren",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "callHasChildren",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "endChildren",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "endIteration",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "getDepth",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "getMaxDepth",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "getSubIterator",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "nextElement",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "setMaxDepth",
+        "static": false,
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "SeekableIterator",
+        "name": "seek",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "_bad_state_ex",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getATime",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getBasename",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getCTime",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getExtension",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getFileInfo",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getFilename",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getGroup",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getInode",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getLinkTarget",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getMTime",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getOwner",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getPathInfo",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getPath",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getPathname",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getPerms",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getRealPath",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getSize",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "getType",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "isDir",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "isExecutable",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "isFile",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "isLink",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "isReadable",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "isWritable",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "openFile",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "setFileClass",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileInfo",
+        "name": "setInfoClass",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "eof",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fflush",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fgetc",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fgetcsv",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fgets",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fgetss",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "7.4.13",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "flock",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fpassthru",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fputcsv",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fread",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fscanf",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fseek",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fstat",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "ftell",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "ftruncate",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "fwrite",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "getCsvControl",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "getCurrentLine",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "getFlags",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "getMaxLineLen",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "setCsvControl",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "setFlags",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "setMaxLineLen",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "addAll",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "attach",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "contains",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "detach",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "getHash",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "getInfo",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "removeAllExcept",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "removeAll",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObjectStorage",
+        "name": "setInfo",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplObserver",
+        "name": "update",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplSubject",
+        "name": "attach",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplSubject",
+        "name": "detach",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplSubject",
+        "name": "notify",
+        "static": false,
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplTempFileObject",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "curl.cainfo",
+        "ext_min": "5.3.7",
+        "ext_max": "",
+        "php_min": "5.3.7",
+        "php_max": ""
+    }
+]

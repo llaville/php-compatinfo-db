@@ -1,0 +1,34 @@
+[
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_3_CLIENT",
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_3_SERVER",
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_PROTO_TLSv1_3",
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PASSWORD_ARGON2_PROVIDER",
+        "ext_min": "7.4.0alpha3",
+        "ext_max": "",
+        "php_min": "7.4.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

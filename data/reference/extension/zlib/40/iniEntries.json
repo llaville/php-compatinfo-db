@@ -1,0 +1,9 @@
+[
+    {
+        "name": "zlib.output_compression",
+        "ext_min": "4.0.5",
+        "ext_max": "",
+        "php_min": "4.0.5",
+        "php_max": ""
+    }
+]

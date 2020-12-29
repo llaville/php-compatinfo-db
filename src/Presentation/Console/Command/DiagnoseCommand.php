@@ -1,22 +1,48 @@
-<?php
+<?php declare(strict_types=1);
 
-declare(strict_types=1);
+/**
+ * Checks the minimum requirements on current platform.
+ *
+ * PHP version 7
+ *
+ * @category   PHP
+ * @package    PHP_CompatInfo_Db
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
+ * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ */
 
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
-use Bartlett\CompatInfoDb\Application\Command\DiagnoseCommand as AppDiagnoseCommand;
-use Bartlett\CompatInfoDb\DatabaseFactory;
+use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
+use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
+use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
+use Bartlett\CompatInfoDb\Application\Service\Checker;
+use Bartlett\CompatInfoDb\Presentation\Console\Style;
+
+use Doctrine\ORM\EntityManagerInterface;
+
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Laminas\Diagnostics\Result\FailureInterface;
-use Laminas\Diagnostics\Result\SuccessInterface;
 
 /**
- * Checks the minimum requirements on current platform for the phar distribution
+ * @since Release 2.0.0RC1
  */
-class DiagnoseCommand extends AbstractCommand
+class DiagnoseCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'bartlett:diagnose';
+    public const NAME = 'diagnose';
+
+    /** @var EntityManagerInterface */
+    private $entityManager;
+
+    public function __construct(
+        CommandBusInterface $commandBus,
+        QueryBusInterface  $queryBus,
+        EntityManagerInterface $entityManager
+    ) {
+        parent::__construct($commandBus, $queryBus);
+        $this->entityManager = $entityManager;
+    }
 
     protected function configure()
     {
@@ -28,18 +54,15 @@ class DiagnoseCommand extends AbstractCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $diagnoseCommand = new AppDiagnoseCommand();
-        $diagnoseCommand->databaseParams = DatabaseFactory::getDsn('sqlite');
+        $diagnoseQuery = new DiagnoseQuery($this->entityManager->getConnection());
 
-        $results = $this->commandBus->handle($diagnoseCommand);
+        $projectRequirements = $this->queryBus->query($diagnoseQuery);
 
-        foreach ($results as $check) {
-            if ($results[$check] instanceof FailureInterface) {
-                $output->writeln('- <error>KO</error> - ' . $results[$check]->getMessage());
-            } elseif ($results[$check] instanceof SuccessInterface) {
-                $output->writeln('- <info>OK</info> - ' . $results[$check]->getMessage());
-            }
-        }
+        $io = new Style($input, $output);
+
+        $checker = new Checker($io);
+        $checker->setAppName('PHP CompatInfoDB');
+        $checker->printDiagnostic($projectRequirements);
 
         return 0;
     }

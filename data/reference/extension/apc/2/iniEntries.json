@@ -1,0 +1,58 @@
+[
+    {
+        "name": "apc.enabled",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.filters",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.gc_ttl",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.mmap_file_mask",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.num_files_hint",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.optimization",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.shm_segments",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "apc.shm_size",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "name": "xcache.allocator",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "xcache.coredump_type",
+        "ext_min": "3.0.1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "xcache.coverager_autostart",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "xcache.disable_on_crash",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "xcache.var_allocator",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "xcache.var_namespace",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "xcache.var_namespace_mode",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "class_name": "ReflectionClass",
+        "name": "isIterable",
+        "static": "false",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": ""
+    }
+]

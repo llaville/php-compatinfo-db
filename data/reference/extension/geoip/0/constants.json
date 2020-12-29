@@ -1,0 +1,122 @@
+[
+    {
+        "name": "GEOIP_ASNUM_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_CABLEDSL_SPEED",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_CITY_EDITION_REV0",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_CITY_EDITION_REV1",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_CORPORATE_SPEED",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_COUNTRY_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_DIALUP_SPEED",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_DOMAIN_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_ISP_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_NETSPEED_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_ORG_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_PROXY_EDITION",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_REGION_EDITION_REV0",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_REGION_EDITION_REV1",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "GEOIP_UNKNOWN_SPEED",
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

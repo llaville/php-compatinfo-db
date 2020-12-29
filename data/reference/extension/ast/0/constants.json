@@ -1,0 +1,1530 @@
+[
+    {
+        "name": "ast\\AST_AND",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ARG_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ARRAY",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ARRAY_ELEM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ASSIGN",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ASSIGN_OP",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ASSIGN_REF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_BINARY_OP",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_BREAK",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CALL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CAST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CATCH",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CATCH_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLASS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLASS_CONST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLASS_CONST_DECL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLONE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLOSURE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLOSURE_USES",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CLOSURE_VAR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_COALESCE",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CONDITIONAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CONST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CONST_DECL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CONST_ELEM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_CONTINUE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_DECLARE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_DIM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_DO_WHILE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ECHO",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_EMPTY",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ENCAPS_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_EXIT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_EXPR_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_FOR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_FOREACH",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_FUNC_DECL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_GLOBAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_GOTO",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_GREATER",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_GREATER_EQUAL",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_GROUP_USE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_HALT_COMPILER",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_IF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_IF_ELEM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_INCLUDE_OR_EVAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_INSTANCEOF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_ISSET",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_LABEL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_MAGIC_CONST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_METHOD",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_METHOD_CALL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_METHOD_REFERENCE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_NAME",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_NAMESPACE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_NAME_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_NEW",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_NULLABLE_TYPE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_OR",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PARAM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PARAM_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_POST_DEC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_POST_INC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PRE_DEC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PRE_INC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PRINT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PROP",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PROP_DECL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_PROP_ELEM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_REF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_RETURN",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_SHELL_EXEC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_SILENCE",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_STATIC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_STATIC_CALL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_STATIC_PROP",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_STMT_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_SWITCH",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_SWITCH_CASE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_SWITCH_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_THROW",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_TRAIT_ADAPTATIONS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_TRAIT_ALIAS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_TRAIT_PRECEDENCE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_TRY",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_TYPE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_UNARY_MINUS",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_UNARY_OP",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_UNARY_PLUS",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_UNPACK",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_UNSET",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_USE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_USE_ELEM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_USE_TRAIT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_VAR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_WHILE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_YIELD",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\AST_YIELD_FROM",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ARRAY_SYNTAX_LIST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ARRAY_SYNTAX_LONG",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ARRAY_SYNTAX_SHORT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_ADD",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_BITWISE_AND",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_BITWISE_OR",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_BITWISE_XOR",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_CONCAT",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_DIV",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_MOD",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_MUL",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_POW",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_SHIFT_LEFT",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_SHIFT_RIGHT",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ASSIGN_SUB",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_ADD",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_BITWISE_AND",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_BITWISE_OR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_BITWISE_XOR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_BOOL_AND",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_BOOL_OR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_BOOL_XOR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_COALESCE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_CONCAT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_DIV",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_EQUAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_GREATER",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_GREATER_OR_EQUAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_IDENTICAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_NOT_EQUAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_NOT_IDENTICAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_SMALLER",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_IS_SMALLER_OR_EQUAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_MOD",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_MUL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_POW",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_SHIFT_LEFT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_SHIFT_RIGHT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_SPACESHIP",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\BINARY_SUB",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\CLASS_ABSTRACT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\CLASS_ANONYMOUS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\CLASS_FINAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\CLASS_INTERFACE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\CLASS_TRAIT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\CLOSURE_USE_REF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\EXEC_EVAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\EXEC_INCLUDE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\EXEC_INCLUDE_ONCE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\EXEC_REQUIRE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\EXEC_REQUIRE_ONCE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\FUNC_GENERATOR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\FUNC_RETURNS_REF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_CLASS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_DIR",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_FILE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_FUNCTION",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_LINE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_METHOD",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_NAMESPACE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MAGIC_TRAIT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_ABSTRACT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_FINAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_PRIVATE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_PROTECTED",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_PUBLIC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_STATIC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\NAME_FQ",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\NAME_NOT_FQ",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\NAME_RELATIVE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\PARAM_REF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\PARAM_VARIADIC",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\RETURNS_REF",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_ARRAY",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_BOOL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_CALLABLE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_DOUBLE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_ITERABLE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_LONG",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_NULL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_OBJECT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_STRING",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\TYPE_VOID",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\UNARY_BITWISE_NOT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\UNARY_BOOL_NOT",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\UNARY_MINUS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\UNARY_PLUS",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\UNARY_SILENCE",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\USE_CONST",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\USE_FUNCTION",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\USE_NORMAL",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ast\\flags\\ARRAY_ELEM_REF",
+        "ext_min": "0.1.7",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

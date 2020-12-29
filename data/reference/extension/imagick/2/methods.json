@@ -1,0 +1,1076 @@
+[
+    {
+        "class_name": "Imagick",
+        "name": "painttransparentimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "paintopaqueimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "mattefloodfillimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "mapimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageextrema",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagechannelextrema",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "colorfloodfillimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimageattribute",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageindex",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimageindex",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagesize",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "radialblurimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "mosaicimages",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "averageimages",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "flattenimages",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.8.7 <7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagematte",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "medianfilterimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "reducenoiseimage",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "roundcorners",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setiteratorindex",
+        "static": false,
+        "ext_min": "2.0.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getiteratorindex",
+        "static": false,
+        "ext_min": "2.0.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "polaroidimage",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.1"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageproperty",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.1"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimageproperty",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.1"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagelength",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.1"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "extentimage",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.1"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageorientation",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.3"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimageorientation",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.3"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "clutimage",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageproperties",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageprofiles",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "writeimagefile",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "writeimagesfile",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "resetimagepage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimageclipmask",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5 <7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimageclipmask",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5 <7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "animateimages",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setfont",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getfont",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setpointsize",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getpointsize",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "mergeimagelayers",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimagealphachannel",
+        "static": false,
+        "ext_min": "2.1.0",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "floodfillpaintimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "opaquepaintimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "transparentpaintimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "encipherimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "decipherimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.3.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagechanneldistortions",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimagegravity",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.3"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagegravity",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.3"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "importimagepixels",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "deskewimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "segmentimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "sparsecolorimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "remapimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.5"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "exportimagepixels",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagechannelkurtosis",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "functionimage",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "__tostring",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "readimages",
+        "static": false,
+        "ext_min": "2.0.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "cropthumbnailimage",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagemimetype",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getimagecompressionquality",
+        "static": false,
+        "ext_min": "2.2.2RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "displayimage",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "displayimages",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "queryfonts",
+        "static": true,
+        "ext_min": "2.0.0b2",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "queryfontmetrics",
+        "static": false,
+        "ext_min": "2.0.0b2",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setimage",
+        "static": false,
+        "ext_min": "2.0.0RC3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "Imagick",
+        "name": "newpseudoimage",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "getcolorvaluequantum",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "setcolorvaluequantum",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "getindex",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "setindex",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "getcolorasstring",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "setcolorcount",
+        "static": false,
+        "ext_min": "2.0.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "ImagickPixel",
+        "name": "clone",
+        "static": false,
+        "ext_min": "2.1.0RC1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "ImagickDraw",
+        "name": "gettextkerning",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.9"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickDraw",
+        "name": "settextkerning",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.9"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickDraw",
+        "name": "gettextinterwordspacing",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.9"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickDraw",
+        "name": "settextinterwordspacing",
+        "static": false,
+        "ext_min": "2.3.0b1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.4.9"
+            }
+        ]
+    },
+    {
+        "class_name": "ImagickDraw",
+        "name": "matte",
+        "static": false,
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<=7.0.0"
+            }
+        ]
+    }
+]

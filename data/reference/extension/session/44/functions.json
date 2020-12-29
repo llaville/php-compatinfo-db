@@ -1,0 +1,11 @@
+[
+    {
+        "name": "session_commit",
+        "ext_min": "4.4.0",
+        "ext_max": "",
+        "php_min": "4.4.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

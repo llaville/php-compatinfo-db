@@ -1,0 +1,47 @@
+[
+    {
+        "name": "hrtime",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "net_get_interfaces",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "is_countable",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "array_key_first",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha4",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "array_key_last",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha4",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

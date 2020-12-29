@@ -1,0 +1,11 @@
+[
+    {
+        "name": "snmp_set_oid_output_format",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "name": "hash_hkdf",
+        "ext_min": "7.1.2",
+        "ext_max": "",
+        "php_min": "7.1.2",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

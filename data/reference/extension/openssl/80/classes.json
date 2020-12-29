@@ -1,0 +1,23 @@
+[
+    {
+        "name": "OpenSSLCertificate",
+        "ext_min": "8.0.0beta1",
+        "ext_max": "",
+        "php_min": "8.0.0beta1",
+        "php_max": ""
+    },
+    {
+        "name": "OpenSSLCertificateSigningRequest",
+        "ext_min": "8.0.0beta1",
+        "ext_max": "",
+        "php_min": "8.0.0beta1",
+        "php_max": ""
+    },
+    {
+        "name": "OpenSSLAsymmetricKey",
+        "ext_min": "8.0.0beta1",
+        "ext_max": "",
+        "php_min": "8.0.0beta1",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "name": "ereg",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "ereg_replace",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "eregi",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "eregi_replace",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "split",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "spliti",
+        "ext_min": "4.0.1",
+        "ext_max": "",
+        "php_min": "4.0.1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "sql_regcase",
+        "ext_min": "4.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "deprecated": "5.3.0"
+    }
+]

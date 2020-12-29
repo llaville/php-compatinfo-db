@@ -1,0 +1,74 @@
+[
+    {
+        "name": "AI_PASSIVE",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_CANONNAME",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_NUMERICHOST",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_V4MAPPED",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_ALL",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_ADDRCONFIG",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_IDN",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_CANONIDN",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AI_NUMERICSERV",
+        "ext_min": "7.2.0alpha1",
+        "ext_max": "",
+        "php_min": "7.2.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

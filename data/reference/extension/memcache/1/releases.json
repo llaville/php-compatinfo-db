@@ -1,0 +1,10 @@
+[
+    {
+        "rel_version": "1.0",
+        "rel_date": "2004-05-21",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    }
+]

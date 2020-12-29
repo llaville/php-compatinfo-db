@@ -1,0 +1,20 @@
+[
+    {
+        "class_name": "SessionUpdateTimestampHandlerInterface",
+        "name": "updateTimestamp",
+        "static": "false",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "SessionUpdateTimestampHandlerInterface",
+        "name": "validateId",
+        "static": "false",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": ""
+    }
+]

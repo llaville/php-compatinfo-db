@@ -15,13 +15,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- APCu reference updated to version 5.1.5 (stable)
+- APCu reference updated to version 5.1.15 (stable)
 - Redis reference updated to version 4.2.0 (stable)
 - Yaml reference updated to version 1.3.2 (stable)
 
 ## [1.38.1] - 2018-11-18
 
-### Changed
+### Changed
 
 - Only support PHPUnit v5 and v6 to run unit tests.
 - Upgrade and clean some dependencies.
@@ -46,7 +46,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Support to PHP 7.2.10, 7.2.11
 - New reference to Raphf 2.0.0 (stable)
 
-### Changed
+### Changed
 
 - Apcu reference updated to version 5.1.12 (stable)
 - Ast reference updated to version 0.1.7 (stable)
@@ -219,17 +219,17 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Filter reference updated
 - Ftp reference updated
 - GD reference updated
-- Geoip reference updated
+- Geoip reference updated to version 1.1.1 (beta)
 - Gmp reference updated
 - Imagick reference updated to version 3.4.3 (stable)
 - Intl reference updated
 - Ldap reference updated
-- Mailparse reference updated
+- Mailparse reference updated to version 3.0.2 (stable)
 - Mbstring reference updated
 - Mongo reference updated to version 1.6.16 (stable)
-- Msgpack reference updated
+- Msgpack reference updated to version 2.0.2 (stable)
 - Mysqli reference updated
-- OAuth reference updated
+- OAuth reference updated to version 2.0.2 (stable)
 - Openssl reference updated
 - Pgsql reference updated
 - SPL reference updated
@@ -239,12 +239,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Soap reference updated
 - Sockets reference updated
 - Solr reference updated
-- Sphinx reference updated
+- Sphinx reference updated to version 1.3.3 (stable)
 - SQLite3 reference updated
-- SSH2 reference updated
-- Sync reference updated
+- SSH2 reference updated to version 1.1.2 (alpha)
+- Sync reference updated to version 1.1.1 (stable)
 - Tidy reference updated
-- Varnish reference updated
+- Varnish reference updated to version 1.2.2 (stable)
 - Xdebug reference updated to version 2.5.4 (stable)
 - Xsl reference updated
 - Zend OPCache reference updated

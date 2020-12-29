@@ -1,0 +1,9 @@
+[
+    {
+        "name": "APCUIterator",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

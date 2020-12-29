@@ -1,0 +1,83 @@
+[
+    {
+        "class_name": "SNMP",
+        "name": "__construct",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "close",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "getErrno",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "getError",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "get",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "getnext",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "setSecurity",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "set",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SNMP",
+        "name": "walk",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    }
+]

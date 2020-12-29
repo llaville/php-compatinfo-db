@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "Memcached",
+        "name": "GET_EXTENDED",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Memcached",
+        "name": "HAVE_ENCODING",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Memcached",
+        "name": "OPT_USER_FLAGS",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "rel_version": "5.6.20RC1",
+        "rel_date": "2016-03-17",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "5.6.20RC1",
+        "php_max": ""
+    }
+]

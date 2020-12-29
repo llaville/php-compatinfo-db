@@ -1,0 +1,3715 @@
+[
+    {
+        "class_name": "Redis",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "__destruct",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "connect",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pconnect",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "close",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "ping",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "echo",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "get",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "set",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "setex",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "psetex",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "setnx",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getSet",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "randomKey",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "renameKey",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "renameNx",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getMultiple",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "exists",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "delete",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "incr",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "incrBy",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "incrByFloat",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "decr",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "decrBy",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "type",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "append",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getRange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "setRange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getBit",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "setBit",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "strlen",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getKeys",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sort",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sortAsc",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sortAscAlpha",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sortDesc",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sortDescAlpha",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lPush",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rPush",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lPushx",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rPushx",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lPop",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rPop",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "blPop",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "brPop",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lSize",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lRemove",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "listTrim",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lGet",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lGetRange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lSet",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lInsert",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sAdd",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sSize",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sRemove",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sMove",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sPop",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sRandMember",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sContains",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sMembers",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sInter",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sInterStore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sUnion",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sUnionStore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sDiff",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sDiffStore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "setTimeout",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "save",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "bgSave",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lastSave",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "flushDB",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "flushAll",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "dbSize",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "auth",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "ttl",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pttl",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "persist",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "info",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "resetStat",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "2.2.7",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "select",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "move",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "bgrewriteaof",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "slaveof",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "object",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "bitop",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "bitcount",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "bitpos",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "mset",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "msetnx",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rpoplpush",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "brpoplpush",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zAdd",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zDelete",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zReverseRange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRangeByScore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRevRangeByScore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRangeByLex",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zCount",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zDeleteRangeByScore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zDeleteRangeByRank",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zCard",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zScore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRank",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRevRank",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zInter",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zUnion",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zIncrBy",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "expireAt",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pexpire",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pexpireAt",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hGet",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hSet",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hSetNx",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hDel",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hLen",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hKeys",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hVals",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hGetAll",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hExists",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hIncrBy",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hIncrByFloat",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hMset",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hMget",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "multi",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "discard",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "exec",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pipeline",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "watch",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "unwatch",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "publish",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "subscribe",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "psubscribe",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "unsubscribe",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "punsubscribe",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "time",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "eval",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "evalsha",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "script",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "debug",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "dump",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "restore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "migrate",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getLastError",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "clearLastError",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "_prefix",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "_serialize",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "_unserialize",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "client",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "scan",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hscan",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zscan",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sscan",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pfadd",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pfcount",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pfmerge",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getOption",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "setOption",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "config",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "slowlog",
+        "static": false,
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRevRangeByLex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zLexCount",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRemRangeByLex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "role",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "command",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rawCommand",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rawcommand",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getHost",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getPort",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getDBNum",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getTimeout",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getReadTimeout",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getPersistentID",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getAuth",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "isConnected",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "getMode",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "wait",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "pubsub",
+        "static": false,
+        "ext_min": "2.2.5",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "open",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "popen",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lLen",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sGetMembers",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "mget",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "expire",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zunionstore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zinterstore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRemove",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRem",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRemoveRangeByScore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRemRangeByScore",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRemRangeByRank",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zSize",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "substr",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "rename",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "del",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "keys",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lrem",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "ltrim",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lindex",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "lrange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "scard",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "srem",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sismember",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zrevrange",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRevRange",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRevRangeByLex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sendEcho",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "evaluate",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "evaluateSha",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "sAddArray",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "__call",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "_hosts",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "_target",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "_instance",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "_function",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "_distributor",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "_rehash",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "select",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "info",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "ping",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "flushdb",
+        "static": false,
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "flushall",
+        "static": false,
+        "ext_min": "2.2.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "mget",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "mset",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "del",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "getOption",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "setOption",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "keys",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "save",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "bgsave",
+        "static": false,
+        "ext_min": "2.2.7",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "multi",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "exec",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "discard",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "unwatch",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "delete",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "getMultiple",
+        "static": false,
+        "ext_min": "2.2.3",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "_masters",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "_prefix",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "_redir",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "_serialize",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "_unserialize",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "append",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "bgrewriteaof",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "bgsave",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "bitcount",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "bitop",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "bitpos",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "blpop",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "brpop",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "brpoplpush",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "clearlasterror",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "client",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "close",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "cluster",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "command",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "config",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "dbsize",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "decr",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "decrby",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "del",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "discard",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "dump",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "echo",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "eval",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "evalsha",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "exec",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "exists",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "expire",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "expireat",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "flushall",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "flushdb",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "get",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "getbit",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "getlasterror",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "getmode",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "getoption",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "getrange",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "getset",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hdel",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hexists",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hget",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hgetall",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hincrby",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hincrbyfloat",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hkeys",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hlen",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hmget",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hmset",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hscan",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hset",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hsetnx",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "hvals",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "incr",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "incrby",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "incrbyfloat",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "info",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "keys",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lastsave",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lget",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lindex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "linsert",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "llen",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lpop",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lpush",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lpushx",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lrange",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lrem",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "lset",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "ltrim",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "mget",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "mset",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "msetnx",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "multi",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "object",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "persist",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pexpire",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pexpireat",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pfadd",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pfcount",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pfmerge",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "ping",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "psetex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "psubscribe",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pttl",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "publish",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "pubsub",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "punsubscribe",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "randomkey",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "rawcommand",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "rename",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "renamenx",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "restore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "role",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "rpop",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "rpoplpush",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "rpush",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "rpushx",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sadd",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "saddarray",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "save",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "scan",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "scard",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "script",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sdiff",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sdiffstore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "set",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "setbit",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "setex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "setnx",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "setoption",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "setrange",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sinter",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sinterstore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sismember",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "slowlog",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "smembers",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "smove",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sort",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "spop",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "srandmember",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "srem",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sscan",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "strlen",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "subscribe",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sunion",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "sunionstore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "time",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "ttl",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "type",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "unsubscribe",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "unwatch",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "watch",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zadd",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zcard",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zcount",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zincrby",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zinterstore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zlexcount",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrange",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrangebylex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrangebyscore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrank",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrem",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zremrangebylex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zremrangebyrank",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zremrangebyscore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrevrange",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrevrangebylex",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrevrangebyscore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zrevrank",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zscan",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zscore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "ext_name_fk": "104",
+        "class_name": "RedisCluster",
+        "name": "zunionstore",
+        "static": false,
+        "ext_min": "2.2.8",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    }
+]

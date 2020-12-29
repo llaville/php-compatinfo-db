@@ -1,0 +1,10 @@
+[
+    {
+        "name": "LIBXML_PARSEHUGE",
+        "ext_min": "5.2.12",
+        "ext_max": "",
+        "php_min": "5.2.12",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

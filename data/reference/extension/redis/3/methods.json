@@ -1,0 +1,128 @@
+[
+    {
+        "class_name": "Redis",
+        "name": "geoadd",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "geohash",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "geopos",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "geodist",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "georadius",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "georadiusbymember",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "hStrLen",
+        "static": "false",
+        "ext_min": "3.1.3RC1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "geoadd",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "geohash",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "geopos",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "geodist",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "georadius",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "georadiusbymember",
+        "static": "false",
+        "ext_min": "3.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hstrlen",
+        "static": "false",
+        "ext_min": "3.1.3RC1",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

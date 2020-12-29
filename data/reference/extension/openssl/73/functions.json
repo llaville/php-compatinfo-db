@@ -1,0 +1,11 @@
+[
+    {
+        "name": "openssl_pkey_derive",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

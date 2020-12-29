@@ -1,0 +1,26 @@
+[
+    {
+        "name": "OPENSSL_ALGO_DSS1",
+        "ext_min": "5.2.8",
+        "ext_max": "",
+        "php_min": "5.2.8",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_VERSION_NUMBER",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_VERSION_TEXT",
+        "ext_min": "5.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

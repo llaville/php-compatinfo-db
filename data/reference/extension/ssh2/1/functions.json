@@ -1,0 +1,11 @@
+[
+    {
+        "name": "ssh2_disconnect",
+        "ext_min": "1.0",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

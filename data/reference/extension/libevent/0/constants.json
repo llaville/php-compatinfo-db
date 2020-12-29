@@ -1,0 +1,98 @@
+[
+    {
+        "name": "EVBUFFER_EOF",
+        "ext_min": "0.0.4",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EVBUFFER_ERROR",
+        "ext_min": "0.0.4",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EVBUFFER_READ",
+        "ext_min": "0.0.4",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EVBUFFER_TIMEOUT",
+        "ext_min": "0.0.4",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EVBUFFER_WRITE",
+        "ext_min": "0.0.4",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EVLOOP_NONBLOCK",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EVLOOP_ONCE",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EV_PERSIST",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EV_READ",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EV_SIGNAL",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EV_TIMEOUT",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "EV_WRITE",
+        "ext_min": "0.0.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

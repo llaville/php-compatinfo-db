@@ -1,0 +1,23 @@
+[
+    {
+        "name": "session.trans_sid_hosts",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.beta3",
+        "php_max": ""
+    },
+    {
+        "name": "session.trans_sid_tags",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.beta3",
+        "php_max": ""
+    },
+    {
+        "name": "url_rewriter.hosts",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.beta3",
+        "php_max": ""
+    }
+]

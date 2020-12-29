@@ -1,0 +1,143 @@
+[
+    {
+        "name": "curl_escape",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.4"
+            }
+        ]
+    },
+    {
+        "name": "curl_file_create",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "curl_multi_setopt",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.4"
+            }
+        ]
+    },
+    {
+        "name": "curl_multi_strerror",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.12"
+            }
+        ]
+    },
+    {
+        "name": "curl_pause",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.18"
+            }
+        ]
+    },
+    {
+        "name": "curl_reset",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.12.1"
+            }
+        ]
+    },
+    {
+        "name": "curl_share_close",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "curl_share_init",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "curl_share_setopt",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "curl_strerror",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.12"
+            }
+        ]
+    },
+    {
+        "name": "curl_unescape",
+        "ext_min": "5.5.0",
+        "ext_max": "",
+        "php_min": "5.5.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": "",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.15.4"
+            }
+        ]
+    }
+]

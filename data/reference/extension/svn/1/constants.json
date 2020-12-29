@@ -1,0 +1,66 @@
+[
+    {
+        "name": "SVN_REVISION_UNSPECIFIED",
+        "ext_min": "1.0.0",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_IGNORE_EXTERNALS",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_DEPTH_UNKNOWN",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_DEPTH_EXCLUDE",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_DEPTH_EMPTY",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_DEPTH_FILES",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_DEPTH_IMMEDIATES",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SVN_DEPTH_INFINITY",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

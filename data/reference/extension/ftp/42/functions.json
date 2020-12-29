@@ -1,0 +1,29 @@
+[
+    {
+        "name": "ftp_close",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ftp_get_option",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ftp_set_option",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "JSON_UNESCAPED_LINE_TERMINATORS",
+        "ext_min": "7.1.0alpha1",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

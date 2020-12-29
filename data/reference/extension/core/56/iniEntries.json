@@ -1,0 +1,23 @@
+[
+    {
+        "name": "input_encoding",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": ""
+    },
+    {
+        "name": "internal_encoding",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": ""
+    },
+    {
+        "name": "output_encoding",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": ""
+    }
+]

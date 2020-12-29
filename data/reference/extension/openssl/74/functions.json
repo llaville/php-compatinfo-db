@@ -1,0 +1,11 @@
+[
+    {
+        "name": "openssl_x509_verify",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

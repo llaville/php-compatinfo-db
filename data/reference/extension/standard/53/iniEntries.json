@@ -1,0 +1,9 @@
+[
+    {
+        "name": "from",
+        "ext_min": "5.3.4",
+        "ext_max": "",
+        "php_min": "5.3.4",
+        "php_max": ""
+    }
+]

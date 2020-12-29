@@ -1,0 +1,250 @@
+[
+    {
+        "class_name": "RecursiveArrayIterator",
+        "name": "CHILD_ARRAYS_ONLY",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "CALL_TOSTRING",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "CATCH_GET_CHILD",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "FULL_CACHE",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "TOSTRING_USE_CURRENT",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "TOSTRING_USE_INNER",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveCachingIterator",
+        "name": "TOSTRING_USE_KEY",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "CURRENT_AS_FILEINFO",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "CURRENT_AS_PATHNAME",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "CURRENT_AS_SELF",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "CURRENT_MODE_MASK",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "FOLLOW_SYMLINKS",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "KEY_AS_FILENAME",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "KEY_AS_PATHNAME",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "KEY_MODE_MASK",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "NEW_CURRENT_AND_KEY",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "OTHER_MODE_MASK",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "SKIP_DOTS",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveDirectoryIterator",
+        "name": "UNIX_PATHS",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "CATCH_GET_CHILD",
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "CHILD_FIRST",
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "LEAVES_ONLY",
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveIteratorIterator",
+        "name": "SELF_FIRST",
+        "ext_min": "5.1.3",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "DROP_NEW_LINE",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "READ_AHEAD",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "READ_CSV",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFileObject",
+        "name": "SKIP_EMPTY",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplTempFileObject",
+        "name": "DROP_NEW_LINE",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplTempFileObject",
+        "name": "READ_AHEAD",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplTempFileObject",
+        "name": "READ_CSV",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplTempFileObject",
+        "name": "SKIP_EMPTY",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    }
+]

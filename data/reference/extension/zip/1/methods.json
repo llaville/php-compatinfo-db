@@ -1,0 +1,451 @@
+[
+    {
+        "class_name": "ZipArchive",
+        "name": "open",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setPassword",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "close",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getStatusString",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "addEmptyDir",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "addFromString",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "addFile",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "addGlob",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "addPattern",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "renameIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "renameName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setArchiveComment",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getArchiveComment",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setCommentIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setCommentName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getCommentIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getCommentName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "deleteIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "deleteName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "statName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "statIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "locateName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getNameIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "unchangeArchive",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "unchangeAll",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "unchangeIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "unchangeName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "extractTo",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getFromName",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getFromIndex",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getStream",
+        "static": false,
+        "ext_min": "1.6.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setExternalAttributesName",
+        "static": false,
+        "ext_min": "1.12.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setExternalAttributesIndex",
+        "static": false,
+        "ext_min": "1.12.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getExternalAttributesName",
+        "static": false,
+        "ext_min": "1.12.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getExternalAttributesIndex",
+        "static": false,
+        "ext_min": "1.12.4",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setCompressionName",
+        "static": false,
+        "ext_min": "1.13.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setCompressionIndex",
+        "static": false,
+        "ext_min": "1.13.1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setEncryptionName",
+        "static": false,
+        "ext_min": "1.14.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setEncryptionIndex",
+        "static": false,
+        "ext_min": "1.14.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "count",
+        "static": false,
+        "ext_min": "1.15.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setMtimeName",
+        "static": false,
+        "ext_min": "1.16.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setMtimeIndex",
+        "static": false,
+        "ext_min": "1.16.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "registerProgressCallback",
+        "static": false,
+        "ext_min": "1.16.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "optional": true,
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": "1.3.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "registerCancelCallback",
+        "static": false,
+        "ext_min": "1.16.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": "",
+        "optional": true,
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": "1.6.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "replaceFile",
+        "static": false,
+        "ext_min": "1.18.0RC1",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "isCompressionMethodSupported",
+        "static": true,
+        "ext_min": "1.19.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": "1.7.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "isEncryptionMethodSupported",
+        "static": true,
+        "ext_min": "1.19.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": "1.7.0"
+            }
+        ]
+    }
+]

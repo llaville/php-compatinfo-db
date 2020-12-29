@@ -4,8 +4,9 @@ Thumbs.db
 *.phar
 *.log
 vendor/
-phpunit.xml
 tests/reports/
 composer.lock
 .idea/
 .git-semver/
+.box.metadata.cache
+.phpunit.result.cache

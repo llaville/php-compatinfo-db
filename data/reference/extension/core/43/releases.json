@@ -1,0 +1,98 @@
+[
+    {
+        "rel_version": "4.3.0",
+        "rel_date": "2002-12-27",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.1",
+        "rel_date": "2003-02-17",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.1",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.2",
+        "rel_date": "2003-05-29",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.2",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.3",
+        "rel_date": "2003-08-25",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.4",
+        "rel_date": "2003-11-03",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.4",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.5",
+        "rel_date": "2004-03-26",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.5",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.6",
+        "rel_date": "2004-04-15",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.6",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.7",
+        "rel_date": "2004-06-03",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.7",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.8",
+        "rel_date": "2004-07-13",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.8",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.9",
+        "rel_date": "2004-09-22",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.9",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.10",
+        "rel_date": "2004-12-14",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.10",
+        "php_max": ""
+    },
+    {
+        "rel_version": "4.3.11",
+        "rel_date": "2005-03-31",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": ""
+    }
+]

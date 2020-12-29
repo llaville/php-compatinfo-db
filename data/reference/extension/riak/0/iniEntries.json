@@ -1,0 +1,37 @@
+[
+    {
+        "name": "riak.persistent.connections",
+        "ext_min": "0.4.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "riak.persistent.timeout",
+        "ext_min": "0.4.2",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "riak.socket.keep_alive",
+        "ext_min": "0.6.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "riak.socket.recv_timeout",
+        "ext_min": "0.6.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "riak.socket.send_timeout",
+        "ext_min": "0.6.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

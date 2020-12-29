@@ -1,0 +1,44 @@
+[
+    {
+        "name": "mbstring.detect_order",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": ""
+    },
+    {
+        "name": "mbstring.http_input",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": ""
+    },
+    {
+        "name": "mbstring.http_output",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": ""
+    },
+    {
+        "name": "mbstring.http_output_conv_mimetypes",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": ""
+    },
+    {
+        "name": "mbstring.internal_encoding",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": ""
+    },
+    {
+        "name": "mbstring.substitute_character",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "OAuth",
+        "ext_min": "0.99.1",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "name": "OAuthException",
+        "ext_min": "0.99.1",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    }
+]

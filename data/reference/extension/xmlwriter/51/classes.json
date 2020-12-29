@@ -1,0 +1,9 @@
+[
+    {
+        "name": "XMLWriter",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    }
+]

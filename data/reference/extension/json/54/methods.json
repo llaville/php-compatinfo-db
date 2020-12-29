@@ -1,0 +1,11 @@
+[
+    {
+        "class_name": "JsonSerializable",
+        "name": "jsonSerialize",
+        "static": "false",
+        "ext_min": "5.4.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": ""
+    }
+]

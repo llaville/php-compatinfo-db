@@ -1,0 +1,66 @@
+[
+    {
+        "class_name": "Attribute",
+        "name": "IS_REPEATABLE",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_ALL",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_CLASS",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_CLASS_CONSTANT",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_FUNCTION",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_METHOD",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_PARAMETER",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "Attribute",
+        "name": "TARGET_PROPERTY",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    }
+]

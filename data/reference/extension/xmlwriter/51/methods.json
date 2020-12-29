@@ -1,0 +1,380 @@
+[
+    {
+        "class_name": "XMLWriter",
+        "name": "endAttribute",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endCdata",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endComment",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endDocument",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endDtdAttlist",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endDtdElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endDtdEntity",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endDtd",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "endPi",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "flush",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "fullEndElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "openMemory",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "openUri",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "outputMemory",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "setIndentString",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "setIndent",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startAttributeNs",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startAttribute",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startCdata",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startComment",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startDocument",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startDtdAttlist",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startDtdElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startDtdEntity",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startDtd",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startElementNs",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "startPi",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "text",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeAttributeNs",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeAttribute",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeCdata",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeComment",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeDtdAttlist",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeDtdElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeDtdEntity",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeDtd",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeElementNs",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeElement",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writePi",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "writeRaw",
+        "static": "false",
+        "ext_min": "5.1.2",
+        "ext_max": "",
+        "php_min": "5.1.2",
+        "php_max": ""
+    }
+]

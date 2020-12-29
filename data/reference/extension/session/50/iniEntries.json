@@ -1,0 +1,16 @@
+[
+    {
+        "name": "session.hash_bits_per_character",
+        "ext_min": "5.0.0",
+        "ext_max": "",
+        "php_min": "5.0.0",
+        "php_max": "7.0.33"
+    },
+    {
+        "name": "session.hash_function",
+        "ext_min": "5.0.0",
+        "ext_max": "",
+        "php_min": "5.0.0",
+        "php_max": "7.0.33"
+    }
+]

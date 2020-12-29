@@ -1,0 +1,20 @@
+[
+    {
+        "name": "imap_get_quotaroot",
+        "ext_min": "4.3.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "imap_timeout",
+        "ext_min": "4.3.3",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "class_name": "SQLite3",
+        "name": "setAuthorizer",
+        "static": false,
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    }
+]

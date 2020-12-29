@@ -1,0 +1,38 @@
+[
+    {
+        "name": "memcache_append",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_cas",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_prepend",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_set_failure_callback",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

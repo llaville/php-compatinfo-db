@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Cond",
+        "ext_min": "0.0.33",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "Mutex",
+        "ext_min": "0.0.33",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "Thread",
+        "ext_min": "0.0.33",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "Worker",
+        "ext_min": "0.0.33",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "stackable",
+        "ext_min": "0.0.36",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

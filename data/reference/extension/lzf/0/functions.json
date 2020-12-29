@@ -1,0 +1,20 @@
+[
+    {
+        "name": "lzf_compress",
+        "ext_min": "0.1",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "lzf_decompress",
+        "ext_min": "0.1",
+        "ext_max": "",
+        "php_min": "4.0.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

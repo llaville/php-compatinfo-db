@@ -1,0 +1,10 @@
+[
+    {
+        "name": "FILTER_VALIDATE_BOOL",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

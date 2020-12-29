@@ -1,0 +1,16 @@
+[
+    {
+        "name": "xdebug.mode",
+        "ext_min": "3.0.0beta1",
+        "ext_max": "",
+        "php_min": "7.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "xdebug.client_discovery_header",
+        "ext_min": "3.0.0",
+        "ext_max": "",
+        "php_min": "7.2.0",
+        "php_max": ""
+    }
+]

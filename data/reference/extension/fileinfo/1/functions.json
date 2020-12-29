@@ -1,0 +1,11 @@
+[
+    {
+        "name": "mime_content_type",
+        "ext_min": "1.0.5-dev",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

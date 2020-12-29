@@ -1,0 +1,85 @@
+[
+    {
+        "name": "ArrayAccess",
+        "ext_min": "5.1.0",
+        "ext_max": "5.2.17",
+        "php_min": "5.1.0",
+        "php_max": "5.2.17",
+        "deprecated": "5.2.17"
+    },
+    {
+        "name": "Countable",
+        "ext_min": "5.1.0",
+        "ext_max": "7.1.25",
+        "php_min": "5.1.0",
+        "php_max": "7.1.25",
+        "deprecated": "7.1.25"
+    },
+    {
+        "name": "Iterator",
+        "ext_min": "5.1.0",
+        "ext_max": "5.2.17",
+        "php_min": "5.1.0",
+        "php_max": "5.2.17",
+        "deprecated": "5.2.17"
+    },
+    {
+        "name": "IteratorAggregate",
+        "ext_min": "5.1.0",
+        "ext_max": "5.2.17",
+        "php_min": "5.1.0",
+        "php_max": "5.2.17",
+        "deprecated": "5.2.17"
+    },
+    {
+        "name": "OuterIterator",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "name": "RecursiveIterator",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "name": "SeekableIterator",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "name": "Serializable",
+        "ext_min": "5.1.0",
+        "ext_max": "5.2.17",
+        "php_min": "5.1.0",
+        "php_max": "5.2.17",
+        "deprecated": "5.2.17"
+    },
+    {
+        "name": "SplObserver",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "name": "SplSubject",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": ""
+    },
+    {
+        "name": "Traversable",
+        "ext_min": "5.1.0",
+        "ext_max": "5.2.17",
+        "php_min": "5.1.0",
+        "php_max": "5.2.17",
+        "deprecated": "5.2.17"
+    }
+]

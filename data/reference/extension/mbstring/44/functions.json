@@ -1,0 +1,11 @@
+[
+    {
+        "name": "mb_check_encoding",
+        "ext_min": "4.4.3",
+        "ext_max": "",
+        "php_min": "4.4.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

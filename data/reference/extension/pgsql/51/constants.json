@@ -1,0 +1,42 @@
+[
+    {
+        "name": "PGSQL_TRANSACTION_ACTIVE",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_TRANSACTION_IDLE",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_TRANSACTION_INERROR",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_TRANSACTION_INTRANS",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_TRANSACTION_UNKNOWN",
+        "ext_min": "5.1.0",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "ldap_set_rebind_proc",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ldap_sort",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ldap_start_tls",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

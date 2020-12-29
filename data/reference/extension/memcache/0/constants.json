@@ -1,0 +1,18 @@
+[
+    {
+        "name": "MEMCACHE_COMPRESSED",
+        "ext_min": "0.2",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MEMCACHE_SERIALIZED",
+        "ext_min": "0.2",
+        "ext_max": "0.2",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

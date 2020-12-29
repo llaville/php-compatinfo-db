@@ -1,0 +1,34 @@
+[
+    {
+        "name": "MSG_DONTWAIT",
+        "ext_min": "5.2.10",
+        "ext_max": "",
+        "php_min": "5.2.10",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MSG_EOF",
+        "ext_min": "5.2.4",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MSG_EOR",
+        "ext_min": "5.2.4",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TCP_NODELAY",
+        "ext_min": "5.2.7",
+        "ext_max": "",
+        "php_min": "5.2.7",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

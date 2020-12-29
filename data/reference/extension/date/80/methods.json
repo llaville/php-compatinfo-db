@@ -1,0 +1,20 @@
+[
+    {
+        "class_name": "DateTime",
+        "name": "createFromInterface",
+        "static": false,
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "createFromInterface",
+        "static": false,
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    }
+]

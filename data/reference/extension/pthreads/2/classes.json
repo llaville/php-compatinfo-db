@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Collectable",
+        "ext_min": "2.0.8",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "name": "Threaded",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

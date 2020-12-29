@@ -1,0 +1,26 @@
+[
+    {
+        "rel_version": "5.6.0alpha2",
+        "rel_date": "2014-02-12",
+        "rel_state": "alpha",
+        "ext_max": "",
+        "php_min": "5.6.0alpha2",
+        "php_max": ""
+    },
+    {
+        "rel_version": "5.6.0beta2",
+        "rel_date": "2014-05-02",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "5.6.0beta2",
+        "php_max": ""
+    },
+    {
+        "rel_version": "5.6.0RC3",
+        "rel_date": "2014-07-31",
+        "rel_state": "beta",
+        "ext_max": "",
+        "php_min": "5.6.0RC3",
+        "php_max": ""
+    }
+]

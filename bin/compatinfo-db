@@ -2,16 +2,20 @@
 <?php
 // @link https://www.tomasvotruba.cz/blog/2018/08/02/5-gotchas-of-the-bin-file-in-php-cli-applications/
 
-declare(strict_types=1);
-
 gc_disable(); // performance boost
 
-$possibleAutoloadPaths = [
-    // local dev repository
-    __DIR__ . '/../vendor/autoload.php',
-    // dependency
-    __DIR__ . '/../../../../vendor/autoload.php',
-];
+if (\Phar::running()) {
+    $possibleAutoloadPaths = [
+        'phar://compatinfo-db.phar/vendor/autoload.php'
+    ];
+} else {
+    $possibleAutoloadPaths = [
+        // local dev repository
+        __DIR__ . '/../vendor/autoload.php',
+        // dependency
+        __DIR__ . '/../../../../vendor/autoload.php',
+    ];
+}
 
 $isAutoloadFound = false;
 foreach ($possibleAutoloadPaths as $possibleAutoloadPath) {
@@ -29,8 +33,21 @@ if ($isAutoloadFound === false) {
     ));
 }
 
-use Bartlett\CompatInfoDb\Presentation\Console\Application;
-use Bartlett\CompatInfoDb\Application\Service\ContainerService;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 
-$application = new Application(new ContainerService(__DIR__ . '/../data/references'));
-$application->run();
+use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+
+putenv('APP_ENV=' . ($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod'));
+
+/** @var ContainerBuilder $container */
+$container = require dirname(__DIR__) . '/config/container.php';
+
+/** @var ApplicationInterface $app */
+$app = $container->get(ApplicationInterface::class);
+$app->setContainer($container);
+
+// @link https://symfony.com/doc/current/console/lazy_commands.html
+$app->setCommandLoader($container->get(CommandLoaderInterface::class));
+
+exit($app->run());

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ast\\Node",
+        "ext_min": "0.1.5",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "ast\\Node\\Decl",
+        "ext_min": "0.1.5",
+        "ext_max": "0.1.7",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "ast\\Metadata",
+        "ext_min": "0.1.6",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "opcache.opt_debug_level",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha1",
+        "php_max": ""
+    }
+]

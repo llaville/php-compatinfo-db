@@ -1,0 +1,34 @@
+[
+    {
+        "name": "T_COALESCE",
+        "ext_min": "7.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "T_SPACESHIP",
+        "ext_min": "7.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "T_YIELD_FROM",
+        "ext_min": "7.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TOKEN_PARSE",
+        "ext_min": "7.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

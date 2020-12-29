@@ -1,0 +1,90 @@
+[
+    {
+        "name": "ARRAY_FILTER_USE_BOTH",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "ARRAY_FILTER_USE_KEY",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "INI_SCANNER_TYPED",
+        "ext_min": "5.6.1RC1",
+        "ext_max": "",
+        "php_min": "5.6.1RC1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_ANY_CLIENT",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_ANY_SERVER",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_0_CLIENT",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_0_SERVER",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_1_CLIENT",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_1_SERVER",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "STREAM_CRYPTO_METHOD_TLSv1_2_SERVER",
+        "ext_min": "5.6.0alpha3",
+        "ext_max": "",
+        "php_min": "5.6.0alpha3",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

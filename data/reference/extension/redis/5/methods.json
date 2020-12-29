@@ -1,0 +1,119 @@
+[
+    {
+        "class_name": "RedisSentinel",
+        "name": "__construct",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "ckquorum",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "failover",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "flushconfig",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "getMasterAddrByName",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "master",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "masters",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "ping",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "reset",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "sentinels",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "slaves",
+        "static": "false",
+        "ext_min": "5.2.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "Redis",
+        "name": "acl",
+        "static": "false",
+        "ext_min": "5.3.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "acl",
+        "static": "false",
+        "ext_min": "5.3.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

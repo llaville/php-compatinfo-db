@@ -1,0 +1,38 @@
+[
+    {
+        "name": "session_abort",
+        "ext_min": "5.6.0alpha1",
+        "ext_max": "",
+        "php_min": "5.6.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "session_gc",
+        "ext_min": "5.6.0alpha1",
+        "ext_max": "5.6.0alpha3",
+        "php_min": "5.6.0alpha1",
+        "php_max": "5.6.0alpha3",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "session_reset",
+        "ext_min": "5.6.0alpha1",
+        "ext_max": "",
+        "php_min": "5.6.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "session_serializer_name",
+        "ext_min": "5.6.0alpha1",
+        "ext_max": "5.6.0alpha3",
+        "php_min": "5.6.0alpha1",
+        "php_max": "5.6.0alpha3",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

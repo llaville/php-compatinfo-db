@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Memcache",
+        "ext_min": "0.2",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": ""
+    }
+]

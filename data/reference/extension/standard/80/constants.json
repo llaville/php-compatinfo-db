@@ -1,0 +1,10 @@
+[
+    {
+        "name": "PATHINFO_ALL",
+        "ext_min": "8.0.0beta4",
+        "ext_max": "",
+        "php_min": "8.0.0beta4",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

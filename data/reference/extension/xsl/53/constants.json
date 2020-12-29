@@ -1,0 +1,58 @@
+[
+    {
+        "name": "XSL_SECPREF_CREATE_DIRECTORY",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XSL_SECPREF_DEFAULT",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XSL_SECPREF_NONE",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XSL_SECPREF_READ_FILE",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XSL_SECPREF_READ_NETWORK",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XSL_SECPREF_WRITE_FILE",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XSL_SECPREF_WRITE_NETWORK",
+        "ext_min": "5.3.9",
+        "ext_max": "",
+        "php_min": "5.3.9",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

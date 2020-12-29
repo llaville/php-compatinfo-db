@@ -1,0 +1,29 @@
+[
+    {
+        "class_name": "php_user_filter",
+        "name": "filter",
+        "static": false,
+        "ext_min": "5.0.0",
+        "ext_max": "",
+        "php_min": "5.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "php_user_filter",
+        "name": "onClose",
+        "static": false,
+        "ext_min": "5.0.0",
+        "ext_max": "",
+        "php_min": "5.0.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "php_user_filter",
+        "name": "onCreate",
+        "static": false,
+        "ext_min": "5.0.0",
+        "ext_max": "",
+        "php_min": "5.0.0",
+        "php_max": ""
+    }
+]

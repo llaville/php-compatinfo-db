@@ -1,0 +1,9 @@
+[
+    {
+        "name": "uopz.exit",
+        "ext_min": "6.0.1",
+        "ext_max": "",
+        "php_min": "7.1.0",
+        "php_max": ""
+    }
+]

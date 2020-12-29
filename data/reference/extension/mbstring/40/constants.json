@@ -1,0 +1,50 @@
+[
+    {
+        "name": "MB_CASE_LOWER",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MB_CASE_TITLE",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MB_CASE_UPPER",
+        "ext_min": "4.0.6",
+        "ext_max": "",
+        "php_min": "4.0.6",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MB_OVERLOAD_MAIL",
+        "ext_min": "4.0.6",
+        "ext_max": "7.4.13",
+        "php_min": "4.0.6",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MB_OVERLOAD_REGEX",
+        "ext_min": "4.0.6",
+        "ext_max": "7.4.13",
+        "php_min": "4.0.6",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MB_OVERLOAD_STRING",
+        "ext_min": "4.0.6",
+        "ext_max": "7.4.13",
+        "php_min": "4.0.6",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

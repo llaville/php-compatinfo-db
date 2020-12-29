@@ -1,0 +1,682 @@
+[
+    {
+        "name": "AF_INET",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AF_INET6",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "AF_UNIX",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MSG_DONTROUTE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MSG_OOB",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MSG_PEEK",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "MSG_WAITALL",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PHP_BINARY_READ",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PHP_NORMAL_READ",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EACCES",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EADDRINUSE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EADDRNOTAVAIL",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EAFNOSUPPORT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EALREADY",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EBADF",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ECONNABORTED",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ECONNREFUSED",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ECONNRESET",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EDESTADDRREQ",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EDISCON",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EDQUOT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EFAULT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EHOSTDOWN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EHOSTUNREACH",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EINPROGRESS",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EINTR",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EINVAL",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EISCONN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ELOOP",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EMFILE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EMSGSIZE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENAMETOOLONG",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENETDOWN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENETRESET",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENETUNREACH",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENOBUFS",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENOPROTOOPT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENOTCONN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENOTEMPTY",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ENOTSOCK",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EOPNOTSUPP",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EPFNOSUPPORT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EPROCLIM",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EPROTONOSUPPORT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EPROTOTYPE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EREMOTE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ESHUTDOWN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ESOCKTNOSUPPORT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ESTALE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ETIMEDOUT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_ETOOMANYREFS",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EUSERS",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_EWOULDBLOCK",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_HOST_NOT_FOUND",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_NOTINITIALISED",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_NO_ADDRESS",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_NO_DATA",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_NO_RECOVERY",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_SYSNOTREADY",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_TRY_AGAIN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCKET_VERNOTSUPPORTED",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCK_DGRAM",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCK_RAW",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCK_RDM",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCK_SEQPACKET",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOCK_STREAM",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOL_SOCKET",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOL_TCP",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOL_UDP",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SOMAXCONN",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_BROADCAST",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_DEBUG",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_DONTROUTE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_ERROR",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_KEEPALIVE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_LINGER",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_OOBINLINE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_RCVBUF",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_RCVLOWAT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_RCVTIMEO",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_REUSEADDR",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_SNDBUF",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_SNDLOWAT",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_SNDTIMEO",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "SO_TYPE",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "name": "PGSQL_CONNECTION_AUTH_OK",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_CONNECTION_AWAITING_RESPONSE",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_CONNECTION_MADE",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_CONNECTION_SETENV",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_CONNECTION_SSL_STARTUP",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": "",
+        "optional": true
+    },
+    {
+        "name": "PGSQL_CONNECTION_STARTED",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_CONNECT_ASYNC",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_DML_ESCAPE",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_POLLING_ACTIVE",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_POLLING_FAILED",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_POLLING_OK",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_POLLING_READING",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_POLLING_WRITING",
+        "ext_min": "5.6.0beta1",
+        "ext_max": "",
+        "php_min": "5.6.0beta1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,596 @@
+[
+    {
+        "class_name": "AMQPConnection",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "setVhost",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "setPort",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "isConnected",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "connect",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "disconnect",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "reconnect",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "setLogin",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "setPassword",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnection",
+        "name": "setHost",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getMessage",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getCode",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getFile",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getLine",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getTrace",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getPrevious",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "getTraceAsString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPConnectionException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getMessage",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getCode",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getFile",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getLine",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getTrace",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getPrevious",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "getTraceAsString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchange",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchange",
+        "name": "declare",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchange",
+        "name": "delete",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchange",
+        "name": "publish",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchange",
+        "name": "bind",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getMessage",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getCode",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getFile",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getLine",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getTrace",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getPrevious",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "getTraceAsString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPExchangeException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "declare",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "purge",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "cancel",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "delete",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "unbind",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "bind",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "get",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "consume",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "ack",
+        "static": false,
+        "ext_min": "0.2.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "getName",
+        "static": false,
+        "ext_min": "0.3.1",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getMessage",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getCode",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getFile",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getLine",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getTrace",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getPrevious",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "getTraceAsString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "AMQPQueueException",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "0.1.0",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    }
+]

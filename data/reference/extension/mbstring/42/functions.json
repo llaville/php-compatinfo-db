@@ -1,0 +1,263 @@
+[
+    {
+        "name": "mb_ereg",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_match",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_replace",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search_getpos",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search_getregs",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search_init",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search_pos",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search_regs",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_ereg_search_setpos",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_eregi",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_eregi_replace",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "4.2.0, 4.2.0, 4.2.0, 7.0.0alpha1",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_get_info",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_regex_encoding",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mb_split",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_match",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_replace",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search_getpos",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search_getregs",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search_init",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search_pos",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search_regs",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbereg_search_setpos",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mberegi",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mberegi_replace",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "4.2.0, 4.2.0, 4.2.0, 7.0.0alpha1",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbregex_encoding",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "mbsplit",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "7.4.13",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

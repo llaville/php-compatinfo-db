@@ -1,0 +1,11 @@
+[
+    {
+        "name": "is_iterable",
+        "ext_min": "7.1.0",
+        "ext_max": "",
+        "php_min": "7.1.0alpha3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

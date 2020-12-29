@@ -1,0 +1,38 @@
+[
+    {
+        "name": "gmp_perfect_power",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "gmp_lcm",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "gmp_kronecker",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "gmp_binomial",
+        "ext_min": "7.3.0",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

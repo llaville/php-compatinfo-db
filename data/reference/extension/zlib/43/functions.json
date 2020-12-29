@@ -1,0 +1,11 @@
+[
+    {
+        "name": "zlib_get_coding_type",
+        "ext_min": "4.3.2",
+        "ext_max": "",
+        "php_min": "4.3.2",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

@@ -1,53 +1,69 @@
-<?php
+<?php declare(strict_types=1);
 
-declare(strict_types=1);
+/**
+ * Initialize the database with JSON files for all extensions.
+ *
+ * PHP version 7
+ *
+ * @category   PHP
+ * @package    PHP_CompatInfo_Db
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
+ * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ */
 
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
-use Bartlett\CompatInfoDb\Application\Command\InitCommand as AppInitCommand;
+use Bartlett\CompatInfoDb\Application\Query\Init\InitQuery;
+use Bartlett\CompatInfoDb\Presentation\Console\Style;
+
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Initiliaze the database with JSON files for one or all extensions.
+ * @since Release 2.0.0RC1
  */
-class InitCommand extends AbstractCommand
+class InitCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'bartlett:db:init';
-
-    private const DEFAULT_REL_VERSION = '2.x-dev';
+    public const NAME = 'db:init';
 
     protected function configure()
     {
         $this->setName(self::NAME)
-            ->setDescription('Load JSON file(s) in SQLite database')
+            ->setDescription('Load JSON file(s) into database')
             ->addArgument(
                 'rel_version',
                 InputArgument::OPTIONAL,
-                'New DB version',
-                self::DEFAULT_REL_VERSION
+                'New DB version'
             )
+            ->addOption('force', 'f', null, 'Reset database contents even if not empty')
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $initCommand = new AppInitCommand();
-        $initCommand->extension = '';
-        $initCommand->refDir = $this->getApplication()->getRefDir();
-        $initCommand->dbFilename = $this->getApplication()->getDbFilename();
+        $io = new Style($input, $output);
+        $io->caution('This operation should not be executed in a production environment!');
 
-        $relVersion = trim($input->getArgument('rel_version'));
-        if (self::DEFAULT_REL_VERSION == $relVersion) {
-            $initCommand->appVersion = $this->getApplication()->getVersion();
+        $relVersion = $input->getArgument('rel_version') ?? null;
+
+        if (null === $relVersion) {
+            $appVersion = $this->getApplication()->getVersion();
         } else {
-            $initCommand->appVersion = $relVersion;
+            $appVersion = trim($relVersion);
         }
-        $initCommand->output = $output;
+        $initQuery = new InitQuery($appVersion, $io, $input->getOption('force'));
 
-        $this->commandBus->handle($initCommand);
+        $exitCode = $this->queryBus->query($initQuery);
 
-        return 0;
+        if (0 === $exitCode) {
+            $io->success('Database built successfully!');
+        } else {
+            $io->warning('Database already exists.');
+            $io->note('Use --force option to replace contents.');
+        }
+
+        return $exitCode;
     }
 }

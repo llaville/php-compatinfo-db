@@ -1,0 +1,138 @@
+[
+    {
+        "name": "POSIX_RLIMIT_AS",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_CORE",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_CPU",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_DATA",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_FSIZE",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_LOCKS",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_MEMLOCK",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_MSGQUEUE",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_NICE",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_NOFILE",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_NPROC",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_RSS",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_RTPRIO",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_RTTIME",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_SIGPENDING",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_STACK",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "POSIX_RLIMIT_INFINITY",
+        "ext_min": "7.0.0beta2",
+        "ext_max": "",
+        "php_min": "7.0.0beta2",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

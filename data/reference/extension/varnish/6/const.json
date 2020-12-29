@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "VarnishLog",
+        "name": "TAG_Filters",
+        "ext_min": "6.1.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "VarnishLog",
+        "name": "TAG_SessError",
+        "ext_min": "6.1.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "VarnishLog",
+        "name": "TAG_VCL_use",
+        "ext_min": "6.2.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

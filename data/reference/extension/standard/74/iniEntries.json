@@ -1,0 +1,9 @@
+[
+    {
+        "name": "unserialize_max_depth",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0RC3",
+        "php_max": ""
+    }
+]

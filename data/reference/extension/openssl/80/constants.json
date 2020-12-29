@@ -1,0 +1,90 @@
+[
+    {
+        "name": "OPENSSL_CMS_DETACHED",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_TEXT",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_NOINTERN",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_NOVERIFY",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_NOCERTS",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_NOATTR",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_BINARY",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_CMS_NOSIGS",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_ENCODING_DER",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_ENCODING_SMIME",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "OPENSSL_ENCODING_PEM",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

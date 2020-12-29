@@ -1,0 +1,146 @@
+[
+    {
+        "class_name": "ReflectionUnionType",
+        "name": "getTypes",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionAttribute",
+        "name": "getArguments",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionAttribute",
+        "name": "getName",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionAttribute",
+        "name": "getTarget",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionAttribute",
+        "name": "isRepeated",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionAttribute",
+        "name": "newInstance",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionNamedType",
+        "name": "isBuiltin",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionFunctionAbstract",
+        "name": "getAttributes",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionParameter",
+        "name": "isPromoted",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionParameter",
+        "name": "getAttributes",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "getAttributes",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getDefaultValue",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "hasDefaultValue",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isPromoted",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getAttributes",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "ReflectionClassConstant",
+        "name": "getAttributes",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    }
+]

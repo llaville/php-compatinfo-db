@@ -1,0 +1,9 @@
+[
+    {
+        "name": "SimpleXMLElement",
+        "ext_min": "5.0.1",
+        "ext_max": "",
+        "php_min": "5.0.1",
+        "php_max": ""
+    }
+]

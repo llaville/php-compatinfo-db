@@ -1,0 +1,9 @@
+[
+    {
+        "name": "opcache.validate_root",
+        "ext_min": "5.6.29",
+        "ext_max": "",
+        "php_min": "5.6.29RC1",
+        "php_max": ""
+    }
+]

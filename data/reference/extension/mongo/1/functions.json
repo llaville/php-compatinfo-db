@@ -1,0 +1,20 @@
+[
+    {
+        "name": "bson_decode",
+        "ext_min": "1.0.1",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "bson_encode",
+        "ext_min": "1.0.1",
+        "ext_max": "",
+        "php_min": "5.1.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "redis.clusters.cache_slots",
+        "ext_min": "5.0.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.pconnect.echo_check_liveness",
+        "ext_min": "5.2.2",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    },
+    {
+        "name": "redis.pconnect.pool_pattern",
+        "ext_min": "5.3.0RC1",
+        "ext_max": "",
+        "php_min": "7.0.0",
+        "php_max": ""
+    }
+]

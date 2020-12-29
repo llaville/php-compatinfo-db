@@ -1,0 +1,16 @@
+[
+    {
+        "name": "opcache.preload",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": ""
+    },
+    {
+        "name": "opcache.preload_user",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": ""
+    }
+]

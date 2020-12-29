@@ -1,0 +1,10 @@
+[
+    {
+        "name": "PREG_JIT_STACKLIMIT_ERROR",
+        "ext_min": "7.0.0beta3",
+        "ext_max": "",
+        "php_min": "7.0.0beta3",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

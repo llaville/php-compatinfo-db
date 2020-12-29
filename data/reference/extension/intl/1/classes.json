@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Collator",
+        "ext_min": "1.0.0beta",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "IntlDateFormatter",
+        "ext_min": "1.0.0RC1",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": ""
+    },
+    {
+        "name": "Locale",
+        "ext_min": "1.0.0beta",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "MessageFormatter",
+        "ext_min": "1.0.0beta",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "Normalizer",
+        "ext_min": "1.0.0beta",
+        "ext_max": "",
+        "php_min": "5.3.0alpha1",
+        "php_max": ""
+    },
+    {
+        "name": "NumberFormatter",
+        "ext_min": "1.0.0beta",
+        "ext_max": "",
+        "php_min": "5.2.0",
+        "php_max": ""
+    },
+    {
+        "name": "ResourceBundle",
+        "ext_min": "1.1.0",
+        "ext_max": "",
+        "php_min": "5.2.4",
+        "php_max": ""
+    }
+]

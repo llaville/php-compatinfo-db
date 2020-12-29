@@ -1,0 +1,226 @@
+[
+    {
+        "name": "TIDY_TAG_ARTICLE",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_ASIDE",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_AUDIO",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_BDI",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_CANVAS",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_COMMAND",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_DATALIST",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_DETAILS",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_DIALOG",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_FIGCAPTION",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_FIGURE",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_FOOTER",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_HEADER",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_HGROUP",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_MAIN",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_MARK",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_MENUITEM",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_METER",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_NAV",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_OUTPUT",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_PROGRESS",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_SECTION",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_SOURCE",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_SUMMARY",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_TEMPLATE",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_TIME",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_TRACK",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "TIDY_TAG_VIDEO",
+        "ext_min": "7.4.0",
+        "ext_max": "",
+        "php_min": "7.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

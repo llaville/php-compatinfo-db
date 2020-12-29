@@ -1,0 +1,10 @@
+[
+    {
+        "name": "WCONTINUED",
+        "ext_min": "7.0.0alpha1",
+        "ext_max": "",
+        "php_min": "7.0.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

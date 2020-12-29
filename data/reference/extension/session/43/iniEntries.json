@@ -1,0 +1,32 @@
+[
+    {
+        "name": "session.bug_compat_42",
+        "ext_min": "4.3.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "5.4.0",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "session.bug_compat_warn",
+        "ext_min": "4.3.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": "5.4.0",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "session.gc_divisor",
+        "ext_min": "4.3.2",
+        "ext_max": "",
+        "php_min": "4.3.2",
+        "php_max": ""
+    },
+    {
+        "name": "session.use_only_cookies",
+        "ext_min": "4.3.0",
+        "ext_max": "",
+        "php_min": "4.3.0",
+        "php_max": ""
+    }
+]

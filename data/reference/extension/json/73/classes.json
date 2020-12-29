@@ -1,0 +1,9 @@
+[
+    {
+        "name": "JsonException",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": ""
+    }
+]

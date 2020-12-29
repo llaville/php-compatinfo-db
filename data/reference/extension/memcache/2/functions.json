@@ -1,0 +1,65 @@
+[
+    {
+        "name": "memcache_add_server",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_get_extended_stats",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_get_server_status",
+        "ext_min": "2.1.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_set_compress_threshold",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_set_server_params",
+        "ext_min": "2.1.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_set_sasl_auth_data",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "4.3.3",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "memcache_setoptimeout",
+        "ext_min": "2.2.5",
+        "ext_max": "2.2.6",
+        "php_min": "4.3.11",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

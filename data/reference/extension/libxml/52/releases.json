@@ -1,0 +1,18 @@
+[
+    {
+        "rel_version": "5.2.11",
+        "rel_date": "2009-09-16",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.2.11",
+        "php_max": ""
+    },
+    {
+        "rel_version": "5.2.12",
+        "rel_date": "2009-12-17",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "5.2.12",
+        "php_max": ""
+    }
+]

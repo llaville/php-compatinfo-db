@@ -1,0 +1,42 @@
+[
+    {
+        "rel_version": "6.0.0",
+        "rel_date": "2019-01-30",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.0",
+        "php_max": ""
+    },
+    {
+        "rel_version": "6.0.1",
+        "rel_date": "2019-02-06",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.0",
+        "php_max": ""
+    },
+    {
+        "rel_version": "6.1.0",
+        "rel_date": "2019-05-27",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.0",
+        "php_max": ""
+    },
+    {
+        "rel_version": "6.1.1",
+        "rel_date": "2019-09-18",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.0",
+        "php_max": ""
+    },
+    {
+        "rel_version": "6.1.2",
+        "rel_date": "2020-06-30",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.1.0",
+        "php_max": ""
+    }
+]

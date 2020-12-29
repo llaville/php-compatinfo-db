@@ -1,23 +1,48 @@
-<?php
+<?php declare(strict_types=1);
 
-declare(strict_types=1);
+/**
+ * Show details of a reference (extension) supported.
+ *
+ * PHP version 7
+ *
+ * @category   PHP
+ * @package    PHP_CompatInfo_Db
+ * @author     Laurent Laville <pear@laurent-laville.org>
+ * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
+ * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ */
 
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
-use Bartlett\CompatInfoDb\Application\Command\ShowCommand as AppShowCommand;
+use Bartlett\CompatInfoDb\Application\Query\Show\ShowQuery;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
+use Bartlett\CompatInfoDb\Presentation\Console\Style;
+
 use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Style\StyleInterface;
 
-class ShowCommand extends AbstractCommand
+use function array_unshift;
+use function count;
+use function explode;
+use function sprintf;
+
+/**
+ * @since Release 2.0.0RC1
+ */
+final class ShowCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'bartlett:db:show';
+    public const NAME = 'db:show';
 
     protected function configure()
     {
         $this->setName(self::NAME)
-            ->setDescription('Show details of a reference supported in the Database.')
+            ->setDescription('Show details of a reference supported in the Database')
             ->addArgument(
                 'extension',
                 InputArgument::REQUIRED,
@@ -36,7 +61,7 @@ class ShowCommand extends AbstractCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $showCommand = new AppShowCommand(
+        $showQuery = new ShowQuery(
             trim($input->getArgument('extension')),
             $input->getOption('releases'),
             $input->getOption('ini'),
@@ -48,123 +73,155 @@ class ShowCommand extends AbstractCommand
             $input->getOption('class-constants')
         );
 
-        $results = $this->commandBus->handle($showCommand);
+        /** @var Extension $extension */
+        $extension = $this->queryBus->query($showQuery);
 
-        // print results
-        $this->printDbBuildVersion($output);
+        $io = new Style($input, $output);
 
-        if (array_key_exists('summary', $results)) {
-            $summary = $results['summary'];
-            $output->writeln(sprintf('%s<info>Reference Summary</info>', PHP_EOL));
-            $summary['releases'] = array(
-                '  Releases                                  %10d',
-                array($summary['releases'])
-            );
-            $summary['iniEntries'] = array(
-                '  INI entries                               %10d',
-                array($summary['iniEntries'])
-            );
-            $summary['constants'] = array(
-                '  Constants                                 %10d',
-                array($summary['constants'])
-            );
-            $summary['functions'] = array(
-                '  Functions                                 %10d',
-                array($summary['functions'])
-            );
-            $summary['interfaces'] = array(
-                '  Interfaces                                %10d',
-                array($summary['interfaces'])
-            );
-            $summary['classes'] = array(
-                '  Classes                                   %10d',
-                array($summary['classes'])
-            );
-            $summary['class-constants'] = array(
-                '  Class Constants                           %10d',
-                array($summary['class-constants'])
-            );
-            $summary['methods'] = array(
-                '  Methods                                   %10d',
-                array($summary['methods'])
-            );
-            $summary['static methods'] = array(
-                '  Static Methods                            %10d',
-                array($summary['static methods'])
-            );
-            $this->printFormattedLines($output, $summary);
+        if (null === $extension) {
+            $io->error(sprintf('Extension "%s" is not available', $showQuery->getExtension()));
+            return 1;
+        }
+
+        $summary = true;
+
+        if ($showQuery->isReleases()) {
+            $summary = false;
+            $this->formatSection($extension->getReleases(), 'Releases', $io);
+        }
+        if ($showQuery->isIni()) {
+            $summary = false;
+            $this->formatSection($extension->getIniEntries(), 'Ini Entries', $io);
+        }
+        if ($showQuery->isConstants()) {
+            $summary = false;
+            $this->formatSection($extension->getConstants(), 'Constants', $io);
+        }
+        if ($showQuery->isFunctions()) {
+            $summary = false;
+            $this->formatSection($extension->getFunctions(), 'Functions', $io);
+        }
+        if ($showQuery->isClasses()) {
+            $summary = false;
+            $this->formatSection($extension->getClasses(), 'Classes', $io);
+        }
+        if ($showQuery->isInterfaces()) {
+            $summary = false;
+            $this->formatSection($extension->getInterfaces(), 'Interfaces', $io);
+        }
+        if ($showQuery->isClassConstants()) {
+            $summary = false;
+            $this->formatSection($extension->getClassConstants(), 'Class Constants', $io);
+        }
+        if ($showQuery->isMethods()) {
+            $summary = false;
+            $this->formatSection($extension->getMethods(), 'Methods', $io);
+        }
+
+        if (!$summary) {
             return 0;
         }
 
-        foreach ($results as $title => $values) {
-            $args = array();
-
-            foreach ($values as $key => $val) {
-                if (strcasecmp($title, 'releases') == 0) {
-                    $key = sprintf('%s (%s)', $val['date'], $val['state']);
-
-                } elseif (strcasecmp($title, 'methods') == 0
-                    || strcasecmp($title, 'static methods') == 0
-                    || strcasecmp($title, 'class-constants') == 0
-                ) {
-                    foreach ($val as $meth => $v) {
-                        $k = sprintf('%s::%s', $key, $meth);
-                        $args[$k] = $v;
-                    }
-                    continue;
-                }
-                $args[$key] = $val;
-            }
-
-            $rows = array();
-            ksort($args);
-
-            foreach ($args as $arg => $versions) {
-                $row = array(
-                    $arg,
-                    self::ext($versions),
-                    self::php($versions),
-                    self::deprecated($versions),
-                );
-                $rows[] = $row;
-            }
-
-            $headers = array(ucfirst($title), 'EXT min/Max', 'PHP min/Max', 'Deprecated');
-            $footers = array(
-                sprintf('<info>Total [%d]</info>', count($args)),
-                '',
-                '',
-                ''
-            );
-            $rows[] = new TableSeparator();
-            $rows[] = $footers;
-
-            $this->tableHelper($output, $headers, $rows);
-            $output->writeln('');
-        }
+        $io->title('Reference Summary');
+        $io->columns(
+            count($extension->getReleases()),
+            '  Releases                                  %10d'
+        );
+        $io->columns(
+            count($extension->getIniEntries()),
+            '  INI entries                               %10d'
+        );
+        $io->columns(
+            count($extension->getConstants()),
+            '  Constants                                 %10d'
+        );
+        $io->columns(
+            count($extension->getFunctions()),
+            '  Functions                                 %10d'
+        );
+        $io->columns(
+            count($extension->getClasses()),
+            '  Classes                                   %10d'
+        );
+        $io->columns(
+            count($extension->getInterfaces()),
+            '  Interfaces                                %10d'
+        );
+        $io->columns(
+            count($extension->getClassConstants()),
+            '  Class Constants                           %10d'
+        );
+        $io->columns(
+            count($extension->getMethods()),
+            '  Methods                                   %10d'
+        );
 
         return 0;
     }
 
-    private static function ext(array $versions) : string
+    private function formatSection(array $data, string $section, StyleInterface $io): void
     {
-        return empty($versions['ext.max'])
-            ? $versions['ext.min']
-            : $versions['ext.min'] . ' => ' . $versions['ext.max'];
-    }
+        $args = [];
+        foreach ($data as $domain) {
+            if ($domain instanceof Release) {
+                $key = sprintf(
+                    '%s (%s) - %s',
+                    $domain->getDate()->format('Y-m-d'),
+                    $domain->getState(),
+                    $domain->getVersion()
+                );
+            } elseif ($domain instanceof Function_ || $domain instanceof Constant_) {
+                $key = $domain->getName();
+                if (!empty($domain->getDeclaringClass())) {
+                    $key = $domain->getDeclaringClass() . '::' . $key;
+                }
+            } else {
+                $key = $domain->getName();
+            }
 
-    private static function php(array $versions) : string
-    {
-        return empty($versions['php.max'])
-            ? $versions['php.min']
-            : $versions['php.min'] . ' => ' . $versions['php.max'];
-    }
-
-    private static function deprecated(array $versions) : string
-    {
-        if (isset($versions['deprecated'])) {
-            return $versions['deprecated'];
+            $args[$key] = [
+                $this->ext($domain) ? : $domain->getVersion(),
+                $this->php($domain),
+                ''
+            ];
         }
-        return '';
+        ksort($args);
+
+        $results = [];
+        foreach ($args as $key => $values) {
+            $parts = explode(' - ', $key);
+            array_unshift($values, $parts[0]);
+            $results[] = $values;
+        }
+
+        $io->section($section);
+
+        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated'];
+        $footers = [
+            sprintf('<info>Total [%d]</info>', count($results)),
+            '',
+            '',
+            ''
+        ];
+        $rows = $results;
+        $rows[] = new TableSeparator();
+        $rows[] = $footers;
+        $io->table($headers, $rows);
+    }
+
+    private function ext($domain): string
+    {
+        return empty($domain->getExtMax())
+            ? $domain->getExtMin()
+            : $domain->getExtMin() . ' => ' . $domain->getExtMax()
+        ;
+    }
+
+    private function php($domain): string
+    {
+        return empty($domain->getPhpMax())
+            ? $domain->getPhpMin()
+            : $domain->getPhpMin() . ' => ' . $domain->getPhpMax()
+        ;
     }
 }

@@ -1,0 +1,434 @@
+[
+    {
+        "class_name": "FilesystemIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "FilesystemIterator",
+        "name": "getFlags",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "FilesystemIterator",
+        "name": "setFlags",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "GlobIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "attachIterator",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "containsIterator",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "countIterators",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "detachIterator",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "getFlags",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "MultipleIterator",
+        "name": "setFlags",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveTreeIterator",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveTreeIterator",
+        "name": "getEntry",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveTreeIterator",
+        "name": "getPostfix",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveTreeIterator",
+        "name": "getPrefix",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveTreeIterator",
+        "name": "setPostfix",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "RecursiveTreeIterator",
+        "name": "setPrefixPart",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "add",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "bottom",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "getIteratorMode",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "isEmpty",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "pop",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "prev",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "push",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "setIteratorMode",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "shift",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "top",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplDoublyLinkedList",
+        "name": "unshift",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "__wakeup",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "getSize",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "setSize",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "toArray",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "fromArray",
+        "static": true,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "extract",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "insert",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "isEmpty",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "recoverFromCorruption",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "top",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "compare",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "extract",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "insert",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "isEmpty",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "recoverFromCorruption",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "setExtractFlags",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "top",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplQueue",
+        "name": "dequeue",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "SplQueue",
+        "name": "enqueue",
+        "static": false,
+        "ext_min": "5.3.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    }
+]

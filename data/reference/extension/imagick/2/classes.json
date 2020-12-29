@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Imagick",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickDraw",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickDrawException",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickException",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickPixel",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickPixelException",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickPixelIterator",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    },
+    {
+        "name": "ImagickPixelIteratorException",
+        "ext_min": "2.0.0a1",
+        "ext_max": "",
+        "php_min": "5.1.3",
+        "php_max": ""
+    }
+]

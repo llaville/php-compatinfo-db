@@ -1,0 +1,50 @@
+[
+    {
+        "name": "XC_ADD_TRAIT",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XC_BIND_TRAITS",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XC_JMP_SET_VAR",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XC_QM_ASSIGN_VAR",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XC_RETURN_BY_REF",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "XC_SEPARATE",
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.4.0",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

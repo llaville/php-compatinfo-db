@@ -1,0 +1,50 @@
+[
+    {
+        "name": "PGSQL_DIAG_SCHEMA_NAME",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_DIAG_TABLE_NAME",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_DIAG_COLUMN_NAME",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_DIAG_DATATYPE_NAME",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_DIAG_CONSTRAINT_NAME",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "PGSQL_DIAG_SEVERITY_NONLOCALIZED",
+        "ext_min": "7.3.0alpha1",
+        "ext_max": "",
+        "php_min": "7.3.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]

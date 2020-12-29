@@ -1,0 +1,11 @@
+[
+    {
+        "name": "mssql_fetch_assoc",
+        "ext_min": "4.2.0",
+        "ext_max": "",
+        "php_min": "4.2.0",
+        "php_max": "",
+        "parameters": "",
+        "php_excludes": ""
+    }
+]

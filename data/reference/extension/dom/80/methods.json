@@ -1,0 +1,56 @@
+[
+    {
+        "class_name": "DOMChildNode",
+        "name": "after",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "DOMChildNode",
+        "name": "before",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "DOMChildNode",
+        "name": "remove",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "DOMChildNode",
+        "name": "replaceWith",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "DOMParentNode",
+        "name": "append",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    },
+    {
+        "class_name": "DOMParentNode",
+        "name": "prepend",
+        "static": "false",
+        "ext_min": "8.0.0alpha1",
+        "ext_max": "",
+        "php_min": "8.0.0alpha1",
+        "php_max": ""
+    }
+]

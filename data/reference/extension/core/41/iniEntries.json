@@ -1,0 +1,18 @@
+[
+    {
+        "name": "safe_mode_gid",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "5.3.29",
+        "deprecated": "5.3.0"
+    },
+    {
+        "name": "safe_mode_include_dir",
+        "ext_min": "4.1.0",
+        "ext_max": "",
+        "php_min": "4.1.0",
+        "php_max": "5.3.29",
+        "deprecated": "5.3.0"
+    }
+]

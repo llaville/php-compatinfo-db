@@ -4,12 +4,6 @@ All notable changes of the CompatInfoDB 2 release series will be documented in t
 This project adheres to [Semantic Versioning](http://semver.org/),
 using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
-## [Unreleased]
-
-### Changed
-
-- APCu reference updated to version 5.1.19 (stable)
-
 ## [2.19.0] - 2020-10-03
 
 ### Added
@@ -310,7 +304,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Drop support to PHP 5
-- APCu reference updated to version 5.1.6 (stable)
+- APCu reference updated to version 5.1.16 (stable)
 - Lzf reference updated to version 1.6.7 (stable)
 - Memcached reference updated to version 3.1.3 (stable)
 - Msgpack reference updated to version 2.0.3 (stable)

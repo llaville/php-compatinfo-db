@@ -1,0 +1,18 @@
+[
+    {
+        "name": "IMG_FILTER_SCATTER",
+        "ext_min": "7.4.0alpha1",
+        "ext_max": "",
+        "php_min": "7.4.0alpha1",
+        "php_max": "",
+        "php_excludes": ""
+    },
+    {
+        "name": "IMG_TGA",
+        "ext_min": "7.4.0alpha2",
+        "ext_max": "",
+        "php_min": "7.4.0alpha2",
+        "php_max": "",
+        "php_excludes": ""
+    }
+]
