@@ -54,6 +54,7 @@ jobs:
                 export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite
                 vendor/bin/doctrine orm:schema-tool:create
                 bin/compatinfo-db db:init
+                bin/compatinfo-db diagnose
 
             - name: Unit tests
               run: |
