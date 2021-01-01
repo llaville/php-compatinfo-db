@@ -19,8 +19,329 @@
         </whitelist>
     </filter>
     <testsuites>
-        <testsuite name="CompatInfo Reference Test Suite">
-            <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
+        <testsuite name="bcmath">
+            <directory prefix="Bcmath" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="bz2">
+            <directory prefix="Bz2" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="calendar">
+            <directory prefix="Calendar" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="core">
+            <directory prefix="Core" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="ctype">
+            <directory prefix="Ctype" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="curl">
+            <directory prefix="Curl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="date">
+            <directory prefix="Date" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="dom">
+            <directory prefix="Dom" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="enchant">
+            <directory prefix="Enchant" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="exif">
+            <directory prefix="Exif" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="fileinfo">
+            <directory prefix="Fileinfo" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="filter">
+            <directory prefix="Filter" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="ftp">
+            <directory prefix="Ftp" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="gd">
+            <directory prefix="Gd" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="gettext">
+            <directory prefix="Gettext" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="gmp">
+            <directory prefix="Gmp" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="hash">
+            <directory prefix="Hash" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="mhash">
+            <directory prefix="Mhash" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="iconv">
+            <directory prefix="Iconv" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="imap">
+            <directory prefix="Imap" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="intl">
+            <directory prefix="Intl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="json">
+            <directory prefix="Json" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="ldap">
+            <directory prefix="Ldap" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="libxml">
+            <directory prefix="Libxml" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="mbstring">
+            <directory prefix="Mbstring" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="mysql">
+            <directory prefix="Mysql" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="mysqli">
+            <directory prefix="Mysqli" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="oci8">
+            <directory prefix="Oci8" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="odbc">
+            <directory prefix="Odbc" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="opcache">
+            <directory prefix="Opcache" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="openssl">
+            <directory prefix="Openssl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="pcntl">
+            <directory prefix="Pcntl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="ereg">
+            <directory prefix="Ereg" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="pcre">
+            <directory prefix="Pcre" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="pdo">
+            <directory prefix="Pdo" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="pgsql">
+            <directory prefix="Pgsql" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="phar">
+            <directory prefix="Phar" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="posix">
+            <directory prefix="Posix" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="readline">
+            <directory prefix="Readline" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="reflection">
+            <directory prefix="Reflection" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="session">
+            <directory prefix="Session" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="shmop">
+            <directory prefix="Shmop" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="simplexml">
+            <directory prefix="Simplexml" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="snmp">
+            <directory prefix="Snmp" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="soap">
+            <directory prefix="Soap" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="sockets">
+            <directory prefix="Sockets" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="spl">
+            <directory prefix="Spl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="sqlite3">
+            <directory prefix="Sqlite3" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="standard">
+            <directory prefix="Standard" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="sysvmsg">
+            <directory prefix="Sysvmsg" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="sysvsem">
+            <directory prefix="Sysvsem" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="sysvshm">
+            <directory prefix="Sysvshm" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="tidy">
+            <directory prefix="Tidy" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="tokenizer">
+            <directory prefix="Tokenizer" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="xml">
+            <directory prefix="Xml" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="xmlreader">
+            <directory prefix="Xmlreader" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="xmlwriter">
+            <directory prefix="Xmlwriter" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="xsl">
+            <directory prefix="Xsl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="zip">
+            <directory prefix="Zip" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="zlib">
+            <directory prefix="Zlib" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="amqp">
+            <directory prefix="Amqp" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="apcu">
+            <directory prefix="Apcu" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="apc">
+            <directory prefix="Apc" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="ast">
+            <directory prefix="Ast" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="gender">
+            <directory prefix="Gender" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="geoip">
+            <directory prefix="Geoip" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="haru">
+            <directory prefix="Haru" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="htscanner">
+            <directory prefix="Htscanner" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="http">
+            <directory prefix="Http" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="igbinary">
+            <directory prefix="Igbinary" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="imagick">
+            <directory prefix="Imagick" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="inclued">
+            <directory prefix="Inclued" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="jsmin">
+            <directory prefix="Jsmin" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="libevent">
+            <directory prefix="Libevent" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="lzf">
+            <directory prefix="Lzf" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="mailparse">
+            <directory prefix="Mailparse" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="mcrypt">
+            <directory prefix="Mcrypt" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="memcache">
+            <directory prefix="Memcache" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="memcached">
+            <directory prefix="Memcached" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="mongo">
+            <directory prefix="Mongo" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="msgpack">
+            <directory prefix="Msgpack" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="mssql">
+            <directory prefix="Mssql" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="oauth">
+            <directory prefix="Oauth" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="pdflib">
+            <directory prefix="Pdflib" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="pthreads">
+            <directory prefix="Pthreads" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="raphf">
+            <directory prefix="Raphf" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="rar">
+            <directory prefix="Rar" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="recode">
+            <directory prefix="Recode" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="redis">
+            <directory prefix="Redis" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="riak">
+            <directory prefix="Riak" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="solr">
+            <directory prefix="Solr" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="sphinx">
+            <directory prefix="Sphinx" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="sqlite">
+            <directory prefix="Sqlite" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="ssh2">
+            <directory prefix="Ssh2" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="stomp">
+            <directory prefix="Stomp" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="svn">
+            <directory prefix="Svn" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="sync">
+            <directory prefix="Sync" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="uopz">
+            <directory prefix="Uopz" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="uploadprogress">
+            <directory prefix="Uploadprogress" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="varnish">
+            <directory prefix="Varnish" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="wddx">
+            <directory prefix="Wddx" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="xcache">
+            <directory prefix="Xcache" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="xdebug">
+            <directory prefix="Xdebug" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="xhprof">
+            <directory prefix="Xhprof" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="xmldiff">
+            <directory prefix="Xmldiff" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="xmlrpc">
+            <directory prefix="Xmlrpc" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="yac">
+            <directory prefix="Yac" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
+        <testsuite name="yaml">
+            <directory prefix="Yaml" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
     </testsuites>
 </phpunit>

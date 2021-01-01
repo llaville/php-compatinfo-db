@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - clean-up duplicated Odbc unit tests available both in PhpBundle and PhpPecl (keep PhpBundle)
+- reorganizes test suites main list to allow suite filter feature of PHPUnit
 
 ## [3.0.0] - 2020-12-29
 
