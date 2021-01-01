@@ -13,12 +13,6 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os:
-                    - ubuntu-18.04
-                php:
-                    - 7.2
-                    - 7.3
-                    - 7.4
                 include:
                     -
                         os: ubuntu-18.04
