@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- clean-up duplicated Odbc unit tests available both in PhpBundle and PhpPecl (keep PhpBundle)
+
 ## [3.0.0] - 2020-12-29
 
 ### Added
