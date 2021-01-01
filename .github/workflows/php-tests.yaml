@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - master
+    pull_request:
 
 jobs:
     php_tests:
@@ -13,50 +14,65 @@ jobs:
             fail-fast: false
             matrix:
                 os:
-                    - "ubuntu-18.04"
+                    - ubuntu-18.04
                 php:
-                    - "7.2"
-                    - "7.3"
-                    - "7.4"
-                    - "8.0"
+                    - 7.2
+                    - 7.3
+                    - 7.4
+                include:
+                    -   os: ubuntu-18.04
+                        php: 7.2
+                        extensions: [ "amqp","apc","apcu","ast","bcmath","bz2","calendar","core","ctype","curl","date","dom","enchant","exif","fileinfo","filter","ftp","gd","gender","geoip","gettext","gmp","hash","iconv","igbinary","imagick","imap","intl","jsmin","json","ldap","libxml","lzf","mailparse","mbstring","memcache","memcached","msgpack","mysqli","oci8","odbc","openssl","pcntl","pcre","pdo","pgsql","phar","posix","raphf","rar","readline","recode","redis","reflection","session","shmop","simplexml","snmp","soap","sockets","solr","spl","sqlite3","ssh2","standard","stomp","sync","sysvmsg","sysvsem","sysvshm","tidy","tokenizer","uopz","uploadprogress","wddx","xhprof","xml","xmlreader","xmlrpc","xmlwriter","xsl","yaml","zip","zlib" ]
+                    -   os: ubuntu-18.04
+                        php: 7.3
+                        extensions: [ "amqp","ast","bcmath","bz2","calendar","core","ctype","curl","date","dom","enchant","exif","fileinfo","filter","ftp","gd","gender","geoip","gettext","gmp","hash","iconv","igbinary","imagick","imap","intl","jsmin","json","ldap","libxml","lzf","mailparse","mbstring","memcache","memcached","msgpack","mysqli","oci8","odbc","openssl","pcntl","pcre","pdo","pgsql","phar","posix","raphf","rar","readline","recode","redis","reflection","session","shmop","simplexml","snmp","soap","sockets","solr","spl","sqlite3","ssh2","standard","stomp","sync","sysvmsg","sysvsem","sysvshm","tidy","tokenizer","uopz","uploadprogress","wddx","xhprof","xml","xmlreader","xmlrpc","xmlwriter","xsl","yaml","zip","zlib" ]
+                    -   os: ubuntu-18.04
+                        php: 7.4
+                        extensions: [ "amqp","apc","apcu","ast","bcmath","bz2","calendar","core","ctype","curl","date","dom","exif","fileinfo","filter","ftp","gd","gender","geoip","gettext","gmp","hash","iconv","igbinary","imagick","imap","intl","jsmin","json","ldap","libxml","lzf","mailparse","mbstring","memcache","memcached","msgpack","mysqli","odbc","openssl","pcntl","pcre","pdo","pgsql","phar","posix","raphf","rar","readline","redis","reflection","session","shmop","simplexml","snmp","soap","sockets","solr","spl","sqlite3","ssh2","standard","stomp","sync","sysvmsg","sysvsem","sysvshm","tidy","tokenizer","uopz","uploadprogress","xhprof","xml","xmlreader","xmlrpc","xmlwriter","xsl","yaml","zip","zlib" ]
 
         name: "Test PHP ${{ matrix.php }} on ${{ matrix.os }}"
+
         steps:
-            # https://github.com/actions/checkout
-            - name: Checkout
-              uses: actions/checkout@v2
+            -
+                name: Checkout
+                uses: actions/checkout@v2
 
-            # https://github.com/shivammathur/setup-php#heavy_plus_sign-php-extension-support
-            - name: Setup PHP
-              uses: shivammathur/setup-php@v2
-              with:
-                php-version: ${{ matrix.php }}
-                coverage: none
+            -
+                name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: ${{ matrix.extensions }}
 
-            # https://github.com/actions/cache/blob/main/examples.md#php---composer
-            - name: Get Composer Cache Directory
-              id: composer-cache
-              run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-            - name: Cache dependencies
-              uses: actions/cache@v2
-              with:
-                path: ${{ steps.composer-cache.outputs.dir }}
-                key: ${{ matrix.os }}-composer-${{ hashFiles('**/composer.json') }}
-                restore-keys: ${{ matrix.php }}-composer-
+            -   # https://github.com/actions/cache/blob/main/examples.md#php---composer
+                name: Get Composer Cache Directory
+                id: composer-cache
+                run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+            -
+                name: Cache dependencies
+                uses: actions/cache@v2
+                with:
+                    path: ${{ steps.composer-cache.outputs.dir }}
+                    key: ${{ runner.os }}-php-${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}
+                    restore-keys: |
+                        ${{ runner.os }}-php-${{ matrix.php }}-composer-
+                        ${{ runner.os }}-php-
+                        ${{ runner.os }}-
 
-            - name: Install Composer dependencies
-              run: composer update --no-scripts --no-progress --prefer-dist --optimize-autoloader
+            -
+                name: Install Composer dependencies
+                run: composer update --no-scripts --no-progress --prefer-dist --optimize-autoloader
 
-            - name: Setup Application
-              run: |
-                mkdir -p ${HOME}/.cache/bartlett/
-                touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite
-                export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite
-                vendor/bin/doctrine orm:schema-tool:create
-                bin/compatinfo-db db:init -vvv
-                bin/compatinfo-db diagnose
+            -
+                name: Setup Database
+                run: |
+                    mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite
+                    export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite
+                    vendor/bin/doctrine orm:schema-tool:create
+                    bin/compatinfo-db db:init -vvv
+                    bin/compatinfo-db diagnose
+                    bin/compatinfo-db db:list --all
 
-            - name: Unit tests
-              run: |
-                export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite
-                vendor/bin/simple-phpunit --verbose
+            -
+                name: Unit tests
+                run: vendor/bin/simple-phpunit --verbose --testsuite ${{ matrix.extensions }}
