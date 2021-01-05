@@ -2,17 +2,17 @@
     {
         "name": "XDEBUG_CC_DEAD_CODE",
         "ext_min": "2.0.0RC1",
-        "ext_max": "2.9.8",
+        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "7.4.13",
+        "php_max": "",
         "php_excludes": ""
     },
     {
         "name": "XDEBUG_CC_UNUSED",
         "ext_min": "2.0.0beta2",
-        "ext_max": "2.9.8",
+        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "7.4.13",
+        "php_max": "",
         "php_excludes": ""
     },
     {
@@ -58,9 +58,9 @@
     {
         "name": "XDEBUG_CC_BRANCH_CHECK",
         "ext_min": "2.3.0",
-        "ext_max": "2.9.8",
+        "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "7.4.13",
+        "php_max": "",
         "php_excludes": ""
     },
     {

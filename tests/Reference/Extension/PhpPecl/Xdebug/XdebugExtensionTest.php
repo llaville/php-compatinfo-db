@@ -31,7 +31,7 @@ class XdebugExtensionTest extends GenericTest
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array();
+        self::$optionalfunctions = [];
         $extname = 'xdebug';
         if (extension_loaded($extname)) {
             if (version_compare(phpversion($extname), '2.0.0beta1', 'ge')) {
@@ -51,6 +51,12 @@ class XdebugExtensionTest extends GenericTest
                 );
             }
         }
+
+        self::$optionalconstants = [
+            'XDEBUG_CC_DEAD_CODE',
+            'XDEBUG_CC_UNUSED',
+            'XDEBUG_CC_BRANCH_CHECK',
+        ];
 
         parent::setUpBeforeClass();
     }
