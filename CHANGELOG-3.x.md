@@ -11,6 +11,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - clean-up duplicated Odbc unit tests available both in PhpBundle and PhpPecl (keep PhpBundle)
 - reorganizes test suites main list to allow suite filter feature of PHPUnit
 - bump new year in LICENSE file
+- removes `humbug/box` dependency
+- initializes SQLite database when invoking `composer install` or `composer update` commands
 
 ## [3.0.0] - 2020-12-29
 

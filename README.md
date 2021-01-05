@@ -31,7 +31,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 
 | Version | Release    | Module            | PHP 5.2 | PHP 5.3 | PHP 5.4 | PHP 5.5 | PHP 5.6 | PHP 7.0 | PHP 7.1 | PHP 7.2 | PHP 7.3 | PHP 7.4 | PHP 8.0 |
 |---------|------------|-------------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-| 3.0     | 2020-12-29 |                   | 5.2.17  | 5.3.29  | 5.4.45  | 5.5.38  | 5.6.40  |  7.0.33 |  7.1.30 |  7.2.34 |  7.3.25 |  7.4.13 |  8.0.0  |
+| 3.0.0   | 2020-12-29 |                   | 5.2.17  | 5.3.29  | 5.4.45  | 5.5.38  | 5.6.40  |  7.0.33 |  7.1.30 |  7.2.34 |  7.3.25 |  7.4.13 |  8.0.0  |
 |         |            | apcu 5.1.19       |         |         |         |         |         |         |         |         |  7.3.24 |  7.4.12 |         |
 |         |            | igbinary 3.2.1    |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | jsmin 3.0.0       |         |         |         |         |         |         |         |         |         |         |         |
@@ -177,37 +177,37 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 |   RC1   |            |                   |         |         |         |         |         |  7.0.22 |         |         |         |         |         |
 |         |            | apcu 5.1.8        |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | apcu 4.0.11       |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | filter            |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | ftp               |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | gd                |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | filter            |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | ftp               |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | gd                |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | geoip 1.1.1       |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | gmp               |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | gmp               |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | imagick 3.4.3     |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | intl              |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | ldap              |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | intl              |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | ldap              |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | mailparse 3.0.2   |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | mbstring          |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | mbstring          |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | mongo 1.6.16      |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | msgpack 2.0.2     |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | mysqli            |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | mysqli            |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | oauth 2.0.2       |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | opcache           |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | openssl           |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | pgsql             |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | opcache           |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | openssl           |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | pgsql             |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | rar 4.0.0         |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | redis 3.1.3       |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | session           |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | spl               |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | soap              |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
-|         |            | sockets           |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | session           |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | spl               |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | soap              |         |         |         |         |         |         |         |         |         |         |         |
+|         |            | sockets           |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | sphinx 1.3.3      |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | sqlite3           |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | sqlite3           |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | ssh2 1.1.2        |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | sync 1.1.1        |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | tidy              |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | tidy              |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | varnish 1.2.2     |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | xdebug 2.5.4      |         |         |         |         |         |         |         |         |         |         |         |
-|         |            | xsl               |         |         |         |         |         |    Y    |    Y    |         |         |         |         |
+|         |            | xsl               |         |         |         |         |         |         |         |         |         |         |         |
 | 1.23.0  | 2017-07-17 |                   | 5.2.17  | 5.3.29  | 5.4.45  | 5.5.38  | 5.6.31  |  7.0.21 |    x    |    x    |    x    |    x    |    x    |
 |         |            | amqp 1.9.1        |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | lzf 1.6.6         |         |         |         |         |         |         |         |         |         |         |         |
@@ -282,6 +282,30 @@ If you don't know yet what is composer, have a look [on introduction](http://get
 ```bash
 composer require bartlett/php-compatinfo-db
 ```
+
+## Configuring the Database
+
+The database connection information is stored as an environment variable called `DATABASE_URL`.
+
+```
+# to use mysql:
+DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
+
+# to use mariadb:
+DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.5.8"
+
+# to use sqlite:
+# DATABASE_URL="sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
+
+# to use postgresql:
+# DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8"
+```
+
+If you change database connection, you have to run following commands:
+- `vendor/bin/doctrine orm:schema-tool:create`
+- `bin/compatinfo-db db:init`
+
+At dependencies installation, Composer use the sqlite back-end. You need to set up in your environment the `DATABASE_URL` variable.
 
 ## Contributors
 

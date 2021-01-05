@@ -29,7 +29,6 @@
     },
     "require-dev": {
         "composer/composer": "^2.0",
-        "humbug/box": "^3.9",
         "psr/log": "^1.0",
         "symfony/phpunit-bridge": "^5.1"
     },
@@ -58,13 +57,19 @@
     },
     "scripts": {
         "compile-box": "box compile",
+        "setup-database": [
+            "mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite",
+            "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite",
+            "vendor/bin/doctrine orm:schema-tool:create",
+            "bin/compatinfo-db db:init"
+        ],
         "post-install-cmd": [
             "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata",
-            "@compile-box"
+            "@setup-database"
         ],
         "post-update-cmd": [
             "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata",
-            "@compile-box"
+            "@setup-database"
         ]
     },
     "scripts-descriptions": {
