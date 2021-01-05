@@ -24,4 +24,17 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class OauthExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$optionalconstants = [
+            'OAUTH_REQENGINE_CURL' // requires OAUTH_USE_CURL
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
