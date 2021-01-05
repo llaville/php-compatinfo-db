@@ -24,4 +24,24 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class YacExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$optionalconstants = [
+            'YAC_SERIALIZER_MSGPACK',   // requires YAC_ENABLE_MSGPACK
+            'YAC_SERIALIZER_IGBINARY',  // requires YAC_ENABLE_IGBINARY
+            'YAC_SERIALIZER_JSON',      // requires YAC_ENABLE_JSON
+        ];
+
+        self::$optionalmethods = [
+            'Yac::__get',
+            'Yac::__set',
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
