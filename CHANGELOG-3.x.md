@@ -12,6 +12,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - bump new Application version
 
+## Removed
+
+- clean-up old component from v2.x
+
 ## [3.0.1] - 2021-01-06
 
 ### Changed
