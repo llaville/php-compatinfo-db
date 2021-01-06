@@ -13,6 +13,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - bump new year in LICENSE file
 - removes `humbug/box` dependency
 - initializes SQLite database when invoking `composer install` or `composer update` commands
+- Yac reference updated to version 2.3.0 (stable)
 
 ## [3.0.0] - 2020-12-29
 
