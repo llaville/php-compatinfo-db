@@ -56,7 +56,6 @@
         }
     },
     "scripts": {
-        "compile-box": "box compile",
         "setup-database": [
             "mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite",
             "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite",
@@ -73,7 +72,7 @@
         ]
     },
     "scripts-descriptions": {
-        "compile-box": "Compiles application with box-project/box to build PHAR version"
+        "setup-database": "Initializes SQLite database from JSON files in data directory."
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
