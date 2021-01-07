@@ -17,6 +17,7 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 use Bartlett\CompatInfoDb\Application\Query\Init\InitQuery;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -57,7 +58,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
 
         $exitCode = $this->queryBus->query($initQuery);
 
-        if (0 === $exitCode) {
+        if (Command::SUCCESS === $exitCode) {
             $io->success('Database built successfully!');
         } else {
             $io->warning('Database already exists.');

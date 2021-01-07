@@ -17,6 +17,7 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 use Bartlett\CompatInfoDb\Application\Command\Release\ReleaseCommand as AppReleaseCommand;
 
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -68,6 +69,6 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
         $io->success('New release was added in JSON files');
         $io->note('Do not forget to update constants of ExtensionVersionProviderInterface');
 
-        return 0;
+        return Command::SUCCESS;
     }
 }

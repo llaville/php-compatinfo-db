@@ -21,6 +21,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -80,7 +81,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
         if (null === $extension) {
             $io->error(sprintf('Extension "%s" is not available', $showQuery->getExtension()));
-            return 1;
+            return Command::FAILURE;
         }
 
         $summary = true;
@@ -119,7 +120,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         }
 
         if (!$summary) {
-            return 0;
+            return Command::SUCCESS;
         }
 
         $io->title('Reference Summary');
@@ -156,7 +157,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             '  Methods                                   %10d'
         );
 
-        return 0;
+        return Command::SUCCESS;
     }
 
     private function formatSection(array $data, string $section, StyleInterface $io): void

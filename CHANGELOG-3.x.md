@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- replaced `return 0` by `return Command::SUCCESS` and `return 1` by `return Command::FAILURE` in Console commands
+
 ## [3.0.2] - 2021-01-06
 
 ## Fixed
