@@ -10,13 +10,17 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - replaced `return 0` by `return Command::SUCCESS` and `return 1` by `return Command::FAILURE` in Console commands
 
+### Fixed
+
+- application version used when initializing platforms and displaying them
+
 ## [3.0.2] - 2021-01-06
 
-## Fixed
+### Fixed
 
 - bump new Application version
 
-## Removed
+### Removed
 
 - clean-up old component from v2.x
 

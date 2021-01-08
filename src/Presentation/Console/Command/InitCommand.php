@@ -15,6 +15,7 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Query\Init\InitQuery;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\Command\Command;
@@ -50,7 +51,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
         $relVersion = $input->getArgument('rel_version') ?? null;
 
         if (null === $relVersion) {
-            $appVersion = $this->getApplication()->getVersion();
+            $appVersion = ApplicationInterface::VERSION;
         } else {
             $appVersion = trim($relVersion);
         }

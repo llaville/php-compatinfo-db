@@ -17,6 +17,7 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 use Bartlett\CompatInfoDb\Application\Query\ListRef\ListQuery;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\Command\Command;
@@ -51,7 +52,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $listQuery = new ListQuery(
             $input->getOption('all'),
             !$input->getOption('all'),
-            $this->getApplication()->getVersion()
+            ApplicationInterface::VERSION
         );
 
         /** @var Platform $platform */
