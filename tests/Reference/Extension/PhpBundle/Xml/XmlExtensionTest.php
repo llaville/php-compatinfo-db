@@ -24,4 +24,17 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class XmlExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$ignoredclasses = [
+            'XmlParser',    // ReflectionClass('XmlParser') returns a result with PHP 8.0.1
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
