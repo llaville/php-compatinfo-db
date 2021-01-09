@@ -562,9 +562,6 @@ final class ReleaseHandler implements CommandHandlerInterface
         $major   = '2';
         $entry   = 'php_max';
         $names   = [
-            'XDEBUG_CC_BRANCH_CHECK'                => $this->latestPhpVersion['74'],
-            'XDEBUG_CC_DEAD_CODE'                   => $this->latestPhpVersion['74'],
-            'XDEBUG_CC_UNUSED'                      => $this->latestPhpVersion['74'],
             'XDEBUG_NAMESPACE_BLACKLIST'            => $this->latestPhpVersion['74'],
             'XDEBUG_NAMESPACE_WHITELIST'            => $this->latestPhpVersion['74'],
             'XDEBUG_PATH_BLACKLIST'                 => $this->latestPhpVersion['74'],
