@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 7.3.26 support
+
 ### Changed
 
 - replaced `return 0` by `return Command::SUCCESS` and `return 1` by `return Command::FAILURE` in Console commands
