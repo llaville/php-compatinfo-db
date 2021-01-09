@@ -31,6 +31,9 @@ class XmlExtensionTest extends GenericTest
      */
     public static function setUpBeforeClass(): void
     {
+        self::$optionalclasses = [
+            'XMLParser',    // since PHP 8.0.1 (see https://github.com/php/php-src/commit/a55402d07c12bb2eda4a41e4fc4a20d49ef17142)
+        ];
         self::$ignoredclasses = [
             'XmlParser',    // ReflectionClass('XmlParser') returns a result with PHP 8.0.1
         ];
