@@ -552,7 +552,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "unserialize_callback_func",

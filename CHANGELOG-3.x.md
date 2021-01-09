@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - PHP 7.3.26 support
+- PHP 7.4.14 support
 
 ### Changed
 
@@ -16,7 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Fixed
 
-- application version used when initializing platforms and displaying them
+- assure application version used when initializing platforms and displaying them
 
 ## [3.0.2] - 2021-01-06
 

@@ -663,7 +663,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -926,7 +926,7 @@
         "ext_min": "4.0.2",
         "ext_max": "",
         "php_min": "4.0.2",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -989,7 +989,7 @@
         "ext_min": "4.0.0",
         "ext_max": "7.4.11",
         "php_min": "4.0.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "4.0.0, 4.0.0, 5.0.0",
         "php_excludes": ""
     },
@@ -1259,7 +1259,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -1268,7 +1268,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -1493,7 +1493,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -1836,7 +1836,7 @@
         "ext_min": "4.0.0",
         "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },

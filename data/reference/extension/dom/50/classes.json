@@ -32,7 +32,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMDocument",
@@ -53,7 +53,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMElement",
@@ -81,7 +81,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMImplementation",
@@ -95,28 +95,28 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMImplementationSource",
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMLocator",
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMNameList",
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMNameSpaceNode",
@@ -165,14 +165,14 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMStringList",
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMText",
@@ -186,14 +186,14 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMUserDataHandler",
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "name": "DOMXPath",

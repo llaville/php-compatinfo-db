@@ -15,7 +15,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "Reflector",
@@ -24,7 +24,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "Reflector",
@@ -267,7 +267,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionFunction",
@@ -312,7 +312,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionParameter",
@@ -483,7 +483,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionMethod",
@@ -636,7 +636,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionClass",
@@ -1077,7 +1077,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionProperty",
@@ -1212,7 +1212,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionExtension",
@@ -1338,7 +1338,7 @@
         "ext_min": "5.0.0",
         "ext_max": "",
         "php_min": "5.0.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "ReflectionZendExtension",

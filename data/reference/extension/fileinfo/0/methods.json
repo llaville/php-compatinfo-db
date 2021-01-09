@@ -6,7 +6,7 @@
         "ext_min": "0.1.0",
         "ext_max": "",
         "php_min": "5.3.0",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "finfo",

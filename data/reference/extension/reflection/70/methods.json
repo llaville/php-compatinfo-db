@@ -132,6 +132,6 @@
         "ext_min": "7.0.0alpha1",
         "ext_max": "",
         "php_min": "7.0.0alpha1",
-        "php_max": "7.4.13"
+        "php_max": "7.4.14"
     }
 ]

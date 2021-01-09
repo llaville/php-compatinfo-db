@@ -40,7 +40,7 @@
         "ext_min": "1.2.0",
         "ext_max": "3.0.0beta1",
         "php_min": "4.3.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -67,7 +67,7 @@
         "ext_min": "1.2.0",
         "ext_max": "3.0.0beta1",
         "php_min": "4.3.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },
@@ -103,7 +103,7 @@
         "ext_min": "1.2.0",
         "ext_max": "3.0.0beta1",
         "php_min": "4.3.0",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "parameters": "",
         "php_excludes": ""
     },

@@ -156,7 +156,7 @@
         "ext_min": "2.0.0b1",
         "ext_max": "",
         "php_min": "5.2.4",
-        "php_max": "7.4.13",
+        "php_max": "7.4.14",
         "php_excludes": ""
     },
     {
