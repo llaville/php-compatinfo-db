@@ -22,7 +22,6 @@ use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Doctrine\ORM\EntityManagerInterface;
 
-use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -65,6 +64,6 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         $checker->setAppName('PHP CompatInfoDB');
         $checker->printDiagnostic($projectRequirements);
 
-        return Command::SUCCESS;
+        return self::SUCCESS;
     }
 }

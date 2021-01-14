@@ -16,6 +16,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\Extensi
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\PlatformRepository as InfrastructurePlatformRepository;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\CommandInterface;
+use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
 use Composer\Semver\VersionParser;
 
@@ -25,7 +26,6 @@ use Doctrine\ORM\EntityManagerInterface;
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\Messenger\Command\DebugCommand;
-use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 /**
  * Build the Container with default parameters and services

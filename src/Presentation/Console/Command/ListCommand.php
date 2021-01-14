@@ -20,7 +20,6 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
-use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\TableSeparator;
@@ -105,6 +104,6 @@ final class ListCommand extends AbstractCommand implements CommandInterface
             )
         );
 
-        return Command::SUCCESS;
+        return self::SUCCESS;
     }
 }

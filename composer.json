@@ -48,7 +48,8 @@
     "autoload": {
         "psr-4": {
             "Bartlett\\CompatInfoDb\\": "src/"
-        }
+        },
+        "files": ["src/Infrastructure/Framework/Symfony/Polyfill.php"]
     },
     "autoload-dev": {
         "psr-4": {

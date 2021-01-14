@@ -81,7 +81,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
         if (null === $extension) {
             $io->error(sprintf('Extension "%s" is not available', $showQuery->getExtension()));
-            return Command::FAILURE;
+            return self::FAILURE;
         }
 
         $summary = true;
@@ -120,7 +120,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         }
 
         if (!$summary) {
-            return Command::SUCCESS;
+            return self::SUCCESS;
         }
 
         $io->title('Reference Summary');
@@ -157,7 +157,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             '  Methods                                   %10d'
         );
 
-        return Command::SUCCESS;
+        return self::SUCCESS;
     }
 
     private function formatSection(array $data, string $section, StyleInterface $io): void

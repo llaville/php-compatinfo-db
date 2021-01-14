@@ -24,6 +24,9 @@ use Symfony\Component\Console\Command\Command;
  */
 abstract class AbstractCommand extends Command
 {
+    public const SUCCESS = 0;
+    public const FAILURE = 1;
+
     /** @var CommandBusInterface */
     protected $commandBus;
 
