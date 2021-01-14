@@ -506,7 +506,7 @@ final class InitHandler implements QueryHandlerInterface
             'iniEntries' => ['1', '2'],
             'interfaces' => ['2', '3'],
             'methods'    => ['2'],
-            'releases'   => ['0', '1', '2', '3'],
+            'releases'   => ['0', '1', '2', '3', '4'],
         ];
 
         yield 'iconv' => [
