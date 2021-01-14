@@ -46,27 +46,27 @@
     },
     {
         "class_name": "http\\Message\\Parser",
-        "name": "configure",
+        "name": "getState",
         "static": true,
-        "ext_min": "2.3.0RC1",
+        "ext_min": "2.2.0RC1",
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": ""
     },
     {
         "class_name": "http\\Message\\Parser",
-        "name": "getAvailableOptions",
+        "name": "parse",
         "static": true,
-        "ext_min": "2.3.0RC1",
+        "ext_min": "2.2.0RC1",
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": ""
     },
     {
         "class_name": "http\\Message\\Parser",
-        "name": "getAvailableConfiguration",
+        "name": "stream",
         "static": true,
-        "ext_min": "2.3.0RC1",
+        "ext_min": "2.2.0RC1",
         "ext_max": "",
         "php_min": "5.3.0",
         "php_max": ""
