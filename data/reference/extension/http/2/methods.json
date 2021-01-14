@@ -1,5 +1,239 @@
 [
     {
+        "class_name": "http\\Cookie",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "addCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getCookie",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setCookie",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "addCookie",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getExtras",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setExtras",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "addExtras",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getExtra",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setExtra",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "addExtra",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getDomain",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setDomain",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getPath",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setPath",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getExpires",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setExpires",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getMaxAge",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setMaxAge",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "getFlags",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "setFlags",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "toArray",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
+        "class_name": "http\\Cookie",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "ext_max": "",
+        "php_min": "5.3.0",
+        "php_max": ""
+    },
+    {
         "class_name": "http\\Env\\Request",
         "name": "getCookie",
         "static": true,
