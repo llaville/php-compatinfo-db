@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [#61](https://github.com/llaville/php-compatinfo-db/issues/61) Keep Symfony 4.4 Backward Compatibility
 - [#62](https://github.com/llaville/php-compatinfo-db/issues/62) OCI8 reference issue
+- [#63](https://github.com/llaville/php-compatinfo-db/issues/63) http reference issue
 
 ## [3.1.0] - 2021-01-09
 
