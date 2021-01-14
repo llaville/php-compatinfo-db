@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - [#61](https://github.com/llaville/php-compatinfo-db/issues/61) Keep Symfony 4.4 Backward Compatibility
+- [#62](https://github.com/llaville/php-compatinfo-db/issues/62) OCI8 reference issue
 
 ## [3.1.0] - 2021-01-09
 

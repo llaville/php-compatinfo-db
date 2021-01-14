@@ -42,7 +42,7 @@
         "ext_min": "1.0",
         "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "7.4.11"
+        "php_max": "7.4.14"
     },
     {
         "class_name": "OCI-Collection",
