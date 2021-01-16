@@ -1240,8 +1240,15 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'xmlrpc' => [
-            'functions' => ['41'],
-            'releases'  => ['41', '43'],
+            'classes'   => ['1'],
+            'functions' => [
+                '41',   // when bundled with PHP < 8
+                '1',    // as pecl extension for PHP 8
+            ],
+            'releases'  => [
+                '41', '43', // when bundled with PHP < 8
+                '1'         // as pecl extension for PHP 8
+            ],
         ];
 
         yield 'xmlwriter' => [

@@ -5,6 +5,6 @@
         "rel_state": "stable",
         "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": ""
+        "php_max": "7.4.14"
     }
 ]
