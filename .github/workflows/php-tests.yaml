@@ -36,7 +36,7 @@ jobs:
                     -
                         os: ubuntu-18.04
                         php: 8.0
-                        extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mailparse,mbstring,memcache,memcached,msgpack,mysql,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,pecl_http,rar,readline,redis,reflection,session,shmop,simplexml,sockets,spl,sqlite,sqlite3,standard,sysvmsg,sysvsem,sysvshm,tokenizer,xdebug,xhprof,xml,xmlreader,xmlwriter,xsl,yac,zip,zlib
+                        extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mailparse,mbstring,memcache,memcached,msgpack,mysql,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,pecl_http,rar,readline,redis,reflection,session,shmop,simplexml,sockets,spl,sqlite,sqlite3,standard,sysvmsg,sysvsem,sysvshm,tokenizer,xdebug,xhprof,xml,xmlrpc-beta,xmlreader,xmlwriter,xsl,yac,zip,zlib
 
         name: "Test PHP ${{ matrix.php }} on ${{ matrix.os }}"
 
