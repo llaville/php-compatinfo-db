@@ -6,7 +6,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Xmldiff reference updated to version 1.1.3 (stable)
+
 ### Fixed
+
+Thanks to @remicollet to reported all this four issues:
 
 - [#61](https://github.com/llaville/php-compatinfo-db/issues/61) Keep Symfony 4.4 Backward Compatibility
 - [#62](https://github.com/llaville/php-compatinfo-db/issues/62) OCI8 reference issue

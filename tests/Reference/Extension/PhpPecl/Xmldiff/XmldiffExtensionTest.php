@@ -24,4 +24,22 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class XmldiffExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$optionalclasses = [
+            'XMLDiff\\Base',    // abstract class
+        ];
+        self::$optionalmethods = [
+            'XMLDiff\\Base::__construct',
+            'XMLDiff\\Base::diff',
+            'XMLDiff\\Base::merge',
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }

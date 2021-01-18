@@ -389,7 +389,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      * Provider to get class constants from extension
      *
      * @return Generator
-     * @throws ReflectionException
      */
     private function classConstantsFromExtensionProvider(): Generator
     {
@@ -398,7 +397,12 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         $elements  = [];
 
         foreach ($classes as $classname) {
-            $class = new ReflectionClass($classname);
+            try {
+                $class = new ReflectionClass($classname);
+            } catch (ReflectionException $e) {
+                // abstract class
+                continue;
+            }
             if ($class->getName() != $classname) {
                 /* Skip class alias */
                 continue;
@@ -421,7 +425,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      * Provider to get class methods from extension
      *
      * @return Generator
-     * @throws ReflectionException
      */
     private function classMethodsFromExtensionProvider(): Generator
     {
@@ -430,7 +433,12 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         $elements  = [];
 
         foreach ($classes as $classname) {
-            $class = new ReflectionClass($classname);
+            try {
+                $class = new ReflectionClass($classname);
+            } catch (ReflectionException $e) {
+                // abstract class
+                continue;
+            }
             if ($class->getName() != $classname) {
                 /* Skip class alias */
                 continue;
@@ -817,7 +825,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      *
      * @group  reference
      * @return void
-     * @throws ReflectionException
      */
     public function testGetMethodsFromExtension(): void
     {
@@ -850,7 +857,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      *
      * @group  reference
      * @return void
-     * @throws ReflectionException
      */
     public function testGetClassConstantsFromExtension(): void
     {
