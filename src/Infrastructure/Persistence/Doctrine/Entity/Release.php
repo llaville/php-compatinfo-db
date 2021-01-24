@@ -11,7 +11,7 @@ use DateTimeImmutable;
  * @Table(name="releases")
  * @since Release 3.0.0
  */
-final class Release
+class Release
 {
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;

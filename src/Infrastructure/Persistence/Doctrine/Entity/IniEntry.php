@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
  * @Table(name="ini_entries")
  * @since Release 3.0.0
  */
-final class IniEntry
+class IniEntry
 {
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;

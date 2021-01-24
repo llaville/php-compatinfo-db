@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
  * @Table(name="functions")
  * @since Release 3.0.0
  */
-final class Function_
+class Function_
 {
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;

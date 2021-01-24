@@ -13,7 +13,7 @@ use DateTimeImmutable;
  * @Table(name="platforms")
  * @since Release 3.0.0
  */
-final class Platform
+class Platform
 {
     /**
      * @Id

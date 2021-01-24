@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\{Entity, ManyToOne, Table, Column};
  * @Table(name="dependencies")
  * @since Release 3.0.0
  */
-final class Dependency
+class Dependency
 {
     use PrimaryIdentifierTrait;
 

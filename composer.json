@@ -61,6 +61,7 @@
             "mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite",
             "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite",
             "vendor/bin/doctrine orm:schema-tool:create",
+            "vendor/bin/doctrine orm:generate-proxies",
             "bin/compatinfo-db db:init"
         ],
         "post-install-cmd": [

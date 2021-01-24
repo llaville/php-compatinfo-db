@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping\{Entity, Table, ManyToOne, UniqueConstraint};
  * )
  * @since Release 3.0.0
  */
-final class ClassRelationship
+class ClassRelationship
 {
     use PrimaryIdentifierTrait;
 

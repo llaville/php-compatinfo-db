@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
  * @Table(name="constants")
  * @since Release 3.0.0
  */
-final class Constant_
+class Constant_
 {
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;

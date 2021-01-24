@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
  * @Table(name="classes")
  * @since Release 3.0.0
  */
-final class Class_
+class Class_
 {
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;

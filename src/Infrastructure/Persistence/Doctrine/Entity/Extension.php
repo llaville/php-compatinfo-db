@@ -16,7 +16,7 @@ use function strtolower;
  * )
  * @since Release 3.0.0
  */
-final class Extension
+class Extension
 {
     use PrimaryIdentifierTrait;
 
