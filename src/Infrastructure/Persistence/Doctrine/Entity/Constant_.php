@@ -30,7 +30,7 @@ class Constant_
     private $declaringClass;
 
     /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="constants")
+     * @ManyToOne(targetEntity=Extension::class, inversedBy="constants", fetch="EAGER")
      * @var Extension
      */
     private $extension;

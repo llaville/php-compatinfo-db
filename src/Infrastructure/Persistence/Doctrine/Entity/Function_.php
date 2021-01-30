@@ -42,7 +42,7 @@ class Function_
     private $declaringClass;
 
     /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="functions")
+     * @ManyToOne(targetEntity=Extension::class, inversedBy="functions", fetch="EAGER")
      * @var Extension
      */
     private $extension;

@@ -24,6 +24,7 @@ final class ClassHydrator implements HydratorInterface
         return [
             'name' => $object->getName(),
             'is_interface' => $object->isInterface(),
+            'extension' => $object->getExtension()->getName(),
             'ext_min' => $object->getExtMin(),
             'ext_max' => $object->getExtMax(),
             'php_min' => $object->getPhpMin(),
@@ -67,6 +68,7 @@ final class ClassHydrator implements HydratorInterface
         return new Domain(
             $entity->getName(),
             $entity->isInterface(),
+            $entity->getExtension()->getName(),
             $entity->getExtMin(),
             $entity->getExtMax(),
             $entity->getPhpMin(),

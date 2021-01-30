@@ -28,6 +28,7 @@ final class FunctionHydrator implements HydratorInterface
         return [
             'name' => $object->getName(),
             'declaring_class' => $object->getDeclaringClass(),
+            'extension' => $object->getExtension()->getName(),
             'ext_min' => $object->getExtMin(),
             'ext_max' => $object->getExtMax(),
             'php_min' => $object->getPhpMin(),
@@ -80,6 +81,7 @@ final class FunctionHydrator implements HydratorInterface
         return new Domain(
             $entity->getName(),
             $entity->getDeclaringClass(),
+            $entity->getExtension()->getName(),
             $entity->getExtMin(),
             $entity->getExtMax(),
             $entity->getPhpMin(),

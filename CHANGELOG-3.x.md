@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- new repositories for easy access of single elements (class, interface, method, function, constant)
+
 ### Fixed
 
 Because Doctrine ORM v2 has following issue

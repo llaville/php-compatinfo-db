@@ -12,12 +12,14 @@ final class Function_
 
     private $name;
     private $declaringClass;
+    private $extension;
     /** @var array */
     private $dependencies;
 
     public function __construct(
         string $name,
         ?string $declaringClass,
+        string $extension,
         string $extMin,
         string $extMax,
         string $phpMin,
@@ -26,6 +28,7 @@ final class Function_
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
+        $this->extension = $extension;
         $this->extMin = $extMin;
         $this->extMax = $extMax;
         $this->phpMin = $phpMin;
@@ -47,6 +50,14 @@ final class Function_
     public function getDeclaringClass(): ?string
     {
         return $this->declaringClass;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExtensionName(): string
+    {
+        return $this->extension;
     }
 
     /**

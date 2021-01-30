@@ -12,12 +12,14 @@ final class Class_
 
     private $name;
     private $isInterface;
+    private $extension;
     /** @var array */
     private $dependencies;
 
     public function __construct(
         string $name,
         bool $isInterface,
+        string $extension,
         string $extMin,
         string $extMax,
         string $phpMin,
@@ -26,6 +28,7 @@ final class Class_
     ) {
         $this->name = $name;
         $this->isInterface = $isInterface;
+        $this->extension = $extension;
         $this->extMin = $extMin;
         $this->extMax = $extMax;
         $this->phpMin = $phpMin;
@@ -47,6 +50,14 @@ final class Class_
     public function isInterface(): bool
     {
         return $this->isInterface;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExtensionName(): string
+    {
+        return $this->extension;
     }
 
     /**
