@@ -45,37 +45,37 @@ class Extension
     private $type;
 
     /**
-     * @OneToMany(targetEntity=Release::class, cascade={"persist", "remove"}, mappedBy="extension", fetch="EAGER")
+     * @OneToMany(targetEntity=Release::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection
      */
     private $releases;
 
     /**
-     * @OneToMany(targetEntity=Dependency::class, cascade={"persist", "remove"}, mappedBy="extension", fetch="EAGER")
+     * @OneToMany(targetEntity=Dependency::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection
      */
     private $dependencies;
 
     /**
-     * @OneToMany(targetEntity=IniEntry::class, cascade={"persist", "remove"}, mappedBy="extension", fetch="EAGER")
+     * @OneToMany(targetEntity=IniEntry::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection
      */
     private $iniEntries;
 
     /**
-     * @OneToMany(targetEntity=Constant_::class, cascade={"persist", "remove"}, mappedBy="extension", fetch="EAGER")
+     * @OneToMany(targetEntity=Constant_::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection
      */
     private $constants;
 
     /**
-     * @OneToMany(targetEntity=Function_::class, cascade={"persist", "remove"}, mappedBy="extension", fetch="EAGER")
+     * @OneToMany(targetEntity=Function_::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection
      */
     private $functions;
 
     /**
-     * @OneToMany(targetEntity=Class_::class, cascade={"persist", "remove"}, mappedBy="extension", fetch="EAGER")
+     * @OneToMany(targetEntity=Class_::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection
      */
     private $classes;

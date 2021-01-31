@@ -22,7 +22,7 @@ class FunctionRelationship
     private $function;
 
     /**
-     * @ManyToOne(targetEntity=Dependency::class, cascade={"persist"}, fetch="EAGER")
+     * @ManyToOne(targetEntity=Dependency::class, cascade={"persist"})
      * @var Dependency
      */
     private $dependency;

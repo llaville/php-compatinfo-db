@@ -30,7 +30,7 @@ class Class_
     private $isInterface;
 
     /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="classes", fetch="EAGER")
+     * @ManyToOne(targetEntity=Extension::class, inversedBy="classes")
      * @var Extension
      */
     private $extension;

@@ -22,7 +22,7 @@ class Relationship
     private $platform;
 
     /**
-     * @ManyToOne(targetEntity=Extension::class, cascade={"persist"}, fetch="EAGER")
+     * @ManyToOne(targetEntity=Extension::class, cascade={"persist"})
      * @var Extension
      */
     private $extension;
