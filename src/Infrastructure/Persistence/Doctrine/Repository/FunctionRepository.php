@@ -45,11 +45,7 @@ final class FunctionRepository implements DomainRepository
      */
     public function getFunctionByName(string $name, ?string $declaringClass): ?Function_
     {
-        $criteria = ['name' => $name];
-        if ($declaringClass !== null) {
-            $criteria['declaringClass'] = $declaringClass;
-        }
-        $entity = $this->repository->findOneBy($criteria);
+        $entity = $this->repository->findOneBy(['name' => $name, 'declaringClass' => $declaringClass]);
 
         if (null === $entity) {
             // function does not exists
