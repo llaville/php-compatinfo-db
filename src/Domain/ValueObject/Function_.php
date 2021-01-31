@@ -13,6 +13,10 @@ final class Function_
     private $name;
     private $declaringClass;
     private $extension;
+    /** @var array|null */
+    private $parameters;
+    /** @var array|null */
+    private $excludes;
     /** @var array */
     private $dependencies;
 
@@ -24,6 +28,8 @@ final class Function_
         string $extMax,
         string $phpMin,
         string $phpMax,
+        ?array $parameters,
+        ?array $excludes,
         iterable $dependencies
     ) {
         $this->name = $name;
@@ -33,6 +39,8 @@ final class Function_
         $this->extMax = $extMax;
         $this->phpMin = $phpMin;
         $this->phpMax = $phpMax;
+        $this->parameters = $parameters;
+        $this->excludes = $excludes;
         $this->dependencies = $dependencies;
     }
 
@@ -58,6 +66,22 @@ final class Function_
     public function getExtensionName(): string
     {
         return $this->extension;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getParameters(): ?array
+    {
+        return $this->parameters;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getExcludes(): ?array
+    {
+        return $this->excludes;
     }
 
     /**

@@ -86,6 +86,8 @@ final class FunctionHydrator implements HydratorInterface
             $entity->getExtMax(),
             $entity->getPhpMin(),
             $entity->getPhpMax(),
+            $entity->getParameters(),
+            $entity->getExcludes(),
             $dependencies
         );
     }
