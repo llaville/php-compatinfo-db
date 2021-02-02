@@ -3,9 +3,7 @@
         "class_name": "Imagick",
         "name": "COLORSPACE_LAB",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -17,25 +15,19 @@
         "class_name": "Imagick",
         "name": "IMAGICK_EXTNUM",
         "ext_min": "2.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": ""
+        "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "IMAGICK_EXTVER",
         "ext_min": "2.0.1",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": ""
+        "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "COMPOSITE_MINUS",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -47,9 +39,7 @@
         "class_name": "Imagick",
         "name": "COMPOSITE_SUBTRACT",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -61,9 +51,7 @@
         "class_name": "Imagick",
         "name": "NOISE_RANDOM",
         "ext_min": "2.1.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -75,9 +63,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_UNDEFINED",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -89,9 +75,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_COALESCE",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -103,9 +87,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_COMPAREANY",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -117,9 +99,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_COMPARECLEAR",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -131,9 +111,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_COMPAREOVERLAY",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -145,9 +123,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_DISPOSE",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -159,9 +135,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_OPTIMIZE",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -173,9 +147,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_OPTIMIZEPLUS",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -187,9 +159,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_OPTIMIZETRANS",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -201,9 +171,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_COMPOSITE",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -215,9 +183,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_OPTIMIZEIMAGE",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -229,9 +195,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_REMOVEDUPS",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -243,9 +207,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_REMOVEZERO",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",
@@ -257,9 +219,7 @@
         "class_name": "Imagick",
         "name": "LAYERMETHOD_TRIMBOUNDS",
         "ext_min": "2.0.0RC2",
-        "ext_max": "",
         "php_min": "5.1.3",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "imagick",

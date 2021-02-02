@@ -2,325 +2,188 @@
     {
         "name": "array_diff_assoc",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "array_intersect_assoc",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "file_get_contents",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "4.3.0, 4.3.0, 4.3.0, 5.1.0, 5.1.0",
-        "php_excludes": ""
+        "parameters": "4.3.0, 4.3.0, 4.3.0, 5.1.0, 5.1.0"
     },
     {
         "name": "fnmatch",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "get_include_path",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "getopt",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "4.3.0, 5.3.0",
-        "php_excludes": ""
+        "parameters": "4.3.0, 5.3.0"
     },
     {
         "name": "glob",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "html_entity_decode",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "memory_get_usage",
         "ext_min": "4.3.2",
-        "ext_max": "",
         "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "5.2.0",
-        "php_excludes": ""
+        "parameters": "5.2.0"
     },
     {
         "name": "money_format",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "7.4.12",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "7.4.12"
     },
     {
         "name": "ob_get_clean",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "ob_get_flush",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "ob_list_handlers",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "output_reset_rewrite_vars",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "php_ini_scanned_files",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "proc_close",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "proc_open",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "restore_include_path",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "7.4.12",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "7.4.12"
     },
     {
         "name": "set_include_path",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "sha1",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "4.3.0, 5.0.0",
-        "php_excludes": ""
+        "parameters": "4.3.0, 5.0.0"
     },
     {
         "name": "sha1_file",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "4.3.0, 5.0.0",
-        "php_excludes": ""
+        "parameters": "4.3.0, 5.0.0"
     },
     {
         "name": "str_shuffle",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "str_word_count",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_context_create",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_context_get_options",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_context_set_option",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_context_set_params",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_filter_append",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_filter_prepend",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_get_meta_data",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_register_wrapper",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_select",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_set_blocking",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_set_timeout",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_set_write_buffer",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "stream_wrapper_register",
         "ext_min": "4.3.2",
-        "ext_max": "",
-        "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.2"
     }
 ]

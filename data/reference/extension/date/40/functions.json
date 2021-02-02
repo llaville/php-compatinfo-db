@@ -2,100 +2,56 @@
     {
         "name": "checkdate",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "date",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "getdate",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "gmdate",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "gmmktime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "gmstrftime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "localtime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "mktime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "strftime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "strtotime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "time",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

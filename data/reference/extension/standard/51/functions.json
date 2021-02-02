@@ -2,181 +2,102 @@
     {
         "name": "array_diff_key",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "array_diff_ukey",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "array_intersect_key",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "array_intersect_ukey",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "array_product",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "fputcsv",
         "ext_min": "5.1.0",
-        "ext_max": "",
         "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "5.1.0, 5.1.0, 5.1.0, 5.1.0, 5.5.4",
-        "php_excludes": ""
+        "parameters": "5.1.0, 5.1.0, 5.1.0, 5.1.0, 5.5.4"
     },
     {
         "name": "htmlspecialchars_decode",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "inet_ntop",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "inet_pton",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "lchgrp",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "lchown",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "stream_context_get_default",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "stream_filter_remove",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "stream_socket_enable_crypto",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "stream_socket_pair",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "stream_wrapper_restore",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "stream_wrapper_unregister",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "strptime",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "sys_getloadavg",
         "ext_min": "5.1.3",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.3"
     },
     {
         "name": "time_sleep_until",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     }
 ]

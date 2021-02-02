@@ -2,36 +2,26 @@
     {
         "name": "SyncEvent",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SyncMutex",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SyncReaderWriter",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SyncSemaphore",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SyncSharedMemory",
         "ext_min": "1.1.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

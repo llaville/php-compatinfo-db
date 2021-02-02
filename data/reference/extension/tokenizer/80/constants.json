@@ -2,49 +2,31 @@
     {
         "name": "T_NAME_FULLY_QUALIFIED",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0beta1"
     },
     {
         "name": "T_NAME_RELATIVE",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0beta1"
     },
     {
         "name": "T_NAME_QUALIFIED",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0beta1"
     },
     {
         "name": "T_MATCH",
         "ext_min": "8.0.0alpha3",
-        "ext_max": "",
-        "php_min": "8.0.0alpha3",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha3"
     },
     {
         "name": "T_ATTRIBUTE",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0beta1"
     },
     {
         "name": "T_NULLSAFE_OBJECT_OPERATOR",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0beta1"
     }
 ]

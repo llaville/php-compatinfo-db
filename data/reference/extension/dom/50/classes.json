@@ -2,204 +2,157 @@
     {
         "name": "DOMAttr",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMCdataSection",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMCharacterData",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMComment",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMConfiguration",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMDocument",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMDocumentType",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMDomError",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMElement",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMEntity",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMEntityReference",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMErrorHandler",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMImplementation",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMImplementationList",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMImplementationSource",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMLocator",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMNameList",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMNameSpaceNode",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMNamedNodeMap",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMNode",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMNodeList",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMNotation",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMProcessingInstruction",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMStringExtend",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMStringList",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMText",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "DOMTypeinfo",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMUserDataHandler",
         "ext_min": "5.0.0",
-        "ext_max": "",
         "php_min": "5.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "DOMXPath",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     }
 ]

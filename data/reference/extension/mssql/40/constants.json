@@ -2,105 +2,66 @@
     {
         "name": "MSSQL_ASSOC",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "MSSQL_BOTH",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "MSSQL_NUM",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLBIT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLCHAR",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLFLT4",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLFLT8",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLFLTN",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLINT1",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLINT2",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLINT4",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLTEXT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SQLVARCHAR",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

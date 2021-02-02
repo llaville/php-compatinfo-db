@@ -2,55 +2,31 @@
     {
         "name": "openssl_csr_get_public_key",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "openssl_csr_get_subject",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "openssl_pkcs12_export",
         "ext_min": "5.2.2",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.2"
     },
     {
         "name": "openssl_pkcs12_export_to_file",
         "ext_min": "5.2.2",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.2"
     },
     {
         "name": "openssl_pkcs12_read",
         "ext_min": "5.2.2",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.2"
     },
     {
         "name": "openssl_pkey_get_details",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

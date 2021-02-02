@@ -2,15 +2,11 @@
     {
         "name": "mbstring.encoding_translation",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "mbstring.language",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     }
 ]

@@ -2,41 +2,26 @@
     {
         "name": "FILE_BINARY",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "FILE_TEXT",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "GLOB_AVAILABLE_FLAGS",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "PATHINFO_FILENAME",
         "ext_min": "5.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.2.0RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0RC1"
     },
     {
         "name": "STREAM_IS_URL",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     }
 ]

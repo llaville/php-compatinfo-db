@@ -2,37 +2,21 @@
     {
         "name": "random_bytes",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "random_int",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "intdiv",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "error_clear_last",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     }
 ]

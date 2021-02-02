@@ -4,7 +4,6 @@
         "name": "finfo",
         "static": "false",
         "ext_min": "0.1.0",
-        "ext_max": "",
         "php_min": "5.3.0",
         "php_max": "7.4.14"
     },
@@ -13,26 +12,20 @@
         "name": "buffer",
         "static": "false",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "finfo",
         "name": "file",
         "static": "false",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "finfo",
         "name": "set_flags",
         "static": "false",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

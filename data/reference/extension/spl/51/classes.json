@@ -2,170 +2,122 @@
     {
         "name": "AppendIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "BadFunctionCallException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "BadMethodCallException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "DomainException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "EmptyIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "FilterIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "InfiniteIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "InvalidArgumentException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "IteratorIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "LengthException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "LimitIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "LogicException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "NoRewindIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "OutOfBoundsException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "OutOfRangeException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "OverflowException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "ParentIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "RangeException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "RecursiveArrayIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "RecursiveCachingIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "RecursiveDirectoryIterator",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": ""
+        "php_min": "5.1.2"
     },
     {
         "name": "RecursiveFilterIterator",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "RecursiveIteratorIterator",
         "ext_min": "5.1.3",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": ""
+        "php_min": "5.1.3"
     },
     {
         "name": "RuntimeException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "SimpleXMLIterator",
@@ -178,43 +130,31 @@
     {
         "name": "SplFileInfo",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": ""
+        "php_min": "5.1.2"
     },
     {
         "name": "SplFileObject",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "SplObjectStorage",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "SplTempFileObject",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": ""
+        "php_min": "5.1.2"
     },
     {
         "name": "UnderflowException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "UnexpectedValueException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

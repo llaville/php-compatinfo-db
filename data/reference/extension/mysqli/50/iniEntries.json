@@ -2,71 +2,51 @@
     {
         "name": "mysqli.allow_local_infile",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.allow_persistent",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.default_host",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.default_port",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.default_pw",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.default_socket",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.default_user",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.max_links",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.max_persistent",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "mysqli.reconnect",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     }
 ]

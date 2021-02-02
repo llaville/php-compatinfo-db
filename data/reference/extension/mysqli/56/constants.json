@@ -2,48 +2,31 @@
     {
         "name": "MYSQLI_CLIENT_CAN_HANDLE_EXPIRED_PASSWORDS",
         "ext_min": "5.6.0RC3",
-        "ext_max": "",
-        "php_min": "5.6.0RC3",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0RC3"
     },
     {
         "name": "MYSQLI_STORE_RESULT_COPY_DATA",
         "ext_min": "5.6.0beta2",
-        "ext_max": "",
-        "php_min": "5.6.0beta2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0beta2"
     },
     {
         "name": "MYSQLI_TYPE_JSON",
         "ext_min": "5.6.15RC1",
-        "ext_max": "",
-        "php_min": "5.6.15RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.15RC1"
     },
     {
         "name": "MYSQLI_OPT_SSL_VERIFY_SERVER_CERT",
         "ext_min": "5.6.16RC1",
-        "ext_max": "",
-        "php_min": "5.6.16RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.16RC1"
     },
     {
         "name": "MYSQLI_CLIENT_SSL_VERIFY_SERVER_CERT",
         "ext_min": "5.6.16RC1",
-        "ext_max": "",
-        "php_min": "5.6.16RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.16RC1"
     },
     {
         "name": "MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT",
         "ext_min": "5.6.16RC1",
-        "ext_max": "",
-        "php_min": "5.6.16RC1",
-        "php_max": "",
-        "php_excludes": ""
-    }]
+        "php_min": "5.6.16RC1"
+    }
+]

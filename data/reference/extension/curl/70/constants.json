@@ -2,10 +2,7 @@
     {
         "name": "CURL_REDIR_POST_301",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -16,10 +13,7 @@
     {
         "name": "CURL_REDIR_POST_302",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -30,10 +24,7 @@
     {
         "name": "CURL_REDIR_POST_ALL",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -44,10 +35,7 @@
     {
         "name": "CURLPROXY_HTTP_1_0",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -58,10 +46,7 @@
     {
         "name": "CURLFTP_CREATE_DIR",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -72,10 +57,7 @@
     {
         "name": "CURLFTP_CREATE_DIR_NONE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -86,10 +68,7 @@
     {
         "name": "CURLFTP_CREATE_DIR_RETRY",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -100,10 +79,7 @@
     {
         "name": "CURLAUTH_NTLM_WB",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -114,10 +90,7 @@
     {
         "name": "CURL_REDIR_POST_303",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -128,10 +101,7 @@
     {
         "name": "CURLSSH_AUTH_AGENT",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -142,10 +112,7 @@
     {
         "name": "CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -156,10 +123,7 @@
     {
         "name": "CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -170,10 +134,7 @@
     {
         "name": "CURLMOPT_MAX_HOST_CONNECTIONS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -184,10 +145,7 @@
     {
         "name": "CURLMOPT_MAX_PIPELINE_LENGTH",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -198,10 +156,7 @@
     {
         "name": "CURLMOPT_MAX_TOTAL_CONNECTIONS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -212,10 +167,7 @@
     {
         "name": "CURLOPT_SASL_IR",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -226,10 +178,7 @@
     {
         "name": "CURLOPT_DNS_INTERFACE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -240,10 +189,7 @@
     {
         "name": "CURLOPT_DNS_LOCAL_IP4",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -254,10 +200,7 @@
     {
         "name": "CURLOPT_DNS_LOCAL_IP6",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -268,10 +211,7 @@
     {
         "name": "CURLOPT_XOAUTH2_BEARER",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -282,10 +222,7 @@
     {
         "name": "CURLOPT_LOGIN_OPTIONS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -296,10 +233,7 @@
     {
         "name": "CURLOPT_EXPECT_100_TIMEOUT_MS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -310,10 +244,7 @@
     {
         "name": "CURLOPT_SSL_ENABLE_ALPN",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -324,10 +255,7 @@
     {
         "name": "CURLOPT_SSL_ENABLE_NPN",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -338,10 +266,7 @@
     {
         "name": "CURLHEADER_SEPARATE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -352,10 +277,7 @@
     {
         "name": "CURLHEADER_UNIFIED",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -366,10 +288,7 @@
     {
         "name": "CURLOPT_HEADEROPT",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -380,10 +299,7 @@
     {
         "name": "CURLOPT_PROXYHEADER",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -394,10 +310,7 @@
     {
         "name": "CURLAUTH_NEGOTIATE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -408,10 +321,7 @@
     {
         "name": "CURLOPT_PINNEDPUBLICKEY",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -422,10 +332,7 @@
     {
         "name": "CURLOPT_UNIX_SOCKET_PATH",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -436,10 +343,7 @@
     {
         "name": "CURLPROTO_SMB",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -450,10 +354,7 @@
     {
         "name": "CURLPROTO_SMBS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -464,10 +365,7 @@
     {
         "name": "CURLOPT_SSL_VERIFYSTATUS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -478,10 +376,7 @@
     {
         "name": "CURLOPT_PATH_AS_IS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -492,10 +387,7 @@
     {
         "name": "CURLOPT_SSL_FALSESTART",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -506,10 +398,7 @@
     {
         "name": "CURL_HTTP_VERSION_2",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -520,10 +409,7 @@
     {
         "name": "CURLOPT_PIPEWAIT",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -534,10 +420,7 @@
     {
         "name": "CURLOPT_PROXY_SERVICE_NAME",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -548,10 +431,7 @@
     {
         "name": "CURLOPT_SERVICE_NAME",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -562,10 +442,7 @@
     {
         "name": "CURLSSLOPT_NO_REVOKE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -576,10 +453,7 @@
     {
         "name": "CURLOPT_DEFAULT_PROTOCOL",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -590,10 +464,7 @@
     {
         "name": "CURLOPT_STREAM_WEIGHT",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -604,10 +475,7 @@
     {
         "name": "CURL_HTTP_VERSION_2TLS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -618,10 +486,7 @@
     {
         "name": "CURLOPT_TFTP_NO_OPTIONS",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -632,10 +497,7 @@
     {
         "name": "CURL_HTTP_VERSION_2_PRIOR_KNOWLEDGE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -646,10 +508,7 @@
     {
         "name": "CURLOPT_CONNECT_TO",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -660,10 +519,7 @@
     {
         "name": "CURLOPT_TCP_FASTOPEN",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -674,10 +530,7 @@
     {
         "name": "CURLPIPE_NOTHING",
         "ext_min": "7.0.0RC3",
-        "ext_max": "",
         "php_min": "7.0.0RC3",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -688,10 +541,7 @@
     {
         "name": "CURLPIPE_HTTP1",
         "ext_min": "7.0.0RC3",
-        "ext_max": "",
         "php_min": "7.0.0RC3",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -702,10 +552,7 @@
     {
         "name": "CURLPIPE_MULTIPLEX",
         "ext_min": "7.0.0RC3",
-        "ext_max": "",
         "php_min": "7.0.0RC3",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -716,10 +563,7 @@
     {
         "name": "CURLMOPT_PUSHFUNCTION",
         "ext_min": "7.1.0alpha3",
-        "ext_max": "",
         "php_min": "7.1.0alpha3",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -730,10 +574,7 @@
     {
         "name": "CURL_PUSH_OK",
         "ext_min": "7.1.0alpha3",
-        "ext_max": "",
         "php_min": "7.1.0alpha3",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -744,10 +585,7 @@
     {
         "name": "CURL_PUSH_DENY",
         "ext_min": "7.1.0alpha3",
-        "ext_max": "",
         "php_min": "7.1.0alpha3",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -758,10 +596,7 @@
     {
         "name": "CURLE_SSL_PINNEDPUBKEYNOTMATCH",
         "ext_min": "7.0.13RC1",
-        "ext_max": "",
         "php_min": "7.0.13RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -772,10 +607,7 @@
     {
         "name": "CURLE_SSL_CACERT_BADFILE",
         "ext_min": "7.0.7RC1",
-        "ext_max": "",
         "php_min": "7.0.7RC1",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",

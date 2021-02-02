@@ -4,53 +4,41 @@
         "name": "__construct",
         "static": false,
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "SoapFault",
         "name": "__construct",
         "static": false,
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "SoapHeader",
         "name": "__construct",
         "static": false,
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "SoapParam",
         "name": "__construct",
         "static": false,
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "SoapServer",
         "name": "__construct",
         "static": false,
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "SoapVar",
         "name": "__construct",
         "static": false,
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": ""
+        "php_min": "8.0.0alpha1"
     }
 ]

@@ -2,17 +2,11 @@
     {
         "name": "PHP_INT_MAX",
         "ext_min": "4.4.0",
-        "ext_max": "",
-        "php_min": "4.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.4.0"
     },
     {
         "name": "PHP_INT_SIZE",
         "ext_min": "4.4.0",
-        "ext_max": "",
-        "php_min": "4.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.4.0"
     }
 ]

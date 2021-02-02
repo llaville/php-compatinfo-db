@@ -15,7 +15,7 @@ trait PhpVersionTrait
         return $this->phpMin;
     }
 
-    public function getPhpMax(): string
+    public function getPhpMax(): ?string
     {
         return $this->phpMax;
     }

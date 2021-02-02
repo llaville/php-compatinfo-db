@@ -2,8 +2,6 @@
     {
         "name": "phar.cache_list",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

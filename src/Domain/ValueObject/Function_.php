@@ -25,9 +25,9 @@ final class Function_
         ?string $declaringClass,
         string $extension,
         string $extMin,
-        string $extMax,
+        ?string $extMax,
         string $phpMin,
-        string $phpMax,
+        ?string $phpMax,
         ?array $parameters,
         ?array $excludes,
         iterable $dependencies

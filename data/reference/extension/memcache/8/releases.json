@@ -3,8 +3,6 @@
         "rel_version": "8.0",
         "rel_date": "2020-12-06",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "8.0.0",
-        "php_max": ""
+        "php_min": "8.0.0"
     }
 ]

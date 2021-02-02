@@ -2,8 +2,6 @@
     {
         "name": "Countable",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

@@ -2,37 +2,22 @@
     {
         "name": "iconv",
         "ext_min": "4.0.5",
-        "ext_max": "",
-        "php_min": "4.0.5",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.5"
     },
     {
         "name": "iconv_get_encoding",
         "ext_min": "4.0.5",
-        "ext_max": "",
-        "php_min": "4.0.5",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.5"
     },
     {
         "name": "iconv_set_encoding",
         "ext_min": "4.0.5",
-        "ext_max": "",
-        "php_min": "4.0.5",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.5"
     },
     {
         "name": "ob_iconv_handler",
         "ext_min": "4.0.5",
-        "ext_max": "",
         "php_min": "4.0.5",
-        "php_max": "5.3.29",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "5.3.29"
     }
 ]

@@ -2,9 +2,7 @@
     {
         "name": "sqlite3.defensive",
         "ext_min": "5.6.40",
-        "ext_max": "",
         "php_min": "5.6.40",
-        "php_max": "",
         "dependencies": [
             {
                 "name": "sqlite3",

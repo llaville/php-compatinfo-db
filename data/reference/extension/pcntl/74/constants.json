@@ -2,73 +2,46 @@
     {
         "name": "CLONE_NEWNS",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "CLONE_NEWIPC",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "CLONE_NEWUTS",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "CLONE_NEWNET",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "CLONE_NEWPID",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "CLONE_NEWUSER",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "CLONE_NEWCGROUP",
         "ext_min": "7.4.0alpha1",
-        "ext_max": "",
-        "php_min": "7.4.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0alpha1"
     },
     {
         "name": "PCNTL_ENOSPC",
         "ext_min": "7.4.0",
-        "ext_max": "",
-        "php_min": "7.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0"
     },
     {
         "name": "PCNTL_EUSERS",
         "ext_min": "7.4.0",
-        "ext_max": "",
-        "php_min": "7.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.4.0"
     }
 ]

@@ -2,10 +2,6 @@
     {
         "name": "ldap_escape",
         "ext_min": "5.6.0alpha1",
-        "ext_max": "",
-        "php_min": "5.6.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0alpha1"
     }
 ]

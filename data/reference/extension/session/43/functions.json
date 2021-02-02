@@ -2,10 +2,7 @@
     {
         "name": "session_regenerate_id",
         "ext_min": "4.3.2",
-        "ext_max": "",
         "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "5.1.0",
-        "php_excludes": ""
+        "parameters": "5.1.0"
     }
 ]

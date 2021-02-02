@@ -2,17 +2,11 @@
     {
         "name": "ENCHANT_ISPELL",
         "ext_min": "1.1.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "ENCHANT_MYSPELL",
         "ext_min": "1.1.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     }
 ]

@@ -2,46 +2,26 @@
     {
         "name": "getimagesizefromstring",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "header_register_callback",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "hex2bin",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "http_response_code",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "stream_set_chunk_size",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     }
 ]

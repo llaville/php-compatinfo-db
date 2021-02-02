@@ -2,8 +2,6 @@
     {
         "name": "XmlRpcServer",
         "ext_min": "1.0.0RC1",
-        "ext_max": "",
-        "php_min": "8.0.0",
-        "php_max": ""
+        "php_min": "8.0.0"
     }
 ]

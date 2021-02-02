@@ -2,19 +2,11 @@
     {
         "name": "pg_escape_identifier",
         "ext_min": "5.4.4",
-        "ext_max": "",
-        "php_min": "5.4.4",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.4"
     },
     {
         "name": "pg_escape_literal",
         "ext_min": "5.4.4",
-        "ext_max": "",
-        "php_min": "5.4.4",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.4"
     }
 ]

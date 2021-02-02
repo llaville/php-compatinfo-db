@@ -2,17 +2,11 @@
     {
         "name": "SNMP_OID_OUTPUT_FULL",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "SNMP_OID_OUTPUT_NUMERIC",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

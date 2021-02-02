@@ -2,17 +2,11 @@
     {
         "name": "FILEINFO_MIME_ENCODING",
         "ext_min": "1.0.5-dev",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FILEINFO_MIME_TYPE",
         "ext_min": "1.0.5-dev",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

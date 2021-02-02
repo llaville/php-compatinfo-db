@@ -2,57 +2,36 @@
     {
         "name": "PCRE_VERSION",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "PREG_BACKTRACK_LIMIT_ERROR",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "PREG_BAD_UTF8_ERROR",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "PREG_BAD_UTF8_OFFSET_ERROR",
         "ext_min": "5.2.9",
-        "ext_max": "",
-        "php_min": "5.2.9",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.9"
     },
     {
         "name": "PREG_INTERNAL_ERROR",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "PREG_NO_ERROR",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "PREG_RECURSION_LIMIT_ERROR",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

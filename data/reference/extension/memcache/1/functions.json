@@ -2,10 +2,6 @@
     {
         "name": "memcache_flush",
         "ext_min": "1.0",
-        "ext_max": "",
-        "php_min": "4.3.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.3"
     }
 ]

@@ -3,120 +3,90 @@
         "class_name": "Redis",
         "name": "REDIS_STREAM",
         "ext_min": "5.0.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "OPT_REPLY_LITERAL",
         "ext_min": "5.0.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "OPT_COMPRESSION_LEVEL",
         "ext_min": "5.1.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "COMPRESSION_ZSTD",
         "ext_min": "5.1.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "COMPRESSION_ZSTD_MIN",
         "ext_min": "5.1.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "COMPRESSION_ZSTD_MAX",
         "ext_min": "5.1.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "COMPRESSION_ZSTD_DEFAULT",
         "ext_min": "5.1.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "SERIALIZER_JSON",
         "ext_min": "5.0.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "SERIALIZER_MSGPACK",
         "ext_min": "5.0.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "COMPRESSION_LZ4",
         "ext_min": "5.3.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "SCAN_PREFIX",
         "ext_min": "5.3.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "SCAN_NOPREFIX",
         "ext_min": "5.3.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_LZ4",
         "ext_min": "5.3.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SCAN_PREFIX",
         "ext_min": "5.3.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SCAN_NOPREFIX",
         "ext_min": "5.3.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     }
 ]

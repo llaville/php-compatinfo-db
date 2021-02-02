@@ -2,193 +2,121 @@
     {
         "name": "MYSQLI_ASYNC",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_BINARY_FLAG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_DEBUG_TRACE_ENABLED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_ENUM_FLAG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_NO_DEFAULT_VALUE_FLAG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_ON_UPDATE_NOW_FLAG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_OPT_INT_AND_FLOAT_NATIVE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_OPT_NET_CMD_BUFFER_SIZE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_OPT_NET_READ_BUFFER_SIZE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_OPT_SSL_VERIFY_SERVER_CERT",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "MYSQLI_REFRESH_BACKUP_LOG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_GRANT",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_HOSTS",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_LOG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_MASTER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_SLAVE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_STATUS",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_TABLES",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_REFRESH_THREADS",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_SERVER_PS_OUT_PARAMS",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "MYSQLI_SERVER_QUERY_NO_GOOD_INDEX_USED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_SERVER_QUERY_NO_INDEX_USED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_SERVER_QUERY_WAS_SLOW",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MYSQLI_SET_CHARSET_DIR",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     }
 ]

@@ -2,55 +2,31 @@
     {
         "name": "imagecreatefrombmp",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "imagebmp",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "imageopenpolygon",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "imagegetclip",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "imagesetclip",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "imageresolution",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     }
 ]

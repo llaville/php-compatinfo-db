@@ -2,10 +2,6 @@
     {
         "name": "spl_classes",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     }
 ]

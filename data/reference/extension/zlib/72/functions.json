@@ -2,19 +2,11 @@
     {
         "name": "inflate_get_status",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha3"
     },
     {
         "name": "inflate_get_read_len",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha3"
     }
 ]

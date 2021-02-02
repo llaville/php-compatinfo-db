@@ -2,15 +2,11 @@
     {
         "name": "CallbackFilterIterator",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "RecursiveCallbackFilterIterator",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     }
 ]

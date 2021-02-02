@@ -2,43 +2,31 @@
     {
         "name": "Error",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "ParseError",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "TypeError",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "ArithmeticError",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "DivisionByZeroError",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "ClosedGeneratorException",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     }
 ]

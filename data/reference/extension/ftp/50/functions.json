@@ -2,28 +2,16 @@
     {
         "name": "ftp_alloc",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "ftp_chmod",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "ftp_raw",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     }
 ]

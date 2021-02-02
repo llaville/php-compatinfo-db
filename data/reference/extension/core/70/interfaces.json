@@ -2,8 +2,6 @@
     {
         "name": "Throwable",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": ""
+        "php_min": "7.0.2"
     }
 ]

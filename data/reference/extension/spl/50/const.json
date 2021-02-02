@@ -3,80 +3,60 @@
         "class_name": "ArrayIterator",
         "name": "ARRAY_AS_PROPS",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "ArrayIterator",
         "name": "STD_PROP_LIST",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "ArrayObject",
         "name": "ARRAY_AS_PROPS",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "ArrayObject",
         "name": "STD_PROP_LIST",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "CachingIterator",
         "name": "CALL_TOSTRING",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "CachingIterator",
         "name": "CATCH_GET_CHILD",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "CachingIterator",
         "name": "FULL_CACHE",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "CachingIterator",
         "name": "TOSTRING_USE_CURRENT",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "CachingIterator",
         "name": "TOSTRING_USE_INNER",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "CachingIterator",
         "name": "TOSTRING_USE_KEY",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     }
 ]

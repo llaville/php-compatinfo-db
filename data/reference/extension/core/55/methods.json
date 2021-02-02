@@ -4,35 +4,27 @@
         "name": "__wakeup",
         "static": "false",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "class_name": "Generator",
         "name": "getReturn",
         "static": "false",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "class_name": "Generator",
         "name": "send",
         "static": "false",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "class_name": "Generator",
         "name": "throw",
         "static": "false",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     }
 ]

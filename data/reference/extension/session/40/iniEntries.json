@@ -2,134 +2,98 @@
     {
         "name": "session.auto_start",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.cache_expire",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.cache_limiter",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.cookie_domain",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.cookie_lifetime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.cookie_path",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.cookie_secure",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "session.entropy_file",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
         "php_max": "7.0.33"
     },
     {
         "name": "session.entropy_length",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
         "php_max": "7.0.33"
     },
     {
         "name": "session.gc_maxlifetime",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.gc_probability",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.name",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.referer_check",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.save_handler",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.save_path",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.serialize_handler",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.use_cookies",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "session.use_trans_sid",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": ""
+        "php_min": "4.0.3"
     },
     {
         "name": "url_rewriter.tags",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": ""
+        "php_min": "4.0.4"
     }
 ]

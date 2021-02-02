@@ -2,8 +2,6 @@
     {
         "name": "ArgumentCountError",
         "ext_min": "7.1.0",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     }
 ]

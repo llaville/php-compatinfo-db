@@ -2,19 +2,11 @@
     {
         "name": "imagegrabscreen",
         "ext_min": "5.2.2",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.2"
     },
     {
         "name": "imagegrabwindow",
         "ext_min": "5.2.2",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.2"
     }
 ]

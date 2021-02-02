@@ -2,71 +2,51 @@
     {
         "name": "redis.session.locking_enabled",
         "ext_min": "4.1.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.session.lock_expire",
         "ext_min": "4.1.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.session.lock_retries",
         "ext_min": "4.1.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.session.lock_wait_time",
         "ext_min": "4.1.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.arrays.algorithm",
         "ext_min": "4.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.arrays.auth",
         "ext_min": "4.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.arrays.consistent",
         "ext_min": "4.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.clusters.auth",
         "ext_min": "4.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.pconnect.pooling_enabled",
         "ext_min": "4.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "redis.pconnect.connection_limit",
         "ext_min": "4.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

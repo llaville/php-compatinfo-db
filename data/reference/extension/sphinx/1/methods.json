@@ -4,44 +4,34 @@
         "name": "close",
         "static": false,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     },
     {
         "class_name": "SphinxClient",
         "name": "open",
         "static": false,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     },
     {
         "class_name": "SphinxClient",
         "name": "setSelect",
         "static": false,
         "ext_min": "1.0.1",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     },
     {
         "class_name": "SphinxClient",
         "name": "setOverride",
         "static": false,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     },
     {
         "class_name": "SphinxClient",
         "name": "status",
         "static": false,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     }
 ]

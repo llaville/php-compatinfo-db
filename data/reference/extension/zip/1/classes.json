@@ -2,8 +2,6 @@
     {
         "name": "ZipArchive",
         "ext_min": "1.6.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

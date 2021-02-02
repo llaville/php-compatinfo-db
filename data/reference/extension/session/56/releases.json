@@ -3,8 +3,6 @@
         "rel_version": "5.6.0alpha1",
         "rel_date": "2014-01-21",
         "rel_state": "alpha",
-        "ext_max": "",
-        "php_min": "5.6.0alpha1",
-        "php_max": ""
+        "php_min": "5.6.0alpha1"
     }
 ]

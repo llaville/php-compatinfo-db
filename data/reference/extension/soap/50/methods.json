@@ -5,125 +5,98 @@
         "static": false,
         "ext_min": "5.0.0",
         "ext_max": "7.4.14",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__call",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__doRequest",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getCookies",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getFunctions",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getLastRequestHeaders",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getLastRequest",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getLastResponseHeaders",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getLastResponse",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__getTypes",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__setCookie",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__setLocation",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__setSoapHeaders",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapClient",
         "name": "__soapCall",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapFault",
@@ -131,8 +104,7 @@
         "static": false,
         "ext_min": "5.0.0",
         "ext_max": "7.4.14",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapHeader",
@@ -140,8 +112,7 @@
         "static": false,
         "ext_min": "5.0.0",
         "ext_max": "7.4.14",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapParam",
@@ -149,8 +120,7 @@
         "static": false,
         "ext_min": "5.0.0",
         "ext_max": "7.4.14",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
@@ -158,80 +128,63 @@
         "static": false,
         "ext_min": "5.0.0",
         "ext_max": "7.4.14",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "addFunction",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "addSoapHeader",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "fault",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "getFunctions",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "handle",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "setClass",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "setObject",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "setPersistence",
         "static": false,
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "class_name": "SoapVar",
@@ -239,7 +192,6 @@
         "static": false,
         "ext_min": "5.0.0",
         "ext_max": "7.4.14",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     }
 ]

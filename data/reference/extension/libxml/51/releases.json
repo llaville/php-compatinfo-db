@@ -3,8 +3,6 @@
         "rel_version": "5.1.0",
         "rel_date": "2005-11-24",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

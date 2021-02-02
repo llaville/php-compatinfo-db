@@ -2,9 +2,6 @@
     {
         "name": "HASH_HMAC",
         "ext_min": "1.1",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

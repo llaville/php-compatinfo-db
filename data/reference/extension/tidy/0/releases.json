@@ -3,24 +3,18 @@
         "rel_version": "0.5.2",
         "rel_date": "2003-08-06",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "rel_version": "0.5.3",
         "rel_date": "2003-08-07",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "rel_version": "0.7.0",
         "rel_date": "2003-09-22",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     }
 ]

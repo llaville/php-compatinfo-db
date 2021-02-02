@@ -3,8 +3,6 @@
         "rel_version": "5.6.0beta1",
         "rel_date": "2014-04-11",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "5.6.0beta1",
-        "php_max": ""
+        "php_min": "5.6.0beta1"
     }
 ]

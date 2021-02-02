@@ -4,115 +4,90 @@
         "name": "getName",
         "static": "false",
         "ext_min": "7.1.0beta3",
-        "ext_max": "",
-        "php_min": "7.1.0beta3",
-        "php_max": ""
+        "php_min": "7.1.0beta3"
     },
     {
         "class_name": "ReflectionClass",
         "name": "getReflectionConstants",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClass",
         "name": "getReflectionConstant",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "__construct",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getDeclaringClass",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getDocComment",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getModifiers",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getName",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getValue",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "isPrivate",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "isProtected",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "isPublic",
         "static": "false",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
-        "php_min": "7.1.0alpha1",
-        "php_max": ""
+        "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "export",
         "static": "true",
         "ext_min": "7.1.0alpha1",
-        "ext_max": "",
         "php_min": "7.1.0alpha1",
         "php_max": "7.4.14"
     }

@@ -2,73 +2,41 @@
     {
         "name": "ldap_bind_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_add_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_delete_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_mod_add_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_mod_replace_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_mod_del_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_rename_ext",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "ldap_exop_refresh",
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     }
 ]

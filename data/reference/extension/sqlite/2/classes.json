@@ -2,29 +2,21 @@
     {
         "name": "SQLiteDatabase",
         "ext_min": "2.0-dev",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "SQLiteException",
         "ext_min": "2.0-dev",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "SQLiteResult",
         "ext_min": "2.0-dev",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "SQLiteUnbuffered",
         "ext_min": "2.0-dev",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     }
 ]

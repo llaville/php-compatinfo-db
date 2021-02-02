@@ -2,25 +2,16 @@
     {
         "name": "T_ELLIPSIS",
         "ext_min": "5.6.0alpha1",
-        "ext_max": "",
-        "php_min": "5.6.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0alpha1"
     },
     {
         "name": "T_POW",
         "ext_min": "5.6.0RC1",
-        "ext_max": "",
-        "php_min": "5.6.0RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0RC1"
     },
     {
         "name": "T_POW_EQUAL",
         "ext_min": "5.6.0RC1",
-        "ext_max": "",
-        "php_min": "5.6.0RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0RC1"
     }
 ]

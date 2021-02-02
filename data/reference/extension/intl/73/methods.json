@@ -4,17 +4,13 @@
         "name": "getRawDecomposition",
         "static": true,
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "class_name": "Spoofchecker",
         "name": "setRestrictionLevel",
         "static": false,
         "ext_min": "7.3.0",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": ""
+        "php_min": "7.3.0alpha1"
     }
 ]

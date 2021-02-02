@@ -2,8 +2,6 @@
     {
         "name": "RedisSentinel",
         "ext_min": "5.2.0RC1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     }
 ]

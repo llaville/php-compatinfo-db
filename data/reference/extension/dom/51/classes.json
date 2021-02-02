@@ -2,15 +2,11 @@
     {
         "name": "DOMDocumentFragment",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "DOMException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

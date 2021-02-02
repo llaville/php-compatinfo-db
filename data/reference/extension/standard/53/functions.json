@@ -2,154 +2,86 @@
     {
         "name": "array_replace",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "array_replace_recursive",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "forward_static_call",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "forward_static_call_array",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "gethostname",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "header_remove",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "lcfirst",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "parse_ini_string",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "quoted_printable_encode",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "realpath_cache_get",
         "ext_min": "5.3.2",
-        "ext_max": "",
-        "php_min": "5.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.2"
     },
     {
         "name": "realpath_cache_size",
         "ext_min": "5.3.2",
-        "ext_max": "",
-        "php_min": "5.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.2"
     },
     {
         "name": "str_getcsv",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "stream_context_get_params",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "stream_context_set_default",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "stream_resolve_include_path",
         "ext_min": "5.3.2",
-        "ext_max": "",
-        "php_min": "5.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.2"
     },
     {
         "name": "stream_set_read_buffer",
         "ext_min": "5.3.3",
-        "ext_max": "",
-        "php_min": "5.3.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.3"
     },
     {
         "name": "stream_supports_lock",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

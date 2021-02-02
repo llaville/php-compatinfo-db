@@ -2,19 +2,11 @@
     {
         "name": "mysqli_error_list",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "mysqli_stmt_error_list",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     }
 ]

@@ -3,8 +3,6 @@
         "class_name": "DateTime",
         "name": "RFC7231",
         "ext_min": "7.1.5",
-        "ext_max": "",
-        "php_min": "7.1.5",
-        "php_max": ""
+        "php_min": "7.1.5"
     }
 ]

@@ -2,163 +2,92 @@
     {
         "name": "cal_days_in_month",
         "ext_min": "4.0.7",
-        "ext_max": "",
-        "php_min": "4.0.7",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.7"
     },
     {
         "name": "cal_from_jd",
         "ext_min": "4.0.7",
-        "ext_max": "",
-        "php_min": "4.0.7",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.7"
     },
     {
         "name": "cal_info",
         "ext_min": "4.0.7",
-        "ext_max": "",
-        "php_min": "4.0.7",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.7"
     },
     {
         "name": "cal_to_jd",
         "ext_min": "4.0.7",
-        "ext_max": "",
-        "php_min": "4.0.7",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.7"
     },
     {
         "name": "easter_date",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "easter_days",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "frenchtojd",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "gregoriantojd",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jddayofweek",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jdmonthname",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jdtofrench",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jdtogregorian",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jdtojewish",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "4.0.0, 4.3.0, 5.0.0",
-        "php_excludes": ""
+        "parameters": "4.0.0, 4.3.0, 5.0.0"
     },
     {
         "name": "jdtojulian",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jdtounix",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "jewishtojd",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "juliantojd",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "unixtojd",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

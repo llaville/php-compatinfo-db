@@ -2,57 +2,41 @@
     {
         "name": "apc.enabled",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.filters",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.gc_ttl",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.mmap_file_mask",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.num_files_hint",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.optimization",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.shm_segments",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "apc.shm_size",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     }
 ]

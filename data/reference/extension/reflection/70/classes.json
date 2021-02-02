@@ -2,15 +2,11 @@
     {
         "name": "ReflectionGenerator",
         "ext_min": "7.0.0alpha1",
-        "ext_max": "",
-        "php_min": "7.0.0alpha1",
-        "php_max": ""
+        "php_min": "7.0.0alpha1"
     },
     {
         "name": "ReflectionType",
         "ext_min": "7.0.0alpha1",
-        "ext_max": "",
-        "php_min": "7.0.0alpha1",
-        "php_max": ""
+        "php_min": "7.0.0alpha1"
     }
 ]

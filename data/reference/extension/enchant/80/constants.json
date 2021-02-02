@@ -2,9 +2,6 @@
     {
         "name": "LIBENCHANT_VERSION",
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha1"
     }
 ]

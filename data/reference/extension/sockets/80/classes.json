@@ -2,15 +2,11 @@
     {
         "name": "Socket",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": ""
+        "php_min": "8.0.0beta1"
     },
     {
         "name": "AddressInfo",
         "ext_min": "8.0.0beta1",
-        "ext_max": "",
-        "php_min": "8.0.0beta1",
-        "php_max": ""
+        "php_min": "8.0.0beta1"
     }
 ]

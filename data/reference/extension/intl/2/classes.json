@@ -2,15 +2,11 @@
     {
         "name": "Spoofchecker",
         "ext_min": "2.0.0b1",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "Transliterator",
         "ext_min": "2.0.0b1",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": ""
+        "php_min": "5.2.4"
     }
 ]

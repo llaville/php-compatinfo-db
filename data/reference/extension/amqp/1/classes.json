@@ -2,57 +2,41 @@
     {
         "name": "AMQPChannel",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPChannelException",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPEnvelope",
         "ext_min": "1.0.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPEnvelopeException",
         "ext_min": "1.9.3",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "AMQPBasicProperties",
         "ext_min": "1.8.0beta2",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "AMQPDecimal",
         "ext_min": "1.9.0beta1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "AMQPTimestamp",
         "ext_min": "1.9.0beta1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "AMQPValueException",
         "ext_min": "1.9.0beta1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

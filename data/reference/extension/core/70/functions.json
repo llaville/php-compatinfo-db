@@ -2,19 +2,11 @@
     {
         "name": "get_resources",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "gc_mem_caches",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     }
 ]

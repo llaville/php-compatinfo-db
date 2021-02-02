@@ -2,73 +2,41 @@
     {
         "name": "svn_propset",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_prop_delete",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_revprop_get",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_revprop_set",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_revprop_delete",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_fs_open_txn",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_fs_txn_prop",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "svn_update2",
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

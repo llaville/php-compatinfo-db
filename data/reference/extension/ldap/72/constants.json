@@ -2,249 +2,156 @@
     {
         "name": "LDAP_EXOP_START_TLS",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_EXOP_MODIFY_PASSWD",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_EXOP_REFRESH",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_EXOP_WHO_AM_I",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_EXOP_TURN",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_MANAGEDSAIT",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_PROXY_AUTHZ",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_SUBENTRIES",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_VALUESRETURNFILTER",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_ASSERT",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_PRE_READ",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_POST_READ",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_SORTREQUEST",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_SORTRESPONSE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_PAGEDRESULTS",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_AUTHZID_REQUEST",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_AUTHZID_RESPONSE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_SYNC",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_SYNC_STATE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_SYNC_DONE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_DONTUSECOPY",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_PASSWORDPOLICYREQUEST",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_PASSWORDPOLICYRESPONSE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_X_INCREMENTAL_VALUES",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_X_DOMAIN_SCOPE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_X_PERMISSIVE_MODIFY",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_X_SEARCH_OPTIONS",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_X_TREE_DELETE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_X_EXTENDED_DN",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_VLVREQUEST",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "LDAP_CONTROL_VLVRESPONSE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     }
 ]

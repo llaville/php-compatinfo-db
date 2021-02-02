@@ -2,15 +2,11 @@
     {
         "name": "ErrorException",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "Exception",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

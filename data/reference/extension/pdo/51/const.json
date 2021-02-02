@@ -3,848 +3,636 @@
         "class_name": "PDO",
         "name": "ATTR_AUTOCOMMIT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_CASE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_CLIENT_VERSION",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_CONNECTION_STATUS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_CURSOR",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_CURSOR_NAME",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_DEFAULT_FETCH_MODE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_DEFAULT_STR_PARAM",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_DRIVER_NAME",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_EMULATE_PREPARES",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_ERRMODE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_FETCH_CATALOG_NAMES",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_FETCH_TABLE_NAMES",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_MAX_COLUMN_LEN",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_ORACLE_NULLS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_PERSISTENT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_PREFETCH",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_SERVER_INFO",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_SERVER_VERSION",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_STATEMENT_CLASS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_STRINGIFY_FETCHES",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ATTR_TIMEOUT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "CASE_LOWER",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "CASE_NATURAL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "CASE_UPPER",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "CURSOR_FWDONLY",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "CURSOR_SCROLL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "DBLIB_ATTR_CONNECTION_TIMEOUT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "DBLIB_ATTR_QUERY_TIMEOUT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "DBLIB_ATTR_STRINGIFY_UNIQUEIDENTIFIER",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "DBLIB_ATTR_VERSION",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ERRMODE_EXCEPTION",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ERRMODE_SILENT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ERRMODE_WARNING",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "ERR_NONE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FB_ATTR_DATE_FORMAT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FB_ATTR_TIMESTAMP_FORMAT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FB_ATTR_TIME_FORMAT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ASSOC",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_BOTH",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_BOUND",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_CLASS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_CLASSTYPE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_COLUMN",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_FUNC",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_GROUP",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_INTO",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_KEY_PAIR",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_LAZY",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_NAMED",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_NUM",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_OBJ",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ORI_ABS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ORI_FIRST",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ORI_LAST",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ORI_NEXT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ORI_PRIOR",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_ORI_REL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_PROPS_LATE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_SERIALIZE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "FETCH_UNIQUE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_COMPRESS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_DIRECT_QUERY",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_FOUND_ROWS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_IGNORE_SPACE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_INIT_COMMAND",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_LOCAL_INFILE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_MULTI_STATEMENTS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SERVER_PUBLIC_KEY",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SSL_CA",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SSL_CAPATH",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SSL_CERT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SSL_CIPHER",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SSL_KEY",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_SSL_VERIFY_SERVER_CERT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "MYSQL_ATTR_USE_BUFFERED_QUERY",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "NULL_EMPTY_STRING",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "NULL_NATURAL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "NULL_TO_STRING",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "OCI_ATTR_ACTION",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "OCI_ATTR_CLIENT_IDENTIFIER",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "OCI_ATTR_CLIENT_INFO",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "OCI_ATTR_MODULE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_BOOL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_ALLOC",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_EXEC_POST",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_EXEC_PRE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_FETCH_POST",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_FETCH_PRE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_FREE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_EVT_NORMALIZE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_INPUT_OUTPUT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_INT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_LOB",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_NULL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_STMT",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_STR",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_STR_CHAR",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PARAM_STR_NATL",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PGSQL_ATTR_DISABLE_PREPARES",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PGSQL_TRANSACTION_ACTIVE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PGSQL_TRANSACTION_IDLE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PGSQL_TRANSACTION_INERROR",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PGSQL_TRANSACTION_INTRANS",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "PGSQL_TRANSACTION_UNKNOWN",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "class_name": "PDO",
         "name": "SQLITE_DETERMINISTIC",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

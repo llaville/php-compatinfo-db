@@ -2,10 +2,7 @@
     {
         "name": "CURLFTPAUTH_DEFAULT",
         "ext_min": "5.1.0",
-        "ext_max": "",
         "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -16,10 +13,7 @@
     {
         "name": "CURLFTPAUTH_SSL",
         "ext_min": "5.1.0",
-        "ext_max": "",
         "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -30,10 +24,7 @@
     {
         "name": "CURLFTPAUTH_TLS",
         "ext_min": "5.1.0",
-        "ext_max": "",
         "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -44,34 +35,22 @@
     {
         "name": "CURLINFO_HEADER_OUT",
         "ext_min": "5.1.3",
-        "ext_max": "",
-        "php_min": "5.1.3",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.3"
     },
     {
         "name": "CURLOPT_AUTOREFERER",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "CURLOPT_COOKIESESSION",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "CURLOPT_FTPSSLAUTH",
         "ext_min": "5.1.0",
-        "ext_max": "",
         "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",

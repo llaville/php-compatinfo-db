@@ -2,50 +2,36 @@
     {
         "name": "AMQPConnection",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPConnectionException",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPException",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPExchange",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPExchangeException",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPQueue",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "AMQPQueueException",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

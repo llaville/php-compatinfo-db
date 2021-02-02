@@ -2,17 +2,11 @@
     {
         "name": "UPLOAD_ERR_CANT_WRITE",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "__COMPILER_HALT_OFFSET__",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     }
 ]

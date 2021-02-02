@@ -2,10 +2,6 @@
     {
         "name": "property_exists",
         "ext_min": "5.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.1.0"
     }
 ]

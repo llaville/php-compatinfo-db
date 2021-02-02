@@ -17,9 +17,9 @@ final class IniEntry
     public function __construct(
         string $name,
         string $extMin,
-        string $extMax,
+        ?string $extMax,
         string $phpMin,
-        string $phpMax,
+        ?string $phpMax,
         iterable $dependencies
     ) {
         $this->name = $name;

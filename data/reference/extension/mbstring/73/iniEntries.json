@@ -2,8 +2,6 @@
     {
         "name": "mbstring.regex_stack_limit",
         "ext_min": "7.3.5",
-        "ext_max": "",
-        "php_min": "7.3.5",
-        "php_max": ""
+        "php_min": "7.3.5"
     }
 ]

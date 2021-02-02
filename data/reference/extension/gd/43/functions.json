@@ -2,64 +2,36 @@
     {
         "name": "imageantialias",
         "ext_min": "4.3.2",
-        "ext_max": "",
-        "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.2"
     },
     {
         "name": "imagecolorallocatealpha",
         "ext_min": "4.3.2",
-        "ext_max": "",
-        "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.2"
     },
     {
         "name": "imagecolormatch",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "imageistruecolor",
         "ext_min": "4.3.2",
-        "ext_max": "",
-        "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.2"
     },
     {
         "name": "imagelayereffect",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "imagerotate",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "imagesavealpha",
         "ext_min": "4.3.2",
-        "ext_max": "",
-        "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.2"
     }
 ]

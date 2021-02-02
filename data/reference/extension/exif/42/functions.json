@@ -2,28 +2,16 @@
     {
         "name": "exif_read_data",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "exif_tagname",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "exif_thumbnail",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     }
 ]

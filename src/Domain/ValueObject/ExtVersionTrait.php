@@ -15,7 +15,7 @@ trait ExtVersionTrait
         return $this->extMin;
     }
 
-    public function getExtMax(): string
+    public function getExtMax(): ?string
     {
         return $this->extMax;
     }

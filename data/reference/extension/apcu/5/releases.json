@@ -3,152 +3,114 @@
         "rel_version": "5.1.0",
         "rel_date": "2015-11-21",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.2",
         "rel_date": "2015-12-07",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.3",
         "rel_date": "2016-01-15",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.4",
         "rel_date": "2016-05-12",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.5",
         "rel_date": "2016-06-07",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.6",
         "rel_date": "2016-10-06",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.7",
         "rel_date": "2016-10-21",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.8",
         "rel_date": "2017-01-16",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.9",
         "rel_date": "2018-01-02",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.10",
         "rel_date": "2018-02-16",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.11",
         "rel_date": "2018-03-08",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.12",
         "rel_date": "2018-07-09",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.13",
         "rel_date": "2018-11-19",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.14",
         "rel_date": "2018-11-21",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.15",
         "rel_date": "2018-12-07",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.16",
         "rel_date": "2018-12-16",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.17",
         "rel_date": "2019-02-08",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.18",
         "rel_date": "2019-10-28",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "5.1.19",
         "rel_date": "2020-10-05",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     }
 ]

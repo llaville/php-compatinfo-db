@@ -2,129 +2,82 @@
     {
         "name": "IPPROTO_IP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IPPROTO_IPV6",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IPV6_MULTICAST_HOPS",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IPV6_MULTICAST_IF",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IPV6_MULTICAST_LOOP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IP_MULTICAST_IF",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IP_MULTICAST_LOOP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "IP_MULTICAST_TTL",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "MCAST_BLOCK_SOURCE",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "MCAST_JOIN_GROUP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "MCAST_JOIN_SOURCE_GROUP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "MCAST_LEAVE_GROUP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "MCAST_LEAVE_SOURCE_GROUP",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "MCAST_UNBLOCK_SOURCE",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "SO_BINDTODEVICE",
         "ext_min": "5.4.18",
-        "ext_max": "",
         "php_min": "5.4.18",
-        "php_max": "",
         "php_excludes": "5.5.0"
     },
     {
         "name": "SO_REUSEPORT",
         "ext_min": "5.4.10",
-        "ext_max": "",
-        "php_min": "5.4.10",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.10"
     }
 ]

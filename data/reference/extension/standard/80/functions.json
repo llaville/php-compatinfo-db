@@ -2,46 +2,26 @@
     {
         "name": "fdiv",
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "name": "get_debug_type",
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "name": "str_contains",
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "name": "str_starts_with",
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha1"
     },
     {
         "name": "str_ends_with",
         "ext_min": "8.0.0alpha1",
-        "ext_max": "",
-        "php_min": "8.0.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "8.0.0alpha1"
     }
 ]

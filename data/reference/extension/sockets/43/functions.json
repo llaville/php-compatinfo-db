@@ -2,19 +2,11 @@
     {
         "name": "socket_get_option",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "socket_set_option",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     }
 ]

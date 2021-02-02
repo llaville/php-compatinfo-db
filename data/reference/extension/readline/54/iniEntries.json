@@ -2,15 +2,11 @@
     {
         "name": "cli.pager",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "cli.prompt",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     }
 ]

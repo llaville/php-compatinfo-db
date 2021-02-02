@@ -2,46 +2,26 @@
     {
         "name": "oci_get_implicit_resultset",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "oci_register_taf_callback",
         "ext_min": "2.1.7",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "oci_unregister_taf_callback",
         "ext_min": "2.1.7",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "oci_set_db_operation",
         "ext_min": "2.2.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "oci_set_call_timeout",
         "ext_min": "2.2.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     }
 ]

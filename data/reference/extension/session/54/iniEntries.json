@@ -2,43 +2,31 @@
     {
         "name": "session.upload_progress.cleanup",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "session.upload_progress.enabled",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "session.upload_progress.freq",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "session.upload_progress.min_freq",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "session.upload_progress.name",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "session.upload_progress.prefix",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     }
 ]

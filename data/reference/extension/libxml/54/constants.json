@@ -2,10 +2,7 @@
     {
         "name": "LIBXML_HTML_NODEFDTD",
         "ext_min": "5.4.0",
-        "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libxml",
@@ -16,10 +13,7 @@
     {
         "name": "LIBXML_HTML_NOIMPLIED",
         "ext_min": "5.4.0",
-        "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libxml",
@@ -30,9 +24,6 @@
     {
         "name": "LIBXML_PEDANTIC",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     }
 ]

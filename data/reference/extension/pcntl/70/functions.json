@@ -2,10 +2,6 @@
     {
         "name": "pcntl_wifcontinued",
         "ext_min": "7.0.0",
-        "ext_max": "",
-        "php_min": "7.0.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.0.0alpha1"
     }
 ]

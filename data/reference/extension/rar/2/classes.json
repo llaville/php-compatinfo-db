@@ -2,22 +2,16 @@
     {
         "name": "RarArchive",
         "ext_min": "2.0.0b2",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "RarEntry",
         "ext_min": "2.0.0b2",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "RarException",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

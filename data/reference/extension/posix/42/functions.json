@@ -2,28 +2,16 @@
     {
         "name": "posix_errno",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "posix_get_last_error",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "posix_strerror",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     }
 ]

@@ -2,8 +2,6 @@
     {
         "name": "finfo",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     }
 ]

@@ -2,37 +2,21 @@
     {
         "name": "socket_addrinfo_lookup",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "socket_addrinfo_connect",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "socket_addrinfo_bind",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "socket_addrinfo_explain",
         "ext_min": "7.2.0",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     }
 ]

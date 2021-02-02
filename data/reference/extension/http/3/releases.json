@@ -3,104 +3,78 @@
         "rel_version": "3.0.0RC1",
         "rel_date": "2015-12-07",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.0.0",
         "rel_date": "2016-01-19",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.0.1",
         "rel_date": "2016-03-09",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.1.0beta1",
         "rel_date": "2016-08-22",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.1.0beta2",
         "rel_date": "2016-09-07",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.1.0RC1",
         "rel_date": "2016-10-04",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.1.0",
         "rel_date": "2016-12-12",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.0RC1",
         "rel_date": "2018-04-09",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.0",
         "rel_date": "2018-07-19",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.1",
         "rel_date": "2019-06-07",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.2",
         "rel_date": "2019-10-24",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.3",
         "rel_date": "2019-10-29",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.4",
         "rel_date": "2021-01-13",
         "rel_state": "stable",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     }
 ]

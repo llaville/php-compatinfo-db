@@ -2,17 +2,11 @@
     {
         "name": "PREG_OFFSET_CAPTURE",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "PREG_SPLIT_OFFSET_CAPTURE",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     }
 ]

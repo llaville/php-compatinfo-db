@@ -2,81 +2,51 @@
     {
         "name": "OPENSSL_ALGO_RMD160",
         "ext_min": "5.4.8",
-        "ext_max": "",
-        "php_min": "5.4.8",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.8"
     },
     {
         "name": "OPENSSL_ALGO_SHA224",
         "ext_min": "5.4.8",
-        "ext_max": "",
-        "php_min": "5.4.8",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.8"
     },
     {
         "name": "OPENSSL_ALGO_SHA256",
         "ext_min": "5.4.8",
-        "ext_max": "",
-        "php_min": "5.4.8",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.8"
     },
     {
         "name": "OPENSSL_ALGO_SHA384",
         "ext_min": "5.4.8",
-        "ext_max": "",
-        "php_min": "5.4.8",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.8"
     },
     {
         "name": "OPENSSL_ALGO_SHA512",
         "ext_min": "5.4.8",
-        "ext_max": "",
-        "php_min": "5.4.8",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.8"
     },
     {
         "name": "OPENSSL_CIPHER_AES_128_CBC",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "OPENSSL_CIPHER_AES_192_CBC",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "OPENSSL_CIPHER_AES_256_CBC",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "OPENSSL_RAW_DATA",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "OPENSSL_ZERO_PADDING",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     }
 ]

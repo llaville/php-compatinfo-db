@@ -2,17 +2,11 @@
     {
         "name": "ICONV_IMPL",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "ICONV_VERSION",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     }
 ]

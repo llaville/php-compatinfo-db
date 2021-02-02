@@ -2,17 +2,11 @@
     {
         "name": "ASSERT_EXCEPTION",
         "ext_min": "7.0.2",
-        "ext_max": "",
-        "php_min": "7.0.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.2"
     },
     {
         "name": "DNS_CAA",
         "ext_min": "7.0.16RC1",
-        "ext_max": "",
-        "php_min": "7.0.16",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.16"
     }
 ]

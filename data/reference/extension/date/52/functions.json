@@ -2,100 +2,56 @@
     {
         "name": "date_create",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_date_set",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_format",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_isodate_set",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_modify",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_offset_get",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_parse",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_time_set",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_timezone_get",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "date_timezone_set",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "timezone_transitions_get",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

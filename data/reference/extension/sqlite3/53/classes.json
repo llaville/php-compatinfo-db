@@ -2,22 +2,16 @@
     {
         "name": "SQLite3",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SQLite3Result",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SQLite3Stmt",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

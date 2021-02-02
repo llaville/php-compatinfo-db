@@ -2,55 +2,31 @@
     {
         "name": "xcache_dasm_file",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "xcache_dasm_string",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "xcache_get_isref",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "xcache_get_refcount",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "xcache_get_type",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "xcache_unset_by_prefix",
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

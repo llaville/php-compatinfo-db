@@ -2,41 +2,26 @@
     {
         "name": "GMP_BIG_ENDIAN",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     },
     {
         "name": "GMP_LITTLE_ENDIAN",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     },
     {
         "name": "GMP_LSW_FIRST",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     },
     {
         "name": "GMP_MSW_FIRST",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     },
     {
         "name": "GMP_NATIVE_ENDIAN",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     }
 ]

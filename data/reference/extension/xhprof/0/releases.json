@@ -3,40 +3,30 @@
         "rel_version": "0.9.0",
         "rel_date": "2009-03-18",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "rel_version": "0.9.1",
         "rel_date": "2009-03-21",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "rel_version": "0.9.2",
         "rel_date": "2009-06-01",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "rel_version": "0.9.3",
         "rel_date": "2013-05-20",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "rel_version": "0.9.4",
         "rel_date": "2013-09-30",
         "rel_state": "beta",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

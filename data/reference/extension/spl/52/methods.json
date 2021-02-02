@@ -4,80 +4,62 @@
         "name": "__construct",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "__construct",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "getFlags",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "getMode",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "getPregFlags",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "getRegex",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "setFlags",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "setMode",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "RegexIterator",
         "name": "setPregFlags",
         "static": false,
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

@@ -21,9 +21,9 @@ final class Class_
         bool $isInterface,
         string $extension,
         string $extMin,
-        string $extMax,
+        ?string $extMax,
         string $phpMin,
-        string $phpMax,
+        ?string $phpMax,
         iterable $dependencies
     ) {
         $this->name = $name;

@@ -2,85 +2,61 @@
     {
         "name": "FilesystemIterator",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "GlobIterator",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "MultipleIterator",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "RecursiveTreeIterator",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplDoublyLinkedList",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplFixedArray",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplHeap",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplMaxHeap",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplMinHeap",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplPriorityQueue",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplQueue",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SplStack",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

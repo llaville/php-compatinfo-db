@@ -2,28 +2,18 @@
     {
         "name": "ldap_control_paged_result",
         "ext_min": "5.4.0",
-        "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "7.4.14",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "7.4.14"
     },
     {
         "name": "ldap_control_paged_result_response",
         "ext_min": "5.4.0",
-        "ext_max": "",
         "php_min": "5.4.0",
-        "php_max": "7.4.14",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "7.4.14"
     },
     {
         "name": "ldap_modify_batch",
         "ext_min": "5.4.26",
-        "ext_max": "",
-        "php_min": "5.4.26",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.4.26"
     }
 ]

@@ -2,281 +2,176 @@
     {
         "name": "IMG_AFFINE_ROTATE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_AFFINE_SCALE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_AFFINE_SHEAR_HORIZONTAL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_AFFINE_SHEAR_VERTICAL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_AFFINE_TRANSLATE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BELL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BESSEL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BICUBIC",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BICUBIC_FIXED",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BILINEAR_FIXED",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BLACKMAN",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BOX",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_BSPLINE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CATMULLROM",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CROP_BLACK",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CROP_DEFAULT",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CROP_SIDES",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CROP_THRESHOLD",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CROP_TRANSPARENT",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_CROP_WHITE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_FLIP_BOTH",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_FLIP_HORIZONTAL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_FLIP_VERTICAL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_GAUSSIAN",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_GENERALIZED_CUBIC",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_HAMMING",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_HANNING",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_HERMITE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_MITCHELL",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_NEAREST_NEIGHBOUR",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_POWER",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_QUADRATIC",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_SINC",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_TRIANGLE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IMG_WEIGHTED4",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     }
 ]

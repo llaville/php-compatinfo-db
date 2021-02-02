@@ -2,10 +2,7 @@
     {
         "name": "CURLINFO_LOCAL_IP",
         "ext_min": "5.4.7",
-        "ext_max": "",
         "php_min": "5.4.7",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -16,10 +13,7 @@
     {
         "name": "CURLINFO_LOCAL_PORT",
         "ext_min": "5.4.7",
-        "ext_max": "",
         "php_min": "5.4.7",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -30,10 +24,7 @@
     {
         "name": "CURLINFO_PRIMARY_IP",
         "ext_min": "5.4.7",
-        "ext_max": "",
         "php_min": "5.4.7",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",
@@ -44,10 +35,7 @@
     {
         "name": "CURLINFO_PRIMARY_PORT",
         "ext_min": "5.4.7",
-        "ext_max": "",
         "php_min": "5.4.7",
-        "php_max": "",
-        "php_excludes": "",
         "dependencies": [
             {
                 "name": "libcurl",

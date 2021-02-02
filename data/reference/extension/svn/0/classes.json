@@ -2,29 +2,21 @@
     {
         "name": "Svn",
         "ext_min": "0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SvnNode",
         "ext_min": "0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SvnWc",
         "ext_min": "0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "SvnWcSchedule",
         "ext_min": "0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     }
 ]

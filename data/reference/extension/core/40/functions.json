@@ -2,361 +2,204 @@
     {
         "name": "class_exists",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "4.0.0, 5.0.0",
-        "php_excludes": ""
+        "parameters": "4.0.0, 5.0.0"
     },
     {
         "name": "create_function",
         "ext_min": "4.0.1",
-        "ext_max": "",
         "php_min": "4.0.1",
-        "php_max": "7.4.14",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "7.4.14"
     },
     {
         "name": "define",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "defined",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "each",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "7.4.14",
-        "parameters": "",
-        "php_excludes": ""
+        "php_max": "7.4.14"
     },
     {
         "name": "empty",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "error_reporting",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "extension_loaded",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "func_get_arg",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "func_get_args",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "func_num_args",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "function_exists",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_class",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_class_methods",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_class_vars",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_declared_classes",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_defined_constants",
         "ext_min": "4.0.7",
-        "ext_max": "",
-        "php_min": "4.0.7",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.7"
     },
     {
         "name": "get_defined_functions",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "get_defined_vars",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "get_extension_funcs",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_included_files",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_loaded_extensions",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_object_vars",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_parent_class",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_required_files",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "get_resource_type",
         "ext_min": "4.0.2",
-        "ext_max": "",
-        "php_min": "4.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.2"
     },
     {
         "name": "is_subclass_of",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "isset",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "list",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "method_exists",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "restore_error_handler",
         "ext_min": "4.0.1",
-        "ext_max": "",
-        "php_min": "4.0.1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.1"
     },
     {
         "name": "set_error_handler",
         "ext_min": "4.0.1",
-        "ext_max": "",
-        "php_min": "4.0.1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.1"
     },
     {
         "name": "strcasecmp",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "strcmp",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "strlen",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "strncasecmp",
         "ext_min": "4.0.2",
-        "ext_max": "",
-        "php_min": "4.0.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.2"
     },
     {
         "name": "strncmp",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "trigger_error",
         "ext_min": "4.0.1",
-        "ext_max": "",
-        "php_min": "4.0.1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.1"
     },
     {
         "name": "user_error",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "zend_version",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

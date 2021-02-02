@@ -2,8 +2,6 @@
     {
         "name": "SessionIdInterface",
         "ext_min": "5.5.1",
-        "ext_max": "",
-        "php_min": "5.5.1",
-        "php_max": ""
+        "php_min": "5.5.1"
     }
 ]

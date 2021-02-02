@@ -2,17 +2,11 @@
     {
         "name": "DATE_RFC7231",
         "ext_min": "7.0.19RC1",
-        "ext_max": "",
-        "php_min": "7.0.19RC1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.19RC1"
     },
     {
         "name": "DATE_RFC3339_EXTENDED",
         "ext_min": "7.0.0alpha1",
-        "ext_max": "",
-        "php_min": "7.0.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0alpha1"
     }
 ]

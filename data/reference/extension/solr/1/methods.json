@@ -4,8 +4,6 @@
         "name": "system",
         "static": false,
         "ext_min": "1.1.0b",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

@@ -2,71 +2,43 @@
     {
         "name": "mysql_client_encoding",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     },
     {
         "name": "mysql_info",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     },
     {
         "name": "mysql_list_processes",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     },
     {
         "name": "mysql_ping",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     },
     {
         "name": "mysql_real_escape_string",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     },
     {
         "name": "mysql_stat",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     },
     {
         "name": "mysql_thread_id",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": "",
         "deprecated": "5.5.0"
     }
 ]

@@ -2,109 +2,61 @@
     {
         "name": "date_add",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_create_from_format",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_diff",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_get_last_errors",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_interval_create_from_date_string",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_interval_format",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_parse_from_format",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_sub",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_timestamp_get",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "date_timestamp_set",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "timezone_location_get",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "timezone_version_get",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

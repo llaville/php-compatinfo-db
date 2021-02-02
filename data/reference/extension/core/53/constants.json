@@ -2,169 +2,107 @@
     {
         "name": "DEBUG_BACKTRACE_IGNORE_ARGS",
         "ext_min": "5.3.6",
-        "ext_max": "",
-        "php_min": "5.3.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.6"
     },
     {
         "name": "DEBUG_BACKTRACE_PROVIDE_OBJECT",
         "ext_min": "5.3.6",
-        "ext_max": "",
-        "php_min": "5.3.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.6"
     },
     {
         "name": "E_DEPRECATED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "E_USER_DEPRECATED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_MANDIR",
         "ext_min": "5.3.7",
-        "ext_max": "",
-        "php_min": "5.3.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.7"
     },
     {
         "name": "PHP_MAXPATHLEN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_NT_DOMAIN_CONTROLLER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_NT_SERVER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_NT_WORKSTATION",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_BUILD",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_MAJOR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_MINOR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_PLATFORM",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_PRODUCTTYPE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_SP_MAJOR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_SP_MINOR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_WINDOWS_VERSION_SUITEMASK",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ZEND_DEBUG_BUILD",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ZEND_MULTIBYTE",
         "ext_min": "5.3.4",
-        "ext_max": "",
         "php_min": "5.3.4",
-        "php_max": "5.3.29",
-        "php_excludes": ""
+        "php_max": "5.3.29"
     },
     {
         "name": "__DIR__",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "__NAMESPACE__",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

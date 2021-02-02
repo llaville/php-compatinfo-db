@@ -3,96 +3,72 @@
         "class_name": "PharData",
         "name": "CURRENT_AS_FILEINFO",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "CURRENT_AS_PATHNAME",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "CURRENT_AS_SELF",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "CURRENT_MODE_MASK",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "FOLLOW_SYMLINKS",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "KEY_AS_FILENAME",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "KEY_AS_PATHNAME",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "KEY_MODE_MASK",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "NEW_CURRENT_AND_KEY",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "OTHER_MODE_MASK",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "SKIP_DOTS",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     },
     {
         "class_name": "PharData",
         "name": "UNIX_PATHS",
         "ext_min": "2.0.0a1",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": ""
+        "php_min": "5.2.0"
     }
 ]

@@ -2,73 +2,46 @@
     {
         "name": "E_RECOVERABLE_ERROR",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "PHP_DEBUG",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "PHP_EXTRA_VERSION",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "PHP_MAJOR_VERSION",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "PHP_MINOR_VERSION",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "PHP_RELEASE_VERSION",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "PHP_VERSION_ID",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "PHP_ZTS",
         "ext_min": "5.2.7",
-        "ext_max": "",
-        "php_min": "5.2.7",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.7"
     },
     {
         "name": "UPLOAD_ERR_EXTENSION",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

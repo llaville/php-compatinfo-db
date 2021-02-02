@@ -2,226 +2,126 @@
     {
         "name": "mb_convert_encoding",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_convert_kana",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_convert_variables",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_decode_mimeheader",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_decode_numericentity",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_detect_encoding",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_detect_order",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_encode_mimeheader",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_encode_numericentity",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_http_input",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_http_output",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_internal_encoding",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_language",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_output_handler",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_parse_str",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_preferred_mime_name",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_send_mail",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_strcut",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_strimwidth",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_strlen",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_strpos",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_strrpos",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_strwidth",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_substitute_character",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "mb_substr",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     }
 ]

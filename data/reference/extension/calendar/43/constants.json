@@ -2,33 +2,21 @@
     {
         "name": "CAL_EASTER_ALWAYS_GREGORIAN",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "CAL_EASTER_ALWAYS_JULIAN",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "CAL_EASTER_DEFAULT",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "CAL_EASTER_ROMAN",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     }
 ]

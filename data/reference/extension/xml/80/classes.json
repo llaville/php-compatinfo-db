@@ -9,8 +9,6 @@
     {
         "name": "XMLParser",
         "ext_min": "8.0.1RC1",
-        "ext_max": "",
-        "php_min": "8.0.1RC1",
-        "php_max": ""
+        "php_min": "8.0.1RC1"
     }
 ]

@@ -2,73 +2,46 @@
     {
         "name": "XC_ASSIGN_POW",
         "ext_min": "3.2.0",
-        "ext_max": "",
-        "php_min": "5.6.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0"
     },
     {
         "name": "XC_DISCARD_EXCEPTION",
         "ext_min": "3.1.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "XC_FAST_CALL",
         "ext_min": "3.1.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "XC_FAST_RET",
         "ext_min": "3.1.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "XC_GENERATOR_RETURN",
         "ext_min": "3.1.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "XC_POW",
         "ext_min": "3.2.0",
-        "ext_max": "",
-        "php_min": "5.6.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0"
     },
     {
         "name": "XC_RECV_VARIADIC",
         "ext_min": "3.2.0",
-        "ext_max": "",
-        "php_min": "5.6.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0"
     },
     {
         "name": "XC_SEND_UNPACK",
         "ext_min": "3.2.0",
-        "ext_max": "",
-        "php_min": "5.6.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.6.0"
     },
     {
         "name": "XC_YIELD",
         "ext_min": "3.1.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     }
 ]

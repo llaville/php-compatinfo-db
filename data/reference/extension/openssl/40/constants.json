@@ -2,193 +2,121 @@
     {
         "name": "OPENSSL_KEYTYPE_DH",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_KEYTYPE_DSA",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_KEYTYPE_EC",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_KEYTYPE_RSA",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_NO_PADDING",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_PKCS1_OAEP_PADDING",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_PKCS1_PADDING",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "OPENSSL_SSLV23_PADDING",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "PKCS7_BINARY",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_DETACHED",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_NOATTR",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_NOCERTS",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_NOCHAIN",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_NOINTERN",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_NOSIGS",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_NOVERIFY",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "PKCS7_TEXT",
         "ext_min": "4.0.6",
-        "ext_max": "",
-        "php_min": "4.0.6",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.6"
     },
     {
         "name": "X509_PURPOSE_ANY",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "X509_PURPOSE_CRL_SIGN",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "X509_PURPOSE_NS_SSL_SERVER",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "X509_PURPOSE_SMIME_ENCRYPT",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "X509_PURPOSE_SMIME_SIGN",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "X509_PURPOSE_SSL_CLIENT",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     },
     {
         "name": "X509_PURPOSE_SSL_SERVER",
         "ext_min": "4.0.4",
-        "ext_max": "",
-        "php_min": "4.0.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.4"
     }
 ]

@@ -2,19 +2,11 @@
     {
         "name": "date_create_immutable",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "date_create_immutable_from_format",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     }
 ]

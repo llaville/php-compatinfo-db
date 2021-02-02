@@ -2,10 +2,6 @@
     {
         "name": "mssql_free_statement",
         "ext_min": "4.3.2",
-        "ext_max": "",
-        "php_min": "4.3.2",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.3.2"
     }
 ]

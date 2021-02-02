@@ -4,377 +4,293 @@
         "name": "checkout",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "cat",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "ls",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "log",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "auth_set_parameter",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "auth_get_parameter",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "client_version",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "config_ensure",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "diff",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "cleanup",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "revert",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "resolved",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "commit",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "lock",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "unlock",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "add",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "status",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "update",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "update2",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "import",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "info",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "export",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "copy",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "switch",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "blame",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "delete",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "mkdir",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "move",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "proplist",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "propget",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "propset",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "prop_delete",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "revprop_get",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "revprop_set",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "revprop_delete",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_create",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_recover",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_hotcopy",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_open",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_fs",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_fs_begin_txn_for_commit",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "class_name": "Svn",
         "name": "repos_fs_commit_txn",
         "static": true,
         "ext_min": "1.0.3",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     }
 ]

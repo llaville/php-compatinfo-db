@@ -2,113 +2,71 @@
     {
         "name": "PHP_EOL",
         "ext_min": "4.3.10",
-        "ext_max": "",
-        "php_min": "4.3.10",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.10"
     },
     {
         "name": "PHP_PREFIX",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "PHP_SHLIB_SUFFIX",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "STDERR",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "STDIN",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "STDOUT",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "UPLOAD_ERR_FORM_SIZE",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "UPLOAD_ERR_INI_SIZE",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "UPLOAD_ERR_NO_FILE",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "UPLOAD_ERR_NO_TMP_DIR",
         "ext_min": "4.3.10",
-        "ext_max": "",
-        "php_min": "4.3.10",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.10"
     },
     {
         "name": "UPLOAD_ERR_OK",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "UPLOAD_ERR_PARTIAL",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "__CLASS__",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "__FUNCTION__",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     }
 ]

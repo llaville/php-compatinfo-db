@@ -2,33 +2,21 @@
     {
         "name": "OPENSSL_ALGO_MD2",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "OPENSSL_ALGO_MD4",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "OPENSSL_ALGO_MD5",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "OPENSSL_ALGO_SHA1",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     }
 ]

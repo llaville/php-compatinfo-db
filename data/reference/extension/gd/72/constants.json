@@ -2,17 +2,11 @@
     {
         "name": "IMG_BMP",
         "ext_min": "7.2.0alpha1",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     },
     {
         "name": "IMG_EFFECT_MULTIPLY",
         "ext_min": "7.2.0alpha1",
-        "ext_max": "",
-        "php_min": "7.2.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0alpha1"
     }
 ]

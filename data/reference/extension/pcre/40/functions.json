@@ -2,64 +2,38 @@
     {
         "name": "preg_grep",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "preg_match",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "preg_match_all",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "preg_quote",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "preg_replace",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "4.0.0, 4.0.0, 4.0.0, 4.0.1, 5.1.0",
-        "php_excludes": ""
+        "parameters": "4.0.0, 4.0.0, 4.0.0, 4.0.1, 5.1.0"
     },
     {
         "name": "preg_replace_callback",
         "ext_min": "4.0.5",
-        "ext_max": "",
         "php_min": "4.0.5",
-        "php_max": "",
-        "parameters": "4.0.5, 4.0.5, 4.0.5, 4.0.5, 5.1.0",
-        "php_excludes": ""
+        "parameters": "4.0.5, 4.0.5, 4.0.5, 4.0.5, 5.1.0"
     },
     {
         "name": "preg_split",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

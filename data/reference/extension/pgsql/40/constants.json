@@ -2,329 +2,206 @@
     {
         "name": "PGSQL_ASSOC",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_BAD_RESPONSE",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_BOTH",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_COMMAND_OK",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_CONNECTION_BAD",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_CONNECTION_OK",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_CONNECT_FORCE_NEW",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_CONV_FORCE_NULL",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_CONV_IGNORE_DEFAULT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_CONV_IGNORE_NOT_NULL",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_COPY_IN",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_COPY_OUT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_CONTEXT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_INTERNAL_POSITION",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_INTERNAL_QUERY",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_MESSAGE_DETAIL",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_MESSAGE_HINT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_MESSAGE_PRIMARY",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_SEVERITY",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_SOURCE_FILE",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_SOURCE_FUNCTION",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_SOURCE_LINE",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_SQLSTATE",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DIAG_STATEMENT_POSITION",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DML_ASYNC",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DML_EXEC",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DML_NO_CONV",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_DML_STRING",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_EMPTY_QUERY",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_ERRORS_DEFAULT",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_ERRORS_TERSE",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_ERRORS_VERBOSE",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_FATAL_ERROR",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_NONFATAL_ERROR",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_NUM",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_SEEK_CUR",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_SEEK_END",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_SEEK_SET",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_STATUS_LONG",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_STATUS_STRING",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "PGSQL_TUPLES_OK",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     }
 ]

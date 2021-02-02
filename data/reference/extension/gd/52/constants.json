@@ -2,41 +2,26 @@
     {
         "name": "GD_EXTRA_VERSION",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "GD_MAJOR_VERSION",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "GD_MINOR_VERSION",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "GD_RELEASE_VERSION",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     },
     {
         "name": "GD_VERSION",
         "ext_min": "5.2.4",
-        "ext_max": "",
-        "php_min": "5.2.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.4"
     }
 ]

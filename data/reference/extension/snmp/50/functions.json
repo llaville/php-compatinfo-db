@@ -2,37 +2,21 @@
     {
         "name": "snmp2_getnext",
         "ext_min": "5.0.4",
-        "ext_max": "",
-        "php_min": "5.0.4",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.4"
     },
     {
         "name": "snmp3_getnext",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "snmp_read_mib",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "snmpgetnext",
         "ext_min": "5.0.0",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.0.0"
     }
 ]

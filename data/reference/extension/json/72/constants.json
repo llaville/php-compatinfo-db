@@ -2,17 +2,11 @@
     {
         "name": "JSON_INVALID_UTF8_IGNORE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     },
     {
         "name": "JSON_INVALID_UTF8_SUBSTITUTE",
         "ext_min": "7.2.0beta1",
-        "ext_max": "",
-        "php_min": "7.2.0beta1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.2.0beta1"
     }
 ]

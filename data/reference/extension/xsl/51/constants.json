@@ -2,33 +2,21 @@
     {
         "name": "LIBEXSLT_DOTTED_VERSION",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.2"
     },
     {
         "name": "LIBEXSLT_VERSION",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.2"
     },
     {
         "name": "LIBXSLT_DOTTED_VERSION",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.2"
     },
     {
         "name": "LIBXSLT_VERSION",
         "ext_min": "5.1.2",
-        "ext_max": "",
-        "php_min": "5.1.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.1.2"
     }
 ]

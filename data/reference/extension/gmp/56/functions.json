@@ -2,55 +2,31 @@
     {
         "name": "gmp_export",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     },
     {
         "name": "gmp_import",
         "ext_min": "5.6.1RC1",
-        "ext_max": "",
-        "php_min": "5.6.1RC1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.1RC1"
     },
     {
         "name": "gmp_random_bits",
         "ext_min": "5.6.3RC1",
-        "ext_max": "",
-        "php_min": "5.6.3RC1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.3RC1"
     },
     {
         "name": "gmp_random_range",
         "ext_min": "5.6.3RC1",
-        "ext_max": "",
-        "php_min": "5.6.3RC1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.3RC1"
     },
     {
         "name": "gmp_root",
         "ext_min": "5.6.0alpha1",
-        "ext_max": "",
-        "php_min": "5.6.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0alpha1"
     },
     {
         "name": "gmp_rootrem",
         "ext_min": "5.6.0alpha1",
-        "ext_max": "",
-        "php_min": "5.6.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0alpha1"
     }
 ]

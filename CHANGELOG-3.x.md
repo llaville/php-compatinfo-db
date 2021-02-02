@@ -10,6 +10,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - new repositories for easy access of single elements (class, interface, method, function, constant)
 
+### Changed
+
+- DB optimization: removed all empty (blank) properties by NULL value
+
 ### Fixed
 
 Because Doctrine ORM v2 has following issue

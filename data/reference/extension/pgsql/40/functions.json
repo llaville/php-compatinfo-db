@@ -2,184 +2,102 @@
     {
         "name": "pg_client_encoding",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.3"
     },
     {
         "name": "pg_clientencoding",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.3"
     },
     {
         "name": "pg_close",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_connect",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_dbname",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_end_copy",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.3"
     },
     {
         "name": "pg_fetch_array",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_fetch_object",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_fetch_row",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_host",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_last_notice",
         "ext_min": "4.0.6",
-        "ext_max": "",
         "php_min": "4.0.6",
-        "php_max": "",
-        "parameters": "4.0.6, 7.1.0alpha1",
-        "php_excludes": ""
+        "parameters": "4.0.6, 7.1.0alpha1"
     },
     {
         "name": "pg_options",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_pconnect",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
-
     {
         "name": "pg_port",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
-
     {
         "name": "pg_put_line",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.3"
     },
     {
         "name": "pg_set_client_encoding",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.3"
     },
-
     {
         "name": "pg_setclientencoding",
         "ext_min": "4.0.3",
-        "ext_max": "",
-        "php_min": "4.0.3",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.3"
     },
     {
         "name": "pg_trace",
         "ext_min": "4.0.1",
-        "ext_max": "",
-        "php_min": "4.0.1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.1"
     },
     {
         "name": "pg_tty",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "pg_untrace",
         "ext_min": "4.0.1",
-        "ext_max": "",
-        "php_min": "4.0.1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.0.1"
     }
 ]

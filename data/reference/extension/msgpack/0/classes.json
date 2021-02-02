@@ -2,15 +2,11 @@
     {
         "name": "MessagePack",
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     },
     {
         "name": "MessagePackUnpacker",
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "5.0.0",
-        "php_max": ""
+        "php_min": "5.0.0"
     }
 ]

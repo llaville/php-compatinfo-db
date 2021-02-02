@@ -2,41 +2,26 @@
     {
         "name": "MB_CASE_FOLD",
         "ext_min": "7.3.0alpha1",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "MB_CASE_UPPER_SIMPLE",
         "ext_min": "7.3.0alpha1",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "MB_CASE_LOWER_SIMPLE",
         "ext_min": "7.3.0alpha1",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "MB_CASE_TITLE_SIMPLE",
         "ext_min": "7.3.0alpha1",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     },
     {
         "name": "MB_CASE_FOLD_SIMPLE",
         "ext_min": "7.3.0alpha1",
-        "ext_max": "",
-        "php_min": "7.3.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.3.0alpha1"
     }
 ]

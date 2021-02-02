@@ -4,251 +4,195 @@
         "name": "__construct",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "body",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "cleanRepair",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "diagnose",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "getConfig",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "getHtmlVer",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "getOpt",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "getRelease",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "getStatus",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "head",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "html",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "isXhtml",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "isXml",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "parseFile",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "parseString",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "repairFile",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "repairString",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "root",
         "static": false,
         "ext_min": "0.5.2",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "class_name": "tidyNode",
         "name": "getParent",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "hasChildren",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "hasSiblings",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "isAsp",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "isComment",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "isHtml",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "isJste",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "isPhp",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidyNode",
         "name": "isText",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.0.1",
-        "php_max": ""
+        "php_min": "5.0.1"
     },
     {
         "class_name": "tidy",
         "name": "getOptDoc",
         "static": false,
         "ext_min": "0.7.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

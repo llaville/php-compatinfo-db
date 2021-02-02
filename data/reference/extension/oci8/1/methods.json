@@ -4,7 +4,6 @@
         "name": "append",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -13,7 +12,6 @@
         "name": "assign",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -22,7 +20,6 @@
         "name": "assignelem",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -31,7 +28,6 @@
         "name": "free",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -40,7 +36,6 @@
         "name": "getElem",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -49,7 +44,6 @@
         "name": "max",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -58,7 +52,6 @@
         "name": "size",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -67,7 +60,6 @@
         "name": "trim",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -76,7 +68,6 @@
         "name": "append",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -85,7 +76,6 @@
         "name": "close",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -94,7 +84,6 @@
         "name": "eof",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -103,7 +92,6 @@
         "name": "erase",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -112,7 +100,6 @@
         "name": "export",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -121,7 +108,6 @@
         "name": "flush",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -130,7 +116,6 @@
         "name": "free",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -139,7 +124,6 @@
         "name": "getbuffering",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -148,7 +132,6 @@
         "name": "import",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -157,7 +140,6 @@
         "name": "load",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -166,7 +148,6 @@
         "name": "read",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -175,7 +156,6 @@
         "name": "rewind",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -184,7 +164,6 @@
         "name": "save",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -193,7 +172,6 @@
         "name": "savefile",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -202,7 +180,6 @@
         "name": "seek",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -211,7 +188,6 @@
         "name": "setbuffering",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -220,7 +196,6 @@
         "name": "size",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -229,7 +204,6 @@
         "name": "tell",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -238,7 +212,6 @@
         "name": "truncate",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -247,7 +220,6 @@
         "name": "write",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -256,7 +228,6 @@
         "name": "writetemporary",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     },
@@ -265,7 +236,6 @@
         "name": "writetofile",
         "static": "false",
         "ext_min": "1.0",
-        "ext_max": "",
         "php_min": "4.3.0",
         "php_max": "7.4.14"
     }

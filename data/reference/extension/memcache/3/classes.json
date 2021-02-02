@@ -2,8 +2,6 @@
     {
         "name": "MemcachePool",
         "ext_min": "3.0.0",
-        "ext_max": "",
-        "php_min": "4.3.11",
-        "php_max": ""
+        "php_min": "4.3.11"
     }
 ]

@@ -2,33 +2,21 @@
     {
         "name": "T_CALLABLE",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "T_INSTEADOF",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "T_TRAIT",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "T_TRAIT_C",
         "ext_min": "5.4.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.0"
     }
 ]

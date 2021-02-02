@@ -2,33 +2,21 @@
     {
         "name": "YAC_SERIALIZER_PHP",
         "ext_min": "2.2.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "YAC_SERIALIZER_MSGPACK",
         "ext_min": "2.2.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "YAC_SERIALIZER_IGBINARY",
         "ext_min": "2.2.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "YAC_SERIALIZER_JSON",
         "ext_min": "2.2.0",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0"
     }
 ]

@@ -2,10 +2,6 @@
     {
         "name": "preg_last_error",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

@@ -2,10 +2,7 @@
     {
         "name": "debug_backtrace",
         "ext_min": "4.3.0",
-        "ext_max": "",
         "php_min": "4.3.0",
-        "php_max": "",
-        "parameters": "4.3.0, 5.4.0",
-        "php_excludes": ""
+        "parameters": "4.3.0, 5.4.0"
     }
 ]

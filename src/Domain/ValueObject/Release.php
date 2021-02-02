@@ -21,9 +21,9 @@ final class Release
         DateTimeImmutable $date,
         string $state,
         string $extMin,
-        string $extMax,
+        ?string $extMax,
         string $phpMin,
-        string $phpMax
+        ?string $phpMax
     ) {
         $this->version = $version;
         $this->date = $date;

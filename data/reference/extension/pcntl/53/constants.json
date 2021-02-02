@@ -2,546 +2,342 @@
     {
         "name": "BUS_ADRALN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "BUS_ADRERR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "BUS_OBJERR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "CLD_CONTINUED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "CLD_DUMPED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "CLD_EXITED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "CLD_KILLED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "CLD_STOPPED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "CLD_TRAPPED",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_FLTDIV",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_FLTINV",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_FLTOVF",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_FLTRES",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_FLTSUB",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_FLTUND",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_INTDIV",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "FPE_INTOVF",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_BADSTK",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_COPROC",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_ILLADR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_ILLOPC",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_ILLOPN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_ILLTRP",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_PRVOPC",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "ILL_PRVREG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PCNTL_E2BIG",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EACCES",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EAGAIN",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ECHILD",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EFAULT",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EINTR",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EINVAL",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EIO",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EISDIR",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ELIBBAD",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ELOOP",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EMFILE",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ENAMETOOLONG",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ENFILE",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ENOENT",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ENOEXEC",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ENOMEM",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ENOTDIR",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_EPERM",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ESRCH",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "PCNTL_ETXTBSY",
         "ext_min": "5.3.4",
-        "ext_max": "",
-        "php_min": "5.3.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.4"
     },
     {
         "name": "POLL_ERR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "POLL_HUP",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "POLL_IN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "POLL_MSG",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "POLL_OUT",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "POLL_PRI",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SEGV_ACCERR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SEGV_MAPERR",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SIG_BLOCK",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SIG_SETMASK",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SIG_UNBLOCK",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_ASYNCIO",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_KERNEL",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_MESGQ",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_NOINFO",
         "ext_min": "5.3.0",
-        "ext_max": "",
         "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": "",
         "optional": true
     },
     {
         "name": "SI_QUEUE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_SIGIO",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_TIMER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_TKILL",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "SI_USER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "TRAP_BRKPT",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "TRAP_TRACE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

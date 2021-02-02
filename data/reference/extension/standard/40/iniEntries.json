@@ -2,56 +2,42 @@
     {
         "name": "assert.active",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "assert.bail",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "assert.callback",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "assert.quiet_eval",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
         "php_max": "7.4.14"
     },
     {
         "name": "assert.warning",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "auto_detect_line_endings",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "default_socket_timeout",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "safe_mode_allowed_env_vars",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
         "deprecated": "5.3.0"
@@ -59,7 +45,6 @@
     {
         "name": "safe_mode_protected_env_vars",
         "ext_min": "4.0.0",
-        "ext_max": "",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
         "deprecated": "5.3.0"
@@ -67,15 +52,11 @@
     {
         "name": "url_rewriter.tags",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     },
     {
         "name": "user_agent",
         "ext_min": "4.0.0",
-        "ext_max": "",
-        "php_min": "4.0.0",
-        "php_max": ""
+        "php_min": "4.0.0"
     }
 ]

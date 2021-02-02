@@ -2,17 +2,11 @@
     {
         "name": "PGSQL_LIBPQ_VERSION",
         "ext_min": "5.4.4",
-        "ext_max": "",
-        "php_min": "5.4.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.4"
     },
     {
         "name": "PGSQL_LIBPQ_VERSION_STR",
         "ext_min": "5.4.4",
-        "ext_max": "",
-        "php_min": "5.4.4",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.4.4"
     }
 ]

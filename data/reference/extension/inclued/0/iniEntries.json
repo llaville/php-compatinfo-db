@@ -2,22 +2,16 @@
     {
         "name": "inclued.dumpdir",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "inclued.enabled",
         "ext_min": "0.1.0",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "inclued.random_sampling",
         "ext_min": "0.1.2",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     }
 ]

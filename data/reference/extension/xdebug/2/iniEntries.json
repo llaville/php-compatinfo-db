@@ -2,79 +2,58 @@
     {
         "name": "xdebug.cli_color",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.collect_assignments",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.collect_includes",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.collect_return",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.collect_vars",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.coverage_enable",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.dump_globals",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.extended_info",
         "ext_min": "2.0.0beta1",
         "ext_max": "2.8.0alpha1",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.file_link_format",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.idekey",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.overload_var_dump",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.profiler_aggregate",
@@ -86,51 +65,37 @@
     {
         "name": "xdebug.profiler_append",
         "ext_min": "2.0.0beta4",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.profiler_enable",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.profiler_enable_trigger",
         "ext_min": "2.0.0beta3",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.profiler_output_dir",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.profiler_output_name",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.remote_autostart",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.remote_connect_back",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.remote_cookie_expire_time",
@@ -142,190 +107,137 @@
     {
         "name": "xdebug.remote_log",
         "ext_min": "2.0.0beta6",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.remote_log_level",
         "ext_min": "2.8.0alpha1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "xdebug.scream",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.show_exception_trace",
         "ext_min": "2.0.0beta6",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.show_local_vars",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.show_mem_delta",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.trace_enable_trigger",
         "ext_min": "2.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.1.0",
-        "php_max": ""
+        "php_min": "5.1.0"
     },
     {
         "name": "xdebug.trace_format",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.trace_options",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.trace_output_dir",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.trace_output_name",
         "ext_min": "2.0.0beta1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.var_display_max_children",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.var_display_max_data",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.var_display_max_depth",
         "ext_min": "2.0.0RC1",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "xdebug.trace_enable_trigger_value",
         "ext_min": "2.3.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.force_display_errors",
         "ext_min": "2.3.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.force_error_reporting",
         "ext_min": "2.3.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.halt_level",
         "ext_min": "2.3.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.max_stack_frames",
         "ext_min": "2.3.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.profiler_enable_trigger_value",
         "ext_min": "2.3.0",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.show_error_trace",
         "ext_min": "2.4.0beta1",
-        "ext_max": "",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.remote_addr_header",
         "ext_min": "2.4.0beta1",
         "ext_max": "3.0.0RC1",
-        "php_min": "5.4.0",
-        "php_max": ""
+        "php_min": "5.4.0"
     },
     {
         "name": "xdebug.filename_format",
         "ext_min": "2.6.0alpha1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "xdebug.remote_timeout",
         "ext_min": "2.6.0alpha1",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "xdebug.gc_stats_enable",
         "ext_min": "2.6.0RC2",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "xdebug.gc_stats_output_dir",
         "ext_min": "2.6.0RC2",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     },
     {
         "name": "xdebug.gc_stats_output_name",
         "ext_min": "2.6.0RC2",
-        "ext_max": "",
-        "php_min": "7.0.0",
-        "php_max": ""
+        "php_min": "7.0.0"
     }
 ]

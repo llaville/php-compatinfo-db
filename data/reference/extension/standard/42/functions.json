@@ -2,163 +2,93 @@
     {
         "name": "array_change_key_case",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "array_chunk",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "array_fill",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "debug_zval_dump",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "floatval",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "fmod",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "ftok",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "ini_get_all",
         "ext_min": "4.2.0",
-        "ext_max": "",
         "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "4.2.0, 5.3.0",
-        "php_excludes": ""
+        "parameters": "4.2.0, 5.3.0"
     },
     {
         "name": "is_finite",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "is_infinite",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "is_nan",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "md5_file",
         "ext_min": "4.2.0",
-        "ext_max": "",
         "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "4.2.0, 5.0.0",
-        "php_excludes": ""
+        "parameters": "4.2.0, 5.0.0"
     },
     {
         "name": "ob_clean",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "ob_flush",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "ob_get_level",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "ob_get_status",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "str_rot13",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "var_export",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     }
 ]

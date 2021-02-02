@@ -2,19 +2,11 @@
     {
         "name": "socket_clear_error",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "socket_set_block",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     }
 ]

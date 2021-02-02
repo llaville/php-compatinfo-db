@@ -2,41 +2,26 @@
     {
         "name": "OPENSSL_CIPHER_3DES",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "OPENSSL_CIPHER_DES",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "OPENSSL_CIPHER_RC2_128",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "OPENSSL_CIPHER_RC2_40",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     },
     {
         "name": "OPENSSL_CIPHER_RC2_64",
         "ext_min": "4.3.0",
-        "ext_max": "",
-        "php_min": "4.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.3.0"
     }
 ]

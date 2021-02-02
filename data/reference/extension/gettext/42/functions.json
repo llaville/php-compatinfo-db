@@ -2,37 +2,21 @@
     {
         "name": "bind_textdomain_codeset",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "dcngettext",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "dngettext",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     },
     {
         "name": "ngettext",
         "ext_min": "4.2.0",
-        "ext_max": "",
-        "php_min": "4.2.0",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "4.2.0"
     }
 ]

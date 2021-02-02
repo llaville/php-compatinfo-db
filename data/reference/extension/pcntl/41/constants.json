@@ -2,321 +2,201 @@
     {
         "name": "SIGABRT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGALRM",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGBABY",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGBUS",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGCHLD",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGCLD",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGCONT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGFPE",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGHUP",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGILL",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGINT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGIO",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGIOT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGKILL",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGPIPE",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGPOLL",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGPROF",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGPWR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGQUIT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGSEGV",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGSTKFLT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGSTOP",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGSYS",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGTERM",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGTRAP",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGTSTP",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGTTIN",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGTTOU",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGURG",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGUSR1",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGUSR2",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGVTALRM",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGWINCH",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGXCPU",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIGXFSZ",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIG_DFL",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIG_ERR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "SIG_IGN",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "WNOHANG",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "WUNTRACED",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     }
 ]

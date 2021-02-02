@@ -2,65 +2,41 @@
     {
         "name": "MYSQLI_SERVER_PUBLIC_KEY",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_COR_AND_CHAIN",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_COR_AND_NO_CHAIN",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_COR_NO_RELEASE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_COR_RELEASE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_START_READ_ONLY",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_START_READ_WRITE",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "MYSQLI_TRANS_START_WITH_CONSISTENT_SNAPSHOT",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.5.0"
     }
 ]

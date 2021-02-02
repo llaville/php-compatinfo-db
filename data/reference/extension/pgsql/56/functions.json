@@ -2,46 +2,26 @@
     {
         "name": "pg_connect_poll",
         "ext_min": "5.6.0beta1",
-        "ext_max": "",
-        "php_min": "5.6.0beta1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0beta1"
     },
     {
         "name": "pg_consume_input",
         "ext_min": "5.6.0beta1",
-        "ext_max": "",
-        "php_min": "5.6.0beta1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0beta1"
     },
     {
         "name": "pg_flush",
         "ext_min": "5.6.0beta1",
-        "ext_max": "",
-        "php_min": "5.6.0beta1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0beta1"
     },
     {
         "name": "pg_lo_truncate",
         "ext_min": "5.6.0alpha1",
-        "ext_max": "",
-        "php_min": "5.6.0alpha1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0alpha1"
     },
     {
         "name": "pg_socket",
         "ext_min": "5.6.0beta1",
-        "ext_max": "",
-        "php_min": "5.6.0beta1",
-        "php_max": "",
-        "parameters": "",
-        "php_excludes": ""
+        "php_min": "5.6.0beta1"
     }
 ]

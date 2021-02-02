@@ -2,441 +2,276 @@
     {
         "name": "ABDAY_1",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABDAY_2",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABDAY_3",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABDAY_4",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABDAY_5",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABDAY_6",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABDAY_7",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_1",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_10",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_11",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_12",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_2",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_3",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_4",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_5",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_6",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_7",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_8",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ABMON_9",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ALT_DIGITS",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "AM_STR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "CODESET",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "CRNCYSTR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_1",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_2",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_3",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_4",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_5",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_6",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "DAY_7",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "D_FMT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "D_T_FMT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ERA",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ERA_D_FMT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ERA_D_T_FMT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "ERA_T_FMT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_1",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_10",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_11",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_12",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_2",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_3",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_4",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_5",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_6",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_7",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_8",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "MON_9",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "NOEXPR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "PM_STR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "RADIXCHAR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "THOUSEP",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "T_FMT",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "T_FMT_AMPM",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     },
     {
         "name": "YESEXPR",
         "ext_min": "4.1.0",
-        "ext_max": "",
-        "php_min": "4.1.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "4.1.0"
     }
 ]

@@ -2,15 +2,11 @@
     {
         "name": "OCICollection",
         "ext_min": "3.0.0",
-        "ext_max": "",
-        "php_min": "8.0.0alpha3",
-        "php_max": ""
+        "php_min": "8.0.0alpha3"
     },
     {
         "name": "OCILob",
         "ext_min": "3.0.0",
-        "ext_max": "",
-        "php_min": "8.0.0alpha3",
-        "php_max": ""
+        "php_min": "8.0.0alpha3"
     }
 ]

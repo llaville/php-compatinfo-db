@@ -2,71 +2,51 @@
     {
         "name": "IntlBreakIterator",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlCalendar",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlCodePointBreakIterator",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlGregorianCalendar",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlIterator",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlPartsIterator",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlRuleBasedBreakIterator",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlTimeZone",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "UConverter",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     },
     {
         "name": "IntlException",
         "ext_min": "5.5.0",
-        "ext_max": "",
-        "php_min": "5.5.0",
-        "php_max": ""
+        "php_min": "5.5.0"
     }
 ]

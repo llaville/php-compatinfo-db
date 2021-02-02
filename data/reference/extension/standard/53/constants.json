@@ -2,169 +2,106 @@
     {
         "name": "CRYPT_SHA256",
         "ext_min": "5.3.2",
-        "ext_max": "",
-        "php_min": "5.3.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.2"
     },
     {
         "name": "CRYPT_SHA512",
         "ext_min": "5.3.2",
-        "ext_max": "",
-        "php_min": "5.3.2",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.2"
     },
     {
         "name": "ENT_IGNORE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "IMAGETYPE_COUNT",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "IMAGETYPE_ICO",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "IMAGETYPE_UNKNOWN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "INI_SCANNER_NORMAL",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "INI_SCANNER_RAW",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_ROUND_HALF_DOWN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_ROUND_HALF_EVEN",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_ROUND_HALF_ODD",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "PHP_ROUND_HALF_UP",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_BUFFER_FULL",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_BUFFER_LINE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_BUFFER_NONE",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_CAST_AS_STREAM",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_CAST_FOR_SELECT",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_OPTION_BLOCKING",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_OPTION_READ_BUFFER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_OPTION_READ_TIMEOUT",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     },
     {
         "name": "STREAM_OPTION_WRITE_BUFFER",
         "ext_min": "5.3.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.3.0"
     }
 ]

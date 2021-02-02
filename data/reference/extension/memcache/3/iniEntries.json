@@ -2,36 +2,26 @@
     {
         "name": "memcache.compress_threshold",
         "ext_min": "3.0.3",
-        "ext_max": "",
-        "php_min": "4.3.11",
-        "php_max": ""
+        "php_min": "4.3.11"
     },
     {
         "name": "memcache.lock_timeout",
         "ext_min": "3.0.4",
-        "ext_max": "",
-        "php_min": "4.3.11",
-        "php_max": ""
+        "php_min": "4.3.11"
     },
     {
         "name": "memcache.protocol",
         "ext_min": "3.0.0",
-        "ext_max": "",
-        "php_min": "4.3.11",
-        "php_max": ""
+        "php_min": "4.3.11"
     },
     {
         "name": "memcache.redundancy",
         "ext_min": "3.0.0",
-        "ext_max": "",
-        "php_min": "4.3.11",
-        "php_max": ""
+        "php_min": "4.3.11"
     },
     {
         "name": "memcache.session_redundancy",
         "ext_min": "3.0.0",
-        "ext_max": "",
-        "php_min": "4.3.11",
-        "php_max": ""
+        "php_min": "4.3.11"
     }
 ]

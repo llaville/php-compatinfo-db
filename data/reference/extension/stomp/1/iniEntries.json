@@ -2,15 +2,11 @@
     {
         "name": "stomp.default_password",
         "ext_min": "1.0.6",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     },
     {
         "name": "stomp.default_username",
         "ext_min": "1.0.6",
-        "ext_max": "",
-        "php_min": "5.2.2",
-        "php_max": ""
+        "php_min": "5.2.2"
     }
 ]

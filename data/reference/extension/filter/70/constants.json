@@ -2,17 +2,11 @@
     {
         "name": "FILTER_VALIDATE_DOMAIN",
         "ext_min": "7.0.0",
-        "ext_max": "",
-        "php_min": "7.0.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0alpha1"
     },
     {
         "name": "FILTER_FLAG_HOSTNAME",
         "ext_min": "7.0.0",
-        "ext_max": "",
-        "php_min": "7.0.0alpha1",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "7.0.0alpha1"
     }
 ]

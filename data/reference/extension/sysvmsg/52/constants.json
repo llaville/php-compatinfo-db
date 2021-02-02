@@ -2,17 +2,11 @@
     {
         "name": "MSG_EAGAIN",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "MSG_ENOMSG",
         "ext_min": "5.2.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

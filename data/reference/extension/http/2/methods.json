@@ -4,314 +4,244 @@
         "name": "__construct",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getCookies",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setCookies",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "addCookies",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getCookie",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setCookie",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "addCookie",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getExtras",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setExtras",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "addExtras",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getExtra",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setExtra",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "addExtra",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getDomain",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setDomain",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getPath",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setPath",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getExpires",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setExpires",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getMaxAge",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setMaxAge",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "getFlags",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "setFlags",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "toArray",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "toString",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Cookie",
         "name": "__toString",
         "static": false,
         "ext_min": "2.0.0",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Env\\Request",
         "name": "getCookie",
         "static": true,
         "ext_min": "2.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Env\\Response",
         "name": "setCookie",
         "static": true,
         "ext_min": "2.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Header\\Parser",
         "name": "getState",
         "static": true,
         "ext_min": "2.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Header\\Parser",
         "name": "parse",
         "static": true,
         "ext_min": "2.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Header\\Parser",
         "name": "stream",
         "static": true,
         "ext_min": "2.3.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Message\\Parser",
         "name": "getState",
         "static": true,
         "ext_min": "2.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Message\\Parser",
         "name": "parse",
         "static": true,
         "ext_min": "2.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Message\\Parser",
         "name": "stream",
         "static": true,
         "ext_min": "2.2.0RC1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Client",
         "name": "setDebug",
         "static": true,
         "ext_min": "2.6.0beta1",
-        "ext_max": "",
-        "php_min": "5.3.0",
-        "php_max": ""
+        "php_min": "5.3.0"
     }
 ]

@@ -2,25 +2,16 @@
     {
         "name": "XHPROF_FLAGS_CPU",
         "ext_min": "0.9.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "XHPROF_FLAGS_MEMORY",
         "ext_min": "0.9.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     },
     {
         "name": "XHPROF_FLAGS_NO_BUILTINS",
         "ext_min": "0.9.0",
-        "ext_max": "",
-        "php_min": "5.2.0",
-        "php_max": "",
-        "php_excludes": ""
+        "php_min": "5.2.0"
     }
 ]

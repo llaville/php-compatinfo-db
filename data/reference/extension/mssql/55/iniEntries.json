@@ -2,8 +2,6 @@
     {
         "name": "mssql.compatibility_mode",
         "ext_min": "5.5.2",
-        "ext_max": "",
-        "php_min": "5.5.2",
-        "php_max": ""
+        "php_min": "5.5.2"
     }
 ]
