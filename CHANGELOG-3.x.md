@@ -13,6 +13,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - DB optimization: removed all empty (blank) properties by NULL value
+- Redis reference updated to version 5.3.3 (stable)
 
 ### Fixed
 
