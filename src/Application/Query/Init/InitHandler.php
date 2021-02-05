@@ -33,7 +33,6 @@ use function dirname;
 use function implode;
 use function json_last_error;
 use function sprintf;
-use function version_compare;
 use const DIRECTORY_SEPARATOR;
 use const JSON_ERROR_NONE;
 
@@ -1240,20 +1239,11 @@ final class InitHandler implements QueryHandlerInterface
             ),
         ];
 
-        if (version_compare(PHP_VERSION, '8.0.0', 'lt')) {
-            // when bundled with PHP < 8
-            yield 'xmlrpc' => [
-                'functions' => ['41'],
-                'releases'  => ['41', '43'],
-            ];
-        } else {
-            // as pecl extension for PHP 8
-            yield 'xmlrpc' => [
-                'classes'   => ['1'],
-                'functions' => ['1'],
-                'releases'  => ['1'],
-            ];
-        }
+        yield 'xmlrpc' => [
+            'classes'   => ['1'],
+            'functions' => ['41', '1'],
+            'releases'  => ['41', '43', '1'],
+        ];
 
         yield 'xmlwriter' => [
             'classes'   => ['51'],

@@ -8,6 +8,8 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension a
 use Doctrine\Common\Collections\ArrayCollection;
 
 use function array_map;
+use function version_compare;
+use const PHP_VERSION;
 
 /**
  * @since Release 3.0.0
@@ -97,12 +99,18 @@ final class ExtensionHydrator implements HydratorInterface
         $iniEntries = [];
         $hydrator = new IniEntryHydrator();
         foreach ($entity->getIniEntries() as $iniEntity) {
+            if ($this->shouldSkip($iniEntity)) {
+                continue;
+            }
             $iniEntries[$iniEntity->getName()] = $hydrator->toDomain($iniEntity);
         }
 
         $constants = [];
         $hydrator = new ConstantHydrator();
         foreach ($entity->getConstants() as $constantEntity) {
+            if ($this->shouldSkip($constantEntity)) {
+                continue;
+            }
             $declaringClass = $constantEntity->getDeclaringClass();
             if (empty($declaringClass)) {
                 $constants[$constantEntity->getName()] = $hydrator->toDomain($constantEntity);
@@ -114,6 +122,9 @@ final class ExtensionHydrator implements HydratorInterface
         $functions = [];
         $hydrator = new FunctionHydrator();
         foreach ($entity->getFunctions() as $functionEntity) {
+            if ($this->shouldSkip($functionEntity)) {
+                continue;
+            }
             $declaringClass = $functionEntity->getDeclaringClass();
             if (empty($declaringClass)) {
                 // function
@@ -127,6 +138,9 @@ final class ExtensionHydrator implements HydratorInterface
         $classes = [];
         $hydrator = new ClassHydrator();
         foreach ($entity->getClasses() as $classEntity) {
+            if ($this->shouldSkip($classEntity)) {
+                continue;
+            }
             $classes[$classEntity->getName()] = $hydrator->toDomain($classEntity);
         }
 
@@ -153,5 +167,20 @@ final class ExtensionHydrator implements HydratorInterface
             $dependencies,
             $releases
         );
+    }
+
+    /**
+     * When there are multiple copy of same element, return only item that is supported by current platform.
+     *
+     * See Xmlrpc extension example that was bundled before PHP 8.0, and now is an external pecl extension.
+     * @see https://github.com/llaville/php-compatinfo-db/issues/64
+     *
+     *
+     * @param object $object
+     * @return bool
+     */
+    private function shouldSkip(object $object): bool
+    {
+        return version_compare($object->getPhpMin(), PHP_VERSION, 'gt');
     }
 }
