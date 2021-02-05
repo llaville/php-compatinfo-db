@@ -60,16 +60,17 @@
         "setup-database": [
             "mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite",
             "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite",
-            "vendor/bin/doctrine orm:schema-tool:create",
-            "vendor/bin/doctrine orm:generate-proxies",
-            "bin/compatinfo-db db:init"
+            "vendor/bin/doctrine orm:generate-proxies"
         ],
         "post-install-cmd": [
             "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata",
-            "@setup-database"
+            "@setup-database",
+            "vendor/bin/doctrine orm:schema-tool:create",
+            "bin/compatinfo-db db:init"
         ],
         "post-update-cmd": [
-            "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata"
+            "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata",
+            "@setup-database"
         ]
     },
     "scripts-descriptions": {
