@@ -45,7 +45,8 @@ jobs:
                 name: Checkout
                 uses: actions/checkout@v2
 
-            -   name: Setup Librairies
+            -
+                name: Setup Librairies
                 run: sudo apt-fast install libcurl4-openssl-dev -y
 
             -
@@ -59,6 +60,7 @@ jobs:
                 name: Get Composer Cache Directory
                 id: composer-cache
                 run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
             -
                 name: Cache dependencies
                 uses: actions/cache@v2
@@ -72,8 +74,21 @@ jobs:
 
             -
                 name: Install Composer dependencies
+                run: composer update --no-progress --prefer-dist --optimize-autoloader
+
+            -
+                name: Cache Database
+                id: compatinfodb-cache
+                uses: actions/cache@v2
+                with:
+                    path: ${{ steps.composer-cache.outputs.dir }}
+                    key: ${{ runner.os }}-compatinfodb
+
+            -
+                name: Build Database
+                if: ${{ steps.compatinfodb-cache.outputs.cache-hit == 'false' }}
                 run: |
-                    composer update --no-progress --prefer-dist --optimize-autoloader
+                    vendor/bin/doctrine orm:schema-tool:create
                     bin/compatinfo-db db:init
 
             -
