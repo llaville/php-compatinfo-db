@@ -5,6 +5,7 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
+use function array_map;
 
 /**
  * @Entity
@@ -40,6 +41,12 @@ class Function_
      * @var null|string
      */
     private $declaringClass;
+
+    /**
+     * @Column(name="prototype", type="string", nullable=true)
+     * @var null|string
+     */
+    private $prototype;
 
     /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="functions")
@@ -110,7 +117,7 @@ class Function_
      */
     public function getParameters(): ?array
     {
-        return $this->parameters;
+        return array_map('trim', $this->parameters);
     }
 
     /**
@@ -126,7 +133,7 @@ class Function_
      */
     public function getExcludes(): ?array
     {
-        return $this->excludes;
+        return array_map('trim', $this->excludes);
     }
 
     /**
@@ -135,6 +142,22 @@ class Function_
     public function setExcludes(?array $excludes): void
     {
         $this->excludes = $excludes;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPrototype(): ?string
+    {
+        return $this->prototype;
+    }
+
+    /**
+     * @param string|null $prototype
+     */
+    public function setPrototype(?string $prototype): void
+    {
+        $this->prototype = $prototype;
     }
 
     /**

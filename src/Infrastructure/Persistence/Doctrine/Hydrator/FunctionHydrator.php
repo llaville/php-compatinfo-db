@@ -57,6 +57,7 @@ final class FunctionHydrator implements HydratorInterface
         $object->setPhpMax($data['php_max'] ?? null);
         $object->setParameters(isset($data['parameters']) ? explode(',', $data['parameters']) : null);
         $object->setExcludes(isset($data['php_excludes']) ? explode(',', $data['php_excludes']) : null);
+        $object->setPrototype($data['prototype'] ?? null);
 
         $dependencies = new ArrayCollection(
             (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? [])

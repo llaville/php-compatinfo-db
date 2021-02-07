@@ -47,6 +47,13 @@ final class FunctionRepository implements DomainRepository
     {
         $entity = $this->repository->findOneBy(['name' => $name, 'declaringClass' => $declaringClass]);
 
+        $prototype = $entity->getPrototype();
+        if (!empty($prototype)) {
+            $function = $this->getFunctionByName($name, $prototype);
+            $entity->setPhpMax($function->getPhpMax());
+            return (new FunctionHydrator())->toDomain($entity);
+        }
+
         if (null === $entity) {
             // function does not exists
             return null;
