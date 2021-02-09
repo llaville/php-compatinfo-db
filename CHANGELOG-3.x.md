@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.2.0] - 2021-02-09
+
 ### Added
 
 - new repositories for easy access of single elements (class, interface, method, function, constant)
