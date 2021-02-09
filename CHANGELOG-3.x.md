@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - new repositories for easy access of single elements (class, interface, method, function, constant)
 - PHP 7.3.27 support
+- PHP 7.4.15 support
 
 ### Changed
 

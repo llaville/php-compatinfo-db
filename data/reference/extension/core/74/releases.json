@@ -94,5 +94,13 @@
         "rel_date": "2021-01-07",
         "rel_state": "stable",
         "php_min": "7.4.14"
+    },
+    {
+        "rel_version": "7.4.15",
+        "rel_date": "2021-02-04",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.4.15",
+        "php_max": ""
     }
 ]
