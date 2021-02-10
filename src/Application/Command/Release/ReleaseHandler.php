@@ -405,7 +405,7 @@ final class ReleaseHandler implements CommandHandlerInterface
             'OCI-Collection::assign'                => $this->latestPhpVersion['74'],
             'OCI-Collection::assignelem'            => $this->latestPhpVersion['74'],
             'OCI-Collection::free'                  => $this->latestPhpVersion['74'],
-            'OCI-Collection::getelem'               => $this->latestPhpVersion['74'],
+            'OCI-Collection::getElem'               => $this->latestPhpVersion['74'],
             'OCI-Collection::max'                   => $this->latestPhpVersion['74'],
             'OCI-Collection::size'                  => $this->latestPhpVersion['74'],
             'OCI-Collection::trim'                  => $this->latestPhpVersion['74'],

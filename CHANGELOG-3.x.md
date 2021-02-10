@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Fixed
+
+- [#66](https://github.com/llaville/php-compatinfo-db/issues/66) oci8 test failure
+
 ## [3.2.0] - 2021-02-09
 
 ### Added
