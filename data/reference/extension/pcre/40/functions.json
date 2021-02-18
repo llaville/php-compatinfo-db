@@ -29,7 +29,7 @@
         "name": "preg_replace_callback",
         "ext_min": "4.0.5",
         "php_min": "4.0.5",
-        "parameters": "4.0.5, 4.0.5, 4.0.5, 4.0.5, 5.1.0"
+        "parameters": "4.0.5, 4.0.5, 4.0.5, 4.0.5, 5.1.0, 7.4.0"
     },
     {
         "name": "preg_split",

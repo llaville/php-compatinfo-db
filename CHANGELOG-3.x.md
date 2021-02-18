@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - [#66](https://github.com/llaville/php-compatinfo-db/issues/66) oci8 test failure
+- The flags parameter of `preg_replace_callback` was added in PHP 7.4.0
 
 ## [3.2.0] - 2021-02-09
 
