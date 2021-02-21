@@ -56,25 +56,12 @@ jobs:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
 
-            -   # https://github.com/actions/cache/blob/main/examples.md#php---composer
-                name: Get Composer Cache Directory
-                id: composer-cache
-                run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-            -
-                name: Cache dependencies
-                uses: actions/cache@v2
-                with:
-                    path: ${{ steps.composer-cache.outputs.dir }}
-                    key: ${{ runner.os }}-php-${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}
-                    restore-keys: |
-                        ${{ runner.os }}-php-${{ matrix.php }}-composer-
-                        ${{ runner.os }}-php-
-                        ${{ runner.os }}-
-
             -
                 name: Install Composer dependencies
-                run: composer update --no-progress --prefer-dist --optimize-autoloader
+                uses: "ramsey/composer-install@v1"
+                with:
+                    dependency-versions: "highest"
+                    composer-options: "--prefer-dist"
 
             -
                 name: Build Database

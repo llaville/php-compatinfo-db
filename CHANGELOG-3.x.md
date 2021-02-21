@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Use the `ramsey/composer-install` action to install dependencies
+
 ### Fixed
 
 - [#66](https://github.com/llaville/php-compatinfo-db/issues/66) oci8 test failure
