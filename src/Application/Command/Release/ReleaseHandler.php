@@ -137,8 +137,8 @@ final class ReleaseHandler implements CommandHandlerInterface
 
             $key = $fileBasename == 'releases' ? 'rel_version' : 'name';
 
+            $methods = [];
             if ('methods' === $fileBasename) {
-                $methods = [];
                 foreach (array_keys($names) as $method) {
                     $parts = explode('::', $method);
                     if (!isset($methods[$parts[0]])) {
