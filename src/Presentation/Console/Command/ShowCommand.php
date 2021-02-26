@@ -74,7 +74,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $input->getOption('class-constants')
         );
 
-        /** @var Extension $extension */
+        /** @var Extension|null $extension */
         $extension = $this->queryBus->query($showQuery);
 
         $io = new Style($input, $output);
