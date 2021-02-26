@@ -128,7 +128,7 @@ final class InitHandler implements QueryHandlerInterface
 
         if ($io->isDebug()) {
             $io->section('CompatInfoDb platform(s)');
-            $io->text($platform);
+            $io->text((string) $platform);
 
             $io->section('CompatInfoDb extension(s)');
             $io->text($platform->getExtensions());
