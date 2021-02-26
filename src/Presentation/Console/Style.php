@@ -22,8 +22,6 @@ use Symfony\Component\Console\Terminal;
 
 use function array_map;
 use function array_values;
-use function func_get_arg;
-use function func_num_args;
 use function is_array;
 use function min;
 use function sprintf;
@@ -34,7 +32,7 @@ use const DIRECTORY_SEPARATOR;
 /**
  * @since 3.0.0
  */
-final class Style extends SymfonyStyle
+final class Style extends SymfonyStyle implements StyleInterface
 {
     /** @var int */
     private $lineLength;
@@ -56,32 +54,25 @@ final class Style extends SymfonyStyle
     /**
      * {@inheritDoc}
      */
-    public function text($message)
+    public function text($message, ?string $format = null)
     {
-        if (func_num_args() === 1) {
+        if (null === $format) {
             parent::text($message);
-        } else {
-            $messages = is_array($message) ? array_values($message) : [$message];
-            foreach ($messages as $message) {
-                $message = wordwrap($message, $this->lineLength);
-                $message = sprintf(
-                    '<%s>%s</>',
-                    func_get_arg(1),
-                    $message
-                );
-                $this->writeln($message);
-            }
+            return;
+        }
+        $messages = is_array($message) ? array_values($message) : [$message];
+        foreach ($messages as $message) {
+            $message = wordwrap($message, $this->lineLength);
+            $message = sprintf('<%s>%s</>', $format, $message);
+            $this->writeln($message);
         }
     }
 
     /**
      * {@inheritDoc}
      */
-    public function listing(array $elements)
+    public function listing(array $elements, array $attributes = ['type' => '*', 'style' => ''])
     {
-        if (false === $attributes = @func_get_arg(1)) {
-            $attributes = ['type' => '*', 'style' => ''];
-        }
         $type = $attributes['type'] ?? '*';
         $style = $attributes['style'] ?? '';
 
@@ -97,10 +88,9 @@ final class Style extends SymfonyStyle
     }
 
     /**
-     * @param mixed $lines
-     * @param string $format
+     * {@inheritDoc}
      */
-    public function columns($lines, string $format)
+    public function columns($lines, string $format): void
     {
         if (!is_array($lines)) {
             $lines = [$lines];
@@ -112,9 +102,7 @@ final class Style extends SymfonyStyle
     }
 
     /**
-     * @param array $headers
-     * @param array $rows
-     * @param string $style default to 'compact' rather than 'symfony-style-guide'
+     * {@inheritDoc}
      */
     public function table(array $headers, array $rows, string $style = 'compact')
     {

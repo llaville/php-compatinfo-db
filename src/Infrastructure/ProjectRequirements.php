@@ -32,7 +32,7 @@ use function version_compare;
 /**
  * @since 3.0.0
  */
-class ProjectRequirements extends RequirementCollection
+class ProjectRequirements extends RequirementCollection implements RequirementsInterface
 {
     const REQUIRED_PHP_VERSION = '7.2.0';
 
@@ -98,9 +98,7 @@ class ProjectRequirements extends RequirementCollection
     }
 
     /**
-     * Returns the PHP configuration file (php.ini) path.
-     *
-     * @return false|string php.ini file path
+     * {@inheritDoc}
      */
     public function getPhpIniPath()
     {
@@ -140,7 +138,6 @@ class ProjectRequirements extends RequirementCollection
     /**
      * @param Connection $connection
      * @return bool
-     * @throws \Doctrine\DBAL\Driver\Exception
      */
     private function checkDoctrineListTables(Connection $connection): bool
     {
@@ -162,7 +159,6 @@ class ProjectRequirements extends RequirementCollection
     /**
      * @param Connection $connection
      * @return bool
-     * @throws \Doctrine\DBAL\Driver\Exception
      */
     private function checkPlatformAvailable(Connection $connection): bool
     {

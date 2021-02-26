@@ -16,6 +16,7 @@ namespace Bartlett\CompatInfoDb\Application\Query\Diagnose;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
 use Bartlett\CompatInfoDb\Infrastructure\ProjectRequirements;
+use Bartlett\CompatInfoDb\Infrastructure\RequirementsInterface;
 
 /**
  * @since Release 2.0.0RC1
@@ -26,7 +27,7 @@ final class DiagnoseHandler implements QueryHandlerInterface
      * @param DiagnoseQuery $query
      * @return ProjectRequirements
      */
-    public function __invoke(DiagnoseQuery $query): ProjectRequirements
+    public function __invoke(DiagnoseQuery $query): RequirementsInterface
     {
         return new ProjectRequirements($query);
     }

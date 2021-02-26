@@ -128,16 +128,16 @@ final class InitHandler implements QueryHandlerInterface
 
         if ($io->isDebug()) {
             $io->section('CompatInfoDb platform(s)');
-            $io->writeln($platform);
+            $io->text($platform);
 
             $io->section('CompatInfoDb extension(s)');
-            $io->writeln($platform->getExtensions());
+            $io->text($platform->getExtensions());
         }
 
         if (count($extensions) > 0) {
             $io->section('Warnings');
-            $io->writeln('Definition not provided for following references:');
-            $io->writeln('');
+            $io->text('Definition not provided for following references:');
+            $io->text('');
             $io->listing(array_keys($extensions), ['type' => '[ ]', 'style' => 'fg=red']);
         }
 

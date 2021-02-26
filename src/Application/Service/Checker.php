@@ -14,8 +14,8 @@
 
 namespace Bartlett\CompatInfoDb\Application\Service;
 
-use Symfony\Component\Console\Style\StyleInterface;
-use Symfony\Requirements\RequirementCollection;
+use Bartlett\CompatInfoDb\Infrastructure\RequirementsInterface;
+use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 use function sprintf;
 use const PHP_VERSION;
@@ -50,9 +50,9 @@ final class Checker
     }
 
     /**
-     * @param RequirementCollection $requirements
+     * @param RequirementsInterface $requirements
      */
-    public function printDiagnostic(RequirementCollection $requirements): void
+    public function printDiagnostic(RequirementsInterface $requirements): void
     {
         $this->io->title($this->appName . ' Requirements Checker');
 

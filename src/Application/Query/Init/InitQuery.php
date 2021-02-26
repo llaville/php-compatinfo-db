@@ -15,8 +15,7 @@
 namespace Bartlett\CompatInfoDb\Application\Query\Init;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
-
-use Symfony\Component\Console\Style\StyleInterface;
+use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 /**
  * @since Release 2.0.0RC1
