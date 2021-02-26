@@ -9,14 +9,14 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ a
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\FunctionHydrator;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\Persistence\ObjectRepository;
 
 /**
  * @since Release 3.2.0
  */
 final class FunctionRepository implements DomainRepository
 {
-    /** @var EntityRepository */
+    /** @var ObjectRepository */
     private $repository;
 
     use EntityManagerTrait;

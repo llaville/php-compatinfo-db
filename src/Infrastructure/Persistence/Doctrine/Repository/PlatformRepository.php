@@ -10,7 +10,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformH
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\Persistence\ObjectRepository;
 
 use DateTimeImmutable;
 
@@ -21,7 +21,7 @@ final class PlatformRepository implements PlatformRepositoryInterface
 {
     private const PLATFORM_DESC = 'PHP Interpreter';
 
-    /** @var EntityRepository */
+    /** @var ObjectRepository */
     private $repository;
 
     use EntityManagerTrait;

@@ -11,7 +11,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformH
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\Persistence\ObjectRepository;
 
 use DateTimeImmutable;
 
@@ -22,7 +22,7 @@ final class DistributionRepository implements DomainRepository
 {
     private const DISTRIBUTION_DESC = 'CompatInfoDB';
 
-    /** @var EntityRepository */
+    /** @var ObjectRepository */
     private $repository;
 
     use EntityManagerTrait;
