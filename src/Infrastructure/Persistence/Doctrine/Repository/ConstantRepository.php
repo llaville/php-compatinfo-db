@@ -9,14 +9,14 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Constant_ a
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\ConstantHydrator;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\Persistence\ObjectRepository;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * @since Release 3.2.0
  */
 final class ConstantRepository implements DomainRepository
 {
-    /** @var ObjectRepository */
+    /** @var EntityRepository<ConstantEntity> */
     private $repository;
 
     use EntityManagerTrait;
@@ -29,6 +29,7 @@ final class ConstantRepository implements DomainRepository
 
     /**
      * {@inheritDoc}
+     * @return Constant_[]
      */
     public function getAll(): array
     {

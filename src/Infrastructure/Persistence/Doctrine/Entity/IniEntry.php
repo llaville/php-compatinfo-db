@@ -31,7 +31,7 @@ class IniEntry
 
     /**
      * @OneToMany(targetEntity=IniRelationship::class, cascade={"persist"}, mappedBy="ini")
-     * @var Collection
+     * @var Collection<int, IniRelationship>
      */
     private $relationships;
 
@@ -82,12 +82,11 @@ class IniEntry
     }
 
     /**
-     * @param Collection $dependencies
+     * @param Dependency[] $dependencies
      * @return IniEntry
      */
-    public function addDependencies(Collection $dependencies): self
+    public function addDependencies(array $dependencies): self
     {
-        /** @var Dependency $dependency */
         foreach ($dependencies as $dependency) {
             $relationship = new IniRelationship();
             $relationship->setDependency($dependency);
@@ -101,7 +100,7 @@ class IniEntry
     }
 
     /**
-     * @return array
+     * @return Dependency[]
      */
     public function getDependencies(): array
     {

@@ -5,8 +5,6 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Constant_ as Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-
 /**
  * @since Release 3.0.0
  */
@@ -52,9 +50,7 @@ final class ConstantHydrator implements HydratorInterface
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
 
-        $dependencies = new ArrayCollection(
-            (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? [])
-        );
+        $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
 
         return $object;

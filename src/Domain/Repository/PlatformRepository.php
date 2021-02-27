@@ -3,6 +3,7 @@
 namespace Bartlett\CompatInfoDb\Domain\Repository;
 
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
+use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension;
 
 use Doctrine\Common\Collections\Collection;
 
@@ -18,7 +19,7 @@ interface PlatformRepository extends RepositoryInterface
     public function getPlatformByVersion(string $version): ?Platform;
 
     /**
-     * @param Collection $collection
+     * @param Collection<int, Extension> $collection
      * @param string $phpVersion
      * @return Platform
      */

@@ -7,7 +7,9 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
  */
 trait PhpVersionTrait
 {
+    /** @var string */
     private $phpMin;
+    /** @var string|null */
     private $phpMax;
 
     public function getPhpMin(): string

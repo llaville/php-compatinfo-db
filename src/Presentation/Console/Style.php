@@ -52,7 +52,9 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @param string|string[] $message
+     * @param string|null $format
+     * @return mixed
      */
     public function text($message, ?string $format = null)
     {

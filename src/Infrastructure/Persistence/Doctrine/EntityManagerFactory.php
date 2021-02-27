@@ -5,6 +5,7 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine;
 use Doctrine\Common\Cache\Cache;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\ORMException;
 use Doctrine\ORM\Tools\Setup;
 
 use function getenv;
@@ -18,6 +19,12 @@ use const PATH_SEPARATOR;
  */
 final class EntityManagerFactory
 {
+    /**
+     * @param array<string, string> $connection
+     * @param Cache|null $cache
+     * @return EntityManagerInterface
+     * @throws ORMException
+     */
     public static function create(array $connection, Cache $cache = null): EntityManagerInterface
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
@@ -28,6 +35,10 @@ final class EntityManagerFactory
         return EntityManager::create(self::connection($connection), $config);
     }
 
+    /**
+     * @param array<string, string> $connection
+     * @return array<string, string>
+     */
     private static function connection(array $connection): array
     {
         $url = $connection['url'] ?? '';

@@ -7,7 +7,9 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
  */
 final class Dependency
 {
+    /** @var string  */
     private $name;
+    /** @var string  */
     private $constraint;
 
     public function __construct(

@@ -10,12 +10,27 @@ final class Class_
     use ExtVersionTrait;
     use PhpVersionTrait;
 
+    /** @var string  */
     private $name;
+    /** @var bool  */
     private $isInterface;
+    /** @var string  */
     private $extension;
-    /** @var array */
+    /** @var array|Dependency[]  */
     private $dependencies;
 
+    /**
+     * Class_ constructor.
+     *
+     * @param string $name
+     * @param bool $isInterface
+     * @param string $extension
+     * @param string $extMin
+     * @param string|null $extMax
+     * @param string $phpMin
+     * @param string|null $phpMax
+     * @param array|Dependency[] $dependencies
+     */
     public function __construct(
         string $name,
         bool $isInterface,
@@ -24,7 +39,7 @@ final class Class_
         ?string $extMax,
         string $phpMin,
         ?string $phpMax,
-        iterable $dependencies
+        array $dependencies = []
     ) {
         $this->name = $name;
         $this->isInterface = $isInterface;
@@ -61,7 +76,7 @@ final class Class_
     }
 
     /**
-     * @return array
+     * @return array|Dependency[]
      */
     public function getDependencies(): array
     {

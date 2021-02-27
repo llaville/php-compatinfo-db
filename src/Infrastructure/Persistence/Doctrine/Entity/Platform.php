@@ -43,7 +43,7 @@ class Platform
 
     /**
      * @OneToMany(targetEntity=Relationship::class, cascade={"persist"}, mappedBy="platform")
-     * @var Collection
+     * @var Collection<int, Relationship>
      */
     private $relationships;
 
@@ -126,12 +126,11 @@ class Platform
     }
 
     /**
-     * @param array $extensions
+     * @param Extension[] $extensions
      * @return Platform
      */
     public function addExtensions(array $extensions): self
     {
-        /** @var Extension $extension */
         foreach ($extensions as $extension) {
             $relationship = new Relationship();
             $relationship->setExtension($extension);
@@ -145,7 +144,7 @@ class Platform
     }
 
     /**
-     * @return array
+     * @return Extension[]
      */
     public function getExtensions(): array
     {

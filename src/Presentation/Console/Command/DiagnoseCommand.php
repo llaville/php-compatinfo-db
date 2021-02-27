@@ -44,7 +44,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         $this->entityManager = $entityManager;
     }
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName(self::NAME)

@@ -21,8 +21,11 @@ use Bartlett\CompatInfoDb\Application\Command\CommandInterface;
  */
 final class ReleaseCommand implements CommandInterface
 {
+    /** @var string  */
     private $version;
+    /** @var string  */
     private $date;
+    /** @var string  */
     private $state;
 
     public function __construct(

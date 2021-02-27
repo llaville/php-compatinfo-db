@@ -37,7 +37,7 @@ class Constant_
 
     /**
      * @OneToMany(targetEntity=ConstantRelationship::class, cascade={"persist"}, mappedBy="constant")
-     * @var Collection
+     * @var Collection<int, ConstantRelationship>
      */
     private $relationships;
 
@@ -105,12 +105,11 @@ class Constant_
 
 
     /**
-     * @param Collection $dependencies
+     * @param Dependency[] $dependencies
      * @return Constant_
      */
-    public function addDependencies(Collection $dependencies): self
+    public function addDependencies(array $dependencies): self
     {
-        /** @var Dependency $dependency */
         foreach ($dependencies as $dependency) {
             $relationship = new ConstantRelationship();
             $relationship->setDependency($dependency);
@@ -124,7 +123,7 @@ class Constant_
     }
 
     /**
-     * @return array
+     * @return Dependency[]
      */
     public function getDependencies(): array
     {

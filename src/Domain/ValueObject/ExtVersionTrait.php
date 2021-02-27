@@ -7,7 +7,9 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
  */
 trait ExtVersionTrait
 {
+    /** @var string */
     private $extMin;
+    /** @var string|null */
     private $extMax;
 
     public function getExtMin(): string

@@ -9,14 +9,14 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ a
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\FunctionHydrator;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\Persistence\ObjectRepository;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * @since Release 3.2.0
  */
 final class FunctionRepository implements DomainRepository
 {
-    /** @var ObjectRepository */
+    /** @var EntityRepository<FunctionEntity> */
     private $repository;
 
     use EntityManagerTrait;
@@ -29,6 +29,7 @@ final class FunctionRepository implements DomainRepository
 
     /**
      * {@inheritDoc}
+     * @return Function_[]
      */
     public function getAll(): array
     {

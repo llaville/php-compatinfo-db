@@ -10,7 +10,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 interface FunctionRepository extends RepositoryInterface
 {
     /**
-     * @return array
+     * @return Function_[]
      */
     public function getAll(): array;
 

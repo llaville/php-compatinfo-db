@@ -12,8 +12,11 @@ final class Release
     use ExtVersionTrait;
     use PhpVersionTrait;
 
+    /** @var string  */
     private $version;
+    /** @var DateTimeImmutable  */
     private $date;
+    /** @var string  */
     private $state;
 
     public function __construct(

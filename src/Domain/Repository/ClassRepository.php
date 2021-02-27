@@ -10,7 +10,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 interface ClassRepository extends RepositoryInterface
 {
     /**
-     * @return array
+     * @return Class_[]
      */
     public function getAll(): array;
 

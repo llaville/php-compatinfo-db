@@ -37,7 +37,7 @@ class Class_
 
     /**
      * @OneToMany(targetEntity=ClassRelationship::class, cascade={"persist"}, mappedBy="class")
-     * @var Collection
+     * @var Collection<int, ClassRelationship>
      */
     private $relationships;
 
@@ -104,12 +104,11 @@ class Class_
     }
 
     /**
-     * @param Collection $dependencies
+     * @param Dependency[] $dependencies
      * @return Class_
      */
-    public function addDependencies(Collection $dependencies): self
+    public function addDependencies(array $dependencies): self
     {
-        /** @var Dependency $dependency */
         foreach ($dependencies as $dependency) {
             $relationship = new ClassRelationship();
             $relationship->setDependency($dependency);
@@ -123,7 +122,7 @@ class Class_
     }
 
     /**
-     * @return array
+     * @return Dependency[]
      */
     public function getDependencies(): array
     {

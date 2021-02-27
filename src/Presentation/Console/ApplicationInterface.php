@@ -25,5 +25,9 @@ interface ApplicationInterface extends ContainerAwareInterface
     public const NAME = 'Database handler for CompatInfo';
     public const VERSION = '3.2.0';
 
+    /**
+     * @param CommandLoaderInterface $commandLoader
+     * @return void
+     */
     public function setCommandLoader(CommandLoaderInterface $commandLoader);
 }

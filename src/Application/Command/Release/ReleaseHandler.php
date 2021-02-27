@@ -38,13 +38,15 @@ use const JSON_ERROR_NONE;
  */
 final class ReleaseHandler implements CommandHandlerInterface
 {
+    /** @var array<mixed, string>  */
     private $latestPhpVersion = [
         '73' => ExtensionVersionProviderInterface::LATEST_PHP_7_3,
         '74' => ExtensionVersionProviderInterface::LATEST_PHP_7_4,
         '80' => ExtensionVersionProviderInterface::LATEST_PHP_8_0,
     ];
-
+    /** @var JsonFileHandler  */
     private $jsonFileHandler;
+    /** @var string  */
     private $refDir;
 
     /**
@@ -148,18 +150,18 @@ final class ReleaseHandler implements CommandHandlerInterface
                 }
             }
 
-            foreach ($data as &$element) {
+            foreach ($data as $index => $element) {
                 if ('methods' === $fileBasename) {
                     if (array_key_exists($element['class_name'], $methods)) {
-                        if (in_array($element[$key], $methods[$element['class_name']])) {
-                            $element[$entry] = $names[implode('::', [$element['class_name'], $element[$key]])];
+                        if (in_array($data[$index][$key], $methods[$element['class_name']])) {
+                            $data[$index][$entry] = $names[implode('::', [$element['class_name'], $data[$index][$key]])];
                         }
                     }
                 } else {
-                    if (array_key_exists($element[$key], $names)) {
-                        $element[$entry] = $names[$element[$key]];
+                    if (array_key_exists($data[$index][$key], $names)) {
+                        $data[$index][$entry] = $names[$data[$index][$key]];
                     } elseif (array_key_exists('*', $names)) {
-                        $element[$entry] = $names['*'];
+                        $data[$index][$entry] = $names['*'];
                     }
                 }
             }
@@ -170,7 +172,7 @@ final class ReleaseHandler implements CommandHandlerInterface
     /**
      * Component data provider for tagging php Max version.
      *
-     * @return Generator
+     * @return Generator<string, array>
      */
     private function componentDataProvider(): Generator
     {

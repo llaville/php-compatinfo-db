@@ -52,8 +52,8 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  */
 final class ExtensionFactory implements ExtensionVersionProviderInterface
 {
+    /** @var ExtensionRepository  */
     private $extensionRepository;
-    private $versionParser;
 
     use ExtensionVersionProviderTrait;
 

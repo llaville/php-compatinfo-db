@@ -32,7 +32,7 @@ final class JsonFileHandler
      * @param string $path
      * @param string $fileBasename
      * @param string $ver
-     * @return array|null
+     * @return array<string, string>|array<int, array>|null
      */
     public function read(string $path, string $fileBasename, string $ver): ?array
     {
@@ -54,7 +54,7 @@ final class JsonFileHandler
      * @param string $path
      * @param string $fileBasename
      * @param string $ver
-     * @param array $data
+     * @param array<int, array> $data
      * @return bool
      */
     public function write(string $path, string $fileBasename, string $ver, array $data): bool

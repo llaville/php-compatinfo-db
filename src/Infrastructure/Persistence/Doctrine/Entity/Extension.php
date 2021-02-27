@@ -46,37 +46,37 @@ class Extension
 
     /**
      * @OneToMany(targetEntity=Release::class, cascade={"persist", "remove"}, mappedBy="extension")
-     * @var Collection
+     * @var Collection<int, Release>
      */
     private $releases;
 
     /**
      * @OneToMany(targetEntity=Dependency::class, cascade={"persist", "remove"}, mappedBy="extension")
-     * @var Collection
+     * @var Collection<int, Dependency>
      */
     private $dependencies;
 
     /**
      * @OneToMany(targetEntity=IniEntry::class, cascade={"persist", "remove"}, mappedBy="extension")
-     * @var Collection
+     * @var Collection<int, IniEntry>
      */
     private $iniEntries;
 
     /**
      * @OneToMany(targetEntity=Constant_::class, cascade={"persist", "remove"}, mappedBy="extension")
-     * @var Collection
+     * @var Collection<int, Constant_>
      */
     private $constants;
 
     /**
      * @OneToMany(targetEntity=Function_::class, cascade={"persist", "remove"}, mappedBy="extension")
-     * @var Collection
+     * @var Collection<int, Function_>
      */
     private $functions;
 
     /**
      * @OneToMany(targetEntity=Class_::class, cascade={"persist", "remove"}, mappedBy="extension")
-     * @var Collection
+     * @var Collection<int, Class_>
      */
     private $classes;
 
@@ -157,11 +157,10 @@ class Extension
     }
 
     /**
-     * @param Collection $releases
+     * @param Release[] $releases
      */
-    public function addReleases(Collection $releases): void
+    public function addReleases(array $releases): void
     {
-        /** @var Release $release */
         foreach ($releases as $release) {
             $this->releases->add($release);
             $release->setExtension($this);
@@ -169,7 +168,7 @@ class Extension
     }
 
     /**
-     * @return Collection
+     * @return Collection<int, Release>
      */
     public function getReleases(): Collection
     {
@@ -177,11 +176,10 @@ class Extension
     }
 
     /**
-     * @param Collection $configs
+     * @param IniEntry[] $configs
      */
-    public function addIniEntries(Collection $configs): void
+    public function addIniEntries(array $configs): void
     {
-        /** @var IniEntry $ini */
         foreach ($configs as $ini) {
             $this->iniEntries->add($ini);
             $ini->setExtension($this);
@@ -189,7 +187,7 @@ class Extension
     }
 
     /**
-     * @return Collection
+     * @return Collection<int, IniEntry>
      */
     public function getIniEntries(): Collection
     {
@@ -197,11 +195,10 @@ class Extension
     }
 
     /**
-     * @param Collection $constants
+     * @param Constant_[] $constants
      */
-    public function addConstants(Collection $constants): void
+    public function addConstants(array $constants): void
     {
-        /** @var IniEntry $constant */
         foreach ($constants as $constant) {
             $this->constants->add($constant);
             $constant->setExtension($this);
@@ -209,7 +206,7 @@ class Extension
     }
 
     /**
-     * @return Collection
+     * @return Collection<int, Constant_>
      */
     public function getConstants(): Collection
     {
@@ -217,11 +214,10 @@ class Extension
     }
 
     /**
-     * @param Collection $functions
+     * @param Function_[] $functions
      */
-    public function addFunctions(Collection $functions): void
+    public function addFunctions(array $functions): void
     {
-        /** @var Function_ $function */
         foreach ($functions as $function) {
             $this->functions->add($function);
             $function->setExtension($this);
@@ -229,7 +225,7 @@ class Extension
     }
 
     /**
-     * @return Collection
+     * @return Collection<int, Function_>
      */
     public function getFunctions(): Collection
     {
@@ -237,11 +233,10 @@ class Extension
     }
 
     /**
-     * @param Collection $classes
+     * @param Class_[] $classes
      */
-    public function addClasses(Collection $classes): void
+    public function addClasses(array $classes): void
     {
-        /** @var Class_ $class */
         foreach ($classes as $class) {
             $this->classes->add($class);
             $class->setExtension($this);
@@ -249,7 +244,7 @@ class Extension
     }
 
     /**
-     * @return Collection
+     * @return Collection<int, Class_>
      */
     public function getClasses(): Collection
     {
@@ -257,12 +252,11 @@ class Extension
     }
 
     /**
-     * @param Collection $dependencies
+     * @param Dependency[] $dependencies
      * @return Extension
      */
-    public function addDependencies(Collection $dependencies): self
+    public function addDependencies(array $dependencies): self
     {
-        /** @var Dependency $dependency */
         foreach ($dependencies as $dependency) {
             $this->dependencies->add($dependency);
             $dependency->setExtension($this);
@@ -271,7 +265,7 @@ class Extension
     }
 
     /**
-     * @return Collection
+     * @return Collection<int, Dependency>
      */
     public function getDependencies(): Collection
     {

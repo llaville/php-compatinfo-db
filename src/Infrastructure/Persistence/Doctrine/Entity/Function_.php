@@ -26,13 +26,13 @@ class Function_
 
     /**
      * @Column(type="simple_array", nullable=true)
-     * @var null|array
+     * @var null|string[]
      */
     private $parameters;
 
     /**
      * @Column(type="simple_array", nullable=true)
-     * @var null|array
+     * @var null|string[]
      */
     private $excludes;
 
@@ -56,7 +56,7 @@ class Function_
 
     /**
      * @OneToMany(targetEntity=FunctionRelationship::class, cascade={"persist"}, mappedBy="function")
-     * @var Collection
+     * @var Collection<int, FunctionRelationship>
      */
     private $relationships;
 
@@ -113,7 +113,7 @@ class Function_
     }
 
     /**
-     * @return null|array
+     * @return null|string[]
      */
     public function getParameters(): ?array
     {
@@ -121,7 +121,7 @@ class Function_
     }
 
     /**
-     * @param null|array $parameters
+     * @param null|string[] $parameters
      */
     public function setParameters(?array $parameters): void
     {
@@ -129,7 +129,7 @@ class Function_
     }
 
     /**
-     * @return null|array
+     * @return null|string[]
      */
     public function getExcludes(): ?array
     {
@@ -137,7 +137,7 @@ class Function_
     }
 
     /**
-     * @param null|array $excludes
+     * @param null|string[] $excludes
      */
     public function setExcludes(?array $excludes): void
     {
@@ -177,12 +177,11 @@ class Function_
     }
 
     /**
-     * @param Collection $dependencies
+     * @param Dependency[] $dependencies
      * @return Function_
      */
-    public function addDependencies(Collection $dependencies): self
+    public function addDependencies(array $dependencies): self
     {
-        /** @var Dependency $dependency */
         foreach ($dependencies as $dependency) {
             $relationship = new FunctionRelationship();
             $relationship->setDependency($dependency);
@@ -196,7 +195,7 @@ class Function_
     }
 
     /**
-     * @return array
+     * @return Dependency[]
      */
     public function getDependencies(): array
     {

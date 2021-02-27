@@ -38,7 +38,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
 
     public const NAME = 'db:list';
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('List all references supported in the Database')

@@ -10,17 +10,28 @@ final class IniEntry
     use ExtVersionTrait;
     use PhpVersionTrait;
 
+    /** @var string  */
     private $name;
-    /** @var array */
+    /** @var Dependency[] */
     private $dependencies;
 
+    /**
+     * IniEntry constructor.
+     *
+     * @param string $name
+     * @param string $extMin
+     * @param string|null $extMax
+     * @param string $phpMin
+     * @param string|null $phpMax
+     * @param Dependency[] $dependencies
+     */
     public function __construct(
         string $name,
         string $extMin,
         ?string $extMax,
         string $phpMin,
         ?string $phpMax,
-        iterable $dependencies
+        array $dependencies
     ) {
         $this->name = $name;
         $this->extMin = $extMin;
@@ -39,7 +50,7 @@ final class IniEntry
     }
 
     /**
-     * @return array
+     * @return Dependency[]
      */
     public function getDependencies(): array
     {

@@ -10,12 +10,27 @@ final class Constant_
     use ExtVersionTrait;
     use PhpVersionTrait;
 
+    /** @var string  */
     private $name;
+    /** @var string|null  */
     private $declaringClass;
+    /** @var string  */
     private $extension;
-    /** @var array */
+    /** @var array|Dependency[] */
     private $dependencies;
 
+    /**
+     * Constant_ constructor.
+     *
+     * @param string $name
+     * @param string|null $declaringClass
+     * @param string $extension
+     * @param string $extMin
+     * @param string|null $extMax
+     * @param string $phpMin
+     * @param string|null $phpMax
+     * @param array|Dependency[] $dependencies
+     */
     public function __construct(
         string $name,
         ?string $declaringClass,
@@ -24,7 +39,7 @@ final class Constant_
         ?string $extMax,
         string $phpMin,
         ?string $phpMax,
-        iterable $dependencies
+        array $dependencies = []
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -61,7 +76,7 @@ final class Constant_
     }
 
     /**
-     * @return array
+     * @return array|Dependency[]
      */
     public function getDependencies(): array
     {

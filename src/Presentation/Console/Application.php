@@ -175,6 +175,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
 
     /**
      * {@inheritDoc}
+     * @return void
      */
     public function setContainer(ContainerInterface $container = null)
     {

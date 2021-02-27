@@ -5,13 +5,14 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository as DomainRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
+use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Platform as PlatformEntity;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\ExtensionHydrator;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformHydrator;
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\Persistence\ObjectRepository;
+use Doctrine\ORM\EntityRepository;
 
 use DateTimeImmutable;
 
@@ -22,7 +23,7 @@ final class DistributionRepository implements DomainRepository
 {
     private const DISTRIBUTION_DESC = 'CompatInfoDB';
 
-    /** @var ObjectRepository */
+    /** @var EntityRepository<PlatformEntity> */
     private $repository;
 
     use EntityManagerTrait;

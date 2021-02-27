@@ -10,7 +10,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_;
 interface ConstantRepository extends RepositoryInterface
 {
     /**
-     * @return array
+     * @return Constant_[]
      */
     public function getAll(): array;
 

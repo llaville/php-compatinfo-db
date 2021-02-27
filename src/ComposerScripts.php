@@ -34,7 +34,7 @@ class ComposerScripts
     /**
      * Retrieve metadata cache file when box compile read metadata directive.
      *
-     * @return array
+     * @return array<int, string>
      */
     public static function getPharMetadata(): array
     {

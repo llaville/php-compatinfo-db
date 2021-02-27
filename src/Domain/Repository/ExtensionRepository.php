@@ -10,7 +10,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 interface ExtensionRepository extends RepositoryInterface
 {
     /**
-     * @return array
+     * @return Extension[]
      */
     public function getAll(): array;
 

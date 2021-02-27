@@ -25,7 +25,7 @@ final class DiagnoseHandler implements QueryHandlerInterface
 {
     /**
      * @param DiagnoseQuery $query
-     * @return ProjectRequirements
+     * @return RequirementsInterface
      */
     public function __invoke(DiagnoseQuery $query): RequirementsInterface
     {

@@ -3,9 +3,8 @@
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension as Domain;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension as Entity;
-
-use Doctrine\Common\Collections\ArrayCollection;
 
 use function array_map;
 use function version_compare;
@@ -49,29 +48,25 @@ final class ExtensionHydrator implements HydratorInterface
         $object->setName($data['name']);
         $object->setType($data['type']);
 
-        $releases = new ArrayCollection(
-            (new ReleaseHydrator())->hydrateArrays($data['releases'])
-        );
-        $object->addReleases($releases);
-        // latest release declared in references
-        $object->setVersion($releases->last()->getVersion());
+        if (count($data['releases'])) {
+            $releases = (new ReleaseHydrator())->hydrateArrays($data['releases']);
+            $object->addReleases($releases);
+            // latest release declared in references
+            /** @var Release $latest */
+            $latest = end($releases);
+            $object->setVersion($latest->getVersion());
+        }
 
-        $iniEntries = new ArrayCollection(
-            (new IniEntryHydrator())->hydrateArrays($data['iniEntries'])
-        );
+        $iniEntries = (new IniEntryHydrator())->hydrateArrays($data['iniEntries']);
         $object->addIniEntries($iniEntries);
 
         foreach (['constants', 'const'] as $component) {
-            $constants = new ArrayCollection(
-                (new ConstantHydrator())->hydrateArrays($data[$component])
-            );
+            $constants = (new ConstantHydrator())->hydrateArrays($data[$component]);
             $object->addConstants($constants);
         }
 
         foreach (['functions', 'methods'] as $component) {
-            $functions = new ArrayCollection(
-                (new FunctionHydrator())->hydrateArrays($data[$component])
-            );
+            $functions = (new FunctionHydrator())->hydrateArrays($data[$component]);
             $object->addFunctions($functions);
         }
 
@@ -81,9 +76,7 @@ final class ExtensionHydrator implements HydratorInterface
                 return $item;
             }, $data[$component]);
 
-            $classes = new ArrayCollection(
-                (new ClassHydrator())->hydrateArrays($data[$component])
-            );
+            $classes = (new ClassHydrator())->hydrateArrays($data[$component]);
             $object->addClasses($classes);
         }
 

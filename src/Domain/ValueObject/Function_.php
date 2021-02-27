@@ -10,16 +10,33 @@ final class Function_
     use ExtVersionTrait;
     use PhpVersionTrait;
 
+    /** @var string  */
     private $name;
+    /** @var string|null  */
     private $declaringClass;
+    /** @var string  */
     private $extension;
-    /** @var array|null */
+    /** @var string[]|null */
     private $parameters;
-    /** @var array|null */
+    /** @var string[]|null */
     private $excludes;
-    /** @var array */
+    /** @var Dependency[] */
     private $dependencies;
 
+    /**
+     * Function_ constructor.
+     *
+     * @param string $name
+     * @param string|null $declaringClass
+     * @param string $extension
+     * @param string $extMin
+     * @param string|null $extMax
+     * @param string $phpMin
+     * @param string|null $phpMax
+     * @param string[]|null $parameters
+     * @param string[]|null $excludes
+     * @param Dependency[] $dependencies
+     */
     public function __construct(
         string $name,
         ?string $declaringClass,
@@ -30,7 +47,7 @@ final class Function_
         ?string $phpMax,
         ?array $parameters,
         ?array $excludes,
-        iterable $dependencies
+        array $dependencies
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -69,7 +86,7 @@ final class Function_
     }
 
     /**
-     * @return array|null
+     * @return string[]|null
      */
     public function getParameters(): ?array
     {
@@ -77,7 +94,7 @@ final class Function_
     }
 
     /**
-     * @return array|null
+     * @return string[]|null
      */
     public function getExcludes(): ?array
     {
@@ -85,7 +102,7 @@ final class Function_
     }
 
     /**
-     * @return array
+     * @return Dependency[]
      */
     public function getDependencies(): array
     {

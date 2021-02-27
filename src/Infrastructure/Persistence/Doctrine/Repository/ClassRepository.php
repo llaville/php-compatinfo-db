@@ -9,14 +9,14 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Class_ as C
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\ClassHydrator;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\Persistence\ObjectRepository;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * @since Release 3.2.0
  */
 final class ClassRepository implements DomainRepository
 {
-    /** @var ObjectRepository */
+    /** @var EntityRepository<ClassEntity> */
     private $repository;
 
     use EntityManagerTrait;
@@ -29,6 +29,7 @@ final class ClassRepository implements DomainRepository
 
     /**
      * {@inheritDoc}
+     * @return Class_[]
      */
     public function getAll(): array
     {

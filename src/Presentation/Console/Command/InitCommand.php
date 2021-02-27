@@ -29,7 +29,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:init';
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('Load JSON file(s) into database')

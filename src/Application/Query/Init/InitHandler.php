@@ -27,6 +27,7 @@ use Generator;
 use RecursiveDirectoryIterator;
 use RuntimeException;
 use function array_keys;
+use function array_map;
 use function array_merge;
 use function count;
 use function dirname;
@@ -131,7 +132,14 @@ final class InitHandler implements QueryHandlerInterface
             $io->text((string) $platform);
 
             $io->section('CompatInfoDb extension(s)');
-            $io->text($platform->getExtensions());
+            $io->text(
+                array_map(
+                    function($item) {
+                        return (string) $item;
+                    },
+                    $platform->getExtensions()
+                )
+            );
         }
 
         if (count($extensions) > 0) {
@@ -147,10 +155,10 @@ final class InitHandler implements QueryHandlerInterface
     /**
      * Builds an extension with all its components.
      *
-     * @param array $meta
-     * @param array $definition
+     * @param array<string, string> $meta
+     * @param array<string, array> $definition
      * @param string $refPathname
-     * @return array
+     * @return array<string, array>
      */
     private function buildExtension(array $meta, array $definition, string $refPathname): array
     {
@@ -170,10 +178,10 @@ final class InitHandler implements QueryHandlerInterface
      * Reads split JSON data files
      *
      * @param string $path
-     * @param array $majorReleases
+     * @param string[] $majorReleases
      * @param string $fileBasename
      * @param string $type
-     * @return array
+     * @return string[]
      */
     private function readData(string $path, array $majorReleases, string $fileBasename, string $type): array
     {
@@ -205,7 +213,7 @@ final class InitHandler implements QueryHandlerInterface
     /**
      * Data provider for reference definitions
      *
-     * @return Generator
+     * @return Generator<string, array>
      */
     private function majorReleaseDefinitionProvider(): Generator
     {

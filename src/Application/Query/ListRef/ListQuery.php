@@ -21,8 +21,11 @@ use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
  */
 final class ListQuery implements QueryInterface
 {
+    /** @var bool  */
     private $all;
+    /** @var bool  */
     private $installed;
+    /** @var string  */
     private $appVersion;
 
     public function __construct(

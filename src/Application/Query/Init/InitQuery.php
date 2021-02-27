@@ -22,8 +22,11 @@ use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
  */
 final class InitQuery implements QueryInterface
 {
+    /** @var string  */
     private $appVersion;
+    /** @var StyleInterface  */
     private $io;
+    /** @var bool  */
     private $force;
 
     public function __construct(

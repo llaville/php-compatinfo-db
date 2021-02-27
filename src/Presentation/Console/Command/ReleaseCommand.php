@@ -30,7 +30,7 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:release';
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('Add new PHP release')

@@ -21,14 +21,23 @@ use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
  */
 final class ShowQuery implements QueryInterface
 {
+    /** @var string  */
     private $extension;
+    /** @var bool  */
     private $releases;
+    /** @var bool  */
     private $ini;
+    /** @var bool  */
     private $constants;
+    /** @var bool  */
     private $functions;
+    /** @var bool  */
     private $interfaces;
+    /** @var bool  */
     private $classes;
+    /** @var bool  */
     private $methods;
+    /** @var bool  */
     private $classConstants;
 
     public function __construct(

@@ -20,13 +20,12 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
+use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
-use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Style\StyleInterface;
 
 use function array_unshift;
 use function count;
@@ -40,7 +39,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:show';
 
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::NAME)
             ->setDescription('Show details of a reference supported in the Database')
@@ -160,6 +159,11 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         return self::SUCCESS;
     }
 
+    /**
+     * @param array<object> $data
+     * @param string $section
+     * @param StyleInterface $io
+     */
     private function formatSection(array $data, string $section, StyleInterface $io): void
     {
         $args = [];
@@ -210,6 +214,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $io->table($headers, $rows);
     }
 
+    /**
+     * @param object $domain
+     * @return string
+     */
     private function ext($domain): string
     {
         return empty($domain->getExtMax())
@@ -218,6 +226,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * @param object $domain
+     * @return string
+     */
     private function php($domain): string
     {
         return empty($domain->getPhpMax())

@@ -5,8 +5,6 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ as Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-
 use function explode;
 
 /**
@@ -59,9 +57,7 @@ final class FunctionHydrator implements HydratorInterface
         $object->setExcludes(isset($data['php_excludes']) ? explode(',', $data['php_excludes']) : null);
         $object->setPrototype($data['prototype'] ?? null);
 
-        $dependencies = new ArrayCollection(
-            (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? [])
-        );
+        $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
 
         return $object;

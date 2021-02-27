@@ -18,7 +18,7 @@ interface DistributionRepository extends RepositoryInterface
     public function getDistributionByVersion(string $version): ?Platform;
 
     /**
-     * @param Collection $collection
+     * @param Collection<int, array> $collection
      * @param string $distVersion
      * @return Platform
      */
