@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Use [PHPStan](https://github.com/phpstan/phpstan/) for static analysis in Github Actions Workflows
 - Use the `ramsey/composer-install` action to install dependencies
 - Xdebug reference updated to version 3.0.3 (stable)
 
