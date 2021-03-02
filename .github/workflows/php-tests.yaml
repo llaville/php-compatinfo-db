@@ -53,7 +53,7 @@ jobs:
                 name: Setup Librairies
                 run: |
                     sudo apt-fast install libcurl4-openssl-dev -y
-                    sudo apt-fast install libssh2-1-dev
+                    sudo apt-fast install libssh2-1-dev -y 
 
             -
                 name: Setup PHP
