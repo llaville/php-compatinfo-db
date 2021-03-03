@@ -73,14 +73,14 @@ jobs:
             -
                 name: Build Database
                 run: |
-                    vendor/bin/doctrine orm:schema-tool:create
-                    bin/compatinfo-db db:init
+                    vendor/bin/doctrine orm:schema-tool:create --ansi
+                    bin/compatinfo-db db:init --ansi
 
             -
                 name: Check Database
                 run: |
-                    bin/compatinfo-db diagnose
-                    bin/compatinfo-db db:list --all
+                    bin/compatinfo-db diagnose --ansi
+                    bin/compatinfo-db db:list --ansi --all
 
             -
                 name: Static Analysis
