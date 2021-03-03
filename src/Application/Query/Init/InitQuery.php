@@ -28,15 +28,19 @@ final class InitQuery implements QueryInterface
     private $io;
     /** @var bool  */
     private $force;
+    /** @var bool  */
+    private $progress;
 
     public function __construct(
         string $version,
         StyleInterface $io,
-        bool $force
+        bool $force,
+        bool $progress
     ) {
         $this->appVersion = $version;
         $this->io = $io;
         $this->force = $force;
+        $this->progress = $progress;
     }
 
     /**
@@ -61,5 +65,13 @@ final class InitQuery implements QueryInterface
     public function isForce(): bool
     {
         return $this->force;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isProgress(): bool
+    {
+        return $this->progress;
     }
 }

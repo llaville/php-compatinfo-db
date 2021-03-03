@@ -39,6 +39,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
                 'New DB version'
             )
             ->addOption('force', 'f', null, 'Reset database contents even if not empty')
+            ->addOption('progress', null, null, 'Show progress bar')
         ;
     }
 
@@ -54,7 +55,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
         } else {
             $appVersion = trim($relVersion);
         }
-        $initQuery = new InitQuery($appVersion, $io, $input->getOption('force'));
+        $initQuery = new InitQuery($appVersion, $io, $input->getOption('force'), $input->getOption('progress'));
 
         $exitCode = $this->queryBus->query($initQuery);
 

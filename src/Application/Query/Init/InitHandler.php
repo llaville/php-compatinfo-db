@@ -87,10 +87,14 @@ final class InitHandler implements QueryHandlerInterface
 
         $io = $query->getStyle();
 
-        $progress = new ProgressBar($io, count($extensions));
-        $progress->setFormat(' %percent:3s%% %elapsed:6s% %memory:6s% %message%');
-        $progress->setMessage('');
-        $progress->start();
+        $withProgressBar = $query->isProgress();
+
+        if ($withProgressBar) {
+            $progress = new ProgressBar($io, count($extensions));
+            $progress->setFormat(' %percent:3s%% %elapsed:6s% %memory:6s% %message%');
+            $progress->setMessage('');
+            $progress->start();
+        }
 
         $collection = new ArrayCollection();
 
@@ -102,30 +106,40 @@ final class InitHandler implements QueryHandlerInterface
             $refPathname = $extensions[$refName];
 
             $component = 'extensions';
-            $progress->setMessage(sprintf("Building %s (%s)", $component, $refName));
-            $progress->display();
+            if ($withProgressBar) {
+                $progress->setMessage(sprintf("Building %s (%s)", $component, $refName));
+                $progress->display();
+            }
 
             $meta = $this->jsonFileHandler->read($refPathname, $component, '');
             if (null === $meta) {
                 // should not be occurs in real condition
-                $progress->advance();
+                if ($withProgressBar) {
+                    $progress->advance();
+                }
                 continue;
             }
 
             $collection->add($this->buildExtension($meta, $definition, $refPathname));
 
             unset($extensions[$refName]);
-            $progress->advance();
+            if ($withProgressBar) {
+                $progress->advance();
+            }
         }
 
-        $progress->setMessage('Flushing all changes to the database ...');
-        $progress->display();
+        if ($withProgressBar) {
+            $progress->setMessage('Flushing all changes to the database ...');
+            $progress->display();
+        }
 
         $platform = $this->distributionRepository->initialize($collection, $distVersion);
 
-        $progress->setMessage('');
-        $progress->display();
-        $progress->finish();
+        if ($withProgressBar) {
+            $progress->setMessage('');
+            $progress->display();
+            $progress->finish();
+        }
 
         if ($io->isDebug()) {
             $io->section('CompatInfoDb platform(s)');
