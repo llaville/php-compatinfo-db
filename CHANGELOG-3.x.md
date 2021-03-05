@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Add progress flag on `db:init` command to display a progress bar only on demand (for slow system)
 - Use [PHPStan](https://github.com/phpstan/phpstan/) for static analysis in Github Actions Workflows
 - Use the `ramsey/composer-install` action to install dependencies
+- APCu reference updated to version 5.1.20 (stable)
 - Ssh2 reference updated to version 1.3.1 (beta)
 - Xdebug reference updated to version 3.0.3 (stable)
 
