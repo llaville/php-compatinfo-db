@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 8.0.3 support
+
 ### Changed
 
 - Add progress flag on `db:init` command to display a progress bar only on demand (for slow system)
