@@ -5,7 +5,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -13,7 +13,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -21,7 +21,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -29,7 +29,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -37,7 +37,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -45,7 +45,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -53,7 +53,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Collection",
@@ -61,7 +61,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -69,7 +69,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -77,7 +77,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -85,7 +85,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -93,7 +93,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -101,7 +101,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -109,7 +109,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -117,7 +117,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -125,7 +125,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -133,7 +133,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -141,7 +141,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -149,7 +149,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -157,7 +157,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -165,7 +165,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -173,7 +173,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -181,7 +181,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -189,7 +189,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -197,7 +197,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -205,7 +205,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -213,7 +213,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -221,7 +221,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -229,7 +229,7 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "class_name": "OCI-Lob",
@@ -237,6 +237,6 @@
         "static": "false",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     }
 ]

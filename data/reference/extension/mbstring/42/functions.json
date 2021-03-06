@@ -79,85 +79,85 @@
         "name": "mbereg",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_match",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_replace",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search_getpos",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search_getregs",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search_init",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search_pos",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search_regs",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbereg_search_setpos",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mberegi",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mberegi_replace",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15",
+        "php_max": "7.4.16",
         "parameters": "4.2.0, 4.2.0, 4.2.0, 7.0.0alpha1"
     },
     {
         "name": "mbregex_encoding",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "mbsplit",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     }
 ]

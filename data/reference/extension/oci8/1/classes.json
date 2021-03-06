@@ -3,12 +3,12 @@
         "name": "OCI-Collection",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "OCI-Lob",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     }
 ]

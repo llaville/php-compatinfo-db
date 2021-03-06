@@ -35,13 +35,13 @@
         "name": "xdebug_get_declared_vars",
         "ext_min": "2.0.0beta5",
         "php_min": "4.3.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "xdebug_get_formatted_function_stack",
         "ext_min": "2.1.0beta1",
         "php_min": "5.1.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "xdebug_get_function_count",

@@ -64,7 +64,7 @@
         "name": "FILTER_FLAG_HOST_REQUIRED",
         "ext_min": "0.9.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "FILTER_FLAG_IPV4",
@@ -116,7 +116,7 @@
         "name": "FILTER_FLAG_SCHEME_REQUIRED",
         "ext_min": "0.9.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "FILTER_FLAG_STRIP_BACKTICK",
@@ -177,7 +177,7 @@
         "name": "FILTER_SANITIZE_MAGIC_QUOTES",
         "ext_min": "0.9.4",
         "php_min": "4.0.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "FILTER_SANITIZE_NUMBER_FLOAT",
@@ -283,7 +283,7 @@
         "name": "INPUT_REQUEST",
         "ext_min": "0.11.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     },
     {
         "name": "INPUT_SERVER",
@@ -294,6 +294,6 @@
         "name": "INPUT_SESSION",
         "ext_min": "0.9.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.15"
+        "php_max": "7.4.16"
     }
 ]
