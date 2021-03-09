@@ -23,7 +23,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 interface ApplicationInterface extends ContainerAwareInterface
 {
     public const NAME = 'Database handler for CompatInfo';
-    public const VERSION = '3.2.0';
+    public const VERSION = '3.3.0';
 
     /**
      * @param CommandLoaderInterface $commandLoader

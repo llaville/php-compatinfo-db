@@ -14,7 +14,7 @@ This database is currently only support by its initial project [php-compatinfo](
 
 ## Features
 
-* a Symfony console application to handle data (json files) of the SQL database is provide on CLI API
+* a Symfony console application to handle data (json files) of the SQL database is provided on CLI API
 
 More than 100 extensions (PHP standard distribution, but also PECL) are currently support :
 
@@ -31,7 +31,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 
 | Version | Release    | Module            | PHP 5.2 | PHP 5.3 | PHP 5.4 | PHP 5.5 | PHP 5.6 | PHP 7.0 | PHP 7.1 | PHP 7.2 | PHP 7.3 | PHP 7.4 | PHP 8.0 |
 |---------|------------|-------------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-| 3.3.0   | upcoming   |                   | 5.2.17  | 5.3.29  | 5.4.45  | 5.5.38  | 5.6.40  |  7.0.33 |  7.1.30 |  7.2.34 |  7.3.27 |  7.4.16 |  8.0.3  |
+| 3.3.0   | 2021-03-09 |                   | 5.2.17  | 5.3.29  | 5.4.45  | 5.5.38  | 5.6.40  |  7.0.33 |  7.1.30 |  7.2.34 |  7.3.27 |  7.4.16 |  8.0.3  |
 |         |            | apcu 5.1.20       |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | ssh2 1.3.1        |         |         |         |         |         |         |         |         |         |         |         |
 |         |            | xdebug 3.0.3      |         |         |         |         |         |         |         |         |         |         |         |
