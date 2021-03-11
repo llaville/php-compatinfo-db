@@ -29,7 +29,7 @@ final class EntityManagerFactory
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
         $isDevMode = false;
-        $proxyDir = null;
+        $proxyDir = dirname(__DIR__, 4) . DIRECTORY_SEPARATOR . 'proxies';
         $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
 
         return EntityManager::create(self::connection($connection), $config);
