@@ -107,7 +107,7 @@ return static function (ContainerConfigurator $containerConfigurator): void
         ->factory([service(EntityManagerFactory::class), 'create'])
         ->arg('$connection', $connectionParams)
         ->arg('$isDevMode', getenv('APP_ENV') === 'dev')
-        ->arg('$proxyDir', '/tmp/bartlett/php-compatinfo-db/' . ApplicationInterface::VERSION . '/proxies')
+        ->arg('$proxyDir', getenv('APP_PROXY'))
         // for Doctrine Command Line Interface
         ->public()
     ;
