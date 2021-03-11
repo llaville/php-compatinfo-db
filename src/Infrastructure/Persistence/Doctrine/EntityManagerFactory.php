@@ -3,6 +3,7 @@
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine;
 
 use Doctrine\Common\Cache\Cache;
+use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\ORMException;
@@ -21,16 +22,17 @@ final class EntityManagerFactory
 {
     /**
      * @param array<string, string> $connection
+     * @param bool $isDevMode
+     * @param string $proxyDir
      * @param Cache|null $cache
      * @return EntityManagerInterface
      * @throws ORMException
      */
-    public static function create(array $connection, Cache $cache = null): EntityManagerInterface
+    public static function create(array $connection, bool $isDevMode, string $proxyDir, Cache $cache = null): EntityManagerInterface
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
-        $isDevMode = false;
-        $proxyDir = null;
         $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
+        $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
 
         return EntityManager::create(self::connection($connection), $config);
     }

@@ -21,6 +21,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\Extensi
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\FunctionRepository as InfrastructureFunctionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\PlatformRepository as InfrastructurePlatformRepository;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\CommandInterface;
 use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
@@ -105,6 +106,8 @@ return static function (ContainerConfigurator $containerConfigurator): void
     $services->set(EntityManagerInterface::class)
         ->factory([service(EntityManagerFactory::class), 'create'])
         ->arg('$connection', $connectionParams)
+        ->arg('$isDevMode', getenv('APP_ENV') === 'dev')
+        ->arg('$proxyDir', '/tmp/bartlett/php-compatinfo-db/' . ApplicationInterface::VERSION . '/proxies')
         // for Doctrine Command Line Interface
         ->public()
     ;
