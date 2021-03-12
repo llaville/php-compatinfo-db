@@ -158,7 +158,8 @@ replace old `ContainerService` that was introduced in version 2.13
 - [#55](https://github.com/llaville/php-compatinfo-db/issues/55) Wrong assertion results when method checks
 - [#57](https://github.com/llaville/php-compatinfo-db/issues/57) GenericTest - function_exists failed to proceed expected assertion with Polyfills
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.3.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.4.0...HEAD
+[3.4.0]: https://github.com/llaville/php-compatinfo-db/compare/3.3.0...3.4.0
 [3.3.0]: https://github.com/llaville/php-compatinfo-db/compare/3.2.0...3.3.0
 [3.2.0]: https://github.com/llaville/php-compatinfo-db/compare/3.1.1...3.2.0
 [3.1.1]: https://github.com/llaville/php-compatinfo-db/compare/3.1.0...3.1.1
