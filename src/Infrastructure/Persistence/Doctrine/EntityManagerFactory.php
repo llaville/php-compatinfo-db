@@ -32,7 +32,14 @@ final class EntityManagerFactory
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
         $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
-        $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
+        if ($isDevMode) {
+            // suggested for DEV mode: see Doctrine ORM documentation
+            // at https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/advanced-configuration.html#auto-generating-proxy-classes-optional
+            $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_ALWAYS);
+        } else {
+            // lazy generation on PROD or TEST modes (i.e: CI)
+            $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
+        }
 
         return EntityManager::create(self::connection($connection), $config);
     }

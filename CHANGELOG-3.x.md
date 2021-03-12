@@ -6,6 +6,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.4.0] - 2021-03-12
+
+### Added
+
+- Autogenerate Doctrine proxy files.
+  Sets environment variable `APP_PROXY_DIR` to defines the directory where Doctrine generates any proxy classes.
+  Default is `/tmp/bartlett/php-compatinfo-db/<VERSION>/proxies` (with `VERSION` current application version)
+
 ## [3.3.0] - 2021-03-09
 
 ### Added
