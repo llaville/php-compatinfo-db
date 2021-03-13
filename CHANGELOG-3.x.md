@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.4.2] - 2021-03-13
+
+### Fixed
+
+- Autoloader regression when using this dependency in another project like php-compatinfo
+
 ## [3.4.1] - 2021-03-13
 
 **CAUTION:** uses `config/bootstrap.php` to apply autoloader and initialize environment variables (`APP_ENV` and `APP_PROXY_DIR`)
