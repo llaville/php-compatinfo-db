@@ -6,14 +6,12 @@ gc_disable(); // performance boost
 
 if (\Phar::running()) {
     $possibleAutoloadPaths = [
-        'phar://compatinfo-db.phar/vendor/autoload.php'
+        'phar://compatinfo-db.phar/config/bootstrap.php'
     ];
 } else {
     $possibleAutoloadPaths = [
         // local dev repository
-        __DIR__ . '/../vendor/autoload.php',
-        // dependency
-        __DIR__ . '/../../../../vendor/autoload.php',
+        dirname(__DIR__) . '/config/bootstrap.php',
     ];
 }
 
@@ -28,7 +26,7 @@ foreach ($possibleAutoloadPaths as $possibleAutoloadPath) {
 
 if ($isAutoloadFound === false) {
     throw new RuntimeException(sprintf(
-        'Unable to find "vendor/autoload.php" in "%s" paths.',
+        'Unable to find "config/bootstrap.php" in "%s" paths.',
         implode('", "', $possibleAutoloadPaths)
     ));
 }
@@ -37,9 +35,6 @@ use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-
-putenv('APP_ENV=' . ($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod'));
-putenv('APP_PROXY_DIR=' . ($_SERVER['APP_PROXY_DIR'] ?? $_ENV['APP_PROXY_DIR'] ?? '/tmp/bartlett/php-compatinfo-db/' . ApplicationInterface::VERSION . '/proxies'));
 
 /** @var ContainerBuilder $container */
 $container = require dirname(__DIR__) . '/config/container.php';

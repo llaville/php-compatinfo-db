@@ -88,4 +88,4 @@ jobs:
 
             -
                 name: Unit tests
-                run: vendor/bin/simple-phpunit --verbose --testsuite ${{ matrix.extensions }}
+                run: vendor/bin/simple-phpunit --testsuite ${{ matrix.extensions }}
