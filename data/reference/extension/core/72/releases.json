@@ -202,5 +202,13 @@
         "rel_date": "2020-08-06",
         "rel_state": "stable",
         "php_min": "7.2.33"
+    },
+    {
+        "rel_version": "7.2.34",
+        "rel_date": "2020-10-01",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.2.34",
+        "php_max": ""
     }
 ]
