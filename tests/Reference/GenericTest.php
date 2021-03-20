@@ -530,15 +530,16 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $name = $generator->current();
 
-        if (!in_array($name, self::$ignoredcfgs)) {
-            $this->assertExtensionComponentHasKey(
-                $name,
-                array_keys(self::$obj->getIniEntries()),
-                "Defined INI '$name' not known in Reference.",
-                self::$obj
-            );
+        foreach ($generator as $name) {
+            if (!in_array($name, self::$ignoredcfgs)) {
+                $this->assertExtensionComponentHasKey(
+                    $name,
+                    array_keys(self::$obj->getIniEntries()),
+                    "Defined INI '$name' not known in Reference.",
+                    self::$obj
+                );
+            }
         }
     }
 
@@ -617,15 +618,16 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $name = $generator->current();
 
-        if (!in_array($name, self::$ignoredfunctions)) {
-            $this->assertExtensionComponentHasKey(
-                $name,
-                array_keys(self::$obj->getFunctions()),
-                "Defined function '$name' not known in Reference.",
-                self::$obj
-            );
+        foreach ($generator as $name) {
+            if (!in_array($name, self::$ignoredfunctions)) {
+                $this->assertExtensionComponentHasKey(
+                    $name,
+                    array_keys(self::$obj->getFunctions()),
+                    "Defined function '$name' not known in Reference.",
+                    self::$obj
+                );
+            }
         }
     }
 
@@ -681,15 +683,16 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $name = $generator->current();
 
-        if (!in_array($name, self::$ignoredconstants)) {
-            $this->assertExtensionComponentHasKey(
-                $name,
-                array_keys(self::$obj->getConstants()),
-                "Defined constant '$name' not known in Reference.",
-                self::$obj
-            );
+        foreach ($generator as $name) {
+            if (!in_array($name, self::$ignoredconstants)) {
+                $this->assertExtensionComponentHasKey(
+                    $name,
+                    array_keys(self::$obj->getConstants()),
+                    "Defined constant '$name' not known in Reference.",
+                    self::$obj
+                );
+            }
         }
     }
 
@@ -752,15 +755,16 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $name = $generator->current();
 
-        if (!in_array($name, self::$ignoredclasses)) {
-            $this->assertExtensionComponentHasKey(
-                $name,
-                array_keys(self::$obj->getClasses()),
-                "Defined class '$name' not known in Reference.",
-                self::$obj
-            );
+        foreach ($generator as $name) {
+            if (!in_array($name, self::$ignoredclasses)) {
+                $this->assertExtensionComponentHasKey(
+                    $name,
+                    array_keys(self::$obj->getClasses()),
+                    "Defined class '$name' not known in Reference.",
+                    self::$obj
+                );
+            }
         }
     }
 
@@ -832,10 +836,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $methodName = $generator->current();
-        if (in_array($methodName, self::$ignoredmethods)) {
-            return;
-        }
 
         $methods = self::$obj->getMethods();
 
@@ -845,11 +845,17 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
             'None method defined. Checks if `methods.json` file exists.'
         );
 
-        $this->assertContains(
-            $methodName,
-            array_keys($methods),
-            "Defined method '$methodName' not known in Reference."
-        );
+        foreach ($generator as $methodName) {
+            if (in_array($methodName, self::$ignoredmethods)) {
+                continue;
+            }
+
+            $this->assertContains(
+                $methodName,
+                array_keys($methods),
+                "Defined method '$methodName' not known in Reference."
+            );
+        }
     }
 
     /**
@@ -864,15 +870,16 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $constantName = $generator->current();
 
-        if (!in_array($constantName, self::$ignoredconsts)) {
-            $this->assertExtensionComponentHasKey(
-                $constantName,
-                array_keys(self::$obj->getClassConstants()),
-                "Defined class constant '$constantName' not known in Reference.",
-                self::$obj
-            );
+        foreach ($generator as $constantName) {
+            if (!in_array($constantName, self::$ignoredconsts)) {
+                $this->assertExtensionComponentHasKey(
+                    $constantName,
+                    array_keys(self::$obj->getClassConstants()),
+                    "Defined class constant '$constantName' not known in Reference.",
+                    self::$obj
+                );
+            }
         }
     }
 
@@ -938,15 +945,16 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         if (!$generator->valid()) {
             return;
         }
-        $name = $generator->current();
 
-        if (!in_array($name, self::$ignoredinterfaces)) {
-            $this->assertExtensionComponentHasKey(
-                $name,
-                array_keys(self::$obj->getInterfaces()),
-                "Defined interface '$name' not known in Reference.",
-                self::$obj
-            );
+        foreach ($generator as $name) {
+            if (!in_array($name, self::$ignoredinterfaces)) {
+                $this->assertExtensionComponentHasKey(
+                    $name,
+                    array_keys(self::$obj->getInterfaces()),
+                    "Defined interface '$name' not known in Reference.",
+                    self::$obj
+                );
+            }
         }
     }
 

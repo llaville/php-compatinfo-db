@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Fixed
+
+- [#72](https://github.com/llaville/php-compatinfo-db/issues/72) Checks that elements available in extension are define in Reference
+
 ## [3.4.2] - 2021-03-13
 
 ### Fixed
