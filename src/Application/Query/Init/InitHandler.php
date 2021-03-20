@@ -260,7 +260,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'ast' => [
             'classes'   => ['0'],
-            'constants' => ['0'],
+            'constants' => ['0', '1'],
             'functions' => ['0'],
             'methods'   => ['0'],
             'releases'  => ['0', '1'],

@@ -1,0 +1,146 @@
+[
+    {
+        "name": "ast\\AST_CLASS_NAME",
+        "ext_min": "1.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_PROP_GROUP",
+        "ext_min": "1.0.1",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_ARROW_FUNC",
+        "ext_min": "1.0.2",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\DIM_ALTERNATIVE_SYNTAX",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\PARENTHESIZED_CONDITIONAL",
+        "ext_min": "1.0.3",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_TYPE_UNION",
+        "ext_min": "1.0.4",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\TYPE_FALSE",
+        "ext_min": "1.0.5",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\TYPE_STATIC",
+        "ext_min": "1.0.6",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\TYPE_MIXED",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_ATTRIBUTE",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_ATTRIBUTE_LIST",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_CLASS_CONST_GROUP",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_PARAM",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_MATCH",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_MATCH_ARM",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_MATCH_ARM",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_MATCH_ARM_LIST",
+        "ext_min": "1.0.7",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_NAMED_ARG",
+        "ext_min": "1.0.8",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_NULLSAFE_METHOD_CALL",
+        "ext_min": "1.0.8",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_NULLSAFE_PROP",
+        "ext_min": "1.0.8",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\PARAM_MODIFIER_PUBLIC",
+        "ext_min": "1.0.8",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\PARAM_MODIFIER_PROTECTED",
+        "ext_min": "1.0.8",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\PARAM_MODIFIER_PRIVATE",
+        "ext_min": "1.0.8",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_ATTRIBUTE_GROUP",
+        "ext_min": "1.0.10",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    }
+]
