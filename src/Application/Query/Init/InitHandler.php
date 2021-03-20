@@ -804,7 +804,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'pcre' => [
             'constants'  => ['40', '43', '52', '70', '72', '73'],
-            'functions'  => ['40', '52', '53', '70'],
+            'functions'  => ['40', '52', '53', '70', '80'],
             'iniEntries' => ['52', '70'],
             'releases'   => array_merge(
                 ['40', '43', '52', '53'],
