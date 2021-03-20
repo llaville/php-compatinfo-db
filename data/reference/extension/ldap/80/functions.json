@@ -1,0 +1,7 @@
+[
+    {
+        "name": "ldap_count_references",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha2"
+    }
+]

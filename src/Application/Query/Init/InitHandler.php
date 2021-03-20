@@ -609,7 +609,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'ldap' => [
             'classes'    => [],
             'constants'  => ['40', '53', '54', '56', '70', '71', '72'],
-            'functions'  => ['40', '42', '50', '54', '56', '72', '73'],
+            'functions'  => ['40', '42', '50', '54', '56', '72', '73', '80'],
             'iniEntries' => ['40'],
             'releases'   => array_merge(
                 ['40', '42', '50', '53', '54', '56'],
