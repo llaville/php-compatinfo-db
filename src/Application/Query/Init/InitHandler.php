@@ -577,7 +577,7 @@ final class InitHandler implements QueryHandlerInterface
             'classes'    => ['1', '2', '55', '70'],
             'const'      => ['1', '2', '55', '70'],
             'constants'  => ['1', '2'],
-            'functions'  => ['1', '2', '55', '73'],
+            'functions'  => ['1', '2', '55', '71', '73'],
             'iniEntries' => ['1', '3'],
             'methods'    => ['1', '2', '55', '70', '71', '73'],
             'releases'   => array_merge(
