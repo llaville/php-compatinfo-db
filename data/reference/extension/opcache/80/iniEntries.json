@@ -1,0 +1,97 @@
+[
+    {
+        "name": "opcache.record_warnings",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_buffer_size",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_debug",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_bisect_limit",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_prof_threshold",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_hot_loop",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_hot_func",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_hot_return",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_hot_side_exit",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_blacklist_root_trace",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_blacklist_side_trace",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_recursive_calls",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_recursive_returns",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_root_traces",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_side_traces",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_exit_counters",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_polymorphic_calls",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "opcache.jit_max_loop_unrolls",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0RC4"
+    }
+]

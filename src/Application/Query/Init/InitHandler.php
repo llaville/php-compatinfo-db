@@ -772,7 +772,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'opcache' => [
             'functions'  => ['70'],
-            'iniEntries' => ['56', '70', '71', '74'],
+            'iniEntries' => ['56', '70', '71', '74', '80'],
             'releases'   => array_merge(
                 ['56'],
                 self::PHP_RELEASES_7,
