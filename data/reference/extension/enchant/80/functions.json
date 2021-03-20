@@ -1,0 +1,12 @@
+[
+    {
+        "name": "enchant_dict_add",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "name": "enchant_dict_is_added",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0alpha1"
+    }
+]

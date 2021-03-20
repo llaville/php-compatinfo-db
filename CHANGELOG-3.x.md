@@ -10,6 +10,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [#72](https://github.com/llaville/php-compatinfo-db/issues/72) Checks that elements available in extension are define in Reference
 
+**Warning**
+
+* `enchant_dict_add_to_personal`: Alias of enchant_dict_add is DEPRECATED as of PHP 8.0.0
+* `enchant_dict_is_in_session` : Alias of enchant_dict_is_added is DEPRECATED as of PHP 8.0.0
+
 ## [3.4.2] - 2021-03-13
 
 ### Fixed

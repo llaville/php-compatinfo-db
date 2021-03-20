@@ -393,7 +393,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'enchant' => [
             'classes'    => ['80'],
             'constants'  => ['1', '80'],
-            'functions'  => ['0', '1'],
+            'functions'  => ['0', '1', '80'],
             'releases'   => array_merge(
                 ['0', '1'],
                 self::PHP_RELEASES_7,
