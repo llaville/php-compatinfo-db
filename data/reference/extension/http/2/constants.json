@@ -152,7 +152,24 @@
     {
         "name": "http\\Client\\Curl\\HTTP_VERSION_2_0",
         "ext_min": "2.3.0RC1",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.33.0"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\HTTP_VERSION_2TLS",
+        "ext_min": "2.5.6",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.47.0"
+            }
+        ]
     },
     {
         "name": "http\\Client\\Curl\\VERSIONS",
@@ -258,6 +275,17 @@
     },
     {
         "name": "http\\Client\\Curl\\Features\\TLSAUTH_SRP",
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.21.4"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\TLSAUTH_SRP",
         "ext_min": "2.6.0beta1",
         "php_min": "5.3.0",
         "dependencies": [

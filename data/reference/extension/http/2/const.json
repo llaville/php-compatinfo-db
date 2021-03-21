@@ -55,6 +55,96 @@
     },
     {
         "class_name": "http\\Url",
+        "name": "REPLACE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "JOIN_PATH",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "JOIN_QUERY",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_USER",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_PASS",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_AUTH",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_PORT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_QUERY",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_FRAGMENT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STRIP_ALL",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "FROM_ENV",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "SANITIZE_PATH",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "IGNORE_ERRORS",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "SILENT_ERRORS",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "STDFLAGS",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
         "name": "PARSE_MBLOC",
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
@@ -68,6 +158,18 @@
     {
         "class_name": "http\\Url",
         "name": "PARSE_TOIDN",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "PARSE_TOIDN_2003",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "PARSE_TOIDN_2008",
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
     },
@@ -213,6 +315,288 @@
         "class_name": "http\\Cookie",
         "name": "HTTPONLY",
         "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "FLUSH_NONE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "FLUSH_SYNC",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "FLUSH_FULL",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "TYPE_GZIP",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "TYPE_ZLIB",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "TYPE_RAW",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "LEVEL_DEF",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "LEVEL_MIN",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "LEVEL_MAX",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "STRATEGY_DEF",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "STRATEGY_FILT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "STRATEGY_HUFF",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "STRATEGY_RLE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "STRATEGY_FIXED",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "CONTENT_ENCODING_NONE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "CONTENT_ENCODING_GZIP",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "CACHE_NO",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "CACHE_HIT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "CACHE_MISS",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "TYPE_NONE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "TYPE_REQUEST",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "TYPE_RESPONSE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "TYPE_BOOL",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "TYPE_INT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "TYPE_FLOAT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "TYPE_STRING",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "TYPE_ARRAY",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "TYPE_OBJECT",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "CLEANUP",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "DUMB_BODIES",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "EMPTY_REDIRECTS",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "GREEDY",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_FAILURE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_START",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_HEADER",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_HEADER_DONE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_BODY",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_BODY_DUMB",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_BODY_LENGTH",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_BODY_CHUNKED",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_BODY_DONE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Parser",
+        "name": "STATE_DONE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "POLL_NONE",
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "POLL_IN",
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "POLL_OUT",
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "POLL_INOUT",
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "POLL_REMOVE",
+        "ext_min": "2.6.0beta1",
         "php_min": "5.3.0"
     }
 ]

@@ -1,7 +1,0 @@
-[
-    {
-        "name": "http\\Client\\Curl\\User",
-        "ext_min": "3.1.0",
-        "php_min": "7.0.0"
-    }
-]

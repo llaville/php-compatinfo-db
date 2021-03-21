@@ -182,10 +182,507 @@
         "php_min": "5.3.0"
     },
     {
+        "class_name": "http\\Header",
+        "name": "parse",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "match",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "negotiate",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "getParams",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getBody",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setBody",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "addBody",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getHeader",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setHeader",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "addHeader",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getHeaders",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setHeaders",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "addHeaders",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getType",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setType",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getInfo",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setInfo",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getResponseCode",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setResponseCode",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getResponseStatus",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setResponseStatus",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getRequestMethod",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setRequestMethod",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getRequestUrl",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setRequestUrl",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getHttpVersion",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "setHttpVersion",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "getParentMessage",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "toCallback",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "toStream",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "detach",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "prepend",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "reverse",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "isMultipart",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "splitMultipartBody",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "getRequestHeader",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "getRequestBody",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "getResponseStatusForCode",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "getResponseStatusForAllCodes",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "getResponseHeader",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "getResponseCode",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "setResponseHeader",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "setResponseCode",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "negotiateLanguage",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "negotiateContentType",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "negotiateEncoding",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "negotiateCharset",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "negotiate",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Request",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Request",
+        "name": "getForm",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Request",
+        "name": "getQuery",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Request",
+        "name": "getFiles",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
         "class_name": "http\\Env\\Request",
         "name": "getCookie",
         "static": true,
         "ext_min": "2.2.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "__invoke",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setEnvRequest",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setContentType",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setContentDisposition",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setContentEncoding",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setCacheControl",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setLastModified",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "isCachedByLastModified",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setEtag",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "isCachedByEtag",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "setThrottleRate",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Env\\Response",
+        "name": "send",
+        "static": false,
+        "ext_min": "2.0.0",
         "php_min": "5.3.0"
     },
     {
@@ -224,6 +721,223 @@
         "php_min": "5.3.0"
     },
     {
+        "class_name": "http\\Message\\Body",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "toStream",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "toCallback",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "getResource",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "getBoundary",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "append",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "addForm",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "addPart",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "etag",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "stat",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Params",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Params",
+        "name": "toArray",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Params",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Params",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getGlobalInstance",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "toArray",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "get",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "set",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "mod",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getBool",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getInt",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getFloat",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getArray",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "getObject",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "xlate",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
         "class_name": "http\\Message\\Parser",
         "name": "parse",
         "static": true,
@@ -240,7 +954,420 @@
     {
         "class_name": "http\\Client",
         "name": "setDebug",
+        "static": false,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "done",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "finish",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "flush",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream",
+        "name": "update",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Dechunk",
+        "name": "decode",
         "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Deflate",
+        "name": "encode",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Inflate",
+        "name": "decode",
+        "static": true,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getAvailableDrivers",
+        "static": true,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "reset",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "enqueue",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "dequeue",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "requeue",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "send",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "once",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "wait",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getResponse",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getHistory",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "configure",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "enablePipelining",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "enableEvents",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getObservers",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getProgressInfo",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getTransferInfo",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "setOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "setSslOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "addSslOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getSslOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "setCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "addCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getAvailableOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client",
+        "name": "getAvailableConfiguration",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "setContentType",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "getContentType",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "setQuery",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "getQuery",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "addQuery",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "setOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "getOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "setSslOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "getSslOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Request",
+        "name": "addSslOptions",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Response",
+        "name": "getCookies",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Response",
+        "name": "getTransferInfo",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "__construct",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "mod",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "__toString",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
+        "name": "toArray",
+        "static": false,
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "init",
+        "static": false,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "timer",
+        "static": false,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "socket",
+        "static": false,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "once",
+        "static": false,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "wait",
+        "static": false,
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Client\\Curl\\User",
+        "name": "send",
+        "static": false,
         "ext_min": "2.6.0beta1",
         "php_min": "5.3.0"
     }

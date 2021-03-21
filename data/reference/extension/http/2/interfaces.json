@@ -3,5 +3,10 @@
         "name": "http\\Exception",
         "ext_min": "2.0.0",
         "php_min": "5.3.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\User",
+        "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
     }
 ]
