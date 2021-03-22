@@ -5,8 +5,68 @@
         "php_min": "7.2.0"
     },
     {
+        "name": "xdebug.start_with_request",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.start_upon_error",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.output_dir",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.trigger_value",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.log",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.log_level",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.cloud_id",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.client_host",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.client_port",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.discover_client_host",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.idekey",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.connect_timeout_ms",
+        "ext_min": "3.0.0beta1",
+        "php_min": "7.2.0"
+    },
+    {
         "name": "xdebug.client_discovery_header",
-        "ext_min": "3.0.0",
+        "ext_min": "3.0.0beta1",
         "php_min": "7.2.0"
     }
 ]
