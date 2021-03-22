@@ -1,0 +1,17 @@
+[
+    {
+        "name": "xhprof.sampling_interval",
+        "ext_min": "2.0.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "name": "xhprof.sampling_depth",
+        "ext_min": "2.0.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "name": "xhprof.collect_additional_info",
+        "ext_min": "2.1.0",
+        "php_min": "5.2.0"
+    }
+]

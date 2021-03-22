@@ -1229,7 +1229,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'xhprof' => [
             'constants'  => ['0'],
             'functions'  => ['0'],
-            'iniEntries' => ['0'],
+            'iniEntries' => ['0', '2'],
             'releases'   => ['0', '2'],
         ];
 
