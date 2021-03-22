@@ -39,6 +39,23 @@ class MemcachedExtensionTest extends GenericTest
             'memcached.sess_remove_failed',
         ];
 
+        self::$ignoredconsts = [
+            // included since release 3.1.5 into master branch
+            // @see https://github.com/php-memcached-dev/php-memcached/commit/f97b2e3ad95bbd83c862abba08c34ac3f4acc497
+            'Memcached::RES_CONNECTION_BIND_FAILURE',
+            'Memcached::RES_READ_FAILURE',
+            'Memcached::RES_DATA_DOES_NOT_EXIST',
+            'Memcached::RES_VALUE',
+            'Memcached::RES_FAIL_UNIX_SOCKET',
+            'Memcached::RES_NO_KEY_PROVIDED',
+            'Memcached::RES_INVALID_ARGUMENTS',
+            'Memcached::RES_PARSE_ERROR',
+            'Memcached::RES_PARSE_USER_ERROR',
+            'Memcached::RES_DEPRECATED',
+            'Memcached::RES_IN_PROGRESS',
+            'Memcached::RES_MAXIMUM_RETURN',
+        ];
+
         parent::setUpBeforeClass();
     }
 }

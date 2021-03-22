@@ -16,5 +16,11 @@
         "name": "OPT_USER_FLAGS",
         "ext_min": "3.0.0",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RES_CONNECTION_FAILURE",
+        "ext_min": "3.1.5",
+        "php_min": "7.0.0"
     }
 ]
