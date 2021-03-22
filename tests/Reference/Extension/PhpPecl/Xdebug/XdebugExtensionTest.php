@@ -59,6 +59,7 @@ class XdebugExtensionTest extends GenericTest
             'XDEBUG_FILTER_CODE_COVERAGE',
             'XDEBUG_FILTER_NONE',
             'XDEBUG_FILTER_TRACING',
+            'XDEBUG_FILTER_STACK',
             'XDEBUG_NAMESPACE_BLACKLIST',
             'XDEBUG_NAMESPACE_WHITELIST',
             'XDEBUG_PATH_BLACKLIST',

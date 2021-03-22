@@ -1220,7 +1220,7 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'xdebug' => [
-            'constants'  => ['2'],
+            'constants'  => ['2', '3'],
             'functions'  => ['1', '2', '3'],
             'iniEntries' => ['1', '2', '3'],
             'releases'   => ['1', '2', '3'],
