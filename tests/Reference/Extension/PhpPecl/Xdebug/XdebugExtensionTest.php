@@ -73,6 +73,9 @@ class XdebugExtensionTest extends GenericTest
 
         self::$ignoredconstants = [
             'XDEBUG_PATH_INCLUDE',
+            'XDEBUG_PATH_EXCLUDE',
+            'XDEBUG_NAMESPACE_INCLUDE',
+            'XDEBUG_NAMESPACE_EXCLUDE',
         ];
 
         parent::setUpBeforeClass();
