@@ -24,4 +24,18 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class PcreExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pcre/php_pcre.c#L353-L355
+        self::$optionalcfgs = [
+            'pcre.jit',
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
