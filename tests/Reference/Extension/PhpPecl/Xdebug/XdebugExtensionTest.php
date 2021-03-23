@@ -64,12 +64,15 @@ class XdebugExtensionTest extends GenericTest
             'XDEBUG_NAMESPACE_WHITELIST',
             'XDEBUG_PATH_BLACKLIST',
             'XDEBUG_PATH_WHITELIST',
-            'XDEBUG_PATH_INCLUDE',
             'XDEBUG_STACK_NO_DESC',
             'XDEBUG_TRACE_APPEND',
             'XDEBUG_TRACE_COMPUTERIZED',
             'XDEBUG_TRACE_HTML',
             'XDEBUG_TRACE_NAKED_FILENAME',
+        ];
+
+        self::$ignoredconstants = [
+            'XDEBUG_PATH_INCLUDE',
         ];
 
         parent::setUpBeforeClass();
