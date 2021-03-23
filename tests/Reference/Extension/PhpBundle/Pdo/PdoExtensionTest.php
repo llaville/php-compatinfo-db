@@ -82,6 +82,48 @@ class PdoExtensionTest extends GenericTest
             'PDO::DBLIB_ATTR_TDS_VERSION',
             'PDO::DBLIB_ATTR_SKIP_EMPTY_ROWSETS',
             'PDO::DBLIB_ATTR_DATETIME_CONVERT',
+            // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_odbc/pdo_odbc.c#L99-L103
+            'PDO::ODBC_ATTR_USE_CURSOR_LIBRARY',
+            'PDO::ODBC_ATTR_ASSUME_UTF8',
+            'PDO::ODBC_SQL_USE_IF_NEEDED',
+            'PDO::ODBC_SQL_USE_DRIVER',
+            'PDO::ODBC_SQL_USE_ODBC',
+            // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_pgsql/pdo_pgsql.c#L61-L66
+            'PDO::PGSQL_ATTR_DISABLE_PREPARES',
+            'PDO::PGSQL_TRANSACTION_IDLE',
+            'PDO::PGSQL_TRANSACTION_ACTIVE',
+            'PDO::PGSQL_TRANSACTION_INTRANS',
+            'PDO::PGSQL_TRANSACTION_INERROR',
+            'PDO::PGSQL_TRANSACTION_UNKNOWN',
+            // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_oci/pdo_oci.c#L84-L88
+            'PDO::OCI_ATTR_ACTION',
+            'PDO::OCI_ATTR_CLIENT_INFO',
+            'PDO::OCI_ATTR_CLIENT_IDENTIFIER',
+            'PDO::OCI_ATTR_MODULE',
+            'PDO::OCI_ATTR_CALL_TIMEOUT',
+            // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_mysql/pdo_mysql.c#L103-L126
+            'PDO::MYSQL_ATTR_USE_BUFFERED_QUERY',
+            'PDO::MYSQL_ATTR_LOCAL_INFILE',
+            'PDO::MYSQL_ATTR_INIT_COMMAND',
+            'PDO::MYSQL_ATTR_MAX_BUFFER_SIZE',
+            'PDO::MYSQL_ATTR_READ_DEFAULT_FILE',
+            'PDO::MYSQL_ATTR_READ_DEFAULT_GROUP',
+            'PDO::MYSQL_ATTR_COMPRESS',
+            'PDO::MYSQL_ATTR_DIRECT_QUERY',
+            'PDO::MYSQL_ATTR_FOUND_ROWS',
+            'PDO::MYSQL_ATTR_IGNORE_SPACE',
+            'PDO::MYSQL_ATTR_SSL_KEY',
+            'PDO::MYSQL_ATTR_SSL_CERT',
+            'PDO::MYSQL_ATTR_SSL_CA',
+            'PDO::MYSQL_ATTR_SSL_CAPATH',
+            'PDO::MYSQL_ATTR_SSL_CIPHER',
+            'PDO::MYSQL_ATTR_SERVER_PUBLIC_KEY',
+            'PDO::MYSQL_ATTR_MULTI_STATEMENTS',
+            'PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT',
+            // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_firebird/pdo_firebird.c#L57-L59
+            'PDO::FB_ATTR_DATE_FORMAT',
+            'PDO::FB_ATTR_TIME_FORMAT',
+            'PDO::FB_ATTR_TIMESTAMP_FORMAT',
         ];
 
         parent::setUpBeforeClass();
