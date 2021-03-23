@@ -74,6 +74,14 @@ class PdoExtensionTest extends GenericTest
             'PDO::SQLSRV_TXN_REPEATABLE_READ',
             'PDO::SQLSRV_TXN_SERIALIZABLE',
             'PDO::SQLSRV_TXN_SNAPSHOT',
+            // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_dblib/pdo_dblib.c#L192-L198
+            'PDO::DBLIB_ATTR_CONNECTION_TIMEOUT',
+            'PDO::DBLIB_ATTR_QUERY_TIMEOUT',
+            'PDO::DBLIB_ATTR_STRINGIFY_UNIQUEIDENTIFIER',
+            'PDO::DBLIB_ATTR_VERSION',
+            'PDO::DBLIB_ATTR_TDS_VERSION',
+            'PDO::DBLIB_ATTR_SKIP_EMPTY_ROWSETS',
+            'PDO::DBLIB_ATTR_DATETIME_CONVERT',
         ];
 
         parent::setUpBeforeClass();
