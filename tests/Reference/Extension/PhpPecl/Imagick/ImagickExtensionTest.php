@@ -24,4 +24,20 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class ImagickExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        // not yet included in a release
+        // @see https://github.com/Imagick/imagick/commit/eb587cd83c0952fb67549afd634ab6cdc48a4a05
+        self::$ignoredcfgs = [
+            'imagick.set_single_thread',
+            'imagick.shutdown_sleep_count',
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
