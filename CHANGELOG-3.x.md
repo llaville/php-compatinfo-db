@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Redis reference updated to version 5.3.4 (stable)
+
 ### Fixed
 
 - [#70](https://github.com/llaville/php-compatinfo-db/issues/70) test failure for pcre extension (thanks to @remicollet for reporting)

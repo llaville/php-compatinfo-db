@@ -100,5 +100,11 @@
         "rel_date": "2021-02-01",
         "rel_state": "stable",
         "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "5.3.4",
+        "rel_date": "2021-03-24",
+        "rel_state": "stable",
+        "php_min": "7.0.0"
     }
 ]
