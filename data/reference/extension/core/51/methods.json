@@ -2,28 +2,28 @@
     {
         "class_name": "Exception",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.1.0",
         "php_min": "5.1.0"
     },
     {
         "class_name": "Exception",
         "name": "__wakeup",
-        "static": "false",
+        "static": false,
         "ext_min": "5.1.0",
         "php_min": "5.1.0"
     },
     {
         "class_name": "ErrorException",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.1.0",
         "php_min": "5.1.0"
     },
     {
         "class_name": "ErrorException",
         "name": "getSeverity",
-        "static": "false",
+        "static": false,
         "ext_min": "5.1.0",
         "php_min": "5.1.0"
     }

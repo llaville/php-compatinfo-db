@@ -2,14 +2,14 @@
     {
         "class_name": "Stringable",
         "name": "__toString",
-        "static": "false",
+        "static": false,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "Attribute",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "8.0.0alpha2",
         "php_min": "8.0.0alpha2"
     }

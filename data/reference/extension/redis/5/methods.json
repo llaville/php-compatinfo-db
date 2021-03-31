@@ -2,91 +2,91 @@
     {
         "class_name": "RedisSentinel",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "ckquorum",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "failover",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "flushconfig",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "getMasterAddrByName",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "master",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "masters",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "ping",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "reset",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "sentinels",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisSentinel",
         "name": "slaves",
-        "static": "false",
+        "static": false,
         "ext_min": "5.2.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "Redis",
         "name": "acl",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0RC1",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "acl",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0RC1",
         "php_min": "7.0.0"
     }

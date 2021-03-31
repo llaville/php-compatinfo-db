@@ -2,210 +2,210 @@
     {
         "class_name": "OCICollection",
         "name": "append",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "assign",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "assignelem",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "free",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "getElem",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "max",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "size",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCICollection",
         "name": "trim",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "append",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "close",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "eof",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "erase",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "export",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "flush",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "free",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "getbuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "import",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "load",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "read",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "rewind",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "save",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "savefile",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "seek",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "setbuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "size",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "tell",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "truncate",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "write",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "writetemporary",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     },
     {
         "class_name": "OCILob",
         "name": "writetofile",
-        "static": "false",
+        "static": false,
         "ext_min": "3.0.0",
         "php_min": "8.0.0alpha3"
     }

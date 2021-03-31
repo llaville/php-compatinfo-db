@@ -2,406 +2,406 @@
     {
         "class_name": "Memcached",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "addByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "addServer",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "addServers",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "add",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "appendByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "append",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "casByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "cas",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "decrementByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "decrement",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "deleteByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "deleteMultiByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "deleteMulti",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "delete",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "fetchAll",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "fetch",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "flushBuffers",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "flush",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getAllKeys",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getDelayedByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getDelayed",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getLastDisconnectedServer",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getLastErrorCode",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getLastErrorErrno",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getLastErrorMessage",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getMultiByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getMulti",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getOption",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getResultCode",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getResultMessage",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getServerByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getServerList",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getStats",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "getVersion",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "get",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "incrementByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "increment",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "isPersistent",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "isPristine",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "prependByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "prepend",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "quit",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "replaceByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "replace",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "resetServerList",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setBucket",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setEncodingKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setMultiByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setMulti",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setOption",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setOptions",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "setSaslAuthData",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "set",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "touchByKey",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Memcached",
         "name": "touch",
-        "static": "false",
+        "static": false,
         "ext_min": "0.1.0",
         "php_min": "5.2.0"
     }

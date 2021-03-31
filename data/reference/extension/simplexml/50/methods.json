@@ -2,98 +2,98 @@
     {
         "class_name": "SimpleXMLElement",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "__toString",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "addAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "addChild",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "asXML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "attributes",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "children",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "count",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "getDocNamespaces",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "getName",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "getNamespaces",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "registerXPathNamespace",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "saveXML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     },
     {
         "class_name": "SimpleXMLElement",
         "name": "xpath",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.1",
         "php_min": "5.0.1"
     }

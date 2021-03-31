@@ -954,7 +954,7 @@
     {
         "class_name": "http\\Client",
         "name": "setDebug",
-        "static": false,
+        "static": true,
         "ext_min": "2.6.0beta1",
         "php_min": "5.3.0"
     },

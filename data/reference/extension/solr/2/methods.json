@@ -681,28 +681,28 @@
     {
         "class_name": "SolrExtractRequest",
         "name": "__destruct",
-        "static": "false",
+        "static": false,
         "ext_min": "2.5.0",
         "php_min": "7.0.0"
     },
     {
         "class_name": "SolrExtractRequest",
         "name": "__clone",
-        "static": "false",
+        "static": false,
         "ext_min": "2.5.0",
         "php_min": "7.0.0"
     },
     {
         "class_name": "SolrExtractRequest",
         "name": "__sleep",
-        "static": "false",
+        "static": false,
         "ext_min": "2.5.0",
         "php_min": "7.0.0"
     },
     {
         "class_name": "SolrExtractRequest",
         "name": "__wakeup",
-        "static": "false",
+        "static": false,
         "ext_min": "2.5.0",
         "php_min": "7.0.0"
     }

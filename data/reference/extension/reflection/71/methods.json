@@ -2,91 +2,91 @@
     {
         "class_name": "ReflectionNamedType",
         "name": "getName",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0beta3",
         "php_min": "7.1.0beta3"
     },
     {
         "class_name": "ReflectionClass",
         "name": "getReflectionConstants",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClass",
         "name": "getReflectionConstant",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getDeclaringClass",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getDocComment",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getModifiers",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getName",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "getValue",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "isPrivate",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "isProtected",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "isPublic",
-        "static": "false",
+        "static": false,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1"
     },
     {
         "class_name": "ReflectionClassConstant",
         "name": "export",
-        "static": "true",
+        "static": true,
         "ext_min": "7.1.0alpha1",
         "php_min": "7.1.0alpha1",
         "php_max": "7.4.16"

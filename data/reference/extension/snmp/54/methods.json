@@ -2,63 +2,63 @@
     {
         "class_name": "SNMP",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "close",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "getErrno",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "getError",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "get",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "getnext",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "setSecurity",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "set",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "walk",
-        "static": "false",
+        "static": false,
         "ext_min": "5.4.0",
         "php_min": "5.4.0"
     }

@@ -2,448 +2,448 @@
     {
         "class_name": "Phar",
         "name": "__destruct",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "apiVersion",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "canCompress",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "canWrite",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "createDefaultStub",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getSupportedCompression",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getSupportedSignatures",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "interceptFileFuncs",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "isValidPharFilename",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "loadPhar",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "mapPhar",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "mount",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "mungServer",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "running",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "unlinkArchive",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "webPhar",
-        "static": "true",
+        "static": true,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "addEmptyDir",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "addFile",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "addFromString",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "buildFromDirectory",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "buildFromIterator",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "compressFiles",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "compress",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "convertToData",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "convertToExecutable",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "copy",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "decompressFiles",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "decompress",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "delMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "delete",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "extractTo",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getAlias",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getModified",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getSignature",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getStub",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "getVersion",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "hasMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "isBuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "isCompressed",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "isFileFormat",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "setAlias",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "setDefaultStub",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "setMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "setSignatureAlgorithm",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "setStub",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "startBuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Phar",
         "name": "stopBuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "__destruct",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "chmod",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "compress",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "decompress",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "delMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "getCRC32",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "getCompressedSize",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "getContent",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "getMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "getPharFlags",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "hasMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "isCRCChecked",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "isCompressed",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "PharFileInfo",
         "name": "setMetadata",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.2.0"
     }

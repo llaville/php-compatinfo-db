@@ -2,301 +2,301 @@
     {
         "class_name": "Redis",
         "name": "swapdb",
-        "static": "false",
+        "static": false,
         "ext_min": "4.0.0RC1",
         "php_min": "4.0.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "unlink",
-        "static": "false",
+        "static": false,
         "ext_min": "4.0.0RC1",
         "php_min": "4.0.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xack",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xadd",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xclaim",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xdel",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xgroup",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xinfo",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xlen",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xpending",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xrange",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xread",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xreadgroup",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xrevrange",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "xtrim",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "Redis",
         "name": "bzPopMax",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "Redis",
         "name": "bzPopMin",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "Redis",
         "name": "georadius_ro",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "Redis",
         "name": "georadiusbymember_ro",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "Redis",
         "name": "zPopMax",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "Redis",
         "name": "zPopMin",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisArray",
         "name": "unlink",
-        "static": "false",
+        "static": false,
         "ext_min": "4.0.0RC1",
         "php_min": "4.0.0RC1"
     },
     {
         "class_name": "RedisArray",
         "name": "_continuum",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "unlink",
-        "static": "false",
+        "static": false,
         "ext_min": "4.0.0RC1",
         "php_min": "4.0.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xack",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xadd",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xclaim",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xdel",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xgroup",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xinfo",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xlen",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xpending",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xrange",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xread",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xreadgroup",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xrevrange",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "xtrim",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.0RC1",
         "php_min": "4.2.0RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "bzpopmax",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "bzpopmin",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "georadius_ro",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "georadiusbymember_ro",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "zpopmax",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     },
     {
         "class_name": "RedisCluster",
         "name": "zpopmin",
-        "static": "false",
+        "static": false,
         "ext_min": "4.2.1RC1",
         "php_min": "4.2.1RC1"
     }

@@ -2,105 +2,105 @@
     {
         "class_name": "ReflectionClass",
         "name": "isAnonymous",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionFunctionAbstract",
         "name": "hasReturnType",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionFunctionAbstract",
         "name": "getReturnType",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionParameter",
         "name": "hasType",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionParameter",
         "name": "getType",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "getExecutingFile",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "getExecutingGenerator",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "getExecutingLine",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "getFunction",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "getThis",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionGenerator",
         "name": "getTrace",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionType",
         "name": "__toString",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionType",
         "name": "allowsNull",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1"
     },
     {
         "class_name": "ReflectionType",
         "name": "isBuiltin",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1",
         "php_max": "7.4.16"

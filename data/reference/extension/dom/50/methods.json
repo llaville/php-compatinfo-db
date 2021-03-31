@@ -2,70 +2,70 @@
     {
         "class_name": "DOMAttr",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMAttr",
         "name": "isId",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMCdataSection",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMCharacterData",
         "name": "appendData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMCharacterData",
         "name": "deleteData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMCharacterData",
         "name": "insertData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMCharacterData",
         "name": "replaceData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMCharacterData",
         "name": "substringData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMComment",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMConfiguration",
         "name": "canSetParameter",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -73,7 +73,7 @@
     {
         "class_name": "DOMConfiguration",
         "name": "getParameter",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -81,7 +81,7 @@
     {
         "class_name": "DOMConfiguration",
         "name": "setParameter",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -89,175 +89,175 @@
     {
         "class_name": "DOMDocument",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "adoptNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createAttributeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createCDATASection",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createComment",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createDocumentFragment",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createElementNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createElement",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createEntityReference",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createProcessingInstruction",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "createTextNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "getElementById",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "getElementsByTagNameNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "getElementsByTagName",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "importNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "loadHTMLFile",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "loadHTML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "loadXML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "load",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "normalizeDocument",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "registerNodeClass",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "relaxNGValidateSource",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "relaxNGValidate",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "renameNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -265,217 +265,217 @@
     {
         "class_name": "DOMDocument",
         "name": "saveHTMLFile",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "saveHTML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "saveXML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "save",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "schemaValidateSource",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "schemaValidate",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "validate",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocument",
         "name": "xinclude",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMDocumentFragment",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.1.0",
         "php_min": "5.1.0"
     },
     {
         "class_name": "DOMDocumentFragment",
         "name": "appendXML",
-        "static": "false",
+        "static": false,
         "ext_min": "5.1.0",
         "php_min": "5.1.0"
     },
     {
         "class_name": "DOMElement",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "getAttributeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "getAttributeNodeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "getAttributeNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "getAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "getElementsByTagNameNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "getElementsByTagName",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "hasAttributeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "hasAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "removeAttributeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "removeAttributeNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "removeAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setAttributeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setAttributeNodeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setAttributeNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setIdAttributeNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setIdAttributeNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMElement",
         "name": "setIdAttribute",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMEntityReference",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMErrorHandler",
         "name": "handleError",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -483,35 +483,35 @@
     {
         "class_name": "DOMImplementation",
         "name": "createDocumentType",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMImplementation",
         "name": "createDocument",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMImplementation",
         "name": "getFeature",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMImplementation",
         "name": "hasFeature",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMImplementationList",
         "name": "item",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -519,7 +519,7 @@
     {
         "class_name": "DOMImplementationSource",
         "name": "getDomimplementation",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -527,7 +527,7 @@
     {
         "class_name": "DOMImplementationSource",
         "name": "getDomimplementations",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -535,7 +535,7 @@
     {
         "class_name": "DOMNameList",
         "name": "getName",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -543,7 +543,7 @@
     {
         "class_name": "DOMNameList",
         "name": "getNamespaceURI",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -551,28 +551,28 @@
     {
         "class_name": "DOMNamedNodeMap",
         "name": "getNamedItemNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNamedNodeMap",
         "name": "getNamedItem",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNamedNodeMap",
         "name": "item",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNamedNodeMap",
         "name": "removeNamedItemNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -580,7 +580,7 @@
     {
         "class_name": "DOMNamedNodeMap",
         "name": "removeNamedItem",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -588,7 +588,7 @@
     {
         "class_name": "DOMNamedNodeMap",
         "name": "setNamedItemNS",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -596,7 +596,7 @@
     {
         "class_name": "DOMNamedNodeMap",
         "name": "setNamedItem",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -604,35 +604,35 @@
     {
         "class_name": "DOMNode",
         "name": "C14NFile",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "C14N",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "appendChild",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "cloneNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "compareDocumentPosition",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -640,7 +640,7 @@
     {
         "class_name": "DOMNode",
         "name": "getFeature",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -648,21 +648,21 @@
     {
         "class_name": "DOMNode",
         "name": "getLineNo",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "getNodePath",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "getUserData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -670,35 +670,35 @@
     {
         "class_name": "DOMNode",
         "name": "hasAttributes",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "hasChildNodes",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "insertBefore",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "isDefaultNamespace",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "isEqualNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -706,56 +706,56 @@
     {
         "class_name": "DOMNode",
         "name": "isSameNode",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "isSupported",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "lookupNamespaceURI",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "lookupPrefix",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "normalize",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "removeChild",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "replaceChild",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMNode",
         "name": "setUserData",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -763,21 +763,21 @@
     {
         "class_name": "DOMNodeList",
         "name": "item",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMProcessingInstruction",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMStringExtend",
         "name": "findOffset16",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -785,7 +785,7 @@
     {
         "class_name": "DOMStringExtend",
         "name": "findOffset32",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -793,7 +793,7 @@
     {
         "class_name": "DOMStringList",
         "name": "item",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -801,28 +801,28 @@
     {
         "class_name": "DOMText",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMText",
         "name": "isElementContentWhitespace",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMText",
         "name": "isWhitespaceInElementContent",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMText",
         "name": "replaceWholeText",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -830,14 +830,14 @@
     {
         "class_name": "DOMText",
         "name": "splitText",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMUserDataHandler",
         "name": "handle",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
         "php_max": "7.4.16"
@@ -845,35 +845,35 @@
     {
         "class_name": "DOMXPath",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMXPath",
         "name": "evaluate",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMXPath",
         "name": "query",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMXPath",
         "name": "registerNamespace",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "DOMXPath",
         "name": "registerPhpFunctions",
-        "static": "false",
+        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     }

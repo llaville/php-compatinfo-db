@@ -2,7 +2,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "append",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -10,7 +10,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "assign",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -18,7 +18,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "assignelem",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -26,7 +26,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "free",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -34,7 +34,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "getElem",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -42,7 +42,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "max",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -50,7 +50,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "size",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -58,7 +58,7 @@
     {
         "class_name": "OCI-Collection",
         "name": "trim",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -66,7 +66,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "append",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -74,7 +74,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "close",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -82,7 +82,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "eof",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -90,7 +90,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "erase",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -98,7 +98,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "export",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -106,7 +106,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "flush",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -114,7 +114,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "free",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -122,7 +122,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "getbuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -130,7 +130,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "import",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -138,7 +138,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "load",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -146,7 +146,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "read",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -154,7 +154,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "rewind",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -162,7 +162,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "save",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -170,7 +170,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "savefile",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -178,7 +178,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "seek",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -186,7 +186,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "setbuffering",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -194,7 +194,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "size",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -202,7 +202,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "tell",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -210,7 +210,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "truncate",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -218,7 +218,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "write",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -226,7 +226,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "writetemporary",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"
@@ -234,7 +234,7 @@
     {
         "class_name": "OCI-Lob",
         "name": "writetofile",
-        "static": "false",
+        "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
         "php_max": "7.4.16"

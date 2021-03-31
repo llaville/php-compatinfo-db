@@ -2,70 +2,70 @@
     {
         "class_name": "Throwable",
         "name": "__toString",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getCode",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getFile",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getLine",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getMessage",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getPrevious",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getTraceAsString",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Throwable",
         "name": "getTrace",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Error",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     },
     {
         "class_name": "Error",
         "name": "__wakeup",
-        "static": "false",
+        "static": false,
         "ext_min": "7.0.2",
         "php_min": "7.0.2"
     }

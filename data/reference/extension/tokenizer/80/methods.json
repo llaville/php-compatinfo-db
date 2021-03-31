@@ -2,35 +2,35 @@
     {
         "class_name": "PhpToken",
         "name": "__construct",
-        "static": "false",
+        "static": false,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "PhpToken",
         "name": "getTokenName",
-        "static": "false",
+        "static": false,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "PhpToken",
         "name": "isIgnorable",
-        "static": "false",
+        "static": false,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "PhpToken",
         "name": "is",
-        "static": "false",
+        "static": false,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "PhpToken",
         "name": "getAll",
-        "static": "true",
+        "static": true,
         "ext_min": "8.0.0alpha1",
         "ext_max": "8.0.0RC3",
         "php_min": "8.0.0alpha1",
@@ -39,7 +39,7 @@
     {
         "class_name": "PhpToken",
         "name": "tokenize",
-        "static": "true",
+        "static": true,
         "ext_min": "8.0.0RC4",
         "php_min": "8.0.0RC4"
     }

@@ -1815,28 +1815,28 @@
     {
         "class_name": "SolrInputDocument",
         "name": "getVersion",
-        "static": "false",
+        "static": false,
         "ext_min": "0.9.11",
         "php_min": "5.2.3"
     },
     {
         "class_name": "SolrInputDocument",
         "name": "setVersion",
-        "static": "false",
+        "static": false,
         "ext_min": "0.9.11",
         "php_min": "5.2.3"
     },
     {
         "class_name": "SolrInputDocument",
         "name": "updateField",
-        "static": "false",
+        "static": false,
         "ext_min": "0.9.11",
         "php_min": "5.2.3"
     },
     {
         "class_name": "SolrClient",
         "name": "sendUpdateStream",
-        "static": "false",
+        "static": false,
         "ext_min": "0.9.11",
         "php_min": "5.2.3"
     }

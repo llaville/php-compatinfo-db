@@ -2,98 +2,98 @@
     {
         "class_name": "Redis",
         "name": "geoadd",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "geohash",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "geopos",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "geodist",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "georadius",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "georadiusbymember",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "hStrLen",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.3RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "geoadd",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "geohash",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "geopos",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "geodist",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "georadius",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "georadiusbymember",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "hstrlen",
-        "static": "false",
+        "static": false,
         "ext_min": "3.1.3RC1",
         "php_min": "5.3.0"
     }

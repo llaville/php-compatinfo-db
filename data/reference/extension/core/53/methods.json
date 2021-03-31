@@ -2,119 +2,119 @@
     {
         "class_name": "IteratorAggregate",
         "name": "getIterator",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Iterator",
         "name": "current",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Iterator",
         "name": "key",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Iterator",
         "name": "next",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Iterator",
         "name": "rewind",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Iterator",
         "name": "valid",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "ArrayAccess",
         "name": "offsetExists",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "ArrayAccess",
         "name": "offsetGet",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "ArrayAccess",
         "name": "offsetSet",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "ArrayAccess",
         "name": "offsetUnset",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Serializable",
         "name": "unserialize",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Serializable",
         "name": "serialize",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Closure",
         "name": "bindTo",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Closure",
         "name": "call",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Closure",
         "name": "bind",
-        "static": "true",
+        "static": true,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Closure",
         "name": "fromCallable",
-        "static": "true",
+        "static": true,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "Closure",
         "name": "__invoke",
-        "static": "false",
+        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     }
