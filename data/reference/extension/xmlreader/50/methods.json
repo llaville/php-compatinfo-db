@@ -2,7 +2,7 @@
     {
         "class_name": "XMLReader",
         "name": "XML",
-        "static": false,
+        "static": true,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
@@ -114,7 +114,7 @@
     {
         "class_name": "XMLReader",
         "name": "open",
-        "static": false,
+        "static": true,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
