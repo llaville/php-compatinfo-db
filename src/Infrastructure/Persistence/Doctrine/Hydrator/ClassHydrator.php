@@ -2,6 +2,7 @@
 
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 
+use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Class_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Class_ as Entity;
 
@@ -29,6 +30,8 @@ final class ClassHydrator implements HydratorInterface
             'ext_max' => $object->getExtMax(),
             'php_min' => $object->getPhpMin(),
             'php_max' => $object->getPhpMax(),
+            'is_abstract' => (bool) ($object->getFlags() & Class_::MODIFIER_ABSTRACT),
+            'is_final' => (bool) ($object->getFlags() & Class_::MODIFIER_FINAL),
         ];
     }
 
@@ -49,6 +52,7 @@ final class ClassHydrator implements HydratorInterface
         $object->setExtMax($data['ext_max'] ?? null);
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
+        $object->setFlags(Class_::MODIFIER_PUBLIC);
 
         return $object;
     }
@@ -73,7 +77,8 @@ final class ClassHydrator implements HydratorInterface
             $entity->getExtMax(),
             $entity->getPhpMin(),
             $entity->getPhpMax(),
-            $dependencies
+            $dependencies,
+            $entity->getFlags()
         );
     }
 }

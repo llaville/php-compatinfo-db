@@ -30,6 +30,12 @@ class Class_
     private $isInterface;
 
     /**
+     * @Column(name="flags", type="integer")
+     * @var int
+     */
+    private $flags;
+
+    /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="classes")
      * @var Extension
      */
@@ -85,6 +91,22 @@ class Class_
     public function setInterface(bool $isInterface): void
     {
         $this->isInterface = $isInterface;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFlags(): int
+    {
+        return $this->flags;
+    }
+
+    /**
+     * @param int $flags
+     */
+    public function setFlags(int $flags): void
+    {
+        $this->flags = $flags;
     }
 
     /**

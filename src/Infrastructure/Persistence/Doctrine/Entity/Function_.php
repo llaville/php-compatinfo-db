@@ -49,6 +49,12 @@ class Function_
     private $prototype;
 
     /**
+     * @Column(name="flags", type="integer")
+     * @var int
+     */
+    private $flags;
+
+    /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="functions")
      * @var Extension
      */
@@ -158,6 +164,22 @@ class Function_
     public function setPrototype(?string $prototype): void
     {
         $this->prototype = $prototype;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFlags(): int
+    {
+        return $this->flags;
+    }
+
+    /**
+     * @param int $flags
+     */
+    public function setFlags(int $flags): void
+    {
+        $this->flags = $flags;
     }
 
     /**

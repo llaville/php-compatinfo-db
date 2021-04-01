@@ -2,6 +2,7 @@
 
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 
+use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ as Entity;
 
@@ -33,6 +34,11 @@ final class FunctionHydrator implements HydratorInterface
             'php_max' => $object->getPhpMax(),
             'parameters' => $object->getParameters(),
             'excludes' => $object->getExcludes(),
+            'is_abstract' => (bool) ($object->getFlags() & Class_::MODIFIER_ABSTRACT),
+            'is_final' => (bool) ($object->getFlags() & Class_::MODIFIER_FINAL),
+            'is_public' => (bool) ($object->getFlags() & Class_::MODIFIER_PUBLIC),
+            'is_protected' => (bool) ($object->getFlags() & Class_::MODIFIER_PROTECTED),
+            'is_private' => (bool) ($object->getFlags() & Class_::MODIFIER_PRIVATE),
         ];
     }
 
@@ -56,6 +62,7 @@ final class FunctionHydrator implements HydratorInterface
         $object->setParameters(isset($data['parameters']) ? explode(',', $data['parameters']) : null);
         $object->setExcludes(isset($data['php_excludes']) ? explode(',', $data['php_excludes']) : null);
         $object->setPrototype($data['prototype'] ?? null);
+        $object->setFlags(isset($data['static']) && $data['static'] === true ? Class_::MODIFIER_STATIC | Class_::MODIFIER_PUBLIC : Class_::MODIFIER_PUBLIC);
 
         $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
@@ -85,7 +92,8 @@ final class FunctionHydrator implements HydratorInterface
             $entity->getPhpMax(),
             $entity->getParameters(),
             $entity->getExcludes(),
-            $dependencies
+            $dependencies,
+            $entity->getFlags()
         );
     }
 }

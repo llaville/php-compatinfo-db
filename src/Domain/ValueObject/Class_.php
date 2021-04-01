@@ -7,6 +7,13 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
  */
 final class Class_
 {
+    public const MODIFIER_PUBLIC    =  1;
+    public const MODIFIER_PROTECTED =  2;
+    public const MODIFIER_PRIVATE   =  4;
+    public const MODIFIER_STATIC    =  8;
+    public const MODIFIER_ABSTRACT  = 16;
+    public const MODIFIER_FINAL     = 32;
+
     use ExtVersionTrait;
     use PhpVersionTrait;
 
@@ -18,6 +25,8 @@ final class Class_
     private $extension;
     /** @var array|Dependency[]  */
     private $dependencies;
+    /** @var int */
+    private $flags;
 
     /**
      * Class_ constructor.
@@ -30,6 +39,7 @@ final class Class_
      * @param string $phpMin
      * @param string|null $phpMax
      * @param array|Dependency[] $dependencies
+     * @param int $flags
      */
     public function __construct(
         string $name,
@@ -39,7 +49,8 @@ final class Class_
         ?string $extMax,
         string $phpMin,
         ?string $phpMax,
-        array $dependencies = []
+        array $dependencies = [],
+        int $flags = self::MODIFIER_PUBLIC
     ) {
         $this->name = $name;
         $this->isInterface = $isInterface;
@@ -49,6 +60,7 @@ final class Class_
         $this->phpMin = $phpMin;
         $this->phpMax = $phpMax;
         $this->dependencies = $dependencies;
+        $this->flags = $flags;
     }
 
     /**
@@ -81,5 +93,21 @@ final class Class_
     public function getDependencies(): array
     {
         return $this->dependencies;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAbstract(): bool
+    {
+        return (bool) ($this->flags & self::MODIFIER_ABSTRACT);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFinal(): bool
+    {
+        return (bool) ($this->flags & self::MODIFIER_FINAL);
     }
 }

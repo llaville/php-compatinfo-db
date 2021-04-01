@@ -22,6 +22,8 @@ final class Function_
     private $excludes;
     /** @var Dependency[] */
     private $dependencies;
+    /** @var int */
+    private $flags;
 
     /**
      * Function_ constructor.
@@ -36,6 +38,7 @@ final class Function_
      * @param string[]|null $parameters
      * @param string[]|null $excludes
      * @param Dependency[] $dependencies
+     * @param int $flags
      */
     public function __construct(
         string $name,
@@ -47,7 +50,8 @@ final class Function_
         ?string $phpMax,
         ?array $parameters,
         ?array $excludes,
-        array $dependencies
+        array $dependencies,
+        int $flags
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -59,6 +63,7 @@ final class Function_
         $this->parameters = $parameters;
         $this->excludes = $excludes;
         $this->dependencies = $dependencies;
+        $this->flags = $flags;
     }
 
     /**
@@ -107,5 +112,53 @@ final class Function_
     public function getDependencies(): array
     {
         return $this->dependencies;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAbstract(): bool
+    {
+        return (bool) (!empty($this->declaringClass) && $this->flags & Class_::MODIFIER_ABSTRACT);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFinal(): bool
+    {
+        return (bool) (!empty($this->declaringClass) && $this->flags & Class_::MODIFIER_FINAL);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isStatic(): bool
+    {
+        return (bool) (!empty($this->declaringClass) && $this->flags & Class_::MODIFIER_STATIC);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPublic(): bool
+    {
+        return (bool) ($this->flags & Class_::MODIFIER_PUBLIC);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isProtected(): bool
+    {
+        return (bool) ($this->flags & Class_::MODIFIER_PROTECTED);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPrivate(): bool
+    {
+        return (bool) ($this->flags & Class_::MODIFIER_PRIVATE);
     }
 }
