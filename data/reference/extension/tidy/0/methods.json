@@ -107,14 +107,14 @@
     {
         "class_name": "tidy",
         "name": "repairFile",
-        "static": false,
+        "static": true,
         "ext_min": "0.5.2",
         "php_min": "4.3.0"
     },
     {
         "class_name": "tidy",
         "name": "repairString",
-        "static": false,
+        "static": true,
         "ext_min": "0.5.2",
         "php_min": "4.3.0"
     },
