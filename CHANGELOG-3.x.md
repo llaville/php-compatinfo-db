@@ -6,6 +6,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- `flags` property in Class/Function entities to identify (public/protected/private methods, abstract, final, static classes/methods)
+
+**Caution** DB structure changed
+
 ### Changed
 
 - Redis reference updated to version 5.3.4 (stable)
@@ -14,6 +20,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [#70](https://github.com/llaville/php-compatinfo-db/issues/70) test failure for pcre extension (thanks to @remicollet for reporting)
 - [#72](https://github.com/llaville/php-compatinfo-db/issues/72) Checks that elements available in extension are define in Reference
+- [#73](https://github.com/llaville/php-compatinfo-db/issues/73) Wrong static property in JSON files did not fail unit tests
 
 **Warning**
 
