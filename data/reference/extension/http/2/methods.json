@@ -590,7 +590,7 @@
     {
         "class_name": "http\\Env\\Request",
         "name": "getCookie",
-        "static": true,
+        "static": false,
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
     },
@@ -688,35 +688,35 @@
     {
         "class_name": "http\\Env\\Response",
         "name": "setCookie",
-        "static": true,
+        "static": false,
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Header\\Parser",
         "name": "getState",
-        "static": true,
+        "static": false,
         "ext_min": "2.3.0RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Header\\Parser",
         "name": "parse",
-        "static": true,
+        "static": false,
         "ext_min": "2.3.0RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Header\\Parser",
         "name": "stream",
-        "static": true,
+        "static": false,
         "ext_min": "2.3.0RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Message\\Parser",
         "name": "getState",
-        "static": true,
+        "static": false,
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
     },
@@ -940,21 +940,21 @@
     {
         "class_name": "http\\Message\\Parser",
         "name": "parse",
-        "static": true,
+        "static": false,
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Message\\Parser",
         "name": "stream",
-        "static": true,
+        "static": false,
         "ext_min": "2.2.0RC1",
         "php_min": "5.3.0"
     },
     {
         "class_name": "http\\Client",
         "name": "setDebug",
-        "static": true,
+        "static": false,
         "ext_min": "2.6.0beta1",
         "php_min": "5.3.0"
     },
