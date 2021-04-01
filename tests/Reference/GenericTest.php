@@ -23,6 +23,7 @@ use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Dependency;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 
+use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 use Composer\Semver\Semver;
 
 use PHPUnit\Framework\ExpectationFailedException;
@@ -187,6 +188,12 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
             if (!empty($range['optional'])) {
                 self::${$opt}[] = $name;
                 continue;
+            }
+
+            if ($element instanceof Function_) {
+                $range['is_abstract'] = $element->isAbstract();
+                $range['is_final'] = $element->isFinal();
+                $range['is_static'] = $element->isStatic();
             }
 
             foreach ($element->getDependencies() as $dependency) {
@@ -815,6 +822,18 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                     $methodExists,
                     "Class Method '$element', found in Reference, does not exists."
                 );
+
+                if ($method->isStatic()) {
+                    $this->assertTrue(
+                        $range['is_static'],
+                        "Class Method '$element', found in Reference, should be declared as static."
+                    );
+                } else {
+                    $this->assertFalse(
+                        $range['is_static'],
+                        "Class Method '$element', found in Reference, should not be declared as static."
+                    );
+                }
             } else {
                 $this->assertFalse(
                     $methodExists,
