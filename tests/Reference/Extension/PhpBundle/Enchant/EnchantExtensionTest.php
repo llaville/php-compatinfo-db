@@ -24,4 +24,26 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class EnchantExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$ignoredfunctions = [
+            'enchant_broker_get_dict_path',
+            'enchant_broker_set_dict_path',
+            'enchant_dict_add_to_personal',
+            'enchant_dict_add',
+            'enchant_dict_is_in_session',
+        ];
+
+        self::$ignoredconstants = [
+            'LIBENCHANT_VERSION',
+            'ENCHANT_ISPELL',
+            'ENCHANT_MYSPELL',
+        ];
+        parent::setUpBeforeClass();
+    }
 }
