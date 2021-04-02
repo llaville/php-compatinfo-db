@@ -529,6 +529,17 @@ final class ReleaseHandler implements CommandHandlerInterface
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
+        $refName = 'tidy';
+        $ext     = 'methods';
+        $major   = '0';
+        $entry   = 'php_max';
+        $names   = [
+            // became static since PHP 8.0
+            'tidy::repairFile'                      => $this->latestPhpVersion['74'],
+            'tidy::repairString'                    => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
         $refName = 'xdebug';
         $ext     = 'iniEntries';
         $major   = '2';
