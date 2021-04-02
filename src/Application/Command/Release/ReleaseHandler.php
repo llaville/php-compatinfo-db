@@ -586,6 +586,17 @@ final class ReleaseHandler implements CommandHandlerInterface
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
+        $refName = 'xmlreader';
+        $ext     = 'methods';
+        $major   = '50';
+        $entry   = 'php_max';
+        $names   = [
+            // became static since PHP 8.0
+            'XMLReader::XML'                        => $this->latestPhpVersion['74'],
+            'XMLReader::open'                       => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
         $refName = 'zlib';
         $ext     = 'functions';
         $major   = '40';
