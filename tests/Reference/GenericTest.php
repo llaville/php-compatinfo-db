@@ -586,10 +586,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                     );
                 } catch (ReflectionException $e) {
                     // thrown if the given function does not exist.
-                    $this->assertTrue(
-                        false,
-                        "Function '$element', found in Reference, does not exists."
-                    );
+                    continue;
                 }
             } else {
                 $min = $range['php.min'];
