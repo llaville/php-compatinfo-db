@@ -191,9 +191,18 @@ class SocketsExtensionTest extends GenericTest
             'IPV6_MULTICAST_LOOP',
             'IPPROTO_IPV6',
             'IPV6_UNICAST_HOPS',
+            // requires HAVE_AI_V4MAPPED
+            'AI_V4MAPPED',
+            // requires HAVE_AI_ALL
+            'AI_ALL',
             // requires HAVE_AI_IDN
             'AI_IDN',
             'AI_CANONIDN',
+            // and https://github.com/php/php-src/blob/php-7.4.16/ext/sockets/sockets.c#L861-L862
+            'AI_IDN_ALLOW_UNASSIGNED',
+            'AI_IDN_USE_STD3_ASCII_RULES',
+            //
+            'AI_NUMERICSERV',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 
