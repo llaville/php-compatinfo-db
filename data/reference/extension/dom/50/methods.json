@@ -719,10 +719,17 @@
     },
     {
         "class_name": "DOMNode",
-        "name": "lookupNamespaceURI",
+        "name": "lookupNamespaceUri",
         "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "lookupNamespaceURI",
+        "static": false,
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0"
     },
     {
         "class_name": "DOMNode",
