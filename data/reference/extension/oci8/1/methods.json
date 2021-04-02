@@ -33,7 +33,7 @@
     },
     {
         "class_name": "OCI-Collection",
-        "name": "getElem",
+        "name": "getelem",
         "static": false,
         "ext_min": "1.0",
         "php_min": "4.3.0",
