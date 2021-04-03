@@ -52,6 +52,7 @@ jobs:
             -
                 name: Setup Librairies
                 run: |
+                    sudo apt-get update
                     sudo apt-fast install libcurl4-openssl-dev -y
                     sudo apt-fast install libssh2-1-dev -y
 
