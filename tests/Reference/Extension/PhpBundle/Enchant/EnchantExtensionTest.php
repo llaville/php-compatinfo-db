@@ -32,11 +32,13 @@ class EnchantExtensionTest extends GenericTest
     public static function setUpBeforeClass(): void
     {
         self::$ignoredfunctions = [
+            // since PHP 8.0.0alpha1; @see https://github.com/php/php-src/commit/66d42e98844de694c6f77c299a3dc045ac5a3261
             'enchant_broker_get_dict_path',
             'enchant_broker_set_dict_path',
             'enchant_dict_add_to_personal',
             'enchant_dict_add',
             'enchant_dict_is_in_session',
+            'enchant_dict_is_added',
         ];
 
         self::$ignoredconstants = [
