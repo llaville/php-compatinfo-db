@@ -198,7 +198,6 @@ class SocketsExtensionTest extends GenericTest
             // requires HAVE_AI_IDN
             'AI_IDN',
             'AI_CANONIDN',
-            // and https://github.com/php/php-src/blob/php-7.4.16/ext/sockets/sockets.c#L861-L862
             'AI_IDN_ALLOW_UNASSIGNED',
             'AI_IDN_USE_STD3_ASCII_RULES',
             //

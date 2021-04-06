@@ -40,6 +40,16 @@
         "php_min": "7.2.0alpha1"
     },
     {
+        "name": "AI_IDN_ALLOW_UNASSIGNED",
+        "ext_min": "7.2.0alpha1",
+        "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "AI_IDN_USE_STD3_ASCII_RULES",
+        "ext_min": "7.2.0alpha1",
+        "php_min": "7.2.0alpha1"
+    },
+    {
         "name": "AI_NUMERICSERV",
         "ext_min": "7.2.0alpha1",
         "php_min": "7.2.0alpha1"
