@@ -30,6 +30,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use function array_unshift;
 use function count;
 use function explode;
+use function implode;
 use function sprintf;
 
 /**
@@ -184,10 +185,24 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 $key = $domain->getName();
             }
 
+            $flags = [];
+            if ($domain instanceof Function_) {
+                if ($domain->isAbstract()) {
+                    $flags[] = 'A';
+                }
+                if ($domain->isFinal()) {
+                    $flags[] = 'F';
+                }
+                if ($domain->isStatic()) {
+                    $flags[] = 'S';
+                }
+            }
+
             $args[$key] = [
                 $this->ext($domain) ? : $domain->getVersion(),
                 $this->php($domain),
-                ''
+                '',
+                implode(', ', $flags),
             ];
         }
         ksort($args);
@@ -201,7 +216,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
         $io->section($section);
 
-        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated'];
+        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Flags'];
         $footers = [
             sprintf('<info>Total [%d]</info>', count($results)),
             '',

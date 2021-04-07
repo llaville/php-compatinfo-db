@@ -62,7 +62,15 @@ final class FunctionHydrator implements HydratorInterface
         $object->setParameters(isset($data['parameters']) ? explode(',', $data['parameters']) : null);
         $object->setExcludes(isset($data['php_excludes']) ? explode(',', $data['php_excludes']) : null);
         $object->setPrototype($data['prototype'] ?? null);
-        $object->setFlags(isset($data['static']) && $data['static'] === true ? Class_::MODIFIER_STATIC | Class_::MODIFIER_PUBLIC : Class_::MODIFIER_PUBLIC);
+
+        $flags = Class_::MODIFIER_PUBLIC;
+        if (isset($data['static']) && $data['static'] === true) {
+            $flags = $flags | Class_::MODIFIER_STATIC;
+        }
+        if (isset($data['abstract']) && $data['abstract'] === true) {
+            $flags = $flags | Class_::MODIFIER_ABSTRACT;
+        }
+        $object->setFlags($flags);
 
         $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
