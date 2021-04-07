@@ -2,49 +2,42 @@
     {
         "class_name": "CURLFile",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "CURLFile",
         "name": "__wakeup",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "CURLFile",
         "name": "getFilename",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "CURLFile",
         "name": "getMimeType",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "CURLFile",
         "name": "getPostFilename",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "CURLFile",
         "name": "setMimeType",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "CURLFile",
         "name": "setPostFilename",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     }

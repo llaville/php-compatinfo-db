@@ -2,14 +2,12 @@
     {
         "class_name": "DateInterval",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "DateInterval",
         "name": "__wakeup",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
@@ -23,7 +21,6 @@
     {
         "class_name": "DateInterval",
         "name": "format",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
@@ -37,14 +34,12 @@
     {
         "class_name": "DatePeriod",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "DatePeriod",
         "name": "__wakeup",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.3.0"
     },
@@ -58,21 +53,18 @@
     {
         "class_name": "DatePeriod",
         "name": "getStartDate",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.6.5RC1"
     },
     {
         "class_name": "DatePeriod",
         "name": "getEndDate",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.6.5RC1"
     },
     {
         "class_name": "DatePeriod",
         "name": "getDateInterval",
-        "static": false,
         "ext_min": "5.3.0",
         "php_min": "5.6.5RC1"
     }

@@ -9,7 +9,6 @@
     {
         "class_name": "Spoofchecker",
         "name": "setRestrictionLevel",
-        "static": false,
         "ext_min": "7.3.0",
         "php_min": "7.3.0alpha1"
     }

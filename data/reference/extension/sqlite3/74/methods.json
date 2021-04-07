@@ -2,28 +2,24 @@
     {
         "class_name": "SQLite3Stmt",
         "name": "getSQL",
-        "static": false,
         "ext_min": "7.4.0alpha1",
         "php_min": "7.4.0alpha1"
     },
     {
         "class_name": "SQLite3",
         "name": "backup",
-        "static": false,
         "ext_min": "7.4.0alpha2",
         "php_min": "7.4.0alpha2"
     },
     {
         "class_name": "SQLite3",
         "name": "lastExtendedErrorCode",
-        "static": false,
         "ext_min": "7.4.0alpha3",
         "php_min": "7.4.0alpha3"
     },
     {
         "class_name": "SQLite3",
         "name": "enableExtendedResultCodes",
-        "static": false,
         "ext_min": "7.4.0alpha3",
         "php_min": "7.4.0alpha3"
     }

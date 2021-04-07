@@ -2,140 +2,120 @@
     {
         "class_name": "SyncEvent",
         "name": "__construct",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncEvent",
         "name": "fire",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncEvent",
         "name": "reset",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncEvent",
         "name": "wait",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncMutex",
         "name": "__construct",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncMutex",
         "name": "lock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncMutex",
         "name": "unlock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncReaderWriter",
         "name": "__construct",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncReaderWriter",
         "name": "readlock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncReaderWriter",
         "name": "readunlock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncReaderWriter",
         "name": "writelock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncReaderWriter",
         "name": "writeunlock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSemaphore",
         "name": "__construct",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSemaphore",
         "name": "lock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSemaphore",
         "name": "unlock",
-        "static": false,
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSharedMemory",
         "name": "__construct",
-        "static": false,
         "ext_min": "1.1.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSharedMemory",
         "name": "first",
-        "static": false,
         "ext_min": "1.1.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSharedMemory",
         "name": "read",
-        "static": false,
         "ext_min": "1.1.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSharedMemory",
         "name": "size",
-        "static": false,
         "ext_min": "1.1.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "SyncSharedMemory",
         "name": "write",
-        "static": false,
         "ext_min": "1.1.0",
         "php_min": "5.3.0"
     }

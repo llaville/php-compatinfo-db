@@ -2,7 +2,6 @@
     {
         "class_name": "mysqli",
         "name": "mysqli",
-        "static": false,
         "ext_min": "5.0.0",
         "ext_max": "6.0.0",
         "php_min": "5.0.0",
@@ -11,294 +10,252 @@
     {
         "class_name": "mysqli",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "autocommit",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "begin_transaction",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "change_user",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "character_set_name",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "close",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "commit",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "connect",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "debug",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "dump_debug_info",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "escape_string",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "get_charset",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "get_client_info",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "get_connection_stats",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "get_server_info",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "get_warnings",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "init",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "kill",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "more_results",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "multi_query",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "next_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "options",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "ping",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "prepare",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "query",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "real_connect",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "real_escape_string",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "real_query",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "reap_async_query",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "refresh",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "release_savepoint",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "rollback",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "savepoint",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "select_db",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "set_charset",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "set_opt",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "ssl_set",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "stat",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "stmt_init",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "store_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "thread_safe",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli",
         "name": "use_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
@@ -312,245 +269,210 @@
     {
         "class_name": "mysqli_result",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "close",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "data_seek",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_all",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_array",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_assoc",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_field",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_field_direct",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_fields",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_object",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "fetch_row",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "field_seek",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "free",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_result",
         "name": "free_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "attr_get",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "attr_set",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "bind_param",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "bind_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "close",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "data_seek",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "execute",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "fetch",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "free_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "get_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "get_warnings",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "more_results",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "next_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "num_rows",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "prepare",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "reset",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "result_metadata",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "send_long_data",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_stmt",
         "name": "store_result",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     },
     {
         "class_name": "mysqli_warning",
         "name": "next",
-        "static": false,
         "ext_min": "5.0.0",
         "php_min": "5.0.0"
     }

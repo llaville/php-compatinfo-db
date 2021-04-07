@@ -2,56 +2,48 @@
     {
         "class_name": "Yac",
         "name": "add",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "set",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "get",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "delete",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "flush",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "info",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "dump",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Yac",
         "name": "__construct",
-        "static": false,
         "ext_min": "0.9.0",
         "php_min": "5.2.0"
     }

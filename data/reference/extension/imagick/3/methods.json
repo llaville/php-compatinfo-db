@@ -2,7 +2,6 @@
     {
         "class_name": "Imagick",
         "name": "getimageattribute",
-        "static": false,
         "ext_min": "3.0.1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -15,7 +14,6 @@
     {
         "class_name": "Imagick",
         "name": "paintfloodfillimage",
-        "static": false,
         "ext_min": "3.0.1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -28,14 +26,12 @@
     {
         "class_name": "Imagick",
         "name": "count",
-        "static": false,
         "ext_min": "3.2.0b1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "recolorimage",
-        "static": false,
         "ext_min": "3.0.1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -48,7 +44,6 @@
     {
         "class_name": "Imagick",
         "name": "optimizeimagelayers",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -61,7 +56,6 @@
     {
         "class_name": "Imagick",
         "name": "compareimagelayers",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -74,7 +68,6 @@
     {
         "class_name": "Imagick",
         "name": "pingimageblob",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -87,7 +80,6 @@
     {
         "class_name": "Imagick",
         "name": "pingimagefile",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -100,7 +92,6 @@
     {
         "class_name": "Imagick",
         "name": "transposeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -113,7 +104,6 @@
     {
         "class_name": "Imagick",
         "name": "transverseimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -126,7 +116,6 @@
     {
         "class_name": "Imagick",
         "name": "trimimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -139,7 +128,6 @@
     {
         "class_name": "Imagick",
         "name": "waveimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -152,7 +140,6 @@
     {
         "class_name": "Imagick",
         "name": "vignetteimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -165,7 +152,6 @@
     {
         "class_name": "Imagick",
         "name": "uniqueimagecolors",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -178,7 +164,6 @@
     {
         "class_name": "Imagick",
         "name": "setimagematte",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -191,7 +176,6 @@
     {
         "class_name": "Imagick",
         "name": "adaptiveresizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -204,7 +188,6 @@
     {
         "class_name": "Imagick",
         "name": "sketchimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -217,7 +200,6 @@
     {
         "class_name": "Imagick",
         "name": "shadeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -230,14 +212,12 @@
     {
         "class_name": "Imagick",
         "name": "getsizeoffset",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setsizeoffset",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -250,7 +230,6 @@
     {
         "class_name": "Imagick",
         "name": "adaptiveblurimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -263,7 +242,6 @@
     {
         "class_name": "Imagick",
         "name": "contraststretchimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -276,7 +254,6 @@
     {
         "class_name": "Imagick",
         "name": "adaptivesharpenimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -289,7 +266,6 @@
     {
         "class_name": "Imagick",
         "name": "randomthresholdimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -302,7 +278,6 @@
     {
         "class_name": "Imagick",
         "name": "roundcornersimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -315,7 +290,6 @@
     {
         "class_name": "Imagick",
         "name": "transformimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -328,7 +302,6 @@
     {
         "class_name": "Imagick",
         "name": "setimageopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -341,7 +314,6 @@
     {
         "class_name": "Imagick",
         "name": "orderedposterizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -354,7 +326,6 @@
     {
         "class_name": "Imagick",
         "name": "deleteimageproperty",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -367,7 +338,6 @@
     {
         "class_name": "Imagick",
         "name": "identifyformat",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -380,7 +350,6 @@
     {
         "class_name": "Imagick",
         "name": "setimageinterpolatemethod",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -393,7 +362,6 @@
     {
         "class_name": "Imagick",
         "name": "getimageinterpolatemethod",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -406,7 +374,6 @@
     {
         "class_name": "Imagick",
         "name": "linearstretchimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -419,7 +386,6 @@
     {
         "class_name": "Imagick",
         "name": "distortimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -432,7 +398,6 @@
     {
         "class_name": "Imagick",
         "name": "liquidrescaleimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -445,7 +410,6 @@
     {
         "class_name": "Imagick",
         "name": "setgravity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -458,7 +422,6 @@
     {
         "class_name": "Imagick",
         "name": "getgravity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -471,7 +434,6 @@
     {
         "class_name": "Imagick",
         "name": "getimagechannelrange",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -484,7 +446,6 @@
     {
         "class_name": "Imagick",
         "name": "getimagealphachannel",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -497,7 +458,6 @@
     {
         "class_name": "Imagick",
         "name": "transformimagecolorspace",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -510,7 +470,6 @@
     {
         "class_name": "Imagick",
         "name": "haldclutimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -523,7 +482,6 @@
     {
         "class_name": "Imagick",
         "name": "autolevelimage",
-        "static": false,
         "ext_min": "3.2.0b2",
         "php_min": "5.1.3",
         "dependencies": [
@@ -536,7 +494,6 @@
     {
         "class_name": "Imagick",
         "name": "blueshiftimage",
-        "static": false,
         "ext_min": "3.2.0b2",
         "php_min": "5.1.3",
         "dependencies": [
@@ -549,7 +506,6 @@
     {
         "class_name": "Imagick",
         "name": "getimageartifact",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -562,7 +518,6 @@
     {
         "class_name": "Imagick",
         "name": "setimageartifact",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -575,7 +530,6 @@
     {
         "class_name": "Imagick",
         "name": "deleteimageartifact",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -588,7 +542,6 @@
     {
         "class_name": "Imagick",
         "name": "getcolorspace",
-        "static": false,
         "ext_min": "3.0.0RC2",
         "php_min": "5.1.3",
         "dependencies": [
@@ -601,7 +554,6 @@
     {
         "class_name": "Imagick",
         "name": "setcolorspace",
-        "static": false,
         "ext_min": "3.0.0RC2",
         "php_min": "5.1.3",
         "dependencies": [
@@ -614,7 +566,6 @@
     {
         "class_name": "Imagick",
         "name": "clampimage",
-        "static": false,
         "ext_min": "3.2.0b2",
         "php_min": "5.1.3",
         "dependencies": [
@@ -627,7 +578,6 @@
     {
         "class_name": "Imagick",
         "name": "smushimages",
-        "static": false,
         "ext_min": "3.2.0b2",
         "php_min": "5.1.3",
         "dependencies": [
@@ -640,476 +590,408 @@
     {
         "class_name": "Imagick",
         "name": "__construct",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getpixeliterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getpixelregioniterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "readimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "readimageblob",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageformat",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "scaleimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "writeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "writeimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "blurimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "thumbnailimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagefilename",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagefilename",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageformat",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "removeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "destroy",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "clear",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "clone",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageblob",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagesblob",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setfirstiterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setlastiterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "resetiterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "previousimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "nextimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "haspreviousimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "hasnextimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "commentimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "cropimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "labelimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagegeometry",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "drawimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagecompressionquality",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagecompression",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagecompression",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "annotateimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "compositeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "modulateimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagecolors",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "montageimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "identifyimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "thresholdimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "adaptivethresholdimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "blackthresholdimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "whitethresholdimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "appendimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "charcoalimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "normalizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "oilpaintimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "posterizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "raiseimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "resampleimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "resizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "rollimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "rotateimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "sampleimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "solarizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "shadowimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagebackgroundcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagecompose",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagedelay",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagedepth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagegamma",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageiterations",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagemattecolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagepage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageprogressmonitor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setprogressmonitor",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -1122,98 +1004,84 @@
     {
         "class_name": "Imagick",
         "name": "setimageresolution",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagescene",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagetickspersecond",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagetype",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageunits",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "sharpenimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "shaveimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "shearimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "spliceimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "pingimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "readimagefile",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "spreadimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "swirlimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "stripimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -1227,49 +1095,42 @@
     {
         "class_name": "Imagick",
         "name": "steganoimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "addnoiseimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "motionblurimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "morphimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "minifyimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "affinetransformimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "borderimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -1283,140 +1144,120 @@
     {
         "class_name": "Imagick",
         "name": "chopimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "clipimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "clippathimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "clipimagepath",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "coalesceimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "colorizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "compareimagechannels",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "compareimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "contrastimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "combineimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "convolveimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "cyclecolormapimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "deconstructimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "despeckleimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "edgeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "embossimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "enhanceimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "equalizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "evaluateimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "evaluateimages",
-        "static": false,
         "ext_min": "3.4.0RC6",
         "php_min": "5.4.0",
         "dependencies": [
@@ -1429,21 +1270,18 @@
     {
         "class_name": "Imagick",
         "name": "flipimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "flopimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "forwardfouriertransformimage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -1456,308 +1294,264 @@
     {
         "class_name": "Imagick",
         "name": "frameimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "fximage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "gammaimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "gaussianblurimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagebackgroundcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageblueprimary",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagebordercolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagechanneldepth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagechanneldistortion",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagechannelmean",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagechannelstatistics",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagecolormapcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagecolorspace",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagecompose",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagedelay",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagedepth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagedistortion",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagedispose",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagegamma",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagegreenprimary",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageheight",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagehistogram",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageinterlacescheme",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageiterations",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagemattecolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagepage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagepixelcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageprofile",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageredprimary",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagerenderingintent",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageresolution",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagescene",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagesignature",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagetickspersecond",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagetype",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageunits",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagevirtualpixelmethod",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagewhitepoint",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagewidth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getnumberimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimagetotalinkdensity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimageregion",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "implodeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "inversefouriertransformimage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -1770,77 +1564,66 @@
     {
         "class_name": "Imagick",
         "name": "levelimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "magnifyimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "negateimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "previewimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "profileimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "quantizeimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "quantizeimages",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "removeimageprofile",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "separateimagechannel",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "sepiatoneimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagebias",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -1853,7 +1636,6 @@
     {
         "class_name": "Imagick",
         "name": "setimagebiasquantum",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -1866,168 +1648,144 @@
     {
         "class_name": "Imagick",
         "name": "setimageblueprimary",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagebordercolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagechanneldepth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagecolormapcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagecolorspace",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagedispose",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageextent",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagegreenprimary",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageinterlacescheme",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageprofile",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimageredprimary",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagerenderingintent",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagevirtualpixelmethod",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagewhitepoint",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "sigmoidalcontrastimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "stereoimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "textureimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "tintimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "unsharpmaskimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "addimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "newimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getcompression",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getcompressionquality",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2061,14 +1819,12 @@
     {
         "class_name": "Imagick",
         "name": "getfilename",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getformat",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2082,14 +1838,12 @@
     {
         "class_name": "Imagick",
         "name": "getinterlacescheme",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getoption",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2103,7 +1857,6 @@
     {
         "class_name": "Imagick",
         "name": "getpage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2159,14 +1912,12 @@
     {
         "class_name": "Imagick",
         "name": "getsamplingfactors",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "getsize",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2180,56 +1931,48 @@
     {
         "class_name": "Imagick",
         "name": "setbackgroundcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setcompression",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setcompressionquality",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setfilename",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setformat",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setinterlacescheme",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setoption",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setpage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2243,35 +1986,30 @@
     {
         "class_name": "Imagick",
         "name": "setresolution",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setsamplingfactors",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setsize",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "settype",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "brightnesscontrastimage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2284,7 +2022,6 @@
     {
         "class_name": "Imagick",
         "name": "colormatriximage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2297,14 +2034,12 @@
     {
         "class_name": "Imagick",
         "name": "selectiveblurimage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "rotationalblurimage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2317,7 +2052,6 @@
     {
         "class_name": "Imagick",
         "name": "statisticimage",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2330,7 +2064,6 @@
     {
         "class_name": "Imagick",
         "name": "subimagematch",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2343,7 +2076,6 @@
     {
         "class_name": "Imagick",
         "name": "similarityimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -2371,7 +2103,6 @@
     {
         "class_name": "Imagick",
         "name": "morphology",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2384,7 +2115,6 @@
     {
         "class_name": "Imagick",
         "name": "filter",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3",
         "dependencies": [
@@ -2397,21 +2127,18 @@
     {
         "class_name": "Imagick",
         "name": "setantialias",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "getantialias",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
         "name": "colordecisionlistimage",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2424,7 +2151,6 @@
     {
         "class_name": "Imagick",
         "name": "autogammaimage",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2437,7 +2163,6 @@
     {
         "class_name": "ImagickPixel",
         "name": "gethsl",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2450,7 +2175,6 @@
     {
         "class_name": "ImagickPixel",
         "name": "sethsl",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2463,91 +2187,78 @@
     {
         "class_name": "ImagickPixel",
         "name": "__construct",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "setcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "setcolorvalue",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "getcolorvalue",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "clear",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "destroy",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "issimilar",
-        "static": false,
         "ext_min": "3.0.0",
         "php_min": "5.1.3"
     },
     {
         "class_name": "ImagickPixel",
         "name": "ispixelsimilarquantum",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "ImagickPixel",
         "name": "ispixelsimilar",
-        "static": false,
         "ext_min": "3.2.0b2",
         "php_min": "5.1.3"
     },
     {
         "class_name": "ImagickPixel",
         "name": "getcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixel",
         "name": "getcolorquantum",
-        "static": false,
         "ext_min": "3.3.0RC1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "ImagickPixel",
         "name": "getcolorcount",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "resetvectorgraphics",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2560,7 +2271,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "gettextinterlinespacing",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2573,7 +2283,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "settextinterlinespacing",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -2586,819 +2295,702 @@
     {
         "class_name": "ImagickDraw",
         "name": "__construct",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfillcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfillalpha",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setresolution",
-        "static": false,
         "ext_min": "3.1.0b1",
         "php_min": "5.1.3"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokecolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokealpha",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokewidth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "clear",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "circle",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "annotation",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "settextantialias",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "settextencoding",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfont",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfontfamily",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfontsize",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfontstyle",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfontweight",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfont",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfontfamily",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfontsize",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfontstyle",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfontweight",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "destroy",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "rectangle",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "roundrectangle",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "ellipse",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "skewx",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "skewy",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "translate",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "line",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "arc",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "polygon",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "point",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "gettextdecoration",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "gettextencoding",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfontstretch",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfontstretch",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokeantialias",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "settextalignment",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "settextdecoration",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "settextundercolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setviewbox",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "clone",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "affine",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "bezier",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "composite",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "color",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "comment",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getclippath",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getcliprule",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getclipunits",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfillcolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfillopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getfillrule",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getgravity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokeantialias",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokecolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokedasharray",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokedashoffset",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokelinecap",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokelinejoin",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokemiterlimit",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokeopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getstrokewidth",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "gettextalignment",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "gettextantialias",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getvectorgraphics",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "gettextundercolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathclose",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetoabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetorelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetoquadraticbezierabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetoquadraticbezierrelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetoquadraticbeziersmoothabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetoquadraticbeziersmoothrelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetosmoothabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathcurvetosmoothrelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathellipticarcabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathellipticarcrelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathfinish",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathlinetoabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathlinetorelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathlinetohorizontalabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathlinetohorizontalrelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathlinetoverticalabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathlinetoverticalrelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathmovetoabsolute",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathmovetorelative",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pathstart",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "polyline",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "popclippath",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "popdefs",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "poppattern",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pushclippath",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pushdefs",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pushpattern",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "render",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "rotate",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "scale",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setclippath",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setcliprule",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setclipunits",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfillopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfillpatternurl",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setfillrule",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setgravity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokepatternurl",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokedashoffset",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokelinecap",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokelinejoin",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokemiterlimit",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokeopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setvectorgraphics",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "pop",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "push",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "setstrokedasharray",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickDraw",
         "name": "getopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3411,7 +3003,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "setopacity",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3424,7 +3015,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "getfontresolution",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3437,7 +3027,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "setfontresolution",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3450,7 +3039,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "getbordercolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3463,7 +3051,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "setbordercolor",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3476,98 +3063,84 @@
     {
         "class_name": "ImagickPixelIterator",
         "name": "__construct",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "newpixeliterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "newpixelregioniterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "getiteratorrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "setiteratorrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "setiteratorfirstrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "setiteratorlastrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "getpreviousiteratorrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "getcurrentiteratorrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "getnextiteratorrow",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "resetiterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "synciterator",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "destroy",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickPixelIterator",
         "name": "clear",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
@@ -3602,42 +3175,36 @@
     {
         "class_name": "ImagickKernel",
         "name": "addkernel",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickKernel",
         "name": "getmatrix",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickKernel",
         "name": "separate",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickKernel",
         "name": "scale",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "ImagickKernel",
         "name": "addunitykernel",
-        "static": false,
         "ext_min": "3.4.0",
         "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
         "name": "setimagechannelmask",
-        "static": false,
         "ext_min": "3.4.0RC1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3650,7 +3217,6 @@
     {
         "class_name": "Imagick",
         "name": "localcontrastimage",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3663,7 +3229,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "getdensity",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3676,7 +3241,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "setdensity",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3689,7 +3253,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "gettextdirection",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3702,7 +3265,6 @@
     {
         "class_name": "ImagickDraw",
         "name": "settextdirection",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3715,7 +3277,6 @@
     {
         "class_name": "ImagickPixel",
         "name": "setcolorfrompixel",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3728,7 +3289,6 @@
     {
         "class_name": "Imagick",
         "name": "autoorient",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3741,7 +3301,6 @@
     {
         "class_name": "Imagick",
         "name": "compositeimagegravity",
-        "static": false,
         "ext_min": "3.4.1",
         "php_min": "5.4.0",
         "dependencies": [
@@ -3754,7 +3313,6 @@
     {
         "class_name": "Imagick",
         "name": "optimizeimagetransparency",
-        "static": false,
         "ext_min": "3.4.4RC1",
         "php_min": "5.4.0",
         "dependencies": [

@@ -2,7 +2,6 @@
     {
         "class_name": "DateTimeImmutable",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
@@ -30,98 +29,84 @@
     {
         "class_name": "DateTimeImmutable",
         "name": "modify",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "add",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "sub",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "setTimezone",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "setTime",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "setDate",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "setISODate",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "setTimestamp",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeInterface",
         "name": "format",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeInterface",
         "name": "getTimezone",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeInterface",
         "name": "getOffset",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeInterface",
         "name": "getTimestamp",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeInterface",
         "name": "diff",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     },
     {
         "class_name": "DateTimeInterface",
         "name": "__wakeup",
-        "static": false,
         "ext_min": "5.5.0",
         "php_min": "5.5.0"
     }

@@ -2,28 +2,24 @@
     {
         "class_name": "APCUIterator",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.1.0",
         "php_min": "7.0.0"
     },
     {
         "class_name": "APCUIterator",
         "name": "getTotalHits",
-        "static": false,
         "ext_min": "5.1.0",
         "php_min": "7.0.0"
     },
     {
         "class_name": "APCUIterator",
         "name": "getTotalSize",
-        "static": false,
         "ext_min": "5.1.0",
         "php_min": "7.0.0"
     },
     {
         "class_name": "APCUIterator",
         "name": "getTotalCount",
-        "static": false,
         "ext_min": "5.1.0",
         "php_min": "7.0.0"
     }

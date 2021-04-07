@@ -16,7 +16,6 @@
     {
         "class_name": "Transliterator",
         "name": "createInverse",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
@@ -30,56 +29,48 @@
     {
         "class_name": "Transliterator",
         "name": "transliterate",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Transliterator",
         "name": "getErrorCode",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Transliterator",
         "name": "getErrorMessage",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Spoofchecker",
         "name": "__construct",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Spoofchecker",
         "name": "isSuspicious",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Spoofchecker",
         "name": "areConfusable",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Spoofchecker",
         "name": "setAllowedLocales",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     },
     {
         "class_name": "Spoofchecker",
         "name": "setChecks",
-        "static": false,
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4"
     }

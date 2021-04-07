@@ -2,21 +2,18 @@
     {
         "class_name": "RarEntry",
         "name": "getRedirType",
-        "static": false,
         "ext_min": "4.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RarEntry",
         "name": "isRedirectToDirectory",
-        "static": false,
         "ext_min": "4.0.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RarEntry",
         "name": "getRedirTarget",
-        "static": false,
         "ext_min": "4.0.0",
         "php_min": "5.3.0"
     }

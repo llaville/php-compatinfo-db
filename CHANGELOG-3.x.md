@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Redis reference updated to version 5.3.4 (stable)
+- Clean-up JSON files by removing static (false) definition that is the default
 
 ### Fixed
 

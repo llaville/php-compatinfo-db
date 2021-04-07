@@ -9,70 +9,60 @@
     {
         "class_name": "RarArchive",
         "name": "getEntries",
-        "static": false,
         "ext_min": "2.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarArchive",
         "name": "getEntry",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarArchive",
         "name": "isSolid",
-        "static": false,
         "ext_min": "2.0.0RC1",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarArchive",
         "name": "getComment",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarArchive",
         "name": "close",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarArchive",
         "name": "__toString",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarEntry",
         "name": "getStream",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarEntry",
         "name": "isDirectory",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarEntry",
         "name": "isEncrypted",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarEntry",
         "name": "__toString",
-        "static": false,
         "ext_min": "2.0.0b2",
         "php_min": "5.2.0"
     },

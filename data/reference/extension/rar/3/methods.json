@@ -2,21 +2,18 @@
     {
         "class_name": "RarArchive",
         "name": "isBroken",
-        "static": false,
         "ext_min": "3.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarArchive",
         "name": "setAllowBroken",
-        "static": false,
         "ext_min": "3.0.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RarEntry",
         "name": "getPosition",
-        "static": false,
         "ext_min": "3.0.0",
         "php_min": "5.2.0"
     }

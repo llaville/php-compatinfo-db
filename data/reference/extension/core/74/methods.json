@@ -2,7 +2,6 @@
     {
         "class_name": "WeakReference",
         "name": "__construct",
-        "static": false,
         "ext_min": "7.4.0alpha1",
         "php_min": "7.4.0alpha1"
     },
@@ -16,7 +15,6 @@
     {
         "class_name": "WeakReference",
         "name": "get",
-        "static": false,
         "ext_min": "7.4.0alpha1",
         "php_min": "7.4.0alpha1"
     }

@@ -2,7 +2,6 @@
     {
         "class_name": "mimemessage",
         "name": "__construct",
-        "static": false,
         "ext_min": "3.1.0",
         "php_min": "7.0.0"
     }

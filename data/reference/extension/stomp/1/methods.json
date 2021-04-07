@@ -2,14 +2,12 @@
     {
         "class_name": "StompException",
         "name": "getDetails",
-        "static": false,
         "ext_min": "1.0.1",
         "php_min": "5.2.2"
     },
     {
         "class_name": "Stomp",
         "name": "nack",
-        "static": false,
         "ext_min": "1.0.6",
         "php_min": "5.2.2"
     }

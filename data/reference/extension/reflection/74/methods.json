@@ -9,28 +9,24 @@
     {
         "class_name": "ReflectionReference",
         "name": "getId",
-        "static": false,
         "ext_min": "7.4.0",
         "php_min": "7.4.0alpha1"
     },
     {
         "class_name": "ReflectionProperty",
         "name": "isInitialized",
-        "static": false,
         "ext_min": "7.4.0alpha1",
         "php_min": "7.4.0alpha1"
     },
     {
         "class_name": "ReflectionProperty",
         "name": "getType",
-        "static": false,
         "ext_min": "7.4.0alpha1",
         "php_min": "7.4.0alpha1"
     },
     {
         "class_name": "ReflectionProperty",
         "name": "hasType",
-        "static": false,
         "ext_min": "7.4.0alpha1",
         "php_min": "7.4.0alpha1"
     }

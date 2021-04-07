@@ -2,7 +2,6 @@
     {
         "class_name": "DateTime",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
@@ -16,35 +15,30 @@
     {
         "class_name": "DateTime",
         "name": "modify",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTime",
         "name": "setTimezone",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTime",
         "name": "setTime",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTime",
         "name": "setDate",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTime",
         "name": "setISODate",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
@@ -65,21 +59,18 @@
     {
         "class_name": "DateTime",
         "name": "add",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "DateTime",
         "name": "sub",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "DateTime",
         "name": "diff",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.3.0",
         "php_max": "5.4.37",
@@ -88,7 +79,6 @@
     {
         "class_name": "DateTime",
         "name": "format",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0",
         "php_max": "5.4.37",
@@ -97,7 +87,6 @@
     {
         "class_name": "DateTime",
         "name": "__wakeup",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0",
         "php_max": "5.4.37",
@@ -106,7 +95,6 @@
     {
         "class_name": "DateTime",
         "name": "getTimezone",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0",
         "php_max": "5.4.37",
@@ -115,7 +103,6 @@
     {
         "class_name": "DateTime",
         "name": "getOffset",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0",
         "php_max": "5.4.37",
@@ -124,7 +111,6 @@
     {
         "class_name": "DateTime",
         "name": "getTimestamp",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0",
         "php_max": "5.4.37",
@@ -133,21 +119,18 @@
     {
         "class_name": "DateTime",
         "name": "setTimestamp",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.3.0"
     },
     {
         "class_name": "DateTimeZone",
         "name": "__construct",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTimeZone",
         "name": "__wakeup",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
@@ -161,28 +144,24 @@
     {
         "class_name": "DateTimeZone",
         "name": "getName",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTimeZone",
         "name": "getOffset",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTimeZone",
         "name": "getTransitions",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.2.0"
     },
     {
         "class_name": "DateTimeZone",
         "name": "getLocation",
-        "static": false,
         "ext_min": "5.2.0",
         "php_min": "5.3.0"
     },
