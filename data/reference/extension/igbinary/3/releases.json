@@ -70,5 +70,17 @@
         "rel_date": "2020-12-27",
         "rel_state": "stable",
         "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "3.2.2RC1",
+        "rel_date": "2021-01-12",
+        "rel_state": "beta",
+        "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "3.2.2",
+        "rel_date": "2021-04-18",
+        "rel_state": "stable",
+        "php_min": "7.0.0"
     }
 ]
