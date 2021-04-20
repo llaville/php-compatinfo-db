@@ -46,7 +46,13 @@ final class ConstantRepository implements DomainRepository
      */
     public function getConstantByName(string $name, ?string $declaringClass): ?Constant_
     {
-        $criteria = ['name' => $name];
+        if (strpos($name, '\\') === false) {
+            // standard constant should be uppercase in database
+            $criteria = ['name' => strtoupper($name)];
+        } else {
+            // special case for constants that have namespace like in ast extension
+            $criteria = ['name' => $name];
+        }
         if ($declaringClass !== null) {
             $criteria['declaringClass'] = $declaringClass;
         }
