@@ -179,7 +179,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
 
         foreach ($elements as $name => $element) {
             $range = [
-                'ext.min' => $extVersion,
+                'ext.min' => $element->getExtMin(),
                 'ext.max' => $element->getExtMax(),
                 'php.min' => $element->getPhpMin(),
                 'php.max' => $element->getPhpMax(),

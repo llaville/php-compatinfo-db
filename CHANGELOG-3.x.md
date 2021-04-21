@@ -28,6 +28,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#72](https://github.com/llaville/php-compatinfo-db/issues/72) Checks that elements available in extension are define in Reference
 - [#73](https://github.com/llaville/php-compatinfo-db/issues/73) Wrong static property in JSON files did not fail unit tests
 - `Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\ConstantRepository::getConstantByName` when name is lowercase
+- Wrong assertion in `Bartlett\CompatInfoDb\Tests\Reference\GenericTest::provideReferenceValues` about `ext.min` property
 
 **Warning**
 
