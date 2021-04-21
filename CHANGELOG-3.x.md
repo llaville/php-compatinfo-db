@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Ast reference updated to version 1.0.11 (stable)
 - Igbinary reference updated to version 3.2.2 (stable)
 - Redis reference updated to version 5.3.4 (stable)
 - Sync reference updated to version 1.1.2 (stable)
