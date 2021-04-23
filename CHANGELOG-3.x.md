@@ -29,6 +29,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#73](https://github.com/llaville/php-compatinfo-db/issues/73) Wrong static property in JSON files did not fail unit tests
 - `Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\ConstantRepository::getConstantByName` when name is lowercase
 - Wrong assertion in `Bartlett\CompatInfoDb\Tests\Reference\GenericTest::provideReferenceValues` about `ext.min` property
+- Json reference version related to specific rules (see ExtensionVersionProviderTrait)
 
 **Warning**
 

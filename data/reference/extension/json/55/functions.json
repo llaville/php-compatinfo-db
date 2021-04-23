@@ -1,7 +1,7 @@
 [
     {
         "name": "json_last_error_msg",
-        "ext_min": "5.5.0",
+        "ext_min": "1.2.1",
         "php_min": "5.5.0"
     }
 ]

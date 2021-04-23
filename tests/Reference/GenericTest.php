@@ -175,8 +175,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      */
     private function provideReferenceValues(array $elements, string $opt): Generator
     {
-        $extVersion = $this->getExtensionVersion(self::$obj->getName());
-
         foreach ($elements as $name => $element) {
             $range = [
                 'ext.min' => $element->getExtMin(),

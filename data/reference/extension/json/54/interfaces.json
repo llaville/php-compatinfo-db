@@ -1,7 +1,7 @@
 [
     {
         "name": "JsonSerializable",
-        "ext_min": "5.4.0",
+        "ext_min": "1.2.1",
         "php_min": "5.4.0"
     }
 ]

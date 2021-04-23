@@ -1,7 +1,7 @@
 [
     {
         "name": "JSON_THROW_ON_ERROR",
-        "ext_min": "7.3.0alpha1",
+        "ext_min": "1.6.0",
         "php_min": "7.3.0alpha1"
     }
 ]

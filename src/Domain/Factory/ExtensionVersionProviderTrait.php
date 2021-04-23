@@ -71,9 +71,28 @@ trait ExtensionVersionProviderTrait
                 return '1.1.0';
             }
         } elseif ('json' === $normalizedName) {
-            if (version_compare(PHP_VERSION, '7.4.0beta2', 'lt')) {
+            if (version_compare(PHP_VERSION, '7.4.0beta2', 'ge')) {
+                // @see commit https://github.com/php/php-src/commit/dee243d475b088189862d30755aac7bb9cdd61b3
+                return PHP_VERSION;
+            }
+            if (version_compare(PHP_VERSION, '7.3.0alpha2', 'ge')) {
+                // @see commit https://github.com/php/php-src/commit/f3ef13e1d6cab27843ac8942bc1d50fb9abd301d
+                return '1.7.0';
+            }
+            if (version_compare(PHP_VERSION, '7.2.0beta1', 'ge')) {
+                // @see commit https://github.com/php/php-src/commit/18180bb16174a2a966641ed4e6171f6753f160a8
                 return '1.6.0';
             }
+            if (version_compare(PHP_VERSION, '7.1.0RC1', 'ge')) {
+                // @see commit https://github.com/php/php-src/commit/c4961fa8b637cd4b6e20ffa34a94cbaf60363fd8
+                return '1.5.0';
+            }
+            if (version_compare(PHP_VERSION, '7.0.0alpha1', 'ge')) {
+                // @see commit https://github.com/php/php-src/commit/3ddc246b5a80d8c2917fbcffc3eadde54d2ca575
+                return '1.4.0';
+            }
+            // @see commit https://github.com/php/php-src/commit/608baa409a04649e96691a93810130361fe3dff5
+            return '1.2.1';
         } elseif ('snmp' === $normalizedName) {
             if (version_compare(PHP_VERSION, '7.3.0alpha2', 'lt')) {
                 return '0.1';
