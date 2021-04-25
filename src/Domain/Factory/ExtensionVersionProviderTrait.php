@@ -64,6 +64,7 @@ trait ExtensionVersionProviderTrait
             }
         } elseif ('hash' === $normalizedName) {
             if (version_compare(PHP_VERSION, '7.3.0alpha3', 'lt')) {
+                // @see commit https://github.com/php/php-src/commit/3f96f01e9e4d50f47aa89da03853201304a58bba
                 return '1.0';
             }
         } elseif ('intl' === $normalizedName) {

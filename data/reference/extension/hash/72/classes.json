@@ -1,7 +1,7 @@
 [
     {
         "name": "HashContext",
-        "ext_min": "7.2.0alpha1",
+        "ext_min": "1.0",
         "php_min": "7.2.0alpha1"
     }
 ]
