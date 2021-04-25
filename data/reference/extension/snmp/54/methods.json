@@ -2,55 +2,55 @@
     {
         "class_name": "SNMP",
         "name": "__construct",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "close",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "getErrno",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "getError",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "get",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "getnext",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "setSecurity",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "set",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "walk",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     }
 ]

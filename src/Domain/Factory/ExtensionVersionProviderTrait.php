@@ -96,6 +96,7 @@ trait ExtensionVersionProviderTrait
             return '1.2.1';
         } elseif ('snmp' === $normalizedName) {
             if (version_compare(PHP_VERSION, '7.3.0alpha2', 'lt')) {
+                // @see commit https://github.com/php/php-src/commit/70f41d1d9cb03f76f73e7a6099bfc7ce0c2b2701
                 return '0.1';
             }
         }

@@ -2,73 +2,73 @@
     {
         "class_name": "SNMP",
         "name": "ERRNO_ANY",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_ERROR_IN_REPLY",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_GENERIC",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_MULTIPLE_SET_QUERIES",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_NOERROR",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_OID_NOT_INCREASING",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_OID_PARSING_ERROR",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "ERRNO_TIMEOUT",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "VERSION_1",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "VERSION_2C",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "VERSION_2c",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     },
     {
         "class_name": "SNMP",
         "name": "VERSION_3",
-        "ext_min": "5.4.0",
+        "ext_min": "0.1",
         "php_min": "5.4.0"
     }
 ]

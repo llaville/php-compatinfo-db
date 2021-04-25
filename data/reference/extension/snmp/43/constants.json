@@ -1,77 +1,77 @@
 [
     {
         "name": "SNMP_BIT_STR",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_COUNTER",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_COUNTER64",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_INTEGER",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_IPADDRESS",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_NULL",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_OBJECT_ID",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_OCTET_STR",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_OPAQUE",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_TIMETICKS",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_UINTEGER",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_UNSIGNED",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_VALUE_LIBRARY",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_VALUE_OBJECT",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     },
     {
         "name": "SNMP_VALUE_PLAIN",
-        "ext_min": "4.3.3",
+        "ext_min": "0.1",
         "php_min": "4.3.3"
     }
 ]
