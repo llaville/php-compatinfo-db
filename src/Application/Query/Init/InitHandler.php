@@ -664,7 +664,7 @@ final class InitHandler implements QueryHandlerInterface
             'constants'  => ['40'],
             'functions'  => ['40'],
             'iniEntries' => ['40'],
-            'releases'   => ['40'],
+            'releases'   => ['40', '1'],
         ];
 
         yield 'memcache' => [

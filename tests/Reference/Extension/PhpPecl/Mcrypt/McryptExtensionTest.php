@@ -21,8 +21,6 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
 /**
  * @since Release 3.0.0RC1 of PHP_CompatInfo
  * @since Release 1.0.0alpha1 of PHP_CompatInfo_Db
- *
- * @requires PHP < 7.2
  */
 class McryptExtensionTest extends GenericTest
 {

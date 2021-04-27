@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Ast reference updated to version 1.0.11 (stable)
 - Igbinary reference updated to version 3.2.2 (stable)
+- Mcrypt reference updated to version 1.0.4 (stable) for PHP 7.2.0 or greater
 - Redis reference updated to version 5.3.4 (stable)
 - Sync reference updated to version 1.1.2 (stable)
 - Xdebug reference updated to version 3.0.4 (stable)
