@@ -20,7 +20,7 @@
     </filter>
     <testsuites>
         <testsuite name="Sqlite Reference Test Suite">
-            <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
+            <directory phpVersion="5.4.0" phpVersionOperator="lt" prefix="" suffix="ExtensionTest.php">tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>

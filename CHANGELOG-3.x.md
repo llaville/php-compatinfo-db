@@ -22,6 +22,19 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Xdebug reference updated to version 3.0.4 (stable)
 - Clean-up JSON files by removing static (false) definition that is the default
 
+As support to PHP 5 was dropped in release 2.0.0, we removed following extensions :
+
+- apc
+- ereg
+- mhash
+- mongo
+- mysql
+- sqlite
+
+Some other extensions have support limited :
+
+- wddx (PHP 5.2 to PHP 7.3), see https://wiki.php.net/rfc/deprecate-and-remove-ext-wddx
+
 ### Fixed
 
 - [#70](https://github.com/llaville/php-compatinfo-db/issues/70) test failure for pcre extension (thanks to @remicollet for reporting)

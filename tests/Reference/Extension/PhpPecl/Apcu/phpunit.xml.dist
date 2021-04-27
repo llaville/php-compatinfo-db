@@ -20,6 +20,7 @@
     </filter>
     <testsuites>
         <testsuite name="Apcu Reference Test Suite">
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Apc" suffix="ExtensionTest.php">tests/</directory>
             <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
         </testsuite>
     </testsuites>

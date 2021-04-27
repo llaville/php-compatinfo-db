@@ -20,7 +20,7 @@
     </filter>
     <testsuites>
         <testsuite name="Wddx Reference Test Suite">
-            <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
+            <directory phpVersion="7.4.0" phpVersionOperator="lt" prefix="" suffix="ExtensionTest.php">tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
