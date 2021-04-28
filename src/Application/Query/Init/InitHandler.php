@@ -523,7 +523,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'http' => [
             'classes'    => ['0', '1', '2', '3'],
             'const'      => ['2', '3'],
-            'constants'  => ['1', '2'],
+            'constants'  => ['1', '2', '4'],
             'functions'  => ['1'],
             'iniEntries' => ['1', '2'],
             'interfaces' => ['2'],

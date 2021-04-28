@@ -16,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Ast reference updated to version 1.0.11 (stable)
+- Http reference updated to version 4.1.0 (stable)
 - Igbinary reference updated to version 3.2.2 (stable)
 - Mcrypt reference updated to version 1.0.4 (stable) for PHP 7.2.0 or greater
 - Redis reference updated to version 5.3.4 (stable)

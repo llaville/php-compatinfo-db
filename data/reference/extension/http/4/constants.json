@@ -1,0 +1,323 @@
+[
+    {
+        "name": "http\\Client\\Curl\\Features\\GSSAPI",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.38"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\KERBEROS5",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.40"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\HTTPS_PROXY",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.52"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\MULTI_SSL",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.56"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\BROTLI",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.57"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\ALTSVC",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\HTTP3",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.66"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\ZSTD",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.72"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\UNICODE",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.72"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Features\\HSTS",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.74"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\CURL",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\SSL",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\LIBZ",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\ARES",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\IDN",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\ICONV",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\BROTLI",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.57"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\NGHTTP2",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.66"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\QUIC",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.66"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\CAINFO",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.70"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\CAPATH",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.70"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\ZSTD",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.72"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\Versions\\HYPER",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.75"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\HTTP_VERSION_2_PRIOR_KNOWLEDGE",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.49"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\HTTP_VERSION_3",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.66"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\SSL_VERSION_TLSv1_3",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.52"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\SSL_VERSION_MAX_DEFAULT",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.54"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\SSL_VERSION_MAX_TLSv1_0",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.54"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\SSL_VERSION_MAX_TLSv1_1",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.54"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\SSL_VERSION_MAX_TLSv1_2",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.54"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\SSL_VERSION_MAX_TLSv1_3",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.54"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\AUTH_NONE",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "http\\Client\\Curl\\AUTH_BEARER",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.61"
+            }
+        ]
+    }
+]
