@@ -540,6 +540,20 @@ final class ReleaseHandler implements CommandHandlerInterface
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
+        $refName = 'wddx';
+        $ext     = 'functions';
+        $major   = '40';
+        $entry   = 'php_max';
+        $names   = [
+            'wddx_add_vars'                         => $this->latestPhpVersion['73'],
+            'wddx_deserialize'                      => $this->latestPhpVersion['73'],
+            'wddx_packet_end'                       => $this->latestPhpVersion['73'],
+            'wddx_packet_start'                     => $this->latestPhpVersion['73'],
+            'wddx_serialize_value'                  => $this->latestPhpVersion['73'],
+            'wddx_serialize_vars'                   => $this->latestPhpVersion['73'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
         $refName = 'xdebug';
         $ext     = 'iniEntries';
         $major   = '2';

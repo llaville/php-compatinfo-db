@@ -21,6 +21,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Mcrypt reference updated to version 1.0.4 (stable) for PHP 7.2.0 or greater
 - Redis reference updated to version 5.3.4 (stable)
 - Sync reference updated to version 1.1.2 (stable)
+- Wddx was unbundled from PHP since version 7.4.0
 - Xdebug reference updated to version 3.0.4 (stable)
 - Clean-up JSON files by removing static (false) definition that is the default
 
