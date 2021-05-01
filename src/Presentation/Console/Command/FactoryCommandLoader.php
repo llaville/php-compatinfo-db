@@ -22,9 +22,12 @@ class FactoryCommandLoader extends SymfonyFactoryCommandLoader
 
         if (Phar::running()) {
             // these commands are disallowed in PHAR distribution
-            $blacklist = [InitCommand::class, ReleaseCommand::class];
+            $blacklist = [InitCommand::class, ReleaseCommand::class, BuildCommand::class];
         } else {
             $blacklist = [];
+            if (getenv('APP_ENV') === 'prod') {
+                $blacklist[] = BuildCommand::class;
+            }
         }
 
         foreach ($commands as $command) {

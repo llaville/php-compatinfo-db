@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - Support to [rdkafka](https://pecl.php.net/package/rdkafka) extension (Kafka client based on librdkafka)
+- new `db:build` command for developers only (using `APP_ENV=dev`) to generate JSON files to add a new extension
 - `flags` property in Class/Function entities to identify (public/protected/private methods, abstract, final, static classes/methods)
 - With new `flags` column, `db:show <extension> --methods` command is now able to display when method is abstract (A), final (F) or static (S)
 
