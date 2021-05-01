@@ -35,7 +35,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 | 2.0.0         | 2019-01-19 | 7.1.0 <= PHP < 8.0.0 |
 | 1.0.0         | 2015-11-24 | PHP >= 5.4.0         |
 
-Currently, 108 extensions referenced in the database.
+Currently, 109 extensions referenced in the database.
 
 For future versions, see the `CHANGELOG-3.x.md` file.
 

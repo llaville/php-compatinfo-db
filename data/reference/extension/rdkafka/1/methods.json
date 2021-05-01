@@ -1,0 +1,422 @@
+[
+    {
+        "class_name": "RdKafka",
+        "name": "metadata",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "outqLen",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "setLogLevel",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "setLogger",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "addBrokers",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "getMetadata",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "getOutQLen",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "newTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "poll",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "queryWatermarkOffsets",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "setDefaultTopicConf",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "__construct",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "dump",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "setDrMsgCb",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "setErrorCb",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "setRebalanceCb",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "set",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Consumer",
+        "name": "__construct",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Consumer",
+        "name": "newQueue",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consumeBatch",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consumeQueueStart",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consumeStart",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consumeStop",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consume",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "offsetStore",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "__construct",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "assign",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "commitAsync",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "commit",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "consume",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "getAssignment",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "getMetadata",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "getOffsetPositions",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "getSubscription",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "newTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "subscribe",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "unsubscribe",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumerTopic",
+        "name": "offsetStore",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Message",
+        "name": "errstr",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata",
+        "name": "getBrokers",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata",
+        "name": "getOrigBrokerId",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata",
+        "name": "getOrigBrokerName",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata",
+        "name": "getTopics",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Broker",
+        "name": "getHost",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Broker",
+        "name": "getId",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Broker",
+        "name": "getPort",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Partition",
+        "name": "getErr",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Partition",
+        "name": "getId",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Partition",
+        "name": "getIsrs",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Partition",
+        "name": "getLeader",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Partition",
+        "name": "getReplicas",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Topic",
+        "name": "getErr",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Topic",
+        "name": "getPartitions",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Metadata\\Topic",
+        "name": "getTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Producer",
+        "name": "__construct",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ProducerTopic",
+        "name": "produce",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\ProducerTopic",
+        "name": "producev",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Queue",
+        "name": "consume",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\Topic",
+        "name": "getName",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicConf",
+        "name": "__construct",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicConf",
+        "name": "dump",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicConf",
+        "name": "setPartitioner",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicConf",
+        "name": "set",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "__construct",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "getOffset",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "getPartition",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "getTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "setOffset",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "setPartition",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "setTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    }
+]

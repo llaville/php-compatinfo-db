@@ -1,0 +1,32 @@
+[
+    {
+        "name": "rd_kafka_err2str",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "rd_kafka_errno",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "rd_kafka_errno2err",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "rd_kafka_get_err_descs",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "rd_kafka_offset_tail",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "rd_kafka_thread_cnt",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    }
+]

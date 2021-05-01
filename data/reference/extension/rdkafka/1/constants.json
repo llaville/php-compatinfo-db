@@ -1,0 +1,627 @@
+[
+    {
+        "name": "RD_KAFKA_BUILD_VERSION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_CONF_INVALID",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_CONF_OK",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_CONF_UNKNOWN",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_CONSUMER",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_LOG_PRINT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_LOG_SYSLOG",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_LOG_SYSLOG_PRINT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_MSG_F_BLOCK",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_MSG_PARTITIONER_CONSISTENT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_MSG_PARTITIONER_CONSISTENT_RANDOM",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_MSG_PARTITIONER_MURMUR2",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_MSG_PARTITIONER_MURMUR2_RANDOM",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_MSG_PARTITIONER_RANDOM",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_OFFSET_BEGINNING",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_OFFSET_END",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_OFFSET_STORED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_PARTITION_UA",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_PRODUCER",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_BROKER_NOT_AVAILABLE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_CLUSTER_AUTHORIZATION_FAILED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_CONCURRENT_TRANSACTIONS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_DUPLICATE_SEQUENCE_NUMBER",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_GROUP_AUTHORIZATION_FAILED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_GROUP_COORDINATOR_NOT_AVAILABLE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_GROUP_LOAD_IN_PROGRESS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_ILLEGAL_GENERATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_ILLEGAL_SASL_STATE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INCONSISTENT_GROUP_PROTOCOL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_COMMIT_OFFSET_SIZE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_CONFIG",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_GROUP_ID",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_MSG",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_MSG_SIZE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_PARTITIONS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_PRODUCER_EPOCH",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_PRODUCER_ID_MAPPING",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_REPLICATION_FACTOR",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_REPLICA_ASSIGNMENT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_REQUEST",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_REQUIRED_ACKS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_SESSION_TIMEOUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_TIMESTAMP",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_TRANSACTION_TIMEOUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_INVALID_TXN_STATE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_LEADER_NOT_AVAILABLE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_MSG_SIZE_TOO_LARGE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NETWORK_EXCEPTION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NOT_CONTROLLER",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NOT_COORDINATOR_FOR_GROUP",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NOT_ENOUGH_REPLICAS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NOT_ENOUGH_REPLICAS_AFTER_APPEND",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NOT_LEADER_FOR_PARTITION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_NO_ERROR",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_OFFSET_METADATA_TOO_LARGE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_OFFSET_OUT_OF_RANGE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_OPERATION_NOT_ATTEMPTED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_OUT_OF_ORDER_SEQUENCE_NUMBER",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_POLICY_VIOLATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_REBALANCE_IN_PROGRESS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_RECORD_LIST_TOO_LARGE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_REPLICA_NOT_AVAILABLE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_REQUEST_TIMED_OUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_SECURITY_DISABLED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_STALE_CTRL_EPOCH",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_TOPIC_ALREADY_EXISTS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_TOPIC_AUTHORIZATION_FAILED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_TOPIC_EXCEPTION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_TRANSACTIONAL_ID_AUTHORIZATION_FAILED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_TRANSACTION_COORDINATOR_FENCED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_UNKNOWN",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_UNKNOWN_MEMBER_ID",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_UNKNOWN_TOPIC_OR_PART",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_UNSUPPORTED_FOR_MESSAGE_FORMAT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_UNSUPPORTED_SASL_MECHANISM",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR_UNSUPPORTED_VERSION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__ALL_BROKERS_DOWN",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__ASSIGN_PARTITIONS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__AUTHENTICATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__BAD_COMPRESSION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__BAD_MSG",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__BEGIN",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__CONFLICT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__CRIT_SYS_RESOURCE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__DESTROY",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__END",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__EXISTING_SUBSCRIPTION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__FAIL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__FS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__INTR",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__INVALID_ARG",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__INVALID_TYPE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__IN_PROGRESS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__ISR_INSUFF",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__KEY_DESERIALIZATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__KEY_SERIALIZATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__MSG_TIMED_OUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NODE_UPDATE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NOENT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NOT_IMPLEMENTED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NO_OFFSET",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__OUTDATED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__PARTIAL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__PARTITION_EOF",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__PREV_IN_PROGRESS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__QUEUE_FULL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__READ_ONLY",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__RESOLVE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__REVOKE_PARTITIONS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__SSL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__STATE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__TIMED_OUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__TIMED_OUT_QUEUE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__TRANSPORT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNDERFLOW",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_GROUP",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_PARTITION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_PROTOCOL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_TOPIC",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNSUPPORTED_FEATURE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__VALUE_DESERIALIZATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__VALUE_SERIALIZATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__WAIT_CACHE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__WAIT_COORD",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RD_KAFKA_VERSION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    }
+]

@@ -12,6 +12,7 @@ use function ord;
 use function preg_match;
 use function preg_replace;
 use function preg_replace_callback;
+use function sprintf;
 use function strlen;
 
 /**
@@ -151,6 +152,15 @@ trait LibraryVersionProviderTrait
             case 'libzip':
                 if ($constant = $this->constantExists('LIBZIP_VERSION', 'ZipArchive')) {
                     $versionText = $constant;
+                }
+                break;
+            case 'librdkafka':
+                if ($constant = $this->constantExists('RD_KAFKA_VERSION')) {
+                    // @see https://github.com/arnaud-lb/php-rdkafka/issues/232
+                    $major = (RD_KAFKA_VERSION & 0xFF000000) >> 24;
+                    $minor = (RD_KAFKA_VERSION & 0x00FF0000) >> 16;
+                    $patch = (RD_KAFKA_VERSION & 0x0000FF00) >> 8;
+                    $versionText = sprintf('%d.%d.%d', $major, $minor, $patch);
                 }
                 break;
         }

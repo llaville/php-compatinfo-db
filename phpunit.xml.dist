@@ -281,6 +281,9 @@
         <testsuite name="rar">
             <directory prefix="Rar" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
+        <testsuite name="rdkafka">
+            <directory prefix="Rdkafka" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
         <testsuite name="recode">
             <directory prefix="Recode" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>

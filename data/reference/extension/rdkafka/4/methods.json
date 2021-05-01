@@ -1,0 +1,86 @@
+[
+    {
+        "class_name": "RdKafka",
+        "name": "offsetsForTimes",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "offsetsForTimes",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "getOffsetPositions",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": "~0.9.1"
+            }
+        ]
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "purge",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": "~1.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "flush",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": "~0.11"
+            }
+        ]
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consumeBatch",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "setLogCb",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": "~0.9.4"
+            }
+        ]
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "queryWatermarkOffsets",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "close",
+        "ext_min": "4.0.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\ConsumerTopic",
+        "name": "consumeCallback",
+        "ext_min": "4.0.1",
+        "php_min": "5.6.0"
+    }
+]

@@ -1,0 +1,97 @@
+[
+    {
+        "name": "RdKafka",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Conf",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Consumer",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\ConsumerTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Exception",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\KafkaConsumer",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\KafkaConsumerTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Message",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Metadata",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Metadata\\Broker",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Metadata\\Collection",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Metadata\\Partition",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Metadata\\Topic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Producer",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\ProducerTopic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Queue",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\Topic",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\TopicConf",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "RdKafka\\TopicPartition",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0"
+    }
+]

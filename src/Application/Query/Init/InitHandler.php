@@ -887,6 +887,14 @@ final class InitHandler implements QueryHandlerInterface
             'releases'  => ['0', '1', '2', '3', '4'],
         ];
 
+        yield 'rdkafka' => [
+            'classes' => ['1'],
+            'constants' => ['1'],
+            'functions' => ['1'],
+            'methods' => ['1', '3', '4'],
+            'releases' => ['1', '2', '3', '4', '5'],
+        ];
+
         yield 'readline' => [
             'constants'  => ['54'],
             'functions'  => ['40', '51'],
