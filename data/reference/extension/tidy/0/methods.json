@@ -108,16 +108,14 @@
         "name": "repairFile",
         "static": true,
         "ext_min": "8.0.0",
-        "php_min": "8.0.0alpha1",
-        "php_max": "7.4.18"
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "tidy",
         "name": "repairString",
         "static": true,
         "ext_min": "8.0.0",
-        "php_min": "8.0.0alpha1",
-        "php_max": "7.4.18"
+        "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "tidy",
