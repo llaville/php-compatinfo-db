@@ -27,6 +27,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Sync reference updated to version 1.1.2 (stable)
 - Wddx was unbundled from PHP since version 7.4.0
 - Xdebug reference updated to version 3.0.4 (stable)
+- Xhprof reference updated to version 2.3.1 (beta)
 - Clean-up JSON files by removing static (false) definition that is the default
 
 As support to PHP 5 was dropped in release 2.0.0, we removed following extensions :
