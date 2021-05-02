@@ -173,7 +173,7 @@
         "name": "oci_internal_debug",
         "ext_min": "1.1",
         "php_min": "4.3.0",
-        "php_max": "7.4.16"
+        "php_max": "7.4.18"
     },
     {
         "name": "oci_lob_append",
@@ -494,7 +494,7 @@
         "name": "ociinternaldebug",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.16"
+        "php_max": "7.4.18"
     },
     {
         "name": "ociloadlob",

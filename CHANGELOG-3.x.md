@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- PHP 7.4.18 support
 - PHP 7.3.28 support
 - Support to [rdkafka](https://pecl.php.net/package/rdkafka) extension (Kafka client based on librdkafka)
 - new `db:build` command for developers only (using `APP_ENV=dev`) to generate JSON files to add a new extension

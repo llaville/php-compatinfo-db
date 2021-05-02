@@ -24,7 +24,7 @@
         "ext_min": "2.2.0b1",
         "ext_max": "3.1.5",
         "php_min": "5.2.0",
-        "php_max": "7.4.16"
+        "php_max": "7.4.18"
     },
     {
         "name": "memcached.sess_connect_timeout",
@@ -76,7 +76,7 @@
         "ext_min": "2.2.0b1",
         "ext_max": "3.1.5",
         "php_min": "5.2.0",
-        "php_max": "7.4.16"
+        "php_max": "7.4.18"
     },
     {
         "name": "memcached.sess_sasl_password",
@@ -97,6 +97,6 @@
         "name": "memcached.use_sasl",
         "ext_min": "2.0.0",
         "php_min": "5.2.0",
-        "php_max": "7.4.16"
+        "php_max": "7.4.18"
     }
 ]
