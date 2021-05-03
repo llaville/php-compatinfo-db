@@ -42,7 +42,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
     {
         $this->setName(self::NAME)
             ->setDescription('List all references supported in the Database')
-            ->addOption('all', null, null, 'List all references')
+            ->addOption('all', 'a', null, 'List all references')
         ;
     }
 
