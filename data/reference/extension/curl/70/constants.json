@@ -614,5 +614,38 @@
                 "constraint": "~7.16.0"
             }
         ]
+    },
+    {
+        "name": "CURL_VERSION_KERBEROS5",
+        "ext_min": "7.0.7RC1",
+        "php_min": "7.0.7RC1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.40.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_UNIX_SOCKETS",
+        "ext_min": "7.0.7RC1",
+        "php_min": "7.0.7RC1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.40.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_PSL",
+        "ext_min": "7.0.7RC1",
+        "php_min": "7.0.7RC1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.47.0"
+            }
+        ]
     }
 ]

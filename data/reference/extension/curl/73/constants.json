@@ -492,17 +492,6 @@
         "php_min": "7.3.0RC3"
     },
     {
-        "name": "CURL_VERSION_KERBEROS5",
-        "ext_min": "7.3.0RC3",
-        "php_min": "7.3.0RC3",
-        "dependencies": [
-            {
-                "name": "libcurl",
-                "constraint": "~7.40.0"
-            }
-        ]
-    },
-    {
         "name": "CURL_VERSION_LARGEFILE",
         "ext_min": "7.3.0RC3",
         "php_min": "7.3.0RC3"
@@ -556,17 +545,6 @@
         ]
     },
     {
-        "name": "CURL_VERSION_UNIX_SOCKETS",
-        "ext_min": "7.3.0RC3",
-        "php_min": "7.3.0RC3",
-        "dependencies": [
-            {
-                "name": "libcurl",
-                "constraint": "~7.40.0"
-            }
-        ]
-    },
-    {
         "name": "CURL_VERSION_CURLDEBUG",
         "ext_min": "7.3.6RC1",
         "php_min": "7.3.6RC1",
@@ -574,17 +552,6 @@
             {
                 "name": "libcurl",
                 "constraint": "~7.19.6"
-            }
-        ]
-    },
-    {
-        "name": "CURL_VERSION_PSL",
-        "ext_min": "7.3.6RC1",
-        "php_min": "7.3.6RC1",
-        "dependencies": [
-            {
-                "name": "libcurl",
-                "constraint": "~7.47.0"
             }
         ]
     },
