@@ -484,7 +484,13 @@
     {
         "name": "CURL_VERSION_HTTPS_PROXY",
         "ext_min": "7.3.0RC3",
-        "php_min": "7.3.0RC3"
+        "php_min": "7.3.0RC3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.52.0"
+            }
+        ]
     },
     {
         "name": "CURL_VERSION_IDN",
@@ -552,6 +558,17 @@
             {
                 "name": "libcurl",
                 "constraint": "~7.19.6"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_ALTSVC",
+        "ext_min": "7.3.6RC1",
+        "php_min": "7.3.6RC1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": "~7.64.1"
             }
         ]
     },
