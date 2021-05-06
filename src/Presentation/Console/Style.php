@@ -73,16 +73,17 @@ final class Style extends SymfonyStyle implements StyleInterface
     /**
      * {@inheritDoc}
      */
-    public function listing(array $elements, array $attributes = ['type' => '*', 'style' => ''])
+    public function listing(array $elements, array $attributes = ['type' => '*', 'style' => '', 'indent' => '  '])
     {
         $type = $attributes['type'] ?? '*';
         $style = $attributes['style'] ?? '';
+        $indent = $attributes['indent'] ?? '  ';
 
-        $elements = array_map(function ($element) use ($type, $style) {
+        $elements = array_map(function ($element) use ($type, $style, $indent) {
             if (empty($style)) {
-                return sprintf('   %s %s', $type, $element);
+                return sprintf('%s %s %s', $indent, $type, $element);
             }
-            return sprintf('   <%s>%s %s</>', $style, $type, $element);
+            return sprintf('%s <%s>%s %s</>', $indent, $style, $type, $element);
         }, $elements);
 
         $this->writeln($elements);
