@@ -16,6 +16,8 @@ final class Extension implements ExtensionVersionProviderInterface
     /** @var string  */
     private $name;
     /** @var string  */
+    private $description;
+    /** @var string  */
     private $version;
     /** @var string  */
     private $type;
@@ -62,7 +64,8 @@ final class Extension implements ExtensionVersionProviderInterface
         array $dependencies = [],
         array $releases = []
     ) {
-        $this->name = $name;
+        $this->name = strtolower($name);
+        $this->description = sprintf('The %s PHP extension', $this->name);
         $this->version = $version;
         $this->type = strtolower($type);
         $this->releases = $releases;
@@ -136,6 +139,11 @@ final class Extension implements ExtensionVersionProviderInterface
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
     }
 
     public function getVersion(): string
