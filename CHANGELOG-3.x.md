@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- new `Dependencies` column in `db:show` command output that will display librairies dependency constraints
+
 ## [3.5.0] - 2021-05-03
 
 ### Added

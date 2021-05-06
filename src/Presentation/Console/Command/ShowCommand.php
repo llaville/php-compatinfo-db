@@ -22,6 +22,8 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
+use Composer\Semver\VersionParser;
+
 use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -32,6 +34,7 @@ use function count;
 use function explode;
 use function implode;
 use function sprintf;
+use function trim;
 
 /**
  * @since Release 2.0.0RC1
@@ -198,11 +201,21 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 }
             }
 
+            $dependencies = [];
+
+            foreach ($domain->getDependencies() as $dependency) {
+                $name = $dependency->getName();
+                $constraint = $dependency->getConstraint();
+                $prettyConstraint = trim((string) (new VersionParser)->parseConstraints($constraint), '[]');
+                $dependencies[] = sprintf('%s %s [%s]', $name, $constraint, $prettyConstraint);
+            }
+
             $args[$key] = [
                 $this->ext($domain) ? : $domain->getVersion(),
                 $this->php($domain),
                 '',
                 implode(', ', $flags),
+                implode(', ', $dependencies),
             ];
         }
         ksort($args);
@@ -216,12 +229,13 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
         $io->section($section);
 
-        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Flags'];
+        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Flags', 'Dependencies'];
         $footers = [
             sprintf('<info>Total [%d]</info>', count($results)),
             '',
             '',
-            ''
+            '',
+            '',
         ];
         $rows = $results;
         $rows[] = new TableSeparator();
