@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - new `Dependencies` column in `db:show` command output that will display librairies dependency constraints
 - new `doctor` command to help to debug issues by checking current installation
 
+### Changed
+
+- Xhprof reference updated to version 2.3.2 (stable)
+
 ## [3.5.0] - 2021-05-03
 
 ### Added
