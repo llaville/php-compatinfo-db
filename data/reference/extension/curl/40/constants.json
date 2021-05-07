@@ -6,7 +6,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -17,7 +17,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -28,7 +28,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -39,7 +39,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -50,7 +50,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -61,7 +61,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -147,7 +147,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.8"
+                "constraint": ">=7.10.8"
             }
         ]
     },
@@ -223,7 +223,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.11"
+                "constraint": ">=7.11.0"
             }
         ]
     },
@@ -304,7 +304,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.8"
+                "constraint": ">=7.10.8"
             }
         ]
     },
@@ -445,7 +445,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.11"
+                "constraint": ">=7.11.0"
             }
         ]
     },
@@ -622,7 +622,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.16.2"
+                "constraint": ">=7.16.2"
             }
         ]
     },
@@ -723,7 +723,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.7"
+                "constraint": ">=7.10.7"
             }
         ]
     },
@@ -759,7 +759,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.6"
+                "constraint": ">=7.10.6"
             }
         ]
     },
@@ -882,7 +882,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -898,7 +898,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.10.7"
+                "constraint": ">=7.10.7"
             }
         ]
     },
@@ -954,7 +954,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1055,7 +1055,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.16.2"
+                "constraint": ">=7.16.2"
             }
         ]
     },
@@ -1116,7 +1116,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1127,7 +1127,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1138,7 +1138,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1149,7 +1149,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1160,7 +1160,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1171,7 +1171,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1182,7 +1182,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1193,7 +1193,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1204,7 +1204,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1215,7 +1215,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1226,7 +1226,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1237,7 +1237,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },
@@ -1248,7 +1248,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.19.4"
+                "constraint": ">=7.19.4"
             }
         ]
     },

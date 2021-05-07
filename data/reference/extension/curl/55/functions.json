@@ -6,7 +6,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.15.4"
+                "constraint": ">7.15.4"
             }
         ]
     },
@@ -22,7 +22,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.15.4"
+                "constraint": ">=7.15.4"
             }
         ]
     },
@@ -33,29 +33,29 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.12"
+                "constraint": ">=7.12.0"
             }
         ]
     },
     {
         "name": "curl_pause",
-        "ext_min": "5.5.0",
-        "php_min": "5.5.0",
+        "ext_min": "5.5.0alpha3",
+        "php_min": "5.5.0alpha3",
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.18"
+                "constraint": ">=7.18.0"
             }
         ]
     },
     {
         "name": "curl_reset",
-        "ext_min": "5.5.0",
-        "php_min": "5.5.0",
+        "ext_min": "5.5.0alpha1",
+        "php_min": "5.5.0alpha1",
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.12.1"
+                "constraint": ">=7.12.1"
             }
         ]
     },
@@ -76,23 +76,23 @@
     },
     {
         "name": "curl_strerror",
-        "ext_min": "5.5.0",
-        "php_min": "5.5.0",
+        "ext_min": "5.5.0alpha3",
+        "php_min": "5.5.0alpha3",
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.12"
+                "constraint": ">=7.12.0"
             }
         ]
     },
     {
         "name": "curl_unescape",
-        "ext_min": "5.5.0",
-        "php_min": "5.5.0",
+        "ext_min": "5.5.0alpha1",
+        "php_min": "5.5.0alpha1",
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.15.4"
+                "constraint": ">7.15.4"
             }
         ]
     }

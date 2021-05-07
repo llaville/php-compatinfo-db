@@ -6,7 +6,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.32.1"
+                "constraint": ">=7.32.1"
             }
         ]
     }
