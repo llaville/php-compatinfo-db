@@ -38,12 +38,6 @@ class HttpExtensionTest extends GenericTest
     public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = [
-            // PHP_HTTP_CURL_VERSION(7,34,0)
-            'http\\Client\\Curl\\SSL_VERSION_TLSv1_0',
-            'http\\Client\\Curl\\SSL_VERSION_TLSv1_1',
-            'http\\Client\\Curl\\SSL_VERSION_TLSv1_2',
-            // PHP_HTTP_CURL_VERSION(7,38,0)
-            'http\\Client\\Curl\\AUTH_SPNEGO',
             // when age >=1
             'http\\Client\\Curl\\Versions\\ARES',
             // when age >=2

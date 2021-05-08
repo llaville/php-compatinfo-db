@@ -32,7 +32,13 @@
     {
         "name": "http\\Client\\Curl\\AUTH_SPNEGO",
         "ext_min": "2.1.2",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.38.0"
+            }
+        ]
     },
     {
         "name": "http\\Client\\Curl\\HTTP_VERSION_1_0",
@@ -137,17 +143,35 @@
     {
         "name": "http\\Client\\Curl\\SSL_VERSION_TLSv1_0",
         "ext_min": "2.1.2",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.34.0"
+            }
+        ]
     },
     {
         "name": "http\\Client\\Curl\\SSL_VERSION_TLSv1_1",
         "ext_min": "2.1.2",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.34.0"
+            }
+        ]
     },
     {
         "name": "http\\Client\\Curl\\SSL_VERSION_TLSv1_2",
         "ext_min": "2.1.2",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.34.0"
+            }
+        ]
     },
     {
         "name": "http\\Client\\Curl\\HTTP_VERSION_2_0",
