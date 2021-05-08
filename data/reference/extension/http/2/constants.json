@@ -156,7 +156,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.33.0"
+                "constraint": ">=7.33.0"
             }
         ]
     },
@@ -167,7 +167,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.47.0"
+                "constraint": ">=7.47.0"
             }
         ]
     },
@@ -213,7 +213,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.40.0"
+                "constraint": ">=7.40.0"
             }
         ]
     },
@@ -269,7 +269,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.38.0"
+                "constraint": ">=7.38.0"
             }
         ]
     },
@@ -280,7 +280,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.21.4"
+                "constraint": ">=7.21.4"
             }
         ]
     },
@@ -291,7 +291,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.21.4"
+                "constraint": ">=7.21.4"
             }
         ]
     },
@@ -302,7 +302,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.22.0"
+                "constraint": ">=7.22.0"
             }
         ]
     },
@@ -313,7 +313,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.33.0"
+                "constraint": ">=7.33.0"
             }
         ]
     },
@@ -324,7 +324,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.40.0"
+                "constraint": ">=7.40.0"
             }
         ]
     },
@@ -335,7 +335,7 @@
         "dependencies": [
             {
                 "name": "libcurl",
-                "constraint": "~7.47.0"
+                "constraint": ">=7.47.0"
             }
         ]
     },
