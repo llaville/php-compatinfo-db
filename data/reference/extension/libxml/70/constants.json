@@ -6,7 +6,7 @@
         "dependencies": [
             {
                 "name": "libxml",
-                "constraint": "~2.9.0"
+                "constraint": ">=2.9.0"
             }
         ]
     }
