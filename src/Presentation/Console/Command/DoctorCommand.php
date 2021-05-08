@@ -76,7 +76,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
                         foreach ($value as $dep => $constraints) {
                             natsort($constraints['passed']);
                             natsort($constraints['skipped']);
-                            $io->text($indent . '- ' . $dep);
+                            $io->text($indent . '- ' . $dep . ' ' . $constraints['version']);
                             $io->listing(array_values($constraints['passed']), ['indent' => $indent . '  ', 'type' => '[x]', 'style' => 'fg=green']);
                             $io->listing(array_values($constraints['skipped']), ['indent' => $indent . '  ', 'type' => '[ ]', 'style' => 'fg=red']);
                         }

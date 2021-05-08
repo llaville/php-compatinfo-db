@@ -95,6 +95,12 @@ final class DoctorHandler implements QueryHandlerInterface
                 $this->addDependency($dependency);
             }
 
+            foreach ($extension->getFunctions() as $function) {
+                foreach ($function->getDependencies() as $dependency) {
+                    $this->addDependency($dependency);
+                }
+            }
+
             foreach ($extension->getConstants() as $constant) {
                 foreach ($constant->getDependencies() as $dependency) {
                     $this->addDependency($dependency);
@@ -129,9 +135,10 @@ final class DoctorHandler implements QueryHandlerInterface
     {
         $name = $dependency->getName();
         $constraint = $dependency->getConstraint();
+        $ver = $this->getPrettyVersion($name);
 
         if (!isset($this->dependencies[$name])) {
-            $this->dependencies[$name] = [self::CONSTRAINT_PASSED => [], self::CONSTRAINT_SKIPPED => []];
+            $this->dependencies[$name] = ['version' => $ver, self::CONSTRAINT_PASSED => [], self::CONSTRAINT_SKIPPED => []];
         }
         if (array_search($constraint, $this->dependencies[$name][self::CONSTRAINT_PASSED]) !== false) {
             return;
@@ -150,7 +157,7 @@ final class DoctorHandler implements QueryHandlerInterface
             trim((string) (new VersionParser)->parseConstraints($constraint), '[]')
         );
 
-        if (Semver::satisfies($this->getPrettyVersion($name), $constraint)) {
+        if (Semver::satisfies($ver, $constraint)) {
             $this->dependencies[$name][self::CONSTRAINT_PASSED][$constraint] = $prettyConstraint;
             $this->requirements[$name][self::CONSTRAINT_PASSED] += 1;
         } else {
