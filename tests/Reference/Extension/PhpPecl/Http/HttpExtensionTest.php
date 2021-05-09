@@ -44,6 +44,11 @@ class HttpExtensionTest extends GenericTest
             'http\\Client\\Curl\\Versions\\IDN',
         ];
 
+        // requires `iconv`; see https://mdref.m6w6.name/http#PHP.extensions:
+        self::$optionalmethods = [
+            'http\QueryString::xlate',
+        ];
+
         parent::setUpBeforeClass();
 
         if (!is_null(self::$obj)) {
