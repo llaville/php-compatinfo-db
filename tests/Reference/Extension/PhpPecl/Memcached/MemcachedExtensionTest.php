@@ -39,6 +39,50 @@ class MemcachedExtensionTest extends GenericTest
             'memcached.sess_remove_failed',
         ];
 
+        self::$optionalclasses = [
+            // requires HAVE_MEMCACHED_PROTOCOL
+            // (@see https://github.com/php-memcached-dev/php-memcached/commit/59a4c9551faeab1775f697782160f2eaa8998722)
+            'MemcachedServer',
+        ];
+        self::$optionalmethods = [
+            // requires HAVE_MEMCACHED_PROTOCOL
+            'MemcachedServer::run',
+        ];
+        self::$optionalconstants = [
+            // requires HAVE_MEMCACHED_PROTOCOL
+            'Memcached::ON_CONNECT',
+            'Memcached::ON_ADD',
+            'Memcached::ON_APPEND',
+            'Memcached::ON_DECREMENT',
+            'Memcached::ON_DELETE',
+            'Memcached::ON_FLUSH',
+            'Memcached::ON_GET',
+            'Memcached::ON_INCREMENT',
+            'Memcached::ON_NOOP',
+            'Memcached::ON_PREPEND',
+            'Memcached::ON_QUIT',
+            'Memcached::ON_REPLACE',
+            'Memcached::ON_SET',
+            'Memcached::ON_STAT',
+            'Memcached::ON_VERSION',
+            'Memcached::RESPONSE_SUCCESS',
+            'Memcached::RESPONSE_KEY_ENOENT',
+            'Memcached::RESPONSE_KEY_EEXISTS',
+            'Memcached::RESPONSE_E2BIG',
+            'Memcached::RESPONSE_EINVAL',
+            'Memcached::RESPONSE_DELTA_BADVAL',
+            'Memcached::RESPONSE_NOT_STORED',
+            'Memcached::RESPONSE_NOT_MY_VBUCKET',
+            'Memcached::RESPONSE_AUTH_ERROR',
+            'Memcached::RESPONSE_AUTH_CONTINUE',
+            'Memcached::RESPONSE_UNKNOWN_COMMAND',
+            'Memcached::RESPONSE_ENOMEM',
+            'Memcached::RESPONSE_NOT_SUPPORTED',
+            'Memcached::RESPONSE_EINTERNAL',
+            'Memcached::RESPONSE_EBUSY',
+            'Memcached::RESPONSE_ETMPFAIL',
+        ];
+
         self::$ignoredconsts = [
             // included since release 3.1.5 into master branch
             // @see https://github.com/php-memcached-dev/php-memcached/commit/f97b2e3ad95bbd83c862abba08c34ac3f4acc497
