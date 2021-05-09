@@ -527,7 +527,7 @@ final class InitHandler implements QueryHandlerInterface
             'functions'  => ['1'],
             'iniEntries' => ['1', '2'],
             'interfaces' => ['2'],
-            'methods'    => ['2'],
+            'methods'    => ['2', '3'],
             'releases'   => ['0', '1', '2', '3', '4'],
         ];
 

@@ -1,0 +1,16 @@
+[
+    {
+        "class_name": "http\\Encoding\\Stream\\Debrotli",
+        "name": "decode",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0",
+        "static": true
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "encode",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0",
+        "static": true
+    }
+]

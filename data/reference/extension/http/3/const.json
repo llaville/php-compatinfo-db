@@ -16,5 +16,59 @@
         "name": "STDFLAGS",
         "ext_min": "3.1.0",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "LEVEL_DEF",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "LEVEL_MAX",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "LEVEL_MIN",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "MODE_FONT",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "MODE_GENERIC",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "MODE_TEXT",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "WBITS_DEF",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "WBITS_MAX",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "http\\Encoding\\Stream\\Enbrotli",
+        "name": "WBITS_MIN",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
     }
 ]

@@ -3,5 +3,15 @@
         "name": "http\\Env\\Url",
         "ext_min": "3.0.0RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "http\\Encoding\\Stream\\Debrotli",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "http\\Encoding\\Stream\\Enbrotli",
+        "ext_min": "3.2.0RC1",
+        "php_min": "7.0.0"
     }
 ]
