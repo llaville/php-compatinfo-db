@@ -487,7 +487,7 @@
         "dependencies": [
             {
                 "name": "libmemcached",
-                "constraint": ">=1.0"
+                "constraint": ">=1.0.3"
             }
         ]
     },
@@ -511,7 +511,7 @@
         "dependencies": [
             {
                 "name": "libmemcached",
-                "constraint": "~0.49"
+                "constraint": ">=0.49"
             }
         ]
     },
@@ -529,7 +529,7 @@
         "dependencies": [
             {
                 "name": "libmemcached",
-                "constraint": "~1.0.18"
+                "constraint": ">=1.0.18"
             }
         ]
     },
@@ -559,7 +559,7 @@
         "dependencies": [
             {
                 "name": "libmemcached",
-                "constraint": "~1.0.8"
+                "constraint": ">=1.0.8"
             }
         ]
     },
