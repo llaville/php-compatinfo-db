@@ -82,5 +82,35 @@
         "name": "consumeCallback",
         "ext_min": "4.0.1",
         "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaErrorException",
+        "name": "__construct",
+        "ext_min": "4.1.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaErrorException",
+        "name": "getErrorString",
+        "ext_min": "4.1.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaErrorException",
+        "name": "isFatal",
+        "ext_min": "4.1.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaErrorException",
+        "name": "isRetriable",
+        "ext_min": "4.1.0",
+        "php_min": "5.6.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaErrorException",
+        "name": "transactionRequiresAbort",
+        "ext_min": "4.1.0",
+        "php_min": "5.6.0"
     }
 ]

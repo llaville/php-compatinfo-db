@@ -1,0 +1,13 @@
+[
+    {
+        "name": "RdKafka\\KafkaErrorException",
+        "ext_min": "4.1.0",
+        "php_min": "7.0.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
+    }
+]
