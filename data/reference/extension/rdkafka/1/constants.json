@@ -1062,6 +1062,39 @@
         ]
     },
     {
+        "name": "RD_KAFKA_PURGE_F_QUEUE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.0.0"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_PURGE_F_INFLIGHT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.0.0"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_PURGE_F_NON_BLOCKING",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.0.0"
+            }
+        ]
+    },
+    {
         "name": "RD_KAFKA_VERSION",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
