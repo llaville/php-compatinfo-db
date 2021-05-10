@@ -380,69 +380,378 @@
         "php_min": "5.3.0"
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__ALL_BROKERS_DOWN",
+        "name": "RD_KAFKA_RESP_ERR__BEGIN",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__ASSIGN_PARTITIONS",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__AUTHENTICATION",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__BAD_COMPRESSION",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__BAD_MSG",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__BEGIN",
+        "name": "RD_KAFKA_RESP_ERR__BAD_COMPRESSION",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__CONFLICT",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__CRIT_SYS_RESOURCE",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__DESTROY",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__END",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__EXISTING_SUBSCRIPTION",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__FAIL",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__TRANSPORT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__CRIT_SYS_RESOURCE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__RESOLVE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__MSG_TIMED_OUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__PARTITION_EOF",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_PARTITION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__FS",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_TOPIC",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__ALL_BROKERS_DOWN",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__INVALID_ARG",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__TIMED_OUT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__QUEUE_FULL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__ISR_INSUFF",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NODE_UPDATE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__SSL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__WAIT_COORD",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_GROUP",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__IN_PROGRESS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__PREV_IN_PROGRESS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__EXISTING_SUBSCRIPTION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__ASSIGN_PARTITIONS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__REVOKE_PARTITIONS",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__CONFLICT",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__STATE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_PROTOCOL",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NOT_IMPLEMENTED",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__AUTHENTICATION",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__NO_OFFSET",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
+    },
+    {
+        "name": "RD_KAFKA_RESP_ERR__END",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__INTR",
@@ -450,22 +759,7 @@
         "php_min": "5.3.0"
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__INVALID_ARG",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
         "name": "RD_KAFKA_RESP_ERR__INVALID_TYPE",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__IN_PROGRESS",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__ISR_INSUFF",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
@@ -480,27 +774,7 @@
         "php_min": "5.3.0"
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__MSG_TIMED_OUT",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__NODE_UPDATE",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
         "name": "RD_KAFKA_RESP_ERR__NOENT",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__NOT_IMPLEMENTED",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__NO_OFFSET",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
@@ -515,47 +789,7 @@
         "php_min": "5.3.0"
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__PARTITION_EOF",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__PREV_IN_PROGRESS",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__QUEUE_FULL",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
         "name": "RD_KAFKA_RESP_ERR__READ_ONLY",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__RESOLVE",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__REVOKE_PARTITIONS",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__SSL",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__STATE",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__TIMED_OUT",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
@@ -565,32 +799,7 @@
         "php_min": "5.3.0"
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__TRANSPORT",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
         "name": "RD_KAFKA_RESP_ERR__UNDERFLOW",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_GROUP",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_PARTITION",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_PROTOCOL",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__UNKNOWN_TOPIC",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
@@ -611,11 +820,6 @@
     },
     {
         "name": "RD_KAFKA_RESP_ERR__WAIT_CACHE",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__WAIT_COORD",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
