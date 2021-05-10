@@ -800,7 +800,13 @@
     {
         "name": "RD_KAFKA_RESP_ERR__INTR",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.11"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__INVALID_TYPE",
