@@ -864,17 +864,29 @@
         ]
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__INVALID_TYPE",
+        "name": "RD_KAFKA_RESP_ERR__READ_ONLY",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.11.4"
+            }
+        ]
     },
     {
         "name": "RD_KAFKA_RESP_ERR__NOENT",
         "ext_min": "1.0.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.11.4"
+            }
+        ]
     },
     {
-        "name": "RD_KAFKA_RESP_ERR__READ_ONLY",
+        "name": "RD_KAFKA_RESP_ERR__INVALID_TYPE",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
