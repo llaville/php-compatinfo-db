@@ -19,7 +19,7 @@
         "dependencies": [
             {
                 "name": "librdkafka",
-                "constraint": "~0.9.1"
+                "constraint": ">=0.9.1"
             }
         ]
     },
@@ -31,7 +31,7 @@
         "dependencies": [
             {
                 "name": "librdkafka",
-                "constraint": "~1.0.0"
+                "constraint": ">=1.0.0"
             }
         ]
     },
@@ -43,7 +43,7 @@
         "dependencies": [
             {
                 "name": "librdkafka",
-                "constraint": "~0.11"
+                "constraint": ">=0.11"
             }
         ]
     },
@@ -85,7 +85,7 @@
         "dependencies": [
             {
                 "name": "librdkafka",
-                "constraint": "~0.9.4"
+                "constraint": ">=0.9.4"
             }
         ]
     },
