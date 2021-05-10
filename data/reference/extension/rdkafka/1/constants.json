@@ -765,6 +765,17 @@
         ]
     },
     {
+        "name": "RD_KAFKA_RESP_ERR__TIMED_OUT_QUEUE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=0.9.2"
+            }
+        ]
+    },
+    {
         "name": "RD_KAFKA_RESP_ERR__INTR",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
@@ -796,11 +807,6 @@
     },
     {
         "name": "RD_KAFKA_RESP_ERR__READ_ONLY",
-        "ext_min": "1.0.0",
-        "php_min": "5.3.0"
-    },
-    {
-        "name": "RD_KAFKA_RESP_ERR__TIMED_OUT_QUEUE",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
     },
