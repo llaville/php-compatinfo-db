@@ -963,6 +963,17 @@
         ]
     },
     {
+        "name": "RD_KAFKA_RESP_ERR__GAPLESS_GUARANTEE",
+        "ext_min": "1.0.0",
+        "php_min": "5.3.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.0.0"
+            }
+        ]
+    },
+    {
         "name": "RD_KAFKA_VERSION",
         "ext_min": "1.0.0",
         "php_min": "5.3.0"
