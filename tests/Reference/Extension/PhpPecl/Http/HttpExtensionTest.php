@@ -44,9 +44,18 @@ class HttpExtensionTest extends GenericTest
             'http\\Client\\Curl\\Versions\\IDN',
         ];
 
+        self::$optionalclasses = [
+            // requires libbrotli
+            'http\\Encoding\\Stream\\Debrotli',
+            'http\\Encoding\\Stream\\Enbrotli',
+        ];
+
         // requires `iconv`; see https://mdref.m6w6.name/http#PHP.extensions:
         self::$optionalmethods = [
             'http\QueryString::xlate',
+            // requires libbrotli
+            'http\\Encoding\\Stream\\Debrotli::decode',
+            'http\\Encoding\\Stream\\Enbrotli::encode',
         ];
 
         parent::setUpBeforeClass();
