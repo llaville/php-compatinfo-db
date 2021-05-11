@@ -51,25 +51,49 @@
         "class_name": "RdKafka\\Producer",
         "name": "initTransactions",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\Producer",
         "name": "beginTransaction",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\Producer",
         "name": "commitTransaction",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\Producer",
         "name": "abortTransaction",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\ConsumerTopic",
@@ -111,30 +135,60 @@
         "class_name": "RdKafka\\KafkaErrorException",
         "name": "__construct",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\KafkaErrorException",
         "name": "getErrorString",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\KafkaErrorException",
         "name": "isFatal",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\KafkaErrorException",
         "name": "isRetriable",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     },
     {
         "class_name": "RdKafka\\KafkaErrorException",
         "name": "transactionRequiresAbort",
         "ext_min": "4.1.0",
-        "php_min": "5.6.0"
+        "php_min": "5.6.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.4.0"
+            }
+        ]
     }
 ]
