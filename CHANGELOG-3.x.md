@@ -18,6 +18,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - ClassHydrator to handle dependencies
+- [#75](https://github.com/llaville/php-compatinfo-db/issues/75) tests failure (thanks to @remicollet for reporting)
 
 ## [3.5.0] - 2021-05-03
 
