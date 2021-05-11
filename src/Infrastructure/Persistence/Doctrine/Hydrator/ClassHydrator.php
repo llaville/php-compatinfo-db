@@ -53,6 +53,9 @@ final class ClassHydrator implements HydratorInterface
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
         $object->setFlags(Class_::MODIFIER_PUBLIC);
+        
+        $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
+        $object->addDependencies($dependencies);
 
         return $object;
     }

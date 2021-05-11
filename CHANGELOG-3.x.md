@@ -15,6 +15,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Xhprof reference updated to version 2.3.2 (stable)
 
+### Fixed
+
+- ClassHydrator to handle dependencies
+
 ## [3.5.0] - 2021-05-03
 
 ### Added
