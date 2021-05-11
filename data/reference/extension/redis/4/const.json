@@ -16,5 +16,17 @@
         "name": "COMPRESSION_NONE",
         "ext_min": "4.0.0RC1",
         "php_min": "5.3.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "COMPRESSION_LZF",
+        "ext_min": "4.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_LZF",
+        "ext_min": "4.0.0RC1",
+        "php_min": "5.3.0"
     }
 ]
