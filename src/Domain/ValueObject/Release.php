@@ -60,4 +60,14 @@ final class Release
     {
         return $this->state;
     }
+
+    /**
+     * **CAUTION** Just to have an API consistent for ShowCommand
+     *
+     * @return array
+     */
+    public function getDependencies(): array
+    {
+        return [];
+    }
 }
