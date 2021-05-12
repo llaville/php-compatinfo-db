@@ -88,6 +88,6 @@
         "name": "isBuiltin",
         "ext_min": "7.0.0alpha1",
         "php_min": "7.0.0alpha1",
-        "php_max": "7.4.18"
+        "php_max": "7.4.19"
     }
 ]
