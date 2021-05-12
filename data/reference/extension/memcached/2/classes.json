@@ -1,0 +1,7 @@
+[
+    {
+        "name": "MemcachedServer",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    }
+]

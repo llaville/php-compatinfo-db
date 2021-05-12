@@ -622,5 +622,191 @@
         "name": "OPT_STORE_RETRY_COUNT",
         "ext_min": "2.2.0b1",
         "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_CONNECT",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_ADD",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_APPEND",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_DECREMENT",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_DELETE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_FLUSH",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_GET",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_INCREMENT",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_NOOP",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_PREPEND",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_QUIT",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_REPLACE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_SET",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_STAT",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "ON_VERSION",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_SUCCESS",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_KEY_ENOENT",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_KEY_EEXISTS",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_E2BIG",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_EINVAL",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_DELTA_BADVAL",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_NOT_STORED",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_NOT_MY_VBUCKET",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_AUTH_ERROR",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_AUTH_CONTINUE",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_UNKNOWN_COMMAND",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_ENOMEM",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_NOT_SUPPORTED",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_EINTERNAL",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_EBUSY",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "RESPONSE_ETMPFAIL",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
     }
 ]

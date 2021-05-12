@@ -677,10 +677,10 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'memcached' => [
-            'classes'    => ['0'],
+            'classes'    => ['0', '2'],
             'const'      => ['2', '3'],
             'iniEntries' => ['2', '3'],
-            'methods'    => ['0'],
+            'methods'    => ['0', '2'],
             'releases'   => ['0', '2', '3'],
         ];
 
