@@ -23,6 +23,7 @@ use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 
+use Generator;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
 use function array_search;
@@ -70,6 +71,8 @@ final class DoctorHandler implements QueryHandlerInterface
         if ($withTests) {
             $executableFinder = new ExecutableFinder();
             $phpunitBin = $executableFinder->find('phpunit', 'vendor/bin/simple-phpunit');
+        } else {
+            $phpunitBin = null;
         }
 
         $extensions = $query->getExtensions();
@@ -91,6 +94,8 @@ final class DoctorHandler implements QueryHandlerInterface
             if ($withTests) {
                 $process = new Process([$phpunitBin, '--testsuite=' . $name, '--testdox']);
                 $process->start();
+            } else {
+                $process = null;
             }
 
             $extension = $this->factory->create($name);
@@ -116,6 +121,7 @@ final class DoctorHandler implements QueryHandlerInterface
             ];
 
             if ($withTests) {
+                /** @var Process<int, Generator> $process */
                 while ($process->isRunning()) {
                     // waiting for process to finish
                 }
