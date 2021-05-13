@@ -23,6 +23,8 @@ use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 
+use Symfony\Component\Process\ExecutableFinder;
+use Symfony\Component\Process\Process;
 use function array_search;
 use function count;
 use function sprintf;
@@ -64,6 +66,12 @@ final class DoctorHandler implements QueryHandlerInterface
      */
     public function __invoke(DoctorQuery $query): array
     {
+        $withTests = $query->withTests();
+        if ($withTests) {
+            $executableFinder = new ExecutableFinder();
+            $phpunitBin = $executableFinder->find('phpunit', 'vendor/bin/simple-phpunit');
+        }
+
         $extensions = $query->getExtensions();
 
         $report = [
@@ -80,6 +88,11 @@ final class DoctorHandler implements QueryHandlerInterface
         $this->requirements = [];
 
         foreach ($extensions as $name) {
+            if ($withTests) {
+                $process = new Process([$phpunitBin, '--testsuite=' . $name, '--testdox']);
+                $process->start();
+            }
+
             $extension = $this->factory->create($name);
 
             if (strcasecmp('opcache', $name) === 0) {
@@ -101,6 +114,13 @@ final class DoctorHandler implements QueryHandlerInterface
                 'installed' => $installed ? sprintf('Yes (%s)', $installed): 'No',
                 'dependencies' => $this->dependencies,
             ];
+
+            if ($withTests) {
+                while ($process->isRunning()) {
+                    // waiting for process to finish
+                }
+                $report[$name]['tests'] = [$process->getCommandLine() => $process->getOutput()];
+            }
         }
 
         /**

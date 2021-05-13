@@ -25,12 +25,16 @@ final class DoctorQuery implements QueryInterface
     /** @var string[] */
     private $extensions;
 
-    public function __construct(Platform $platform)
+    /** @var bool */
+    private $tests;
+
+    public function __construct(Platform $platform, bool $withTests)
     {
         $this->extensions = [];
         foreach ($platform->getExtensions() as $extension) {
             $this->extensions[] = $extension->getName();
         }
+        $this->tests = $withTests;
     }
 
     /**
@@ -39,5 +43,13 @@ final class DoctorQuery implements QueryInterface
     public function getExtensions(): array
     {
         return $this->extensions;
+    }
+
+    /**
+     * @return bool
+     */
+    public function withTests(): bool
+    {
+        return $this->tests;
     }
 }

@@ -42,6 +42,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
             ->setName(self::NAME)
             ->setDescription('Checks the current installation')
             ->addOption('json', null, null, 'Report checks execution results in JSON format')
+            ->addOption('with-tests', null, null, 'Include Unit tests in results')
         ;
     }
 
@@ -53,7 +54,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
         /** @var Platform $platform */
         $platform = $this->queryBus->query($listQuery);
 
-        $doctorQuery = new DoctorQuery($platform);
+        $doctorQuery = new DoctorQuery($platform, $input->getOption('with-tests'));
         $report = $this->queryBus->query($doctorQuery);
 
         if ($input->getOption('json')) {
@@ -86,6 +87,9 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
                     foreach ($value as $constraint => $result) {
                         $io->columns($result, sprintf('    - %-16s', $constraint) . ': %s');
                     }
+                } elseif ('tests' === $key) {
+                    $io->text(sprintf('  %-20s:', $key));
+                    $io->note($value);
                 } else {
                     $io->columns(
                         $value,
