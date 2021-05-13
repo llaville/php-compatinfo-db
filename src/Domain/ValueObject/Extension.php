@@ -79,6 +79,9 @@ final class Extension implements ExtensionVersionProviderInterface
             } else {
                 $this->classConstants[$name] = $domain;
             }
+            foreach ($domain->getDependencies() as $dependency) {
+                $this->dependencies[] = $dependency;
+            }
         }
 
         $this->functions = $this->methods = [];
@@ -88,6 +91,9 @@ final class Extension implements ExtensionVersionProviderInterface
             } else {
                 $this->methods[$name] = $domain;
             }
+            foreach ($domain->getDependencies() as $dependency) {
+                $this->dependencies[] = $dependency;
+            }
         }
 
         $this->classes = $this->interfaces = [];
@@ -96,6 +102,9 @@ final class Extension implements ExtensionVersionProviderInterface
                 $this->interfaces[$name] = $domain;
             } else {
                 $this->classes[$name] = $domain;
+            }
+            foreach ($domain->getDependencies() as $dependency) {
+                $this->dependencies[] = $dependency;
             }
         }
     }

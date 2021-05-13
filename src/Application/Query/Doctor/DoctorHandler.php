@@ -90,21 +90,8 @@ final class DoctorHandler implements QueryHandlerInterface
             }
 
             $this->dependencies = [];
-
             foreach ($extension->getDependencies() as $dependency) {
                 $this->addDependency($dependency);
-            }
-
-            foreach ($extension->getFunctions() as $function) {
-                foreach ($function->getDependencies() as $dependency) {
-                    $this->addDependency($dependency);
-                }
-            }
-
-            foreach ($extension->getConstants() as $constant) {
-                foreach ($constant->getDependencies() as $dependency) {
-                    $this->addDependency($dependency);
-                }
             }
 
             $report[$name] = [
