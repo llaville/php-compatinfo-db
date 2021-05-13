@@ -64,7 +64,7 @@ final class Release
     /**
      * **CAUTION** Just to have an API consistent for ShowCommand
      *
-     * @return array
+     * @return list<int>
      */
     public function getDependencies(): array
     {
