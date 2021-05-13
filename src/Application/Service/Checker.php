@@ -64,7 +64,8 @@ final class Checker
             $this->io->text('   WARNING: No configuration file (php.ini) used by PHP!', 'fg=yellow');
         }
 
-        $this->io->text(PHP_EOL . '> Checking ' . $this->appName . ' requirements:');
+        $this->io->text('');
+        $this->io->text('> Checking ' . $this->appName . ' requirements:');
 
         $messages = ['ko' => [], 'error' => []];
 
