@@ -47,6 +47,7 @@ class MemcachedExtensionTest extends GenericTest
         self::$optionalmethods = [
             // requires HAVE_MEMCACHED_PROTOCOL
             'MemcachedServer::run',
+            'MemcachedServer::on',
         ];
         self::$optionalconstants = [
             // requires HAVE_MEMCACHED_PROTOCOL
