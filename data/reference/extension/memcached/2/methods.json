@@ -4,5 +4,11 @@
         "name": "run",
         "ext_min": "2.2.0RC1",
         "php_min": "5.2.0"
+    },
+    {
+        "class_name": "MemcachedServer",
+        "name": "on",
+        "ext_min": "2.2.0RC1",
+        "php_min": "5.2.0"
     }
 ]
