@@ -5,6 +5,7 @@ namespace Bartlett\CompatInfoDb\Domain\Factory;
 use Exception;
 use ReflectionClassConstant;
 use function constant;
+use function dechex;
 use function defined;
 use function function_exists;
 use function method_exists;
@@ -13,7 +14,9 @@ use function preg_match;
 use function preg_replace;
 use function preg_replace_callback;
 use function sprintf;
+use function str_split;
 use function strlen;
+use function vsprintf;
 
 /**
  * curl
@@ -104,7 +107,9 @@ trait LibraryVersionProviderTrait
                 if ($constant = $this->constantExists('LIBMEMCACHED_VERSION_HEX', 'Memcached')) {
                     // since release 2.2.0b1
                     // @link https://github.com/php-memcached-dev/php-memcached/commit/a63c8f08fdae80a6d9c4050eb3b126c1e5b05fe7
-                    $versionText = $constant;
+                    $constant = sprintf('%09s', dechex($constant));
+                    $parts = str_split($constant, 3);
+                    $versionText = vsprintf('%d.%d.%d', $parts);
                 }
                 break;
             case 'libxml':
