@@ -149,6 +149,10 @@ final class DoctorHandler implements QueryHandlerInterface
         $name = $dependency->getName();
         $constraint = $dependency->getConstraint();
         $ver = $this->getPrettyVersion($name);
+        if ($ver === '') {
+            // dependency is unknown or does not provides any version number
+            return;
+        }
 
         if (!isset($this->dependencies[$name])) {
             $this->dependencies[$name] = ['version' => $ver, self::CONSTRAINT_PASSED => [], self::CONSTRAINT_SKIPPED => []];
