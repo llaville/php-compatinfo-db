@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Ast reference updated to version 1.0.12 (stable)
+
 ## [3.6.0] - 2021-05-13
 
 ### Added
