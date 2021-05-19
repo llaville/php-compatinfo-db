@@ -13,12 +13,14 @@ about: If something isn't working as expected.
 
 
 ## OS
-<!-- COMPLETE ALL 5 BULLET POINTS BELOW: -->
-1. Host operating system and version:
-2. PHP version:
-3. PHP CompatInfoDB version:
-4. What git commit hash are you on?:
-5. PHP extensions loaded? Uses either `reference:list` or `db:list` command depends on CompatInfoDB version:
+**Host operating system and version:**
+
+Either
+- **`doctor --json` command output :**
+
+Or, at least
+- **PHP version:**
+- **PHP CompatInfoDB version:**
 
 ## Summary
 <!-- Explain the problem briefly -->
