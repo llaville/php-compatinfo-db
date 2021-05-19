@@ -4,6 +4,7 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 
+use function in_array;
 use function sprintf;
 use function strtolower;
 use const PHP_VERSION;
@@ -79,9 +80,7 @@ final class Extension implements ExtensionVersionProviderInterface
             } else {
                 $this->classConstants[$name] = $domain;
             }
-            foreach ($domain->getDependencies() as $dependency) {
-                $this->dependencies[] = $dependency;
-            }
+            $this->uniqueConstraint($domain->getDependencies());
         }
 
         $this->functions = $this->methods = [];
@@ -91,9 +90,7 @@ final class Extension implements ExtensionVersionProviderInterface
             } else {
                 $this->methods[$name] = $domain;
             }
-            foreach ($domain->getDependencies() as $dependency) {
-                $this->dependencies[] = $dependency;
-            }
+            $this->uniqueConstraint($domain->getDependencies());
         }
 
         $this->classes = $this->interfaces = [];
@@ -103,8 +100,22 @@ final class Extension implements ExtensionVersionProviderInterface
             } else {
                 $this->classes[$name] = $domain;
             }
-            foreach ($domain->getDependencies() as $dependency) {
+            $this->uniqueConstraint($domain->getDependencies());
+        }
+    }
+
+    /**
+     * @param Dependency[] $dependencies
+     */
+    private function uniqueConstraint(array $dependencies): void
+    {
+        static $constraints = [];
+
+        foreach ($dependencies as $dependency) {
+            $depName = $dependency->getName();
+            if (!isset($constraints[$depName]) || !in_array($dependency->getConstraint(), $constraints[$depName])) {
                 $this->dependencies[] = $dependency;
+                $constraints[$depName][] = $dependency->getConstraint();
             }
         }
     }
