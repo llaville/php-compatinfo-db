@@ -15,6 +15,7 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Query\Show\ShowQuery;
+use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
@@ -22,6 +23,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
+use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 
 use Symfony\Component\Console\Helper\TableSeparator;
@@ -29,6 +31,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+use function array_unique;
 use function array_unshift;
 use function count;
 use function explode;
@@ -42,6 +45,8 @@ use function trim;
 final class ShowCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:show';
+
+    use LibraryVersionProviderTrait;
 
     protected function configure(): void
     {
@@ -60,6 +65,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             ->addOption('classes', null, null, 'Show classes')
             ->addOption('methods', null, null, 'Show methods')
             ->addOption('class-constants', null, null, 'Show class constants')
+            ->addOption('dependencies', null, null, 'Show dependency constraints')
         ;
     }
 
@@ -74,7 +80,8 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $input->getOption('interfaces'),
             $input->getOption('classes'),
             $input->getOption('methods'),
-            $input->getOption('class-constants')
+            $input->getOption('class-constants'),
+            $input->getOption('dependencies')
         );
 
         /** @var Extension|null $extension */
@@ -121,6 +128,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $summary = false;
             $this->formatSection($extension->getMethods(), 'Methods', $io);
         }
+        if ($showQuery->isDependencies()) {
+            $summary = false;
+            $this->formatDependency($extension->getDependencies(), $io);
+        }
 
         if (!$summary) {
             return self::SUCCESS;
@@ -159,8 +170,45 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             count($extension->getMethods()),
             '  Methods                                   %10d'
         );
+        $dependencies = [];
+        foreach ($extension->getDependencies() as $dependency) {
+            $dependencies[] = $dependency->getName();
+        }
+        $dependencies = array_unique($dependencies);
+        $io->columns(
+            count($dependencies),
+            '  Dependencies                              %10d'
+        );
 
         return self::SUCCESS;
+    }
+
+    private function formatDependency(array $data, StyleInterface $io)
+    {
+        $rows = [];
+        $failures = 0;
+        foreach ($data as $domain) {
+            $name = $domain->getName();
+            $ver = $this->getPrettyVersion($name);
+            $constraint = $domain->getConstraint();
+            $verified = $ver !== '' && Semver::satisfies($ver, $constraint);
+            $rows[$constraint] = [$name, $verified ? $constraint : '<error>'.$constraint.'</error>', $verified ? 'Y' : 'N'];
+            if (!$verified) {
+                $failures++;
+            }
+        }
+
+        $io->section('Dependencies');
+
+        $headers = ['Library', 'Constraint', 'Satisfied'];
+        $footers = [
+            '<info>Total</info>',
+            sprintf('<info>[%d]</info>', count($rows)),
+            sprintf('<info>[%d/%d]</info>', count($rows) - $failures, count($rows)),
+        ];
+        $rows[] = new TableSeparator();
+        $rows[] = $footers;
+        $io->table($headers, $rows);
     }
 
     /**

@@ -39,6 +39,8 @@ final class ShowQuery implements QueryInterface
     private $methods;
     /** @var bool  */
     private $classConstants;
+    /** @var bool  */
+    private $dependencies;
 
     public function __construct(
         string $extension,
@@ -49,7 +51,8 @@ final class ShowQuery implements QueryInterface
         bool $interfaces,
         bool $classes,
         bool $methods,
-        bool $classConstants
+        bool $classConstants,
+        bool $dependencies
     ) {
         $this->extension      = $extension;
         $this->releases       = $releases;
@@ -60,6 +63,7 @@ final class ShowQuery implements QueryInterface
         $this->classes        = $classes;
         $this->methods        = $methods;
         $this->classConstants = $classConstants;
+        $this->dependencies   = $dependencies;
     }
 
     public function getExtension(): string
@@ -105,5 +109,10 @@ final class ShowQuery implements QueryInterface
     public function isClassConstants(): bool
     {
         return $this->classConstants;
+    }
+
+    public function isDependencies(): bool
+    {
+        return $this->dependencies;
     }
 }

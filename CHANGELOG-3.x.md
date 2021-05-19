@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- ability to display dependency constraints on each extension with the `db:show` command
+
 ### Changed
 
 - Ast reference updated to version 1.0.12 (stable)
