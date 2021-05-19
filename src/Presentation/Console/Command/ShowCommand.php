@@ -17,6 +17,7 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 use Bartlett\CompatInfoDb\Application\Query\Show\ShowQuery;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Dependency;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
@@ -183,7 +184,11 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         return self::SUCCESS;
     }
 
-    private function formatDependency(array $data, StyleInterface $io)
+    /**
+     * @param Dependency[] $data
+     * @param StyleInterface $io
+     */
+    private function formatDependency(array $data, StyleInterface $io): void
     {
         $rows = [];
         $failures = 0;
