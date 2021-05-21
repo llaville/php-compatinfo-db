@@ -243,6 +243,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
             $flags = [];
             if ($domain instanceof Function_) {
+                $parameters = $domain->getParameters();
                 if ($domain->isAbstract()) {
                     $flags[] = 'A';
                 }
@@ -252,6 +253,8 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 if ($domain->isStatic()) {
                     $flags[] = 'S';
                 }
+            } else {
+                $parameters = [];
             }
 
             $dependencies = [];
@@ -267,6 +270,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 $this->ext($domain) ? : $domain->getVersion(),
                 $this->php($domain),
                 '',
+                implode(', ', $parameters),
                 implode(', ', $flags),
                 implode(', ', $dependencies),
             ];
@@ -282,9 +286,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
         $io->section($section);
 
-        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Flags', 'Dependencies'];
+        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Parameters', 'Flags', 'Dependencies'];
         $footers = [
             sprintf('<info>Total [%d]</info>', count($results)),
+            '',
             '',
             '',
             '',

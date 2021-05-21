@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - ability to display dependency constraints on each extension with the `db:show` command
+- display PHP version of each function parameters with the `db:show <extenion> --functions` command
 
 ### Changed
 
