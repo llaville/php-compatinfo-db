@@ -515,6 +515,23 @@ final class ReleaseHandler implements CommandHandlerInterface
             'get_magic_quotes_runtime'              => $this->latestPhpVersion['74'],
             'hebrevc'                               => $this->latestPhpVersion['74'],
             'is_real'                               => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
+        $refName = 'standard';
+        $ext     = 'functions';
+        $major   = '40';
+        $entry   = 'ext_max';
+        $names   = [
+            'fgetss'                                => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
+        $refName = 'standard';
+        $ext     = 'functions';
+        $major   = '43';
+        $entry   = 'php_max';
+        $names   = [
             'money_format'                          => $this->latestPhpVersion['74'],
             'restore_include_path'                  => $this->latestPhpVersion['74'],
         ];
