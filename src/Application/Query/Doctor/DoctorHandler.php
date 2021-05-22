@@ -87,6 +87,7 @@ final class DoctorHandler implements QueryHandlerInterface
                 'constraints' => [],
             ],
         ];
+        $reportStatus = 0;
 
         $this->requirements = [];
 
@@ -126,6 +127,10 @@ final class DoctorHandler implements QueryHandlerInterface
                     // waiting for process to finish
                 }
                 $report[$name]['tests'] = [$process->getCommandLine() => $process->getOutput()];
+
+                if ($process->getExitCode() > 0) {
+                    $reportStatus = 2;
+                }
             }
         }
 
@@ -139,7 +144,11 @@ final class DoctorHandler implements QueryHandlerInterface
                 $result[self::CONSTRAINT_PASSED],
                 $result[self::CONSTRAINT_SKIPPED]
             );
+            if ($result[self::CONSTRAINT_SKIPPED] > 0) {
+                $reportStatus = $reportStatus | 1;
+            }
         }
+        $report['status'] = $reportStatus;
 
         return $report;
     }
