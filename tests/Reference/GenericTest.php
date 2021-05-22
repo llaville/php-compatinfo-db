@@ -195,7 +195,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
             }
 
             foreach ($element->getDependencies() as $dependency) {
-                /** @var Dependency $dependency */
                 $ver = $this->getPrettyVersion($dependency->getName());
                 if (!Semver::satisfies($ver, $dependency->getConstraint())) {
                     self::${$opt}[] = $name;
@@ -494,25 +493,20 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 self::$ignoredcfgs
             );
 
-            if (null === $shouldBeThere) {
-                // test $element should be skipped because it was marked as optional or ignored
-                continue;
-            }
+            $min = $range['php.min'];
+            $max = $range['php.max'];
 
-            if ($shouldBeThere) {
+            if ($shouldBeThere === true) {
                 $this->assertTrue(
                     (false !== ini_get($element)),
-                    "INI '$element', found in Reference, does not exists."
+                    "INI '$element', found in Reference ($min, $max), does not exists."
                 );
-            } else {
-                $min = $range['php.min'];
-                $max = $range['php.max'];
-
+            } elseif ($shouldBeThere === false) {
                 $this->assertFalse(
                     (false !== ini_get($element)),
                     "INI '$element', found in Reference ($min, $max), exists."
                 );
-            }
+            } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
     }
 
@@ -566,45 +560,40 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 self::$ignoredfunctions
             );
 
-            if (null === $shouldBeThere) {
-                // test $element should be skipped because it was marked as optional or ignored
-                continue;
-            }
+            $min = $range['php.min'];
+            $max = $range['php.max'];
 
-            if ($shouldBeThere) {
+            if ($shouldBeThere === true) {
                 try {
                     $function = new ReflectionFunction($element);
                     $extensionName = $function->getExtensionName() ?: '';
-                    if (strcasecmp($extensionName, self::$obj->getName()) !== 0) {
-                        return;
-                    }
+                    if (strcasecmp($extensionName, self::$obj->getName()) === 0) {
+                        $this->assertTrue(
+                            $function->isInternal(),
+                            "Function '$element', found in Reference ($min, $max), does not exists."
+                        );
+                    } // else it should be a user function provided by symfony/polyfill-php packages
+                } catch (ReflectionException $e) {
+                    // thrown if the given function does not exist.
                     $this->assertTrue(
-                        $function->isInternal(),
-                        "Function '$element', found in Reference, does not exists."
+                        false,
+                        "Function '$element', found in Reference ($min, $max), does not exists."
                     );
-                } catch (ReflectionException $e) {
-                    // thrown if the given function does not exist.
-                    continue;
                 }
-            } else {
-                $min = $range['php.min'];
-                $max = $range['php.max'];
-
+            } elseif ($shouldBeThere === false) {
                 try {
                     $function = new ReflectionFunction($element);
                     $extensionName = $function->getExtensionName() ?: '';
-                    if (strcasecmp($extensionName, self::$obj->getName()) !== 0) {
-                        return;
-                    }
-                    $this->assertFalse(
-                        $function->isInternal(),
-                        "Function '$element', found in Reference ($min, $max), exists."
-                    );
+                    if (strcasecmp($extensionName, self::$obj->getName()) === 0) {
+                        $this->assertFalse(
+                            $function->isInternal(),
+                            "Function '$element', found in Reference ($min, $max), exists."
+                        );
+                    } // else it should be a user function provided by symfony/polyfill-php packages
                 } catch (ReflectionException $e) {
                     // thrown if the given function does not exist.
-                    return;
                 }
-            }
+            } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
     }
 
@@ -651,25 +640,20 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 self::$ignoredconstants
             );
 
-            if (null === $shouldBeThere) {
-                // test $element should be skipped because it was marked as optional or ignored
-                continue;
-            }
+            $min = $range['php.min'];
+            $max = $range['php.max'];
 
-            if ($shouldBeThere) {
+            if ($shouldBeThere === true) {
                 $this->assertTrue(
                     defined($element),
-                    "Constant '$element', found in Reference, does not exists."
+                    "Constant '$element', found in Reference ($min, $max), does not exists."
                 );
-            } else {
-                $min = $range['php.min'];
-                $max = $range['php.max'];
-
+            } elseif ($shouldBeThere === false) {
                 $this->assertFalse(
                     defined($element),
                     "Constant '$element', found in Reference ($min, $max), exists."
                 );
-            }
+            } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
     }
 
@@ -716,20 +700,15 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 self::$ignoredclasses
             );
 
-            if (null === $shouldBeThere) {
-                // test $element should be skipped because it was marked as optional or ignored
-                continue;
-            }
+            $min = $range['php.min'];
+            $max = $range['php.max'];
 
-            if ($shouldBeThere) {
+            if ($shouldBeThere === true) {
                 $this->assertTrue(
                     class_exists($element, false),
-                    "Class '$element', found in Reference, does not exists."
+                    "Class '$element', found in Reference ($min, $max), does not exists."
                 );
-            } else {
-                $min = $range['php.min'];
-                $max = $range['php.max'];
-
+            } elseif ($shouldBeThere === false) {
                 try {
                     $class = new ReflectionClass($element);
                     $extensionName = $class->getExtensionName() ?: '';
@@ -739,9 +718,8 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                     );
                 } catch (ReflectionException $e) {
                     // thrown if the given class does not exist.
-                    return;
                 }
-            }
+            } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
     }
 
@@ -915,35 +893,28 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 self::$ignoredinterfaces
             );
 
-            if (null === $shouldBeThere) {
-                // test $element should be skipped because it was marked as optional or ignored
-                continue;
-            }
+            $min = $range['php.min'];
+            $max = $range['php.max'];
 
-            if ($shouldBeThere) {
+            if ($shouldBeThere === true) {
                 $this->assertTrue(
                     interface_exists($element, false),
-                    "Interface '$element', found in Reference, does not exists."
+                    "Interface '$element', found in Reference ($min, $max), does not exists."
                 );
-            } else {
-                $min = $range['php.min'];
-                $max = $range['php.max'];
-
+            } elseif ($shouldBeThere === false) {
                 try {
                     $class = new ReflectionClass($element);
-                    if (!$class->isInterface()) {
-                        return;
+                    if ($class->isInterface()) {
+                        $extensionName = $class->getExtensionName() ?: '';
+                        $this->assertFalse(
+                            (strcasecmp($extensionName, self::$obj->getName()) === 0),
+                            "Interface '$element', found in Reference ($min, $max), exists."
+                        );
                     }
-                    $extensionName = $class->getExtensionName() ?: '';
-                    $this->assertFalse(
-                        (strcasecmp($extensionName, self::$obj->getName()) === 0),
-                        "Interface '$element', found in Reference ($min, $max), exists."
-                    );
                 } catch (ReflectionException $e) {
                     // thrown if the given interface does not exist.
-                    return;
                 }
-            }
+            } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
     }
 
