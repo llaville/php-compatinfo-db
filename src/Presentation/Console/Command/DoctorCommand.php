@@ -65,7 +65,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
 
         if ($input->getOption('json')) {
             $output->writeln(json_encode($report, JSON_PRETTY_PRINT));
-            return self::SUCCESS;
+            return $status < 2 ? self::SUCCESS : self::FAILURE;
         }
         unset($report['status']);
 
@@ -132,6 +132,6 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
         natsort($statusNote);
         $io->comment($statusNote);
 
-        return self::SUCCESS;
+        return $status < 2 ? self::SUCCESS : self::FAILURE;
     }
 }
