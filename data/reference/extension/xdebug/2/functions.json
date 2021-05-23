@@ -34,6 +34,7 @@
     {
         "name": "xdebug_get_declared_vars",
         "ext_min": "2.0.0beta5",
+        "ext_max": "2.9.8",
         "php_min": "4.3.0",
         "php_max": "7.4.19"
     },
