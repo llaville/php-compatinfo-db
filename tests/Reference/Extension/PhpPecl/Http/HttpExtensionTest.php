@@ -38,6 +38,11 @@ class HttpExtensionTest extends GenericTest
     public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = [
+            // before release 4.1.0, see commit https://github.com/m6w6/ext-http/commit/ccc68db494d5436acae7254f81ed111780e00d72
+            // when age >=0
+            'http\\Client\\Curl\\Versions\\CURL',
+            'http\\Client\\Curl\\Versions\\SSL',
+            'http\\Client\\Curl\\Versions\\LIBZ',
             // when age >=1
             'http\\Client\\Curl\\Versions\\ARES',
             // when age >=2
