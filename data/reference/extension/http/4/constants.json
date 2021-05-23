@@ -1,16 +1,5 @@
 [
     {
-        "name": "http\\Client\\Curl\\Features\\GSSAPI",
-        "ext_min": "4.1.0",
-        "php_min": "8.0.0",
-        "dependencies": [
-            {
-                "name": "libcurl",
-                "constraint": ">=7.38.0"
-            }
-        ]
-    },
-    {
         "name": "http\\Client\\Curl\\Features\\HTTPS_PROXY",
         "ext_min": "4.1.0",
         "php_min": "8.0.0",
