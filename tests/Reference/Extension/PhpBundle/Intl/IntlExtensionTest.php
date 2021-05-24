@@ -33,10 +33,10 @@ class IntlExtensionTest extends GenericTest
     {
         if (PATH_SEPARATOR == ';') {
             // Win*
-            self::$optionalclasses  = array('IntlException');
+            self::$optionalclasses  = ['IntlException'];
 
             if (version_compare(PHP_VERSION, '5.4.0', 'lt')) {
-                self::$optionalconstants = array(
+                self::$optionalconstants = [
                     'U_IDNA_PROHIBITED_ERROR',
                     'U_IDNA_ERROR_START',
                     'U_IDNA_UNASSIGNED_ERROR',
@@ -47,13 +47,18 @@ class IntlExtensionTest extends GenericTest
                     'U_IDNA_LABEL_TOO_LONG_ERROR',
                     'U_IDNA_ZERO_LENGTH_LABEL_ERROR',
                     'U_IDNA_ERROR_LIMIT',
-                );
+                ];
             }
+        } else {
+            self::$optionalfunctions = [
+                'intltz_get_windows_id',
+                'intltz_get_id_for_windows_id',
+            ];
         }
 
-        self::$optionalcfgs = array(
+        self::$optionalcfgs = [
             'intl.use_exceptions'
-        );
+        ];
 
         parent::setUpBeforeClass();
     }
