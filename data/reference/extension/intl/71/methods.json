@@ -4,13 +4,25 @@
         "name": "getWindowsID",
         "static": true,
         "ext_min": "7.1.0",
-        "php_min": "7.1.0alpha1"
+        "php_min": "7.1.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=52"
+            }
+        ]
     },
     {
         "class_name": "IntlTimeZone",
         "name": "getIDForWindowsID",
         "static": true,
         "ext_min": "7.1.0",
-        "php_min": "7.1.0alpha1"
+        "php_min": "7.1.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=52"
+            }
+        ]
     }
 ]
