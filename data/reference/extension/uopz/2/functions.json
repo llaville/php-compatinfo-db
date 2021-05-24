@@ -43,7 +43,6 @@
     {
         "name": "uopz_undefine",
         "ext_min": "2.0.0",
-        "ext_max": "2.0.7",
         "php_min": "5.4.0"
     },
     {
@@ -55,29 +54,20 @@
     {
         "name": "uopz_flags",
         "ext_min": "2.0.2",
-        "ext_max": "2.0.7",
         "php_min": "5.4.0"
     },
     {
         "name": "uopz_implement",
         "ext_min": "2.0.0",
-        "ext_max": "2.0.7",
         "php_min": "5.4.0"
     },
     {
         "name": "uopz_extend",
         "ext_min": "2.0.0",
-        "ext_max": "2.0.7",
         "php_min": "5.4.0"
     },
     {
         "name": "uopz_compose",
-        "ext_min": "2.0.0",
-        "ext_max": "2.0.7",
-        "php_min": "5.4.0"
-    },
-    {
-        "name": "__uopz_exit_overload",
         "ext_min": "2.0.0",
         "ext_max": "2.0.7",
         "php_min": "5.4.0"
