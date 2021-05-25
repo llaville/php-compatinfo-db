@@ -38,6 +38,8 @@ class OpcacheExtensionTest extends GenericTest
             'opcache.file_cache_consistency_checks',
             // if ENABLE_FILE_CACHE_FALLBACK
             'opcache.file_cache_fallback',
+            // strange result behaviour on CI
+            'opcache.inherited_hack',
         );
 
         if (PATH_SEPARATOR == ':') {
