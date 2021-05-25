@@ -28,7 +28,7 @@ final class EntityManagerFactory
      * @return EntityManagerInterface
      * @throws ORMException
      */
-    public static function create(array $connection, bool $isDevMode, string $proxyDir, Cache $cache = null): EntityManagerInterface
+    public static function create(array $connection, bool $isDevMode, string $proxyDir, ?Cache $cache = null): EntityManagerInterface
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
         $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);

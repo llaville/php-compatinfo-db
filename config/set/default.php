@@ -26,8 +26,6 @@ use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
 use Composer\Semver\VersionParser;
 
-use Doctrine\Common\Cache\ApcuCache;
-use Doctrine\Common\Cache\Cache;
 use Doctrine\ORM\EntityManagerInterface;
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
@@ -90,10 +88,6 @@ return static function (ContainerConfigurator $containerConfigurator): void
     $services->alias(FunctionRepository::class, InfrastructureFunctionRepository::class);
     $services->alias(ConstantRepository::class, InfrastructureConstantRepository::class);
     $services->alias(ClassRepository::class, InfrastructureClassRepository::class);
-
-    if (extension_loaded('apcu') && ini_get('apc.enable_cli')) {
-        $services->set(Cache::class, ApcuCache::class);
-    }
 
     $dbUrl = getenv('DATABASE_URL');
     if (false === $dbUrl) {
