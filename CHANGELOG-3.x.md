@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- PHP 7.4.20 support
 - ability to display dependency constraints on each extension with the `db:show` command
 - display PHP version of each function parameters with the `db:show <extenion> --functions` command
 - summary on `doctor` command (with status code 0: OK, 1:dependency constraint failures, 2:test failures, 3:dependency and test failures)

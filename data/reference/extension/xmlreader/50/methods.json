@@ -4,14 +4,15 @@
         "name": "XML",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.19"
+        "php_max": "7.4.20"
     },
     {
         "class_name": "XMLReader",
         "name": "XML",
         "static": true,
         "ext_min": "8.0.0",
-        "php_min": "8.0.0alpha1"
+        "php_min": "8.0.0alpha1",
+        "php_max": "7.4.20"
     },
     {
         "class_name": "XMLReader",
@@ -108,14 +109,15 @@
         "name": "open",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.19"
+        "php_max": "7.4.20"
     },
     {
         "class_name": "XMLReader",
         "name": "open",
         "static": true,
         "ext_min": "8.0.0",
-        "php_min": "8.0.0alpha1"
+        "php_min": "8.0.0alpha1",
+        "php_max": "7.4.20"
     },
     {
         "class_name": "XMLReader",
