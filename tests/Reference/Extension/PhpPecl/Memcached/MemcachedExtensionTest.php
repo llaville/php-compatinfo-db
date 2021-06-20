@@ -101,6 +101,12 @@ class MemcachedExtensionTest extends GenericTest
             'Memcached::RES_MAXIMUM_RETURN',
         ];
 
+        self::$ignoredmethods = [
+            // only available in master branch and none tag
+            // @see https://github.com/php-memcached-dev/php-memcached/commit/7bbf4fbad3b25cb2628b96eafce50d19f22e3b47
+            'Memcached::checkKey',
+        ];
+
         parent::setUpBeforeClass();
     }
 }
