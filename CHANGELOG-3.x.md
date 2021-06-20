@@ -16,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Ast reference updated to version 1.0.12 (stable)
+- Igbinary reference updated to version 3.2.3 (stable)
 - Use `symfony/cache` implementation rather than `doctrine/cache` where driver implementations were removed in 2.0x (see https://github.com/doctrine/cache/blob/2.0.x/UPGRADE-1.11.md)
 
 ## [3.6.0] - 2021-05-13
