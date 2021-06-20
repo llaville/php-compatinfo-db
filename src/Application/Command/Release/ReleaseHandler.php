@@ -124,7 +124,7 @@ final class ReleaseHandler implements CommandHandlerInterface
     private function tagPhpMaxVersion(): void
     {
         foreach ($this->componentDataProvider() as $refName => $definition) {
-            list($fileBasename, $major, $entry, $names) = $definition;
+            list($fileBasename, $major, $entry, $names, $static) = $definition;
 
             $path = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName]);
             $data = $this->jsonFileHandler->read($path, $fileBasename, $major);
@@ -555,7 +555,8 @@ final class ReleaseHandler implements CommandHandlerInterface
             'tidy::repairFile'                      => $this->latestPhpVersion['74'],
             'tidy::repairString'                    => $this->latestPhpVersion['74'],
         ];
-        yield $refName => [$ext, $major, $entry, $names];
+        $static = false;
+        yield $refName => [$ext, $major, $entry, $names, $static];
 
         $refName = 'wddx';
         $ext     = 'functions';

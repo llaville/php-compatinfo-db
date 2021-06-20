@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- PHP 8.0.7 support
 - PHP 7.4.20 support
 - ability to display dependency constraints on each extension with the `db:show` command
 - display PHP version of each function parameters with the `db:show <extenion> --functions` command
