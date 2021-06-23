@@ -775,12 +775,18 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 $method = new ReflectionMethod($element);
                 $extensionName = $method->getExtensionName() ?: '';
                 if (strcasecmp($extensionName, self::$obj->getName()) != 0) {
-                    return;
+                    continue;
+                }
+
+                list(, $methodName) = explode('::', $element);
+                if ($method->getName() !== $methodName) {
+                    // case does not match; probably use case like https://3v4l.org/LL80T
+                    continue;
                 }
                 try {
                     $method->getPrototype();
                     // don't check prototype methods
-                    return;
+                    continue;
                 } catch (ReflectionException $e) {
                     // none prototype for this method
                 }

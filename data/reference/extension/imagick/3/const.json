@@ -4552,5 +4552,59 @@
                 "constraint": ">=6.9.10"
             }
         ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_CHAR",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_DOUBLE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_FLOAT",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_INTEGER",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_LONG",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_QUANTUM",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELSTORAGE_SHORT",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "VIRTUALPIXELMETHOD_DITHER",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "VIRTUALPIXELMETHOD_RANDOM",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0"
     }
 ]
