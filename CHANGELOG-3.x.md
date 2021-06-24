@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.7.0] - 2021-06-24
+
 ### Added
 
 - PHP 8.0.7 support
@@ -19,7 +21,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Ast reference updated to version 1.0.12 (stable)
 - Igbinary reference updated to version 3.2.3 (stable)
 - Imagick reference updated to version 3.5.0 (stable)
-- Mcrypt reference bundled with PHP before 7.2.0 is now compatible with PECL version 1.0.0 or greater  
+- Mcrypt reference bundled with PHP before 7.2.0 is now compatible with PECL version 1.0.0 or greater
 - Zip reference updated to version 1.19.3 (stable)
 - Use `symfony/cache` implementation rather than `doctrine/cache` where driver implementations were removed in 2.0x (see https://github.com/doctrine/cache/blob/2.0.x/UPGRADE-1.11.md)
 
@@ -262,7 +264,8 @@ replace old `ContainerService` that was introduced in version 2.13
 - [#55](https://github.com/llaville/php-compatinfo-db/issues/55) Wrong assertion results when method checks
 - [#57](https://github.com/llaville/php-compatinfo-db/issues/57) GenericTest - function_exists failed to proceed expected assertion with Polyfills
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.6.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.7.0...HEAD
+[3.7.0]: https://github.com/llaville/php-compatinfo-db/compare/3.6.0...3.7.0
 [3.6.0]: https://github.com/llaville/php-compatinfo-db/compare/3.5.0...3.6.0
 [3.5.0]: https://github.com/llaville/php-compatinfo-db/compare/3.4.2...3.5.0
 [3.4.2]: https://github.com/llaville/php-compatinfo-db/compare/3.4.1...3.4.2
