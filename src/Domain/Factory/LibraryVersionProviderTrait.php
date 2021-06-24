@@ -10,6 +10,7 @@ use function defined;
 use function function_exists;
 use function method_exists;
 use function ord;
+use function phpversion;
 use function preg_match;
 use function preg_replace;
 use function preg_replace_callback;
@@ -157,6 +158,8 @@ trait LibraryVersionProviderTrait
             case 'libzip':
                 if ($constant = $this->constantExists('LIBZIP_VERSION', 'ZipArchive')) {
                     $versionText = $constant;
+                } else {
+                    $versionText = phpversion('zip');
                 }
                 break;
             case 'librdkafka':
