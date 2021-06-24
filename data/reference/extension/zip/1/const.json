@@ -499,6 +499,18 @@
     },
     {
         "class_name": "ZipArchive",
+        "name": "CM_ZSTD",
+        "ext_min": "1.19.1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.8.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
         "name": "CM_XZ",
         "ext_min": "1.15.6",
         "php_min": "4.3.0",
