@@ -493,7 +493,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.6.0"
+                "constraint": ">=1.6.0"
             }
         ]
     },
@@ -505,7 +505,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.6.0"
+                "constraint": ">=1.6.0"
             }
         ]
     },
@@ -541,7 +541,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.0.0"
+                "constraint": ">=1.0.0"
             }
         ]
     },
@@ -553,7 +553,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.0.0"
+                "constraint": ">=1.0.0"
             }
         ]
     },
@@ -565,7 +565,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.0.0"
+                "constraint": ">=1.0.0"
             }
         ]
     },
@@ -577,7 +577,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.6.0"
+                "constraint": ">=1.6.0"
             }
         ]
     },
@@ -589,7 +589,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.6.0"
+                "constraint": ">=1.6.0"
             }
         ]
     },
@@ -607,7 +607,7 @@
         "dependencies": [
             {
                 "name": "libzip",
-                "constraint": "1.0.0"
+                "constraint": ">=1.0.0"
             }
         ]
     },
