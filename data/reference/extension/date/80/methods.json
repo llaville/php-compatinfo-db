@@ -2,12 +2,14 @@
     {
         "class_name": "DateTime",
         "name": "createFromInterface",
+        "static": true,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     },
     {
         "class_name": "DateTimeImmutable",
         "name": "createFromInterface",
+        "static": true,
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
     }
