@@ -661,9 +661,9 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'mcrypt' => [
-            'constants'  => ['40'],
-            'functions'  => ['40'],
-            'iniEntries' => ['40'],
+            'constants'  => ['40', '1'],
+            'functions'  => ['40', '1'],
+            'iniEntries' => ['40', '1'],
             'releases'   => ['40', '1'],
         ];
 
