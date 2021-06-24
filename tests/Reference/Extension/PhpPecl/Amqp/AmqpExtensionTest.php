@@ -41,6 +41,25 @@ class AmqpExtensionTest extends GenericTest
             // *nix
         }
 
+        // related to prototype methods issue
+        // @see https://github.com/php-amqp/php-amqp/issues/398
+        self::$ignoredmethods = [
+            'AMQPEnvelope::getContentType',
+            'AMQPEnvelope::getContentEncoding',
+            'AMQPEnvelope::getHeaders',
+            'AMQPEnvelope::getDeliveryMode',
+            'AMQPEnvelope::getPriority',
+            'AMQPEnvelope::getCorrelationId',
+            'AMQPEnvelope::getReplyTo',
+            'AMQPEnvelope::getExpiration',
+            'AMQPEnvelope::getMessageId',
+            'AMQPEnvelope::getTimestamp',
+            'AMQPEnvelope::getType',
+            'AMQPEnvelope::getUserId',
+            'AMQPEnvelope::getAppId',
+            'AMQPEnvelope::getClusterId',
+        ];
+
         parent::setUpBeforeClass();
     }
 }
