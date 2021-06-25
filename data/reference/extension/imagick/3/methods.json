@@ -45,7 +45,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": ">6.3.4"
+                "constraint": ">6.3.4 <7.0.0"
             }
         ]
     },
@@ -137,6 +137,18 @@
             {
                 "name": "imagick",
                 "constraint": ">6.3.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setImageAlpha",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
             }
         ]
     },
@@ -687,7 +699,13 @@
         "class_name": "Imagick",
         "name": "roundCorners",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -746,7 +764,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": ">6.2.8"
+                "constraint": ">6.2.8 <7.0.0"
             }
         ]
     },
@@ -796,7 +814,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": ">6.3.0"
+                "constraint": ">6.3.0 <7.0.0"
             }
         ]
     },
@@ -1908,7 +1926,13 @@
         "class_name": "Imagick",
         "name": "getImageSize",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -2049,13 +2073,25 @@
         "class_name": "Imagick",
         "name": "setImageIndex",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
         "name": "getImageIndex",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -2488,7 +2524,13 @@
         "class_name": "Imagick",
         "name": "setImageAttribute",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -2579,7 +2621,13 @@
         "class_name": "Imagick",
         "name": "setImageMatteColor",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -3053,7 +3101,13 @@
         "class_name": "Imagick",
         "name": "colorFloodfillImage",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -3446,7 +3500,13 @@
         "class_name": "Imagick",
         "name": "getImageChannelExtrema",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -3556,7 +3616,13 @@
         "class_name": "Imagick",
         "name": "getImageExtrema",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -3660,13 +3726,25 @@
         "class_name": "Imagick",
         "name": "getImageMatteColor",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
         "name": "getImageMatte",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -3957,13 +4035,25 @@
         "class_name": "Imagick",
         "name": "mapImage",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
         "name": "matteFloodfillImage",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -3994,13 +4084,25 @@
         "class_name": "Imagick",
         "name": "paintOpaqueImage",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
         "name": "paintTransparentImage",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": "<7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
@@ -4135,13 +4237,7 @@
         "name": "setimagebiasquantum",
         "ext_min": "3.3.0RC1",
         "ext_max": "3.4.4",
-        "php_min": "5.1.3",
-        "dependencies": [
-            {
-                "name": "imagick",
-                "constraint": "<7.0.0"
-            }
-        ]
+        "php_min": "5.1.3"
     },
     {
         "class_name": "Imagick",
@@ -5151,7 +5247,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": ">6.8.0"
+                "constraint": ">6.8.0 <7.0.0"
             }
         ]
     },
@@ -7601,6 +7697,78 @@
             {
                 "name": "imagick",
                 "constraint": ">6.8.6"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "houghLineImage",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setImagePixelColor",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setImageMask",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getImageMask",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "identifyImageType",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "alpha",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
             }
         ]
     }

@@ -910,7 +910,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": "<=7.0.0"
+                "constraint": "<7.0.0"
             }
         ]
     }

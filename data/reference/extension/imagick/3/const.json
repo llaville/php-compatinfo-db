@@ -4599,12 +4599,504 @@
         "class_name": "Imagick",
         "name": "VIRTUALPIXELMETHOD_DITHER",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
     },
     {
         "class_name": "Imagick",
         "name": "VIRTUALPIXELMETHOD_RANDOM",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0"
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_FREEZE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_INTERPOLATE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_NEGATE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_REFLECT",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_SOFTBURN",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_SOFTDODGE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_STAMP",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_RMSE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPRESSION_DWAA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPRESSION_DWAB",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "EVALUATE_INVERSE_LOG",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COLORSPACE_DISPLAYP3",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COLORSPACE_ADOBE98",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COLORSPACE_PROPHOTO",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COLORSPACE_JZAZBZ",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "DISTORTION_RIGID_AFFINE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "DISTORTION_BARRELINVERSE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "STATISTIC_ROOT_MEAN_SQUARE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "FILTER_HANN",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "FILTER_WELCH",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "FILTER_CUBIC_SPLINE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMGTYPE_GRAYSCALEALPHA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMGTYPE_PALETTEALPHA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMGTYPE_TRUECOLORALPHA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMGTYPE_COLORSEPARATIONALPHA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMGTYPE_PALETTEBILEVELALPHA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPRESSION_ZSTD",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPRESSION_WEBP",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPRESSION_DWAA",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPRESSION_DWAB",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "CHANNEL_READ_MASK",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "CHANNEL_WRITE_MASK",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "CHANNEL_META",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "CHANNEL_COMPOSITE_MASK",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "METRIC_STRUCTURAL_SIMILARITY_ERROR",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "METRIC_STRUCTURAL_DISSIMILARITY_ERROR",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "STATISTIC_CONTRAST",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELMASK_READ",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELMASK_WRITE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "PIXELMASK_COMPOSITE",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
     }
 ]
