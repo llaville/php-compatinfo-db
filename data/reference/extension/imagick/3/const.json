@@ -5098,5 +5098,17 @@
                 "constraint": ">=7.0.0"
             }
         ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "INTERPOLATE_NEAREST_PIXEL",
+        "ext_min": "3.5.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
     }
 ]
