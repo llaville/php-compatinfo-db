@@ -84,6 +84,7 @@ final class DoctorHandler implements QueryHandlerInterface
             'PHP' => [
                 'version' => PHP_VERSION,
                 'extensions' => count($extensions),
+                'dependencies' => [],
                 'constraints' => [],
             ],
         ];
@@ -147,6 +148,7 @@ final class DoctorHandler implements QueryHandlerInterface
             if ($result[self::CONSTRAINT_SKIPPED] > 0) {
                 $reportStatus = $reportStatus | 1;
             }
+            $report['PHP']['dependencies'][$name] = $result['version'];
         }
         $report['status'] = $reportStatus;
 
@@ -190,5 +192,6 @@ final class DoctorHandler implements QueryHandlerInterface
             $this->dependencies[$name][self::CONSTRAINT_SKIPPED][$constraint] = $prettyConstraint;
             $this->requirements[$name][self::CONSTRAINT_SKIPPED] += 1;
         }
+        $this->requirements[$name]['version'] = $ver;
     }
 }

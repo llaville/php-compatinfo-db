@@ -78,6 +78,13 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
 
             foreach ($info as $key => $value) {
                 if ('dependencies' === $key) {
+                    if ('PHP' === $section) {
+                        $io->text(sprintf('  %-20s:', $key));
+                        foreach ($value as $library => $result) {
+                            $io->columns($result, sprintf('    - %-16s', $library) . ': %s');
+                        }
+                        continue;
+                    }
                     if (count($value) === 0) {
                         $io->text(sprintf('  %-20s: none', $key));
                     } else {

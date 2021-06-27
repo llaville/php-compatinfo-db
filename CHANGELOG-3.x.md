@@ -6,7 +6,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [3.7.1] - 2021-06-25
+## [3.7.1] - 2021-06-28
+
+### Added
+
+- `doctor` command is now able to display library versions of the current platform in the PHP dependencies summary section
 
 ### Fixed
 
