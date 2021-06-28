@@ -28,6 +28,7 @@ use function count;
 use function json_encode;
 use function natsort;
 use function sprintf;
+use function strpos;
 use function substr;
 use function trim;
 use const JSON_PRETTY_PRINT;
@@ -111,7 +112,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
                     $io->text(sprintf('  %-20s:', $key));
                     $io->note($value);
                     list($result) = array_values($value);
-                    if ($offset = \strpos($result, 'Tests:')) {
+                    if ($offset = strpos($result, 'Tests:')) {
                         $statusNote[$section] = sprintf('<info>%s</info> -- %s', $section, trim(substr($result, $offset)));
                     }
                 } else {
