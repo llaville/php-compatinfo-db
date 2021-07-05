@@ -124,7 +124,11 @@ final class ReleaseHandler implements CommandHandlerInterface
     private function tagPhpMaxVersion(): void
     {
         foreach ($this->componentDataProvider() as $refName => $definition) {
-            list($fileBasename, $major, $entry, $names, $static) = $definition;
+            if (count($definition) < 5) {
+                list($fileBasename, $major, $entry, $names) = $definition;
+            } else {
+                list($fileBasename, $major, $entry, $names, $static) = $definition;
+            }
 
             $path = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName]);
             $data = $this->jsonFileHandler->read($path, $fileBasename, $major);
