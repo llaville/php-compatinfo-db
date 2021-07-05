@@ -10,6 +10,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - PHP 8.0.8 support
 
+### Changed
+
+- Xhprof reference updated to version 2.3.3 (stable)
+
 ## [3.7.1] - 2021-06-28
 
 ### Added
