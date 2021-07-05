@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 8.0.8 support
+
 ## [3.7.1] - 2021-06-28
 
 ### Added
