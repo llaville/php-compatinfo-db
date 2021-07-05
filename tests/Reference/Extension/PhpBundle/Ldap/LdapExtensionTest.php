@@ -39,6 +39,11 @@ class LdapExtensionTest extends GenericTest
         );
 
         self::$optionalconstants = [
+            // Requires LDAP SASL
+            'LDAP_OPT_X_SASL_MECH',
+            'LDAP_OPT_X_SASL_REALM',
+            'LDAP_OPT_X_SASL_AUTHCID',
+            'LDAP_OPT_X_SASL_AUTHZID',
             // RFC 3829
             'LDAP_CONTROL_AUTHZID_REQUEST',
             'LDAP_CONTROL_AUTHZID_RESPONSE',
