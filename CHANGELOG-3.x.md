@@ -6,6 +6,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.8.0] - 2021-07-06
+
 ### Added
 
 - PHP 8.0.8 support
@@ -285,7 +287,8 @@ replace old `ContainerService` that was introduced in version 2.13
 - [#55](https://github.com/llaville/php-compatinfo-db/issues/55) Wrong assertion results when method checks
 - [#57](https://github.com/llaville/php-compatinfo-db/issues/57) GenericTest - function_exists failed to proceed expected assertion with Polyfills
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.7.1...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.8.0...HEAD
+[3.8.0]: https://github.com/llaville/php-compatinfo-db/compare/3.7.1...3.8.0
 [3.7.1]: https://github.com/llaville/php-compatinfo-db/compare/3.7.0...3.7.1
 [3.7.0]: https://github.com/llaville/php-compatinfo-db/compare/3.6.0...3.7.0
 [3.6.0]: https://github.com/llaville/php-compatinfo-db/compare/3.5.0...3.6.0
