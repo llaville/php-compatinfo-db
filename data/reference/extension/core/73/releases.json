@@ -176,5 +176,13 @@
         "ext_max": "",
         "php_min": "7.3.28",
         "php_max": ""
+    },
+    {
+        "rel_version": "7.3.29",
+        "rel_date": "2021-07-01",
+        "rel_state": "stable",
+        "ext_max": "",
+        "php_min": "7.3.29",
+        "php_max": ""
     }
 ]
