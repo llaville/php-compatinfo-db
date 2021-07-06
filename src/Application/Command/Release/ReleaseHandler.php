@@ -126,6 +126,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         foreach ($this->componentDataProvider() as $refName => $definition) {
             if (count($definition) < 5) {
                 list($fileBasename, $major, $entry, $names) = $definition;
+                $static = null;
             } else {
                 list($fileBasename, $major, $entry, $names, $static) = $definition;
             }
@@ -158,6 +159,9 @@ final class ReleaseHandler implements CommandHandlerInterface
                 if ('methods' === $fileBasename) {
                     if (array_key_exists($element['class_name'], $methods)) {
                         if (in_array($data[$index][$key], $methods[$element['class_name']])) {
+                            if (isset($data[$index]['static']) && $data[$index]['static'] !== $static) {
+                                continue;
+                            }
                             $data[$index][$entry] = $names[implode('::', [$element['class_name'], $data[$index][$key]])];
                         }
                     }
@@ -455,7 +459,8 @@ final class ReleaseHandler implements CommandHandlerInterface
             'ReflectionZendExtension::export'       => $this->latestPhpVersion['74'],
             'Reflector::export'                     => $this->latestPhpVersion['74'],
         ];
-        yield $refName => [$ext, $major, $entry, $names];
+        $static = true;
+        yield $refName => [$ext, $major, $entry, $names, $static];
 
         $refName = 'reflection';
         $ext     = 'methods';
@@ -631,7 +636,8 @@ final class ReleaseHandler implements CommandHandlerInterface
             'XMLReader::XML'                        => $this->latestPhpVersion['74'],
             'XMLReader::open'                       => $this->latestPhpVersion['74'],
         ];
-        yield $refName => [$ext, $major, $entry, $names];
+        $static = false;
+        yield $refName => [$ext, $major, $entry, $names, $static];
 
         $refName = 'zlib';
         $ext     = 'functions';
