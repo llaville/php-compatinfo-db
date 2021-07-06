@@ -451,6 +451,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         $names   = [
             'Reflection::export'                    => $this->latestPhpVersion['74'],
             'ReflectionClass::export'               => $this->latestPhpVersion['74'],
+            'ReflectionClassConstant::export'       => $this->latestPhpVersion['74'],
             'ReflectionExtension::export'           => $this->latestPhpVersion['74'],
             'ReflectionFunction::export'            => $this->latestPhpVersion['74'],
             'ReflectionMethod::export'              => $this->latestPhpVersion['74'],
