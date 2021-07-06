@@ -51,7 +51,7 @@
         "name": "money_format",
         "ext_min": "4.3.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "name": "ob_get_clean",
@@ -92,7 +92,7 @@
         "name": "restore_include_path",
         "ext_min": "4.3.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "name": "set_include_path",

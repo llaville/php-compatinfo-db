@@ -76,7 +76,6 @@
         "name": "export",
         "static": true,
         "ext_min": "7.1.0alpha1",
-        "php_min": "7.1.0alpha1",
-        "php_max": "7.4.20"
+        "php_min": "7.1.0alpha1"
     }
 ]

@@ -58,21 +58,21 @@
         "name": "canSetParameter",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMConfiguration",
         "name": "getParameter",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMConfiguration",
         "name": "setParameter",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMDocument",
@@ -223,7 +223,7 @@
         "name": "renameNode",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMDocument",
@@ -410,7 +410,7 @@
         "name": "handleError",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMImplementation",
@@ -441,35 +441,35 @@
         "name": "item",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMImplementationSource",
         "name": "getDomimplementation",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMImplementationSource",
         "name": "getDomimplementations",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNameList",
         "name": "getName",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNameList",
         "name": "getNamespaceURI",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNamedNodeMap",
@@ -494,28 +494,28 @@
         "name": "removeNamedItemNS",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNamedNodeMap",
         "name": "removeNamedItem",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNamedNodeMap",
         "name": "setNamedItemNS",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNamedNodeMap",
         "name": "setNamedItem",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNode",
@@ -546,14 +546,14 @@
         "name": "compareDocumentPosition",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNode",
         "name": "getFeature",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNode",
@@ -572,7 +572,7 @@
         "name": "getUserData",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNode",
@@ -603,7 +603,7 @@
         "name": "isEqualNode",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNode",
@@ -658,7 +658,7 @@
         "name": "setUserData",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMNodeList",
@@ -677,21 +677,21 @@
         "name": "findOffset16",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMStringExtend",
         "name": "findOffset32",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMStringList",
         "name": "item",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMText",
@@ -716,7 +716,7 @@
         "name": "replaceWholeText",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMText",
@@ -729,7 +729,7 @@
         "name": "handle",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "DOMXPath",

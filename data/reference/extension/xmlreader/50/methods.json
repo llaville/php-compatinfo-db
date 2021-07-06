@@ -4,7 +4,7 @@
         "name": "XML",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "XMLReader",
@@ -108,7 +108,7 @@
         "name": "open",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "7.4.20"
+        "php_max": "7.4.21"
     },
     {
         "class_name": "XMLReader",
