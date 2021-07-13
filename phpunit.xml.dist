@@ -219,7 +219,7 @@
             <directory prefix="Geoip" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="haru">
-            <directory prefix="Haru" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Haru" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="htscanner">
             <directory prefix="Htscanner" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>

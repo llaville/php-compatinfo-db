@@ -25,7 +25,7 @@
 | geoip          | &gt;= 1.1.1 | &gt;= 1.1.1 | &gt;= 1.1.1 |
 | gettext        |    x        |    x        |    x        |
 | gmp            |    x        |    x        |    x        |
-| haru           | &gt;= 1.0.0 | &gt;= 1.0.0 | &gt;= 1.0.0 |
+| haru           | &gt;= 1.0.0 | &gt;= 1.0.0 | from 1.0.0 until 1.0.4 |
 | hash           |    x        |    x        |    x        |
 | htscanner      | &gt;= 1.0.0 | &gt;= 1.0.0 | &gt;= 1.0.0 |
 | http           | &gt;= 2.5.5 | &gt;= 2.5.5 | &gt;= 3.2.4 |

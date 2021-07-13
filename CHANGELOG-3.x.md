@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Removed
+
+- drop support of [haru](https://pecl.php.net/package/haru) extension not maintained since 2012
+
 ## [3.8.0] - 2021-07-06
 
 ### Added
