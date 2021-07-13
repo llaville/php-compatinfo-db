@@ -72,7 +72,7 @@
 | reflection     |    x        |    x        |    x        |
 | recode         | &gt;= 4.0.0 | &gt;= 4.0.0 | &gt;= 4.0.0 |
 | redis          | &gt;= 3.1.2 | &gt;= 4.3.0 | &gt;= 5.3.2 |
-| riak           | &gt;= 1.0.0 | &gt;= 1.0.0 | &gt;= 1.0.0 |
+| riak           | &gt;= 1.0.0 | &gt;= 1.0.0 | from 1.0.0 until 1.2.0 |
 | session        |    x        |    x        |    x        |
 | shmop          |    x        |    x        |    x        |
 | simplexml      |    x        |    x        |    x        |
