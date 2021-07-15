@@ -44,7 +44,8 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $this->setName(self::NAME)
             ->setDescription('List all references supported in the Database')
             ->addOption('all', 'a', null, 'List all references')
-            ->addOption('type', null, InputOption::VALUE_REQUIRED, 'Filter extension on type')
+            ->addOption('type', null, InputOption::VALUE_REQUIRED, 'Filter extension by type')
+            ->addOption('name', null, InputOption::VALUE_REQUIRED, 'Filter extension by name')
         ;
     }
 
@@ -54,6 +55,10 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $type = $input->getOption('type');
         if (!empty($type)) {
             $filters['type'] = $type;
+        }
+        $name = $input->getOption('name');
+        if (!empty($name)) {
+            $filters['name'] = $name;
         }
 
         $listQuery = new ListQuery(

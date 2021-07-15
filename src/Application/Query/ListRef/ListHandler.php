@@ -25,6 +25,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 
 use function extension_loaded;
 use function phpversion;
+use function preg_match;
+use function str_replace;
 use function strcasecmp;
 
 /**
@@ -78,6 +80,9 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         if (isset($filters['type'])) {
             $platform = $this->filterPlatformByExtensionType($platform, $filters['type']);
         }
+        if (isset($filters['name'])) {
+            $platform = $this->filterPlatformByExtensionName($platform, $filters['name']);
+        }
 
         return $platform;
     }
@@ -119,6 +124,29 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         $extensions = [];
         foreach ($platform->getExtensions() as $extension) {
             if (0 === strcasecmp($extension->getType(), $type)) {
+                $extensions[] = $extension;
+            }
+        }
+
+        return new Platform(
+            $platform->getDescription(),
+            $platform->getVersion(),
+            $platform->getCreatedAt(),
+            $extensions
+        );
+    }
+
+    /**
+     * @param Platform $platform
+     * @param string $name
+     * @return Platform
+     */
+    private function filterPlatformByExtensionName(Platform $platform, string $name): Platform
+    {
+        $name = str_replace('*', '.*', $name);
+        $extensions = [];
+        foreach ($platform->getExtensions() as $extension) {
+            if (preg_match('/^('.$name.')$/', $extension->getName())) {
                 $extensions[] = $extension;
             }
         }
