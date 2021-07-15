@@ -75,14 +75,16 @@ final class ListCommand extends AbstractCommand implements CommandInterface
                 $extension->getName(),
                 $provided,
                 version_compare($provided, $installed, 'eq') ? $installed : '<comment>'.$installed.'</comment>',
+                $extension->isDeprecated() ? 'no more supported' : '',
             ];
 
             $rows[] = $row;
         }
 
-        $headers = ['Description', 'Type', 'Name', 'Provided', 'Installed'];
+        $headers = ['Description', 'Type', 'Name', 'Provided', 'Installed', 'Comment'];
         $footers = [
             sprintf('<info>Total [%d]</info>', count($extensions)),
+            '',
             '',
             '',
             '',

@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- `db:list` command show unsupported extensions
+
 ### Removed
 
 - drop support of [haru](https://pecl.php.net/package/haru) extension not maintained since 2012 (only PHP 5 compatible)

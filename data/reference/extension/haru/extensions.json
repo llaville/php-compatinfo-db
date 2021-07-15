@@ -1,4 +1,5 @@
 {
     "name": "haru",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }

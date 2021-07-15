@@ -45,6 +45,12 @@ class Extension
     private $type;
 
     /**
+     * @Column(type="boolean")
+     * @var bool
+     */
+    private $deprecated;
+
+    /**
      * @OneToMany(targetEntity=Release::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, Release>
      */
@@ -154,6 +160,22 @@ class Extension
     public function setType(string $type): void
     {
         $this->type = $type;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDeprecated(): bool
+    {
+        return $this->deprecated;
+    }
+
+    /**
+     * @param bool $deprecated
+     */
+    public function setDeprecated(bool $deprecated): void
+    {
+        $this->deprecated = $deprecated;
     }
 
     /**

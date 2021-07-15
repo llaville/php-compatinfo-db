@@ -31,6 +31,7 @@ final class ExtensionHydrator implements HydratorInterface
             'name' => $object->getName(),
             'version' => $object->getVersion(),
             'type' => $object->getType(),
+            'deprecated' => $object->isDeprecated(),
         ];
     }
 
@@ -47,6 +48,7 @@ final class ExtensionHydrator implements HydratorInterface
 
         $object->setName($data['name']);
         $object->setType($data['type']);
+        $object->setDeprecated($data['deprecated'] ?? false);
 
         if (count($data['releases'])) {
             $releases = (new ReleaseHydrator())->hydrateArrays($data['releases']);
@@ -153,6 +155,7 @@ final class ExtensionHydrator implements HydratorInterface
             $entity->getName(),
             $entity->getVersion(),
             $entity->getType(),
+            $entity->isDeprecated(),
             $iniEntries,
             $constants,
             $functions,

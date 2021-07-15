@@ -22,6 +22,8 @@ final class Extension implements ExtensionVersionProviderInterface
     private $version;
     /** @var string  */
     private $type;
+    /** @var bool */
+    private $deprecated;
     /** @var array|Dependency[]  */
     private $dependencies;
     /** @var array|IniEntry[] */
@@ -47,6 +49,7 @@ final class Extension implements ExtensionVersionProviderInterface
      * @param string $name
      * @param string $version
      * @param string $type
+     * @param bool $deprecated
      * @param array|IniEntry[] $iniEntries
      * @param array|Constant_[] $constants
      * @param array|Function_[] $functions
@@ -58,6 +61,7 @@ final class Extension implements ExtensionVersionProviderInterface
         string $name,
         string $version = PHP_VERSION,
         string $type = 'bundle',
+        bool $deprecated = false,
         array $iniEntries = [],
         array $constants = [],
         array $functions = [],
@@ -69,6 +73,7 @@ final class Extension implements ExtensionVersionProviderInterface
         $this->description = sprintf('The %s PHP extension', $this->name);
         $this->version = $version;
         $this->type = strtolower($type);
+        $this->deprecated = $deprecated;
         $this->releases = $releases;
         $this->dependencies = $dependencies;
         $this->iniEntries = $iniEntries;
@@ -144,6 +149,7 @@ final class Extension implements ExtensionVersionProviderInterface
             'name' => $this->name,
             'version' => $this->version,
             'type' => $this->type,
+            'deprecated' => $this->deprecated,
             'dependencies' => $this->dependencies,
             'ini_entries' => $this->iniEntries,
             'constants' => $this->constants,
@@ -174,6 +180,11 @@ final class Extension implements ExtensionVersionProviderInterface
     public function getType(): string
     {
         return $this->type;
+    }
+
+    public function isDeprecated(): bool
+    {
+        return $this->deprecated;
     }
 
     /**
