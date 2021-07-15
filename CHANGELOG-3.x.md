@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - `db:list` command show unsupported extensions
+- `db:list` command result can be filtered on extension type (bundle, pecl)
 
 ### Removed
 

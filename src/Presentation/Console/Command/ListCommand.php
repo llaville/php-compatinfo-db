@@ -21,6 +21,7 @@ use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\TableSeparator;
 
@@ -43,15 +44,23 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $this->setName(self::NAME)
             ->setDescription('List all references supported in the Database')
             ->addOption('all', 'a', null, 'List all references')
+            ->addOption('type', null, InputOption::VALUE_REQUIRED, 'Filter extension on type')
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $filters = [];
+        $type = $input->getOption('type');
+        if (!empty($type)) {
+            $filters['type'] = $type;
+        }
+
         $listQuery = new ListQuery(
             $input->getOption('all'),
             !$input->getOption('all'),
-            ApplicationInterface::VERSION
+            ApplicationInterface::VERSION,
+            $filters
         );
 
         /** @var Platform $platform */

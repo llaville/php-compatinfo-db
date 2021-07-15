@@ -25,6 +25,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 
 use function extension_loaded;
 use function phpversion;
+use function strcasecmp;
 
 /**
  * @since Release 2.0.0RC1
@@ -72,6 +73,12 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $platform = $this->distributionRepository->getDistributionByVersion($query->getAppVersion());
         }
 
+        $filters = $query->getFilters();
+
+        if (isset($filters['type'])) {
+            $platform = $this->filterPlatformByExtensionType($platform, $filters['type']);
+        }
+
         return $platform;
     }
 
@@ -100,5 +107,27 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         }
 
         return $this->platformRepository->initialize($collection, $phpVersion);
+    }
+
+    /**
+     * @param Platform $platform
+     * @param string $type
+     * @return Platform
+     */
+    private function filterPlatformByExtensionType(Platform $platform, string $type): Platform
+    {
+        $extensions = [];
+        foreach ($platform->getExtensions() as $extension) {
+            if (0 === strcasecmp($extension->getType(), $type)) {
+                $extensions[] = $extension;
+            }
+        }
+
+        return new Platform(
+            $platform->getDescription(),
+            $platform->getVersion(),
+            $platform->getCreatedAt(),
+            $extensions
+        );
     }
 }

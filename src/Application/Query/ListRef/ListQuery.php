@@ -27,15 +27,27 @@ final class ListQuery implements QueryInterface
     private $installed;
     /** @var string  */
     private $appVersion;
+    /** @var string[] */
+    private $filters;
 
+    /**
+     * ListQuery constructor.
+     *
+     * @param bool $all
+     * @param bool $installed
+     * @param string $appVersion
+     * @param string[] $filters
+     */
     public function __construct(
         bool $all,
         bool $installed,
-        string $appVersion
+        string $appVersion,
+        array $filters = []
     ) {
         $this->all = $all;
         $this->installed = $installed;
         $this->appVersion = $appVersion;
+        $this->filters = $filters;
     }
 
     public function isAll(): bool
@@ -54,5 +66,13 @@ final class ListQuery implements QueryInterface
     public function getAppVersion(): string
     {
         return $this->appVersion;
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getFilters(): array
+    {
+        return $this->filters;
     }
 }
