@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Removed
 
 - drop support of [haru](https://pecl.php.net/package/haru) extension not maintained since 2012 (only PHP 5 compatible)
+- drop support of [htscanner](https://pecl.php.net/package/htscanner) extension not maintained since 2012 (only PHP 5 compatible)
 - drop support of [riak](https://pecl.php.net/package/riak) extension not maintained since 2014 (only PHP 5 compatible)
 
 ## [3.8.0] - 2021-07-06

@@ -1,4 +1,5 @@
 {
     "name": "htscanner",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }

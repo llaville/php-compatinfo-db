@@ -222,7 +222,7 @@
             <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Haru" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="htscanner">
-            <directory prefix="Htscanner" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Htscanner" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="http">
             <directory prefix="Http" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
