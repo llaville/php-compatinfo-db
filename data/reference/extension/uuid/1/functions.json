@@ -1,0 +1,62 @@
+[
+    {
+        "name": "uuid_compare",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_create",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_generate_md5",
+        "ext_min": "1.1.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "uuid_generate_sha1",
+        "ext_min": "1.1.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "uuid_is_null",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_is_valid",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_mac",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_parse",
+        "ext_min": "1.0.2",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_time",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_type",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_unparse",
+        "ext_min": "1.0.2",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "uuid_variant",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    }
+]

@@ -96,6 +96,7 @@
 | tokenizer      |    x        |    x        |    x        |
 | uopz           | &gt;= 5.0.2 | &gt;= 5.1.0 | &gt;= 6.1.2 |
 | uploadprogress |    n/a      | &gt;= 1.1.2 | &gt;= 1.1.3 |
+| uuid           |    n/a      |    n/a      | &gt;= 1.0   |
 | varnish        | &gt;= 1.2.2 | &gt;= 1.2.4 | &gt;= 1.2.4 |
 | wddx           | &gt;= 4.0.0 | &gt;= 4.0.0 | &gt;= 4.0.0 |
 | xcache         | &gt;= 1.0   | &gt;= 1.0   | &gt;= 1.0   |

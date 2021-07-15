@@ -1207,6 +1207,12 @@ final class InitHandler implements QueryHandlerInterface
             'releases'   => ['0', '1'],
         ];
 
+        yield 'uuid' => [
+            'constants' => ['1'],
+            'functions' => ['1'],
+            'releases'  => ['1'],
+        ];
+
         yield 'varnish' => [
             'classes'   => ['0'],
             'const'     => ['0', '6'],

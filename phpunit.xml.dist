@@ -320,6 +320,9 @@
         <testsuite name="uploadprogress">
             <directory prefix="Uploadprogress" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
+        <testsuite name="uuid">
+            <directory prefix="Uuid" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
         <testsuite name="varnish">
             <directory prefix="Varnish" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>

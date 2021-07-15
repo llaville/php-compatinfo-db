@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- `uuid` extension support
+
 ### Changed
 
 - `db:list` command show unsupported extensions

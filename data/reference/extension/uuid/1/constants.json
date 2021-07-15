@@ -1,0 +1,72 @@
+[
+    {
+        "name": "UUID_TYPE_DCE",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_DEFAULT",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_INVALID",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_MD5",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_NAME",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_NULL",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_RANDOM",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_SECURITY",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_SHA1",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_TYPE_TIME",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_VARIANT_DCE",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_VARIANT_MICROSOFT",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "UUID_VARIANT_NCS",
+        "ext_min": "1.0.5",
+        "php_min": "5.3.0"
+    },
+    {
+        "name": "UUID_VARIANT_OTHER",
+        "ext_min": "1.0.1",
+        "php_min": "4.0.0"
+    }
+]
