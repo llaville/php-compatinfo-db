@@ -1,4 +1,5 @@
 {
     "name": "inclued",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }

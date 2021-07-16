@@ -234,7 +234,7 @@
             <directory prefix="Imagick" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="inclued">
-            <directory prefix="Inclued" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Inclued" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="jsmin">
             <directory prefix="Jsmin" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>

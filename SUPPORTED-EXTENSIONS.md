@@ -33,7 +33,7 @@
 | igbinary       | &gt;= 2.0.1 | &gt;= 3.0.1 | &gt;= 3.2.1 |
 | imagick        | &gt;= 3.4.1 | &gt;= 3.4.4 | &gt;= 3.5.0 |
 | imap           |    x        |    x        |    x        |
-| inclued        | &gt;= 0.1.0 | &gt;= 0.1.0 | &gt;= 0.1.0 |
+| inclued        | &gt;= 0.1.0 | &gt;= 0.1.0 | from 0.1.0 until 0.1.3 |
 | intl           |    x        |    x        |    x        |
 | jsmin          |    n/a      |    n/a      | &gt;= 3.0.0 |
 | json           |    x        |    x        |    x        |
