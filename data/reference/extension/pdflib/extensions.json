@@ -1,4 +1,5 @@
 {
     "name": "pdflib",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }

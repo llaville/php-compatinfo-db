@@ -270,7 +270,7 @@
             <directory prefix="Oauth" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="pdflib">
-            <directory prefix="Pdflib" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Pdflib" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="pthreads">
             <directory prefix="Pthreads" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>

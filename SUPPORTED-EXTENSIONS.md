@@ -59,7 +59,7 @@
 | openssl        |    x        |    x        |    x        |
 | pcntl          |    x        |    x        |    x        |
 | pcre           |    x        |    x        |    x        |
-| pdflib         |    n/a      |    n/a      | &gt;= 4.1.4 |
+| pdflib         |    n/a      |    n/a      | until 4.1.4 |
 | pdo            |    x        |    x        |    x        |
 | pgsql          |    x        |    x        |    x        |
 | phar           |    x        |    x        |    x        |
