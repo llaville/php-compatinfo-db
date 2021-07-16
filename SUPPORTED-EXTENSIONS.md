@@ -80,7 +80,7 @@
 | soap           |    x        |    x        |    x        |
 | sockets        |    x        |    x        |    x        |
 | solr           | &gt;= 2.3.0 | &gt;= 2.5.0 | &gt;= 2.5.0 |
-| sphinx         | &gt;= 1.3.3 | &gt;= 1.3.3 | &gt;= 1.3.3 |
+| sphinx         | &gt;= 1.3.3 | &gt;= 1.3.3 | until 1.3.3 |
 | spl            |    x        |    x        |    x        |
 | sqlite         | &gt;= 2.0-dev  | &gt;= 2.0-dev  | &gt;= 2.0-dev  |
 | sqlite3        |    x        |    x        |    x        |

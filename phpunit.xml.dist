@@ -297,7 +297,7 @@
             <directory prefix="Solr" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="sphinx">
-            <directory prefix="Sphinx" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Sphinx" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="sqlite">
             <directory phpVersion="5.4.0" phpVersionOperator="lt" prefix="Sqlite" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
