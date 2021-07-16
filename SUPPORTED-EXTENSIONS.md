@@ -38,7 +38,7 @@
 | jsmin          |    n/a      |    n/a      | &gt;= 3.0.0 |
 | json           |    x        |    x        |    x        |
 | ldap           |    x        |    x        |    x        |
-| libevent       | &gt;= 0.0.2 | &gt;= 0.0.2 | &gt;= 0.0.2 |
+| libevent       | &gt;= 0.0.2 | &gt;= 0.0.2 | from 0.0.2 until 0.1.0 |
 | libxml         |    x        |    x        |    x        |
 | lzf            | &gt;= 1.6.5 | &gt;= 1.6.7 | &gt;= 1.6.7 |
 | mailparse      | &gt;= 3.0.2 | &gt;= 3.0.3 | &gt;= 3.0.3 |

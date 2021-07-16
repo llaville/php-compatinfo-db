@@ -240,7 +240,7 @@
             <directory prefix="Jsmin" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="libevent">
-            <directory prefix="Libevent" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Libevent" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="lzf">
             <directory prefix="Lzf" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>

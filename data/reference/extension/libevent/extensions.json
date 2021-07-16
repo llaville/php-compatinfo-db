@@ -1,4 +1,5 @@
 {
     "name": "libevent",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }
