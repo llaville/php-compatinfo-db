@@ -64,7 +64,7 @@
 | pgsql          |    x        |    x        |    x        |
 | phar           |    x        |    x        |    x        |
 | posix          |    x        |    x        |    x        |
-| pthreads       | &gt;= 3.1.3 | &gt;= 3.1.3 | &gt;= 3.1.3 |
+| pthreads       | &gt;= 3.1.3 | &gt;= 3.1.3 | from 3.1.3 until 3.1.6 |
 | raphf          | &gt;= 2.0.0 | &gt;= 2.0.0 | &gt;= 2.0.1 |
 | rar            | &gt;= 4.0.0 | &gt;= 4.0.0 | &gt;= 4.2.0 |
 | rdkafka        |    n/a      |    n/a      | &gt;= 5.0.0 |

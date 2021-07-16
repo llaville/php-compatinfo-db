@@ -23,6 +23,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - drop support of [inclued](https://pecl.php.net/package/inclued) extension not maintained since 2012 (only PHP 5 compatible)
 - drop support of [libevent](https://pecl.php.net/package/libevent) extension not maintained since 2013 (only PHP 5 compatible)
 - drop support of [pdflib](https://pecl.php.net/package/pdflib) extension not maintained since 2019 (only PHP 5 compatible)
+- drop support of [pthreads](https://pecl.php.net/package/pthreads) extension not maintained since 2016
 - drop support of [riak](https://pecl.php.net/package/riak) extension not maintained since 2014 (only PHP 5 compatible)
 
 ## [3.8.0] - 2021-07-06
