@@ -8,7 +8,7 @@
 | [![Tests](https://github.com/llaville/php-compatinfo-db/workflows/Tests/badge.svg)](https://github.com/llaville/php-compatinfo-db/actions) |
 
 Main goal of this project is to provide a standalone database that references
-all functions, constants, classes, interfaces on PHP standard distribution and about 100 extensions.
+all functions, constants, classes, interfaces on PHP standard distribution and about 110 extensions.
 
 This database is currently only support by its initial project [php-compatinfo](https://github.com/llaville/php-compat-info)
 
@@ -73,7 +73,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * PHP 7.4.12 until 7.4.21
 * PHP 8.0.0 until 8.0.8
 
-Currently, [109 extensions](./SUPPORTED-EXTENSIONS.md) referenced in the database.
+Currently, [110 extensions](./SUPPORTED-EXTENSIONS.md) referenced in the database.
 
 For future versions, see the `CHANGELOG-3.x.md` file.
 
