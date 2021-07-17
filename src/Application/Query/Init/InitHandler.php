@@ -43,7 +43,7 @@ use const JSON_ERROR_NONE;
 final class InitHandler implements QueryHandlerInterface
 {
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
-    private const PHP_RELEASES_8 = ['80'];
+    private const PHP_RELEASES_8 = ['80', '81'];
 
     /** @var JsonFileHandler */
     private $jsonFileHandler;
