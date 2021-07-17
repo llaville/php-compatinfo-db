@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - `uuid` extension support
+- EXPERIMENTAL support to PHP 8.1.0alpha3
 
 ### Changed
 

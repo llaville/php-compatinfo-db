@@ -1,0 +1,20 @@
+[
+    {
+        "rel_version": "8.1.0alpha1",
+        "rel_date": "2021-06-10",
+        "rel_state": "alpha",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "rel_version": "8.1.0alpha2",
+        "rel_date": "2021-06-24",
+        "rel_state": "alpha",
+        "php_min": "8.1.0alpha2"
+    },
+    {
+        "rel_version": "8.1.0alpha3",
+        "rel_date": "2021-07-08",
+        "rel_state": "alpha",
+        "php_min": "8.1.0alpha3"
+    }
+]
