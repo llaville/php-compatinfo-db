@@ -1,0 +1,13 @@
+[
+    {
+        "name": "CURLOPT_DOH_URL",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.62.0"
+            }
+        ]
+    }
+]
