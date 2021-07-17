@@ -350,11 +350,11 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'curl' => [
-            'classes'    => ['55', '80'],
+            'classes'    => ['55', '80', '81'],
             'constants'  => ['40', '51', '52', '53', '54', '55', '56', '70', '73', '81'],
             'functions'  => ['40', '50', '51', '55', '71'],
             'iniEntries' => ['53'],
-            'methods'    => ['55'],
+            'methods'    => ['55', '81'],
             'releases'   => array_merge(
                 ['40', '51', '52', '53', '54', '55', '56'],
                 self::PHP_RELEASES_7,
