@@ -43,6 +43,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         '73' => ExtensionVersionProviderInterface::LATEST_PHP_7_3,
         '74' => ExtensionVersionProviderInterface::LATEST_PHP_7_4,
         '80' => ExtensionVersionProviderInterface::LATEST_PHP_8_0,
+        '81' => ExtensionVersionProviderInterface::LATEST_PHP_8_1,
     ];
     /** @var JsonFileHandler  */
     private $jsonFileHandler;
@@ -190,6 +191,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         $entry   = 'php_max';
         $names   = [
             'track_errors'                          => $this->latestPhpVersion['74'],
+            'log_errors_max_len'                    => $this->latestPhpVersion['80'],
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
