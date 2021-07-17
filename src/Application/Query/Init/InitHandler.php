@@ -300,7 +300,7 @@ final class InitHandler implements QueryHandlerInterface
                 '40',
                 '50', '51', '53', '55',
                 '70', '71', '73', '74',
-                '80'
+                '80', '81',
             ],
             'const' => ['80'],
             'constants' => [
