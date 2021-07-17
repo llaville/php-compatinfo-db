@@ -16,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `db:list` command show unsupported extensions
 - `db:list` command result can be filtered on extension type (bundle, pecl)
 - `db:list` command result can be filtered on extension name
+- [Disable symfony deprecation warnings in PHPUnit tests](https://nerdpress.org/2019/08/29/disable-symfony-deprecation-warnings-in-phpunit-tests/)
 
 ### Removed
 
