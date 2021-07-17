@@ -312,12 +312,12 @@ final class InitHandler implements QueryHandlerInterface
                 '40', '42', '43',
                 '50', '51', '53', '54',
                 '70', '73', '74',
-                '80'
+                '80', '81',
             ],
             'methods' => [
                 '51', '53', '55',
                 '70', '72', '74',
-                '80'
+                '80', '81',
             ],
             'iniEntries' => [
                 '40', '41',
@@ -328,7 +328,7 @@ final class InitHandler implements QueryHandlerInterface
             'interfaces' => [
                 '51', '53',
                 '70', '72',
-                '80'
+                '80', '81',
             ],
             'releases' => array_merge(
                 [

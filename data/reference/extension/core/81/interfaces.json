@@ -1,0 +1,12 @@
+[
+    {
+        "name": "UnitEnum",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "BackedEnum",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    }
+]

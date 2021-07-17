@@ -1,0 +1,23 @@
+[
+    {
+        "class_name": "UnitEnum",
+        "name": "cases",
+        "static": true,
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "BackedEnum",
+        "name": "from",
+        "static": true,
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "BackedEnum",
+        "name": "tryFrom",
+        "static": true,
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    }
+]
