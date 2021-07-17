@@ -441,6 +441,7 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'ftp' => [
+            'classes'    => ['81'],
             'constants'  => ['40', '43', '56'],
             'functions'  => ['40', '42', '43', '50', '72'],
             'releases'   => array_merge(
