@@ -1,0 +1,37 @@
+[
+    {
+        "name": "MHASH_MURMUR3A",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MHASH_MURMUR3C",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MHASH_MURMUR3F",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MHASH_XXH3",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MHASH_XXH32",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MHASH_XXH64",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MHASH_XXH128",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    }
+]

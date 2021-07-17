@@ -505,7 +505,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'hash' => [
             'classes'    => ['72'],
-            'constants'  => ['1', '53', '54'],
+            'constants'  => ['1', '53', '54', '81'],
             'functions'  => ['1', '53', '55', '56', '71', '72'],
             'iniEntries' => [],
             'methods'    => ['72'],
