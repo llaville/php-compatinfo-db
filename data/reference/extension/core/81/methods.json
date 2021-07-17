@@ -25,5 +25,79 @@
         "name": "__construct",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "getCurrent",
+        "static": true,
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "suspend",
+        "static": true,
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "__construct",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "start",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "resume",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "throw",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "isStarted",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "isSuspended",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "isRunning",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "isTerminated",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "Fiber",
+        "name": "getReturn",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "FiberError",
+        "name": "__construct",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
     }
 ]

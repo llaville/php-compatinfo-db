@@ -1,0 +1,7 @@
+[
+    {
+        "name": "fiber.stack_size",
+        "ext_min": "8.1.0alpha",
+        "php_min": "8.1.0alpha1"
+    }
+]
