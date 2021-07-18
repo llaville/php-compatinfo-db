@@ -835,6 +835,7 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'pgsql' => [
+            'classes'    => ['81'],
             'constants'  => ['40', '51', '54', '56', '71', '73'],
             'functions'  => ['40', '42', '43', '50', '51', '52', '54', '56'],
             'iniEntries' => ['40'],

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "PgSql\\Connection",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "PgSql\\Result",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "PgSql\\Lob",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    }
+]
