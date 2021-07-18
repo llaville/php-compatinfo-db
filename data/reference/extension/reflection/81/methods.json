@@ -100,5 +100,41 @@
         "name": "isEnumCase",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFiber",
+        "name": "__construct",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFiber",
+        "name": "getFiber",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFiber",
+        "name": "getExecutingFile",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFiber",
+        "name": "getExecutingLine",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFiber",
+        "name": "getCallable",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFiber",
+        "name": "getTrace",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
     }
 ]
