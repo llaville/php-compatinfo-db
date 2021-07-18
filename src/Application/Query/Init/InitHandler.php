@@ -558,6 +558,7 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'imap' => [
+            'classes'    => ['81'],
             'constants'  => ['40', '53'],
             'functions'  => ['40', '43', '50', '51', '53'],
             'iniEntries' => ['56'],
