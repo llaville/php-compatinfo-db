@@ -374,8 +374,7 @@
         "class_name": "ReflectionMethod",
         "name": "isStatic",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0",
-        "php_max": "8.0.8"
+        "php_min": "5.0.0"
     },
     {
         "class_name": "ReflectionMethod",
