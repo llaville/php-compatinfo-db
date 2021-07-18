@@ -120,6 +120,8 @@ class PdoExtensionTest extends GenericTest
             'PDO::MYSQL_ATTR_SERVER_PUBLIC_KEY',
             'PDO::MYSQL_ATTR_MULTI_STATEMENTS',
             'PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT',
+            // @see https://github.com/php/php-src/blob/php-8.1.0alpha1/ext/pdo_mysql/pdo_mysql.c#L127-L129
+            'PDO::MYSQL_ATTR_LOCAL_INFILE_DIRECTORY',
             // @see https://github.com/php/php-src/blob/php-8.0.3/ext/pdo_firebird/pdo_firebird.c#L57-L59
             'PDO::FB_ATTR_DATE_FORMAT',
             'PDO::FB_ATTR_TIME_FORMAT',

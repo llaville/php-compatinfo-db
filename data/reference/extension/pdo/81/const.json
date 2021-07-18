@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "PDO",
+        "name": "MYSQL_ATTR_LOCAL_INFILE_DIRECTORY",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    }
+]

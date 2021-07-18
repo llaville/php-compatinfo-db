@@ -824,7 +824,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'pdo' => [
             'classes'   => ['51'],
-            'const'     => ['51', '80'],
+            'const'     => ['51', '80', '81'],
             'functions' => ['51'],
             'methods'   => ['51'],
             'releases'  => array_merge(
