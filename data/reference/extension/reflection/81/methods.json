@@ -76,5 +76,17 @@
         "name": "getClosureUsedVariables",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFunctionAbstract",
+        "name": "hasTentativeReturnType",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFunctionAbstract",
+        "name": "getTentativeReturnType",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
     }
 ]
