@@ -461,6 +461,7 @@ final class ReleaseHandler implements CommandHandlerInterface
             'ReflectionProperty::export'            => $this->latestPhpVersion['74'],
             'ReflectionZendExtension::export'       => $this->latestPhpVersion['74'],
             'Reflector::export'                     => $this->latestPhpVersion['74'],
+            'ReflectionMethod::isStatic'            => $this->latestPhpVersion['80'],
         ];
         $static = true;
         yield $refName => [$ext, $major, $entry, $names, $static];
