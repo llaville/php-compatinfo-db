@@ -1184,7 +1184,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'tokenizer' => [
             'classes'   => ['80'],
-            'constants' => ['42', '43', '50', '51', '53', '54', '55', '56', '70', '74', '80'],
+            'constants' => ['42', '43', '50', '51', '53', '54', '55', '56', '70', '74', '80', '81'],
             'functions' => ['42'],
             'methods'   => ['80'],
             'releases'  => array_merge(
