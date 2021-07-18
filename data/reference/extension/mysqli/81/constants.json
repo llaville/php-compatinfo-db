@@ -3,5 +3,10 @@
         "name": "MYSQLI_OPT_LOAD_DATA_LOCAL_DIR",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MYSQLI_REFRESH_REPLICA",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
     }
 ]
