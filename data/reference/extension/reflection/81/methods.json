@@ -1,5 +1,65 @@
 [
     {
+        "class_name": "ReflectionEnum",
+        "name": "__construct",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnum",
+        "name": "hasCase",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnum",
+        "name": "getCase",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnum",
+        "name": "getCases",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnum",
+        "name": "isBacked",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnum",
+        "name": "getBackingType",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnumUnitCase",
+        "name": "__construct",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnumUnitCase",
+        "name": "getEnum",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnumBackedCase",
+        "name": "__construct",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "ReflectionEnumBackedCase",
+        "name": "getBackingValue",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
         "class_name": "ReflectionIntersectionType",
         "name": "getTypes",
         "ext_min": "8.1.0alpha3",
