@@ -3,5 +3,15 @@
         "name": "array_is_list",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "fsync",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "fdatasync",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
     }
 ]
