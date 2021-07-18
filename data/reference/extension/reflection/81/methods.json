@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "ReflectionIntersectionType",
+        "name": "getTypes",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3"
+    }
+]

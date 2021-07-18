@@ -923,10 +923,10 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'reflection' => [
-            'classes'    => ['50', '54', '70', '71', '74', '80'],
+            'classes'    => ['50', '54', '70', '71', '74', '80', '81'],
             'const'      => ['50', '51'],
             'interfaces' => ['50'],
-            'methods'    => ['50', '54', '70', '71', '72', '74', '80'],
+            'methods'    => ['50', '54', '70', '71', '72', '74', '80', '81'],
             'releases'   => array_merge(
                 ['50', '51', '54'],
                 self::PHP_RELEASES_7,
