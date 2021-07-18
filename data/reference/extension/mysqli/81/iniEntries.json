@@ -1,0 +1,7 @@
+[
+    {
+        "name": "mysqli.local_infile_directory",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
+    }
+]
