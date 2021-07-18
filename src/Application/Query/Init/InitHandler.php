@@ -576,12 +576,12 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'intl' => [
-            'classes'    => ['1', '2', '55', '70'],
+            'classes'    => ['1', '2', '55', '70', '81'],
             'const'      => ['1', '2', '55', '70'],
             'constants'  => ['1', '2'],
             'functions'  => ['1', '2', '55', '71', '73'],
             'iniEntries' => ['1', '3'],
-            'methods'    => ['1', '2', '55', '70', '71', '73'],
+            'methods'    => ['1', '2', '55', '70', '71', '73', '81'],
             'releases'   => array_merge(
                 ['1', '2', '3', '55'],
                 self::PHP_RELEASES_7,
