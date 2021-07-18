@@ -202,6 +202,7 @@ class SocketsExtensionTest extends GenericTest
             'AI_IDN_USE_STD3_ASCII_RULES',
             //
             'AI_NUMERICSERV',
+            'TCP_DEFER_ACCEPT',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 

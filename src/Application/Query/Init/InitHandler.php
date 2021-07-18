@@ -1005,7 +1005,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'sockets' => [
             'classes'    => ['80'],
-            'constants'  => ['41', '43', '52', '54', '55', '70', '72'],
+            'constants'  => ['41', '43', '52', '54', '55', '70', '72', '81'],
             'functions'  => ['41', '42', '43', '54', '55', '70', '72'],
             'releases'   => array_merge(
                 ['41', '42', '43', '52', '54', '55'],
