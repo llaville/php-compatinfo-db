@@ -70,5 +70,11 @@
         "name": "isStatic",
         "ext_min": "8.1.0alpha3",
         "php_min": "8.1.0alpha3"
+    },
+    {
+        "class_name": "ReflectionFunctionAbstract",
+        "name": "getClosureUsedVariables",
+        "ext_min": "8.1.0alpha1",
+        "php_min": "8.1.0alpha1"
     }
 ]
