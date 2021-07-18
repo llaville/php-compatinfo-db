@@ -1086,7 +1086,7 @@ final class InitHandler implements QueryHandlerInterface
                 '40', '41', '42', '43',
                 '50', '51', '52', '53', '54', '55',
                 '70', '71', '72', '73', '74',
-                '80'
+                '80', '81',
             ],
             'iniEntries' => [
                 '40',
