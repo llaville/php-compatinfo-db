@@ -730,9 +730,9 @@ final class InitHandler implements QueryHandlerInterface
         yield 'mysqli' => [
             'classes'    => ['50'],
             'constants'  => ['50', '51', '52', '53', '54', '55', '56', '72', '81'],
-            'functions'  => ['50', '53', '54', '55', '56'],
+            'functions'  => ['50', '53', '54', '55', '56', '81'],
             'iniEntries' => ['50', '56', '81'],
-            'methods'    => ['50'],
+            'methods'    => ['50', '81'],
             'releases'   => array_merge(
                 ['50', '51', '52', '53', '54', '55', '56'],
                 self::PHP_RELEASES_7,
