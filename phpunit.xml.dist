@@ -338,6 +338,9 @@
         <testsuite name="xhprof">
             <directory prefix="Xhprof" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
+        <testsuite name="xlswriter">
+            <directory prefix="Xlswriter" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
         <testsuite name="xmldiff">
             <directory prefix="Xmldiff" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>

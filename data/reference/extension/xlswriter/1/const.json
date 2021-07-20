@@ -1,0 +1,1046 @@
+[
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_AREA",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_AREA_STACKED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_AREA_STACKED_PERCENT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_BAR",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_BAR_STACKED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_BAR_STACKED_PERCENT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_COLUMN",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_COLUMN_STACKED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_COLUMN_STACKED_PERCENT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_DOUGHNUT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_BOTTOM",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_LEFT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_NONE",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_OVERLAY_LEFT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_OVERLAY_RIGHT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_RIGHT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LEGEND_TOP",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LINE",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LINE_STACKED",
+        "ext_min": "1.3.6",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_LINE_STACKED_PERCENT",
+        "ext_min": "1.3.6",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_PIE",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_RADAR",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_RADAR_FILLED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_RADAR_WITH_MARKERS",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_SCATTER",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_SCATTER_SMOOTH",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_SCATTER_SMOOTH_WITH_MARKERS",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_SCATTER_STRAIGHT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "CHART_SCATTER_STRAIGHT_WITH_MARKERS",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "GRIDLINES_HIDE_ALL",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "GRIDLINES_SHOW_ALL",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "GRIDLINES_SHOW_PRINT",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "GRIDLINES_SHOW_SCREEN",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_A3",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_A4",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_A4_SMALL",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_A5",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_B4",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_B5",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_C_SIZE_SHEET",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_DEFAULT",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_D_SIZE_SHEET",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_1",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_2",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_9",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_10",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_11",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_12",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_14",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_B4",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_B5",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_B6",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_C3",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_C4",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_C5",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_C6",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_C65",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_ENVELOPE_DL",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_EXECUTIVE",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_E_SIZE_SHEET",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_FANFOLD",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_FOLIO",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_GERMAN_LEGAL_FANFOLD",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_GERMAN_STD_FANFOLD",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_LEDGER",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_LEGAL",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_LETTER",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_LETTER_SMALL",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_MONARCH",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_NOTE",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_QUARTO",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_STATEMENT",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "PAPER_TABLOID",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "SKIP_EMPTY_CELLS",
+        "ext_min": "1.2.9",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "SKIP_EMPTY_ROW",
+        "ext_min": "1.2.9",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "SKIP_EMPTY_VALUE",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "SKIP_HIDDEN_ROW",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "SKIP_NONE",
+        "ext_min": "1.2.9",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "TYPE_DOUBLE",
+        "ext_min": "1.2.8",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "TYPE_INT",
+        "ext_min": "1.2.8",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "TYPE_STRING",
+        "ext_min": "1.2.8",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "TYPE_TIMESTAMP",
+        "ext_min": "1.2.8",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_DASHED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_DASH_DOT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_DASH_DOT_DOT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_DOTTED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_DOUBLE",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_HAIR",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_MEDIUM",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_MEDIUM_DASHED",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_MEDIUM_DASH_DOT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_MEDIUM_DASH_DOT_DOT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_NONE",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_SLANT_DASH_DOT",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_THICK",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "BORDER_THIN",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_BLACK",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_BLUE",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_BROWN",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_CYAN",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_GRAY",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_GREEN",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_LIME",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_MAGENTA",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_NAVY",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_ORANGE",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_PINK",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_PURPLE",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_RED",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_SILVER",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_WHITE",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "COLOR_YELLOW",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_CENTER",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_CENTER_ACROSS",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_DISTRIBUTED",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_FILL",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_JUSTIFY",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_LEFT",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_RIGHT",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_VERTICAL_BOTTOM",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_VERTICAL_CENTER",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_VERTICAL_DISTRIBUTED",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_VERTICAL_JUSTIFY",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "FORMAT_ALIGN_VERTICAL_TOP",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_DOWN",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_GRAY",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_GRID",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_HORIZONTAL",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_TRELLIS",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_UP",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_DARK_VERTICAL",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_GRAY_0625",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_GRAY_125",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_DOWN",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_GRAY",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_GRID",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_HORIZONTAL",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_TRELLIS",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_UP",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_LIGHT_VERTICAL",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_MEDIUM_GRAY",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_NONE",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "PATTERN_SOLID",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "UNDERLINE_DOUBLE ",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "UNDERLINE_DOUBLE_ACCOUNTING",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "UNDERLINE_SINGLE",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "UNDERLINE_SINGLE_ACCOUNTING",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_BETWEEN",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_EQUAL_TO",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_GREATER_THAN",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_GREATER_THAN_OR_EQUAL_TO",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_LESS_THAN",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_LESS_THAN_OR_EQUAL_TO",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_NOT_BETWEEN",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "CRITERIA_NOT_EQUAL_TO",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "ERROR_TYPE_INFORMATION",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "ERROR_TYPE_STOP",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "ERROR_TYPE_WARNING",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_ANY",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_CUSTOM_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_DATE",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_DATE_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_DATE_NUMBER",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_DECIMAL",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_DECIMAL_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_INTEGER",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_INTEGER_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_LENGTH",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_LENGTH_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_LIST",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_LIST_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_TIME",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_TIME_FORMULA",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "TYPE_TIME_NUMBER",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    }
+]

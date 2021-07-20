@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Vtiful\\Kernel\\Chart",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "Vtiful\\Kernel\\Excel",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "Vtiful\\Kernel\\Exception",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "Vtiful\\Kernel\\Format",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "Vtiful\\Kernel\\Validation",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    }
+]

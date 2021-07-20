@@ -102,6 +102,7 @@
 | xcache         | &gt;= 1.0   | &gt;= 1.0   | &gt;= 1.0   |
 | xdebug         | &gt;= 2.4.0 | &gt;= 2.7.0 | &gt;= 3.0.1 |
 | xhprof         |    n/a      |    n/a      | &gt;= 2.2.3 |
+| xlswriter      |    n/a      |    n/a      | &gt;= 1.0.2 |
 | xml            |    x        |    x        |    x        |
 | xmldiff        |    n/a      |    n/a      | &gt;= 1.1.3 |
 | xmlreader      |    x        |    x        |    x        |

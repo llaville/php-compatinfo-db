@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - `uuid` extension support
+- `xlswriter` extension support
 - EXPERIMENTAL support to PHP 8.1.x-dev
 
 ### Changed

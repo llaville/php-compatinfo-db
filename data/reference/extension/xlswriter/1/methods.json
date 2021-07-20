@@ -1,0 +1,601 @@
+[
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "__construct",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "axisNameX",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "axisNameY",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "legendSetPosition",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "seriesName",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "series",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "style",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "title",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Chart",
+        "name": "toResource",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "__construct",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "activateSheet",
+        "ext_min": "1.3.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "addSheet",
+        "ext_min": "1.1.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "autoFilter",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "checkoutSheet",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "close",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "constMemory",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "data",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "defaultFormat",
+        "ext_min": "1.3.3",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "existSheet",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "fileName",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "freezePanes",
+        "ext_min": "1.3.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getHandle",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getSheetData",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "gridline",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "header",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertChart",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertComment",
+        "ext_min": "1.3.6",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertDate",
+        "ext_min": "1.2.8",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertFormula",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertImage",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertText",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertUrl",
+        "ext_min": "1.2.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "mergeCells",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "nextCellCallback",
+        "ext_min": "1.2.9",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "nextRow",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "openFile",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "openSheet",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "output",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "protection",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "putCSVCallback",
+        "ext_min": "1.3.3",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "putCSV",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setColumn",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setCurrentSheetHide",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setCurrentSheetIsFirst",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setGlobalType",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setPrintedLandscape",
+        "ext_min": "1.3.7",
+        "ext_max": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setLandscape",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setMargins",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setPaper",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setPrintedPortrait",
+        "ext_min": "1.3.7",
+        "ext_max": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setPortrait",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setRow",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setSkipRows",
+        "ext_min": "1.3.4.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setType",
+        "ext_min": "1.2.9",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "sheetList",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "showComment",
+        "ext_min": "1.3.6",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "validation",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "zoom",
+        "ext_min": "1.3.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "columnIndexFromString",
+        "ext_min": "1.3.0",
+        "php_min": "7.0.0",
+        "static": true
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "stringFromColumnIndex",
+        "ext_min": "1.3.0",
+        "php_min": "7.0.0",
+        "static": true
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "timestampFromDateDouble",
+        "ext_min": "1.3.6",
+        "php_min": "7.0.0",
+        "static": true
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "__construct",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "align",
+        "ext_min": "1.2.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "background",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "bold",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "border",
+        "ext_min": "1.2.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "fontColor",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "fontSize",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "font",
+        "ext_min": "1.3.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "italic",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "number",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "strikeout",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "toResource",
+        "ext_min": "1.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "underline",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "unlocked",
+        "ext_min": "1.3.7",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "wrap",
+        "ext_min": "1.2.5",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "__construct",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "criteriaType",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "dropdown",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "errorMessage",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "errorTitle",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "errorType",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "ignoreBlank",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "inputMessage",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "inputTitle",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "maximumDatetime",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "maximumFormula",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "maximumNumber",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "minimumDatetime",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "minimumFormula",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "minimumNumber",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "showError",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "showInput",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "toResource",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "validationType",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "valueDatetime",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "valueFormula",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "valueList",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Validation",
+        "name": "valueNumber",
+        "ext_min": "1.4.0",
+        "php_min": "7.0.0"
+    }
+]

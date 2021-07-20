@@ -1250,6 +1250,14 @@ final class InitHandler implements QueryHandlerInterface
             'releases'   => ['0', '2'],
         ];
 
+        yield 'xlswriter' => [
+            'classes'   => ['1'],
+            'const'     => ['1'],
+            'functions' => ['1'],
+            'methods'   => ['1'],
+            'releases'  => ['1'],
+        ];
+
         yield 'xml' => [
             'classes'   => ['80'],
             'constants' => ['40'],
