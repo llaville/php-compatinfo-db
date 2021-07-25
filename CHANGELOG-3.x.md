@@ -20,6 +20,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [Disable symfony deprecation warnings in PHPUnit tests](https://nerdpress.org/2019/08/29/disable-symfony-deprecation-warnings-in-phpunit-tests/)
 - Ast reference updated to version 1.0.14 (stable)
 - Igbinary reference updated to version 3.2.4 (stable)
+- Imagick reference updated to version 3.5.1 (stable)
 
 ### Removed
 
