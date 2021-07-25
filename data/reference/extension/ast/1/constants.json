@@ -166,5 +166,17 @@
         "ext_min": "1.0.13",
         "ext_max": "",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\AST_CALLABLE_CONVERT",
+        "ext_min": "1.0.14",
+        "ext_max": "",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_READONLY",
+        "ext_min": "1.0.14",
+        "ext_max": "",
+        "php_min": "7.0.0"
     }
 ]
