@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `uuid` extension support
 - `xlswriter` extension support
 - EXPERIMENTAL support to PHP 8.1.x-dev
+- PHP 8.0.9 support
 
 ### Changed
 
