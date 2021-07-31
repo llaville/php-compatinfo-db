@@ -3,6 +3,6 @@
         "name": "mbstring.func_overload",
         "ext_min": "4.2.0",
         "php_min": "4.2.0",
-        "php_max": "7.4.21"
+        "php_max": "7.4.22"
     }
 ]

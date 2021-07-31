@@ -453,7 +453,6 @@ final class ReleaseHandler implements CommandHandlerInterface
         $names   = [
             'Reflection::export'                    => $this->latestPhpVersion['74'],
             'ReflectionClass::export'               => $this->latestPhpVersion['74'],
-            'ReflectionClassConstant::export'       => $this->latestPhpVersion['74'],
             'ReflectionExtension::export'           => $this->latestPhpVersion['74'],
             'ReflectionFunction::export'            => $this->latestPhpVersion['74'],
             'ReflectionMethod::export'              => $this->latestPhpVersion['74'],
@@ -461,6 +460,16 @@ final class ReleaseHandler implements CommandHandlerInterface
             'ReflectionProperty::export'            => $this->latestPhpVersion['74'],
             'ReflectionZendExtension::export'       => $this->latestPhpVersion['74'],
             'Reflector::export'                     => $this->latestPhpVersion['74'],
+        ];
+        $static = true;
+        yield $refName => [$ext, $major, $entry, $names, $static];
+
+        $refName = 'reflection';
+        $ext     = 'methods';
+        $major   = '71';
+        $entry   = 'php_max';
+        $names   = [
+            'ReflectionClassConstant::export'       => $this->latestPhpVersion['74'],
         ];
         $static = true;
         yield $refName => [$ext, $major, $entry, $names, $static];

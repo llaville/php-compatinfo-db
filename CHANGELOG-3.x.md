@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `xlswriter` extension support
 - EXPERIMENTAL support to PHP 8.1.x-dev
 - PHP 8.0.9 support
+- PHP 7.4.22 support
 
 ### Changed
 

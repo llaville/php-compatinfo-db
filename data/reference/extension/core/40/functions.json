@@ -9,7 +9,7 @@
         "name": "create_function",
         "ext_min": "4.0.1",
         "php_min": "4.0.1",
-        "php_max": "7.4.21"
+        "php_max": "7.4.22"
     },
     {
         "name": "define",
@@ -25,7 +25,7 @@
         "name": "each",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.21"
+        "php_max": "7.4.22"
     },
     {
         "name": "empty",
