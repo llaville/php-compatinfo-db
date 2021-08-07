@@ -8,6 +8,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Igbinary reference updated to version 3.2.5 (stable)
 - Xhprof reference updated to version 2.3.4 (stable)
 
 ## [3.9.0] - 2021-07-31
