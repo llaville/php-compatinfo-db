@@ -6,6 +6,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Xhprof reference updated to version 2.3.4 (stable)
+
 ## [3.9.0] - 2021-07-31
 
 ### Added
