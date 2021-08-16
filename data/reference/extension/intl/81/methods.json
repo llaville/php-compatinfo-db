@@ -17,5 +17,11 @@
         "name": "getBestPattern",
         "ext_min": "8.1.0alpha2",
         "php_min": "8.1.0alpha2"
+    },
+    {
+        "class_name": "IntlPartsIterator",
+        "name": "getRuleStatus",
+        "ext_min": "8.1.0beta2",
+        "php_min": "8.1.0beta2"
     }
 ]
