@@ -1,0 +1,7 @@
+[
+    {
+        "name": "IMAGETYPE_AVIF",
+        "ext_min": "8.1.0beta1",
+        "php_min": "8.1.0beta1"
+    }
+]
