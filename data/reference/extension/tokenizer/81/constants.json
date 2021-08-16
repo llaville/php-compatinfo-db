@@ -13,5 +13,10 @@
         "name": "T_AMPERSAND_NOT_FOLLOWED_BY_VAR_OR_VARARG",
         "ext_min": "8.1.0alpha3",
         "php_min": "8.1.0alpha3"
+    },
+    {
+        "name": "T_READONLY",
+        "ext_min": "8.1.0beta1",
+        "php_min": "8.1.0beta1"
     }
 ]
