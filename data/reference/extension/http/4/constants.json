@@ -341,5 +341,27 @@
                 "constraint": ">=7.64.1"
             }
         ]
+    },
+    {
+        "name": "http\\Client\\Curl\\HSTS_ENABLE",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\HSTS_READONLYFILE",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
     }
 ]
