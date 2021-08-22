@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD013 -->
+<!-- markdownlint-disable MD013 MD024 -->
 # Changes in 1.x
 
 All notable changes of the CompatInfoDB 1 release series will be documented in this file.
