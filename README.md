@@ -101,7 +101,7 @@ composer require bartlett/php-compatinfo-db
 
 The database connection information is stored as an environment variable called `DATABASE_URL`.
 
-```
+```shell
 # to use mysql:
 DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
 
