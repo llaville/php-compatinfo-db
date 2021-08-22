@@ -1,4 +1,4 @@
-## Supported Extensions
+# Supported Extensions
 
 | Extension      | Release 1.x | Release 2.x | Release 3.x |
 |----------------|-------------|-------------|-------------|
