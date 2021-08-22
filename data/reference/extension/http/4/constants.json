@@ -297,5 +297,49 @@
                 "constraint": ">=7.61.0"
             }
         ]
+    },
+    {
+        "name": "http\\Client\\Curl\\ALTSVC_READONLYFILE",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\ALTSVC_H1",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\ALTSVC_H2",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "http\\Client\\Curl\\ALTSVC_H3",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
     }
 ]
