@@ -9,5 +9,82 @@
                 "constraint": ">=7.62.0"
             }
         ]
+    },
+    {
+        "name": "CURLOPT_ISSUERCERT_BLOB",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROXY_ISSUERCERT",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROXY_ISSUERCERT_BLOB",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROXY_SSLCERT_BLOB",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROXY_SSLKEY_BLOB",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSLCERT_BLOB",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSLKEY_BLOB",
+        "ext_min": "8.1.0alpha3",
+        "php_min": "8.1.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
     }
 ]
