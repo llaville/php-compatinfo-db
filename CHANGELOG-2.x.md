@@ -111,7 +111,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Yaml reference updated to version 2.1.0 (stable)
 - remove Symfony 3.x compatibility and add support to Symfony 5.x
 - remove `bartlett:db:backup` command
-- make commands lazily loaded (see https://symfony.com/doc/current/console/lazy_commands.html)
+- make commands lazily loaded (see <https://symfony.com/doc/current/console/lazy_commands.html>)
 
 ## [2.12.0] - 2020-03-21
 
@@ -199,7 +199,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Solr reference updated to version 2.5.0 (stable) - See https://github.com/llaville/php-compatinfo-db/issues/33
+- Solr reference updated to version 2.5.0 (stable) - See <https://github.com/llaville/php-compatinfo-db/issues/33>
 - Xdebug reference updated to version 2.8.0 (stable)
 
 ## [2.6.0] - 2019-07-25
@@ -213,7 +213,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Added missing classes in Reflection reference (Fixed [issue](https://github.com/llaville/php-compat-info/issues/250))
 - Mcrypt Reference was deprecated in PHP 7.1.0 and removed in PHP 7.2.0 (excluding pecl extension)
-- Avoid to run unit tests on Mcrypt reference for PHP 7.2 or greater (for https://pecl.php.net/package/mcrypt)
+- Avoid to run unit tests on Mcrypt reference for PHP 7.2 or greater (for <https://pecl.php.net/package/mcrypt>)
 
 ## [2.5.0] - 2019-06-15
 

@@ -359,7 +359,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Fixed
 
-- curl reference with libCurl dependency (see https://github.com/llaville/php-compatinfo-db/issues/7)
+- curl reference with libCurl dependency (see <https://github.com/llaville/php-compatinfo-db/issues/7>)
 
 ## [1.12.0] - 2016-09-26
 

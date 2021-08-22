@@ -83,7 +83,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Imagick reference updated to version 3.5.0 (stable)
 - Mcrypt reference bundled with PHP before 7.2.0 is now compatible with PECL version 1.0.0 or greater
 - Zip reference updated to version 1.19.3 (stable)
-- Use `symfony/cache` implementation rather than `doctrine/cache` where driver implementations were removed in 2.0x (see https://github.com/doctrine/cache/blob/2.0.x/UPGRADE-1.11.md)
+- Use `symfony/cache` implementation rather than `doctrine/cache` where driver implementations were removed in 2.0x (see <https://github.com/doctrine/cache/blob/2.0.x/UPGRADE-1.11.md>)
 
 ## [3.6.0] - 2021-05-13
 
@@ -142,7 +142,7 @@ As support to PHP 5 was dropped in release 2.0.0, we removed following extension
 
 Some other extensions have support limited :
 
-- wddx (PHP 5.2 to PHP 7.3), see https://wiki.php.net/rfc/deprecate-and-remove-ext-wddx
+- wddx (PHP 5.2 to PHP 7.3), see <https://wiki.php.net/rfc/deprecate-and-remove-ext-wddx>
 
 ### Fixed
 
