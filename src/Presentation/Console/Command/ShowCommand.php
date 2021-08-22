@@ -45,9 +45,9 @@ use function trim;
  */
 final class ShowCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:show';
-
     use LibraryVersionProviderTrait;
+
+    public const NAME = 'db:show';
 
     protected function configure(): void
     {
@@ -197,7 +197,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $ver = $this->getPrettyVersion($name);
             $constraint = $domain->getConstraint();
             $verified = $ver !== '' && Semver::satisfies($ver, $constraint);
-            $rows[$constraint] = [$name, $verified ? $constraint : '<error>'.$constraint.'</error>', $verified ? 'Y' : 'N'];
+            $rows[$constraint] = [$name, $verified ? $constraint : '<error>' . $constraint . '</error>', $verified ? 'Y' : 'N'];
             if (!$verified) {
                 $failures++;
             }
@@ -262,7 +262,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             foreach ($domain->getDependencies() as $dependency) {
                 $name = $dependency->getName();
                 $constraint = $dependency->getConstraint();
-                $prettyConstraint = trim((string) (new VersionParser)->parseConstraints($constraint), '[]');
+                $prettyConstraint = trim((string) (new VersionParser())->parseConstraints($constraint), '[]');
                 $dependencies[] = sprintf('%s %s [%s]', $name, $constraint, $prettyConstraint);
             }
 
