@@ -105,9 +105,7 @@ final class ReleaseHandler implements CommandHandlerInterface
             'rel_version'   => $relVersion,
             'rel_date'      => $relDate,
             'rel_state'     => $relState,
-            'ext_max'       => '',
             'php_min'       => $relVersion,
-            'php_max'       => '',
         ];
         if (false !== array_search($newRelease, $data)) {
             // already exists
