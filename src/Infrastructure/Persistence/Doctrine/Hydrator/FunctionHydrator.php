@@ -50,7 +50,7 @@ final class FunctionHydrator implements HydratorInterface
         $object = new $class;
 
         if (!$object instanceof Entity) {
-             $object = new Entity();
+            $object = new Entity();
         }
 
         $object->setName($data['name']);
