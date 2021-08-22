@@ -3,5 +3,10 @@
         "name": "IMG_AVIF",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "IMG_WEBP_LOSSLESS",
+        "ext_min": "8.1.0beta3",
+        "php_min": "8.1.0beta3"
     }
 ]
