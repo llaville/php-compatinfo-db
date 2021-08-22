@@ -1,4 +1,4 @@
-
+<!-- markdownlint-disable MD013 -->
 ## Supported Versions
 
 ### Versions 3.x

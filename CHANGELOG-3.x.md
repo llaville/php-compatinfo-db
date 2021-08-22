@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # Changes in 3.x
 
 All notable changes of the CompatInfoDB 2 release series will be documented in this file.
@@ -176,8 +177,8 @@ Some other extensions have support limited :
 ### Added
 
 - Autogenerate Doctrine proxy files.
-  Sets environment variable `APP_PROXY_DIR` to defines the directory where Doctrine generates any proxy classes.
-  Default is `/tmp/bartlett/php-compatinfo-db/<VERSION>/proxies` (with `VERSION` current application version)
+  - Sets environment variable `APP_PROXY_DIR` to defines the directory where Doctrine generates any proxy classes.
+  - Default is `/tmp/bartlett/php-compatinfo-db/<VERSION>/proxies` (with `VERSION` current application version)
 
 ## [3.3.0] - 2021-03-09
 
