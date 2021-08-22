@@ -219,6 +219,7 @@ Some other extensions have support limited :
 - [#65](https://github.com/llaville/php-compatinfo-db/issues/65) Make the database compatible with all PHP versions
 
 Because Doctrine ORM v2 has following issue
+
 - [7598](https://github.com/doctrine/orm/issues/7598) Unable to create a proxy for a final class
 we removed `final` keyword from Persistence Entity Objects
 

@@ -115,5 +115,6 @@
 | zlib           |    x        |    x        |    x        |
 
 Legend:
+
 * **n/a** => not available (unsupported in this major release)
 * **x**   => extension bundled with PHP
