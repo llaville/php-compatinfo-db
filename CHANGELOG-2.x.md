@@ -92,7 +92,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-* [Outdated yac reference](https://github.com/llaville/php-compatinfo-db/issues/43). Thanks to @remicollet for his notification
+- [Outdated yac reference](https://github.com/llaville/php-compatinfo-db/issues/43). Thanks to @remicollet for his notification
 
 ## [2.13.0] - 2020-05-10
 

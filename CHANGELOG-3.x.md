@@ -153,10 +153,9 @@ Some other extensions have support limited :
 - Wrong assertion in `Bartlett\CompatInfoDb\Tests\Reference\GenericTest::provideReferenceValues` about `ext.min` property
 - Json reference version related to specific rules (see ExtensionVersionProviderTrait)
 
-**Warning**
-
-* `enchant_dict_add_to_personal`: Alias of enchant_dict_add is DEPRECATED as of PHP 8.0.0
-* `enchant_dict_is_in_session` : Alias of enchant_dict_is_added is DEPRECATED as of PHP 8.0.0
+- Warning :
+  - `enchant_dict_add_to_personal`: Alias of enchant_dict_add is DEPRECATED as of PHP 8.0.0
+  - `enchant_dict_is_in_session` : Alias of enchant_dict_is_added is DEPRECATED as of PHP 8.0.0
 
 ## [3.4.2] - 2021-03-13
 

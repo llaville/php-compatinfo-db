@@ -116,8 +116,9 @@ DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=m
 ```
 
 If you change database connection, you have to run following commands:
-- `vendor/bin/doctrine orm:schema-tool:create`
-- `bin/compatinfo-db db:init`
+
+*`vendor/bin/doctrine orm:schema-tool:create`
+*`bin/compatinfo-db db:init`
 
 At dependencies installation, Composer use the sqlite back-end. You need to set up in your environment the `DATABASE_URL` variable.
 
