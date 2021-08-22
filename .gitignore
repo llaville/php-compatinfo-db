@@ -10,3 +10,4 @@ composer.lock
 .git-semver/
 .box.metadata.cache
 .phpunit.result.cache
+report/
