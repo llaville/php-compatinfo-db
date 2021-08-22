@@ -1,0 +1,47 @@
+---
+# Mega-Linter GitHub Action configuration file
+# More info at https://nvuillam.github.io/mega-linter
+name: Mega-Linter
+
+on:
+    # Trigger mega-linter at every push. Action will also be visible from Pull Requests to master
+    push: # Comment this line to trigger action only on pull-requests (not recommended if you don't pay for GH Actions)
+    pull_request:
+        branches: [master]
+
+jobs:
+    # Cancel duplicate jobs: https://github.com/fkirc/skip-duplicate-actions#option-3-cancellation-only
+    cancel_duplicates:
+        name: Cancel duplicate jobs
+        runs-on: ubuntu-18.04
+        steps:
+            -
+                uses: fkirc/skip-duplicate-actions@master
+                with:
+                      github_token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+
+    build:
+        name: Mega-Linter
+        runs-on: ubuntu-18.04
+        steps:
+            -   # Git Checkout
+                name: Checkout Code
+                uses: actions/checkout@v2
+                with:
+                    token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+                    fetch-depth: 0
+
+            -   # Mega-Linter
+                name: Mega-Linter
+                id: ml
+                    # You can override Mega-Linter flavor used to have faster performances
+                    # More info at https://nvuillam.github.io/mega-linter/flavors/
+                uses: nvuillam/mega-linter@v4
+                env:
+                    # All available variables are described in documentation
+                    # https://nvuillam.github.io/mega-linter/configuration/
+                    # Validates all source when push on master, else just the git diff with master. Override with true if you always want to lint all sources
+                    VALIDATE_ALL_CODEBASE: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                    # ADD YOUR CUSTOM ENV VARIABLES HERE OR DEFINE THEM IN A FILE .mega-linter.yml AT THE ROOT OF YOUR REPOSITORY
+                    # DISABLE: COPYPASTE,SPELL # Uncomment to disable copy-paste and spell checks
