@@ -32,5 +32,5 @@ interface HydratorInterface
      * @param object $object
      * @return array<string, DateTimeImmutable|string|bool|null>
      */
-    public function extract(object $object) : array;
+    public function extract(object $object): array;
 }

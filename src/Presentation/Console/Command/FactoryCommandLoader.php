@@ -34,7 +34,9 @@ class FactoryCommandLoader extends SymfonyFactoryCommandLoader
             if (in_array(get_class($command), $blacklist)) {
                 continue;
             }
-            $factories[$command->getName()] = function () use ($command) { return $command; };
+            $factories[$command->getName()] = function () use ($command) {
+                return $command;
+            };
         }
 
         parent::__construct($factories);

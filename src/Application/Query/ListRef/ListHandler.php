@@ -34,13 +34,13 @@ use function strcasecmp;
  */
 final class ListHandler implements QueryHandlerInterface, ExtensionVersionProviderInterface
 {
+    use ExtensionVersionProviderTrait;
+
     /** @var PlatformRepository*/
     private $platformRepository;
 
     /** @var DistributionRepository */
     private $distributionRepository;
-
-    use ExtensionVersionProviderTrait;
 
     /**
      * ListHandler constructor.
@@ -50,7 +50,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
      */
     public function __construct(
         PlatformRepository $platformRepository,
-        DistributionRepository  $distributionRepository
+        DistributionRepository $distributionRepository
     ) {
         $this->platformRepository = $platformRepository;
         $this->distributionRepository = $distributionRepository;
@@ -146,7 +146,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         $name = str_replace('*', '.*', $name);
         $extensions = [];
         foreach ($platform->getExtensions() as $extension) {
-            if (preg_match('/^('.$name.')$/', $extension->getName())) {
+            if (preg_match('/^(' . $name . ')$/', $extension->getName())) {
                 $extensions[] = $extension;
             }
         }

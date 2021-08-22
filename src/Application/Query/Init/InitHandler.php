@@ -148,7 +148,7 @@ final class InitHandler implements QueryHandlerInterface
             $io->section('CompatInfoDb extension(s)');
             $io->text(
                 array_map(
-                    function($item) {
+                    function ($item) {
                         return (string) $item;
                     },
                     $platform->getExtensions()

@@ -7,15 +7,15 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
  */
 final class Class_
 {
+    use ExtVersionTrait;
+    use PhpVersionTrait;
+
     public const MODIFIER_PUBLIC    =  1;
     public const MODIFIER_PROTECTED =  2;
     public const MODIFIER_PRIVATE   =  4;
     public const MODIFIER_STATIC    =  8;
     public const MODIFIER_ABSTRACT  = 16;
     public const MODIFIER_FINAL     = 32;
-
-    use ExtVersionTrait;
-    use PhpVersionTrait;
 
     /** @var string  */
     private $name;

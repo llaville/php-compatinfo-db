@@ -37,7 +37,10 @@ use const PHP_VERSION;
  */
 final class DoctorHandler implements QueryHandlerInterface
 {
+    use LibraryVersionProviderTrait;
+
     private const CONSTRAINT_SKIPPED = 'skipped';
+
     private const CONSTRAINT_PASSED  = 'passed';
 
     /** @var ExtensionFactory */
@@ -48,8 +51,6 @@ final class DoctorHandler implements QueryHandlerInterface
 
     /** @var array<string, array> */
     private $requirements;
-
-    use LibraryVersionProviderTrait;
 
     /**
      * ShowHandler constructor.
@@ -118,7 +119,7 @@ final class DoctorHandler implements QueryHandlerInterface
                 'description' => $extension->getDescription(),
                 'type' => $extension->getType(),
                 'version supported' => $extension->getVersion(),
-                'installed' => $installed ? sprintf('Yes (%s)', $installed): 'No',
+                'installed' => $installed ? sprintf('Yes (%s)', $installed) : 'No',
                 'dependencies' => $this->dependencies,
             ];
 
@@ -182,7 +183,7 @@ final class DoctorHandler implements QueryHandlerInterface
         $prettyConstraint = sprintf(
             '%s [%s]',
             $constraint,
-            trim((string) (new VersionParser)->parseConstraints($constraint), '[]')
+            trim((string) (new VersionParser())->parseConstraints($constraint), '[]')
         );
 
         if (Semver::satisfies($ver, $constraint)) {

@@ -37,7 +37,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
 
     public function __construct(
         CommandBusInterface $commandBus,
-        QueryBusInterface  $queryBus,
+        QueryBusInterface $queryBus,
         EntityManagerInterface $entityManager
     ) {
         parent::__construct($commandBus, $queryBus);

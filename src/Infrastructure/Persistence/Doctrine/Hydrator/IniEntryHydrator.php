@@ -35,7 +35,7 @@ final class IniEntryHydrator implements HydratorInterface
      */
     public function hydrate(array $data, string $class = Entity::class): object
     {
-        $object = new $class;
+        $object = new $class();
 
         if (!$object instanceof Entity) {
             $object = new Entity();

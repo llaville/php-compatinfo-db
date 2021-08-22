@@ -21,12 +21,12 @@ use DateTimeImmutable;
  */
 final class DistributionRepository implements DomainRepository
 {
+    use EntityManagerTrait;
+
     private const DISTRIBUTION_DESC = 'CompatInfoDB';
 
     /** @var EntityRepository<PlatformEntity> */
     private $repository;
-
-    use EntityManagerTrait;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

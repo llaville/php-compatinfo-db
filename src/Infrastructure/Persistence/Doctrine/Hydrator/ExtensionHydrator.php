@@ -40,7 +40,7 @@ final class ExtensionHydrator implements HydratorInterface
      */
     public function hydrate(array $data, string $class = Entity::class): object
     {
-        $object = new $class;
+        $object = new $class();
 
         if (!$object instanceof Entity) {
             return $object;
@@ -126,7 +126,7 @@ final class ExtensionHydrator implements HydratorInterface
                 $functions[$functionEntity->getName()] = $hydrator->toDomain($functionEntity);
             } else {
                 // class method
-                $functions[$declaringClass . '::'. $functionEntity->getName()] = $hydrator->toDomain($functionEntity);
+                $functions[$declaringClass . '::' . $functionEntity->getName()] = $hydrator->toDomain($functionEntity);
             }
         }
 

@@ -483,7 +483,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      */
     public function testGetIniEntriesFromReference(): void
     {
-        foreach($this->provideReferenceValues(self::$obj->getIniEntries(), 'optionalcfgs') as $args) {
+        foreach ($this->provideReferenceValues(self::$obj->getIniEntries(), 'optionalcfgs') as $args) {
             list($element, $range) = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(

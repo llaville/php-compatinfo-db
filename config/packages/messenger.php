@@ -14,8 +14,7 @@ use Symfony\Component\Messenger\Middleware\HandleMessageMiddleware;
  * @return void
  * @since 6.0.0
  */
-return static function (ContainerConfigurator $containerConfigurator): void
-{
+return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
     $parameters->set('command.bus.middleware', [['id' => 'handle_message']]);

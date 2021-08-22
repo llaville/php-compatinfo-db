@@ -16,10 +16,10 @@ use Doctrine\ORM\EntityRepository;
  */
 final class ExtensionRepository implements DomainRepository
 {
+    use EntityManagerTrait;
+
     /** @var EntityRepository<ExtensionEntity> */
     private $repository;
-
-    use EntityManagerTrait;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

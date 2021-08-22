@@ -20,12 +20,12 @@ use DateTimeImmutable;
  */
 final class PlatformRepository implements PlatformRepositoryInterface
 {
+    use EntityManagerTrait;
+
     private const PLATFORM_DESC = 'PHP Interpreter';
 
     /** @var EntityRepository<PlatformEntity> */
     private $repository;
-
-    use EntityManagerTrait;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

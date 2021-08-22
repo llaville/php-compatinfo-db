@@ -52,10 +52,10 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  */
 final class ExtensionFactory implements ExtensionVersionProviderInterface
 {
+    use ExtensionVersionProviderTrait;
+
     /** @var ExtensionRepository  */
     private $extensionRepository;
-
-    use ExtensionVersionProviderTrait;
 
     public function __construct(ExtensionRepository $extensionRepository)
     {

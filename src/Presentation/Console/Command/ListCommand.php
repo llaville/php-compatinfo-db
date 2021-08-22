@@ -88,7 +88,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
                 $extension->getType(),
                 $extension->getName(),
                 $provided,
-                version_compare($provided, $installed, 'eq') ? $installed : '<comment>'.$installed.'</comment>',
+                version_compare($provided, $installed, 'eq') ? $installed : '<comment>' . $installed . '</comment>',
                 $extension->isDeprecated() ? 'no more supported' : '',
             ];
 

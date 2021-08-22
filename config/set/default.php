@@ -38,8 +38,7 @@ use Symfony\Component\Messenger\Command\DebugCommand;
  * @return void
  * @since 3.0.0
  */
-return static function (ContainerConfigurator $containerConfigurator): void
-{
+return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(__DIR__ . '/common.php');
     $containerConfigurator->import(__DIR__ . '/../packages/messenger.php');
 

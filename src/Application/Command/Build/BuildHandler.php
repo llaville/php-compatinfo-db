@@ -57,7 +57,7 @@ final class BuildHandler implements CommandHandlerInterface
         $classes = $re->getClassNames();
         natsort($classes);
 
-        $extDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__,4), 'data', 'reference', 'extension', $extension, '0']);
+        $extDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 4), 'data', 'reference', 'extension', $extension, '0']);
         if (!is_dir($extDir)) {
             mkdir($extDir, 0755, true);
         }

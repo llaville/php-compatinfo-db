@@ -47,56 +47,56 @@ $classConstants = array_keys($extension->getClassConstants());
 $methods = array_keys($extension->getMethods());
 
 
-printf('# %s extension', $extension->getName()); echo PHP_EOL, PHP_EOL;
+printf('# %s extension%s%s', $extension->getName(), PHP_EOL, PHP_EOL);
 
-print('## Summary'); echo PHP_EOL, PHP_EOL;
+printf('## Summary%s%s', PHP_EOL, PHP_EOL);
 
-printf('* Latest version supported : %s', $extension->getVersion()); echo PHP_EOL;
-printf('* Releases : %d', count($releases)); echo PHP_EOL;
-printf('* INI Entries : %d', count($iniEntries)); echo PHP_EOL;
-printf('* Constants : %d', count($constants)); echo PHP_EOL;
-printf('* Functions : %d', count($functions)); echo PHP_EOL;
-printf('* Classes : %d', count($classes)); echo PHP_EOL;
-printf('* Interfaces : %d', count($interfaces)); echo PHP_EOL;
-printf('* Class constants : %d', count($classConstants)); echo PHP_EOL;
-printf('* Methods : %d', count($methods)); echo PHP_EOL, PHP_EOL;
+printf('* Latest version supported : %s%s', $extension->getVersion(), PHP_EOL);
+printf('* Releases : %d%s', count($releases), PHP_EOL);
+printf('* INI Entries : %d%s', count($iniEntries), PHP_EOL);
+printf('* Constants : %d%s', count($constants), PHP_EOL);
+printf('* Functions : %d%s', count($functions), PHP_EOL);
+printf('* Classes : %d%s', count($classes), PHP_EOL);
+printf('* Interfaces : %d%s', count($interfaces), PHP_EOL);
+printf('* Class constants : %d%s', count($classConstants), PHP_EOL);
+printf('* Methods : %d%s%s', count($methods), PHP_EOL, PHP_EOL);
 
 if ($command->isReleases()) {
     $results = print_r($releases, true);
-    printf('## Releases : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Releases : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isIni()) {
     $results = print_r($iniEntries, true);
-    printf('## INI entries : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## INI entries : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isConstants()) {
     $results = print_r($constants, true);
-    printf('## Constants : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Constants : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isFunctions()) {
     $results = print_r($functions, true);
-    printf('## Functions : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Functions : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isClasses()) {
     $results = print_r($classes, true);
-    printf('## Classes : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Classes : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isInterfaces()) {
     $results = print_r($interfaces, true);
-    printf('## Interfaces : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Interfaces : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isClassConstants()) {
     $results = print_r($classConstants, true);
-    printf('## Class Constants : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Class Constants : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
 
 if ($command->isMethods()) {
     $results = print_r($methods, true);
-    printf('## Methods : %s', $results); echo PHP_EOL, PHP_EOL;
+    printf('## Methods : %s%s%s', $results, PHP_EOL, PHP_EOL);
 }
