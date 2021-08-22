@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "Phar",
+        "name": "OPENSSL_SHA256",
+        "ext_min": "8.1.0beta3",
+        "php_min": "8.1.0beta3"
+    },
+    {
+        "class_name": "Phar",
+        "name": "OPENSSL_SHA512",
+        "ext_min": "8.1.0beta3",
+        "php_min": "8.1.0beta3"
+    }
+]

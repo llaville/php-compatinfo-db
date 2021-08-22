@@ -848,7 +848,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'phar' => [
             'classes'    => ['1', '2'],
-            'const'      => ['1', '2'],
+            'const'      => ['1', '2', '81'],
             'iniEntries' => ['1', '2'],
             'methods'    => ['1', '2'],
             'releases'   => array_merge(
