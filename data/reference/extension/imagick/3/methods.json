@@ -5512,7 +5512,6 @@
         "class_name": "ImagickPixel",
         "name": "ispixelsimilar",
         "ext_min": "3.2.0b2",
-        "ext_min": "3.4.4",
         "php_min": "5.1.3"
     },
     {
