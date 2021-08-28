@@ -22,6 +22,7 @@ use function is_int;
 use function json_decode;
 use function json_encode;
 use const DIRECTORY_SEPARATOR;
+use const PHP_EOL;
 
 /**
  * @since Release 2.0.0RC1
@@ -64,7 +65,7 @@ final class JsonFileHandler
         if (!file_exists($filename)) {
             return false;
         }
-        $jsonStr = json_encode($data, JSON_PRETTY_PRINT);
+        $jsonStr = json_encode($data, JSON_PRETTY_PRINT) . PHP_EOL;
         $bytes = file_put_contents($filename, $jsonStr);
         return is_int($bytes);
     }
