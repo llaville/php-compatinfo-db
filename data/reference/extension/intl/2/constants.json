@@ -98,7 +98,7 @@
         "name": "INTL_IDNA_VARIANT_2003",
         "ext_min": "2.0.0b1",
         "php_min": "5.2.4",
-        "php_max": "7.4.22"
+        "php_max": "7.4.23"
     },
     {
         "name": "INTL_IDNA_VARIANT_UTS46",

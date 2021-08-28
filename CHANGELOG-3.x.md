@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [Mega-Linter](https://github.com/nvuillam/mega-linter) support as QA tool to avoid technical debt
 - PHP 8.0.10 support
+- PHP 7.4.23 support
 
 ### Changed
 

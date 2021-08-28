@@ -150,5 +150,11 @@
         "ext_max": "",
         "php_min": "7.4.22",
         "php_max": ""
+    },
+    {
+        "rel_version": "7.4.23",
+        "rel_date": "2021-08-26",
+        "rel_state": "stable",
+        "php_min": "7.4.23"
     }
 ]
