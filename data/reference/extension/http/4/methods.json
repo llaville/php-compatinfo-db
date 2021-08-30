@@ -1,0 +1,57 @@
+[
+    {
+        "class_name": "http\\Header",
+        "name": "__serialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "__unserialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "__serialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\Message",
+        "name": "__unserialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "__serialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\Message\\Body",
+        "name": "__unserialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "__serialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\QueryString",
+        "name": "__unserialize",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "http\\Env",
+        "name": "reset",
+        "ext_min": "4.2.0",
+        "php_min": "8.0.0",
+        "static": true
+    }
+]
