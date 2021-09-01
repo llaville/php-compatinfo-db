@@ -21,7 +21,7 @@ jobs:
                     github_token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
                     cancel_others: true
 
-    build:
+    lint_files:
         name: Mega-Linter
         runs-on: ubuntu-18.04
         steps:
