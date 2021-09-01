@@ -15,10 +15,11 @@ jobs:
         name: Cancel duplicate jobs
         runs-on: ubuntu-18.04
         steps:
-            -
+            -   # Cancellation of previous workflow runs
                 uses: fkirc/skip-duplicate-actions@master
                 with:
-                      github_token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+                    github_token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+                    cancel_others: true
 
     build:
         name: Mega-Linter
