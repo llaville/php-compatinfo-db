@@ -8,6 +8,8 @@ on:
 
 jobs:
     php_tests:
+        needs: lint_files
+
         runs-on: ${{ matrix.os }}
 
         strategy:
