@@ -15,7 +15,13 @@
         "class_name": "OCICollection",
         "name": "assignelem",
         "ext_min": "3.0.0",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.1.0beta3"
+    },
+    {
+        "class_name": "OCICollection",
+        "name": "assignElem",
+        "ext_min": "3.0.0",
+        "php_min": "8.1.0RC1"
     },
     {
         "class_name": "OCICollection",
@@ -93,7 +99,13 @@
         "class_name": "OCILob",
         "name": "getbuffering",
         "ext_min": "3.0.0",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.1.0beta3"
+    },
+    {
+        "class_name": "OCILob",
+        "name": "getBuffering",
+        "ext_min": "3.0.0",
+        "php_min": "8.1.0RC1"
     },
     {
         "class_name": "OCILob",
@@ -129,7 +141,14 @@
         "class_name": "OCILob",
         "name": "savefile",
         "ext_min": "3.0.0",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.0.0alpha3",
+        "php_max": "8.1.0beta3"
+    },
+    {
+        "class_name": "OCILob",
+        "name": "saveFile",
+        "ext_min": "3.0.0",
+        "php_min": "8.1.0RC1"
     },
     {
         "class_name": "OCILob",
@@ -141,7 +160,14 @@
         "class_name": "OCILob",
         "name": "setbuffering",
         "ext_min": "3.0.0",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.0.0alpha3",
+        "php_max": "8.1.0beta3"
+    },
+    {
+        "class_name": "OCILob",
+        "name": "setBuffering",
+        "ext_min": "3.0.0",
+        "php_min": "8.1.0RC1"
     },
     {
         "class_name": "OCILob",
@@ -171,12 +197,25 @@
         "class_name": "OCILob",
         "name": "writetemporary",
         "ext_min": "3.0.0",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.1.0beta33"
+    },
+    {
+        "class_name": "OCILob",
+        "name": "writeTemporary",
+        "ext_min": "3.0.0",
+        "php_min": "8.1.0RC1"
     },
     {
         "class_name": "OCILob",
         "name": "writetofile",
         "ext_min": "3.0.0",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.0.0alpha3",
+        "php_max": "8.1.0beta3"
+    },
+    {
+        "class_name": "OCILob",
+        "name": "writeToFile",
+        "ext_min": "3.0.0",
+        "php_min": "8.1.0RC1"
     }
 ]
