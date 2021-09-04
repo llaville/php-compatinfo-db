@@ -19,7 +19,7 @@ jobs:
                     cancel_others: true
 
     lint_files:
-        name: Mega-Linter
+        name: Lint files
         runs-on: ubuntu-18.04
         steps:
             -   # Git Checkout
