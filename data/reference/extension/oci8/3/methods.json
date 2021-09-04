@@ -15,7 +15,8 @@
         "class_name": "OCICollection",
         "name": "assignelem",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0beta3"
+        "php_min": "8.0.0alpha3",
+        "php_max": "8.1.0beta3"
     },
     {
         "class_name": "OCICollection",
@@ -198,7 +199,8 @@
         "class_name": "OCILob",
         "name": "writetemporary",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0beta33"
+        "php_min": "8.0.0alpha3",
+        "php_max": "8.1.0beta3"
     },
     {
         "class_name": "OCILob",
