@@ -5,11 +5,12 @@ All notable changes of the CompatInfoDB 2 release series will be documented in t
 This project adheres to [Semantic Versioning](http://semver.org/),
 using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
+## [Unreleased]
+
 ### Changed
 
 - http reference updated to version 4.2.0 (stable)
-
-## [Unreleased]
+- Xhprof reference updated to version 2.3.5 (stable)
 
 ## [3.10.0] - 2021-08-28
 
