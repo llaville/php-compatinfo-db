@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - http reference updated to version 4.2.0 (stable)
 - Xhprof reference updated to version 2.3.5 (stable)
+- Zip reference updated to version 1.19.4 (stable)
 
 ## [3.10.0] - 2021-08-28
 
