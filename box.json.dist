@@ -1,7 +1,7 @@
 {
+    "alias": "compatinfo-db.phar",
     "directories": ["bin", "config", "src", "vendor"],
     "compression": "GZ",
-    "stub": "phar-stub.php",
     "main": "bin/compatinfo-db",
     "metadata": "Bartlett\\CompatInfoDb\\ComposerScripts::getPharMetadata"
 }
