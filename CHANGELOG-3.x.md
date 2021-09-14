@@ -9,7 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- http reference updated to version 4.2.0 (stable)
+- http reference updated to version 4.2.1 (stable)
 - mailparse reference updated to version 3.1.2 (stable)
 - Xhprof reference updated to version 2.3.5 (stable)
 - Zip reference updated to version 1.19.4 (stable)
