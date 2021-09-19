@@ -37,8 +37,14 @@
     },
     {
         "rel_version": "8.1.0RC1",
-        "rel_date": "2021-08-02",
+        "rel_date": "2021-09-02",
         "rel_state": "beta",
         "php_min": "8.1.0RC1"
+    },
+    {
+        "rel_version": "8.1.0RC2",
+        "rel_date": "2021-09-16",
+        "rel_state": "beta",
+        "php_min": "8.1.0RC2"
     }
 ]
