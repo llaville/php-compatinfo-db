@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 7.3.31 support
+
 ### Changed
 
 - http reference updated to version 4.2.1 (stable)
