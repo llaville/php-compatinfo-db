@@ -22,7 +22,7 @@
         "class_name": "OCICollection",
         "name": "assignElem",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0RC1"
+        "php_min": "8.0.11RC1"
     },
     {
         "class_name": "OCICollection",
@@ -107,7 +107,7 @@
         "class_name": "OCILob",
         "name": "getBuffering",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0RC1"
+        "php_min": "8.0.11RC1"
     },
     {
         "class_name": "OCILob",
@@ -150,7 +150,7 @@
         "class_name": "OCILob",
         "name": "saveFile",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0RC1"
+        "php_min": "8.0.11RC1"
     },
     {
         "class_name": "OCILob",
@@ -169,7 +169,7 @@
         "class_name": "OCILob",
         "name": "setBuffering",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0RC1"
+        "php_min": "8.0.11RC1"
     },
     {
         "class_name": "OCILob",
@@ -206,7 +206,7 @@
         "class_name": "OCILob",
         "name": "writeTemporary",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0RC1"
+        "php_min": "8.0.11RC1"
     },
     {
         "class_name": "OCILob",
@@ -219,6 +219,6 @@
         "class_name": "OCILob",
         "name": "writeToFile",
         "ext_min": "3.0.0",
-        "php_min": "8.1.0RC1"
+        "php_min": "8.0.11RC1"
     }
 ]
