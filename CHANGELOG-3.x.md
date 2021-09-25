@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.11.0] - 2021-09-25
+
 ### Added
 
 - PHP 8.0.11 support
