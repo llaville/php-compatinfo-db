@@ -784,7 +784,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'openssl' => [
             'classes'    => ['80'],
-            'constants'  => ['40', '43', '50', '52', '53', '54', '56', '71', '80', '81'],
+            'constants'  => ['40', '43', '50', '52', '53', '54', '56', '71', '80'],
             'functions'  => ['40', '42', '52', '53', '55', '56', '71', '72', '73', '74', '80'],
             'iniEntries' => ['56'],
             'releases'   => array_merge(

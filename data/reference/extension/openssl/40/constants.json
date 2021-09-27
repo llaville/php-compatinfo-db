@@ -37,7 +37,13 @@
     {
         "name": "OPENSSL_SSLV23_PADDING",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": "<3.0.0"
+            }
+        ]
     },
     {
         "name": "PKCS7_BINARY",
