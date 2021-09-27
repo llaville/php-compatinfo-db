@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Fixed
+
+- [#88](https://github.com/llaville/php-compatinfo-db/issues/88) : OPENSSL_SSLV23_PADDING is optional
+
 ## [3.11.0] - 2021-09-25
 
 ### Added
