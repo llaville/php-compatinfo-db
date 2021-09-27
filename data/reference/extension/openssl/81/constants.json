@@ -1,0 +1,13 @@
+[
+    {
+        "name": "OPENSSL_SSLV23_PADDING",
+        "ext_min": "8.1.0",
+        "php_min": "8.1.0beta3",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": ">=3.0.0"
+            }
+        ]
+    }
+]
