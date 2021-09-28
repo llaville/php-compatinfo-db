@@ -29,6 +29,11 @@ jobs:
                     token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
                     fetch-depth: 0
 
+            -   # Use PHP 7 as workaround to https://github.com/nvuillam/mega-linter/issues/788
+                uses: "shivammathur/setup-php@v2"
+                with:
+                    php-version: "7.4"
+
             -   # Install dependencies
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
