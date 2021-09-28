@@ -29,6 +29,13 @@ jobs:
                     token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
                     fetch-depth: 0
 
+            -   # Install dependencies
+                name: Install Composer dependencies
+                uses: "ramsey/composer-install@v1"
+                with:
+                    dependency-versions: "highest"
+                    composer-options: "--prefer-dist"
+
             -   # Mega-Linter
                 name: Mega-Linter
                 id: ml
