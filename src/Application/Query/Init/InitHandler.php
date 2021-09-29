@@ -1207,7 +1207,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'uploadprogress' => [
             'functions'  => ['0'],
             'iniEntries' => ['0'],
-            'releases'   => ['0', '1'],
+            'releases'   => ['0', '1', '2'],
         ];
 
         yield 'uuid' => [
