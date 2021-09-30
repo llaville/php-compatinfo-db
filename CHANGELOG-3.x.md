@@ -9,7 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
-- Uploadprogress updated to version 2.0.0 (stable)
+- Uploadprogress updated to version 2.0.1 (stable)
 - Zip reference updated to version 1.19.5 (stable)
 
 ### Fixed
