@@ -5,9 +5,9 @@
     name="MyStandard">
     <description>My custom coding standard.</description>
 
-    <file>bin</file>
-    <file>config</file>
-    <file>src</file>
+    <file>../../bin</file>
+    <file>../../config</file>
+    <file>../../src</file>
 
     <rule ref="PSR12">
         <exclude name="PSR12.Files.FileHeader" />
