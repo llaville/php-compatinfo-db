@@ -79,26 +79,28 @@ final class DistributionRepository implements DomainRepository
         $logger = $this->entityManager->getConnection()->getConfiguration()->getSQLLogger();
         $this->entityManager->getConnection()->getConfiguration()->setSQLLogger(null);
 
-        if ($this->entityManager->getConnection()->getDriver()->getName() === 'pdo_sqlite') {
+        $conn = $this->entityManager->getConnection();
+
+        if ($conn->getDriver()->getDatabasePlatform()->getName() === 'pdo_sqlite') {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = OFF;";
             $truncateQuery = "DELETE FROM";
         } else {
             $foreignKeyChecksQuery = "SET FOREIGN_KEY_CHECKS = 0;";
             $truncateQuery = "TRUNCATE TABLE";
         }
-        $this->entityManager->getConnection()->prepare($foreignKeyChecksQuery)->execute();
+        $conn->prepare($foreignKeyChecksQuery)->execute();
 
-        foreach ($this->entityManager->getConnection()->getSchemaManager()->listTableNames() as $tableName) {
+        foreach ($conn->getSchemaManager()->listTableNames() as $tableName) {
             $this->entityManager->getConnection()->prepare($truncateQuery . ' ' . $tableName)->execute();
         }
 
-        if ($this->entityManager->getConnection()->getDriver()->getName() === 'pdo_sqlite') {
+        if ($conn->getDriver()->getDatabasePlatform()->getName() === 'pdo_sqlite') {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = ON;";
         } else {
             $foreignKeyChecksQuery = "SET FOREIGN_KEY_CHECKS = 1;";
         }
-        $this->entityManager->getConnection()->prepare($foreignKeyChecksQuery)->execute();
+        $conn->prepare($foreignKeyChecksQuery)->execute();
 
-        $this->entityManager->getConnection()->getConfiguration()->setSQLLogger($logger);
+        $conn->getConfiguration()->setSQLLogger($logger);
     }
 }
