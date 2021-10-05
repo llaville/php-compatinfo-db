@@ -13,6 +13,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Xdebug reference updated to version 3.1.0 (stable)
 - Zip reference updated to version 1.19.5 (stable)
 - Add DBAL3 support (through doctrine/orm 2.10+) : remove calls to `Driver::getName()`
+- Add DBAL3 support (through doctrine/orm 2.10+) : remove calls to `Result::fetchColumn()`
 
 ### Fixed
 

@@ -143,7 +143,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     {
         try {
             $tables = $connection->executeQuery($connection->getDatabasePlatform()->getListTablesSQL())
-                ->fetchColumn(0)
+                ->fetchFirstColumn()
             ;
             if (empty($tables)) {
                 throw new Exception('');
@@ -164,7 +164,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     {
         try {
             $platforms = $connection->executeQuery('select id from platforms limit 1')
-                ->fetchColumn(0)
+                ->fetchFirstColumn()
             ;
             if (empty($platforms)) {
                 throw new Exception('');
