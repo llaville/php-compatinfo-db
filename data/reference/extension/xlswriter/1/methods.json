@@ -597,5 +597,29 @@
         "name": "valueNumber",
         "ext_min": "1.4.0",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertRichText",
+        "ext_min": "1.5.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getCurrentLine",
+        "ext_min": "1.5.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setCurrentLine",
+        "ext_min": "1.5.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\RichString",
+        "name": "__construct",
+        "ext_min": "1.5.0",
+        "php_min": "7.0.0"
     }
 ]

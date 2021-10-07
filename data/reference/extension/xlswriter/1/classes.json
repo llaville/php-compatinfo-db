@@ -23,5 +23,10 @@
         "name": "Vtiful\\Kernel\\Validation",
         "ext_min": "1.4.0",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "Vtiful\\Kernel\\RichString",
+        "ext_min": "1.5.0",
+        "php_min": "7.0.0"
     }
 ]
