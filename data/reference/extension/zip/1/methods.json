@@ -308,5 +308,23 @@
                 "constraint": ">=1.7.0"
             }
         ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "clearError",
+        "ext_min": "1.20.0",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getStreamName",
+        "ext_min": "1.20.0",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getStreamIndex",
+        "ext_min": "1.20.0",
+        "php_min": "5.4.0"
     }
 ]
