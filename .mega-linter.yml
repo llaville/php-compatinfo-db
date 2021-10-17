@@ -1,8 +1,9 @@
 PRINT_ALPACA: false
 SHOW_ELAPSED_TIME: true
-EXCLUDED_DIRECTORIES: [".git", "vendor"]
-VALIDATE_ALL_CODEBASE: false
+EXCLUDED_DIRECTORIES: [".git"]
+IGNORE_GITIGNORED_FILES: true
 ENABLE:
+    - ACTION
     - EDITORCONFIG
     - JSON
     - MARKDOWN
@@ -24,11 +25,11 @@ PHP_PHPCS_CLI_LINT_MODE: project
 PHP_PHPCS_CONFIG_FILE: ".phpcs.xml.dist"
 PHP_PHPCS_ARGUMENTS: "-n"
 PHP_PHPSTAN_CONFIG_FILE: "phpstan.neon.dist"
-YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github)"
-YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github)"
-LOG_FILE: mega-linter-v4.log
-LOG_LEVEL: INFO
+YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github)" # As it cannot be added in .gitignore for ML actionlint linter
+YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github)" # As it cannot be added in .gitignore for ML actionlint linter
 CONFIG_REPORTER: false
 UPDATED_SOURCES_REPORTER: false
-TEXT_REPORTER: false
+#TEXT_REPORTER: true # cannot be set to true, and should use default value (true), otherwise TAP REPORTER is also generated. See https://github.com/nvuillam/mega-linter/issues/744
 CONSOLE_REPORTER: true
+LOG_FILE: mega-linter-v4.log
+LOG_LEVEL: INFO
