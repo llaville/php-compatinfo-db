@@ -454,7 +454,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'gd' => [
             'classes'    => ['80', '81'],
             'constants'  => ['40', '52', '53', '55', '56', '72', '74', '81'],
-            'functions'  => ['40', '43', '50', '51', '52', '54', '55', '72', '74', '80'],
+            'functions'  => ['40', '43', '50', '51', '52', '54', '55', '72', '74', '80', '81'],
             'iniEntries' => ['51'],
             'releases'   => array_merge(
                 ['40', '43', '50', '51', '52', '53', '54', '55', '56'],

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "imageavif",
+        "ext_min": "8.1.0beta3",
+        "php_min": "8.1.0beta3"
+    },
+    {
+        "name": "imagecreatefromavif",
+        "ext_min": "8.1.0beta3",
+        "php_min": "8.1.0beta3"
+    }
+]
