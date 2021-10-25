@@ -13,6 +13,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Uploadprogress updated to version 2.0.2 (stable)
 - Xdebug reference updated to version 3.1.1 (stable)
 - Xlswriter reference updated to version 1.5.0 (stable)
+- Yaml reference updated to version 2.2.2 (stable)
 - Zip reference updated to version 1.20.0 (stable)
 - Add DBAL3 support (through doctrine/orm 2.10+) : remove calls to `Driver::getName()`
 - Add DBAL3 support (through doctrine/orm 2.10+) : remove calls to `Result::fetchColumn()`
