@@ -72,7 +72,7 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * PHP 7.2.34
 * PHP 7.3.24 until 7.3.31
 * PHP 7.4.12 until 7.4.25
-* PHP 8.0.0 until 8.0.11
+* PHP 8.0.0 until 8.0.12
 * PHP 8.1.0-dev
 
 Currently, [110 extensions](./SUPPORTED-EXTENSIONS.md) referenced in the database.
