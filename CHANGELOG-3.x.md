@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Xlswriter reference updated to version 1.5.1 (stable)
+
 ## [3.12.0] - 2021-10-26
 
 ### Added
