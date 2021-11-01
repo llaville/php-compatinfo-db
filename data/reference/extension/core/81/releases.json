@@ -58,5 +58,11 @@
         "rel_date": "2021-10-14",
         "rel_state": "beta",
         "php_min": "8.1.0RC4"
+    },
+    {
+        "rel_version": "8.1.0RC5",
+        "rel_date": "2021-10-28",
+        "rel_state": "beta",
+        "php_min": "8.1.0RC5"
     }
 ]
