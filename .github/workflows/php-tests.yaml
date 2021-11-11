@@ -3,8 +3,12 @@ name: Tests
 on:
     # Trigger mega-linter at every push. Action will also be visible from Pull Requests to master
     push: # Comment this line to trigger action only on pull-requests (not recommended if you don't pay for GH Actions)
+        paths-ignore:
+            - 'docs/**'
     pull_request:
         branches: [master]
+        paths-ignore:
+            - 'docs/**'
 
 concurrency:
     group: ${{ github.ref }}-${{ github.workflow }}
