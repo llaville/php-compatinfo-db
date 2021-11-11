@@ -26,11 +26,6 @@ jobs:
                     token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
                     fetch-depth: 0
 
-            -   # Use PHP 7 as workaround to https://github.com/nvuillam/mega-linter/issues/788
-                uses: "shivammathur/setup-php@v2"
-                with:
-                    php-version: "7.4"
-
             -   # Install dependencies
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
@@ -43,7 +38,7 @@ jobs:
                 id: ml
                   # You can override Mega-Linter flavor used to have faster performances
                 # More info at https://nvuillam.github.io/mega-linter/flavors/
-                uses: nvuillam/mega-linter/flavors/php@v4
+                uses: nvuillam/mega-linter/flavors/php@v5
                 env:
                     # All available variables are described in documentation
                     # https://nvuillam.github.io/mega-linter/configuration/
