@@ -102,48 +102,48 @@ jobs:
                         extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mailparse,mbstring,mcrypt,memcache,memcached,msgpack,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,pecl_http,rar,rdkafka,readline,redis,reflection,session,shmop,simplexml,sockets,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xlswriter,xml,xmldiff,xmlrpc-beta,xmlreader,xmlwriter,xsl,yac,zip,zlib
                         tools: phpunit
 
-        name: "Test PHP ${{ matrix.php }} on ${{ matrix.os }}"
+        name: Test DB References
 
         steps:
-            -
+            -   # Git Checkout
                 name: Checkout
                 uses: actions/checkout@v2
 
-            -
-                name: Setup Librairies
+            -   # Setup Libraries
+                name: Setup Libraries
                 run: |
                     sudo apt-get update
                     sudo apt-fast install libcurl4-openssl-dev -y
                     sudo apt-fast install libssh2-1-dev -y
                     sudo apt-fast install librdkafka-dev -y
 
-            -
-                name: Setup PHP
+            -   # Setup PHP runtime
+                name: Setup PHP runtime
                 uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
                     tools: ${{ matrix.tools }}
 
-            -
+            -   # Install Composer dependencies
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
                 with:
                     dependency-versions: "highest"
                     composer-options: "--prefer-dist"
 
-            -
+            -   # Build Database
                 name: Build Database
                 run: |
                     vendor/bin/doctrine orm:schema-tool:create --ansi
                     bin/compatinfo-db db:init --ansi
 
-            -
+            -   # Check Database
                 name: Check Database
                 run: |
                     bin/compatinfo-db diagnose --ansi
                     bin/compatinfo-db db:list --ansi --all
 
-            -
+            -   # Run unit tests
                 name: Unit tests
                 run: bin/compatinfo-db doctor --ansi --with-tests
