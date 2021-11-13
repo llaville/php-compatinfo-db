@@ -17,7 +17,17 @@ concurrency:
 jobs:
     lint_files:
         name: Lint Code Base
-        runs-on: ubuntu-18.04
+
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            fail-fast: false
+            matrix:
+                os:
+                    - ubuntu-18.04
+                php:
+                    - 7.4
+
         steps:
             -   # Git Checkout
                 name: Checkout Code
