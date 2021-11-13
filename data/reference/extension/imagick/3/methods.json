@@ -5174,7 +5174,7 @@
         "class_name": "Imagick",
         "name": "similarityimage",
         "ext_min": "3.4.0",
-        "ext_max": "3.5.0",
+        "ext_max": "3.5.1",
         "php_min": "5.4.0"
     },
     {
