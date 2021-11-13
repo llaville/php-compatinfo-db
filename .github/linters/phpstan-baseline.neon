@@ -1,0 +1,37 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\ClassRelationship\\:\\:\\$class is never read, only written\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/ClassRelationship.php
+
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\ConstantRelationship\\:\\:\\$constant is never read, only written\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/ConstantRelationship.php
+
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\FunctionRelationship\\:\\:\\$function is never read, only written\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/FunctionRelationship.php
+
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\IniRelationship\\:\\:\\$ini is never read, only written\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/IniRelationship.php
+
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Platform\\:\\:\\$id is never written, only read\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/Platform.php
+
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Relationship\\:\\:\\$platform is never read, only written\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/Relationship.php
+
+		-
+			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Release\\:\\:\\$extension is never read, only written\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/Release.php
+

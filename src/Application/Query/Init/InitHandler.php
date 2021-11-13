@@ -170,9 +170,9 @@ final class InitHandler implements QueryHandlerInterface
      * Builds an extension with all its components.
      *
      * @param array<string, string> $meta
-     * @param array<string, array> $definition
+     * @param array<string, mixed> $definition
      * @param string $refPathname
-     * @return array<string, array>
+     * @return array<string, mixed>
      */
     private function buildExtension(array $meta, array $definition, string $refPathname): array
     {
@@ -227,7 +227,7 @@ final class InitHandler implements QueryHandlerInterface
     /**
      * Data provider for reference definitions
      *
-     * @return Generator<string, array>
+     * @return Generator<string, mixed>
      */
     private function majorReleaseDefinitionProvider(): Generator
     {

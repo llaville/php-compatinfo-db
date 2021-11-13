@@ -46,10 +46,10 @@ final class DoctorHandler implements QueryHandlerInterface
     /** @var ExtensionFactory */
     private $factory;
 
-    /** @var array<string, array> */
+    /** @var array<string, mixed> */
     private $dependencies;
 
-    /** @var array<string, array> */
+    /** @var array<string, mixed> */
     private $requirements;
 
     /**
@@ -64,7 +64,7 @@ final class DoctorHandler implements QueryHandlerInterface
 
     /**
      * @param DoctorQuery $query
-     * @return array[]
+     * @return array<string, mixed>
      */
     public function __invoke(DoctorQuery $query): array
     {

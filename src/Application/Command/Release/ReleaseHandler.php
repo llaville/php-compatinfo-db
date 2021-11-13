@@ -179,7 +179,7 @@ final class ReleaseHandler implements CommandHandlerInterface
     /**
      * Component data provider for tagging php Max version.
      *
-     * @return Generator<string, array>
+     * @return Generator<string, mixed>
      */
     private function componentDataProvider(): Generator
     {

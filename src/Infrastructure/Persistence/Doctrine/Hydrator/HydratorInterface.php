@@ -12,7 +12,7 @@ interface HydratorInterface
     /**
      * Hydrate $object with the provided $data.
      *
-     * @param array<string, string|bool|array> $data
+     * @param array<string, string|bool|mixed> $data
      * @param string $class
      * @return object
      */
@@ -21,7 +21,7 @@ interface HydratorInterface
     /**
      * Hydrate array of $object with the provided $data.
      *
-     * @param array<int|string, array> $data
+     * @param array<int|string, mixed> $data
      * @return array<object>
      */
     public function hydrateArrays(array $data): array;
