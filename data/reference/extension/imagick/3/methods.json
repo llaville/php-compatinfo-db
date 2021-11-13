@@ -2621,13 +2621,7 @@
         "class_name": "Imagick",
         "name": "setImageMatteColor",
         "ext_min": "3.5.0RC1",
-        "php_min": "5.4.0",
-        "dependencies": [
-            {
-                "name": "imagick",
-                "constraint": "<7.0.0"
-            }
-        ]
+        "php_min": "5.4.0"
     },
     {
         "class_name": "Imagick",
@@ -5180,6 +5174,13 @@
         "class_name": "Imagick",
         "name": "similarityimage",
         "ext_min": "3.4.0",
+        "ext_max": "3.5.0",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "similarityImage",
+        "ext_min": "3.6.0RC1",
         "php_min": "5.4.0"
     },
     {
@@ -7768,6 +7769,102 @@
             {
                 "name": "imagick",
                 "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setSeed",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "waveletDenoiseImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "meanShiftImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "kmeansImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.1.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "rangeThresholdImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "autoThresholdImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "bilateralBlurImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.1.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "claheImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
             }
         ]
     }

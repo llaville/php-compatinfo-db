@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Imagick reference updated to version 3.6.0RC2 (beta)
+
 ## [3.13.0] - 2021-11-01
 
 ### Added

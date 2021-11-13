@@ -3697,7 +3697,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": ">6.4.5 <7.0.0"
+                "constraint": ">6.4.5"
             }
         ]
     },
@@ -3733,7 +3733,7 @@
         "dependencies": [
             {
                 "name": "imagick",
-                "constraint": ">6.4.5 <7.0.0"
+                "constraint": ">6.4.5"
             }
         ]
     },
@@ -5102,6 +5102,126 @@
             {
                 "name": "imagick",
                 "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "AUTO_THRESHOLD_KAPUR",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "AUTO_THRESHOLD_OTSU",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "AUTO_THRESHOLD_TRIANGLE",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.7"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_ADD",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_CONJUGATE",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_DIVIDE",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_MAGNITUDEPHASE",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_MULTIPLY",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_REALIMAGINARY",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPLEX_OPERATOR_SUBTRACT",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
             }
         ]
     }
