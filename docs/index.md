@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # Home
 
 Main goal of this project is to provide a standalone database that references all functions, constants, classes,
