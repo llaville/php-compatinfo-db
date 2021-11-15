@@ -26,3 +26,11 @@ theme:
 markdown_extensions:
     - pymdownx.highlight # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
     - pymdownx.superfences # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#superfences
+nav:
+    - "Home": index.md
+    - "Getting-Started": getting-started.md
+    - "Appendix":
+          - "Supported versions 3.x": appendix/SUPPORTED-VERSIONS_3.x.md
+          - "Supported versions 2.x": appendix/SUPPORTED-VERSIONS_2.x.md
+          - "Supported versions 1.x": appendix/SUPPORTED-VERSIONS_1.x.md
+          - "Supported extensions": appendix/SUPPORTED-EXTENSIONS.md
