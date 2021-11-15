@@ -73,7 +73,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     /**
      * {@inheritDoc}
      */
-    public function listing(array $elements, array $attributes = ['type' => '*', 'style' => '', 'indent' => '  '])
+    public function listing(array $elements, array $attributes = ['type' => '*', 'style' => '', 'indent' => '  ']): void
     {
         $type = $attributes['type'] ?? '*';
         $style = $attributes['style'] ?? '';
@@ -107,7 +107,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     /**
      * {@inheritDoc}
      */
-    public function table(array $headers, array $rows, string $style = 'compact')
+    public function table(array $headers, array $rows, string $style = 'compact'): void
     {
         $style = clone Table::getStyleDefinition($style);
         $style->setCellHeaderFormat('<info>%s</info>');
