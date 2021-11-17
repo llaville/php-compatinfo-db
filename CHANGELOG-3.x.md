@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Imagick reference updated to version 3.6.0RC2 (beta)
 
+### Fixed
+
+- PHAR distribution with `box` compile command
+
 ## [3.13.0] - 2021-11-01
 
 ### Added
