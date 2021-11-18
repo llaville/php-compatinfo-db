@@ -162,11 +162,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
 
         if ($input->hasParameterOption('--manifest')) {
             $phar = new Phar('compatinfo-db.phar');
-            $manifest = $phar->getMetadata();
-            if (is_callable($manifest)) {
-                $manifest = $manifest();
-            }
-            $output->writeln($manifest);
+            $output->writeln($phar->getMetadata());
             return 0;
         }
 
