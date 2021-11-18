@@ -30,7 +30,5 @@ nav:
     - "Home": index.md
     - "Getting-Started": getting-started.md
     - "Appendix":
-          - "Supported versions 3.x": appendix/SUPPORTED-VERSIONS_3.x.md
-          - "Supported versions 2.x": appendix/SUPPORTED-VERSIONS_2.x.md
-          - "Supported versions 1.x": appendix/SUPPORTED-VERSIONS_1.x.md
+          - "Supported versions": appendix/supported-versions.md
           - "Supported extensions": appendix/SUPPORTED-EXTENSIONS.md
