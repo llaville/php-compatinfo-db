@@ -76,5 +76,59 @@
         "name": "acl",
         "ext_min": "5.3.0RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "_pack",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "_unpack",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "_compress",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "_uncompress",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "sMisMember",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "_pack",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "_unpack",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "_compress",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "_uncompress",
+        "ext_min": "5.3.5RC1",
+        "php_min": "7.0.0"
     }
 ]
