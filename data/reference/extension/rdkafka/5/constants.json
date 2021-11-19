@@ -1,0 +1,13 @@
+[
+    {
+        "name": "RD_KAFKA_RESP_ERR__AUTO_OFFSET_RESET",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0",
+        "dependencies": [
+            {
+                "name": "librdkafka",
+                "constraint": ">=1.6.1"
+            }
+        ]
+    }
+]

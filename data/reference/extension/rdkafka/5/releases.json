@@ -5,5 +5,12 @@
         "rel_state": "stable",
         "php_min": "7.0.0",
         "php_max": "8.99.99"
+    },
+    {
+        "rel_version": "5.0.1",
+        "rel_date": "2021-11-19",
+        "rel_state": "stable",
+        "php_min": "7.0.0",
+        "php_max": "8.99.99"
     }
 ]

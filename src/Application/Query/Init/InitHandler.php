@@ -892,9 +892,9 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'rdkafka' => [
             'classes' => ['1', '4'],
-            'constants' => ['1'],
-            'functions' => ['1'],
-            'methods' => ['1', '3', '4'],
+            'constants' => ['1', '5'],
+            'functions' => ['1', '5'],
+            'methods' => ['1', '3', '4', '5'],
             'releases' => ['1', '2', '3', '4', '5'],
         ];
 

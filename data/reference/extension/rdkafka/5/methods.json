@@ -1,0 +1,56 @@
+[
+    {
+        "class_name": "RdKafka",
+        "name": "pausePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "resumePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "pausePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "resumePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\Consumer",
+        "name": "pausePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\Consumer",
+        "name": "resumePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\Producer",
+        "name": "pausePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\Producer",
+        "name": "resumePartitions",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\TopicPartition",
+        "name": "getErr",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "name": "rd_kafka_err2name",
+        "ext_min": "5.0.1",
+        "php_min": "7.0.0"
+    }
+]
