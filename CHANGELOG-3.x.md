@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 7.3.33 support
+
 ### Changed
 
 - Imagick reference updated to version 3.6.0 (stable)

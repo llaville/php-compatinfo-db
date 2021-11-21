@@ -40,7 +40,7 @@
 * PHP 7.0.33
 * PHP 7.1.30
 * PHP 7.2.34
-* PHP 7.3.24 until 7.3.32
+* PHP 7.3.24 until 7.3.33
 * PHP 7.4.12 until 7.4.25
 * PHP 8.0.0 until 8.0.12
 * PHP 8.1.0-dev
