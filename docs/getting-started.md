@@ -10,6 +10,10 @@
 * ext-spl
 * PHPUnit 8 or greater (if you want to run unit tests)
 
+![GraPHP Composer](./graph-composer.svg)
+
+Generated with [clue/graph-composer](https://github.com/clue/graph-composer)
+
 ## Installation
 
 ### With Composer
