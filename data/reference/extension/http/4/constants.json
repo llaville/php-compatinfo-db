@@ -363,5 +363,16 @@
                 "constraint": ">=7.74.0"
             }
         ]
+    },
+    {
+        "name": "http\\Client\\Curl\\AWS_SIGV4",
+        "ext_min": "4.1.0",
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.75.0"
+            }
+        ]
     }
 ]
