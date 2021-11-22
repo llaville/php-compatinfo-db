@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - PHP 7.3.33 support
 - PHP 7.4.26 support
+- PHP 8.0.13 support
 
 ### Changed
 
