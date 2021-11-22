@@ -94,14 +94,14 @@
         "name": "repairFile",
         "ext_min": "0.5.2",
         "php_min": "4.3.0",
-        "php_max": "7.4.25"
+        "php_max": "7.4.26"
     },
     {
         "class_name": "tidy",
         "name": "repairString",
         "ext_min": "0.5.2",
         "php_min": "4.3.0",
-        "php_max": "7.4.25"
+        "php_max": "7.4.26"
     },
     {
         "class_name": "tidy",
