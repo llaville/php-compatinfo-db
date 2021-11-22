@@ -16,7 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Imagick reference updated to version 3.6.0 (stable)
-- Rdkafka reference updated to version 5.0.1 (stable)
+- Rdkafka reference updated to version 6.0.0RC1 (beta)
 - Redis reference updated to version 5.3.5RC1 (beta)
 - PHAR manifest is now included into the `.phar` file  and `.box.metadata.cache` is only a cache file as it should be.
 See Box issue <https://github.com/box-project/box/issues/576> for info.
