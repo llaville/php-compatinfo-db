@@ -6,13 +6,14 @@ gc_disable(); // performance boost
 
 require_once dirname(__DIR__) . '/config/bootstrap.php';
 
+use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\ContainerFactory;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /** @var ContainerBuilder $container */
-$container = require dirname(__DIR__) . '/config/container.php';
+$container = (new ContainerFactory())->create();
 
 /** @var ApplicationInterface $app */
 $app = $container->get(ApplicationInterface::class);

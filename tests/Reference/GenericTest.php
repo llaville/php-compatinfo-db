@@ -20,10 +20,10 @@ use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
-use Bartlett\CompatInfoDb\Domain\ValueObject\Dependency;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
-
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
+use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\ContainerFactory;
+
 use Composer\Semver\Semver;
 
 use PHPUnit\Framework\ExpectationFailedException;
@@ -104,7 +104,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      */
     public static function setUpBeforeClass(): void
     {
-        $container = require implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 2), 'config', 'container.php']);
+        $container = (new ContainerFactory())->create();
 
         self::$optionalreleases = [];
 

@@ -19,6 +19,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - PHAR manifest is now included into the `.phar` file  and `.box.metadata.cache` is only a cache file as it should be.
 See Box issue <https://github.com/box-project/box/issues/576> for info.
 
+### Removed
+
+- file `config/container.php` replaced by `src/Infrastructure/Framework/Symfony/DependencyInjection/ContainerFactory.php`
+
 ### Fixed
 
 - PHAR distribution with `box` compile command
