@@ -42,7 +42,7 @@ jobs:
                 with:
                     php-version: ${{ matrix.php }}
 
-            -   # Install dependencies
+            -   # Install Composer dependencies
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
                 with:
@@ -129,7 +129,6 @@ jobs:
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
                 with:
-                    dependency-versions: "highest"
                     composer-options: "--prefer-dist"
 
             -   # Build Database
