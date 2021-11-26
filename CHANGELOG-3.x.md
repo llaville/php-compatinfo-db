@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Removed
+
+- drop support of PHP 7.2
+
 ## [3.14.0] - 2021-11-22
 
 ### Added
