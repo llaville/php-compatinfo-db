@@ -1,10 +1,10 @@
 {
     "name": "bartlett/php-compatinfo-db",
-    "description": "Reference Database to be used with php-compatinfo library",
+    "description": "Reference Database of all functions, constants, classes, interfaces on PHP standard distribution and about 110 extensions",
     "keywords": ["compatibility", "database", "reference"],
     "type": "library",
     "license": "BSD-3-Clause",
-    "homepage": "http://bartlett.laurent-laville.org/php-compatinfo/",
+    "homepage": "https://github.com/llaville/php-compatinfo-db",
     "support": {
         "source": "https://github.com/llaville/php-compatinfo-db",
         "issues": "https://github.com/llaville/php-compatinfo-db/issues"
