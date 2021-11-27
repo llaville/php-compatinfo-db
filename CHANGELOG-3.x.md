@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Rdkafka reference updated to version 5.0.2 (stable)
+
 ### Removed
 
 - drop support of PHP 7.2

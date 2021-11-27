@@ -3,7 +3,7 @@
 
 ## Requirements
 
-* PHP 7.2 or greater
+* PHP 7.3 or greater
 * ext-json
 * ext-pcre
 * ext-pdo
