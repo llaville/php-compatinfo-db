@@ -4,6 +4,7 @@
 | Version | Release    | Module            | PHP 7.3 | PHP 7.4 | PHP 8.0 | PHP 8.1 |
 |---------|------------|-------------------|---------|---------|---------|---------|
 | 3.15.0  | upcoming   |                   |  7.3.33 |  7.4.26 |  8.0.13 |  8.1.0  |
+|         |            | ast 1.0.16        |         |         |         |         |
 |         |            | rdkafka 5.0.2     |         |         |         |         |
 
 | Version | Release    | Module            | PHP 5.2 | PHP 5.3 | PHP 5.4 | PHP 5.5 | PHP 5.6 | PHP 7.0 | PHP 7.1 | PHP 7.2 | PHP 7.3 | PHP 7.4 | PHP 8.0 |

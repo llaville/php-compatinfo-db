@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Ast reference updated to version 1.0.16 (stable)
 - Rdkafka reference updated to version 5.0.2 (stable)
 
 ### Removed
