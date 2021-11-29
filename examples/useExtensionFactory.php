@@ -23,8 +23,9 @@ $handler = new ShowHandler($container->get(ExtensionFactory::class));
 
 // Specify what components to display
 $command = new ShowQuery(
-    'core',
+    'imagick',
     false,
+    true,
     true,
     true,
     true,
@@ -45,6 +46,7 @@ $classes = array_keys($extension->getClasses());
 $interfaces = array_keys($extension->getInterfaces());
 $classConstants = array_keys($extension->getClassConstants());
 $methods = array_keys($extension->getMethods());
+$dependencies = $extension->getDependencies();
 
 
 printf('# %s extension%s%s', $extension->getName(), PHP_EOL, PHP_EOL);
@@ -59,7 +61,9 @@ printf('* Functions : %d%s', count($functions), PHP_EOL);
 printf('* Classes : %d%s', count($classes), PHP_EOL);
 printf('* Interfaces : %d%s', count($interfaces), PHP_EOL);
 printf('* Class constants : %d%s', count($classConstants), PHP_EOL);
-printf('* Methods : %d%s%s', count($methods), PHP_EOL, PHP_EOL);
+printf('* Methods : %d%s', count($methods), PHP_EOL);
+printf('* Dependencies : %d%s', count($dependencies), PHP_EOL);
+echo PHP_EOL;
 
 if ($command->isReleases()) {
     $results = print_r($releases, true);
@@ -99,4 +103,12 @@ if ($command->isClassConstants()) {
 if ($command->isMethods()) {
     $results = print_r($methods, true);
     printf('## Methods : %s%s%s', $results, PHP_EOL, PHP_EOL);
+}
+
+if ($command->isDependencies()) {
+    $results = [];
+    foreach ($dependencies as $dependency) {
+        $results[] = sprintf('%s: %s', $dependency->getName(), $dependency->getConstraint());
+    }
+    printf('## Dependencies : %s%s%s', var_export($results, true), PHP_EOL, PHP_EOL);
 }
