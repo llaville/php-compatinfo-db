@@ -57,6 +57,10 @@ class GdExtensionTest extends GenericTest
             self::$optionalfunctions[] = 'imageantialias';
         }
 
+        self::$optionalconstants = [
+            // requires libwebp >= 0.2.0
+            'IMG_WEBP_LOSSLESS',
+        ];
         parent::setUpBeforeClass();
     }
 }
