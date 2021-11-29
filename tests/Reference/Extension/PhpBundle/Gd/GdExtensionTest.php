@@ -52,6 +52,9 @@ class GdExtensionTest extends GenericTest
             'imagecreatefromxpm',
             // requires HAVE_GD_TGA
             'imagecreatefromtga',
+            // requires HAVE_GD_AVIF (libavif >= 0.8.2)
+            'imagecreatefromavif',
+            'imageavif',
         );
         if (defined('GD_BUNDLED') && ! GD_BUNDLED) {
             self::$optionalfunctions[] = 'imageantialias';
