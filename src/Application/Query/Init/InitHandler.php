@@ -487,6 +487,7 @@ final class InitHandler implements QueryHandlerInterface
         ];
 
         yield 'gmp' => [
+            'classes'    => ['80'],
             'constants'  => ['40', '53', '56'],
             'functions'  => ['40', '52', '53', '56', '70', '73'],
             'methods'    => ['81'],
