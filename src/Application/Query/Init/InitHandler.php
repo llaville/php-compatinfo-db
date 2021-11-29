@@ -489,6 +489,7 @@ final class InitHandler implements QueryHandlerInterface
         yield 'gmp' => [
             'constants'  => ['40', '53', '56'],
             'functions'  => ['40', '52', '53', '56', '70', '73'],
+            'methods'    => ['81'],
             'releases'   => array_merge(
                 ['40', '52', '53', '56'],
                 self::PHP_RELEASES_7,
