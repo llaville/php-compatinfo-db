@@ -5,8 +5,10 @@
 |:------:|
 | [![Latest Stable Version](https://img.shields.io/packagist/v/bartlett/php-compatinfo-db)](https://packagist.org/packages/bartlett/php-compatinfo-db) |
 | [![Minimum PHP Version)](https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db)](https://php.net/) |
-| [![Branch Master](https://img.shields.io/badge/branch-master-blue)](https://github.com/llaville/php-compatinfo-db) |
+| [![License](https://img.shields.io/packagist/l/bartlett/php-compatinfo-db)](https://github.com/llaville/php-compatinfo-db/blob/master/LICENSE) |
+| [![GitHub Discussions](https://img.shields.io/github/discussions/llaville/php-compatinfo-db)](https://github.com/llaville/php-compatinfo-db/discussions) |
 | [![Tests](https://github.com/llaville/php-compatinfo-db/workflows/Tests/badge.svg)](https://github.com/llaville/php-compatinfo-db/actions) |
+| [![GitHub-Pages](https://github.com/llaville/php-compatinfo-db/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/llaville/php-compatinfo-db/actions/workflows/gh-pages.yml) |
 
 Main goal of this project is to provide a standalone database that references
 all functions, constants, classes, interfaces on PHP standard distribution and about 110 extensions.
@@ -24,7 +26,3 @@ generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/mas
 
 * Laurent Laville (Lead Developer)
 * Remi Collet (contributor on many extensions and unit tests)
-
-## License
-
-This project is license under the BSD-3-Clause License - see the [LICENSE](https://github.com/llaville/php-compatinfo-db/blob/master/LICENSE) file for details
