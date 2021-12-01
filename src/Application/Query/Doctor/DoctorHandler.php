@@ -124,7 +124,7 @@ final class DoctorHandler implements QueryHandlerInterface
             ];
 
             if ($withTests) {
-                /** @var Process<int, Generator> $process */
+                /** @var Process $process */
                 while ($process->isRunning()) {
                     // waiting for process to finish
                 }
