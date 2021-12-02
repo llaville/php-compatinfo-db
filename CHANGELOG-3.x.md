@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Amqp reference updated to version 1.11.0 (stable)
+
 ## [3.15.0] - 2021-12-01
 
 ### Added
