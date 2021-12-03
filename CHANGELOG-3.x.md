@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Amqp reference updated to version 1.11.0 (stable)
+- Rdkafka reference updated to version 6.0.0RC2 (beta)
 - Xdebug reference updated to version 3.1.2 (stable)
 
 ## [3.15.0] - 2021-12-01
