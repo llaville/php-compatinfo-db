@@ -1,6 +1,6 @@
 <?php
 
-if (\Phar::running()) {
+if (Phar::running()) {
     $possibleAutoloadPaths = [
         'phar://compatinfo-db.phar/vendor/autoload.php'
     ];
