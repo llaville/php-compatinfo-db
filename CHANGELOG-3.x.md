@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 7.4.27 support
+
 ### Changed
 
 - Amqp reference updated to version 1.11.0 (stable)

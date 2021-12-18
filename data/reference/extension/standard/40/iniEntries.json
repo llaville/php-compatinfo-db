@@ -18,7 +18,7 @@
         "name": "assert.quiet_eval",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.26"
+        "php_max": "7.4.27"
     },
     {
         "name": "assert.warning",

@@ -3,7 +3,7 @@
         "class_name": "SoapClient",
         "name": "SoapClient",
         "ext_min": "5.0.0",
-        "ext_max": "7.4.26",
+        "ext_max": "7.4.27",
         "php_min": "5.0.0"
     },
     {
@@ -88,28 +88,28 @@
         "class_name": "SoapFault",
         "name": "SoapFault",
         "ext_min": "5.0.0",
-        "ext_max": "7.4.26",
+        "ext_max": "7.4.27",
         "php_min": "5.0.0"
     },
     {
         "class_name": "SoapHeader",
         "name": "SoapHeader",
         "ext_min": "5.0.0",
-        "ext_max": "7.4.26",
+        "ext_max": "7.4.27",
         "php_min": "5.0.0"
     },
     {
         "class_name": "SoapParam",
         "name": "SoapParam",
         "ext_min": "5.0.0",
-        "ext_max": "7.4.26",
+        "ext_max": "7.4.27",
         "php_min": "5.0.0"
     },
     {
         "class_name": "SoapServer",
         "name": "SoapServer",
         "ext_min": "5.0.0",
-        "ext_max": "7.4.26",
+        "ext_max": "7.4.27",
         "php_min": "5.0.0"
     },
     {
@@ -164,7 +164,7 @@
         "class_name": "SoapVar",
         "name": "SoapVar",
         "ext_min": "5.0.0",
-        "ext_max": "7.4.26",
+        "ext_max": "7.4.27",
         "php_min": "5.0.0"
     }
 ]
