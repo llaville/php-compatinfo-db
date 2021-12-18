@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- PHP 8.1.1 support
 - PHP 8.0.14 support
 - PHP 7.4.27 support
 
