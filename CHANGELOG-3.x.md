@@ -7,6 +7,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.16.1] - 2021-12-19
+
+### Fixed
+
+- [DBAL 3 SQL Injection Security Vulnerability](https://github.com/advisories/GHSA-r7cj-8hjg-x622)
+
 ## [3.16.0] - 2021-12-19
 
 ### Added
