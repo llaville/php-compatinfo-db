@@ -18,6 +18,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Amqp reference updated to version 1.11.0 (stable)
 - Rdkafka reference updated to version 6.0.0RC2 (beta)
 - Xdebug reference updated to version 3.1.2 (stable)
+- moved Doctrine ORM `cli-config.php` file from root folder to `config/` directory (more sense)
 
 ## [3.15.0] - 2021-12-01
 

@@ -5,7 +5,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\C
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 
-require_once __DIR__ . '/config/bootstrap.php';
+require_once __DIR__ . '/bootstrap.php';
 
 $container = (new ContainerFactory())->create();
 
