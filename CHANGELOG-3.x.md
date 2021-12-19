@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Amqp reference updated to version 1.11.0 (stable)
 - Rdkafka reference updated to version 6.0.0RC2 (beta)
+- Redis reference updated to version 5.3.5 (stable)
 - Xdebug reference updated to version 3.1.2 (stable)
 - Yac reference updated to version 2.3.1 (stable)
 - moved Doctrine ORM `cli-config.php` file from root folder to `config/` directory (more sense)
