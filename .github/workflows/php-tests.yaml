@@ -97,6 +97,9 @@ jobs:
 
         name: Test DB References
 
+        env:
+            APP_PROXY_DIR: "$GITHUB_WORKSPACE/proxies"
+
         steps:
             -   # Git Checkout
                 name: Checkout
@@ -127,6 +130,7 @@ jobs:
             -   # Build Database
                 name: Build Database
                 run: |
+                    mkdir -p ${APP_PROXY_DIR}
                     vendor/bin/doctrine orm:schema-tool:create --ansi
                     bin/compatinfo-db db:init --ansi
 
