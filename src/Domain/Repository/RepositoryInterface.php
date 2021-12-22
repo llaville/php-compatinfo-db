@@ -7,5 +7,4 @@ namespace Bartlett\CompatInfoDb\Domain\Repository;
  */
 interface RepositoryInterface
 {
-
 }

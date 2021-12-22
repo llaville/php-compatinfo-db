@@ -3,12 +3,12 @@
 
 ## Requirements
 
-* PHP 7.3 or greater
+* PHP 7.4 or greater
 * ext-json
 * ext-pcre
 * ext-pdo
 * ext-spl
-* PHPUnit 8 or greater (if you want to run unit tests)
+* PHPUnit 9 or greater (if you want to run unit tests)
 
 ![GraPHP Composer](./graph-composer.svg)
 

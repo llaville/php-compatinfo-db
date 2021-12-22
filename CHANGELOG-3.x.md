@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Composer 2.2 compatibility for plugins
 
+### Removed
+
+- drop support for PHP 7.3 has ended 6th December 2021.
+
 ## [3.16.1] - 2021-12-19
 
 ### Fixed

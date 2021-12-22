@@ -34,7 +34,7 @@ use function version_compare;
  */
 class ProjectRequirements extends RequirementCollection implements RequirementsInterface
 {
-    const REQUIRED_PHP_VERSION = '7.3.0';
+    const REQUIRED_PHP_VERSION = '7.4.0';
 
     /** @var string */
     private $helpStatus;
