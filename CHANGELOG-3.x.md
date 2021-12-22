@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Composer 2.2 compatibility for plugins
+
 ## [3.16.1] - 2021-12-19
 
 ### Fixed
