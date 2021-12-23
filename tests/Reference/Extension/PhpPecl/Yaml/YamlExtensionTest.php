@@ -1,26 +1,21 @@
 <?php declare(strict_types=1);
-
 /**
- * Unit tests for PHP_CompatInfo_Db, yaml extension Reference
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @subpackage Tests
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @author     Remi Collet <Remi@FamilleCollet.com>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Yaml;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
 
 /**
+ * Unit tests for PHP_CompatInfo_Db, yaml extension Reference
+ *
  * @since Release 3.0.0 of PHP_CompatInfo
  * @since Release 1.0.0alpha1 of PHP_CompatInfo_Db
+ * @author Laurent Laville
+ * @author Remi Collet
  */
 class YamlExtensionTest extends GenericTest
 {

@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * JSON resource files handler.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Service;
 
 use function file_exists;
@@ -25,7 +18,10 @@ use const DIRECTORY_SEPARATOR;
 use const PHP_EOL;
 
 /**
+ * JSON resource files handler.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class JsonFileHandler
 {

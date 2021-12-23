@@ -1,29 +1,31 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 /**
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class Function_
 {
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /** @var string  */
-    private $name;
-    /** @var string|null  */
-    private $declaringClass;
-    /** @var string  */
-    private $extension;
+    private string $name;
+    private ?string $declaringClass;
+    private string $extension;
     /** @var string[]|null */
-    private $parameters;
+    private ?array $parameters;
     /** @var string[]|null */
-    private $excludes;
+    private ?array $excludes;
     /** @var Dependency[] */
-    private $dependencies;
-    /** @var int */
-    private $flags;
+    private array $dependencies;
+    private int $flags;
 
     /**
      * Function_ constructor.

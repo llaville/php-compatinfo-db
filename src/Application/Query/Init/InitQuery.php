@@ -1,35 +1,27 @@
 <?php declare(strict_types=1);
-
 /**
- * Value Object of console db:init command.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Init;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 /**
+ * Value Object of console db:init command.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class InitQuery implements QueryInterface
 {
-    /** @var string  */
-    private $appVersion;
-    /** @var StyleInterface  */
-    private $io;
-    /** @var bool  */
-    private $force;
-    /** @var bool  */
-    private $progress;
+    private string $appVersion;
+    private StyleInterface $io;
+    private bool $force;
+    private bool $progress;
 
     public function __construct(
         string $version,

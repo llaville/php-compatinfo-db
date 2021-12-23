@@ -1,32 +1,26 @@
 <?php declare(strict_types=1);
-
 /**
- * Value Object of console doctor command.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Doctor;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 
 /**
+ * Value Object of console doctor command.
+ *
  * @since Release 3.6.0
+ * @author Laurent Laville
  */
 final class DoctorQuery implements QueryInterface
 {
     /** @var string[] */
-    private $extensions;
-
-    /** @var bool */
-    private $tests;
+    private array $extensions;
+    private bool $tests;
 
     public function __construct(Platform $platform, bool $withTests)
     {

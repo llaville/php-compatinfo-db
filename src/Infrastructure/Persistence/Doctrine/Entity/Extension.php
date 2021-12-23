@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -15,6 +20,7 @@ use function strtolower;
  *    uniqueConstraints={@UniqueConstraint(name="extension_unique", columns={"name"})}
  * )
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Extension
 {
@@ -22,33 +28,28 @@ class Extension
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $description;
+    private string $description;
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @Column(type="string", length=16)
-     * @var string
      */
-    private $version;
+    private string $version;
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $type;
+    private string $type;
 
     /**
      * @Column(type="boolean")
-     * @var bool
      */
-    private $deprecated;
+    private bool $deprecated;
 
     /**
      * @OneToMany(targetEntity=Release::class, cascade={"persist", "remove"}, mappedBy="extension")

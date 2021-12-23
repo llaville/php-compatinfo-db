@@ -1,22 +1,17 @@
 <?php declare(strict_types=1);
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace Bartlett\CompatInfoDb\Domain\Factory;
 
 /**
  * Declares all PHP latest supported versions.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @subpackage Tests
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
- */
-
-namespace Bartlett\CompatInfoDb\Domain\Factory;
-
-/**
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 interface ExtensionVersionProviderInterface
 {

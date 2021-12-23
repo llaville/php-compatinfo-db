@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\{Entity, Table, Column, ManyToOne};
@@ -10,6 +15,7 @@ use DateTimeImmutable;
  * @Entity
  * @Table(name="releases")
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Release
 {
@@ -19,27 +25,23 @@ class Release
 
     /**
      * @Column(type="string", length=16)
-     * @var string
      */
-    private $version;
+    private string $version;
 
     /**
      * @Column(type="date_immutable")
-     * @var DateTimeImmutable
      */
-    private $date;
+    private DateTimeImmutable $date;
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $state;
+    private string $state;
 
     /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="releases")
-     * @var Extension
      */
-    private $extension;
+    private Extension $extension;
 
     /**
      * @return string

@@ -1,9 +1,15 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 /**
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class Class_
 {
@@ -17,16 +23,12 @@ final class Class_
     public const MODIFIER_ABSTRACT  = 16;
     public const MODIFIER_FINAL     = 32;
 
-    /** @var string  */
-    private $name;
-    /** @var bool  */
-    private $isInterface;
-    /** @var string  */
-    private $extension;
+    private string $name;
+    private bool $isInterface;
+    private string $extension;
     /** @var array|Dependency[]  */
-    private $dependencies;
-    /** @var int */
-    private $flags;
+    private array $dependencies;
+    private int $flags;
 
     /**
      * Class_ constructor.

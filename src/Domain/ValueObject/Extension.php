@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
@@ -11,37 +16,33 @@ use const PHP_VERSION;
 
 /**
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class Extension implements ExtensionVersionProviderInterface
 {
-    /** @var string  */
-    private $name;
-    /** @var string  */
-    private $description;
-    /** @var string  */
-    private $version;
-    /** @var string  */
-    private $type;
-    /** @var bool */
-    private $deprecated;
+    private string $name;
+    private string $description;
+    private string $version;
+    private string $type;
+    private bool $deprecated;
     /** @var array|Dependency[]  */
-    private $dependencies;
+    private array $dependencies;
     /** @var array|IniEntry[] */
-    private $iniEntries;
+    private array $iniEntries;
     /** @var array|Constant_[]  */
-    private $constants;
+    private array $constants;
     /** @var array|Function_[]  */
-    private $functions;
+    private array $functions;
     /** @var array|Class_[] */
-    private $classes;
+    private array $classes;
     /** @var array|Release[]  */
-    private $releases;
+    private array $releases;
     /** @var array|Class_[]  */
-    private $interfaces;
+    private array $interfaces;
     /** @var array|Function_[] */
-    private $methods;
+    private array $methods;
     /** @var array|Constant_[] */
-    private $classConstants;
+    private array $classConstants;
 
     /**
      * Extension constructor.

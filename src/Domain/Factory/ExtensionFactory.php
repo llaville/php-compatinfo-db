@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Domain\Factory;
 
 use Bartlett\CompatInfoDb\Domain\Repository\ExtensionRepository;
@@ -49,13 +54,13 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  *       Bump xsl extension version to PHP release version since PHP 7.0.0alpha1
  *
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class ExtensionFactory implements ExtensionVersionProviderInterface
 {
     use ExtensionVersionProviderTrait;
 
-    /** @var ExtensionRepository  */
-    private $extensionRepository;
+    private ExtensionRepository $extensionRepository;
 
     public function __construct(ExtensionRepository $extensionRepository)
     {

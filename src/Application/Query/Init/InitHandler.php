@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Handler to initialize the database.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Init;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
@@ -38,18 +31,17 @@ use const DIRECTORY_SEPARATOR;
 use const JSON_ERROR_NONE;
 
 /**
+ * Handler to initialize the database.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class InitHandler implements QueryHandlerInterface
 {
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
     private const PHP_RELEASES_8 = ['80', '81'];
-
-    /** @var JsonFileHandler */
-    private $jsonFileHandler;
-
-    /** @var DistributionRepository */
-    private $distributionRepository;
+    private JsonFileHandler $jsonFileHandler;
+    private DistributionRepository $distributionRepository;
 
     public function __construct(
         JsonFileHandler $jsonFileHandler,

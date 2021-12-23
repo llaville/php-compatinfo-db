@@ -1,23 +1,19 @@
 <?php declare(strict_types=1);
-
 /**
- * Keep BC between Symfony 4.4 and Symfony 5.x
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony;
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ReferenceConfigurator;
 
 /**
+ * Keep BC between Symfony 4.4 and Symfony 5.x
+ *
  * @since 3.1.1
+ * @author Laurent Laville
  * @see https://github.com/llaville/php-compatinfo-db/issues/61
  */
 final class Polyfill

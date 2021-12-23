@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Event subscriber to inject profile time and memory usage at execution.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Event\Subscriber;
 
 use Symfony\Component\Console\ConsoleEvents;
@@ -25,12 +18,14 @@ use function sprintf;
 use const PHP_EOL;
 
 /**
+ * Event subscriber to inject profile time and memory usage at execution.
+ *
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class ProfileEventSubscriber implements EventSubscriberInterface
 {
-    /** @var Stopwatch */
-    private $stopwatch;
+    private Stopwatch $stopwatch;
 
     /**
      * ProfileEventSubscriber constructor.

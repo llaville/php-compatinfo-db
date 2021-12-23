@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Handler to show details of a reference in the database.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Show;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
@@ -19,12 +12,14 @@ use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 
 /**
+ * Handler to show details of a reference in the database.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class ShowHandler implements QueryHandlerInterface
 {
-    /** @var ExtensionFactory */
-    private $factory;
+    private ExtensionFactory $factory;
 
     /**
      * ShowHandler constructor.

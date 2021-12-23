@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -11,6 +16,7 @@ use function array_map;
  * @Entity
  * @Table(name="functions")
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Function_
 {
@@ -20,45 +26,40 @@ class Function_
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @Column(type="simple_array", nullable=true)
      * @var null|string[]
      */
-    private $parameters;
+    private ?array $parameters;
 
     /**
      * @Column(type="simple_array", nullable=true)
      * @var null|string[]
      */
-    private $excludes;
+    private ?array $excludes;
 
     /**
      * @Column(name="declaring_class", type="string", nullable=true)
-     * @var null|string
      */
-    private $declaringClass;
+    private ?string $declaringClass;
 
     /**
      * @Column(name="prototype", type="string", nullable=true)
-     * @var null|string
      */
-    private $prototype;
+    private ?string $prototype;
 
     /**
      * @Column(name="flags", type="integer")
-     * @var int
      */
-    private $flags;
+    private int $flags;
 
     /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="functions")
-     * @var Extension
      */
-    private $extension;
+    private Extension $extension;
 
     /**
      * @OneToMany(targetEntity=FunctionRelationship::class, cascade={"persist"}, mappedBy="function")

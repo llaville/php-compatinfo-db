@@ -1,4 +1,10 @@
 <?php declare(strict_types=1);
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\Messenger\MessageBus;
@@ -13,6 +19,7 @@ use Symfony\Component\Messenger\Middleware\HandleMessageMiddleware;
  * @param ContainerConfigurator $containerConfigurator
  * @return void
  * @since 6.0.0
+ * @author Laurent Laville
  */
 return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();

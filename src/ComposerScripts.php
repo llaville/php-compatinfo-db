@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Composer script that prepare metadata cache file to compile PHAR version of application.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb;
 
 use Composer\Script\Event;
@@ -25,7 +18,10 @@ use function str_replace;
 use function var_export;
 
 /**
+ * Composer script that prepare metadata cache file to compile PHAR version of application.
+ *
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class ComposerScripts
 {

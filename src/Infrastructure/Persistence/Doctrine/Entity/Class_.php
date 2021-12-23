@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -10,6 +15,7 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
  * @Entity
  * @Table(name="classes")
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Class_
 {
@@ -19,27 +25,23 @@ class Class_
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @Column(name="interface", type="boolean")
-     * @var bool
      */
-    private $isInterface;
+    private bool $isInterface;
 
     /**
      * @Column(name="flags", type="integer")
-     * @var int
      */
-    private $flags;
+    private int $flags;
 
     /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="classes")
-     * @var Extension
      */
-    private $extension;
+    private Extension $extension;
 
     /**
      * @OneToMany(targetEntity=ClassRelationship::class, cascade={"persist"}, mappedBy="class")

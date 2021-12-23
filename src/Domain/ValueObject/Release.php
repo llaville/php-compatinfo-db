@@ -1,23 +1,26 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 use DateTimeImmutable;
 
 /**
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class Release
 {
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /** @var string  */
-    private $version;
-    /** @var DateTimeImmutable  */
-    private $date;
-    /** @var string  */
-    private $state;
+    private string $version;
+    private DateTimeImmutable $date;
+    private string $state;
 
     public function __construct(
         string $version,
