@@ -108,6 +108,23 @@ jobs:
                     sudo apt-fast install libssh2-1-dev -y
                     sudo apt-fast install librdkafka-dev -y
 
+            -   # Setup cache environment
+                name: Setup cache environment
+                id: extcache
+                uses: shivammathur/cache-extensions@v1
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: ${{ matrix.extensions }}
+                    key: cache-v3
+
+            -   # Cache extensions
+                name: Cache extensions
+                uses: actions/cache@v2
+                with:
+                    path: ${{ steps.extcache.outputs.dir }}
+                    key: ${{ steps.extcache.outputs.key }}
+                    restore-keys: ${{ steps.extcache.outputs.key }}
+
             -   # Setup PHP runtime
                 name: Setup PHP runtime
                 uses: shivammathur/setup-php@v2
