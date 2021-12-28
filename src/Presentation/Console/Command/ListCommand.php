@@ -57,10 +57,13 @@ final class ListCommand extends AbstractCommand implements CommandInterface
             $filters['name'] = $name;
         }
 
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+
         $listQuery = new ListQuery(
             $input->getOption('all'),
             !$input->getOption('all'),
-            ApplicationInterface::VERSION,
+            $app->getInstalledVersion(),
             $filters
         );
 

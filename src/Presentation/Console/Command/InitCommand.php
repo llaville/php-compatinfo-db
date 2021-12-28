@@ -46,8 +46,11 @@ class InitCommand extends AbstractCommand implements CommandInterface
 
         $relVersion = $input->getArgument('rel_version') ?? null;
 
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+
         if (null === $relVersion) {
-            $appVersion = ApplicationInterface::VERSION;
+            $appVersion = $app->getInstalledVersion();
         } else {
             $appVersion = trim($relVersion);
         }

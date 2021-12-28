@@ -19,11 +19,12 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 interface ApplicationInterface extends ContainerAwareInterface
 {
     public const NAME = 'Database handler for CompatInfo';
-    public const VERSION = '3.17.x-dev';
 
     /**
      * @param CommandLoaderInterface $commandLoader
      * @return void
      */
     public function setCommandLoader(CommandLoaderInterface $commandLoader);
+
+    public function getInstalledVersion(bool $withRef = true, string $packageName = 'bartlett/php-compatinfo-db'): string;
 }

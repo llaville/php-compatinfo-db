@@ -71,7 +71,7 @@ final class DoctorHandler implements QueryHandlerInterface
 
         $report = [
             'CompatInfoDB' => [
-                'version' => ApplicationInterface::VERSION,
+                'version' => $query->getVersion(),
             ],
             'PHP' => [
                 'version' => PHP_VERSION,

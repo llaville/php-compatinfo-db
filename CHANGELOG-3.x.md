@@ -20,6 +20,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Removed
 
 - drop support for PHP 7.3 has ended 6th December 2021.
+- `Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface::VERSION` constant that identify current version of Application
+- deprecated / End Of Life composer plugin `composer/package-versions-deprecated`, and use Composer 2.2 (LTS) equivalent feature
 
 ## [3.16.1] - 2021-12-19
 

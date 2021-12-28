@@ -48,15 +48,18 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+
         // retrieves only extensions installed in your platform
-        $listQuery = new ListQuery(false, true, ApplicationInterface::VERSION);
+        $listQuery = new ListQuery(false, true, $app->getInstalledVersion());
 
         /** @var Platform $platform */
         $platform = $this->queryBus->query($listQuery);
 
         $withTests = $input->getOption('with-tests');
 
-        $doctorQuery = new DoctorQuery($platform, $withTests);
+        $doctorQuery = new DoctorQuery($platform, $withTests, $app->getInstalledVersion());
         $report = $this->queryBus->query($doctorQuery);
         $status = $report['status'];
 

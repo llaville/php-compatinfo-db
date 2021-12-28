@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use PackageVersions\Versions;
+use Composer\InstalledVersions;
 
 use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
 use Symfony\Component\Config\FileLocator;
@@ -25,11 +25,8 @@ use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Phar;
 use function basename;
 use function dirname;
-use function explode;
-use function is_callable;
 use function sprintf;
-use function strpos;
-use function substr_count;
+use function substr;
 
 /**
  * Symfony Console Application to handle the CompatInfo database.
@@ -44,24 +41,11 @@ class Application extends SymfonyApplication implements ApplicationInterface
     /**
      * Application constructor.
      *
-     * @param string $version (optional) auto-detect
+     * @param string|null $version (optional) auto-detect
      */
-    public function __construct(string $version = 'UNKNOWN')
+    public function __construct(?string $version = null)
     {
-        if ('UNKNOWN' === $version) {
-            // composer or git outside world strategy
-            $version = self::VERSION;
-        } elseif (substr_count($version, '.') === 2) {
-            // release is in X.Y.Z format
-        } else {
-            // composer or git strategy
-            $version = Versions::getVersion('bartlett/php-compatinfo-db');
-            list($ver, ) = explode('@', $version);
-
-            if (strpos($ver, 'dev') === false) {
-                $version = $ver;
-            }
-        }
+        $version = $version ?? $this->getInstalledVersion(false);
         parent::__construct(self::NAME, $version);
     }
 
@@ -176,18 +160,34 @@ class Application extends SymfonyApplication implements ApplicationInterface
     /**
      * {@inheritDoc}
      */
+    public function getHelp(): string
+    {
+        return sprintf(
+            '<info>%s</info> version <comment>%s</comment>',
+            $this->getName(),
+            $this->getInstalledVersion(false)
+        );
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getLongVersion(): string
     {
-        if ('UNKNOWN' !== $this->getName()) {
-            if ('UNKNOWN' !== $this->getVersion()) {
-                return sprintf(
-                    '<info>%s</info> version <comment>%s</comment>',
-                    $this->getName(),
-                    $this->getVersion()
-                );
-            }
-            return $this->getName();
+        return sprintf(
+            '<info>%s</info> version <comment>%s</comment>',
+            $this->getName(),
+            $this->getInstalledVersion()
+        );
+    }
+
+    public function getInstalledVersion(bool $withRef = true, string $packageName = 'bartlett/php-compatinfo-db'): string
+    {
+        $version = InstalledVersions::getPrettyVersion($packageName);
+        if (!$withRef) {
+            return $version;
         }
-        return 'Console Tool';
+        $commitHash = InstalledVersions::getReference($packageName);
+        return sprintf('%s@%s', $version, substr($commitHash, 0, 7));
     }
 }
