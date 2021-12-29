@@ -20,7 +20,7 @@ if (Phar::running()) {
         // local dev repository
         dirname(__DIR__),
         // dependency
-        dirname(__DIR__,4),
+        dirname(__DIR__, 4),
     ];
 }
 
