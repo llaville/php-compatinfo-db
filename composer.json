@@ -31,6 +31,7 @@
         "symfony/stopwatch": "^4.4|^5.0"
     },
     "require-dev": {
+        "bartlett/umlwriter": "^2.0|^3.0",
         "composer/composer": "^2.0",
         "psr/log": "^1.0",
         "symfony/phpunit-bridge": "^5.1"
@@ -75,10 +76,16 @@
     "scripts-descriptions": {
         "setup-database": "Initializes SQLite database from JSON files in data directory."
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        }
+    },
+    "extra": {
+        "enable-patching": true
     }
 }
