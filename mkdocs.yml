@@ -29,6 +29,11 @@ markdown_extensions:
 nav:
     - "Home": index.md
     - "Getting-Started": getting-started.md
+    - "Architecture":
+          - "Application": application/README.md
+          - "Domain": domain/README.md
+          - "Infrastructure": infrastructure/README.md
+          - "Presentation": presentation/README.md
     - "Appendix":
           - "Supported versions": appendix/supported-versions.md
           - "Supported extensions": appendix/SUPPORTED-EXTENSIONS.md

@@ -12,7 +12,8 @@
 
 ![GraPHP Composer](./graph-composer.svg)
 
-Generated with [clue/graph-composer](https://github.com/clue/graph-composer)
+Generated with [fork](https://github.com/markuspoerschke/graph-composer/tree/add-options-to-exclude) of [clue/graph-composer](https://github.com/clue/graph-composer).
+Read more on [PR request](https://github.com/clue/graph-composer/pull/45).
 
 ## Installation
 
@@ -46,10 +47,10 @@ DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5
 DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.5.8"
 
 # to use sqlite:
-# DATABASE_URL="sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
+DATABASE_URL="sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
 
 # to use postgresql:
-# DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8"
+DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8"
 ```
 
 If you change database connection, you have to run following commands:
