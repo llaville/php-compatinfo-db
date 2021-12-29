@@ -3,5 +3,5 @@
     "directories": ["bin", "config", "src", "vendor"],
     "compression": "GZ",
     "main": "bin/compatinfo-db",
-    "metadata": "Bartlett\\CompatInfoDb\\ComposerScripts::getPharMetadata"
+    "metadata": "box-metadata.php"
 }
