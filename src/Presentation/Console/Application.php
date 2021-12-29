@@ -140,7 +140,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
         }
 
         if ($input->hasParameterOption('--manifest')) {
-            $phar = new Phar('compatinfo-db.phar');
+            $phar = new Phar($_SERVER['argv'][0]);
             $output->writeln($phar->getMetadata());
             return 0;
         }
