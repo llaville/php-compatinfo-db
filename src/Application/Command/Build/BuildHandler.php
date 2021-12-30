@@ -10,12 +10,12 @@ namespace Bartlett\CompatInfoDb\Application\Command\Build;
 use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
 
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Output\StreamOutput;
 
 use ReflectionClass;
 use ReflectionException;
 use ReflectionExtension;
 use ReflectionMethod;
-use Symfony\Component\Console\Output\StreamOutput;
 use function array_keys;
 use function array_values;
 use function dirname;

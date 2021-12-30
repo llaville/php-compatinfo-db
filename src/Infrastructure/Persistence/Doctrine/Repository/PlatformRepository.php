@@ -10,7 +10,6 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository;
 use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\Repository\PlatformRepository as PlatformRepositoryInterface;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
-use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Platform as PlatformEntity;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformHydrator;
 

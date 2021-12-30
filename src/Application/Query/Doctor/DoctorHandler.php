@@ -11,14 +11,13 @@ use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Dependency;
-use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 
-use Generator;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
+
 use function array_search;
 use function count;
 use function sprintf;

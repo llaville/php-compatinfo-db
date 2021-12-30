@@ -9,6 +9,7 @@
 namespace Bartlett\CompatInfoDb\Application\Command\Build;
 
 use Bartlett\CompatInfoDb\Application\Command\CommandInterface;
+
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**

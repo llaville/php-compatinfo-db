@@ -10,6 +10,7 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
+
 use function array_map;
 
 /**
