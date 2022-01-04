@@ -3,12 +3,12 @@
 
 ## Bus
 
-![Infrastructure Bus](./infrastructure_bus.graphviz.svg)
+![Graph UML Infrastructure Bus](./infrastructure-bus.graphviz.svg)
 
 ## Framework
 
-![Infrastructure Framework](./infrastructure_framework.graphviz.svg)
+![Graph UML Infrastructure Framework](./infrastructure-framework.graphviz.svg)
 
 ## Persistence
 
-![Infrastructure Persistence](./infrastructure_persistence.graphviz.svg)
+![Graph UML Infrastructure Persistence](./infrastructure-persistence.graphviz.svg)
