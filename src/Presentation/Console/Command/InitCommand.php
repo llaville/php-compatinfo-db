@@ -50,7 +50,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
         $app = $this->getApplication();
 
         if (null === $relVersion) {
-            $appVersion = $app->getInstalledVersion();
+            $appVersion = $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db');
         } else {
             $appVersion = trim($relVersion);
         }

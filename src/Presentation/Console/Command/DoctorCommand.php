@@ -50,16 +50,17 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
     {
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
+        $installedVersion = $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db');
 
         // retrieves only extensions installed in your platform
-        $listQuery = new ListQuery(false, true, $app->getInstalledVersion());
+        $listQuery = new ListQuery(false, true, $installedVersion);
 
         /** @var Platform $platform */
         $platform = $this->queryBus->query($listQuery);
 
         $withTests = $input->getOption('with-tests');
 
-        $doctorQuery = new DoctorQuery($platform, $withTests, $app->getInstalledVersion());
+        $doctorQuery = new DoctorQuery($platform, $withTests, $installedVersion);
         $report = $this->queryBus->query($doctorQuery);
         $status = $report['status'];
 
