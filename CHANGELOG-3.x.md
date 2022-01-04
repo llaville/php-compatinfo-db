@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- `.github/workflows/gh-pages.yml` workflow to generate dynamically UML graphs for documentation
 - Composer 2.2 compatibility for plugins
 - Support **Typed properties** features, now minimum PHP requirement is 7.4
 

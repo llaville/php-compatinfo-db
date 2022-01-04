@@ -54,10 +54,17 @@ jobs:
             -   # Update diagrams used in documentation
                 name: Update Diagrams
                 run: |
-                    php resources/graph-uml/application.php docs/application
-                    php resources/graph-uml/domain.php docs/domain
-                    php resources/graph-uml/infrastructure.php docs/infrastructure
-                    php resources/graph-uml/presentation.php docs/presentation
+                    php resources/graph-uml/build.php application-command docs/application
+                    php resources/graph-uml/build.php application-event docs/application
+                    php resources/graph-uml/build.php application-query docs/application
+                    php resources/graph-uml/build.php application-service docs/application
+                    php resources/graph-uml/build.php domain-factory docs/domain
+                    php resources/graph-uml/build.php domain-repository docs/domain
+                    php resources/graph-uml/build.php domain-valueobject docs/domain
+                    php resources/graph-uml/build.php infrastructure-bus docs/infrastructure
+                    php resources/graph-uml/build.php infrastructure-framework docs/infrastructure
+                    php resources/graph-uml/build.php infrastructure-persistence docs/infrastructure
+                    php resources/graph-uml/build.php presentation-console docs/presentation
 
             -   # Setup Python version
                 name: Set up Python runtime

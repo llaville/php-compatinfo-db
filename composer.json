@@ -31,7 +31,7 @@
         "symfony/stopwatch": "^4.4|^5.0"
     },
     "require-dev": {
-        "bartlett/umlwriter": "^2.0|^3.0",
+        "bartlett/graph-uml": "^1.2",
         "composer/composer": "^2.0",
         "psr/log": "^1.0",
         "symfony/phpunit-bridge": "^5.1"
