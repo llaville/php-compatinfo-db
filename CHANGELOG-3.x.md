@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Lzf reference updated to version 1.7.0 (stable)
+
 ## [3.17.0] - 2022-01-05
 
 ### Changed
