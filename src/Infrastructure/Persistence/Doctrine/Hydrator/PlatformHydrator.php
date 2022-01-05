@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform as Domain;
@@ -7,6 +12,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Platform as
 
 /**
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 final class PlatformHydrator implements HydratorInterface
 {
@@ -20,18 +26,11 @@ final class PlatformHydrator implements HydratorInterface
         if (!$object instanceof Entity) {
             return [];
         }
-/*
-        $hydrator = new ExtensionHydrator();
 
-        $mappedCollection = $object->getExtensions()->map(function($extension) use ($hydrator) {
-            return $hydrator->extract($extension);
-        });
-*/
         return [
             'description' => $object->getDescription(),
             'version' => $object->getVersion(),
             'created_at' => $object->getCreatedAt(),
-            //'extensions' => [], //$mappedCollection->toArray(),
         ];
     }
 

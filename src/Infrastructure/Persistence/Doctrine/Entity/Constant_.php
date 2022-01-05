@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -10,6 +15,7 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
  * @Entity
  * @Table(name="constants")
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Constant_
 {
@@ -19,21 +25,18 @@ class Constant_
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @Column(name="declaring_class", type="string", nullable=true)
-     * @var null|string
      */
-    private $declaringClass;
+    private ?string $declaringClass;
 
     /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="constants")
-     * @var Extension
      */
-    private $extension;
+    private Extension $extension;
 
     /**
      * @OneToMany(targetEntity=ConstantRelationship::class, cascade={"persist"}, mappedBy="constant")

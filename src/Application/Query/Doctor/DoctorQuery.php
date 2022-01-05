@@ -1,40 +1,36 @@
 <?php declare(strict_types=1);
-
 /**
- * Value Object of console doctor command.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Doctor;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 
 /**
+ * Value Object of console doctor command.
+ *
  * @since Release 3.6.0
+ * @author Laurent Laville
  */
 final class DoctorQuery implements QueryInterface
 {
     /** @var string[] */
-    private $extensions;
+    private array $extensions;
+    private bool $tests;
+    private string $version;
 
-    /** @var bool */
-    private $tests;
-
-    public function __construct(Platform $platform, bool $withTests)
+    public function __construct(Platform $platform, bool $withTests, string $version)
     {
         $this->extensions = [];
         foreach ($platform->getExtensions() as $extension) {
             $this->extensions[] = $extension->getName();
         }
         $this->tests = $withTests;
+        $this->version = $version;
     }
 
     /**
@@ -51,5 +47,13 @@ final class DoctorQuery implements QueryInterface
     public function withTests(): bool
     {
         return $this->tests;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVersion(): string
+    {
+        return $this->version;
     }
 }

@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Handler to list references in the database.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\ListRef;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
@@ -30,17 +23,17 @@ use function str_replace;
 use function strcasecmp;
 
 /**
+ * Handler to list references in the database.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class ListHandler implements QueryHandlerInterface, ExtensionVersionProviderInterface
 {
     use ExtensionVersionProviderTrait;
 
-    /** @var PlatformRepository*/
-    private $platformRepository;
-
-    /** @var DistributionRepository */
-    private $distributionRepository;
+    private PlatformRepository $platformRepository;
+    private DistributionRepository $distributionRepository;
 
     /**
      * ListHandler constructor.

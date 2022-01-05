@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\{Entity, Table, ManyToOne, UniqueConstraint};
@@ -10,6 +15,7 @@ use Doctrine\ORM\Mapping\{Entity, Table, ManyToOne, UniqueConstraint};
  *    uniqueConstraints={@UniqueConstraint(name="constant_dependency_unique", columns={"constant_id", "dependency_id"})}
  * )
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class ConstantRelationship
 {
@@ -17,15 +23,13 @@ class ConstantRelationship
 
     /**
      * @ManyToOne(targetEntity=Constant_::class, cascade={"persist"}, inversedBy="relationships")
-     * @var Constant_
      */
-    private $constant;
+    private Constant_ $constant;
 
     /**
      * @ManyToOne(targetEntity=Dependency::class, cascade={"persist"})
-     * @var Dependency
      */
-    private $dependency;
+    private Dependency $dependency;
 
     /**
      * @param Constant_ $constant

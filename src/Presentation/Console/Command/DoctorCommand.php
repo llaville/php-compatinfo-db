@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Checks the current installation of PHP CompatInfoDB.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Query\Doctor\DoctorQuery;
@@ -34,7 +27,10 @@ use function trim;
 use const JSON_PRETTY_PRINT;
 
 /**
+ * Checks the current installation of PHP CompatInfoDB.
+ *
  * @since Release 3.6.0
+ * @author Laurent Laville
  */
 final class DoctorCommand extends AbstractCommand implements CommandInterface
 {
@@ -52,15 +48,19 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+        $installedVersion = $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db');
+
         // retrieves only extensions installed in your platform
-        $listQuery = new ListQuery(false, true, ApplicationInterface::VERSION);
+        $listQuery = new ListQuery(false, true, $installedVersion);
 
         /** @var Platform $platform */
         $platform = $this->queryBus->query($listQuery);
 
         $withTests = $input->getOption('with-tests');
 
-        $doctorQuery = new DoctorQuery($platform, $withTests);
+        $doctorQuery = new DoctorQuery($platform, $withTests, $installedVersion);
         $report = $this->queryBus->query($doctorQuery);
         $status = $report['status'];
 

@@ -1,22 +1,29 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\Column;
 
+/**
+ * @since Release 3.0.0
+ * @author Laurent Laville
+ */
 trait ExtVersionTrait
 {
     /**
      * @Column(name="ext_min", type="string", length=16)
-     * @var string
      */
-    private $extMin;
+    private string $extMin;
 
     /**
      * @Column(name="ext_max", type="string", length=16, nullable=true)
-     * @var string
      */
-    private $extMax;
+    private ?string $extMax;
 
     /**
      * @return string

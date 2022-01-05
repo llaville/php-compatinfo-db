@@ -10,13 +10,12 @@
         "issues": "https://github.com/llaville/php-compatinfo-db/issues"
     },
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "ext-json": "*",
         "ext-pcre": "*",
         "ext-pdo": "*",
         "ext-phar": "*",
         "ext-spl": "*",
-        "composer/package-versions-deprecated": "^1.8",
         "composer/semver": "^1.0|^2.0|^3.0",
         "doctrine/orm": "^2.7",
         "doctrine/dbal": "^2.13.1|^3.1.4",
@@ -32,6 +31,7 @@
         "symfony/stopwatch": "^4.4|^5.0"
     },
     "require-dev": {
+        "bartlett/graph-uml": "^1.2",
         "composer/composer": "^2.0",
         "psr/log": "^1.0",
         "symfony/phpunit-bridge": "^5.1"
@@ -39,7 +39,6 @@
     "authors": [
         {
             "name": "Laurent Laville",
-            "email": "pear@laurent-laville.org",
             "homepage": "https://github.com/llaville",
             "role": "Lead"
         },
@@ -66,26 +65,27 @@
             "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
         ],
         "post-install-cmd": [
-            "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata",
             "@setup-database",
             "vendor/bin/doctrine orm:schema-tool:create",
             "bin/compatinfo-db db:init"
         ],
         "post-update-cmd": [
-            "Bartlett\\CompatInfoDb\\ComposerScripts::preparePharMetadata",
             "@setup-database"
         ]
     },
     "scripts-descriptions": {
         "setup-database": "Initializes SQLite database from JSON files in data directory."
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
         "optimize-autoloader": true,
         "allow-plugins": {
-            "composer/package-versions-deprecated": true
+            "cweagans/composer-patches": true
         }
+    },
+    "extra": {
+        "enable-patching": true
     }
 }

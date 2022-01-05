@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -12,6 +17,7 @@ use DateTimeImmutable;
  * @Entity
  * @Table(name="platforms")
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Platform
 {
@@ -19,27 +25,23 @@ class Platform
      * @Id
      * @Column(type="integer")
      * @GeneratedValue(strategy="AUTO")
-     * @var int
      */
-    private $id;
+    private int $id;
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $description;
+    private string $description;
 
     /**
      * @Column(type="string", length=16)
-     * @var string
      */
-    private $version;
+    private string $version;
 
     /**
      * @Column(name="created_at", type="datetime_immutable")
-     * @var DateTimeImmutable
      */
-    private $createdAt;
+    private DateTimeImmutable $createdAt;
 
     /**
      * @OneToMany(targetEntity=Relationship::class, cascade={"persist"}, mappedBy="platform")

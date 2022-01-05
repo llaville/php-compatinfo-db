@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Domain\Factory;
 
 use function strtolower;
@@ -35,6 +40,7 @@ use const PHP_VERSION;
  * @see https://github.com/php/php-src/commit/70f41d1d9cb03f76f73e7a6099bfc7ce0c2b2701
  *
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 trait ExtensionVersionProviderTrait
 {

@@ -1,20 +1,13 @@
 <?php declare(strict_types=1);
-
 /**
- * Symfony Console Application to handle the CompatInfo database.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use PackageVersions\Versions;
+use Composer\InstalledVersions;
 
 use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
 use Symfony\Component\Config\FileLocator;
@@ -32,41 +25,27 @@ use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Phar;
 use function basename;
 use function dirname;
-use function explode;
-use function is_callable;
 use function sprintf;
-use function strpos;
-use function substr_count;
+use function substr;
 
 /**
+ * Symfony Console Application to handle the CompatInfo database.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 class Application extends SymfonyApplication implements ApplicationInterface
 {
-    /** @var ContainerInterface  */
-    private $container;
+    private ContainerInterface $container;
 
     /**
      * Application constructor.
      *
-     * @param string $version (optional) auto-detect
+     * @param string|null $version (optional) auto-detect
      */
-    public function __construct(string $version = 'UNKNOWN')
+    public function __construct(?string $version = null)
     {
-        if ('UNKNOWN' === $version) {
-            // composer or git outside world strategy
-            $version = self::VERSION;
-        } elseif (substr_count($version, '.') === 2) {
-            // release is in X.Y.Z format
-        } else {
-            // composer or git strategy
-            $version = Versions::getVersion('bartlett/php-compatinfo-db');
-            list($ver, ) = explode('@', $version);
-
-            if (strpos($ver, 'dev') === false) {
-                $version = $ver;
-            }
-        }
+        $version = $version ?? $this->getInstalledVersion(false);
         parent::__construct(self::NAME, $version);
     }
 
@@ -161,7 +140,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
         }
 
         if ($input->hasParameterOption('--manifest')) {
-            $phar = new Phar('compatinfo-db.phar');
+            $phar = new Phar($_SERVER['argv'][0]);
             $output->writeln($phar->getMetadata());
             return 0;
         }
@@ -181,18 +160,34 @@ class Application extends SymfonyApplication implements ApplicationInterface
     /**
      * {@inheritDoc}
      */
+    public function getHelp(): string
+    {
+        return sprintf(
+            '<info>%s</info> version <comment>%s</comment>',
+            $this->getName(),
+            $this->getInstalledVersion(false)
+        );
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getLongVersion(): string
     {
-        if ('UNKNOWN' !== $this->getName()) {
-            if ('UNKNOWN' !== $this->getVersion()) {
-                return sprintf(
-                    '<info>%s</info> version <comment>%s</comment>',
-                    $this->getName(),
-                    $this->getVersion()
-                );
-            }
-            return $this->getName();
+        return sprintf(
+            '<info>%s</info> version <comment>%s</comment>',
+            $this->getName(),
+            $this->getInstalledVersion()
+        );
+    }
+
+    public function getInstalledVersion(bool $withRef = true, string $packageName = 'bartlett/php-compatinfo-db'): string
+    {
+        $version = InstalledVersions::getPrettyVersion($packageName);
+        if (!$withRef) {
+            return $version;
         }
-        return 'Console Tool';
+        $commitHash = InstalledVersions::getReference($packageName);
+        return sprintf('%s@%s', $version, substr($commitHash, 0, 7));
     }
 }

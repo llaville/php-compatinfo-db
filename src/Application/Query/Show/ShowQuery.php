@@ -1,46 +1,32 @@
 <?php declare(strict_types=1);
-
 /**
- * Value Object of console db:show command.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Show;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
 
 /**
+ * Value Object of console db:show command.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class ShowQuery implements QueryInterface
 {
-    /** @var string  */
-    private $extension;
-    /** @var bool  */
-    private $releases;
-    /** @var bool  */
-    private $ini;
-    /** @var bool  */
-    private $constants;
-    /** @var bool  */
-    private $functions;
-    /** @var bool  */
-    private $interfaces;
-    /** @var bool  */
-    private $classes;
-    /** @var bool  */
-    private $methods;
-    /** @var bool  */
-    private $classConstants;
-    /** @var bool  */
-    private $dependencies;
+    private string $extension;
+    private bool $releases;
+    private bool $ini;
+    private bool $constants;
+    private bool $functions;
+    private bool $interfaces;
+    private bool $classes;
+    private bool $methods;
+    private bool $classConstants;
+    private bool $dependencies;
 
     public function __construct(
         string $extension,

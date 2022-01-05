@@ -1,19 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Unit tests for PHP_CompatInfo_Db, Generic extension base class.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @subpackage Tests
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @author     Remi Collet <Remi@FamilleCollet.com>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Tests\Reference;
 
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
@@ -68,33 +59,37 @@ use function version_compare;
 use const DIRECTORY_SEPARATOR;
 
 /**
+ * Unit tests for PHP_CompatInfo_Db, Generic extension base class.
+ *
  * @since Release 3.0.0RC1 of PHP_CompatInfo
  * @since Release 1.0.0alpha1 of PHP_CompatInfo_Db
+ * @author Laurent Laville
+ * @author Remi Collet
  */
 abstract class GenericTest extends TestCase implements ExtensionVersionProviderInterface
 {
     use LibraryVersionProviderTrait;
     use ExtensionVersionProviderTrait;
 
-    protected static $obj = null;
+    protected static ?object $obj = null;
 
     // Could be defined in Reference but missing (system dependant)
-    protected static $optionalreleases    = [];
-    protected static $optionalcfgs        = [];
-    protected static $optionalconstants   = [];
-    protected static $optionalfunctions   = [];
-    protected static $optionalclasses     = [];
-    protected static $optionalinterfaces  = [];
-    protected static $optionalmethods     = [];
+    protected static array $optionalreleases    = [];
+    protected static array $optionalcfgs        = [];
+    protected static array $optionalconstants   = [];
+    protected static array $optionalfunctions   = [];
+    protected static array $optionalclasses     = [];
+    protected static array $optionalinterfaces  = [];
+    protected static array $optionalmethods     = [];
 
     // Could be present but missing in Reference (alias, ...)
-    protected static $ignoredcfgs          = [];
-    protected static $ignoredconstants     = [];
-    protected static $ignoredfunctions     = [];
-    protected static $ignoredclasses       = [];
-    protected static $ignoredinterfaces    = [];
-    protected static $ignoredmethods       = [];
-    protected static $ignoredconsts        = [];
+    protected static array $ignoredcfgs          = [];
+    protected static array $ignoredconstants     = [];
+    protected static array $ignoredfunctions     = [];
+    protected static array $ignoredclasses       = [];
+    protected static array $ignoredinterfaces    = [];
+    protected static array $ignoredmethods       = [];
+    protected static array $ignoredconsts        = [];
 
     /**
      * Sets up the shared fixture.

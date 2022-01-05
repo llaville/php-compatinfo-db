@@ -1,32 +1,25 @@
 <?php declare(strict_types=1);
-
 /**
- * Value Object of console db:release command.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Command\Release;
 
 use Bartlett\CompatInfoDb\Application\Command\CommandInterface;
 
 /**
+ * Value Object of console db:release command.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 final class ReleaseCommand implements CommandInterface
 {
-    /** @var string  */
-    private $version;
-    /** @var string  */
-    private $date;
-    /** @var string  */
-    private $state;
+    private string $version;
+    private string $date;
+    private string $state;
 
     public function __construct(
         string $version,

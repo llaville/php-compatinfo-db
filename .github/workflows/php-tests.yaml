@@ -46,7 +46,8 @@ jobs:
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
                 with:
-                    composer-options: "--prefer-dist"
+                    dependency-versions: "highest"
+                    composer-options: "--prefer-dist --no-scripts"
 
             -   # Mega-Linter
                 name: Mega-Linter
@@ -75,14 +76,9 @@ jobs:
             matrix:
                 include:
                     -
-                        os: ubuntu-18.04
-                        php: 7.3
-                        extensions: amqp,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gender,geoip,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,jsmin,json,ldap,libxml,lzf,mailparse,mbstring,mcrypt,memcache,memcached,msgpack,mysqli,oci8-2.2.0,odbc,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,propro,pecl_http-3.2.4,rar,rdkafka,readline,recode,redis,reflection,session,shmop,simplexml,snmp,soap,sockets,solr,spl,sqlite3,ssh2,standard,stomp,sync,sysvmsg,sysvsem,sysvshm,tidy,tokenizer,uopz,uploadprogress,uuid,:wddx,xhprof,xlswriter,xml,xmldiff,xmlreader,xmlrpc,xmlwriter,xsl,yaml,zip,zlib
-                        tools: phpunit
-                    -
                         os: ubuntu-latest
                         php: 7.4
-                        extensions: amqp,apc,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,exif,fileinfo,filter,ftp,gd,gender,geoip,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,jsmin,json,ldap,libxml,lzf,mailparse,mbstring,mcrypt,memcache,memcached,msgpack,mysqli,oci8-2.2.0,odbc,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,propro,pecl_http-3.2.4,rar,rdkafka,readline,redis,reflection,session,shmop,simplexml,snmp,soap,sockets,solr,spl,sqlite3,ssh2,standard,stomp,sync,sysvmsg,sysvsem,sysvshm,tidy,tokenizer,uopz,uploadprogress,uuid,xhprof,xlswriter,xml,xmldiff,xmlreader,xmlrpc,xmlwriter,xsl,yaml,zip,zlib
+                        extensions: amqp,apc,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,exif,fileinfo,filter,ftp,gd,gender,geoip,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,jsmin,json,ldap,libxml,lzf,mailparse,mbstring,mcrypt,memcache,memcached,msgpack,mysqli,oci8-2.2.0,odbc,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,propro,pecl_http-3.2.4,rar,rdkafka,readline,redis,reflection,session,shmop,simplexml,snmp,soap,sockets,solr,spl,sqlite3,ssh2,standard,stomp,sync,sysvmsg,sysvsem,sysvshm,tidy,tokenizer,uploadprogress,uuid,xhprof,xlswriter,xml,xmldiff,xmlreader,xmlrpc,xmlwriter,xsl,yaml,zip,zlib
                         tools: phpunit
                     -
                         os: ubuntu-latest
@@ -99,6 +95,7 @@ jobs:
 
         env:
             APP_ENV: dev  # see explains at https://github.com/llaville/php-compatinfo-db/issues/101
+            DATABASE_URL: "sqlite:///${{ github.workspace }}/.cache/compatinfo-db.sqlite"
 
         steps:
             -   # Git Checkout
@@ -113,6 +110,23 @@ jobs:
                     sudo apt-fast install libssh2-1-dev -y
                     sudo apt-fast install librdkafka-dev -y
 
+            -   # Setup cache environment
+                name: Setup cache environment
+                id: extcache
+                uses: shivammathur/cache-extensions@v1
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: ${{ matrix.extensions }}
+                    key: cache-v3
+
+            -   # Cache extensions
+                name: Cache extensions
+                uses: actions/cache@v2
+                with:
+                    path: ${{ steps.extcache.outputs.dir }}
+                    key: ${{ steps.extcache.outputs.key }}
+                    restore-keys: ${{ steps.extcache.outputs.key }}
+
             -   # Setup PHP runtime
                 name: Setup PHP runtime
                 uses: shivammathur/setup-php@v2
@@ -125,11 +139,13 @@ jobs:
                 name: Install Composer dependencies
                 uses: "ramsey/composer-install@v1"
                 with:
-                    composer-options: "--prefer-dist"
+                    dependency-versions: "highest"
+                    composer-options: "--prefer-dist --no-scripts"
 
             -   # Build Database
                 name: Build Database
                 run: |
+                    mkdir -p "${{ github.workspace }}/.cache/" && touch "${{ github.workspace }}/.cache/compatinfo-db.sqlite"
                     vendor/bin/doctrine orm:schema-tool:create --ansi
                     bin/compatinfo-db db:init --ansi
 

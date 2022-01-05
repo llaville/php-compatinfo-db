@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
-
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\{Entity, ManyToOne, Table, Column};
@@ -8,6 +13,7 @@ use Doctrine\ORM\Mapping\{Entity, ManyToOne, Table, Column};
  * @Entity
  * @Table(name="dependencies")
  * @since Release 3.0.0
+ * @author Laurent Laville
  */
 class Dependency
 {
@@ -15,21 +21,18 @@ class Dependency
 
     /**
      * @Column(type="string")
-     * @var string
      */
-    private $name;
+    private string $name;
 
     /**
      * @Column(name="constraint_expression", type="string", length=16)
-     * @var string
      */
-    private $constraintExpression;
+    private string $constraintExpression;
 
     /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="dependencies")
-     * @var Extension
      */
-    private $extension;
+    private Extension $extension;
 
     /**
      * @return string

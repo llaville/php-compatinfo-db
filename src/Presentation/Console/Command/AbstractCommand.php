@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Base class for all application commands.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
@@ -20,18 +13,18 @@ use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
 use Symfony\Component\Console\Command\Command;
 
 /**
+ * Base class for all application commands.
+ *
  * @since Release 2.0.0RC1
+ * @author Laurent Laville
  */
 abstract class AbstractCommand extends Command
 {
     public const SUCCESS = 0;
     public const FAILURE = 1;
 
-    /** @var CommandBusInterface */
-    protected $commandBus;
-
-    /** @var QueryBusInterface */
-    protected $queryBus;
+    protected CommandBusInterface $commandBus;
+    protected QueryBusInterface $queryBus;
 
     public function __construct(CommandBusInterface $commandBus, QueryBusInterface $queryBus)
     {

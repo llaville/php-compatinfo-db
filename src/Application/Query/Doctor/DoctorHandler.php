@@ -1,31 +1,23 @@
 <?php declare(strict_types=1);
-
 /**
- * Handler to return information about current installation components.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Application\Query\Doctor;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Dependency;
-use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 
-use Generator;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
+
 use function array_search;
 use function count;
 use function sprintf;
@@ -33,24 +25,22 @@ use function trim;
 use const PHP_VERSION;
 
 /**
+ * Handler to return information about current installation components.
+ *
  * @since Release 3.6.0
+ * @author Laurent Laville
  */
 final class DoctorHandler implements QueryHandlerInterface
 {
     use LibraryVersionProviderTrait;
 
     private const CONSTRAINT_SKIPPED = 'skipped';
-
     private const CONSTRAINT_PASSED  = 'passed';
-
-    /** @var ExtensionFactory */
-    private $factory;
-
+    private ExtensionFactory $factory;
     /** @var array<string, mixed> */
-    private $dependencies;
-
+    private array $dependencies;
     /** @var array<string, mixed> */
-    private $requirements;
+    private array $requirements;
 
     /**
      * ShowHandler constructor.
@@ -80,7 +70,7 @@ final class DoctorHandler implements QueryHandlerInterface
 
         $report = [
             'CompatInfoDB' => [
-                'version' => ApplicationInterface::VERSION,
+                'version' => $query->getVersion(),
             ],
             'PHP' => [
                 'version' => PHP_VERSION,

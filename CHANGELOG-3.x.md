@@ -9,7 +9,20 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- `.github/workflows/gh-pages.yml` workflow to generate dynamically UML graphs for documentation
 - Composer 2.2 compatibility for plugins
+- Support **Typed properties** features, now minimum PHP requirement is 7.4
+
+  Read more about this feature at :
+
+  - <https://stitcher.io/blog/typed-properties-in-php-74>
+  - <https://php.watch/versions/7.4/typed-properties>
+
+### Removed
+
+- drop support for PHP 7.3 has ended 6th December 2021.
+- `Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface::VERSION` constant that identify current version of Application
+- deprecated / End Of Life composer plugin `composer/package-versions-deprecated`, and use Composer 2.2 (LTS) equivalent feature
 
 ## [3.16.1] - 2021-12-19
 

@@ -1,17 +1,10 @@
 <?php declare(strict_types=1);
-
 /**
- * Checks requirements for running CompatInfoDB.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Infrastructure;
 
 use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
@@ -30,14 +23,16 @@ use function sprintf;
 use function version_compare;
 
 /**
+ * Checks requirements for running CompatInfoDB.
+ *
  * @since 3.0.0
+ * @author Laurent Laville
  */
 class ProjectRequirements extends RequirementCollection implements RequirementsInterface
 {
-    const REQUIRED_PHP_VERSION = '7.3.0';
+    public const REQUIRED_PHP_VERSION = '7.4.0';
 
-    /** @var string */
-    private $helpStatus;
+    private string $helpStatus;
 
     /**
      * ProjectRequirements constructor.

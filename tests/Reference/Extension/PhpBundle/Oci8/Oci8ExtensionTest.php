@@ -1,23 +1,19 @@
 <?php declare(strict_types=1);
-
 /**
- * Unit tests for PHP_CompatInfo_Db, oci8 extension Reference
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @subpackage Tests
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
-
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Oci8;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
 
 /**
+ * Unit tests for PHP_CompatInfo_Db, oci8 extension Reference
+ *
  * @since Release 2.15.0
+ * @author Laurent Laville
  */
 class Oci8ExtensionTest extends GenericTest
 {

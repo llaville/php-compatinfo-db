@@ -1,35 +1,29 @@
 <?php declare(strict_types=1);
-
 /**
- * Value Object of console db:build command.
+ * This file is part of the PHP_CompatInfoDB package.
  *
- * PHP version 7
- *
- * @category   PHP
- * @package    PHP_CompatInfo_Db
- * @author     Laurent Laville <pear@laurent-laville.org>
- * @license    https://opensource.org/licenses/BSD-3-Clause The 3-Clause BSD License
- * @link       http://bartlett.laurent-laville.org/php-compatinfo/
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Bartlett\CompatInfoDb\Application\Command\Build;
 
 use Bartlett\CompatInfoDb\Application\Command\CommandInterface;
+
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
+ * Value Object of console db:build command.
+ *
  * @since Release 3.5.0
+ * @author Laurent Laville
  */
 final class BuildCommand implements CommandInterface
 {
-    /** @var string  */
-    private $extension;
-    /** @var string  */
-    private $extMin;
-    /** @var string  */
-    private $phpMin;
-    /** @var OutputInterface  */
-    private $output;
+    private string $extension;
+    private string $extMin;
+    private string $phpMin;
+    private OutputInterface $output;
 
     public function __construct(string $extension, string $extMin, string $phpMin, OutputInterface $output)
     {
