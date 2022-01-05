@@ -5,7 +5,6 @@ on:
     push:
         branches:
             - master
-            - 3.17
         paths:
             - docs/**
     pull_request:

@@ -36,4 +36,7 @@ nav:
           - "Presentation": presentation/README.md
     - "Appendix":
           - "Supported versions": appendix/supported-versions.md
+          - "Versions 1.x": appendix/SUPPORTED-VERSIONS_1.x.md
+          - "Versions 2.x": appendix/SUPPORTED-VERSIONS_2.x.md
+          - "Versions 3.x": appendix/SUPPORTED-VERSIONS_3.x.md
           - "Supported extensions": appendix/SUPPORTED-EXTENSIONS.md
