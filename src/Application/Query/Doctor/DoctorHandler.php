@@ -61,7 +61,7 @@ final class DoctorHandler implements QueryHandlerInterface
         $withTests = $query->withTests();
         if ($withTests) {
             $executableFinder = new ExecutableFinder();
-            $phpunitBin = $executableFinder->find('phpunit', 'vendor/bin/simple-phpunit');
+            $phpunitBin = $executableFinder->find('phpunit');
         } else {
             $phpunitBin = null;
         }
