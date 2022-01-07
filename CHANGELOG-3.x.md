@@ -11,6 +11,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Lzf reference updated to version 1.7.0 (stable)
 
+### Removed
+
+- [drop support of Composer v1](https://github.com/llaville/php-compatinfo-db/issues/106)
+
 ## [3.17.0] - 2022-01-05
 
 ### Changed
