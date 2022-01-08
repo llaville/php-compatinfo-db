@@ -48,6 +48,9 @@
             "role": "Contributor"
         }
     ],
+    "bin": [
+        "bin/compatinfo-db"
+    ],
     "autoload": {
         "psr-4": {
             "Bartlett\\CompatInfoDb\\": "src/"

@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - new environment variable `APP_VENDOR_DIR` to specify `vendor` directory (auto-detection, if not declared)
+- `bin/compatinfo-db` is made available into the `bin-dir` (from composer config)
 
 ### Changed
 
