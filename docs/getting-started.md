@@ -53,9 +53,16 @@ DATABASE_URL="sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
 DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8"
 ```
 
-If you change database connection, you have to run following commands:
+If you change database connection, you have to run following command(s):
 
-* `vendor/bin/doctrine orm:schema-tool:create`
-* `bin/compatinfo-db db:init`
+- If you have CompatInfoDB 3.17 or lower
+  - `vendor/bin/doctrine orm:schema-tool:create`
+  - `bin/compatinfo-db db:init`
 
-At dependencies installation, Composer use the sqlite back-end. You need to set up in your environment the `DATABASE_URL` variable.
+  At dependencies installation, Composer use the sqlite back-end. You need to set up in your environment the `DATABASE_URL` variable.
+
+- If you have CompatInfoDB 3.18 or greater
+  - `bin/compatinfo-db db:create`
+
+  At first run of CompatInfoDB, `DATABASE_URL` will be set to use default SQLite connection
+

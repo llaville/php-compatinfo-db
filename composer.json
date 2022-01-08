@@ -62,23 +62,6 @@
             "Bartlett\\CompatInfoDb\\Tests\\": "tests/"
         }
     },
-    "scripts": {
-        "setup-database": [
-            "mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite",
-            "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
-        ],
-        "post-install-cmd": [
-            "@setup-database",
-            "vendor/bin/doctrine orm:schema-tool:create",
-            "bin/compatinfo-db db:init"
-        ],
-        "post-update-cmd": [
-            "@setup-database"
-        ]
-    },
-    "scripts-descriptions": {
-        "setup-database": "Initializes SQLite database from JSON files in data directory."
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {

@@ -97,7 +97,20 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $dbUrl = getenv('DATABASE_URL');
     if (false === $dbUrl) {
-        $dbUrl = 'sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite';
+        if (PATH_SEPARATOR === ';') {
+            // windows
+            $userHome = getenv('USERPROFILE');
+        } else {
+            // unix
+            $userHome = getenv('HOME');
+        }
+        $cacheDir = implode(DIRECTORY_SEPARATOR, [$userHome, '.cache', 'bartlett']);
+        $targetFile = 'compatinfo-db.sqlite';
+        if (!file_exists($cacheDir)) {
+            mkdir($cacheDir, 0755, true);
+        }
+        $dbUrl = sprintf('sqlite:///%s/%s', $cacheDir, $targetFile);
+        touch($cacheDir . DIRECTORY_SEPARATOR . $targetFile);
         putenv('DATABASE_URL=' . $dbUrl);
     }
     $connectionParams = ['url' => $dbUrl];

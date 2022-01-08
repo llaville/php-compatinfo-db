@@ -145,9 +145,7 @@ jobs:
             -   # Build Database
                 name: Build Database
                 run: |
-                    mkdir -p "${{ github.workspace }}/.cache/" && touch "${{ github.workspace }}/.cache/compatinfo-db.sqlite"
-                    vendor/bin/doctrine orm:schema-tool:create --ansi
-                    bin/compatinfo-db db:init --ansi
+                    bin/compatinfo-db db:create --ansi
 
             -   # Check Database
                 name: Check Database
