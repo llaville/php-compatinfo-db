@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- new environment variable `APP_VENDOR_DIR` to specify `vendor` directory (auto-detection, if not declared)
+
 ### Changed
 
 - Lzf reference updated to version 1.7.0 (stable)
