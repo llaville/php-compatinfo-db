@@ -24,6 +24,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [drop support of Composer v1](https://github.com/llaville/php-compatinfo-db/issues/106)
 - `symfony/phpunit-bridge` dependency (only used by `doctor --with-tests` command)
 - drop support of Doctrine DBAL v2, and raise minimum constraint to 3.2 to satisfy [Deprecated `AbstractPlatform::getName()](https://github.com/doctrine/dbal/commit/4b174ad06ec74d7678251dcacbf43977ae762554)
+- drop support of `composer/semver` v1 and v2
 
 ## [3.17.0] - 2022-01-05
 

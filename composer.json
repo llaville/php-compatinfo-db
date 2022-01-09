@@ -17,7 +17,7 @@
         "ext-phar": "*",
         "ext-spl": "*",
         "composer-runtime-api": "^2.0",
-        "composer/semver": "^1.0|^2.0|^3.0",
+        "composer/semver": "^3.0",
         "doctrine/orm": "^2.7",
         "doctrine/dbal": "^3.2",
         "symfony/cache": "^4.4|^5.0",
