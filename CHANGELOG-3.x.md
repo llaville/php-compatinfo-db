@@ -16,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Lzf reference updated to version 1.7.0 (stable)
+- Rdkafka reference updated to version 6.0.0 (stable)
 
 ### Removed
 

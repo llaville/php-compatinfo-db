@@ -12,5 +12,12 @@
         "rel_state": "beta",
         "php_min": "7.0.0",
         "php_max": "8.99.99"
+    },
+    {
+        "rel_version": "6.0.0",
+        "rel_date": "2022-01-07",
+        "rel_state": "stable",
+        "php_min": "7.0.0",
+        "php_max": "8.99.99"
     }
 ]
