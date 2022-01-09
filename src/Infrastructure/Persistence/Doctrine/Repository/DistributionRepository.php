@@ -15,6 +15,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\Extension
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformHydrator;
 
 use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Platforms\SqlitePlatform;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 
@@ -85,26 +86,27 @@ final class DistributionRepository implements DomainRepository
         $this->entityManager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         $conn = $this->entityManager->getConnection();
+        $dbPlatform = $conn->getDriver()->getDatabasePlatform();
 
-        if ($conn->getDriver()->getDatabasePlatform()->getName() === 'pdo_sqlite') {
+        if ($dbPlatform instanceof SqlitePlatform) {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = OFF;";
             $truncateQuery = "DELETE FROM";
         } else {
             $foreignKeyChecksQuery = "SET FOREIGN_KEY_CHECKS = 0;";
             $truncateQuery = "TRUNCATE TABLE";
         }
-        $conn->prepare($foreignKeyChecksQuery)->execute();
+        $conn->prepare($foreignKeyChecksQuery)->executeQuery();
 
-        foreach ($conn->getSchemaManager()->listTableNames() as $tableName) {
-            $this->entityManager->getConnection()->prepare($truncateQuery . ' ' . $tableName)->execute();
+        foreach ($conn->createSchemaManager()->listTableNames() as $tableName) {
+            $this->entityManager->getConnection()->prepare($truncateQuery . ' ' . $tableName)->executeQuery();
         }
 
-        if ($conn->getDriver()->getDatabasePlatform()->getName() === 'pdo_sqlite') {
+        if ($dbPlatform instanceof SqlitePlatform) {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = ON;";
         } else {
             $foreignKeyChecksQuery = "SET FOREIGN_KEY_CHECKS = 1;";
         }
-        $conn->prepare($foreignKeyChecksQuery)->execute();
+        $conn->prepare($foreignKeyChecksQuery)->executeQuery();
 
         $conn->getConfiguration()->setSQLLogger($logger);
     }
