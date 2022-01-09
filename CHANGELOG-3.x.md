@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Lzf reference updated to version 1.7.0 (stable)
 - Rdkafka reference updated to version 6.0.0 (stable)
+- add [composer config platform](https://getcomposer.org/doc/06-config.md#platform), following @remicollet [suggestion](https://github.com/llaville/php-compatinfo/pull/319)
 
 ### Removed
 
