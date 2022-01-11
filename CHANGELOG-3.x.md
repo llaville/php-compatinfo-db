@@ -7,9 +7,15 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [3.16.2] - 2022-01-11
+
 ### Changed
 
 - Composer 2.2 compatibility for plugins
+
+### Fixed
+
+- [#108](https://github.com/llaville/php-compatinfo-db/issues/108) : `Doctrine\Common\Annotations\AnnotationRegistry` not found
 
 ## [3.16.1] - 2021-12-19
 
@@ -446,7 +452,9 @@ replace old `ContainerService` that was introduced in version 2.13
 - [#55](https://github.com/llaville/php-compatinfo-db/issues/55) Wrong assertion results when method checks
 - [#57](https://github.com/llaville/php-compatinfo-db/issues/57) GenericTest - function_exists failed to proceed expected assertion with Polyfills
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.16.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.16.2...HEAD
+[3.16.2]: https://github.com/llaville/php-compatinfo-db/compare/3.16.1...3.16.2
+[3.16.1]: https://github.com/llaville/php-compatinfo-db/compare/3.16.0...3.16.1
 [3.16.0]: https://github.com/llaville/php-compatinfo-db/compare/3.15.0...3.16.0
 [3.15.0]: https://github.com/llaville/php-compatinfo-db/compare/3.14.0...3.15.0
 [3.14.0]: https://github.com/llaville/php-compatinfo-db/compare/3.13.0...3.14.0
