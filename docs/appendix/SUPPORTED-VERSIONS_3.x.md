@@ -7,6 +7,7 @@
 |         |            | igbinary 3.2.7    |         |         |         |
 |         |            | lzf 1.7.0         |         |         |         |
 |         |            | rdkafka 6.0.0     |         |         |         |
+|         |            | redis 5.3.6       |         |         |         |
 | 3.17.0  | 2022-01-05 |                   |  7.4.27 |  8.0.14 |  8.1.1  |
 
 | Version | Release    | Module            | PHP 7.3 | PHP 7.4 | PHP 8.0 | PHP 8.1 |
