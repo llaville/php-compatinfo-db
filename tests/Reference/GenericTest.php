@@ -393,7 +393,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     {
         $extension = $this->getReflectionExtension();
         $classes   = array_unique($extension->getClassNames());
-        $elements  = [];
 
         foreach ($classes as $classname) {
             try {
@@ -406,17 +405,15 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 /* Skip class alias */
                 continue;
             }
-
-            $elements = $elements + array_map(
+            $elements = array_map(
                 function ($value) use ($classname) {
                     return "$classname::$value";
                 },
                 array_keys($class->getConstants())
             );
-        }
-
-        foreach ($elements as $name) {
-            yield $name;
+            foreach ($elements as $name) {
+                yield $name;
+            }
         }
     }
 
