@@ -15,13 +15,11 @@
         "php_min": "5.2.0"
     },
     {
-        "ext_name_fk": "104",
         "name": "RedisClusterException",
         "ext_min": "2.2.8",
         "php_min": "5.2.0"
     },
     {
-        "ext_name_fk": "104",
         "name": "RedisCluster",
         "ext_min": "2.2.8",
         "php_min": "5.2.0"
