@@ -405,14 +405,10 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 /* Skip class alias */
                 continue;
             }
-            $elements = array_map(
-                function ($value) use ($classname) {
-                    return "$classname::$value";
-                },
-                array_keys($class->getConstants())
-            );
-            foreach ($elements as $name) {
-                yield $name;
+
+            foreach ($class->getReflectionConstants() as $const) {
+                $declaringClass = $const->getDeclaringClass();
+                yield "{$declaringClass->getName()}::{$const->getName()}";
             }
         }
     }
