@@ -238,5 +238,95 @@
         "name": "OPT_BACKOFF_CAP",
         "ext_min": "5.3.5RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_NONE",
+        "ext_min": "4.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_LZF",
+        "ext_min": "4.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "REDIS_STREAM",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "OPT_REPLY_LITERAL",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "SERIALIZER_NONE",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "SERIALIZER_PHP",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "SERIALIZER_IGBINARY",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "SERIALIZER_MSGPACK",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "SERIALIZER_JSON",
+        "ext_min": "5.0.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "OPT_COMPRESSION_LEVEL",
+        "ext_min": "5.1.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_ZSTD",
+        "ext_min": "5.1.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_ZSTD_MIN",
+        "ext_min": "5.1.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_ZSTD_DEFAULT",
+        "ext_min": "5.1.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "COMPRESSION_ZSTD_MAX",
+        "ext_min": "5.1.0RC1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "OPT_NULL_MULTIBULK_AS_NULL",
+        "ext_min": "5.3.2RC1",
+        "php_min": "7.0.0"
     }
 ]
