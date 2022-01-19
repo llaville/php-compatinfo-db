@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "IntlDateFormatter",
+        "name": "RELATIVE_FULL",
+        "ext_min": "8.0.0alpha1",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "class_name": "IntlDateFormatter",
+        "name": "RELATIVE_LONG",
+        "ext_min": "8.0.0alpha1",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "class_name": "IntlDateFormatter",
+        "name": "RELATIVE_MEDIUM",
+        "ext_min": "8.0.0alpha1",
+        "php_min": "8.0.0alpha1"
+    },
+    {
+        "class_name": "IntlDateFormatter",
+        "name": "RELATIVE_SHORT",
+        "ext_min": "8.0.0alpha1",
+        "php_min": "8.0.0alpha1"
+    }
+]
