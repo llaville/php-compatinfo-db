@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "Normalizer",
+        "name": "FORM_KC_CF",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=56"
+            }
+        ]
+    },
+    {
+        "class_name": "Normalizer",
+        "name": "NFKC_CF",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=56"
+            }
+        ]
+    }
+]

@@ -571,7 +571,7 @@ final class InitHandler implements QueryHandlerInterface
 
         yield 'intl' => [
             'classes'    => ['1', '2', '55', '70', '81'],
-            'const'      => ['1', '2', '55', '70', '74'],
+            'const'      => ['1', '2', '55', '70', '73', '74'],
             'constants'  => ['1', '2'],
             'functions'  => ['1', '2', '55', '71', '73'],
             'iniEntries' => ['1', '3'],
