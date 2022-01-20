@@ -645,6 +645,29 @@ final class ReleaseHandler implements CommandHandlerInterface
         $static = false;
         yield $refName => [$ext, $major, $entry, $names, $static];
 
+        $refName = 'xmlrpc';
+        $ext     = 'functions';
+        $major   = '41';
+        $entry   = 'php_max';
+        $names   = [
+            'xmlrpc_decode'                         => $this->latestPhpVersion['74'],
+            'xmlrpc_decode_request'                 => $this->latestPhpVersion['74'],
+            'xmlrpc_encode'                         => $this->latestPhpVersion['74'],
+            'xmlrpc_encode_request'                 => $this->latestPhpVersion['74'],
+            'xmlrpc_get_type'                       => $this->latestPhpVersion['74'],
+            'xmlrpc_is_fault'                       => $this->latestPhpVersion['74'],
+            'xmlrpc_parse_method_descriptions'      => $this->latestPhpVersion['74'],
+            'xmlrpc_server_add_introspection_data'  => $this->latestPhpVersion['74'],
+            'xmlrpc_server_call_method'             => $this->latestPhpVersion['74'],
+            'xmlrpc_server_create'                  => $this->latestPhpVersion['74'],
+            'xmlrpc_server_destroy'                 => $this->latestPhpVersion['74'],
+            'xmlrpc_server_register_introspection_callback'
+                                                    => $this->latestPhpVersion['74'],
+            'xmlrpc_server_register_method'         => $this->latestPhpVersion['74'],
+            'xmlrpc_set_type'                       => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
         $refName = 'zlib';
         $ext     = 'functions';
         $major   = '40';
