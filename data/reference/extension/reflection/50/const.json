@@ -1,44 +1,93 @@
 [
     {
         "class_name": "ReflectionClass",
-        "name": "IS_IMPLICIT_ABSTRACT",
+        "name": "IMPLICIT_ABSTRACT",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     },
     {
         "class_name": "ReflectionClass",
-        "name": "IS_EXPLICIT_ABSTRACT",
+        "name": "EXPLICIT_ABSTRACT",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     },
     {
         "class_name": "ReflectionClass",
-        "name": "IS_FINAL",
+        "name": "FINAL",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     },
     {
         "class_name": "ReflectionProperty",
-        "name": "IS_STATIC",
+        "name": "STATIC",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     },
     {
         "class_name": "ReflectionProperty",
-        "name": "IS_PUBLIC",
+        "name": "PUBLIC",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     },
     {
         "class_name": "ReflectionProperty",
-        "name": "IS_PROTECTED",
+        "name": "PROTECTED",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     },
     {
         "class_name": "ReflectionProperty",
-        "name": "IS_PRIVATE",
+        "name": "PRIVATE",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "STATIC",
+        "ext_min": "5.0.0",
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "PUBLIC",
+        "ext_min": "5.0.0",
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "PROTECTED",
+        "ext_min": "5.0.0",
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "PRIVATE",
+        "ext_min": "5.0.0",
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "ABSTRACT",
+        "ext_min": "5.0.0",
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "FINAL",
+        "ext_min": "5.0.0",
+        "php_min": "5.0.0",
+        "php_max": "5.1.2"
     }
 ]
