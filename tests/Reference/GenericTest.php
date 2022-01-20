@@ -408,6 +408,10 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
 
             foreach ($class->getReflectionConstants() as $const) {
                 $declaringClass = $const->getDeclaringClass();
+                if ($declaringClass->getName() !== $classname) {
+                    // inherit constants from other extension
+                    continue;
+                }
                 yield "{$declaringClass->getName()}::{$const->getName()}";
             }
         }
