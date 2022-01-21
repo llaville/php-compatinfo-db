@@ -30,6 +30,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `symfony/phpunit-bridge` dependency (only used by `doctor --with-tests` command)
 - drop support of Doctrine DBAL v2, and raise minimum constraint to 3.2 to satisfy [Deprecated `AbstractPlatform::getName()](https://github.com/doctrine/dbal/commit/4b174ad06ec74d7678251dcacbf43977ae762554)
 - drop support of `composer/semver` v1 and v2
+- drop support of PECL `xmlrpc` extension (PHP 8.0 or greater)
 
 ### Fixed
 

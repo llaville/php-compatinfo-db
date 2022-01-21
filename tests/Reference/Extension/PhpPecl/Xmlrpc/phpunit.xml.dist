@@ -20,7 +20,7 @@
     </filter>
     <testsuites>
         <testsuite name="Xmlrpc Reference Test Suite">
-            <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
+            <directory phpVersion="8.0.0" phpVersionOperator="lt" prefix="" suffix="ExtensionTest.php">tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
