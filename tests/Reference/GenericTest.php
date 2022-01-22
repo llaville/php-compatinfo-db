@@ -393,7 +393,6 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     {
         $extension = $this->getReflectionExtension();
         $classes   = array_unique($extension->getClassNames());
-        $elements  = [];
 
         foreach ($classes as $classname) {
             try {
@@ -407,16 +406,14 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
                 continue;
             }
 
-            $elements = $elements + array_map(
-                function ($value) use ($classname) {
-                    return "$classname::$value";
-                },
-                array_keys($class->getConstants())
-            );
-        }
-
-        foreach ($elements as $name) {
-            yield $name;
+            foreach ($class->getReflectionConstants() as $const) {
+                $declaringClass = $const->getDeclaringClass();
+                if ($declaringClass->getName() !== $classname) {
+                    // inherit constants from other extension
+                    continue;
+                }
+                yield "{$declaringClass->getName()}::{$const->getName()}";
+            }
         }
     }
 
@@ -471,7 +468,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test than all referenced ini entries exists
+     * Test that all referenced ini entries exists
      *
      * @group  reference
      * @return void
@@ -506,7 +503,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test that each ini entries are defined in reference
+     * Test that each ini entry is defined in reference
      *
      * @group  reference
      * @return void
@@ -538,7 +535,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test than all referenced functions exists
+     * Test that all referenced functions exists
      *
      * @group  reference
      * @return void
@@ -593,7 +590,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test that each functions are defined in reference
+     * Test that each function is defined in reference
      *
      * @group  reference
      * @return void
@@ -618,7 +615,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test than all referenced constants exists
+     * Test that all referenced constants exists
      *
      * @group  reference
      * @return void
@@ -653,7 +650,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test that each constants are defined in reference
+     * Test that each constant is defined in reference
      *
      * @group  reference
      * @return void
@@ -678,7 +675,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test than all referenced classes exists
+     * Test that all referenced classes exists
      *
      * @group  reference
      * @return void
@@ -719,7 +716,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test that each classes are defined in reference
+     * Test that each class is defined in reference
      *
      * @group  reference
      * @return void
@@ -744,7 +741,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test than all referenced class methods exists
+     * Test that all referenced class methods exists
      *
      * @group  reference
      * @return void
@@ -818,7 +815,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test that each class methods are defined in reference
+     * Test that each class method is defined in reference
      *
      * @group  reference
      * @return void
@@ -852,7 +849,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test that each class constants are defined in reference
+     * Test that each class constant is defined in reference
      *
      * @group  reference
      * @return void
@@ -877,7 +874,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     }
 
     /**
-     * Test than all referenced interfaces exists
+     * Test that all referenced interfaces exists
      *
      * @group  reference
      * @return void

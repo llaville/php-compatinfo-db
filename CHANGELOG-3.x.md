@@ -7,21 +7,37 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [3.17.1] - 2022-01-11
+## [3.18.0] - 2022-01-22
 
-### Fixed
+### Added
 
-- [#108](https://github.com/llaville/php-compatinfo-db/issues/108) : `Doctrine\Common\Annotations\AnnotationRegistry` not found
-
-## [3.16.2] - 2022-01-11
+- PHP 8.1.2 support
+- PHP 8.0.15 support
+- new environment variable `APP_VENDOR_DIR` that identify `vendor` directory (auto-detection)
+- `bin/compatinfo-db` is made available into the `bin-dir` (from composer config)
+- new command `db:create` to setup database and load its contents (replaces composer script initialization and `db:init` command)
 
 ### Changed
 
-- Composer 2.2 compatibility for plugins
+- Igbinary reference updated to version 3.2.7 (stable)
+- Lzf reference updated to version 1.7.0 (stable)
+- Msgpack reference updated to version 2.2.0RC1 (beta)
+- Rdkafka reference updated to version 6.0.0 (stable)
+- Redis reference updated to version 5.3.6 (stable)
+- add [composer config platform](https://getcomposer.org/doc/06-config.md#platform), following @remicollet [suggestion](https://github.com/llaville/php-compatinfo/pull/319)
+- PHAR distribution compiled with [box-project](https://github.com/box-project/box) included now latest `data` references to be able to create external database
+
+### Removed
+
+- [drop support of Composer v1](https://github.com/llaville/php-compatinfo-db/issues/106)
+- `symfony/phpunit-bridge` dependency (only used by `doctor --with-tests` command)
+- drop support of Doctrine DBAL v2, and raise minimum constraint to 3.2 to satisfy [Deprecated `AbstractPlatform::getName()](https://github.com/doctrine/dbal/commit/4b174ad06ec74d7678251dcacbf43977ae762554)
+- drop support of `composer/semver` v1 and v2
+- drop support of PECL `xmlrpc` extension (PHP 8.0 or greater)
 
 ### Fixed
 
-- [#108](https://github.com/llaville/php-compatinfo-db/issues/108) : `Doctrine\Common\Annotations\AnnotationRegistry` not found
+- [#109](https://github.com/llaville/php-compatinfo-db/issues/109) Class constants not well detected
 
 ## [3.17.0] - 2022-01-05
 
@@ -477,9 +493,8 @@ replace old `ContainerService` that was introduced in version 2.13
 - [#55](https://github.com/llaville/php-compatinfo-db/issues/55) Wrong assertion results when method checks
 - [#57](https://github.com/llaville/php-compatinfo-db/issues/57) GenericTest - function_exists failed to proceed expected assertion with Polyfills
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.17.1...HEAD
-[3.17.1]: https://github.com/llaville/php-compatinfo-db/compare/3.17.0...3.17.1
-[3.16.2]: https://github.com/llaville/php-compatinfo-db/compare/3.16.1...3.16.2
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.18.0...HEAD
+[3.18.0]: https://github.com/llaville/php-compatinfo-db/compare/3.17.0...3.18.0
 [3.17.0]: https://github.com/llaville/php-compatinfo-db/compare/3.16.0...3.17.0
 [3.16.1]: https://github.com/llaville/php-compatinfo-db/compare/3.16.0...3.16.1
 [3.16.0]: https://github.com/llaville/php-compatinfo-db/compare/3.15.0...3.16.0

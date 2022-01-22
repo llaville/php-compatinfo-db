@@ -97,6 +97,12 @@
     },
     {
         "class_name": "http\\Url",
+        "name": "STRIP_PATH",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Url",
         "name": "STRIP_QUERY",
         "ext_min": "2.0.0",
         "php_min": "5.3.0"
@@ -597,6 +603,36 @@
         "class_name": "http\\Client\\Curl\\User",
         "name": "POLL_REMOVE",
         "ext_min": "2.6.0beta1",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "MATCH_LOOSE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "MATCH_CASE",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "MATCH_WORD",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "MATCH_FULL",
+        "ext_min": "2.0.0",
+        "php_min": "5.3.0"
+    },
+    {
+        "class_name": "http\\Header",
+        "name": "MATCH_STRICT",
+        "ext_min": "2.0.0",
         "php_min": "5.3.0"
     }
 ]

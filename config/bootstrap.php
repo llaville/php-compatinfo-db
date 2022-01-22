@@ -29,6 +29,7 @@ foreach ($possibleAutoloadPaths as $possibleAutoloadPath) {
     if (file_exists($possibleAutoloadPath . DIRECTORY_SEPARATOR . $autoloader)) {
         require_once $possibleAutoloadPath . DIRECTORY_SEPARATOR . $autoloader;
         $isAutoloadFound = true;
+        $vendorDir = $possibleAutoloadPath . DIRECTORY_SEPARATOR . dirname($autoloader);
         break;
     }
 }
@@ -49,4 +50,4 @@ $version = InstalledVersions::getPrettyVersion('bartlett/php-compatinfo-db');
 
 putenv('APP_ENV=' . ($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod'));
 putenv('APP_PROXY_DIR=' . ($_SERVER['APP_PROXY_DIR'] ?? $_ENV['APP_PROXY_DIR'] ?? '/tmp/bartlett/php-compatinfo-db/' . $version . '/proxies'));
-putenv('SYMFONY_DEPRECATIONS_HELPER=' . ($_SERVER['SYMFONY_DEPRECATIONS_HELPER'] ?? $_ENV['SYMFONY_DEPRECATIONS_HELPER'] ?? 'disabled'));
+putenv('APP_VENDOR_DIR=' . $vendorDir);

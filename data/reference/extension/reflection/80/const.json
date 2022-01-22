@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "ReflectionClassConstant",
+        "name": "IS_PUBLIC",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "ReflectionClassConstant",
+        "name": "IS_PROTECTED",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "ReflectionClassConstant",
+        "name": "IS_PRIVATE",
+        "ext_min": "8.0.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "class_name": "ReflectionAttribute",
+        "name": "IS_INSTANCEOF",
+        "ext_min": "8.0.0alpha1",
+        "php_min": "8.0.0alpha1"
+    }
+]

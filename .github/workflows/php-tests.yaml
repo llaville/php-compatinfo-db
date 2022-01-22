@@ -83,7 +83,7 @@ jobs:
                     -
                         os: ubuntu-latest
                         php: 8.0
-                        extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mailparse,mbstring,mcrypt,memcache,memcached,msgpack,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,pecl_http,rar,rdkafka,readline,redis,reflection,session,shmop,simplexml,sockets,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xlswriter,xml,xmldiff,xmlrpc-beta,xmlreader,xmlwriter,xsl,yac,zip,zlib
+                        extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mailparse,mbstring,mcrypt,memcache,memcached,msgpack,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,raphf,pecl_http,rar,rdkafka,readline,redis,reflection,session,shmop,simplexml,sockets,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xlswriter,xml,xmldiff,xmlreader,xmlwriter,xsl,yac,zip,zlib
                         tools: phpunit
                     -
                         os: ubuntu-latest
@@ -145,9 +145,7 @@ jobs:
             -   # Build Database
                 name: Build Database
                 run: |
-                    mkdir -p "${{ github.workspace }}/.cache/" && touch "${{ github.workspace }}/.cache/compatinfo-db.sqlite"
-                    vendor/bin/doctrine orm:schema-tool:create --ansi
-                    bin/compatinfo-db db:init --ansi
+                    bin/compatinfo-db db:create --ansi
 
             -   # Check Database
                 name: Check Database

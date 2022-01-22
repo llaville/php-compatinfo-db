@@ -16,6 +16,13 @@ all functions, constants, classes, interfaces on PHP standard distribution and a
 
 This database is currently only support by its initial project [php-compatinfo](https://github.com/llaville/php-compatinfo)
 
+## Compatibility
+
+* CompatInfoDB 3.6.0 to 3.16.x works with PHP >= 7.2 and CompatInfo 5.5
+* CompatInfoDB 3.6.0 to 3.16.x works with PHP >= 7.4 and CompatInfo 6.0
+* CompatInfoDB 3.17.x works with PHP >= 7.4 and CompatInfo 6.1
+* CompatInfoDB 3.18.x works with PHP >= 7.4 and CompatInfo 6.2
+
 ## Documentation
 
 All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/3.x),

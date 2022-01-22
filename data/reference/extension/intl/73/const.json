@@ -1,0 +1,98 @@
+[
+    {
+        "class_name": "Normalizer",
+        "name": "FORM_KC_CF",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=56"
+            }
+        ]
+    },
+    {
+        "class_name": "Normalizer",
+        "name": "NFKC_CF",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=56"
+            }
+        ]
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "ASCII",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=58"
+            }
+        ]
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "HIGHLY_RESTRICTIVE",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=58"
+            }
+        ]
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "MODERATELY_RESTRICTIVE",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=58"
+            }
+        ]
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "MINIMALLY_RESTRICTIVE",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=58"
+            }
+        ]
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "UNRESTRICTIVE",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=58"
+            }
+        ]
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "SINGLE_SCRIPT_RESTRICTIVE",
+        "ext_min": "7.3.0alpha1",
+        "php_min": "7.3.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=58"
+            }
+        ]
+    }
+]

@@ -42,7 +42,9 @@ class InitCommand extends AbstractCommand implements CommandInterface
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $io = new Style($input, $output);
-        $io->caution('This operation should not be executed in a production environment!');
+        if (getenv('APP_ENV') === 'prod') {
+            $io->caution('This operation should not be executed in a production environment!');
+        }
 
         $relVersion = $input->getArgument('rel_version') ?? null;
 

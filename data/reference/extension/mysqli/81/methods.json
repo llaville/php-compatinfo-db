@@ -4,5 +4,11 @@
         "name": "fetch_column",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "class_name": "mysqli_sql_exception",
+        "name": "getSqlState",
+        "ext_min": "8.1.2RC1",
+        "php_min": "8.1.2RC1"
     }
 ]

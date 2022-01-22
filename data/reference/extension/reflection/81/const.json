@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "ReflectionProperty",
+        "name": "IS_READONLY",
+        "ext_min": "8.1.0beta1",
+        "php_min": "8.1.0beta1"
+    },
+    {
+        "class_name": "ReflectionClassConstant",
+        "name": "IS_FINAL",
+        "ext_min": "8.1.0beta1",
+        "php_min": "8.1.0beta1"
+    }
+]

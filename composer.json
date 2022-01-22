@@ -16,10 +16,11 @@
         "ext-pdo": "*",
         "ext-phar": "*",
         "ext-spl": "*",
-        "composer/semver": "^1.0|^2.0|^3.0",
+        "composer-runtime-api": "^2.0",
+        "composer/semver": "^3.0",
         "doctrine/annotations": "^1.13",
         "doctrine/orm": "^2.7",
-        "doctrine/dbal": "^2.13.1|^3.1.4",
+        "doctrine/dbal": "^3.2",
         "symfony/cache": "^4.4|^5.0",
         "symfony/config": "^4.4|^5.0",
         "symfony/console": "^4.4|^5.0",
@@ -34,8 +35,7 @@
     "require-dev": {
         "bartlett/graph-uml": "^1.2",
         "composer/composer": "^2.0",
-        "psr/log": "^1.0",
-        "symfony/phpunit-bridge": "^5.1"
+        "psr/log": "^1.0"
     },
     "authors": [
         {
@@ -49,6 +49,9 @@
             "role": "Contributor"
         }
     ],
+    "bin": [
+        "bin/compatinfo-db"
+    ],
     "autoload": {
         "psr-4": {
             "Bartlett\\CompatInfoDb\\": "src/"
@@ -60,26 +63,12 @@
             "Bartlett\\CompatInfoDb\\Tests\\": "tests/"
         }
     },
-    "scripts": {
-        "setup-database": [
-            "mkdir -p ${HOME}/.cache/bartlett/ && touch ${HOME}/.cache/bartlett/compatinfo-db.sqlite",
-            "export DATABASE_URL=sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
-        ],
-        "post-install-cmd": [
-            "@setup-database",
-            "vendor/bin/doctrine orm:schema-tool:create",
-            "bin/compatinfo-db db:init"
-        ],
-        "post-update-cmd": [
-            "@setup-database"
-        ]
-    },
-    "scripts-descriptions": {
-        "setup-database": "Initializes SQLite database from JSON files in data directory."
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "platform": {
+            "php": "7.4.0"
+        },
         "sort-packages": true,
         "optimize-autoloader": true,
         "allow-plugins": {

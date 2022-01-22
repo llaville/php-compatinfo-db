@@ -1,7 +1,6 @@
 {
     "alias": "compatinfo-db.phar",
-    "directories": ["bin", "config", "src", "vendor"],
+    "directories": ["bin", "config", "data", "src", "vendor"],
     "compression": "GZ",
-    "main": "bin/compatinfo-db",
     "metadata": "box-metadata.php"
 }

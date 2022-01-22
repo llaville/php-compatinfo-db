@@ -59,9 +59,6 @@ final class ExtensionRepository implements DomainRepository
             return null;
         }
 
-        // @FIXME doctrine logger
-        //$logger = $this->entityManager->getConfiguration()->getSQLLogger(); var_dump($logger->queries);
-
         return (new ExtensionHydrator())->toDomain($entity);
     }
 }
