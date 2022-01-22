@@ -9,6 +9,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Added
 
+- PHP 8.1.2 support
 - PHP 8.0.15 support
 - new environment variable `APP_VENDOR_DIR` that identify `vendor` directory (auto-detection)
 - `bin/compatinfo-db` is made available into the `bin-dir` (from composer config)
