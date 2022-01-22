@@ -8,5 +8,10 @@
         "name": "MYSQLI_REFRESH_REPLICA",
         "ext_min": "8.1.0alpha1",
         "php_min": "8.1.0alpha1"
+    },
+    {
+        "name": "MYSQLI_IS_MARIADB",
+        "ext_min": "8.1.2RC1",
+        "php_min": "8.1.2RC1"
     }
 ]
