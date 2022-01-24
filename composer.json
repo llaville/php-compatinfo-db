@@ -34,7 +34,6 @@
     },
     "require-dev": {
         "bartlett/graph-uml": "^1.2",
-        "composer/composer": "^2.0",
         "psr/log": "^1.0"
     },
     "authors": [
