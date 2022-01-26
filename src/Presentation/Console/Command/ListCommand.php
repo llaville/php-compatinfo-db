@@ -63,7 +63,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $listQuery = new ListQuery(
             $input->getOption('all'),
             !$input->getOption('all'),
-            $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db'),
+            $app->getInstalledVersion(true),
             $filters
         );
 

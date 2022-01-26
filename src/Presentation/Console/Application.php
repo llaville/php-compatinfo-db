@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use Composer\InstalledVersions;
+use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
 
 use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
 use Symfony\Component\Config\FileLocator;
@@ -26,7 +26,6 @@ use Phar;
 use function basename;
 use function dirname;
 use function sprintf;
-use function substr;
 
 /**
  * Symfony Console Application to handle the CompatInfo database.
@@ -40,13 +39,13 @@ class Application extends SymfonyApplication implements ApplicationInterface
 
     /**
      * Application constructor.
-     *
-     * @param string|null $version (optional) auto-detect
      */
-    public function __construct(?string $version = null)
+    public function __construct()
     {
-        $version = $version ?? $this->getInstalledVersion(false);
-        parent::__construct(self::NAME, $version);
+        parent::__construct(
+            self::NAME,
+            $this->getInstalledVersion(false)
+        );
     }
 
     /**
@@ -165,7 +164,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
         return sprintf(
             '<info>%s</info> version <comment>%s</comment>',
             $this->getName(),
-            $this->getInstalledVersion(false)
+            $this->getVersion()
         );
     }
 
@@ -174,20 +173,14 @@ class Application extends SymfonyApplication implements ApplicationInterface
      */
     public function getLongVersion(): string
     {
-        return sprintf(
-            '<info>%s</info> version <comment>%s</comment>',
-            $this->getName(),
-            $this->getInstalledVersion()
-        );
+        return $this->getInstalledVersion();
     }
 
-    public function getInstalledVersion(bool $withRef = true, string $packageName = 'bartlett/php-compatinfo-db'): string
+    /**
+     * {@inheritDoc}
+     */
+    public function getInstalledVersion(bool $withRef = true): ?string
     {
-        $version = InstalledVersions::getPrettyVersion($packageName);
-        if (!$withRef) {
-            return $version;
-        }
-        $commitHash = InstalledVersions::getReference($packageName);
-        return sprintf('%s@%s', $version, substr($commitHash, 0, 7));
+        return InstalledVersions::getPrettyVersion('bartlett/php-compatinfo-db', $withRef);
     }
 }

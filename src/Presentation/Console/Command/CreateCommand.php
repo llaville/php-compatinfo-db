@@ -92,7 +92,7 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
 
-        $appVersion = $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db');
+        $appVersion = $app->getInstalledVersion(true);
 
         $io->writeln('Loading database contents...');
 

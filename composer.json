@@ -75,6 +75,9 @@
         }
     },
     "extra": {
-        "enable-patching": true
+        "enable-patching": true,
+        "branch-alias": {
+            "dev-master": "3.19.x-dev"
+        }
     }
 }

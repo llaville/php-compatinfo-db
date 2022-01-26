@@ -7,6 +7,15 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- `about` command to display current long version and more information about this package.
+
+### Changed
+
+- option `--version` display now only long version without application description.
+- enhance how is displayed application version installed : Learn more on discussion [116](https://github.com/llaville/php-compatinfo-db/discussions/116)
+
 ## [3.18.0] - 2022-01-22
 
 ### Added
