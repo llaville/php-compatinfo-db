@@ -16,6 +16,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - option `--version` display now only long version without application description.
 - enhance how is displayed application version installed : Learn more on discussion [116](https://github.com/llaville/php-compatinfo-db/discussions/116)
 
+### Fixed
+
+- [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
+
 ## [3.18.0] - 2022-01-22
 
 ### Added

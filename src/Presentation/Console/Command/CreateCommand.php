@@ -14,12 +14,15 @@ use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
+use Doctrine\DBAL\Exception;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\Exception\ORMException;
 use Doctrine\ORM\Tools\SchemaTool;
-use Doctrine\ORM\Tools\ToolsException;
 
+use Doctrine\ORM\Tools\ToolsException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Throwable;
 
 /**
  * Create the database schema and load its contents from JSON files
@@ -77,8 +80,22 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         $io->writeln('Creating database schema...');
 
         try {
-            $schemaTool->createSchema($metadatas);
-        } catch (ToolsException $e) {
+            $schema = $schemaTool->getSchemaFromMetadata($metadatas);
+            if (count($schema->getTables())) {
+                $io->error('Database already exists. Use `db:init -f` command to reset contents.');
+                return false;
+            }
+
+            $conn = $this->entityManager->getConnection();
+            $createSchemaSql = $schema->toSql($conn->getDatabasePlatform());
+            foreach ($createSchemaSql as $sql) {
+                try {
+                    $conn->executeQuery($sql);
+                } catch (Throwable $e) {
+                    throw ToolsException::schemaToolFailure($sql, $e);
+                }
+            }
+        } catch (ORMException | Exception $e) {
             $io->error($e->getMessage());
             return false;
         }
