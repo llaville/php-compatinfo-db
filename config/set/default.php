@@ -119,8 +119,8 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         $cacheDir = dirname($url['path']);
         if (!file_exists($cacheDir)) {
             mkdir($cacheDir, 0755, true);
+            touch($url['path']);
         }
-        touch($url['path']);
     }
     $connectionParams = ['url' => $dbUrl];
 
