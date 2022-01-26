@@ -23,6 +23,7 @@ use Doctrine\ORM\Tools\ToolsException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Throwable;
+use function str_contains;
 
 /**
  * Create the database schema and load its contents from JSON files
@@ -81,10 +82,6 @@ class CreateCommand extends AbstractCommand implements CommandInterface
 
         try {
             $schema = $schemaTool->getSchemaFromMetadata($metadatas);
-            if (count($schema->getTables())) {
-                $io->error('Database already exists. Use `db:init -f` command to reset contents.');
-                return false;
-            }
 
             $conn = $this->entityManager->getConnection();
             $createSchemaSql = $schema->toSql($conn->getDatabasePlatform());
@@ -92,6 +89,10 @@ class CreateCommand extends AbstractCommand implements CommandInterface
                 try {
                     $conn->executeQuery($sql);
                 } catch (Throwable $e) {
+                    if (str_contains($e->getMessage(), 'already exists')) {
+                        $io->error('Database already exists. Use `db:init -f` command to reset contents.');
+                        return false;
+                    }
                     throw ToolsException::schemaToolFailure($sql, $e);
                 }
             }
