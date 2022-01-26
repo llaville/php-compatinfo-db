@@ -44,7 +44,7 @@ if ($isAutoloadFound === false) {
     );
 }
 
-use Composer\InstalledVersions;
+use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
 
 $version = InstalledVersions::getPrettyVersion('bartlett/php-compatinfo-db');
 
