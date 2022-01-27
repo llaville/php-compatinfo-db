@@ -95,23 +95,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->alias(ConstantRepository::class, InfrastructureConstantRepository::class);
     $services->alias(ClassRepository::class, InfrastructureClassRepository::class);
 
-    if (PATH_SEPARATOR === ';') {
-        // windows
-        $userHome = getenv('USERPROFILE');
-    } else {
-        // unix
-        $userHome = getenv('HOME');
-    }
-    $dbUrl = getenv('DATABASE_URL');
-    if (false === $dbUrl) {
-        $cacheDir = implode(DIRECTORY_SEPARATOR, [$userHome, '.cache', 'bartlett']);
-        $targetFile = 'compatinfo-db.sqlite';
-        $dbUrl = sprintf('sqlite:///%s/%s', $cacheDir, $targetFile);
-        putenv('DATABASE_URL=' . $dbUrl);
-    } else {
-        $dbUrl = str_replace(['${HOME}', '%HOME%'], $userHome, $dbUrl);
-    }
-
+    $dbUrl = getenv('APP_DATABASE_URL');
     $url = preg_replace('#^((?:pdo_)?sqlite3?):///#', '$1://localhost/', $dbUrl);
     $url = parse_url($url);
 

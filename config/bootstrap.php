@@ -46,8 +46,26 @@ if ($isAutoloadFound === false) {
 
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
 
+if (PATH_SEPARATOR === ';') {
+    // windows
+    $userHome = getenv('USERPROFILE');
+} else {
+    // unix
+    $userHome = getenv('HOME');
+}
+$cacheDir = implode(DIRECTORY_SEPARATOR, [$userHome, '.cache', 'bartlett']);
+$dbUrl = getenv('DATABASE_URL');
+if (false === $dbUrl) {
+    $targetFile = 'compatinfo-db.sqlite';
+    $dbUrl = sprintf('sqlite:///%s/%s', $cacheDir, $targetFile);
+} else {
+    $dbUrl = str_replace(['${HOME}', '%HOME%'], $userHome, $dbUrl);
+}
+putenv('APP_DATABASE_URL=' . $dbUrl);
+
 $version = InstalledVersions::getPrettyVersion('bartlett/php-compatinfo-db');
 
 putenv('APP_ENV=' . ($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod'));
 putenv('APP_PROXY_DIR=' . ($_SERVER['APP_PROXY_DIR'] ?? $_ENV['APP_PROXY_DIR'] ?? '/tmp/bartlett/php-compatinfo-db/' . $version . '/proxies'));
 putenv('APP_VENDOR_DIR=' . $vendorDir);
+putenv('APP_CACHE_DIR=' . $cacheDir);
