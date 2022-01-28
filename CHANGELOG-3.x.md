@@ -17,6 +17,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - option `--version` display now only long version without application description.
 - enhance how is displayed application version installed : Learn more on discussion [116](https://github.com/llaville/php-compatinfo-db/discussions/116)
+- Checker service handle now, and print into diagnostic the application environment variables (keys/values).
+- Launch an auto diagnostic when a `db:*` command (excluding `db:create`) is run.
 
 ### Fixed
 

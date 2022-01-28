@@ -10,6 +10,7 @@ namespace Bartlett\CompatInfoDb\Application\Service;
 use Bartlett\CompatInfoDb\Infrastructure\RequirementsInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
+use function getenv;
 use function sprintf;
 use const PHP_VERSION;
 
@@ -26,25 +27,27 @@ final class Checker
 
     /**
      * Checker constructor.
-     *
-     * @param StyleInterface $io
      */
     public function __construct(StyleInterface $io)
     {
         $this->io = $io;
     }
 
-    /**
-     * @param string $name
-     */
     public function setAppName(string $name): void
     {
         $this->appName = $name;
     }
 
-    /**
-     * @param RequirementsInterface $requirements
-     */
+    public function getAppEnv(): array
+    {
+        $keys = ['APP_ENV', 'APP_DATABASE_URL', 'APP_PROXY_DIR', 'APP_VENDOR_DIR', 'APP_CACHE_DIR'];
+        $env = [];
+        foreach ($keys as $key) {
+            $env[$key] = getenv($key);
+        }
+        return $env;
+    }
+
     public function printDiagnostic(RequirementsInterface $requirements): void
     {
         $this->io->title($this->appName . ' Requirements Checker');
@@ -72,6 +75,13 @@ final class Checker
         }
         $this->io->listing($messages['ok'], ['type' => '[x]', 'style' => 'fg=green']);
         $this->io->listing($messages['ko'], ['type' => '[ ]', 'style' => 'fg=red']);
+
+        $env = [];
+        foreach ($this->getAppEnv() as $key => $value) {
+            $env[] = sprintf('[<comment>%s</comment>] %s', $key, $value);
+        }
+        $this->io->text('? Environment');
+        $this->io->listing($env, ['type' => ' > ', 'style' => 'fg=green']);
 
         if (empty($messages['error'])) {
             $this->io->success('Your system is ready to run the application.');

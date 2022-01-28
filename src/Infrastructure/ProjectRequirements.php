@@ -106,11 +106,11 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
      */
     private function checkDbFile(string $path): bool
     {
-        if (is_file($path) && is_readable($path)) {
+        if (is_file($path) && is_writable($path)) {
             $this->helpStatus = sprintf('DB file %s seems good', $path);
             return true;
         }
-        $this->helpStatus = sprintf('Something is wrong with DB file %s', $path);
+        $this->helpStatus = sprintf('DB file %s seems not writable. Please check permissions', $path);
         return false;
     }
 
