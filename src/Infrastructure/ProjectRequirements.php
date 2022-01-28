@@ -17,7 +17,6 @@ use Exception;
 use function extension_loaded;
 use function get_cfg_var;
 use function is_file;
-use function is_readable;
 use function phpversion;
 use function sprintf;
 use function version_compare;
@@ -106,11 +105,11 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
      */
     private function checkDbFile(string $path): bool
     {
-        if (is_file($path) && is_writable($path)) {
+        if (is_file($path)) {
             $this->helpStatus = sprintf('DB file %s seems good', $path);
             return true;
         }
-        $this->helpStatus = sprintf('DB file %s seems not writable. Please check permissions', $path);
+        $this->helpStatus = sprintf('DB file %s is not a regular file or have wrong permissions', $path);
         return false;
     }
 

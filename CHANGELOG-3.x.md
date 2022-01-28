@@ -24,6 +24,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - [#112](https://github.com/llaville/php-compatinfo-db/issues/112) touch fails on read-only database (thanks to @remicollet for reporting)
+- [#113](https://github.com/llaville/php-compatinfo-db/issues/113) `db:list` fails
 - [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
 
 ## [3.18.0] - 2022-01-22
