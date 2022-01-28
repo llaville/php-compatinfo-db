@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `about` command to display current long version and more information about this package.
 - `APP_DATABASE_URL` contains full path without placeholders for SQLite driver.
 - `APP_CACHE_DIR` identifies directory where you may find the SQLite database version (`compatinfo-db.sqlite`).
+- `APP_HOME_DIR` identifies user home directory (whatever platform).
 
 ### Changed
 

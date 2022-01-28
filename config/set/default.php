@@ -95,7 +95,15 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->alias(ConstantRepository::class, InfrastructureConstantRepository::class);
     $services->alias(ClassRepository::class, InfrastructureClassRepository::class);
 
-    $dbUrl = getenv('APP_DATABASE_URL');
+    $dbUrl = getenv('DATABASE_URL');
+    if (false === $dbUrl) {
+        $targetFile = 'compatinfo-db.sqlite';
+        $dbUrl = sprintf('sqlite:///%s/%s', getenv('APP_CACHE_DIR'), $targetFile);
+    } else {
+        $dbUrl = str_replace(['${HOME}', '%HOME%'], getenv('APP_HOME_DIR'), $dbUrl);
+    }
+    putenv('APP_DATABASE_URL=' . $dbUrl);
+
     $url = preg_replace('#^((?:pdo_)?sqlite3?):///#', '$1://localhost/', $dbUrl);
     $url = parse_url($url);
 

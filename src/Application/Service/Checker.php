@@ -40,7 +40,7 @@ final class Checker
 
     public function getAppEnv(): array
     {
-        $keys = ['APP_ENV', 'APP_DATABASE_URL', 'APP_PROXY_DIR', 'APP_VENDOR_DIR', 'APP_CACHE_DIR'];
+        $keys = ['APP_ENV', 'APP_DATABASE_URL', 'APP_PROXY_DIR', 'APP_VENDOR_DIR', 'APP_CACHE_DIR', 'APP_HOME_DIR'];
         $env = [];
         foreach ($keys as $key) {
             $env[$key] = getenv($key);
