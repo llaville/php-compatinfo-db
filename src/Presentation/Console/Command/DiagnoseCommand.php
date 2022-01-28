@@ -12,6 +12,7 @@ use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
 use Bartlett\CompatInfoDb\Application\Service\Checker;
 use Bartlett\CompatInfoDb\Infrastructure\ProjectRequirements;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Doctrine\ORM\EntityManagerInterface;
@@ -68,6 +69,16 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         $checker = new Checker($io);
         $checker->setAppName('PHP CompatInfoDB');
         $checker->printDiagnostic($projectRequirements);
+
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+        $io->note(
+            sprintf(
+                '%s version %s',
+                $app->getName(),
+                $app->getInstalledVersion()
+            )
+        );
 
         if (count($projectRequirements->getFailedRequirements()) === 0) {
             return self::SUCCESS;
