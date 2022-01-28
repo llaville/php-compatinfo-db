@@ -7,7 +7,6 @@
  */
 namespace Bartlett\CompatInfoDb\Application\Event\Dispatcher;
 
-use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
