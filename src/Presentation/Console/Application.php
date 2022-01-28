@@ -9,6 +9,8 @@ namespace Bartlett\CompatInfoDb\Presentation\Console;
 
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
 
+use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
+
 use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Console\Application as SymfonyApplication;
@@ -96,7 +98,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     /**
      * {@inheritDoc}
      */
-    public function run(InputInterface $input = null, OutputInterface $output = null)
+    public function run(InputInterface $input = null, OutputInterface $output = null): int
     {
         if (null === $input) {
             if ($this->container->has(InputInterface::class)) {
@@ -141,7 +143,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
         if ($input->hasParameterOption('--manifest')) {
             $phar = new Phar($_SERVER['argv'][0]);
             $output->writeln($phar->getMetadata());
-            return 0;
+            return AbstractCommand::SUCCESS;
         }
 
         return parent::run($input, $output);
