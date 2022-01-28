@@ -44,7 +44,6 @@ final class EventDispatcher extends SymfonyEventDispatcher
             $command = $event->getCommand();
 
             if (str_starts_with($command->getName(), 'db:') && $command->getName() !== 'db:create') {
-                /** @var ApplicationInterface $app */
                 $app = $command->getApplication();
                 // launch auto diagnostic
                 $diagnoseCommand = $app->find('diagnose');

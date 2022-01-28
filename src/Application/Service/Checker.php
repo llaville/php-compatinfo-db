@@ -38,6 +38,9 @@ final class Checker
         $this->appName = $name;
     }
 
+    /**
+     * @return array<string, string>
+     */
     public function getAppEnv(): array
     {
         $keys = ['APP_ENV', 'APP_DATABASE_URL', 'APP_PROXY_DIR', 'APP_VENDOR_DIR', 'APP_CACHE_DIR', 'APP_HOME_DIR'];
