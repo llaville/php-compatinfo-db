@@ -14,6 +14,7 @@ use Bartlett\CompatInfoDb\Presentation\Console\Style;
 use Symfony\Component\Console\ConsoleEvents;
 use Symfony\Component\Console\Event\ConsoleCommandEvent;
 use Symfony\Component\Console\Event\ConsoleTerminateEvent;
+use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher as SymfonyEventDispatcher;
@@ -48,7 +49,7 @@ final class EventDispatcher extends SymfonyEventDispatcher
                 // launch auto diagnostic
                 $diagnoseCommand = $app->find('diagnose');
                 // and avoid to print results
-                $statusCode = $diagnoseCommand->run($event->getInput(), new NullOutput());
+                $statusCode = $diagnoseCommand->run(new ArrayInput([]), new NullOutput());
                 if ($statusCode === AbstractCommand::FAILURE) {
                     $event->disableCommand();
                 }
