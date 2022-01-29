@@ -21,6 +21,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Checker service handle now, and print into diagnostic the application environment variables (keys/values).
 - Launch an auto diagnostic when a `db:*` command (excluding `db:create`) is run.
 
+### Removed
+
+- `Checker` service that was previously used to display `diagnose` command results (breaking layers architecture), replaced by `PrintDiagnose` trait.
+
 ### Fixed
 
 - [#112](https://github.com/llaville/php-compatinfo-db/issues/112) touch fails on read-only database (thanks to @remicollet for reporting)

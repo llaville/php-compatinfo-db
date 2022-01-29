@@ -9,13 +9,11 @@
  * @author Laurent Laville
  */
 
-use Bartlett\CompatInfoDb\Application\Service\Checker;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 
 function dataSource(): Generator
 {
     $classes = [
-        Checker::class,
         JsonFileHandler::class,
     ];
     foreach ($classes as $class) {

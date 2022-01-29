@@ -10,9 +10,9 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
 use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
-use Bartlett\CompatInfoDb\Application\Service\Checker;
 use Bartlett\CompatInfoDb\Infrastructure\ProjectRequirements;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
+use Bartlett\CompatInfoDb\Presentation\Console\Output\PrintDiagnose;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Doctrine\ORM\EntityManagerInterface;
@@ -30,6 +30,8 @@ use function count;
  */
 class DiagnoseCommand extends AbstractCommand implements CommandInterface
 {
+    use PrintDiagnose;
+
     public const NAME = 'diagnose';
 
     private EntityManagerInterface $entityManager;
@@ -65,11 +67,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         $projectRequirements = $this->queryBus->query($diagnoseQuery);
 
         $io = new Style($input, $output);
-
-        $checker = new Checker($io);
-        $checker->setAppName('PHP CompatInfoDB');
-        $checker->printDiagnostic($projectRequirements);
-
+        $this->write($projectRequirements, $io, 'PHP CompatInfoDB');
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
         $io->note(
