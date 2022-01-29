@@ -11,6 +11,7 @@ use Bartlett\CompatInfoDb\Infrastructure\RequirementsInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 use function getenv;
+use function php_uname;
 use function sprintf;
 use const PHP_VERSION;
 
@@ -24,9 +25,17 @@ trait PrintDiagnose
 {
     protected function write(RequirementsInterface $requirements, StyleInterface $io, string $appName): void
     {
-        $io->title($appName . ' Requirements Checker');
+        $io->title('Requirements Checker');
 
-        $io->text(sprintf('> Using PHP <info>%s</info>', PHP_VERSION));
+        $io->text(
+            sprintf(
+                '> Running %s with PHP <info>%s</info> on %s <info>%s</info>',
+                $appName,
+                PHP_VERSION,
+                php_uname('s'),
+                php_uname('r')
+            )
+        );
         $io->text('> PHP is using the following php.ini file:');
         if ($iniPath = $requirements->getPhpIniPath()) {
             $io->text(sprintf('<info>%s</info>', $iniPath));
