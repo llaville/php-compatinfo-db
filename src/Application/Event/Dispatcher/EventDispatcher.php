@@ -8,14 +8,11 @@
 namespace Bartlett\CompatInfoDb\Application\Event\Dispatcher;
 
 use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
-use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\ConsoleEvents;
 use Symfony\Component\Console\Event\ConsoleCommandEvent;
-use Symfony\Component\Console\Event\ConsoleTerminateEvent;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher as SymfonyEventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -39,28 +36,22 @@ final class EventDispatcher extends SymfonyEventDispatcher
         if ($input->hasParameterOption('--profile')) {
             $this->addSubscriber($profileEventSubscriber);
         }
-/*
+
         $this->addListener(ConsoleEvents::COMMAND, function (ConsoleCommandEvent $event) {
             $command = $event->getCommand();
-            if (str_starts_with($command->getName(), 'db:') && !in_array($command->getName(), ['db:create', 'db:init'])) {
+            if (
+                str_starts_with($command->getName(), 'db:')
+                && !in_array($command->getName(), ['db:create', 'db:init', 'db:release'])
+            ) {
                 $app = $command->getApplication();
-                // launch auto diagnostic
+                // launch auto diagnose
                 $diagnoseCommand = $app->find('diagnose');
-                // and avoid to print results
-                $statusCode = $diagnoseCommand->run(new ArrayInput([]), new NullOutput());
+                // and print results
+                $statusCode = $diagnoseCommand->run(new ArrayInput([]), $event->getOutput());
                 if ($statusCode === AbstractCommand::FAILURE) {
                     $event->disableCommand();
                 }
             }
         }, 100); // with a priority highest to default (in case of --profile usage)
-
-        $this->addListener(ConsoleEvents::TERMINATE, function (ConsoleTerminateEvent $event) {
-            $command = $event->getCommand();
-            if (str_starts_with($command->getName(), 'db:') && $event->getExitCode() == ConsoleCommandEvent::RETURN_CODE_DISABLED) {
-                $io = new Style($event->getInput(), $event->getOutput());
-                $io->error('Please run `db:create` to initialize the database.');
-            }
-        }, 100); // with a priority highest to default (in case of --profile usage)
-*/
     }
 }
