@@ -18,6 +18,8 @@ use Doctrine\Common\Collections\Collection;
  */
 interface PlatformRepository extends RepositoryInterface
 {
+    public const PLATFORM_DESC = 'PHP Interpreter';
+
     /**
      * @param string $version
      * @return Platform|null

@@ -17,6 +17,8 @@ use Doctrine\Common\Collections\Collection;
  */
 interface DistributionRepository extends RepositoryInterface
 {
+    public const DISTRIBUTION_DESC = 'CompatInfoDB';
+
     /**
      * @param string $version
      * @return Platform|null
