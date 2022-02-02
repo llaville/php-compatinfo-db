@@ -39,7 +39,7 @@ final class EventDispatcher extends SymfonyEventDispatcher
         if ($input->hasParameterOption('--profile')) {
             $this->addSubscriber($profileEventSubscriber);
         }
-
+/*
         $this->addListener(ConsoleEvents::COMMAND, function (ConsoleCommandEvent $event) {
             $command = $event->getCommand();
             if (str_starts_with($command->getName(), 'db:') && !in_array($command->getName(), ['db:create', 'db:init'])) {
@@ -61,5 +61,6 @@ final class EventDispatcher extends SymfonyEventDispatcher
                 $io->error('Please run `db:create` to initialize the database.');
             }
         }, 100); // with a priority highest to default (in case of --profile usage)
+*/
     }
 }
