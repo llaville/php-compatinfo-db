@@ -28,6 +28,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Removed
 
 - `Checker` service that was previously used to display `diagnose` command results (breaking layers architecture), replaced by `PrintDiagnose` trait.
+- `PlatformRepository` now database does not contains anymore instance of current PHP Interpreter
 
 ### Fixed
 

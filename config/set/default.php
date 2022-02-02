@@ -16,7 +16,6 @@ use Bartlett\CompatInfoDb\Domain\Repository\ConstantRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\ExtensionRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\FunctionRepository;
-use Bartlett\CompatInfoDb\Domain\Repository\PlatformRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Bus\Command\MessengerCommandBus;
 use Bartlett\CompatInfoDb\Infrastructure\Bus\Query\MessengerQueryBus;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\EntityManagerFactory;
@@ -25,7 +24,6 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\Constan
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\DistributionRepository as InfrastructureDistributionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\ExtensionRepository as InfrastructureExtensionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\FunctionRepository as InfrastructureFunctionRepository;
-use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\PlatformRepository as InfrastructurePlatformRepository;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\CommandInterface;
 use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
@@ -89,7 +87,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     ;
 
     $services->alias(DistributionRepository::class, InfrastructureDistributionRepository::class);
-    $services->alias(PlatformRepository::class, InfrastructurePlatformRepository::class);
     $services->alias(ExtensionRepository::class, InfrastructureExtensionRepository::class);
     $services->alias(FunctionRepository::class, InfrastructureFunctionRepository::class);
     $services->alias(ConstantRepository::class, InfrastructureConstantRepository::class);

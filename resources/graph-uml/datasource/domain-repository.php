@@ -15,7 +15,6 @@ use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\Repository\ExtensionRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\FunctionRepository;
-use Bartlett\CompatInfoDb\Domain\Repository\PlatformRepository;
 use Bartlett\CompatInfoDb\Domain\Repository\RepositoryInterface;
 
 function dataSource(): Generator
@@ -28,7 +27,6 @@ function dataSource(): Generator
         ExtensionRepository::class,
         FunctionRepository::class,
         FunctionRepository::class,
-        PlatformRepository::class,
         RepositoryInterface::class,
     ];
     foreach ($classes as $class) {
