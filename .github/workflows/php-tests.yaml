@@ -146,13 +146,13 @@ jobs:
                 name: Build Database
                 run: |
                     bin/compatinfo-db db:create --ansi
-                    bin/compatinfo-db db:init --distribution --installed --ansi
+                    bin/compatinfo-db db:init --ansi
 
             -   # Check Database
                 name: Check Database
                 run: |
                     bin/compatinfo-db diagnose --ansi
-                    bin/compatinfo-db db:list --ansi --all
+                    bin/compatinfo-db db:list --ansi
 
             -   # Run unit tests
                 name: Unit tests
