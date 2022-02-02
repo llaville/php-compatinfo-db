@@ -45,7 +45,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $filters = [];
         $type = $input->getOption('type');
