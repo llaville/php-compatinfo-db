@@ -9,7 +9,6 @@ namespace Bartlett\CompatInfoDb\Infrastructure;
 
 use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
-use Bartlett\CompatInfoDb\Domain\Repository\PlatformRepository;
 
 use Doctrine\DBAL\Connection;
 
@@ -86,14 +85,8 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
         );
 
         $this->addRequirement(
-            $this->checkPlatformAvailable($conn, true, $tablesExists),
-            'Check if distribution platform is available in database',
-            $this->helpStatus
-        );
-
-        $this->addRequirement(
-            $this->checkPlatformAvailable($conn, false, $tablesExists),
-            'Check if at least one php interpreter platform is available in database',
+            $this->checkPlatformAvailable($conn, $tablesExists),
+            'Check if database contains at least one distribution platform',
             $this->helpStatus
         );
     }
@@ -135,7 +128,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
                 ->fetchFirstColumn()
             ;
             if (empty($tables)) {
-                throw new Exception('');
+                throw new Exception();
             }
             $this->helpStatus = 'Schema was already proceeded.';
             return true;
@@ -145,26 +138,26 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
         }
     }
 
-    private function checkPlatformAvailable(Connection $connection, bool $isDistribution, bool $tablesExists): bool
+    private function checkPlatformAvailable(Connection $connection, bool $tablesExists): bool
     {
         try {
-            $var = $isDistribution ? DistributionRepository::DISTRIBUTION_DESC : PlatformRepository::PLATFORM_DESC;
             if (!$tablesExists) {
-                throw new Exception($var);
+                throw new Exception();
             }
 
             $stmt = $connection->prepare('select id from platforms where description = :description limit 1');
+            $var = DistributionRepository::DISTRIBUTION_DESC;
             $stmt->bindParam('description', $var);
 
             $platforms = $stmt->executeQuery()
                 ->fetchFirstColumn()
             ;
             if (empty($platforms)) {
-                throw new Exception($var);
+                throw new Exception();
             }
             return true;
         } catch (Exception $e) {
-            $this->helpStatus = 'At least one ' . $e->getMessage() . ' platform should exist. None available. Run "db:init" command to build one.';
+            $this->helpStatus = 'At least one distribution platform should exist. None available. Run "db:init" command to build one.';
             return false;
         }
     }
