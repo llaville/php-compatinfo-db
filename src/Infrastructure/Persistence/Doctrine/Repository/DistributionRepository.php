@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository;
 
-use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository as DomainRepository;
+use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository as DomainRepositoryInterface;
 use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Platform as PlatformEntity;
@@ -25,11 +25,9 @@ use DateTimeImmutable;
  * @since Release 3.0.0
  * @author Laurent Laville
  */
-final class DistributionRepository implements DomainRepository
+final class DistributionRepository implements DomainRepositoryInterface
 {
     use EntityManagerTrait;
-
-    private const DISTRIBUTION_DESC = 'CompatInfoDB';
 
     /** @var EntityRepository<PlatformEntity> */
     private $repository;
@@ -72,7 +70,6 @@ final class DistributionRepository implements DomainRepository
 
         $this->entityManager->persist($platform);
         $this->entityManager->flush();
-        $this->entityManager->clear();
 
         return (new PlatformHydrator())->toDomain($platform);
     }

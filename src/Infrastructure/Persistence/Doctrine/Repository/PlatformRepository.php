@@ -27,8 +27,6 @@ final class PlatformRepository implements PlatformRepositoryInterface
 {
     use EntityManagerTrait;
 
-    private const PLATFORM_DESC = 'PHP Interpreter';
-
     /** @var EntityRepository<PlatformEntity> */
     private $repository;
 
@@ -67,7 +65,6 @@ final class PlatformRepository implements PlatformRepositoryInterface
 
         $this->entityManager->persist($platform);
         $this->entityManager->flush();
-        $this->entityManager->clear();
 
         return (new PlatformHydrator())->toDomain($platform);
     }
