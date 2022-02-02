@@ -21,6 +21,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Checker service handle now, and print into diagnostic the application environment variables (keys/values).
 - Launch an auto diagnostic when a `db:*` command (excluding `db:create` and `db:init`) is run.
 - `db:init` command use internally a command bus rather than a query bus (follow concept of CQRS architecture)
+- `db:init` command add only instance from DistributionRepository
 - `db:create` command separate presentation and handler as other db commands (follow concept of CQRS architecture)
 - `db:create` command (only handle schema creation). Use `db:init` command to load database contents
 - `db:list` command (always returns a platform and never create one on fly as previously in v3.x)

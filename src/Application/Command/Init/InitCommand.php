@@ -22,23 +22,17 @@ final class InitCommand implements CommandInterface
     private StyleInterface $io;
     private bool $force;
     private bool $progress;
-    private bool $installedOnly;
-    private bool $distributionOnly;
 
     public function __construct(
         string $version,
         StyleInterface $io,
         bool $force,
-        bool $progress,
-        bool $installedOnly,
-        bool $distributionOnly
+        bool $progress
     ) {
         $this->appVersion = $version;
         $this->io = $io;
         $this->force = $force;
         $this->progress = $progress;
-        $this->installedOnly = $installedOnly;
-        $this->distributionOnly = $distributionOnly;
     }
 
     public function getAppVersion(): string
@@ -59,15 +53,5 @@ final class InitCommand implements CommandInterface
     public function isProgress(): bool
     {
         return $this->progress;
-    }
-
-    public function isInstalledOnly(): bool
-    {
-        return $this->installedOnly;
-    }
-
-    public function isDistributionOnly(): bool
-    {
-        return $this->distributionOnly;
     }
 }

@@ -10,8 +10,6 @@ namespace Bartlett\CompatInfoDb\Application\Command\Init;
 use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
-use Bartlett\CompatInfoDb\Domain\Repository\PlatformRepository;
-use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -29,14 +27,11 @@ use function array_map;
 use function array_merge;
 use function count;
 use function dirname;
-use function extension_loaded;
 use function implode;
 use function in_array;
 use function json_last_error;
-use function phpversion;
 use function sprintf;
 use function str_contains;
-use function strcasecmp;
 use const DIRECTORY_SEPARATOR;
 use const JSON_ERROR_NONE;
 
@@ -49,24 +44,20 @@ use const JSON_ERROR_NONE;
 final class InitHandler implements CommandHandlerInterface
 {
     private const RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS = 110;
-    private const RETURN_CODE_PHP_PLATFORM_EXISTS = 111;
     private const RETURN_CODE_DATABASE_READONLY = 120;
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
     private const PHP_RELEASES_8 = ['80', '81'];
     private JsonFileHandler $jsonFileHandler;
     private DistributionRepository $distributionRepository;
-    private PlatformRepository $platformRepository;
     private EntityManagerInterface $entityManager;
 
     public function __construct(
         JsonFileHandler $jsonFileHandler,
         DistributionRepository $distributionRepository,
-        PlatformRepository $platformRepository,
         EntityManagerInterface $entityManager
     ) {
         $this->jsonFileHandler = $jsonFileHandler;
         $this->distributionRepository = $distributionRepository;
-        $this->platformRepository = $platformRepository;
         $this->entityManager = $entityManager;
     }
 
@@ -76,34 +67,19 @@ final class InitHandler implements CommandHandlerInterface
         $distribution = $this->distributionRepository->getDistributionByVersion($appVersion);
 
         try {
-            if ($query->isDistributionOnly()) {
-                if (null !== $distribution) {
-                    if (!$query->isForce()) {
-                        throw new RuntimeException(
-                            'Distribution platform already exists. Use `db:init -f -d` to reset contents.',
-                            self::RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS
-                        );
-                    }
-                    $this->distributionRepository->clear();
+            if (null !== $distribution) {
+                if (!$query->isForce()) {
+                    throw new RuntimeException(
+                        'Distribution platform already exists. Use `db:init -f` to reset contents.',
+                        self::RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS
+                    );
                 }
+                $this->distributionRepository->clear();
             }
 
             $io = $query->getStyle();
 
-            if ($query->isDistributionOnly() && null === $distribution) {
-                $distribution = $this->buildDistribution($io, $appVersion, $query->isProgress());
-            }
-
-            if ($query->isInstalledOnly() && null === $distribution) {
-                throw new RuntimeException(
-                    'A distribution platform is required before to add a PHP interpreter platform.'
-                    . ' Run "db:init -d" command first.'
-                );
-            }
-
-            if ($query->isInstalledOnly()) {
-                $this->buildPlatform($io, $distribution);
-            }
+            $this->buildDistribution($io, $appVersion, $query->isProgress());
         } catch (Throwable $e) {
             if (str_contains($e->getMessage(), 'readonly database')) {
                 $code = self::RETURN_CODE_DATABASE_READONLY;
@@ -123,7 +99,7 @@ final class InitHandler implements CommandHandlerInterface
         $this->entityManager->clear();
     }
 
-    private function buildDistribution(StyleInterface $io, string $appVersion, bool $withProgressBar): Platform
+    private function buildDistribution(StyleInterface $io, string $appVersion, bool $withProgressBar): void
     {
         $refDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 4), 'data', 'reference', 'extension']);
         $flags = FilesystemIterator::SKIP_DOTS;
@@ -214,45 +190,6 @@ final class InitHandler implements CommandHandlerInterface
             $io->text('Definition not provided for following references:');
             $io->text('');
             $io->listing(array_keys($extensions), ['type' => '[ ]', 'style' => 'fg=red']);
-        }
-
-        return $distribution;
-    }
-
-    private function buildPlatform(StyleInterface $io, Platform $distribution): void
-    {
-        $phpVersion = phpversion();
-        $platformLabel = 'PHP Interpreter ' . $phpVersion . ' platform';
-        if (null !== $this->platformRepository->getPlatformByVersion($phpVersion)) {
-            throw new RuntimeException(
-                $platformLabel . ' already exists.',
-                self::RETURN_CODE_PHP_PLATFORM_EXISTS
-            );
-        }
-
-        if ($io->isVerbose()) {
-            $io->writeln('> Initializing ' . $platformLabel . ' ...');
-        }
-
-        $collection = new ArrayCollection();
-
-        foreach ($distribution->getExtensions() as $entity) {
-            $name = $entity->getName();
-            if (strcasecmp('opcache', $entity->getName()) === 0) {
-                // special case
-                $name = 'Zend ' . $name;
-            }
-            if (!extension_loaded($name)) {
-                continue;
-            }
-            $collection->add($entity);
-        }
-
-        $this->platformRepository->initialize($collection, $phpVersion);
-
-        if ($io->isDebug()) {
-            $io->section('Extension(s) loaded');
-            $io->text(sprintf('%d php module(s)', count($collection)));
         }
     }
 

@@ -40,19 +40,12 @@ class InitCommand extends AbstractCommand implements CommandInterface
             )
             ->addOption('force', 'f', null, 'Reset database contents even if not empty')
             ->addOption('progress', null, null, 'Show progress bar')
-            ->addOption('installed', 'i', null, 'Initialize current PHP version platform only')
-            ->addOption('distribution', 'd', null, 'Initialize distribution platform only')
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new Style($input, $output);
-
-        if (!$input->getOption('installed') && !$input->getOption('distribution')) {
-            $io->error('You should specify either installed (-i) or distribution (-d) option. None are given.');
-            return self::FAILURE;
-        }
 
         if (getenv('APP_ENV') === 'prod') {
             $io->caution('This operation should not be executed in a production environment!');
@@ -72,9 +65,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
             $appVersion,
             $io,
             $input->getOption('force'),
-            $input->getOption('progress'),
-            $input->getOption('installed'),
-            $input->getOption('distribution'),
+            $input->getOption('progress')
         );
 
         try {
