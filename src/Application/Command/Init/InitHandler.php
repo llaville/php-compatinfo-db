@@ -88,17 +88,17 @@ final class InitHandler implements CommandHandlerInterface
                 }
             }
 
+            $io = $query->getStyle();
+
+            if ($query->isDistributionOnly() && null === $distribution) {
+                $distribution = $this->buildDistribution($io, $appVersion, $query->isProgress());
+            }
+
             if ($query->isInstalledOnly() && null === $distribution) {
                 throw new RuntimeException(
                     'A distribution platform is required before to add a PHP interpreter platform.'
                     . ' Run "db:init -d" command first.'
                 );
-            }
-
-            $io = $query->getStyle();
-
-            if (null === $distribution) {
-                $distribution = $this->buildDistribution($io, $appVersion, $query->isProgress());
             }
 
             if ($query->isInstalledOnly()) {

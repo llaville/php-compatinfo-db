@@ -146,6 +146,7 @@ jobs:
                 name: Build Database
                 run: |
                     bin/compatinfo-db db:create --ansi
+                    bin/compatinfo-db db:init --distribution --installed --ansi
 
             -   # Check Database
                 name: Check Database
