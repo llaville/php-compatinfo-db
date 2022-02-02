@@ -71,7 +71,7 @@ trait PrintDiagnose
             $io->success('Your system is ready to run the application.');
         } else {
             $io->error('Your system is not ready to run the application.');
-            $io->section('Fix the following mandatory requirements:');
+            $io->section('Fix the following mandatory requirements (in sequential order):');
             $io->listing($messages['error'], ['style' => 'options=bold;fg=red']);
         }
     }
