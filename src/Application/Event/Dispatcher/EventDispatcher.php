@@ -19,6 +19,7 @@ use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher as SymfonyEventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
+use function in_array;
 use function str_starts_with;
 
 /**
@@ -41,8 +42,7 @@ final class EventDispatcher extends SymfonyEventDispatcher
 
         $this->addListener(ConsoleEvents::COMMAND, function (ConsoleCommandEvent $event) {
             $command = $event->getCommand();
-
-            if (str_starts_with($command->getName(), 'db:') && $command->getName() !== 'db:create') {
+            if (str_starts_with($command->getName(), 'db:') && !in_array($command->getName(), ['db:create', 'db:init'])) {
                 $app = $command->getApplication();
                 // launch auto diagnostic
                 $diagnoseCommand = $app->find('diagnose');
