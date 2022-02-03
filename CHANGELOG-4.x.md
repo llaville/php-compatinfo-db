@@ -25,6 +25,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - `db:create` command separate presentation and handler as other db commands (follow concept of CQRS architecture)
 - `db:create` command (only handle schema creation). Use `db:init` command to load database contents
 - `db:list` command (always returns a platform and never create one on fly as previously in v3.x)
+- Xdebug reference updated to version 3.1.3 (stable)
 
 ### Removed
 
