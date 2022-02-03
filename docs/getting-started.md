@@ -69,3 +69,9 @@ If you change database connection, you have to run following command(s):
   * `bin/compatinfo-db db:init` (loads the database from JSON data files)
 
   At first run of CompatInfoDB, `DATABASE_URL` will be set to use default SQLite connection
+
+## Quick start
+
+Since version 4.0, CompatInfoDB introduced the new **auto-diagnose** feature.
+That means, if you try to attempt to read the database (by `db:list` or `db:show` commands)
+without it was initialized (schema created and data loaded), the `diagnose` command is run automagically and prints its results.
