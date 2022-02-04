@@ -7,11 +7,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [4.0.0] - 2022-02-04
+
 ### Added
 
 - `about` command to display current long version and more information about this package.
 - `APP_DATABASE_URL` contains full path without placeholders for SQLite driver.
-- `APP_CACHE_DIR` identifies directory where you may find the SQLite database version (`compatinfo-db.sqlite`).
+- `APP_CACHE_DIR` identifies directory where you may find the SQLite database (`compatinfo-db.sqlite`) by default.
 - `APP_HOME_DIR` identifies user home directory (whatever platform).
 
 ### Changed
@@ -38,5 +40,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#112](https://github.com/llaville/php-compatinfo-db/issues/112) touch fails on read-only database (thanks to @remicollet for reporting)
 - [#113](https://github.com/llaville/php-compatinfo-db/issues/113) `db:list` fails
 - [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
+- display `manifest` on PHAR distribution. [Lear more](https://github.com/llaville/php-compatinfo-db/issues/111#issuecomment-1029708338)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.18.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.0.0...HEAD
+[4.0.0]: https://github.com/llaville/php-compatinfo-db/compare/3.18.0...4.0.0
