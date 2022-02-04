@@ -39,13 +39,12 @@ final class ListCommand extends AbstractCommand implements CommandInterface
     {
         $this->setName(self::NAME)
             ->setDescription('List all references supported in the Database')
-            ->addOption('all', 'a', null, 'List all references')
             ->addOption('type', null, InputOption::VALUE_REQUIRED, 'Filter extension by type')
             ->addOption('name', null, InputOption::VALUE_REQUIRED, 'Filter extension by name')
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $filters = [];
         $type = $input->getOption('type');
@@ -61,9 +60,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $app = $this->getApplication();
 
         $listQuery = new ListQuery(
-            $input->getOption('all'),
-            !$input->getOption('all'),
-            $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db'),
+            $app->getInstalledVersion(true),
             $filters
         );
 

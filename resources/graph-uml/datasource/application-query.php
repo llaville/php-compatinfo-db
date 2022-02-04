@@ -13,8 +13,6 @@ use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseHandler;
 use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Application\Query\Doctor\DoctorHandler;
 use Bartlett\CompatInfoDb\Application\Query\Doctor\DoctorQuery;
-use Bartlett\CompatInfoDb\Application\Query\Init\InitHandler;
-use Bartlett\CompatInfoDb\Application\Query\Init\InitQuery;
 use Bartlett\CompatInfoDb\Application\Query\ListRef\ListHandler;
 use Bartlett\CompatInfoDb\Application\Query\ListRef\ListQuery;
 use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
@@ -31,8 +29,6 @@ function dataSource(): Generator
         DiagnoseHandler::class,
         DoctorQuery::class,
         DoctorHandler::class,
-        InitQuery::class,
-        InitHandler::class,
         ListQuery::class,
         ListHandler::class,
         ShowQuery::class,

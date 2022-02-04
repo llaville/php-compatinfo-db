@@ -14,6 +14,10 @@ use Bartlett\CompatInfoDb\Application\Command\Build\BuildHandler;
 use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
 use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
 use Bartlett\CompatInfoDb\Application\Command\CommandInterface;
+use Bartlett\CompatInfoDb\Application\Command\Create\CreateCommand;
+use Bartlett\CompatInfoDb\Application\Command\Create\CreateHandler;
+use Bartlett\CompatInfoDb\Application\Command\Init\InitHandler;
+use Bartlett\CompatInfoDb\Application\Command\Init\InitCommand;
 use Bartlett\CompatInfoDb\Application\Command\Release\ReleaseCommand;
 use Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler;
 
@@ -22,6 +26,10 @@ function dataSource(): Generator
     $classes = [
         BuildCommand::class,
         BuildHandler::class,
+        CreateCommand::class,
+        CreateHandler::class,
+        InitCommand::class,
+        InitHandler::class,
         ReleaseCommand::class,
         ReleaseHandler::class,
         CommandBusInterface::class,

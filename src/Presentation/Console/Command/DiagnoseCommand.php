@@ -10,13 +10,17 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
 use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
-use Bartlett\CompatInfoDb\Application\Service\Checker;
+use Bartlett\CompatInfoDb\Infrastructure\ProjectRequirements;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
+use Bartlett\CompatInfoDb\Presentation\Console\Output\PrintDiagnose;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Doctrine\ORM\EntityManagerInterface;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+
+use function count;
 
 /**
  * Checks the minimum requirements on current platform.
@@ -26,6 +30,8 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class DiagnoseCommand extends AbstractCommand implements CommandInterface
 {
+    use PrintDiagnose;
+
     public const NAME = 'diagnose';
 
     private EntityManagerInterface $entityManager;
@@ -39,6 +45,9 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         $this->entityManager = $entityManager;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this
@@ -47,18 +56,31 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    /**
+     * {@inheritDoc}
+     */
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $diagnoseQuery = new DiagnoseQuery($this->entityManager->getConnection());
 
+        /** @var ProjectRequirements $projectRequirements */
         $projectRequirements = $this->queryBus->query($diagnoseQuery);
 
         $io = new Style($input, $output);
+        $this->write($projectRequirements, $io, 'PHP CompatInfoDB');
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+        $io->note(
+            sprintf(
+                '%s version %s',
+                $app->getName(),
+                $app->getInstalledVersion()
+            )
+        );
 
-        $checker = new Checker($io);
-        $checker->setAppName('PHP CompatInfoDB');
-        $checker->printDiagnostic($projectRequirements);
-
-        return self::SUCCESS;
+        if (count($projectRequirements->getFailedRequirements()) === 0) {
+            return self::SUCCESS;
+        }
+        return self::FAILURE;
     }
 }

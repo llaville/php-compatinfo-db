@@ -2,6 +2,7 @@
 
 | Major Version | Release    | PHP compatibility    |
 |---------------|------------|----------------------|
+| >=4.0         | 2022-02-04 | PHP >= 7.4.0         |
 | >=3.17        | 2022-01-05 | PHP >= 7.4.0         |
 | >=3.15        | 2021-12-01 | PHP >= 7.3.0         |
 | 3.0.0         | 2020-12-29 | PHP >= 7.2.0         |
@@ -47,6 +48,21 @@
 * PHP 8.0.0 until 8.0.15
 * PHP 8.1.0 until 8.1.2
 
+## [Versions 4.x](SUPPORTED-VERSIONS_4.x.md)
+
+* PHP 5.2.17
+* PHP 5.3.29
+* PHP 5.4.45
+* PHP 5.5.38
+* PHP 5.6.40
+* PHP 7.0.33
+* PHP 7.1.30
+* PHP 7.2.34
+* PHP 7.3.24 until 7.3.33
+* PHP 7.4.12 until 7.4.27
+* PHP 8.0.0 until 8.0.15
+* PHP 8.1.0 until 8.1.2
+
 Currently, [110 extensions](SUPPORTED-EXTENSIONS.md) referenced in the database.
 
-For future versions, see the `CHANGELOG-3.x.md` file.
+For future versions, see the `CHANGELOG-4.x.md` file.

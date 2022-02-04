@@ -17,8 +17,6 @@ use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
  */
 final class ListQuery implements QueryInterface
 {
-    private bool $all;
-    private bool $installed;
     private string $appVersion;
     /** @var string[] */
     private array $filters;
@@ -26,36 +24,17 @@ final class ListQuery implements QueryInterface
     /**
      * ListQuery constructor.
      *
-     * @param bool $all
-     * @param bool $installed
      * @param string $appVersion
      * @param string[] $filters
      */
     public function __construct(
-        bool $all,
-        bool $installed,
         string $appVersion,
         array $filters = []
     ) {
-        $this->all = $all;
-        $this->installed = $installed;
         $this->appVersion = $appVersion;
         $this->filters = $filters;
     }
 
-    public function isAll(): bool
-    {
-        return $this->all;
-    }
-
-    public function isInstalled(): bool
-    {
-        return $this->installed;
-    }
-
-    /**
-     * @return string
-     */
     public function getAppVersion(): string
     {
         return $this->appVersion;

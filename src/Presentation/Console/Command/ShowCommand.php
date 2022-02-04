@@ -66,7 +66,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $showQuery = new ShowQuery(
             trim($input->getArgument('extension')),

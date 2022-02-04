@@ -310,7 +310,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Memcached reference updated to version 3.1.3 (stable)
 - Msgpack reference updated to version 2.0.3 (stable)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/2.19.0...HEAD
 [2.19.0]: https://github.com/llaville/php-compatinfo-db/compare/2.18.0...2.19.0
 [2.18.0]: https://github.com/llaville/php-compatinfo-db/compare/2.17.0...2.18.0
 [2.17.0]: https://github.com/llaville/php-compatinfo-db/compare/2.16.0...2.17.0

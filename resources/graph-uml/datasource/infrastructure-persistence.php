@@ -41,7 +41,6 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\Constan
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\ExtensionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\FunctionRepository;
-use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\PlatformRepository;
 
 function dataSource(): Generator
 {
@@ -79,7 +78,6 @@ function dataSource(): Generator
         DistributionRepository::class,
         ExtensionRepository::class,
         FunctionRepository::class,
-        PlatformRepository::class,
         EntityManagerFactory::class,
     ];
     foreach ($classes as $class) {

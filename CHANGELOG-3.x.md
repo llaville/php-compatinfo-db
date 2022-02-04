@@ -1,11 +1,9 @@
 <!-- markdownlint-disable MD013 MD024 -->
 # Changes in 3.x
 
-All notable changes of the CompatInfoDB 2 release series will be documented in this file.
+All notable changes of the CompatInfoDB 3 release series will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/),
 using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
-
-## [Unreleased]
 
 ## [3.18.0] - 2022-01-22
 
@@ -493,7 +491,6 @@ replace old `ContainerService` that was introduced in version 2.13
 - [#55](https://github.com/llaville/php-compatinfo-db/issues/55) Wrong assertion results when method checks
 - [#57](https://github.com/llaville/php-compatinfo-db/issues/57) GenericTest - function_exists failed to proceed expected assertion with Polyfills
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/3.18.0...HEAD
 [3.18.0]: https://github.com/llaville/php-compatinfo-db/compare/3.17.0...3.18.0
 [3.17.0]: https://github.com/llaville/php-compatinfo-db/compare/3.16.0...3.17.0
 [3.16.1]: https://github.com/llaville/php-compatinfo-db/compare/3.16.0...3.16.1

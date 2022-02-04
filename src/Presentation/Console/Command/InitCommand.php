@@ -7,13 +7,17 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
-use Bartlett\CompatInfoDb\Application\Query\Init\InitQuery;
+use Bartlett\CompatInfoDb\Application\Command\Init\InitCommand as AppInitCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Messenger\Exception\HandlerFailedException;
+
+use function getenv;
+use function trim;
 
 /**
  * Initialize the database with JSON files for all extensions.
@@ -39,9 +43,10 @@ class InitCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new Style($input, $output);
+
         if (getenv('APP_ENV') === 'prod') {
             $io->caution('This operation should not be executed in a production environment!');
         }
@@ -52,21 +57,26 @@ class InitCommand extends AbstractCommand implements CommandInterface
         $app = $this->getApplication();
 
         if (null === $relVersion) {
-            $appVersion = $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db');
+            $appVersion = $app->getInstalledVersion(true);
         } else {
             $appVersion = trim($relVersion);
         }
-        $initQuery = new InitQuery($appVersion, $io, $input->getOption('force'), $input->getOption('progress'));
+        $initCommand = new AppInitCommand(
+            $appVersion,
+            $io,
+            $input->getOption('force'),
+            $input->getOption('progress')
+        );
 
-        $exitCode = $this->queryBus->query($initQuery);
-
-        if (self::SUCCESS === $exitCode) {
-            $io->success('Database built successfully!');
-        } else {
-            $io->warning('Database already exists.');
-            $io->note('Use --force option to replace contents.');
+        try {
+            $this->commandBus->handle($initCommand);
+        } catch (HandlerFailedException $e) {
+            $firstFailure = $e->getNestedExceptions()[0];
+            $io->error($firstFailure->getMessage());
+            return self::FAILURE;
         }
 
-        return $exitCode;
+        $io->success('Database built successfully!');
+        return self::SUCCESS;
     }
 }

@@ -50,7 +50,7 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $releaseCommand = new AppReleaseCommand(
             trim($input->getArgument('rel_version')),

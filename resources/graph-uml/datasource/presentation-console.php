@@ -10,6 +10,7 @@
  */
 
 use Bartlett\CompatInfoDb\Presentation\Console\Command\BuildCommand;
+use Bartlett\CompatInfoDb\Presentation\Console\Command\CreateCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DiagnoseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DoctorCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\InitCommand;
@@ -21,6 +22,7 @@ function dataSource(): Generator
 {
     $classes = [
         BuildCommand::class,
+        CreateCommand::class,
         DiagnoseCommand::class,
         DoctorCommand::class,
         InitCommand::class,

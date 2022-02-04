@@ -8,6 +8,7 @@
 namespace Bartlett\CompatInfoDb\Infrastructure;
 
 use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
+use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 
 use Doctrine\DBAL\Connection;
 
@@ -17,7 +18,6 @@ use Exception;
 use function extension_loaded;
 use function get_cfg_var;
 use function is_file;
-use function is_readable;
 use function phpversion;
 use function sprintf;
 use function version_compare;
@@ -36,8 +36,6 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
 
     /**
      * ProjectRequirements constructor.
-     *
-     * @param DiagnoseQuery $query
      */
     public function __construct(DiagnoseQuery $query)
     {
@@ -79,15 +77,16 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
             );
         }
 
+        $tablesExists = $this->checkDoctrineListTables($conn);
         $this->addRequirement(
-            $this->checkDoctrineListTables($conn),
+            $tablesExists,
             'Check if tables exists in database',
             $this->helpStatus
         );
 
         $this->addRequirement(
-            $this->checkPlatformAvailable($conn),
-            sprintf('Check if platforms are available in database'),
+            $this->checkPlatformAvailable($conn, $tablesExists),
+            'Check if database contains at least one distribution platform',
             $this->helpStatus
         );
     }
@@ -100,40 +99,28 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
         return get_cfg_var('cfg_file_path');
     }
 
-    /**
-     * @param string $path
-     * @return bool
-     */
     private function checkDbFile(string $path): bool
     {
-        if (is_file($path) && is_readable($path)) {
-            $this->helpStatus = sprintf('DB file %s seems good', $path);
+        if (is_file($path)) {
+            $this->helpStatus = sprintf('DB file %s seems good.', $path);
             return true;
         }
-        $this->helpStatus = sprintf('Something is wrong with DB file %s', $path);
+        $this->helpStatus = sprintf('DB file %s is not a regular file or have wrong permissions.', $path);
         return false;
     }
 
-    /**
-     * @param Connection $connection
-     * @return bool
-     */
     private function checkDoctrineConnection(Connection $connection): bool
     {
         try {
             $connection->executeQuery($connection->getDatabasePlatform()->getDummySelectSQL());
-            $this->helpStatus = 'Connection to database server was successful';
+            $this->helpStatus = 'Connection to database server was successful.';
             return true;
         } catch (Exception $e) {
-            $this->helpStatus = 'Could not talk to database server';
+            $this->helpStatus = 'Could not talk to database server.';
             return false;
         }
     }
 
-    /**
-     * @param Connection $connection
-     * @return bool
-     */
     private function checkDoctrineListTables(Connection $connection): bool
     {
         try {
@@ -141,32 +128,36 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
                 ->fetchFirstColumn()
             ;
             if (empty($tables)) {
-                throw new Exception('');
+                throw new Exception();
             }
-            $this->helpStatus = 'Schema was already proceeded';
+            $this->helpStatus = 'Schema was already proceeded.';
             return true;
         } catch (Exception $e) {
-            $this->helpStatus = 'Create the schema with "vendor/bin/doctrine orm:schema-tool:create" command';
+            $this->helpStatus = 'Create the schema with "db:create" command.';
             return false;
         }
     }
 
-    /**
-     * @param Connection $connection
-     * @return bool
-     */
-    private function checkPlatformAvailable(Connection $connection): bool
+    private function checkPlatformAvailable(Connection $connection, bool $tablesExists): bool
     {
         try {
-            $platforms = $connection->executeQuery('select id from platforms limit 1')
+            if (!$tablesExists) {
+                throw new Exception();
+            }
+
+            $stmt = $connection->prepare('select id from platforms where description = :description limit 1');
+            $var = DistributionRepository::DISTRIBUTION_DESC;
+            $stmt->bindParam('description', $var);
+
+            $platforms = $stmt->executeQuery()
                 ->fetchFirstColumn()
             ;
             if (empty($platforms)) {
-                throw new Exception('');
+                throw new Exception();
             }
             return true;
         } catch (Exception $e) {
-            $this->helpStatus = 'At least one platform should exists. None available. Please run "db:init" command';
+            $this->helpStatus = 'At least one distribution platform should exist. None available. Run "db:init" command to build one.';
             return false;
         }
     }

@@ -8,18 +8,15 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
-use Bartlett\CompatInfoDb\Application\Query\Init\InitQuery;
+use Bartlett\CompatInfoDb\Application\Command\Create\CreateCommand as AppCreateCommand;
 use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
-use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
-use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Tools\SchemaTool;
-use Doctrine\ORM\Tools\ToolsException;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Messenger\Exception\HandlerFailedException;
 
 /**
  * Create the database schema and load its contents from JSON files
@@ -46,61 +43,30 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new Style($input, $output);
         if (getenv('APP_ENV') === 'prod') {
             $io->caution('This operation should not be executed in a production environment!');
         }
-        if (!$this->createDatabase($io)) {
-            return self::FAILURE;
-        }
 
-        if (!$this->loadDatabase($io)) {
-            return self::FAILURE;
-        }
+        $io->writeln('> Creating database schema...');
 
-        return self::SUCCESS;
-    }
-
-    private function createDatabase(StyleInterface $io): bool
-    {
-        $metadatas = $this->entityManager->getMetadataFactory()->getAllMetadata();
-
-        if (empty($metadatas)) {
-            $io->error('No Metadata Classes found to create Database.');
-            return false;
-        }
-
-        $schemaTool = new SchemaTool($this->entityManager);
-
-        $io->writeln('Creating database schema...');
+        $createCommand = new AppCreateCommand($this->entityManager);
 
         try {
-            $schemaTool->createSchema($metadatas);
-        } catch (ToolsException $e) {
-            $io->error($e->getMessage());
-            return false;
+            $this->commandBus->handle($createCommand);
+        } catch (HandlerFailedException $e) {
+            $firstFailure = $e->getNestedExceptions()[0];
+            if ($firstFailure->getCode() < 500) {
+                $io->warning($firstFailure->getMessage());
+            } else {
+                $io->error($firstFailure->getMessage());
+            }
+            return self::FAILURE;
         }
 
         $io->success('Database schema created successfully!');
-        return true;
-    }
-
-    private function loadDatabase(StyleInterface $io): bool
-    {
-        /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
-
-        $appVersion = $app->getInstalledVersion(true, 'bartlett/php-compatinfo-db');
-
-        $io->writeln('Loading database contents...');
-
-        $initQuery = new InitQuery($appVersion, $io, false, false);
-
-        $exitCode = $this->queryBus->query($initQuery);
-
-        $io->success('Database loaded successfully!');
-        return ($exitCode === self::SUCCESS);
+        return self::SUCCESS;
     }
 }

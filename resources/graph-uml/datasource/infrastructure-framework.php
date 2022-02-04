@@ -10,12 +10,15 @@
  * @author Laurent Laville
  */
 
+use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\ContainerFactory;
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\Polyfill;
 
 function dataSource(): Generator
 {
     $classes = [
+        InstalledVersions::class,
+
         ContainerFactory::class,
         Polyfill::class,
     ];
