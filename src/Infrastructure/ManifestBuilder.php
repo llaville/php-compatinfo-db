@@ -39,14 +39,22 @@ final class ManifestBuilder implements ManifestBuilderInterface
 
         $prefix = "bartlett/php-compatinfo-db requires";
 
-        foreach ($composerJson['require'] as $req => $constraint) {
-            if ('php' === $req) {
-                $entries[] = sprintf('%s %s: <info>%s</info>', $prefix, "$req $constraint", \phpversion());
-            } elseif (substr($req, 0, 4) === 'ext-') {
-                $extension = substr($req, 4);
-                $entries[] = sprintf('%s %s: <info>%s</info>', $prefix, "$req $constraint", \phpversion($extension));
-            } else {
-                $installedPhp['versions'][$req]['constraint'] = $constraint;
+        $allRequirements = [
+            '' => $composerJson['require'],
+            ' (for development)' => $composerJson['require-dev'],
+        ];
+
+        foreach ($allRequirements as $category => $requirements) {
+            foreach ($requirements as $req => $constraint) {
+                if ('php' === $req) {
+                    $entries[] = sprintf('%s%s %s: <info>%s</info>', $prefix, $category, "$req $constraint", \phpversion());
+                } elseif (substr($req, 0, 4) === 'ext-') {
+                    $extension = substr($req, 4);
+                    $entries[] = sprintf('%s%s %s: <info>%s</info>', $prefix, $category, "$req $constraint", \phpversion($extension));
+                } else {
+                    $installedPhp['versions'][$req]['constraint'] = $constraint;
+                    $installedPhp['versions'][$req]['category'] = $category;
+                }
             }
         }
 
@@ -55,8 +63,9 @@ final class ManifestBuilder implements ManifestBuilderInterface
                 continue;
             }
             if (isset($values['pretty_version'])) {
+                $category = $values['category'] ?? '';
                 $constraint = $values['constraint'] ?? '';
-                $entries[] = sprintf('%s %s: <info>%s</info>', $prefix, "$package $constraint", $values['pretty_version']);
+                $entries[] = sprintf('%s%s %s: <info>%s</info>', $prefix, $category, "$package $constraint", $values['pretty_version']);
             } // otherwise, it's a virtual package
         }
 
