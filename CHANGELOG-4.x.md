@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Fixed
+
+- [#111](https://github.com/llaville/php-compatinfo-db/issues/111) Cannot build the PHAR version of CompatInfoDB with metadata
+
 ## [4.0.0] - 2022-02-04
 
 ### Added
