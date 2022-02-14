@@ -28,6 +28,9 @@ jobs:
                 php:
                     - 7.4
 
+        env:
+            COMPOSER_AUTH: "{\"github-oauth\": {\"github.com\": ${{ secrets.CI_TOKEN }}}}"
+
         steps:
             -   # Git Checkout
                 name: Checkout Code
@@ -96,6 +99,7 @@ jobs:
         env:
             APP_ENV: dev  # see explains at https://github.com/llaville/php-compatinfo-db/issues/101
             DATABASE_URL: "sqlite:///${{ github.workspace }}/.cache/compatinfo-db.sqlite"
+            COMPOSER_AUTH: "{\"github-oauth\": {\"github.com\": ${{ secrets.CI_TOKEN }}}}"
 
         steps:
             -   # Git Checkout
