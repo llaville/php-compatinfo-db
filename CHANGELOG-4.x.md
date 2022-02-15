@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- Rdkafka reference updated to version 6.0.1 (stable)
+
 ### Fixed
 
 - [#111](https://github.com/llaville/php-compatinfo-db/issues/111) Cannot build the PHAR version of CompatInfoDB with metadata
