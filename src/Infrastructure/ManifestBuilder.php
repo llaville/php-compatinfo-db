@@ -7,7 +7,11 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure;
 
-use KevinGH\Box\Composer\Manifest\ManifestBuilderInterface;
+use Bartlett\BoxManifest\Composer\ManifestBuilderInterface;
+use Bartlett\BoxManifest\Composer\ManifestFactory;
+
+use KevinGH\Box\Box;
+use KevinGH\Box\Configuration\Configuration;
 
 use function implode;
 use function sprintf;
@@ -16,8 +20,13 @@ use const PHP_EOL;
 
 final class ManifestBuilder implements ManifestBuilderInterface
 {
+    public static function toText(Configuration $config, Box $box): ?string
+    {
+        return ManifestFactory::create(self::class, $config, $box);
+    }
+
     /**
-     * @param array<string, mixed> $content
+     * {@inheritDoc}
      */
     public function __invoke(array $content): string
     {

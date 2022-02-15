@@ -35,7 +35,7 @@
     "require-dev": {
         "bartlett/graph-uml": "^1.2",
         "psr/log": "^1.0",
-        "humbug/box": "dev-build_manifest"
+        "bartlett/box-manifest": "dev-master"
     },
     "authors": [
         {
@@ -80,11 +80,5 @@
         "branch-alias": {
             "dev-master": "4.x-dev"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/llaville/box"
-        }
-    ]
+    }
 }
