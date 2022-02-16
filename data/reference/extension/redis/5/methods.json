@@ -130,5 +130,29 @@
         "name": "_uncompress",
         "ext_min": "5.3.5RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "hscan",
+        "ext_min": "5.3.7RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "scan",
+        "ext_min": "5.3.7RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "sscan",
+        "ext_min": "5.3.7RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisArray",
+        "name": "zscan",
+        "ext_min": "5.3.7RC1",
+        "php_min": "7.0.0"
     }
 ]

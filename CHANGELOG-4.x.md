@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Rdkafka reference updated to version 6.0.1 (stable)
+- Redis reference updated to version 5.3.7 (stable)
 
 ### Fixed
 

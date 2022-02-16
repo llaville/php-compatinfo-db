@@ -124,5 +124,23 @@
         "rel_date": "2022-01-17",
         "rel_state": "stable",
         "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "5.3.7RC1",
+        "rel_date": "2022-02-02",
+        "rel_state": "alpha",
+        "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "5.3.7RC2",
+        "rel_date": "2022-02-12",
+        "rel_state": "beta",
+        "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "5.3.7",
+        "rel_date": "2022-02-15",
+        "rel_state": "stable",
+        "php_min": "7.0.0"
     }
 ]
