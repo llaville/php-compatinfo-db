@@ -55,6 +55,9 @@ final class ManifestBuilder implements ManifestBuilderInterface
 
         foreach ($allRequirements as $category => $requirements) {
             foreach ($requirements as $req => $constraint) {
+                if (!empty($constraint)) {
+                    $constraint = sprintf('<comment>%s</comment>', $constraint);
+                }
                 if ('php' === $req) {
                     $entries[] = sprintf('%s%s %s: <info>%s</info>', $prefix, $category, "$req $constraint", \phpversion());
                 } elseif (substr($req, 0, 4) === 'ext-') {
