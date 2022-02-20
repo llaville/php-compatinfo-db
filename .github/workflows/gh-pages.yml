@@ -39,13 +39,13 @@ jobs:
 
             -   # Setup PHP runtime
                 name: Setup PHP runtime
-                uses: "shivammathur/setup-php@v2"
+                uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
 
             -   # Install Composer dependencies
                 name: Install Composer dependencies
-                uses: "ramsey/composer-install@v2"
+                uses: ramsey/composer-install@v2
                 with:
                     dependency-versions: "highest"
                     composer-options: "--prefer-dist --no-scripts"
@@ -85,7 +85,7 @@ jobs:
                 with:
                     github_token: ${{ secrets.GITHUB_TOKEN }}
                     publish_dir: ./site
-                    destination_dir: 3.x
+                    destination_dir: 4.x
                     full_commit_message: "Deployed ${{ github.sha }} with MkDocs"
                     force_orphan: true
                     user_name: 'github-actions'
