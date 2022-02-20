@@ -25,8 +25,8 @@ This database is currently only support by its initial project [php-compatinfo](
 
 ## Documentation
 
-All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/3.x),
-generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/3.17/docs) folder.
+All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/4.x),
+generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/4.x/docs) folder.
 
 * [Getting Started](docs/getting-started.md).
 
