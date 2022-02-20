@@ -4,209 +4,209 @@
         "name": "append",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "assign",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "assignelem",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "free",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "getelem",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "max",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "size",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Collection",
         "name": "trim",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "append",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "close",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "eof",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "erase",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "export",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "flush",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "free",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "getbuffering",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "import",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "load",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "read",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "rewind",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "save",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "savefile",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "seek",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "setbuffering",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "size",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "tell",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "truncate",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "write",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "writetemporary",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "class_name": "OCI-Lob",
         "name": "writetofile",
         "ext_min": "1.0",
         "php_min": "4.3.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     }
 ]

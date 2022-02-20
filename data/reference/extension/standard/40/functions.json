@@ -377,7 +377,7 @@
         "name": "convert_cyr_string",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "copy",
@@ -527,7 +527,7 @@
         "name": "ezmlm_hash",
         "ext_min": "4.0.2",
         "php_min": "4.0.2",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "fclose",
@@ -562,9 +562,9 @@
     {
         "name": "fgetss",
         "ext_min": "4.0.0",
-        "ext_max": "7.4.27",
+        "ext_max": "7.4.28",
         "php_min": "4.0.0",
-        "php_max": "7.4.27",
+        "php_max": "7.4.28",
         "parameters": "4.0.0, 4.0.0, 5.0.0"
     },
     {
@@ -718,13 +718,13 @@
         "name": "get_magic_quotes_gpc",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "get_magic_quotes_runtime",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "get_meta_tags",
@@ -851,7 +851,7 @@
         "name": "hebrevc",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "hexdec",
@@ -1046,7 +1046,7 @@
         "name": "is_real",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "is_resource",

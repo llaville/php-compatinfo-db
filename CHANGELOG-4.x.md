@@ -7,6 +7,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Added
+
+- PHP 7.4.28 support
+
 ### Changed
 
 - Rdkafka reference updated to version 6.0.1 (stable)

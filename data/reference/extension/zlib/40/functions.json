@@ -43,7 +43,7 @@
         "name": "gzgetss",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.27"
+        "php_max": "7.4.28"
     },
     {
         "name": "gzinflate",
