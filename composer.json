@@ -33,9 +33,9 @@
         "symfony/stopwatch": "^4.4 || ^5.0"
     },
     "require-dev": {
+        "bartlett/box-manifest": "^1.0",
         "bartlett/graph-uml": "^1.2",
-        "psr/log": "^1.0",
-        "bartlett/box-manifest": "dev-master"
+        "psr/log": "^1.0"
     },
     "authors": [
         {
