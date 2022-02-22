@@ -53,17 +53,25 @@ jobs:
             -   # Update diagrams used in documentation
                 name: Update Diagrams
                 run: |
-                    php resources/graph-uml/build.php application-command docs/application
-                    php resources/graph-uml/build.php application-event docs/application
-                    php resources/graph-uml/build.php application-query docs/application
-                    php resources/graph-uml/build.php application-service docs/application
-                    php resources/graph-uml/build.php domain-factory docs/domain
-                    php resources/graph-uml/build.php domain-repository docs/domain
-                    php resources/graph-uml/build.php domain-valueobject docs/domain
-                    php resources/graph-uml/build.php infrastructure-bus docs/infrastructure
-                    php resources/graph-uml/build.php infrastructure-framework docs/infrastructure
-                    php resources/graph-uml/build.php infrastructure-persistence docs/infrastructure
-                    php resources/graph-uml/build.php presentation-console docs/presentation
+                    php resources/graph-uml/build.php application-command docs/assets/images
+                    php resources/graph-uml/build.php application-event docs/assets/images
+                    php resources/graph-uml/build.php application-query docs/assets/images
+                    php resources/graph-uml/build.php application-service docs/assets/images
+                    php resources/graph-uml/build.php domain-factory docs/assets/images
+                    php resources/graph-uml/build.php domain-repository docs/assets/images
+                    php resources/graph-uml/build.php domain-valueobject docs/assets/images
+                    php resources/graph-uml/build.php infrastructure-bus docs/assets/images
+                    php resources/graph-uml/build.php infrastructure-framework docs/assets/images
+                    php resources/graph-uml/build.php infrastructure-persistence docs/assets/images
+                    php resources/graph-uml/build.php presentation-console docs/assets/images
+
+            -   # Commit UML class diagrams assets
+                run: |
+                    git config user.name github-actions
+                    git config user.email github-actions@github.com
+                    git add docs/assets/images
+                    git commit -m "UML class diagrams generated"
+                    git push
 
     deploy:
         needs: update_diagrams
