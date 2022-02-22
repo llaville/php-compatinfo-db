@@ -11,63 +11,8 @@ on:
     workflow_dispatch:
 
 jobs:
-    update_diagrams:
-        name: Generate UML class diagrams
-
-        runs-on: ${{ matrix.os }}
-
-        strategy:
-            fail-fast: false
-            matrix:
-                os:
-                    - ubuntu-latest
-                php:
-                    - 7.4
-
-        steps:
-            -   # Git Checkout
-                name: Checkout Code
-                uses: actions/checkout@v2
-                with:
-                    persist-credentials: false
-
-            -   # Setup Libraries
-                name: Setup Libraries
-                run: |
-                    sudo apt-get update
-                    sudo apt-fast install graphviz -y
-
-            -   # Setup PHP runtime
-                name: Setup PHP runtime
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: ${{ matrix.php }}
-
-            -   # Install Composer dependencies
-                name: Install Composer dependencies
-                uses: ramsey/composer-install@v2
-                with:
-                    dependency-versions: "highest"
-                    composer-options: "--prefer-dist --no-scripts"
-
-            -   # Update diagrams used in documentation
-                name: Update Diagrams
-                run: |
-                    php resources/graph-uml/build.php application-command docs/assets/images
-                    php resources/graph-uml/build.php application-event docs/assets/images
-                    php resources/graph-uml/build.php application-query docs/assets/images
-                    php resources/graph-uml/build.php application-service docs/assets/images
-                    php resources/graph-uml/build.php domain-factory docs/assets/images
-                    php resources/graph-uml/build.php domain-repository docs/assets/images
-                    php resources/graph-uml/build.php domain-valueobject docs/assets/images
-                    php resources/graph-uml/build.php infrastructure-bus docs/assets/images
-                    php resources/graph-uml/build.php infrastructure-framework docs/assets/images
-                    php resources/graph-uml/build.php infrastructure-persistence docs/assets/images
-                    php resources/graph-uml/build.php presentation-console docs/assets/images
-
     deploy:
-        needs: update_diagrams
         uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
             destination-dir: 4.x
-            checkout-code: false
+            hook-script: "resources/gh-pages-hook.sh"
