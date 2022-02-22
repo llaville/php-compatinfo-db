@@ -53,6 +53,7 @@ jobs:
             -   # Update diagrams used in documentation
                 name: Update Diagrams
                 run: |
+                    mkdir -p docs/asset/images
                     php resources/graph-uml/build.php application-command docs/assets/images
                     php resources/graph-uml/build.php application-event docs/assets/images
                     php resources/graph-uml/build.php application-query docs/assets/images
