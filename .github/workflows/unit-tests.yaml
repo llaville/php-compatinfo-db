@@ -12,10 +12,11 @@ on:
 
 jobs:
     lint_files:
-        name: ML
         uses: llaville/.github/.github/workflows/mega-linter.yml@master
+        with:
+            repository: ${{ github.repository }}
 
-    php_tests:
+    unit_tests:
         needs: lint_files
 
         runs-on: ${{ matrix.os }}
@@ -66,7 +67,7 @@ jobs:
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
-                    key: cache-v3
+                    key: cache-v4
 
             -   # Cache extensions
                 name: Cache extensions
