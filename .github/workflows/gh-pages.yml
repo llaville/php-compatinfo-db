@@ -64,14 +64,10 @@ jobs:
                     php resources/graph-uml/build.php infrastructure-framework docs/assets/images
                     php resources/graph-uml/build.php infrastructure-persistence docs/assets/images
                     php resources/graph-uml/build.php presentation-console docs/assets/images
-                    git config user.name "github-actions"
-                    git config user.email "github-actions@users.noreply.github.com"
-                    git add docs/assets/images
-                    git commit -m "UML class diagrams generated"
-                    git push
 
     deploy:
         needs: update_diagrams
         uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
             destination-dir: 4.x
+            checkout-code: false
