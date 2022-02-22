@@ -3,12 +3,12 @@
 
 ## Factory(s)
 
-![Graph UML Domain Factory](./domain-factory.graphviz.svg)
+![Graph UML Domain Factory](../assets/images/domain-factory.graphviz.svg)
 
 ## Repository(s)
 
-![Graph UML Domain Repository](./domain-repository.graphviz.svg)
+![Graph UML Domain Repository](../assets/images/domain-repository.graphviz.svg)
 
 ## Value Object(s)
 
-![Graph UML Domain VO](./domain-valueobject.graphviz.svg)
+![Graph UML Domain VO](../assets/images/domain-valueobject.graphviz.svg)
