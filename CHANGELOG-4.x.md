@@ -7,11 +7,17 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- [#118](https://github.com/llaville/php-compatinfo-db/issues/118) : Automate creation of new GitHub Release with PHAR version as asset
+
 ### Changed
 
 - Http reference updated to version 4.2.2 (stable) for PHP 8.x
 - Http reference updated to version 3.2.5 (stable) for PHP 7.x
 - Mailparse reference updated to version 3.1.3 (stable)
+<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.1.0] - 2022-02-20
 
