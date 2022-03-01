@@ -17,6 +17,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Http reference updated to version 4.2.2 (stable) for PHP 8.x
 - Http reference updated to version 3.2.5 (stable) for PHP 7.x
 - Mailparse reference updated to version 3.1.3 (stable)
+
+### Fixed
+
+- [#119](https://github.com/llaville/php-compatinfo-db/issues/119) : Auto diagnose print its results even if all works fine
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.1.0] - 2022-02-20
