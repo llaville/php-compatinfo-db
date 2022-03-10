@@ -17,7 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Http reference updated to version 4.2.2 (stable) for PHP 8.x
 - Http reference updated to version 3.2.5 (stable) for PHP 7.x
 - Mailparse reference updated to version 3.1.3 (stable)
-- Memcached reference updated to version 3.2.0RC1 (beta)
+- Memcached reference updated to version 3.2.0RC2 (beta)
 
 ### Fixed
 
