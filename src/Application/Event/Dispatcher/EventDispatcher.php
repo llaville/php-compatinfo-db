@@ -62,7 +62,6 @@ final class EventDispatcher extends SymfonyEventDispatcher
         }, 100); // with a priority highest to default (in case of --profile usage)
 
         $this->addListener(ConsoleEvents::TERMINATE, function (ConsoleTerminateEvent $event) {
-            $command = $event->getCommand();
             if ($event->getExitCode() == ConsoleCommandEvent::RETURN_CODE_DISABLED) {
                 $io = new Style($event->getInput(), $event->getOutput());
                 $io->writeln($this->diagnoseOutput->fetch());
