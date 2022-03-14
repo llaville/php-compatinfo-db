@@ -9,12 +9,14 @@
  * @author Laurent Laville
  */
 
+
 use Bartlett\CompatInfoDb\Presentation\Console\Command\BuildCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\CreateCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DiagnoseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\DoctorCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\InitCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ListCommand;
+use Bartlett\CompatInfoDb\Presentation\Console\Command\PolyfillCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ReleaseCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\ShowCommand;
 
@@ -27,6 +29,7 @@ function dataSource(): Generator
         DoctorCommand::class,
         InitCommand::class,
         ListCommand::class,
+        PolyfillCommand::class,
         ReleaseCommand::class,
         ShowCommand::class,
     ];

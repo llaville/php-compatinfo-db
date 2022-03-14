@@ -18,6 +18,8 @@ use Bartlett\CompatInfoDb\Application\Command\Create\CreateCommand;
 use Bartlett\CompatInfoDb\Application\Command\Create\CreateHandler;
 use Bartlett\CompatInfoDb\Application\Command\Init\InitHandler;
 use Bartlett\CompatInfoDb\Application\Command\Init\InitCommand;
+use Bartlett\CompatInfoDb\Application\Command\Polyfill\PolyfillCommand;
+use Bartlett\CompatInfoDb\Application\Command\Polyfill\PolyfillHandler;
 use Bartlett\CompatInfoDb\Application\Command\Release\ReleaseCommand;
 use Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler;
 
@@ -30,6 +32,8 @@ function dataSource(): Generator
         CreateHandler::class,
         InitCommand::class,
         InitHandler::class,
+        PolyfillCommand::class,
+        PolyfillHandler::class,
         ReleaseCommand::class,
         ReleaseHandler::class,
         CommandBusInterface::class,
