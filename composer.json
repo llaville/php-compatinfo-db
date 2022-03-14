@@ -78,7 +78,8 @@
     "extra": {
         "enable-patching": true,
         "branch-alias": {
-            "dev-master": "4.x-dev"
+            "dev-master": "4.x-dev",
+            "dev-4.x": "4.2.x-dev"
         }
     }
 }
