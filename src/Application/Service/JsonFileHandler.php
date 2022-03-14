@@ -61,7 +61,7 @@ final class JsonFileHandler
         if (!file_exists($filename)) {
             return false;
         }
-        $jsonStr = json_encode($data, JSON_PRETTY_PRINT) . PHP_EOL;
+        $jsonStr = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL;
         $bytes = file_put_contents($filename, $jsonStr);
         return is_int($bytes);
     }

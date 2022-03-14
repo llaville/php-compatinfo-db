@@ -58,6 +58,11 @@ class Function_
     private int $flags;
 
     /**
+     * @Column(name="polyfill", type="string", nullable=true)
+     */
+    private ?string $polyfill;
+
+    /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="functions")
      */
     private Extension $extension;
@@ -182,6 +187,22 @@ class Function_
     public function setFlags(int $flags): void
     {
         $this->flags = $flags;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPolyfill(): ?string
+    {
+        return $this->polyfill;
+    }
+
+    /**
+     * @param string|null $polyfill
+     */
+    public function setPolyfill(?string $polyfill): void
+    {
+        $this->polyfill = $polyfill;
     }
 
     /**

@@ -35,6 +35,7 @@ final class ConstantHydrator implements HydratorInterface
             'ext_max' => $object->getExtMax(),
             'php_min' => $object->getPhpMin(),
             'php_max' => $object->getPhpMax(),
+            'polyfill' => $object->getPolyfill(),
         ];
     }
 
@@ -55,6 +56,7 @@ final class ConstantHydrator implements HydratorInterface
         $object->setExtMax($data['ext_max'] ?? null);
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
+        $object->setPolyfill($data['polyfill'] ?? null);
 
         $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
@@ -82,7 +84,8 @@ final class ConstantHydrator implements HydratorInterface
             $entity->getExtMax(),
             $entity->getPhpMin(),
             $entity->getPhpMax(),
-            $dependencies
+            $dependencies,
+            $entity->getPolyfill()
         );
     }
 }

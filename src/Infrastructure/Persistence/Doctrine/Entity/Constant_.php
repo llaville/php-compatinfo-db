@@ -34,6 +34,11 @@ class Constant_
     private ?string $declaringClass;
 
     /**
+     * @Column(name="polyfill", type="string", nullable=true)
+     */
+    private ?string $polyfill;
+
+    /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="constants")
      */
     private Extension $extension;
@@ -88,6 +93,22 @@ class Constant_
     public function setDeclaringClass(?string $declaringClass): void
     {
         $this->declaringClass = $declaringClass;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPolyfill(): ?string
+    {
+        return $this->polyfill;
+    }
+
+    /**
+     * @param string|null $polyfill
+     */
+    public function setPolyfill(?string $polyfill): void
+    {
+        $this->polyfill = $polyfill;
     }
 
     /**

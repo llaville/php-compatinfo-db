@@ -45,6 +45,7 @@ final class FunctionHydrator implements HydratorInterface
             'is_public' => (bool) ($object->getFlags() & Class_::MODIFIER_PUBLIC),
             'is_protected' => (bool) ($object->getFlags() & Class_::MODIFIER_PROTECTED),
             'is_private' => (bool) ($object->getFlags() & Class_::MODIFIER_PRIVATE),
+            'polyfill' => $object->getPolyfill(),
         ];
     }
 
@@ -68,6 +69,7 @@ final class FunctionHydrator implements HydratorInterface
         $object->setParameters(isset($data['parameters']) ? explode(',', $data['parameters']) : null);
         $object->setExcludes(isset($data['php_excludes']) ? explode(',', $data['php_excludes']) : null);
         $object->setPrototype($data['prototype'] ?? null);
+        $object->setPolyfill($data['polyfill'] ?? null);
 
         $flags = Class_::MODIFIER_PUBLIC;
         if (isset($data['static']) && $data['static'] === true) {
@@ -107,7 +109,8 @@ final class FunctionHydrator implements HydratorInterface
             $entity->getParameters(),
             $entity->getExcludes(),
             $dependencies,
-            $entity->getFlags()
+            $entity->getFlags(),
+            $entity->getPolyfill()
         );
     }
 }

@@ -21,6 +21,7 @@ final class Constant_
     private string $extension;
     /** @var array|Dependency[] */
     private array $dependencies;
+    private ?string $polyfill;
 
     /**
      * Constant_ constructor.
@@ -33,6 +34,7 @@ final class Constant_
      * @param string $phpMin
      * @param string|null $phpMax
      * @param array|Dependency[] $dependencies
+     * @param string|null $polyfill
      */
     public function __construct(
         string $name,
@@ -42,7 +44,8 @@ final class Constant_
         ?string $extMax,
         string $phpMin,
         ?string $phpMax,
-        array $dependencies = []
+        array $dependencies = [],
+        ?string $polyfill = null
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -52,6 +55,7 @@ final class Constant_
         $this->phpMin = $phpMin;
         $this->phpMax = $phpMax;
         $this->dependencies = $dependencies;
+        $this->polyfill = $polyfill;
     }
 
     /**
@@ -68,6 +72,14 @@ final class Constant_
     public function getDeclaringClass(): ?string
     {
         return $this->declaringClass;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPolyfill(): ?string
+    {
+        return $this->polyfill;
     }
 
     /**
