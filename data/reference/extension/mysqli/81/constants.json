@@ -7,7 +7,8 @@
     {
         "name": "MYSQLI_REFRESH_REPLICA",
         "ext_min": "8.1.0alpha1",
-        "php_min": "8.1.0alpha1"
+        "php_min": "8.1.0alpha1",
+        "polyfill": "symfony/polyfill-php81"
     },
     {
         "name": "MYSQLI_IS_MARIADB",

@@ -2,7 +2,8 @@
     {
         "name": "array_is_list",
         "ext_min": "8.1.0alpha1",
-        "php_min": "8.1.0alpha1"
+        "php_min": "8.1.0alpha1",
+        "polyfill": "symfony/polyfill-php81"
     },
     {
         "name": "fsync",

@@ -10,8 +10,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
-- new `db:polyfill` command to add polyfill package elements into JSON files. See feature request <https://github.com/llaville/php-compatinfo/issues/237>
 - [#118](https://github.com/llaville/php-compatinfo-db/issues/118) : Automate creation of new GitHub Release with PHAR version as asset
+- [#120](https://github.com/llaville/php-compatinfo-db/issues/120) : New `db:polyfill` command to add polyfill package elements into JSON files. See feature request <https://github.com/llaville/php-compatinfo/issues/237>
+  - add [symfony/polyfill-php81](https://github.com/symfony/polyfill/tree/main/src/Php81) polyfill support
 
 ### Changed
 
