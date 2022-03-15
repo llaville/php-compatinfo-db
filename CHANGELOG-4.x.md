@@ -27,6 +27,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - [#119](https://github.com/llaville/php-compatinfo-db/issues/119) : Auto diagnose print its results even if all works fine
+- add float limit constants missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.1.0] - 2022-02-20

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "PHP_FLOAT_DIG",
+        "ext_min": "7.2.0",
+        "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "PHP_FLOAT_EPSILON",
+        "ext_min": "7.2.0",
+        "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "PHP_FLOAT_MAX",
+        "ext_min": "7.2.0",
+        "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "PHP_FLOAT_MIN",
+        "ext_min": "7.2.0",
+        "php_min": "7.2.0alpha1"
+    }
+]
