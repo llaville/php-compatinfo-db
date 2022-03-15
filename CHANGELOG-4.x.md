@@ -15,6 +15,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
   - add [symfony/polyfill-php81](https://github.com/symfony/polyfill/tree/main/src/Php81) polyfill support
   - add [symfony/polyfill-php80](https://github.com/symfony/polyfill/tree/main/src/Php80) polyfill support
   - add [symfony/polyfill-php74](https://github.com/symfony/polyfill/tree/main/src/Php74) polyfill support
+  - add [symfony/polyfill-php73](https://github.com/symfony/polyfill/tree/main/src/Php73) polyfill support
 
 ### Changed
 
