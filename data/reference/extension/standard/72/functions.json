@@ -13,5 +13,10 @@
         "name": "stream_isatty",
         "ext_min": "7.2.0",
         "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "sapi_windows_vt100_support",
+        "ext_min": "7.2.0",
+        "php_min": "7.2.0alpha1"
     }
 ]
