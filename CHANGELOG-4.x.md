@@ -28,6 +28,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - [#119](https://github.com/llaville/php-compatinfo-db/issues/119) : Auto diagnose print its results even if all works fine
 - add float limit constants missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
+- add os family constant missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
 - add `sapi_windows_vt100_support` missing function from standard extension
 <!-- MARKDOWN-RELEASE:END -->
 

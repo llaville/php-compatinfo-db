@@ -18,5 +18,10 @@
         "name": "PHP_FLOAT_MIN",
         "ext_min": "7.2.0",
         "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "PHP_OS_FAMILY",
+        "ext_min": "7.2.0",
+        "php_min": "7.2.0alpha1"
     }
 ]
