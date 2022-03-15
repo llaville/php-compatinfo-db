@@ -14,6 +14,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#120](https://github.com/llaville/php-compatinfo-db/issues/120) : New `db:polyfill` command to add polyfill package elements into JSON files. See feature request <https://github.com/llaville/php-compatinfo/issues/237>
   - add [symfony/polyfill-php81](https://github.com/symfony/polyfill/tree/main/src/Php81) polyfill support
   - add [symfony/polyfill-php80](https://github.com/symfony/polyfill/tree/main/src/Php80) polyfill support
+  - add [symfony/polyfill-php74](https://github.com/symfony/polyfill/tree/main/src/Php74) polyfill support
 
 ### Changed
 
