@@ -2,21 +2,25 @@
     {
         "name": "utf8_decode",
         "ext_min": "7.2.0alpha1",
-        "php_min": "4.0.0"
+        "php_min": "4.0.0",
+        "polyfill": "symfony/polyfill-php72"
     },
     {
         "name": "utf8_encode",
         "ext_min": "7.2.0alpha1",
-        "php_min": "4.0.0"
+        "php_min": "4.0.0",
+        "polyfill": "symfony/polyfill-php72"
     },
     {
         "name": "stream_isatty",
         "ext_min": "7.2.0",
-        "php_min": "7.2.0alpha1"
+        "php_min": "7.2.0alpha1",
+        "polyfill": "symfony/polyfill-php72"
     },
     {
         "name": "sapi_windows_vt100_support",
         "ext_min": "7.2.0",
-        "php_min": "7.2.0alpha1"
+        "php_min": "7.2.0alpha1",
+        "polyfill": "symfony/polyfill-php72"
     }
 ]
