@@ -266,9 +266,9 @@ final class PolyfillHandler implements CommandHandlerInterface
             );
 
             if ($matches[1] === 'defined') {
-                $constantsFound[$matches[2]] = [$values['ext.name'], $values['ext.min']];
+                $constantsFound[$matches[2]] = [$values['ext.name'], $values['php.min']];
             } elseif ($matches[1] === 'function_exists') {
-                $functionsFound[$matches[2]] = [$values['ext.name'], $values['ext.min']];
+                $functionsFound[$matches[2]] = [$values['ext.name'], $values['php.min']];
             }
         }
 
