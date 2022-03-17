@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
   - add [symfony/polyfill-php74](https://github.com/symfony/polyfill/tree/main/src/Php74) polyfill support
   - add [symfony/polyfill-php73](https://github.com/symfony/polyfill/tree/main/src/Php73) polyfill support
   - add [symfony/polyfill-php72](https://github.com/symfony/polyfill/tree/main/src/Php72) polyfill support
+  - add [symfony/polyfill-iconv](https://github.com/symfony/polyfill/tree/main/src/Iconv) polyfill support
 
 ### Changed
 
