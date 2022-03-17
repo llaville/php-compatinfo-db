@@ -304,7 +304,11 @@ final class PolyfillHandler implements CommandHandlerInterface
                 $shouldRewrite = false;
                 foreach ($meta as $index => $item) {
                     if ($item['name'] === $name) {
-                        $meta[$index]['polyfill'] = $packageName;
+                        if (isset($meta[$index]['polyfill'])) {
+                            $meta[$index]['polyfill'] .= ', ' . $packageName;
+                        } else {
+                            $meta[$index]['polyfill'] = $packageName;
+                        }
                         $shouldRewrite = true;
                     }
                 }
