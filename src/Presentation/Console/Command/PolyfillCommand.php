@@ -45,9 +45,9 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
             ->addOption(
                 'php',
                 null,
-                InputOption::VALUE_REQUIRED,
+                InputOption::VALUE_IS_ARRAY | InputOption::VALUE_REQUIRED,
                 'Polyfill for PHP version',
-                '7.4'
+                ['7.4']
             )
         ;
     }
@@ -59,7 +59,7 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
         $polyfillCommand = new AppPolyfillCommand(
             trim($input->getArgument('package')),
             trim($input->getArgument('tag')),
-            trim($input->getOption('php')),
+            $input->getOption('php'),
             $io
         );
 

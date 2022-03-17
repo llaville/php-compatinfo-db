@@ -30,11 +30,13 @@ use function fopen;
 use function fwrite;
 use function getenv;
 use function implode;
+use function in_array;
 use function json_decode;
 use function mkdir;
 use function preg_match;
 use function sprintf;
 use function str_replace;
+use function substr;
 use function sys_get_temp_dir;
 use const DIRECTORY_SEPARATOR;
 
@@ -104,7 +106,12 @@ final class PolyfillHandler implements CommandHandlerInterface
             );
         }
 
-        $results = $this->analyse($tempPackageDir);
+        $whitelist = 'bootstrap.php';
+        if (!file_exists($tempPackageDir . DIRECTORY_SEPARATOR . $whitelist)) {
+            $whitelist = null;
+        }
+
+        $results = $this->analyse($tempPackageDir, $whitelist);
         if (empty($results)) {
             return;
         }
@@ -117,13 +124,47 @@ final class PolyfillHandler implements CommandHandlerInterface
                 )
             );
         }
+        if ($io->isDebug()) {
+            $phpVersions = $command->getPhp();
 
-        $major = str_replace('.', '', $command->getPhp());
-        if (!$this->updateReference($major, $results, $command->getPackage())) {
-            throw new LogicException(
-                'No reference updated. <comment>Verify if "php" option is accordingly set to this polyfill.</comment>'
-            );
+            list($grabbed, $ignored) = $this->getListing($results['constants'], $phpVersions);
+            $io->writeln('> Constants:');
+            $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
+            $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
+
+            list($grabbed, $ignored) = $this->getListing($results['functions'], $phpVersions);
+            $io->writeln('> Functions:');
+            $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
+            $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
         }
+
+        foreach ($command->getPhp() as $phpVersion) {
+            $major = str_replace('.', '', $phpVersion);
+            if (!$this->updateReference($major, $results, $command->getPackage())) {
+                throw new LogicException(
+                    'No reference updated. <comment>Verify if "php" option is accordingly set to this polyfill.</comment>'
+                );
+            }
+        }
+    }
+
+    /**
+     * @param array<string, mixed> $values
+     * @param string[] $phpVersions
+     * @return array<int, mixed>
+     */
+    private function getListing(array $values, array $phpVersions): array
+    {
+        $grabbed = [];
+        $ignored = [];
+        foreach ($values as $name => $extra) {
+            if (in_array(substr($extra[1], 0, 3), $phpVersions)) {
+                $grabbed[] = sprintf('(PHP %s) %s', $extra[1], $name);
+            } else {
+                $ignored[] = sprintf('(PHP %s) %s', $extra[1], $name);
+            }
+        }
+        return [$grabbed, $ignored];
     }
 
     private function getExecutable(string $name): string
@@ -188,9 +229,11 @@ final class PolyfillHandler implements CommandHandlerInterface
     /**
      * @return array<string, mixed>
      */
-    private function analyse(string $packageDir): ?array
+    private function analyse(string $packageDir, ?string $whitelist = null): ?array
     {
-        $process = new Process([$this->compatInfoBin, 'analyser:run', '--output=json', $packageDir]);
+        $dataSource = empty($whitelist) ? $packageDir : \implode(\DIRECTORY_SEPARATOR, [$packageDir, $whitelist]);
+
+        $process = new Process([$this->compatInfoBin, 'analyser:run', '--output=json', $dataSource]);
         $process->start();
         while ($process->isRunning()) {
             // waiting for process to finish
