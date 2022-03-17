@@ -2,6 +2,7 @@
     {
         "name": "mb_encoding_aliases",
         "ext_min": "5.3.0",
-        "php_min": "5.3.0"
+        "php_min": "5.3.0",
+        "polyfill": "symfony/polyfill-mbstring"
     }
 ]

@@ -2,6 +2,7 @@
     {
         "name": "mb_check_encoding",
         "ext_min": "4.4.3",
-        "php_min": "4.4.3"
+        "php_min": "4.4.3",
+        "polyfill": "symfony/polyfill-mbstring"
     }
 ]

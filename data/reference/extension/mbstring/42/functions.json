@@ -63,7 +63,8 @@
     {
         "name": "mb_get_info",
         "ext_min": "4.2.0",
-        "php_min": "4.2.0"
+        "php_min": "4.2.0",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "mb_regex_encoding",
