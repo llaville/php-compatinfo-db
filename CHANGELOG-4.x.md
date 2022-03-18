@@ -19,6 +19,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
   - add [symfony/polyfill-php72](https://github.com/symfony/polyfill/tree/main/src/Php72) polyfill support
   - add [symfony/polyfill-iconv](https://github.com/symfony/polyfill/tree/main/src/Iconv) polyfill support
   - add [symfony/polyfill-mbstring](https://github.com/symfony/polyfill/tree/main/src/Mbstring) polyfill support
+  - add [symfony/polyfill-ctype](https://github.com/symfony/polyfill/tree/main/src/Ctype) polyfill support
 
 ### Changed
 

@@ -2,56 +2,67 @@
     {
         "name": "ctype_alnum",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_alpha",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_cntrl",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_digit",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_graph",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_lower",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_print",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_punct",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_space",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_upper",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     },
     {
         "name": "ctype_xdigit",
         "ext_min": "4.0.4",
-        "php_min": "4.0.4"
+        "php_min": "4.0.4",
+        "polyfill": "symfony/polyfill-ctype"
     }
 ]
