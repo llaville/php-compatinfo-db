@@ -2,11 +2,13 @@
     {
         "name": "ICONV_IMPL",
         "ext_min": "4.3.0",
-        "php_min": "4.3.0"
+        "php_min": "4.3.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "ICONV_VERSION",
         "ext_min": "4.3.0",
-        "php_min": "4.3.0"
+        "php_min": "4.3.0",
+        "polyfill": "symfony/polyfill-iconv"
     }
 ]

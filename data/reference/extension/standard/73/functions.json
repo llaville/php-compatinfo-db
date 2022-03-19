@@ -2,7 +2,8 @@
     {
         "name": "hrtime",
         "ext_min": "7.3.0",
-        "php_min": "7.3.0alpha1"
+        "php_min": "7.3.0alpha1",
+        "polyfill": "symfony/polyfill-php73"
     },
     {
         "name": "net_get_interfaces",
@@ -12,16 +13,19 @@
     {
         "name": "is_countable",
         "ext_min": "7.3.0",
-        "php_min": "7.3.0alpha1"
+        "php_min": "7.3.0alpha1",
+        "polyfill": "symfony/polyfill-php73"
     },
     {
         "name": "array_key_first",
         "ext_min": "7.3.0",
-        "php_min": "7.3.0alpha4"
+        "php_min": "7.3.0alpha4",
+        "polyfill": "symfony/polyfill-php73"
     },
     {
         "name": "array_key_last",
         "ext_min": "7.3.0",
-        "php_min": "7.3.0alpha4"
+        "php_min": "7.3.0alpha4",
+        "polyfill": "symfony/polyfill-php73"
     }
 ]

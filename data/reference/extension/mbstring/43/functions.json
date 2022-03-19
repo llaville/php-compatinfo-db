@@ -2,7 +2,8 @@
     {
         "name": "mb_convert_case",
         "ext_min": "4.3.0",
-        "php_min": "4.3.0"
+        "php_min": "4.3.0",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "mb_regex_set_options",
@@ -12,16 +13,19 @@
     {
         "name": "mb_strtolower",
         "ext_min": "4.3.0",
-        "php_min": "4.3.0"
+        "php_min": "4.3.0",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "mb_strtoupper",
         "ext_min": "4.3.0",
-        "php_min": "4.3.0"
+        "php_min": "4.3.0",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "mb_substr_count",
         "ext_min": "4.3.0",
-        "php_min": "4.3.0"
+        "php_min": "4.3.0",
+        "polyfill": "symfony/polyfill-mbstring"
     }
 ]

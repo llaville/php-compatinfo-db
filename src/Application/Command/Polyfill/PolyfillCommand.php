@@ -20,10 +20,14 @@ final class PolyfillCommand implements CommandInterface
 {
     private string $package;
     private string $tag;
-    private string $php;
+    /** @var string[]  */
+    private array $php;
     private StyleInterface $io;
 
-    public function __construct(string $package, string $tag, string $php, StyleInterface $io)
+    /**
+     * @param string[] $php
+     */
+    public function __construct(string $package, string $tag, array $php, StyleInterface $io)
     {
         $this->package = $package;
         $this->tag = $tag;
@@ -41,7 +45,10 @@ final class PolyfillCommand implements CommandInterface
         return $this->tag;
     }
 
-    public function getPhp(): string
+    /**
+     * @return string[]
+     */
+    public function getPhp(): array
     {
         return $this->php;
     }

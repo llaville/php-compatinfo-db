@@ -10,8 +10,16 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
-- new `db:polyfill` command to add polyfill package elements into JSON files. See feature request <https://github.com/llaville/php-compatinfo/issues/237>
 - [#118](https://github.com/llaville/php-compatinfo-db/issues/118) : Automate creation of new GitHub Release with PHAR version as asset
+- [#120](https://github.com/llaville/php-compatinfo-db/issues/120) : New `db:polyfill` command to add polyfill package elements into JSON files. See feature request <https://github.com/llaville/php-compatinfo/issues/237>
+  - add [symfony/polyfill-php81](https://github.com/symfony/polyfill/tree/main/src/Php81) polyfill support
+  - add [symfony/polyfill-php80](https://github.com/symfony/polyfill/tree/main/src/Php80) polyfill support
+  - add [symfony/polyfill-php74](https://github.com/symfony/polyfill/tree/main/src/Php74) polyfill support
+  - add [symfony/polyfill-php73](https://github.com/symfony/polyfill/tree/main/src/Php73) polyfill support
+  - add [symfony/polyfill-php72](https://github.com/symfony/polyfill/tree/main/src/Php72) polyfill support
+  - add [symfony/polyfill-iconv](https://github.com/symfony/polyfill/tree/main/src/Iconv) polyfill support
+  - add [symfony/polyfill-mbstring](https://github.com/symfony/polyfill/tree/main/src/Mbstring) polyfill support
+  - add [symfony/polyfill-ctype](https://github.com/symfony/polyfill/tree/main/src/Ctype) polyfill support
 
 ### Changed
 
@@ -23,6 +31,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - [#119](https://github.com/llaville/php-compatinfo-db/issues/119) : Auto diagnose print its results even if all works fine
+- add float limit constants missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
+- add os family constant missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
+- add `sapi_windows_vt100_support` missing function from standard extension
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.1.0] - 2022-02-20
