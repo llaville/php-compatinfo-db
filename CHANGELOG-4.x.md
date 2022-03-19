@@ -20,6 +20,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
   - add [symfony/polyfill-iconv](https://github.com/symfony/polyfill/tree/main/src/Iconv) polyfill support
   - add [symfony/polyfill-mbstring](https://github.com/symfony/polyfill/tree/main/src/Mbstring) polyfill support
   - add [symfony/polyfill-ctype](https://github.com/symfony/polyfill/tree/main/src/Ctype) polyfill support
+- PHP 8.0.17 support
 
 ### Changed
 
