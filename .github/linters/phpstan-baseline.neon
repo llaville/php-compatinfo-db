@@ -36,26 +36,6 @@ parameters:
 			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/Release.php
 
 		-
-			message: "#^Strict comparison using \\=\\=\\= between null and Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Class_ will always evaluate to false\\.$#"
-			count: 1
-			path: ../../src/Infrastructure/Persistence/Doctrine/Repository/ClassRepository.php
-
-		-
-			message: "#^Strict comparison using \\=\\=\\= between null and Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Constant_ will always evaluate to false\\.$#"
-			count: 1
-			path: ../../src/Infrastructure/Persistence/Doctrine/Repository/ConstantRepository.php
-
-		-
-			message: "#^Strict comparison using \\=\\=\\= between null and Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Extension will always evaluate to false\\.$#"
-			count: 1
-			path: ../../src/Infrastructure/Persistence/Doctrine/Repository/ExtensionRepository.php
-
-		-
-			message: "#^Strict comparison using \\=\\=\\= between null and Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Function_ will always evaluate to false\\.$#"
-			count: 1
-			path: ../../src/Infrastructure/Persistence/Doctrine/Repository/FunctionRepository.php
-
-		-
 			message: "#^Offset 'url' does not exist on array\\{charset\\?\\: string, dbname\\?\\: string, defaultTableOptions\\?\\: array\\<string, mixed\\>, default_dbname\\?\\: string, driver\\?\\: 'ibm_db2'\\|'mysqli'\\|'oci8'\\|'pdo_mysql'\\|'pdo_oci'\\|'pdo_pgsql'\\|'pdo_sqlite'\\|'pdo_sqlsrv'\\|'sqlsrv', driverClass\\?\\: class\\-string\\<Doctrine\\\\DBAL\\\\Driver\\>, driverOptions\\?\\: array, host\\?\\: string, \\.\\.\\.\\}\\.$#"
 			count: 1
 			path: ../../src/Infrastructure/ProjectRequirements.php
