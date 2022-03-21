@@ -5,3 +5,5 @@ parameters:
     level: 6
     paths:
         - ../../src/
+    excludePaths:
+        - ../../src/Infrastructure/ManifestBuilder.php

@@ -7,6 +7,39 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [4.2.0] - 2022-03-21
+
+<!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- [#118](https://github.com/llaville/php-compatinfo-db/issues/118) : Automate creation of new GitHub Release with PHAR version as asset
+- [#120](https://github.com/llaville/php-compatinfo-db/issues/120) : New `db:polyfill` command to add polyfill package elements into JSON files. See feature request <https://github.com/llaville/php-compatinfo/issues/237>
+  - add [symfony/polyfill-php81](https://github.com/symfony/polyfill/tree/main/src/Php81) polyfill support
+  - add [symfony/polyfill-php80](https://github.com/symfony/polyfill/tree/main/src/Php80) polyfill support
+  - add [symfony/polyfill-php74](https://github.com/symfony/polyfill/tree/main/src/Php74) polyfill support
+  - add [symfony/polyfill-php73](https://github.com/symfony/polyfill/tree/main/src/Php73) polyfill support
+  - add [symfony/polyfill-php72](https://github.com/symfony/polyfill/tree/main/src/Php72) polyfill support
+  - add [symfony/polyfill-iconv](https://github.com/symfony/polyfill/tree/main/src/Iconv) polyfill support
+  - add [symfony/polyfill-mbstring](https://github.com/symfony/polyfill/tree/main/src/Mbstring) polyfill support
+  - add [symfony/polyfill-ctype](https://github.com/symfony/polyfill/tree/main/src/Ctype) polyfill support
+- PHP 8.0.17 support
+- PHP 8.1.4 support
+
+### Changed
+
+- Http reference updated to version 4.2.2 (stable) for PHP 8.x
+- Http reference updated to version 3.2.5 (stable) for PHP 7.x
+- Mailparse reference updated to version 3.1.3 (stable)
+- Memcached reference updated to version 3.2.0RC2 (beta)
+
+### Fixed
+
+- [#119](https://github.com/llaville/php-compatinfo-db/issues/119) : Auto diagnose print its results even if all works fine
+- add float limit constants missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
+- add os family constant missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
+- add `sapi_windows_vt100_support` missing function from standard extension
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.1.0] - 2022-02-20
 
 ### Added
@@ -59,6 +92,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
 - display `manifest` on PHAR distribution. [Lear more](https://github.com/llaville/php-compatinfo-db/issues/111#issuecomment-1029708338)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.1.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.2.0...HEAD
+[4.2.0]: https://github.com/llaville/php-compatinfo-db/compare/4.1.0...4.2.0
 [4.1.0]: https://github.com/llaville/php-compatinfo-db/compare/4.0.0...4.1.0
 [4.0.0]: https://github.com/llaville/php-compatinfo-db/compare/3.18.0...4.0.0

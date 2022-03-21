@@ -8,11 +8,14 @@
 namespace Bartlett\CompatInfoDb\Application\Event\Dispatcher;
 
 use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
+use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\ConsoleEvents;
 use Symfony\Component\Console\Event\ConsoleCommandEvent;
+use Symfony\Component\Console\Event\ConsoleTerminateEvent;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher as SymfonyEventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -27,6 +30,8 @@ use function str_starts_with;
  */
 final class EventDispatcher extends SymfonyEventDispatcher
 {
+    private BufferedOutput $diagnoseOutput;
+
     public function __construct(
         InputInterface $input,
         EventSubscriberInterface $profileEventSubscriber
@@ -47,10 +52,19 @@ final class EventDispatcher extends SymfonyEventDispatcher
                 // launch auto diagnose
                 $diagnoseCommand = $app->find('diagnose');
                 // and print results
-                $statusCode = $diagnoseCommand->run(new ArrayInput([]), $event->getOutput());
+                $this->diagnoseOutput = new BufferedOutput();
+                $this->diagnoseOutput->setDecorated(true);
+                $statusCode = $diagnoseCommand->run(new ArrayInput([]), $this->diagnoseOutput);
                 if ($statusCode === AbstractCommand::FAILURE) {
                     $event->disableCommand();
                 }
+            }
+        }, 100); // with a priority highest to default (in case of --profile usage)
+
+        $this->addListener(ConsoleEvents::TERMINATE, function (ConsoleTerminateEvent $event) {
+            if ($event->getExitCode() == ConsoleCommandEvent::RETURN_CODE_DISABLED) {
+                $io = new Style($event->getInput(), $event->getOutput());
+                $io->writeln($this->diagnoseOutput->fetch());
             }
         }, 100); // with a priority highest to default (in case of --profile usage)
     }

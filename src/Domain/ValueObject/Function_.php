@@ -26,6 +26,7 @@ final class Function_
     /** @var Dependency[] */
     private array $dependencies;
     private int $flags;
+    private ?string $polyfill;
 
     /**
      * Function_ constructor.
@@ -41,6 +42,7 @@ final class Function_
      * @param string[]|null $excludes
      * @param Dependency[] $dependencies
      * @param int $flags
+     * @param string|null $polyfill
      */
     public function __construct(
         string $name,
@@ -53,7 +55,8 @@ final class Function_
         ?array $parameters,
         ?array $excludes,
         array $dependencies,
-        int $flags
+        int $flags,
+        ?string $polyfill
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -66,6 +69,7 @@ final class Function_
         $this->excludes = $excludes;
         $this->dependencies = $dependencies;
         $this->flags = $flags;
+        $this->polyfill = $polyfill;
     }
 
     /**
@@ -162,5 +166,13 @@ final class Function_
     public function isPrivate(): bool
     {
         return (bool) ($this->flags & Class_::MODIFIER_PRIVATE);
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPolyfill(): ?string
+    {
+        return $this->polyfill;
     }
 }

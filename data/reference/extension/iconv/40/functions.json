@@ -2,17 +2,20 @@
     {
         "name": "iconv",
         "ext_min": "4.0.5",
-        "php_min": "4.0.5"
+        "php_min": "4.0.5",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_get_encoding",
         "ext_min": "4.0.5",
-        "php_min": "4.0.5"
+        "php_min": "4.0.5",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_set_encoding",
         "ext_min": "4.0.5",
-        "php_min": "4.0.5"
+        "php_min": "4.0.5",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "ob_iconv_handler",

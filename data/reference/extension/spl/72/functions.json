@@ -2,6 +2,7 @@
     {
         "name": "spl_object_id",
         "ext_min": "7.2.0",
-        "php_min": "7.2.0beta3"
+        "php_min": "7.2.0beta3",
+        "polyfill": "symfony/polyfill-php72"
     }
 ]

@@ -48,6 +48,8 @@ class StandardExtensionTest extends GenericTest
                 'cli_set_process_title',
                 // alias
                 'getdir',
+                // windows only
+                'sapi_windows_vt100_support',
             );
         } else {
             self::$optionalfunctions = array(

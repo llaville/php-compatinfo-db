@@ -2,6 +2,7 @@
     {
         "name": "preg_last_error_msg",
         "ext_min": "8.0.0",
-        "php_min": "8.0.0RC2"
+        "php_min": "8.0.0RC2",
+        "polyfill": "symfony/polyfill-php80"
     }
 ]

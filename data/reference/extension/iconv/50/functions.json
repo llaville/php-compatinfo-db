@@ -2,36 +2,43 @@
     {
         "name": "iconv_mime_decode",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_mime_decode_headers",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_mime_encode",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_strlen",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_strpos",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_strrpos",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     },
     {
         "name": "iconv_substr",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "polyfill": "symfony/polyfill-iconv"
     }
 ]

@@ -2,17 +2,20 @@
     {
         "name": "MB_CASE_LOWER",
         "ext_min": "4.0.6",
-        "php_min": "4.0.6"
+        "php_min": "4.0.6",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "MB_CASE_TITLE",
         "ext_min": "4.0.6",
-        "php_min": "4.0.6"
+        "php_min": "4.0.6",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "MB_CASE_UPPER",
         "ext_min": "4.0.6",
-        "php_min": "4.0.6"
+        "php_min": "4.0.6",
+        "polyfill": "symfony/polyfill-mbstring"
     },
     {
         "name": "MB_OVERLOAD_MAIL",

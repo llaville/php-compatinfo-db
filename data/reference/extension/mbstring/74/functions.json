@@ -2,6 +2,7 @@
     {
         "name": "mb_str_split",
         "ext_min": "7.4.0",
-        "php_min": "7.4.0alpha1"
+        "php_min": "7.4.0alpha1",
+        "polyfill": "symfony/polyfill-php74, symfony/polyfill-mbstring"
     }
 ]

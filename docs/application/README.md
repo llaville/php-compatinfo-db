@@ -3,16 +3,16 @@
 
 ## Command(s)
 
-![Graph UML Application Command](./application-command.graphviz.svg)
+![Graph UML Application Command](../assets/images/application-command.graphviz.svg)
 
 ## Event(s)
 
-![Graph UML Application Event](./application-event.graphviz.svg)
+![Graph UML Application Event](../assets/images/application-event.graphviz.svg)
 
 ## Query(s)
 
-![Graph UML Application Query](./application-query.graphviz.svg)
+![Graph UML Application Query](../assets/images/application-query.graphviz.svg)
 
 ## Service(s)
 
-![Graph UML Application Service](./application-service.graphviz.svg)
+![Graph UML Application Service](../assets/images/application-service.graphviz.svg)
