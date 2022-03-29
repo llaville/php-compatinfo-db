@@ -7,9 +7,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Changed
+
+- Memcached reference updated to version 3.2.0 (stable)
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.2.0] - 2022-03-21
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - [#118](https://github.com/llaville/php-compatinfo-db/issues/118) : Automate creation of new GitHub Release with PHAR version as asset
@@ -38,7 +43,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - add float limit constants missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
 - add os family constant missing (see <https://github.com/llaville/php-compatinfo-db/issues/120#issuecomment-1067757748>)
 - add `sapi_windows_vt100_support` missing function from standard extension
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.1.0] - 2022-02-20
 
