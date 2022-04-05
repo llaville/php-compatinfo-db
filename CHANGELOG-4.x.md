@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Memcached reference updated to version 3.2.0 (stable)
+- Xdebug reference updated to version 3.1.4 (stable)
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.2.0] - 2022-03-21
