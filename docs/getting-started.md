@@ -55,15 +55,6 @@ DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVers
 
 If you change database connection, you have to run following command(s):
 
-* If you have CompatInfoDB 3.17 or lower
-  * `vendor/bin/doctrine orm:schema-tool:create` (creates only the database schema)
-  * `bin/compatinfo-db db:init` (loads data contents)
-
-  At dependencies installation, Composer use the sqlite back-end. You need to set up in your environment the `DATABASE_URL` variable.
-
-* If you have CompatInfoDB 3.18
-  * `bin/compatinfo-db db:create` (creates database schema and loads data contents)
-*
 * If you have CompatInfoDB 4.0 or greater
   * `bin/compatinfo-db db:create` (creates only the database schema)
   * `bin/compatinfo-db db:init` (loads the database from JSON data files)
