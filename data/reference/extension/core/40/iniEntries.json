@@ -411,7 +411,7 @@
         "name": "track_errors",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.28"
+        "php_max": "7.4.29"
     },
     {
         "name": "unserialize_callback_func",

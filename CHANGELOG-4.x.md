@@ -8,6 +8,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 <!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- PHP 7.4.29 support
+
 ### Changed
 
 - Memcached reference updated to version 3.2.0 (stable)
