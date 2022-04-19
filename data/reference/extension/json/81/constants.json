@@ -1,0 +1,7 @@
+[
+    {
+        "name": "JSON_ERROR_NON_BACKED_ENUM",
+        "ext_min": "8.1.5",
+        "php_min": "8.1.5RC1"
+    }
+]
