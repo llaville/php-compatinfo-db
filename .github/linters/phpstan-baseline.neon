@@ -40,3 +40,7 @@ parameters:
 			count: 1
 			path: ../../src/Infrastructure/ProjectRequirements.php
 
+		-
+			message: "#^Class Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Framework\\\\Composer\\\\InstalledVersions extends @final class Composer\\\\InstalledVersions\\.$#"
+			count: 1
+			path: ../../src/Infrastructure/Framework/Composer/InstalledVersions.php
