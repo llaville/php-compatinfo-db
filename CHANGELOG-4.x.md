@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
+- PHP 8.0.18 support
 - PHP 7.4.29 support
 
 ### Changed

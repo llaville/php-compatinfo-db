@@ -186,5 +186,11 @@
         "rel_date": "2022-03-17",
         "rel_state": "stable",
         "php_min": "8.0.17"
+    },
+    {
+        "rel_version": "8.0.18",
+        "rel_date": "2022-04-15",
+        "rel_state": "stable",
+        "php_min": "8.0.18"
     }
 ]
