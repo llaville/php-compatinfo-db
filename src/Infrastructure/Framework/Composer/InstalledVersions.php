@@ -17,9 +17,9 @@ use function substr;
  * @author Laurent Laville
  * @since Release 3.19.0
  */
-final class InstalledVersions extends \Composer\InstalledVersions
+final class InstalledVersions
 {
-    public static function getPrettyVersion($packageName)
+    public static function getPrettyVersion(string $packageName): ?string
     {
         if (func_num_args() >= 2) {
             $withRef = func_get_arg(1);
@@ -27,7 +27,7 @@ final class InstalledVersions extends \Composer\InstalledVersions
             $withRef = true;
         }
 
-        foreach (self::getAllRawData() as $installed) {
+        foreach (\Composer\InstalledVersions::getAllRawData() as $installed) {
             if (!isset($installed['versions'][$packageName])) {
                 continue;
             }
