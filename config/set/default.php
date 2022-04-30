@@ -44,9 +44,6 @@ use Symfony\Component\Messenger\Command\DebugCommand;
  * @author Laurent Laville
  */
 return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(__DIR__ . '/common.php');
-    $containerConfigurator->import(__DIR__ . '/../packages/messenger.php');
-
     $services = $containerConfigurator->services();
 
     $services->defaults()

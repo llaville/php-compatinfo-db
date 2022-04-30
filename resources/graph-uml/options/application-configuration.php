@@ -5,11 +5,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
+ * @since Release 4.4.0
  * @author Laurent Laville
  */
 
-use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
-
-require_once dirname(__DIR__) . '/config/bootstrap.php';
-
-return (new ContainerFactory())->createFromInput();
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'application.php';

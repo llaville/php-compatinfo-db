@@ -5,6 +5,10 @@
 
 ![Graph UML Application Command](../assets/images/application-command.graphviz.svg)
 
+## Configuration
+
+![Graph UML Application Configuration](../assets/images/application-configuration.graphviz.svg)
+
 ## Event(s)
 
 ![Graph UML Application Event](../assets/images/application-event.graphviz.svg)

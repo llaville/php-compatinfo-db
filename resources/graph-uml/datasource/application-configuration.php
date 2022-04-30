@@ -5,11 +5,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
+ * @since Release 3.17.0
  * @author Laurent Laville
  */
 
+use Bartlett\CompatInfoDb\Application\Configuration\ConfigResolver;
 use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
 
-require_once dirname(__DIR__) . '/config/bootstrap.php';
-
-return (new ContainerFactory())->createFromInput();
+function dataSource(): Generator
+{
+    $classes = [
+        ConfigResolver::class,
+        ContainerFactory::class,
+    ];
+    foreach ($classes as $class) {
+        yield $class;
+    }
+}

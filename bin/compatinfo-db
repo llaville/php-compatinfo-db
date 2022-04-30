@@ -15,18 +15,27 @@ gc_disable(); // performance boost
 
 require_once dirname(__DIR__) . '/config/bootstrap.php';
 
-use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\ContainerFactory;
+use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
+use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
+use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
-/** @var ContainerBuilder $container */
-$container = (new ContainerFactory())->create();
+$input = new ArgvInput();
 
-/** @var ApplicationInterface $app */
-$app = $container->get(ApplicationInterface::class);
-$app->setContainer($container);
+try {
+    $container = (new ContainerFactory())->createFromInput($input);
+    $app = $container->get(ApplicationInterface::class);
+    $app->setContainer($container);
+} catch (Throwable $e) {
+    $output = new ConsoleOutput();
+    $io = new Style($input, $output);
+    $io->error($e->getMessage());
+    exit(AbstractCommand::FAILURE);
+}
 
 // @link https://symfony.com/doc/current/console/lazy_commands.html
 $app->setCommandLoader($container->get(CommandLoaderInterface::class));

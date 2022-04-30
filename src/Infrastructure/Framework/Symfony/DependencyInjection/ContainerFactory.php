@@ -7,11 +7,20 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection;
 
+use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
-use Symfony\Component\Messenger\DependencyInjection\MessengerPass;
+
+use Exception;
+use function dirname;
+use function getcwd;
+use function implode;
+use function sprintf;
+use const DIRECTORY_SEPARATOR;
 
 /**
  * Build a PSR-11 compatible container for console application.
@@ -22,16 +31,45 @@ use Symfony\Component\Messenger\DependencyInjection\MessengerPass;
  * @since Release 3.14.0
  * @author Laurent Laville
  */
-class ContainerFactory
+final class ContainerFactory
 {
-    public function create(string $set = 'default'): ContainerInterface
+    /**
+     * @param string[] $configFiles
+     * @param list<CompilerPassInterface> $compilerPasses
+     * @param list<ExtensionInterface> $extensions
+     * @throws Exception
+     */
+    public function create(array $configFiles, array $compilerPasses, array $extensions): ContainerInterface
     {
         $containerBuilder = new ContainerBuilder();
-        $containerBuilder->addCompilerPass(new MessengerPass());
 
-        $loader = new PhpFileLoader($containerBuilder, new FileLocator(dirname(__DIR__, 5) . '/config/set'));
-        $loader->load($set . '.php');
-        $containerBuilder->compile();
+        foreach ($compilerPasses as $compilerPass) {
+            if ($compilerPass instanceof CompilerPassInterface) {
+                $containerBuilder->addCompilerPass($compilerPass);
+            }
+        }
+
+        $paths = [
+            getcwd(),
+            implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 5), 'config', 'set']),
+        ];
+        $loader = new PhpFileLoader($containerBuilder, new FileLocator($paths));
+        foreach ($configFiles as $configFile) {
+            if ($loader->supports($configFile)) {
+                $loader->load($configFile);
+            } else {
+                throw new FileLocatorFileNotFoundException(
+                    sprintf('Format of file "%s" is not supported.', $configFile)
+                );
+            }
+        }
+
+        foreach ($extensions as $extension) {
+            if ($extension instanceof ExtensionInterface) {
+                $containerBuilder->registerExtension($extension);
+            }
+        }
+
         return $containerBuilder;
     }
 }

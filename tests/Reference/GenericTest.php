@@ -7,18 +7,19 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference;
 
+use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
-use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\ContainerFactory;
 
 use Composer\Semver\Semver;
 
 use PHPUnit\Framework\ExpectationFailedException;
 
+use Exception;
 use Generator;
 use ReflectionClass;
 use ReflectionException;
@@ -35,7 +36,6 @@ use function array_unique;
 use function class_exists;
 use function dechex;
 use function defined;
-use function dirname;
 use function end;
 use function explode;
 use function extension_loaded;
@@ -56,7 +56,6 @@ use function strcasecmp;
 use function strlen;
 use function strtolower;
 use function version_compare;
-use const DIRECTORY_SEPARATOR;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, Generic extension base class.
@@ -95,11 +94,12 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      * Sets up the shared fixture.
      *
      * @return void
+     * @throws Exception
      * @link   http://phpunit.de/manual/current/en/fixtures.html#fixtures.sharing-fixture
      */
     public static function setUpBeforeClass(): void
     {
-        $container = (new ContainerFactory())->create();
+        $container = (new ContainerFactory())->createFromInput();
 
         self::$optionalreleases = [];
 

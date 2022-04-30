@@ -8,11 +8,8 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
-
 use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
 
-use Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
-use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Console\Application as SymfonyApplication;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\InputDefinition;
@@ -20,13 +17,9 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
 use Phar;
-use function basename;
-use function dirname;
 use function sprintf;
 
 /**
@@ -78,14 +71,6 @@ class Application extends SymfonyApplication implements ApplicationInterface
         );
         $definition->addOption(
             new InputOption(
-                'no-configuration',
-                null,
-                InputOption::VALUE_NONE,
-                'Ignore current configuration and run with only required services (config/set/common.php)'
-            )
-        );
-        $definition->addOption(
-            new InputOption(
                 'profile',
                 null,
                 InputOption::VALUE_NONE,
@@ -105,30 +90,6 @@ class Application extends SymfonyApplication implements ApplicationInterface
                 $input = $this->container->get(InputInterface::class);
             } else {
                 $input = new ArgvInput();
-            }
-
-
-            if ($input->hasParameterOption('--no-configuration')) {
-                $configFile = 'config/set/common.php';
-            } else {
-                $configFile = $input->getParameterOption('-c');
-            }
-
-            if (false === $configFile) {
-                $configFile = $input->getParameterOption('--config');
-            }
-            if (false !== $configFile) {
-                $containerBuilder = new ContainerBuilder();
-                try {
-                    $loader = new PhpFileLoader($containerBuilder, new FileLocator(dirname($configFile)));
-                    $loader->load(basename($configFile));
-                } catch (FileLocatorFileNotFoundException $e) {
-                    $output = new ConsoleOutput();
-                    $this->renderThrowable($e, $output);
-                    return 1;
-                }
-                $containerBuilder->compile();
-                $this->setContainer($containerBuilder);
             }
         }
 
