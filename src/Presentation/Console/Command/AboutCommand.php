@@ -53,7 +53,7 @@ final class AboutCommand extends AbstractCommand implements CommandInterface
             ),
             sprintf(
                 '<comment>Please visit %s for more information.</comment>',
-                'https://llaville.github.io/php-compatinfo-db/3.x/'
+                'https://llaville.github.io/php-compatinfo-db/4.x/'
             ),
         ];
         $io->text($lines);
