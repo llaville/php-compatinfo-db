@@ -10,6 +10,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
+- PHP 8.0.19 support
 - [#123](https://github.com/llaville/php-compatinfo-db/issues/123) : Configuration improvement and add a light Kernel
 
 ### Changed
