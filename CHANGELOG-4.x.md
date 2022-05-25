@@ -16,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ### Changed
 
+- Mcrypt reference updated to version 1.0.5 (stable)
 - Zip reference updated to version 1.20.1 (stable)
 <!-- MARKDOWN-RELEASE:END -->
 
