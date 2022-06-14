@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Mcrypt reference updated to version 1.0.5 (stable)
+- Rdkafka reference updated to version 6.0.2 (stable)
 - Stomp reference updated to version 2.0.3 (stable)
 - Xdebug reference updated to version 3.1.5 (stable)
 - Zip reference updated to version 1.20.1 (stable)
