@@ -7,6 +7,7 @@ ASSETS_IMAGE_DIR="docs/assets/images"
 php $SCRIPT_DIR/graph-uml/build.php application-command $ASSETS_IMAGE_DIR
 php $SCRIPT_DIR/graph-uml/build.php application-configuration $ASSETS_IMAGE_DIR
 php $SCRIPT_DIR/graph-uml/build.php application-event $ASSETS_IMAGE_DIR
+php $SCRIPT_DIR/graph-uml/build.php application-kernel $ASSETS_IMAGE_DIR
 php $SCRIPT_DIR/graph-uml/build.php application-query $ASSETS_IMAGE_DIR
 php $SCRIPT_DIR/graph-uml/build.php application-service $ASSETS_IMAGE_DIR
 php $SCRIPT_DIR/graph-uml/build.php domain-factory $ASSETS_IMAGE_DIR

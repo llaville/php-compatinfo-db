@@ -5,16 +5,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * @since Release 3.17.0
+ * @since Release 4.4.0
  * @author Laurent Laville
  */
 
-use Bartlett\CompatInfoDb\Application\Configuration\ConfigResolver;
+use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
+use Bartlett\CompatInfoDb\Application\Kernel\MicroKernelTrait;
 
 function dataSource(): Generator
 {
     $classes = [
-        ConfigResolver::class,
+        ConsoleKernel::class,
+        MicroKernelTrait::class,
     ];
     foreach ($classes as $class) {
         yield $class;

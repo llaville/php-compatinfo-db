@@ -5,18 +5,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * @since Release 3.17.0
+ * @since Release 4.4.0
  * @author Laurent Laville
  */
 
-use Bartlett\CompatInfoDb\Application\Configuration\ConfigResolver;
-
-function dataSource(): Generator
-{
-    $classes = [
-        ConfigResolver::class,
-    ];
-    foreach ($classes as $class) {
-        yield $class;
-    }
-}
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'application.php';
