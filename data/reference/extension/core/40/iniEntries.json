@@ -232,7 +232,7 @@
         "name": "log_errors_max_len",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "8.0.19"
+        "php_max": "8.0.21"
     },
     {
         "name": "magic_quotes_gpc",
