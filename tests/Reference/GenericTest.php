@@ -7,8 +7,8 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference;
 
-use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
-use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
+use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
+use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactoryInterface;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
@@ -90,6 +90,9 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
     protected static array $ignoredmethods       = [];
     protected static array $ignoredconsts        = [];
 
+    // Could be defined in Reference to initialize the Console Kernel with extra configurations
+    protected static array $configurableContainer = [];
+
     /**
      * Sets up the shared fixture.
      *
@@ -99,7 +102,8 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
      */
     public static function setUpBeforeClass(): void
     {
-        $container = (new ContainerFactory())->createFromInput();
+        // @see https://tomasvotruba.com/blog/how-to-create-symfony-kernel-for-tests-with-different-configs/
+        $container = (new ConsoleKernel('dev', false))->createFromConfigs(self::$configurableContainer);
 
         self::$optionalreleases = [];
 
@@ -108,7 +112,7 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
             str_replace('ExtensionTest', '', end($parts))
         );
 
-        $factory = $container->get(ExtensionFactory::class);
+        $factory = $container->get(ExtensionFactoryInterface::class);
         self::$obj = $factory->create($name);
 
         $currentVersion = phpversion($name);

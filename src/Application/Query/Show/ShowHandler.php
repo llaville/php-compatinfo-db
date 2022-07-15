@@ -8,7 +8,7 @@
 namespace Bartlett\CompatInfoDb\Application\Query\Show;
 
 use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
-use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
+use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactoryInterface;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 
 /**
@@ -19,14 +19,12 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  */
 final class ShowHandler implements QueryHandlerInterface
 {
-    private ExtensionFactory $factory;
+    private ExtensionFactoryInterface $factory;
 
     /**
      * ShowHandler constructor.
-     *
-     * @param ExtensionFactory $extensionFactory
      */
-    public function __construct(ExtensionFactory $extensionFactory)
+    public function __construct(ExtensionFactoryInterface $extensionFactory)
     {
         $this->factory = $extensionFactory;
     }

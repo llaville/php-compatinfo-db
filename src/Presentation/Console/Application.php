@@ -17,7 +17,8 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\DependencyInjection\Container;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
 use Phar;
 use function sprintf;
@@ -30,7 +31,7 @@ use function sprintf;
  */
 class Application extends SymfonyApplication implements ApplicationInterface
 {
-    private ContainerInterface $container;
+    use ContainerAwareTrait;
 
     /**
      * Application constructor.
@@ -112,15 +113,6 @@ class Application extends SymfonyApplication implements ApplicationInterface
 
     /**
      * {@inheritDoc}
-     * @return void
-     */
-    public function setContainer(ContainerInterface $container = null)
-    {
-        $this->container = $container;
-    }
-
-    /**
-     * {@inheritDoc}
      */
     public function getHelp(): string
     {
@@ -145,5 +137,15 @@ class Application extends SymfonyApplication implements ApplicationInterface
     public function getInstalledVersion(bool $withRef = true): ?string
     {
         return InstalledVersions::getPrettyVersion('bartlett/php-compatinfo-db', $withRef);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getApplicationParameters(): array
+    {
+        /** @var Container $container */
+        $container = $this->container;
+        return $container->getParameterBag()->all();
     }
 }

@@ -9,10 +9,6 @@ namespace Bartlett\CompatInfoDb\Application\Configuration;
 
 use Symfony\Component\Console\Input\InputInterface;
 
-use function dirname;
-use function implode;
-use const DIRECTORY_SEPARATOR;
-
 /**
  * @author Laurent Laville
  * @since Release 4.4.0
@@ -31,16 +27,10 @@ final class ConfigResolver
      */
     public function provide(): array
     {
-        $configFiles = [
-            'common.php',
-            implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 3), 'config', 'packages', 'messenger.php']),
-        ];
+        $configFiles = [];
 
         $configFile = $this->getOptionValue($this->input);
-        if ($configFile === null) {
-            // default configuration file, if none specified
-            $configFiles[] = 'default.php';
-        } else {
+        if ($configFile !== null) {
             $configFiles[] = $configFile;
         }
 

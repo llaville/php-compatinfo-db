@@ -19,6 +19,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 use function count;
 
@@ -66,10 +67,12 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         /** @var ProjectRequirements $projectRequirements */
         $projectRequirements = $this->queryBus->query($diagnoseQuery);
 
-        $io = new Style($input, $output);
-        $this->write($projectRequirements, $io, 'PHP CompatInfoDB');
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
+
+        $io = new Style($input, $output);
+
+        $this->write($projectRequirements, $io, 'PHP CompatInfoDB', $app->getApplicationParameters());
         $io->note(
             sprintf(
                 '%s version %s',

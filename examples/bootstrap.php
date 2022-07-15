@@ -8,8 +8,8 @@
  * @author Laurent Laville
  */
 
-use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
+use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 
 require_once dirname(__DIR__) . '/config/bootstrap.php';
 
-return (new ContainerFactory())->createFromInput();
+return (new ConsoleKernel('dev', true))->createFromConfigs([]);

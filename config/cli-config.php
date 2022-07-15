@@ -8,14 +8,14 @@
  * @author Laurent Laville
  */
 
-use Bartlett\CompatInfoDb\Application\Configuration\ContainerFactory;
+use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 
 require_once __DIR__ . '/bootstrap.php';
 
-$container = (new ContainerFactory())->createFromInput();
+$container = (new ConsoleKernel('dev', false))->createFromConfigs([]);
 
 /** @var EntityManagerInterface $entityManager */
 $entityManager = $container->get(EntityManagerInterface::class);

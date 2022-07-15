@@ -56,7 +56,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  * @since Release 3.0.0
  * @author Laurent Laville
  */
-final class ExtensionFactory implements ExtensionVersionProviderInterface
+final class ExtensionFactory implements ExtensionFactoryInterface
 {
     use ExtensionVersionProviderTrait;
 
@@ -68,8 +68,7 @@ final class ExtensionFactory implements ExtensionVersionProviderInterface
     }
 
     /**
-     * @param string $name
-     * @return Extension|null
+     * {@inheritDoc}
      */
     public function create(string $name): ?Extension
     {

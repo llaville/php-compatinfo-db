@@ -6,7 +6,15 @@
  * file that was distributed with this source code.
  */
 
+use Bartlett\CompatInfoDb\Application\Command\CommandBusInterface;
+use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
+use Bartlett\CompatInfoDb\Application\Query\QueryBusInterface;
+use Bartlett\CompatInfoDb\Application\Query\QueryHandlerInterface;
+use Bartlett\CompatInfoDb\Infrastructure\Bus\Command\MessengerCommandBus;
+use Bartlett\CompatInfoDb\Infrastructure\Bus\Query\MessengerQueryBus;
+
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symfony\Component\Messenger\Command\DebugCommand;
 use Symfony\Component\Messenger\MessageBus;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Messenger\Middleware\HandleMessageMiddleware;
@@ -16,9 +24,7 @@ use Symfony\Component\Messenger\Middleware\HandleMessageMiddleware;
  *
  * @link https://symfony.com/components/Messenger
  *
- * @param ContainerConfigurator $containerConfigurator
- * @return void
- * @since 6.0.0
+ * @since 3.0.0
  * @author Laurent Laville
  */
 return static function (ContainerConfigurator $containerConfigurator): void {
@@ -32,6 +38,15 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->defaults()
         ->autoconfigure()
         ->autowire()
+    ;
+
+    // @link https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags
+    $services->instanceof(CommandHandlerInterface::class)
+        ->tag('messenger.message_handler', ['bus' => 'command.bus'])
+    ;
+
+    $services->instanceof(QueryHandlerInterface::class)
+        ->tag('messenger.message_handler', ['bus' => 'query.bus'])
     ;
 
     $services->set('messenger.middleware.handle_message', HandleMessageMiddleware::class)
@@ -50,4 +65,18 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->tag('messenger.bus')
     ;
     $services->alias(MessageBusInterface::class . ' $queryBus', 'query.bus');
+
+    $services->set(CommandBusInterface::class, MessengerCommandBus::class);
+    $services->set(QueryBusInterface::class, MessengerQueryBus::class);
+
+    if (getenv('APP_ENV') === 'dev') {
+        $services->set('console.command.messenger_debug', DebugCommand::class)
+            ->args([[]])
+            ->tag('console.command')
+        ;
+    }
+
+    $services->load('Bartlett\\CompatInfoDb\\Application\\Command\\', __DIR__ . '/../../src/Application/Command');
+    $services->load('Bartlett\\CompatInfoDb\\Application\\Query\\', __DIR__ . '/../../src/Application/Query');
+    $services->load('Bartlett\\CompatInfoDb\\Infrastructure\\Bus\\', __DIR__ . '/../../src/Infrastructure/Bus');
 };

@@ -10,12 +10,12 @@
 
 use Bartlett\CompatInfoDb\Application\Query\Show\ShowQuery;
 use Bartlett\CompatInfoDb\Application\Query\Show\ShowHandler;
-use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactory;
+use Bartlett\CompatInfoDb\Domain\Factory\ExtensionFactoryInterface;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 
 $container = require __DIR__ . '/bootstrap.php';
 
-$handler = new ShowHandler($container->get(ExtensionFactory::class));
+$handler = new ShowHandler($container->get(ExtensionFactoryInterface::class));
 
 // Specify what components to display
 $command = new ShowQuery(

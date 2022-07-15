@@ -23,7 +23,10 @@ use const PHP_VERSION;
  */
 trait PrintDiagnose
 {
-    protected function write(RequirementsInterface $requirements, StyleInterface $io, string $appName): void
+    /**
+     * @param array<string, mixed> $appParameters
+     */
+    protected function write(RequirementsInterface $requirements, StyleInterface $io, string $appName, array $appParameters): void
     {
         $io->title('Requirements Checker');
 
@@ -60,12 +63,22 @@ trait PrintDiagnose
         $io->listing($messages['ko'], ['type' => '[ ]', 'style' => 'fg=red']);
 
         $env = [];
-        $keys = ['APP_ENV', 'APP_DATABASE_URL', 'APP_PROXY_DIR', 'APP_VENDOR_DIR', 'APP_CACHE_DIR', 'APP_HOME_DIR'];
+        $keys = ['APP_ENV', 'APP_DEBUG', 'APP_PROXY_DIR'];
         foreach ($keys as $key) {
-            $env[] = sprintf('[<comment>%s</comment>] %s', $key, getenv($key));
+            $value = $_SERVER[$key] ?? $_ENV[$key] ?? null;
+            if (null !== $value) {
+                $env[] = sprintf('[<comment>%s</comment>] %s', $key, $value);
+            }
         }
         $io->text('? Environment');
         $io->listing($env, ['type' => ' > ', 'style' => 'fg=green']);
+
+        $params = [];
+        foreach ($appParameters as $paramKey => $paramValue) {
+            $params[] = sprintf('[<comment>%s</comment>] %s', $paramKey, $paramValue);
+        }
+        $io->text('? Parameters');
+        $io->listing($params, ['type' => ' > ', 'style' => 'fg=green']);
 
         if (empty($messages['error'])) {
             $io->success('Your system is ready to run the application.');
