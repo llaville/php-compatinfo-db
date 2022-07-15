@@ -45,7 +45,7 @@ jobs:
 
         env:
             APP_ENV: dev  # see explains at https://github.com/llaville/php-compatinfo-db/issues/101
-            DATABASE_URL: "sqlite:///${{ github.workspace }}/.cache/compatinfo-db.sqlite"
+            DATABASE_URL: "sqlite:///${{ github.workspace }}/.cache/bartlett/compatinfo-db.sqlite"
 
         steps:
             -   # Git Checkout
