@@ -95,6 +95,7 @@ jobs:
             -   # Build Database
                 name: Build Database
                 run: |
+                    bin/compatinfo-db diagnose --ansi
                     bin/compatinfo-db db:create --ansi
                     bin/compatinfo-db db:init --ansi
 
