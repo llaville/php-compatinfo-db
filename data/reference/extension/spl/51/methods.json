@@ -429,7 +429,7 @@
         "class_name": "SplFileObject",
         "name": "fgetss",
         "ext_min": "5.1.0",
-        "ext_max": "7.4.29",
+        "ext_max": "7.4.30",
         "php_min": "5.1.0"
     },
     {

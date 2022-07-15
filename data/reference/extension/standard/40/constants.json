@@ -18,7 +18,7 @@
         "name": "ASSERT_QUIET_EVAL",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "7.4.29"
+        "php_max": "7.4.30"
     },
     {
         "name": "ASSERT_WARNING",
