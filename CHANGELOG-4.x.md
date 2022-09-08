@@ -21,7 +21,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Http reference updated to version 4.2.3 (stable)
 - Imagick reference updated to version 3.7.0 (stable)
 - Mcrypt reference updated to version 1.0.5 (stable)
-- Rdkafka reference updated to version 6.0.2 (stable)
+- Rdkafka reference updated to version 6.0.3 (stable)
 - Stomp reference updated to version 2.0.3 (stable)
 - XlsWriter reference updated to version 1.5.2 (stable)
 - Xdebug reference updated to version 3.1.5 (stable)
