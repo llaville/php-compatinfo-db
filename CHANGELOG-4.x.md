@@ -18,6 +18,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Ast reference updated to version 1.1.0 (stable)
+- Http reference updated to version 4.2.3 (stable)
 - Imagick reference updated to version 3.7.0 (stable)
 - Mcrypt reference updated to version 1.0.5 (stable)
 - Rdkafka reference updated to version 6.0.2 (stable)
