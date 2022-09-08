@@ -7867,5 +7867,269 @@
                 "constraint": ">=7.0.9"
             }
         ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "waveImageWithMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "polaroidWithTextAndMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "oilPaintImageWithSigma",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "spreadImageWithMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "swirlImageWithMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "implodeImageWithMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "deleteOption",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getBackgroundColor",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getImageArtifacts",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getImageKurtosis",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getImageMean",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getImageRange",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getInterpolateMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getOptions",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getOrientation",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getResolution",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "getType",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "polynomialImage",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setDepth",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setExtract",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setInterpolateMethod",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "setOrientation",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">6.2.8"
+            }
+        ]
     }
 ]
