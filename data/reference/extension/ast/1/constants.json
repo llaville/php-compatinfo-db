@@ -178,5 +178,29 @@
         "ext_min": "1.0.14",
         "ext_max": "",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "ast\\flags\\CLASS_READONLY",
+        "ext_min": "1.1.0",
+        "ext_max": "",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\TYPE_TRUE",
+        "ext_min": "1.1.0",
+        "ext_max": "",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\ENCAPS_VAR_DOLLAR_CURLY",
+        "ext_min": "1.1.0",
+        "ext_max": "",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\ENCAPS_VAR_DOLLAR_CURLY_VAR_VAR",
+        "ext_min": "1.1.0",
+        "ext_max": "",
+        "php_min": "7.2.0"
     }
 ]
