@@ -5368,5 +5368,17 @@
                 "constraint": ">=7.0.2"
             }
         ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "COMPOSITE_SALIENCY_BLEND",
+        "ext_min": "3.7.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.1.1"
+            }
+        ]
     }
 ]
