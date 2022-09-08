@@ -5236,5 +5236,137 @@
                 "constraint": ">=7.1.1"
             }
         ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_BILEVEL",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_GRAYSCALE",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_GRAYSCALE_ALPHA",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_PALETTE",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_PALETTE_ALPHA",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_TRUE_COLOR",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_TRUE_COLOR_ALPHA",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_COLOR_SEPARATION",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_COLOR_SEPARATION_ALPHA",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_OPTIMIZE",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "IMAGE_TYPE_PALETTE_BILEVEL_ALPHA",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.2"
+            }
+        ]
     }
 ]
