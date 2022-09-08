@@ -25,6 +25,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Stomp reference updated to version 2.0.3 (stable)
 - XlsWriter reference updated to version 1.5.2 (stable)
 - Xdebug reference updated to version 3.1.5 (stable)
+- Xhprof reference updated to version 2.3.7 (stable)
 - Zip reference updated to version 1.20.1 (stable)
 <!-- MARKDOWN-RELEASE:END -->
 
