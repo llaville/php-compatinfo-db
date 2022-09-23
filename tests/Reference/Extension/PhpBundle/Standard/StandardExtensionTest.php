@@ -100,7 +100,7 @@ class StandardExtensionTest extends GenericTest
                 // dl function still exists in CLI but was removed from other SAPI since PHP 5.3
                 array_push(self::$optionalfunctions, 'dl');
             }
-
+        }
             self::$optionalconstants = array(
                 // requires syslog
                 'LOG_LOCAL0',
@@ -118,6 +118,7 @@ class StandardExtensionTest extends GenericTest
                 'FNM_CASEFOLD',
                 // requires HAVE_LIBINTL
                 'LC_MESSAGES',
+                // requires HAVE_NL_LANGINFO
                 'ABDAY_1',
                 'ABDAY_2',
                 'ABDAY_3',
@@ -163,15 +164,44 @@ class StandardExtensionTest extends GenericTest
                 'T_FMT',
                 'T_FMT_AMPM',
                 'ERA',
+                'ERA_YEAR',
                 'ERA_D_T_FMT',
                 'ERA_D_FMT',
                 'ERA_T_FMT',
                 'ALT_DIGITS',
+                'INT_CURR_SYMBOL',
+                'MON_DECIMAL_POINT',
+                'MON_THOUSANDS_SEP',
+                'MON_GROUPING',
+                'POSITIVE_SIGN',
+                'NEGATIVE_SIGN',
+                'INT_FRAC_DIGITS',
+                'FRAC_DIGITS',
+                'P_CS_PRECEDES',
+                'P_SEP_BY_SPACE',
+                'N_CS_PRECEDES',
+                'N_SEP_BY_SPACE',
+                'P_SIGN_POSN',
+                'N_SIGN_POSN',
+                // requires DECIMAL_POINT
+                'DECIMAL_POINT',
+                // requires CURRENCY_SYMBOL
+                'CURRENCY_SYMBOL',
+                //
                 'CRNCYSTR',
+                // requires RADIXCHAR
                 'RADIXCHAR',
+                // requires THOUSANDS_SEP
+                'THOUSANDS_SEP',
+                // requires THOUSEP
                 'THOUSEP',
+                //
+                'GROUPING',
                 'YESEXPR',
                 'NOEXPR',
+                'YESSTR',
+                'NOSTR',
+                // requires CODESET
                 'CODESET',
                 // native support in 5.3 only (windows)
                 'DNS_A',
@@ -195,7 +225,6 @@ class StandardExtensionTest extends GenericTest
                 'STREAM_IPPROTO_ICMP',
                 'STREAM_IPPROTO_RAW',
             );
-        }
 
         // requires HAVE_ARGON2LIB
         array_push(

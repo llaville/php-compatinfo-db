@@ -14,6 +14,7 @@ use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
+use function Bartlett\CompatInfoDb\Infrastructure\Framework\Php\version_compare;
 
 use Composer\Semver\Semver;
 
@@ -55,7 +56,6 @@ use function str_split;
 use function strcasecmp;
 use function strlen;
 use function strtolower;
-use function version_compare;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, Generic extension base class.
@@ -265,9 +265,10 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         $emax = $range['ext.max'];
 
         $deprecated = $range['deprecated'] ?? '';
+        $currentVersion = phpversion();
 
         if (!empty($deprecated)) {
-            $shouldBeThere = version_compare(PHP_VERSION, $deprecated, 'le');
+            $shouldBeThere = version_compare($currentVersion, $deprecated, 'le');
 
             // used also for elements that were moved from one extension to another;
             // i.e with `utf8_encode` (from `xml` to `standard` extension)
@@ -280,12 +281,12 @@ abstract class GenericTest extends TestCase implements ExtensionVersionProviderI
         $extVersion = $this->getExtensionVersion(self::$obj->getName());
 
         if (!empty($min)) {
-            $shouldBeThere = version_compare(PHP_VERSION, $min, 'ge');
+            $shouldBeThere = version_compare($currentVersion, $min, 'ge');
         } else {
             $shouldBeThere = false;
         }
         if (!empty($max) && $shouldBeThere) {
-            $shouldBeThere = version_compare(PHP_VERSION, $max, 'le');
+            $shouldBeThere = version_compare($currentVersion, $max, 'le');
         }
         if (!empty($emin) && $shouldBeThere) {
             $shouldBeThere = version_compare($extVersion, $emin, 'ge');
