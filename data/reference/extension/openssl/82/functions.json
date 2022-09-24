@@ -1,0 +1,7 @@
+[
+    {
+        "name": "openssl_cipher_key_length",
+        "ext_min": "8.2.0RC1",
+        "php_min": "8.2.0RC1"
+    }
+]
