@@ -1,0 +1,157 @@
+[
+    {
+        "name": "SO_INCOMING_CPU",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "SO_MEMINFO",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "SO_RTABLE",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "SO_SETFIB",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SO_BPF_EXTENSIONS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_OFF",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_PROTOCOL",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_PKTTYPE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_IFINDEX",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_NLATTR",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_NLATTR_NEST",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_MARK",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_QUEUE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_HATYPE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_RXHASH",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_CPU",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_ALU_XOR_X",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_VLAN_TAG",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_VLAN_TAG_PRESENT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_PAY_OFFSET",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_RANDOM",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_VLAN_TPID",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "SKF_AD_MAX",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "TCP_KEEPALIVE",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "TCP_KEEPIDLE",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "TCP_KEEPINTVL",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "TCP_KEEPCNT",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "TCP_NOTSENT_LOWAT",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "TCP_CONGESTION",
+        "ext_min": "8.2.0alpha3",
+        "php_min": "8.2.0alpha3"
+    },
+    {
+        "name": "MSG_ZEROCOPY",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "SO_ZEROCOPY",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]

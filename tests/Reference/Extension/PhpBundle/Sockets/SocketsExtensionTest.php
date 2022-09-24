@@ -152,18 +152,27 @@ class SocketsExtensionTest extends GenericTest
             'SOCKET_EWOULDBLOCK',
 
             // from ext/sockets/sendrecvmsg.c
+            // requires HAVE_IPV6
             'IPV6_RECVPKTINFO',
             'IPV6_PKTINFO',
             'IPV6_RECVHOPLIMIT',
             'IPV6_HOPLIMIT',
             'IPV6_RECVTCLASS',
             'IPV6_TCLASS',
+            // if def
+            'SCM_CREDS',
+            'LOCAL_CREDS',
+            'SCM_CREDS2',
+            'LOCAL_CREDS_PERSISTENT',
             'SCM_CREDENTIALS',
             'SCM_RIGHTS',
             'SO_PASSCRED',
 
             // from ext/sockets/sockets.c
+            // requires HAVE_IPV6
             'AF_INET6',
+            // if def
+            'SOCK_RDM',
             'MSG_EOR',
             'MSG_EOF',
             'MSG_CONFIRM',
@@ -173,19 +182,67 @@ class SocketsExtensionTest extends GenericTest
             'MSG_MORE',
             'MSG_WAITFORONE',
             'MSG_CMSG_CLOEXEC',
+            'MSG_ZEROCOPY',
             'SO_BINDTODEVICE',
             'SO_REUSEPORT',
             'SO_FAMILY',
+            'SO_LABEL',
+            'SO_PEERLABEL',
+            'SO_LISTENQLIMIT',
+            'SO_LISTENQLEN',
+            'SO_USER_COOKIE',
+            'SO_SETFIB',
+            'SO_ACCEPTFILTER',
+            'SOL_FILTER',
+            'FIL_ATTACH',
+            'FIL_DETACH',
+            'SO_DONTTRUNC',
+            'SO_WANTMORE',
+            'SO_MARK',
+            'SO_RTABLE',
+            'SO_INCOMING_CPU',
+            'SO_MEMINFO',
+            'SO_BPF_EXTENSIONS',
+            'SKF_AD_OFF',
+            'SKF_AD_PROTOCOL',
+            'SKF_AD_PKTTYPE',
+            'SKF_AD_IFINDEX',
+            'SKF_AD_NLATTR',
+            'SKF_AD_NLATTR_NEST',
+            'SKF_AD_MARK',
+            'SKF_AD_QUEUE',
+            'SKF_AD_HATYPE',
+            'SKF_AD_RXHASH',
+            'SKF_AD_CPU',
+            'SKF_AD_ALU_XOR_X',
+            'SKF_AD_VLAN_TAG',
+            'SKF_AD_VLAN_TAG_PRESENT',
+            'SKF_AD_PAY_OFFSET',
+            'SKF_AD_RANDOM',
+            'SKF_AD_VLAN_TPID',
+            'SKF_AD_MAX',
+            'TCP_CONGESTION',
+            'SO_ZEROCOPY',
             'TCP_NODELAY',
+            'TCP_NOTSENT_LOWAT',
+            'TCP_DEFER_ACCEPT',
+            'TCP_KEEPALIVE',
+            'TCP_KEEPIDLE',
+            'TCP_KEEPINTVL',
+            'TCP_KEEPCNT',
+            // requires HAS_MCAST_EXT
             'MCAST_BLOCK_SOURCE',
             'MCAST_UNBLOCK_SOURCE',
             'MCAST_JOIN_SOURCE_GROUP',
             'MCAST_LEAVE_SOURCE_GROUP',
+            // requires HAVE_IPV6
+            'IPPROTO_IPV6',
             'IPV6_MULTICAST_IF',
             'IPV6_MULTICAST_HOPS',
             'IPV6_MULTICAST_LOOP',
-            'IPPROTO_IPV6',
             'IPV6_UNICAST_HOPS',
+            // if def
+            'IPV6_V6ONLY',
             // requires HAVE_AI_V4MAPPED
             'AI_V4MAPPED',
             // requires HAVE_AI_ALL
@@ -193,10 +250,12 @@ class SocketsExtensionTest extends GenericTest
             // requires HAVE_AI_IDN
             'AI_IDN',
             'AI_CANONIDN',
+            //
             'AI_IDN_ALLOW_UNASSIGNED',
             'AI_IDN_USE_STD3_ASCII_RULES',
-            //
+            // if def
             'AI_NUMERICSERV',
+            'SOL_LOCAL',
             'TCP_DEFER_ACCEPT',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
