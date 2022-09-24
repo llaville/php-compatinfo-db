@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "ReflectionClass",
+        "name": "IS_READONLY",
+        "ext_min": "8.2.0beta2",
+        "php_min": "8.2.0beta2"
+    }
+]
