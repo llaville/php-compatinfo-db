@@ -1,0 +1,7 @@
+[
+    {
+        "name": "FILTER_FLAG_GLOBAL_RANGE",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]
