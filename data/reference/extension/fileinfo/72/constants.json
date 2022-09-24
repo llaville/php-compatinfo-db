@@ -3,5 +3,10 @@
         "name": "FILEINFO_EXTENSION",
         "ext_min": "1.0.5",
         "php_min": "7.2.0alpha1"
+    },
+    {
+        "name": "FILEINFO_APPLE",
+        "ext_min": "1.0.5",
+        "php_min": "7.2.0alpha1"
     }
 ]

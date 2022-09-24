@@ -9,6 +9,8 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Fileinfo;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
 
+use Exception;
+
 /**
  * Unit tests for PHP_CompatInfo_Db, fileinfo extension Reference
  *
@@ -19,4 +21,19 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  */
 class FileinfoExtensionTest extends GenericTest
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @return void
+     * @throws Exception
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$optionalconstants = [
+            // @see https://github.com/php/php-src/commit/6b14989001145b91f01c152e419bfcd33bf7ac4b
+            'FILEINFO_APPLE',
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
