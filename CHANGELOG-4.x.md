@@ -7,9 +7,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- experimental support to PHP 8.2 (under development)
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.4.0] - 2022-09-09
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - PHP 8.1.6, 8.1.7, 8.1.8, 8.1.9 and 8.1.10 support
@@ -29,7 +34,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Xdebug reference updated to version 3.1.5 (stable)
 - Xhprof reference updated to version 2.3.7 (stable)
 - Zip reference updated to version 1.20.1 (stable)
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.3.0] - 2022-04-20
 

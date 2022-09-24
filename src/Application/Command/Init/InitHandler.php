@@ -46,7 +46,7 @@ final class InitHandler implements CommandHandlerInterface
     private const RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS = 110;
     private const RETURN_CODE_DATABASE_READONLY = 120;
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
-    private const PHP_RELEASES_8 = ['80', '81'];
+    private const PHP_RELEASES_8 = ['80', '81', '82'];
     private JsonFileHandler $jsonFileHandler;
     private DistributionRepository $distributionRepository;
     private EntityManagerInterface $entityManager;
@@ -327,7 +327,7 @@ final class InitHandler implements CommandHandlerInterface
                 '40',
                 '50', '51', '53', '55',
                 '70', '71', '73', '74',
-                '80', '81',
+                '80', '81', '82',
             ],
             'const' => ['80'],
             'constants' => [
@@ -344,13 +344,13 @@ final class InitHandler implements CommandHandlerInterface
             'methods' => [
                 '51', '53', '55',
                 '70', '72', '74',
-                '80', '81',
+                '80', '81', '82',
             ],
             'iniEntries' => [
                 '40', '41',
                 '50', '54', '55', '56',
                 '70', '71', '73', '74',
-                '80', '81'
+                '80', '81', '82',
             ],
             'interfaces' => [
                 '51', '53',
@@ -378,8 +378,8 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'curl' => [
             'classes'    => ['55', '80', '81'],
-            'constants'  => ['40', '51', '52', '53', '54', '55', '56', '70', '73', '81'],
-            'functions'  => ['40', '50', '51', '55', '71'],
+            'constants'  => ['40', '51', '52', '53', '54', '55', '56', '70', '73', '81', '82'],
+            'functions'  => ['40', '50', '51', '55', '71', '82'],
             'iniEntries' => ['53'],
             'methods'    => ['55', '81'],
             'releases'   => array_merge(
@@ -391,12 +391,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'date' => [
             'classes'    => ['52', '53', '55'],
-            'const'      => ['52', '53', '70', '71', '72'],
-            'constants'  => ['51', '70'],
+            'const'      => ['52', '53', '70', '71', '72', '82'],
+            'constants'  => ['51', '70', '82'],
             'functions'  => ['40', '50', '51', '52', '53', '55'],
             'iniEntries' => ['51'],
             'interfaces' => ['55'],
-            'methods'    => ['52', '53', '55', '56', '72', '73', '80'],
+            'methods'    => ['52', '53', '55', '56', '72', '73', '80', '82'],
             'releases'   => array_merge(
                 ['40', '50', '51', '52', '53', '55'],
                 self::PHP_RELEASES_7,
@@ -457,7 +457,7 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'filter' => [
-            'constants'  => ['0', '70', '71', '73', '80'],
+            'constants'  => ['0', '70', '71', '73', '80', '82'],
             'functions'  => ['0'],
             'iniEntries' => ['0'],
             'releases'   => array_merge(
@@ -658,7 +658,7 @@ final class InitHandler implements CommandHandlerInterface
         yield 'libxml' => [
             'classes'    => ['51'],
             'constants'  => ['51', '52', '53', '54', '55', '70'],
-            'functions'  => ['50', '51', '52', '54'],
+            'functions'  => ['50', '51', '52', '54', '82'],
             'releases'   => array_merge(
                 ['51', '52', '53', '54', '55'],
                 self::PHP_RELEASES_7,
@@ -759,9 +759,9 @@ final class InitHandler implements CommandHandlerInterface
         yield 'mysqli' => [
             'classes'    => ['50'],
             'constants'  => ['50', '51', '52', '53', '54', '55', '56', '72', '81'],
-            'functions'  => ['50', '53', '54', '55', '56', '81'],
+            'functions'  => ['50', '53', '54', '55', '56', '81', '82'],
             'iniEntries' => ['50', '56', '81'],
-            'methods'    => ['50', '81'],
+            'methods'    => ['50', '81', '82'],
             'releases'   => array_merge(
                 ['50', '51', '52', '53', '54', '55', '56'],
                 self::PHP_RELEASES_7,
@@ -814,7 +814,12 @@ final class InitHandler implements CommandHandlerInterface
         yield 'openssl' => [
             'classes'    => ['80'],
             'constants'  => ['40', '43', '50', '52', '53', '54', '56', '71', '80'],
-            'functions'  => ['40', '42', '52', '53', '55', '56', '71', '72', '73', '74', '80'],
+            'functions'  => [
+                '40', '42',
+                '52', '53', '55', '56',
+                '71', '72', '73', '74',
+                '80', '82',
+            ],
             'iniEntries' => ['56'],
             'releases'   => array_merge(
                 ['40', '42', '43', '50', '52', '53', '54', '55', '56'],
@@ -953,9 +958,16 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'reflection' => [
             'classes'    => ['50', '54', '70', '71', '74', '80', '81'],
-            'const'      => ['50', '51', '80', '81'],
+            'const'      => [
+                '50', '51',
+                '80', '81', '82',
+            ],
             'interfaces' => ['50'],
-            'methods'    => ['50', '54', '70', '71', '72', '74', '80', '81'],
+            'methods'    => [
+                '50', '54',
+                '70', '71', '72', '74',
+                '80', '81', '82',
+            ],
             'releases'   => array_merge(
                 ['50', '51', '54'],
                 self::PHP_RELEASES_7,
@@ -1034,7 +1046,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'sockets' => [
             'classes'    => ['80'],
-            'constants'  => ['41', '43', '52', '54', '55', '70', '72', '81'],
+            'constants'  => [
+                '41', '43',
+                '52', '54', '55',
+                '70', '72',
+                '81', '82',
+            ],
             'functions'  => ['41', '42', '43', '54', '55', '70', '72'],
             'releases'   => array_merge(
                 ['41', '42', '43', '52', '54', '55'],
@@ -1064,7 +1081,11 @@ final class InitHandler implements CommandHandlerInterface
             'const'      => ['50', '51', '52', '53'],
             'functions'  => ['50', '51', '52', '54', '72'],
             'interfaces' => ['51'],
-            'methods'    => ['50', '51', '52', '53', '54', '70'],
+            'methods'    => [
+                '50', '51', '52', '53', '54',
+                '70',
+                '82',
+            ],
             'releases'   => array_merge(
                 ['50', '51', '52', '53', '54'],
                 self::PHP_RELEASES_7,
@@ -1115,7 +1136,7 @@ final class InitHandler implements CommandHandlerInterface
                 '40', '41', '42', '43',
                 '50', '51', '52', '53', '54', '55',
                 '70', '71', '72', '73', '74',
-                '80', '81',
+                '80', '81', '82',
             ],
             'iniEntries' => [
                 '40',

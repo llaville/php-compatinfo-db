@@ -156,6 +156,12 @@ trait ExtensionVersionProviderTrait
         if (version_compare($phpVersion, '8.0', 'lt')) {
             return ExtensionVersionProviderInterface::LATEST_PHP_7_4;
         }
-        return ExtensionVersionProviderInterface::LATEST_PHP_8_0;
+        if (version_compare($phpVersion, '8.1', 'lt')) {
+            return ExtensionVersionProviderInterface::LATEST_PHP_8_0;
+        }
+        if (version_compare($phpVersion, '8.2', 'lt')) {
+            return ExtensionVersionProviderInterface::LATEST_PHP_8_1;
+        }
+        return ExtensionVersionProviderInterface::LATEST_PHP_8_2;
     }
 }
