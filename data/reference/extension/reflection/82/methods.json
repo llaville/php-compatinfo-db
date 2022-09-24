@@ -10,5 +10,11 @@
         "name": "isAnonymous",
         "ext_min": "8.2.0alpha1",
         "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "ReflectionMethod",
+        "name": "hasPrototype",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
     }
 ]
