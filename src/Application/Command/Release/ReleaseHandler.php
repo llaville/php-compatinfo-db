@@ -40,6 +40,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         '74' => ExtensionVersionProviderInterface::LATEST_PHP_7_4,
         '80' => ExtensionVersionProviderInterface::LATEST_PHP_8_0,
         '81' => ExtensionVersionProviderInterface::LATEST_PHP_8_1,
+        '82' => ExtensionVersionProviderInterface::LATEST_PHP_8_2,
     ];
     /** @var JsonFileHandler  */
     private $jsonFileHandler;
@@ -379,6 +380,15 @@ final class ReleaseHandler implements CommandHandlerInterface
             'memcached.sess_binary'                 => $this->latestPhpVersion['74'],
             'memcached.sess_remove_failed'          => $this->latestPhpVersion['74'],
             'memcached.use_sasl'                    => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
+        $refName = 'mysqli';
+        $ext     = 'iniEntries';
+        $major   = '50';
+        $entry   = 'php_max';
+        $names   = [
+            'mysqli.reconnect'                      => $this->latestPhpVersion['81'],
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
