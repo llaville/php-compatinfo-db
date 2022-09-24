@@ -46,5 +46,17 @@
         "name": "__unserialize",
         "ext_min": "8.2.0alpha1",
         "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateInterval",
+        "name": "__serialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateInterval",
+        "name": "__unserialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
     }
 ]
