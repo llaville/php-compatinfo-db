@@ -4,5 +4,29 @@
         "name": "__construct",
         "ext_min": "8.2.0alpha1",
         "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "SensitiveParameter",
+        "name": "__construct",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "SensitiveParameterValue",
+        "name": "__construct",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "SensitiveParameterValue",
+        "name": "getValue",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "SensitiveParameterValue",
+        "name": "__debugInfo",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
     }
 ]

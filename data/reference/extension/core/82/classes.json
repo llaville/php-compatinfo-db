@@ -3,5 +3,15 @@
         "name": "AllowDynamicProperties",
         "ext_min": "8.2.0alpha1",
         "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "SensitiveParameter",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "SensitiveParameterValue",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
     }
 ]
