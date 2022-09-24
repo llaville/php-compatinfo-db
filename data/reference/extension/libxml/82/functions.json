@@ -1,0 +1,7 @@
+[
+    {
+        "name": "libxml_get_external_entity_loader",
+        "ext_min": "8.2.0RC1",
+        "php_min": "8.2.0RC1"
+    }
+]
