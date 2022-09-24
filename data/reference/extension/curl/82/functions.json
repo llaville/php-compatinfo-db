@@ -1,0 +1,13 @@
+[
+    {
+        "name": "curl_upkeep",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.62.0"
+            }
+        ]
+    }
+]
