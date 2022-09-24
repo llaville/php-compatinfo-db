@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "SplFixedArray",
+        "name": "__serialize",
+        "ext_min": "8.2.0RC1",
+        "php_min": "8.2.0RC1"
+    },
+    {
+        "class_name": "SplFixedArray",
+        "name": "__unserialize",
+        "ext_min": "8.2.0RC1",
+        "php_min": "8.2.0RC1"
+    }
+]
