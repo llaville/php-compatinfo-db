@@ -1,0 +1,7 @@
+[
+    {
+        "name": "AllowDynamicProperties",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    }
+]
