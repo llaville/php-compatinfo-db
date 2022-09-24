@@ -1,0 +1,38 @@
+[
+    {
+        "class_name": "DateTimeInterface",
+        "name": "__serialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateTimeInterface",
+        "name": "__unserialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateTime",
+        "name": "__serialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateTime",
+        "name": "__unserialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "__serialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "__unserialize",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    }
+]
