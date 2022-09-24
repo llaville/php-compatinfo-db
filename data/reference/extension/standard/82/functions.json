@@ -1,5 +1,10 @@
 [
     {
+        "name": "memory_reset_peak_usage",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
         "name": "ini_parse_quantity",
         "ext_min": "8.2.0beta1",
         "php_min": "8.2.0beta1"
