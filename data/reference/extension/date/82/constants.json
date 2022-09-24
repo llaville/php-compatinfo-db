@@ -1,0 +1,7 @@
+[
+    {
+        "name": "DATE_ISO8601_EXPANDED",
+        "ext_min": "8.2.0beta2",
+        "php_min": "8.2.0beta2"
+    }
+]
