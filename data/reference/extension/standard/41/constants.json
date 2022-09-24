@@ -165,6 +165,11 @@
         "php_min": "4.1.0"
     },
     {
+        "name": "ERA_YEAR",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
         "name": "ERA_D_FMT",
         "ext_min": "4.1.0",
         "php_min": "4.1.0"
@@ -240,17 +245,17 @@
         "php_min": "4.1.0"
     },
     {
-        "name": "NOEXPR",
-        "ext_min": "4.1.0",
-        "php_min": "4.1.0"
-    },
-    {
         "name": "PM_STR",
         "ext_min": "4.1.0",
         "php_min": "4.1.0"
     },
     {
         "name": "RADIXCHAR",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "THOUSANDS_SEP",
         "ext_min": "4.1.0",
         "php_min": "4.1.0"
     },
@@ -270,7 +275,107 @@
         "php_min": "4.1.0"
     },
     {
+        "name": "GROUPING",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
         "name": "YESEXPR",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "NOEXPR",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "YESSTR",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "NOSTR",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "INT_CURR_SYMBOL",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "CURRENCY_SYMBOL",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "MON_DECIMAL_POINT",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "MON_THOUSANDS_SEP",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "MON_GROUPING",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "POSITIVE_SIGN",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "NEGATIVE_SIGN",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "INT_FRAC_DIGITS",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "FRAC_DIGITS",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "P_CS_PRECEDES",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "P_SEP_BY_SPACE",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "N_CS_PRECEDES",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "N_SEP_BY_SPACE",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "P_SIGN_POSN",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "N_SIGN_POSN",
+        "ext_min": "4.1.0",
+        "php_min": "4.1.0"
+    },
+    {
+        "name": "DECIMAL_POINT",
         "ext_min": "4.1.0",
         "php_min": "4.1.0"
     }
