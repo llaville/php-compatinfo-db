@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "mysqli",
+        "name": "execute_query",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]
