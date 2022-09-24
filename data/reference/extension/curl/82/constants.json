@@ -1,0 +1,843 @@
+[
+    {
+        "name": "CURLOPT_MAXFILESIZE_LARGE",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.11.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLALTSVC_H1",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLALTSVC_H2",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLALTSVC_H3",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLALTSVC_READONLYFILE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLAUTH_AWS_SIGV4",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.75.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLE_PROXY",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLFTPMETHOD_DEFAULT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2"
+    },
+    {
+        "name": "CURLHSTS_ENABLE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLHSTS_READONLYFILE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_PROXY_ERROR",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_REFERER",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.76.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_RETRY_AFTER",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.66.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLMOPT_MAX_CONCURRENT_STREAMS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.66.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_ALTSVC_CTRL",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_ALTSVC",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.64.1"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_AWS_SIGV4",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.75.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_CAINFO_BLOB",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.77.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_DOH_SSL_VERIFYHOST",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.76.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_DOH_SSL_VERIFYPEER",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.76.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_DOH_SSL_VERIFYSTATUS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.76.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_HSTS_CTRL",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_HSTS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_MAIL_RCPT_ALLLOWFAILS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.69.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_MAXAGE_CONN",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.65.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_MAXLIFETIME_CONN",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.80.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROXY_CAINFO_BLOB",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.77.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SASL_AUTHZID",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.66.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.80.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSL_EC_CURVES",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_UPKEEP_INTERVAL_MS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.62.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_UPLOAD_BUFFERSIZE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.62.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_XFERINFOFUNCTION",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.62.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPROTO_MQTT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_BAD_ADDRESS_TYPE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_BAD_VERSION",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_CLOSED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_GSSAPI",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_GSSAPI_PERMSG",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_GSSAPI_PROTECTION",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_IDENTD_DIFFER",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_IDENTD",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_LONG_HOSTNAME",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_LONG_PASSWD",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_LONG_USER",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_NO_AUTH",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_OK",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_RECV_ADDRESS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_RECV_AUTH",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_RECV_CONNECT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_RECV_REQACK",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_ADDRESS_TYPE_NOT_SUPPORTED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_COMMAND_NOT_SUPPORTED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_CONNECTION_REFUSED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_GENERAL_SERVER_FAILURE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_HOST_UNREACHABLE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_NETWORK_UNREACHABLE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_NOT_ALLOWED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_TTL_EXPIRED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REPLY_UNASSIGNED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_REQUEST_FAILED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_RESOLVE_HOST",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_SEND_AUTH",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_SEND_CONNECT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_SEND_REQUEST",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_UNKNOWN_FAIL",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_UNKNOWN_MODE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLPX_USER_REJECTED",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.73.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSLOPT_AUTO_CLIENT_CERT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.77.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSLOPT_NATIVE_CA",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.71.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSLOPT_NO_PARTIALCHAIN",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.68.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLSSLOPT_REVOKE_BEST_EFFORT",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.70.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_GSASL",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.76.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_HSTS",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.74.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_HTTP3",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.66.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_UNICODE",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.72.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_VERSION_ZSTD",
+        "ext_min": "8.2.0alpha2",
+        "php_min": "8.2.0alpha2",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.72.0"
+            }
+        ]
+    }
+]
