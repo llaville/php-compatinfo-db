@@ -17,6 +17,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Apcu reference updated to version 5.1.22 (stable)
 - Mailparse reference updated to version 3.1.4 (stable)
 - Xdebug reference updated to version 3.2.0alpha3 (alpha)
+- Zip reference updated to version 1.21.1 (stable)
 - <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.4.0] - 2022-09-09
