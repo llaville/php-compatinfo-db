@@ -11,7 +11,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - experimental support to PHP 8.2 (under development)
-<!-- MARKDOWN-RELEASE:END -->
+
+### Changed
+
+- Apcu reference updated to version 5.1.22 (stable)
+- <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.4.0] - 2022-09-09
 
