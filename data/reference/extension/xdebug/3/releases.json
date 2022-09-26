@@ -88,5 +88,23 @@
         "rel_date": "2022-06-06",
         "rel_state": "stable",
         "php_min": "7.2.0"
+    },
+    {
+        "rel_version": "3.2.0alpha1",
+        "rel_date": "2022-07-20",
+        "rel_state": "alpha",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "3.2.0alpha2",
+        "rel_date": "2022-07-25",
+        "rel_state": "alpha",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "3.2.0alpha3",
+        "rel_date": "2022-08-24",
+        "rel_state": "alpha",
+        "php_min": "8.0.0"
     }
 ]
