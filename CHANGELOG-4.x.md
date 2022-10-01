@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - experimental support to PHP 8.2 (under development)
+- PHP 7.4.32 support (7.4.31 has never been released)
 
 ### Changed
 

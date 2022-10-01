@@ -24,7 +24,7 @@
         "ext_min": "1.2.0",
         "ext_max": "3.0.0beta1",
         "php_min": "4.3.0",
-        "php_max": "7.4.30"
+        "php_max": "7.4.32"
     },
     {
         "name": "xdebug_dump_function_trace",
@@ -42,7 +42,7 @@
         "ext_min": "1.2.0",
         "ext_max": "3.0.0beta1",
         "php_min": "4.3.0",
-        "php_max": "7.4.30"
+        "php_max": "7.4.32"
     },
     {
         "name": "xdebug_get_code_coverage",
@@ -65,7 +65,7 @@
         "ext_min": "1.2.0",
         "ext_max": "3.0.0beta1",
         "php_min": "4.3.0",
-        "php_max": "7.4.30"
+        "php_max": "7.4.32"
     },
     {
         "name": "xdebug_memory_usage",

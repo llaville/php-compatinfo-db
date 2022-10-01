@@ -24,7 +24,7 @@ interface ExtensionVersionProviderInterface
     public const LATEST_PHP_7_1 = '7.1.33';
     public const LATEST_PHP_7_2 = '7.2.34';
     public const LATEST_PHP_7_3 = '7.3.33';
-    public const LATEST_PHP_7_4 = '7.4.30';
+    public const LATEST_PHP_7_4 = '7.4.32';
     public const LATEST_PHP_8_0 = '8.0.23';
     public const LATEST_PHP_8_1 = '8.1.10';
     public const LATEST_PHP_8_2 = '8.2.0';
