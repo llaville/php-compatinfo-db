@@ -27,7 +27,11 @@ class ReflectionExtensionTest extends GenericTest
     public static function setUpBeforeClass(): void
     {
         self::$optionalmethods = [
-            'Reflector::export'
+            'Reflector::export',
+            // introduced by commit https://github.com/php/php-src/commit/93f11d84294d7eaadb9d9fc3c0996ff30279011d
+            // available since PHP 8.0.24RC1 and PHP 8.1.11RC1
+            // CAUTION: other PHP 8.1 versions (8.1.0 until 8.1.10) does not support it !
+            'ReflectionFunctionAbstract::getClosureCalledClass',
         ];
 
         parent::setUpBeforeClass();
