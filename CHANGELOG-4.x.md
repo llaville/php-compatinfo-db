@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - experimental support to PHP 8.2 (under development)
 - PHP 8.1.11 support
+- PHP 8.0.24 support
 - PHP 7.4.32 support (7.4.31 has never been released)
 
 ### Changed

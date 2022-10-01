@@ -152,7 +152,7 @@
     {
         "class_name": "ReflectionFunctionAbstract",
         "name": "getClosureCalledClass",
-        "ext_min": "8.1.11RC1",
-        "php_min": "8.1.11RC1"
+        "ext_min": "8.0.24RC1",
+        "php_min": "8.0.24RC1"
     }
 ]
