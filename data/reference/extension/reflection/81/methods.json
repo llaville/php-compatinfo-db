@@ -148,11 +148,5 @@
         "name": "isFinal",
         "ext_min": "8.1.0beta1",
         "php_min": "8.1.0beta1"
-    },
-    {
-        "class_name": "ReflectionFunctionAbstract",
-        "name": "getClosureCalledClass",
-        "ext_min": "8.0.24RC1",
-        "php_min": "8.0.24RC1"
     }
 ]

@@ -94,5 +94,11 @@
         "name": "getAttributes",
         "ext_min": "8.0.0alpha1",
         "php_min": "8.0.0alpha1"
+    },
+    {
+        "class_name": "ReflectionFunctionAbstract",
+        "name": "getClosureCalledClass",
+        "ext_min": "8.0.24RC1",
+        "php_min": "8.0.24RC1"
     }
 ]
