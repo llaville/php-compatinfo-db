@@ -7,9 +7,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Changed
+
+- Msgpack reference updated to version 2.2.0RC2 (beta)
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.5.0] - 2022-10-01
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - experimental support to PHP 8.2 (under development)
@@ -23,7 +28,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Mailparse reference updated to version 3.1.4 (stable)
 - Xdebug reference updated to version 3.2.0alpha3 (alpha)
 - Zip reference updated to version 1.21.1 (stable)
-- <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.4.0] - 2022-09-09
 
