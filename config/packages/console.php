@@ -9,6 +9,7 @@
 use Bartlett\CompatInfoDb\Presentation\Console\Application;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\CommandInterface;
+use Bartlett\CompatInfoDb\Presentation\Console\Command\Debug\ContainerDebugCommand;
 use Bartlett\CompatInfoDb\Presentation\Console\Command\FactoryCommandLoader;
 use Bartlett\CompatInfoDb\Presentation\Console\Input\Input;
 use Bartlett\CompatInfoDb\Presentation\Console\Output\Output;
@@ -41,6 +42,12 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->instanceof(CommandInterface::class)
         ->tag('console.command')
     ;
+
+    if (getenv('APP_ENV') === 'dev') {
+        $services->set('console.command.container_debug', ContainerDebugCommand::class)
+            ->tag('console.command')
+        ;
+    }
 
     $services->set(InputInterface::class, Input::class);
     $services->set(OutputInterface::class, Output::class);

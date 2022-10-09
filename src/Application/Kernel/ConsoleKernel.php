@@ -49,6 +49,9 @@ final class ConsoleKernel extends AbstractKernel implements ConsoleKernelInterfa
             $app = $container->get(ApplicationInterface::class);
             return $app->run();
         } catch (Throwable $e) {
+            if (null === $input) {
+                $input = new ArgvInput();
+            }
             $output = new ConsoleOutput();
             $io = new Style($input, $output);
             $io->error($e->getMessage());

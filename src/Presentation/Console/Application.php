@@ -148,4 +148,12 @@ class Application extends SymfonyApplication implements ApplicationInterface
         $container = $this->container;
         return $container->getParameterBag()->all();
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getKernel(): object
+    {
+        return $this->container->get('kernel');
+    }
 }

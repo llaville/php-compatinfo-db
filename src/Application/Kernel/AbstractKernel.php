@@ -130,8 +130,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
         $cachePath = $cache->getPath();
 
         if (!$cache->isFresh()) {
-            $container = $this->buildContainer();
-            $container->compile();
+            $container = $this->getContainerBuilder();
             $this->dumpContainer($cache, $container, $class, $this->getContainerBaseClass());
         }
 
@@ -157,7 +156,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
             }
         }
 
-        $container = $this->getContainerBuilder();
+        $container = new ContainerBuilder(new ParameterBag($this->getKernelParameters()));
         $container->addObjectResource($this);
         $this->prepareContainer($container);
         $this->registerContainerConfiguration($this->getContainerLoader($container));
@@ -253,10 +252,14 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
 
     /**
      * Gets a new ContainerBuilder instance used to build the service container.
+     *
+     * @throws RuntimeException|Exception
      */
-    protected function getContainerBuilder(): ContainerBuilder
+    public function getContainerBuilder(): ContainerBuilder
     {
-        return new ContainerBuilder(new ParameterBag($this->getKernelParameters()));
+        $container = $this->buildContainer();
+        $container->compile();  // mandatory to populate collections (sniff and polyfill)
+        return $container;
     }
 
     /**
@@ -272,6 +275,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
             'kernel.home_dir' => $this->getHomeDir(),
             'kernel.project_dir' => $this->getProjectDir(),
             'kernel.cache_dir' => realpath($this->getCacheDir()),
+            'kernel.build_dir' => realpath($this->getCacheDir()),
             'kernel.logs_dir' => realpath($this->getLogDir()),
             'kernel.vendor_dir' => $this->getProjectDir() . DIRECTORY_SEPARATOR . 'vendor',
             'kernel.container_class' => $this->getContainerClass(),

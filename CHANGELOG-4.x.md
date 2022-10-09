@@ -8,6 +8,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 <!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- Introduces `debug:container` command, compatible with `symfony/framework-bundle`, when `APP_ENV=dev` is set
+
 ### Changed
 
 - Msgpack reference updated to version 2.2.0RC2 (beta)

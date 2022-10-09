@@ -7,6 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
+use Bartlett\CompatInfoDb\Application\Kernel\KernelInterface;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
@@ -41,4 +42,9 @@ interface ApplicationInterface extends ContainerAwareInterface
      * @return array<string, mixed>
      */
     public function getApplicationParameters(): array;
+
+    /**
+     * Gets the current light kernel used by this application.
+     */
+    public function getKernel(): object;
 }
