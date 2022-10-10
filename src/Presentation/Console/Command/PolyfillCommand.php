@@ -8,6 +8,7 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Command\Polyfill\PolyfillCommand as AppPolyfillCommand;
+use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\Input\InputArgument;
@@ -56,11 +57,17 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
     {
         $io = new Style($input, $output);
 
+        /** @var ApplicationInterface $app */
+        $app = $this->getApplication();
+
+        $kernel = $app->getKernel();
+
         $polyfillCommand = new AppPolyfillCommand(
             trim($input->getArgument('package')),
             trim($input->getArgument('tag')),
             $input->getOption('php'),
-            $io
+            $io,
+            $kernel->getCacheDir()
         );
 
         try {

@@ -69,7 +69,7 @@ final class PolyfillHandler implements CommandHandlerInterface
 
         $io = $command->getStyle();
 
-        $targetDir = getenv('APP_CACHE_DIR') . DIRECTORY_SEPARATOR . $jsonResult['name'];
+        $targetDir = $command->getCacheDir() . DIRECTORY_SEPARATOR . $jsonResult['name'];
 
         if (!file_exists($targetDir)) {
             mkdir($targetDir, 0755, true);

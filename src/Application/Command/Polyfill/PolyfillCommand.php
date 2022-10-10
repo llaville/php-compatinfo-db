@@ -23,16 +23,18 @@ final class PolyfillCommand implements CommandInterface
     /** @var string[]  */
     private array $php;
     private StyleInterface $io;
+    private string $cacheDir;
 
     /**
      * @param string[] $php
      */
-    public function __construct(string $package, string $tag, array $php, StyleInterface $io)
+    public function __construct(string $package, string $tag, array $php, StyleInterface $io, string $cacheDir)
     {
         $this->package = $package;
         $this->tag = $tag;
         $this->php = $php;
         $this->io = $io;
+        $this->cacheDir = $cacheDir;
     }
 
     public function getPackage(): string
@@ -56,5 +58,10 @@ final class PolyfillCommand implements CommandInterface
     public function getStyle(): StyleInterface
     {
         return $this->io;
+    }
+
+    public function getCacheDir(): string
+    {
+        return $this->cacheDir;
     }
 }

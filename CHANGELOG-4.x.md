@@ -16,6 +16,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Msgpack reference updated to version 2.2.0RC2 (beta)
+
+### Fixed
+
+- `db:polyfill` command did not run anymore since version 4.4.0 (see code refactoring with issue [#123](https://github.com/llaville/php-compatinfo-db/issues/123))
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.5.0] - 2022-10-01
