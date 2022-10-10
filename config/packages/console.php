@@ -15,6 +15,7 @@ use Bartlett\CompatInfoDb\Presentation\Console\Input\Input;
 use Bartlett\CompatInfoDb\Presentation\Console\Output\Output;
 use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
+use Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -45,6 +46,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     if (getenv('APP_ENV') === 'dev') {
         $services->set('console.command.container_debug', ContainerDebugCommand::class)
+            ->tag('console.command')
+        ;
+
+        $services->set('console.command.eventdispatcher_debug', EventDispatcherDebugCommand::class)
             ->tag('console.command')
         ;
     }

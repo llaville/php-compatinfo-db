@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - Introduces `debug:container` command, compatible with `symfony/framework-bundle`, when `APP_ENV=dev` is set
+- Introduces `debug:event-dispatcher` command, of `symfony/framework-bundle`, when `APP_ENV=dev` is set
 
 ### Changed
 
