@@ -2,16 +2,19 @@
     {
         "name": "AllowDynamicProperties",
         "ext_min": "8.2.0alpha1",
-        "php_min": "8.2.0alpha1"
+        "php_min": "8.2.0alpha1",
+        "polyfill": "symfony/polyfill-php82"
     },
     {
         "name": "SensitiveParameter",
         "ext_min": "8.2.0alpha1",
-        "php_min": "8.2.0alpha1"
+        "php_min": "8.2.0alpha1",
+        "polyfill": "symfony/polyfill-php82"
     },
     {
         "name": "SensitiveParameterValue",
         "ext_min": "8.2.0alpha1",
-        "php_min": "8.2.0alpha1"
+        "php_min": "8.2.0alpha1",
+        "polyfill": "symfony/polyfill-php82"
     }
 ]
