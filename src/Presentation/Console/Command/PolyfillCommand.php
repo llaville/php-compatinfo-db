@@ -50,6 +50,13 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
                 'Polyfill for PHP version',
                 ['7.4']
             )
+            ->addOption(
+                'whitelist',
+                null,
+                InputOption::VALUE_REQUIRED,
+                'File to scan into package',
+                'bootstrap.php'
+            )
         ;
     }
 
@@ -67,7 +74,8 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
             trim($input->getArgument('tag')),
             $input->getOption('php'),
             $io,
-            $kernel->getCacheDir()
+            $kernel->getCacheDir(),
+            $input->getOption('whitelist')
         );
 
         try {

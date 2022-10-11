@@ -24,17 +24,19 @@ final class PolyfillCommand implements CommandInterface
     private array $php;
     private StyleInterface $io;
     private string $cacheDir;
+    private ?string $whitelist;
 
     /**
      * @param string[] $php
      */
-    public function __construct(string $package, string $tag, array $php, StyleInterface $io, string $cacheDir)
+    public function __construct(string $package, string $tag, array $php, StyleInterface $io, string $cacheDir, ?string $whitelist)
     {
         $this->package = $package;
         $this->tag = $tag;
         $this->php = $php;
         $this->io = $io;
         $this->cacheDir = $cacheDir;
+        $this->whitelist = $whitelist;
     }
 
     public function getPackage(): string
@@ -63,5 +65,10 @@ final class PolyfillCommand implements CommandInterface
     public function getCacheDir(): string
     {
         return $this->cacheDir;
+    }
+
+    public function getWhitelist(): ?string
+    {
+        return $this->whitelist;
     }
 }

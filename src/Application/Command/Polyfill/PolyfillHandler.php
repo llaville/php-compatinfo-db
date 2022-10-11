@@ -36,6 +36,7 @@ use function mkdir;
 use function preg_match;
 use function sprintf;
 use function str_replace;
+use function stripos;
 use function substr;
 use function sys_get_temp_dir;
 use const DIRECTORY_SEPARATOR;
@@ -106,21 +107,22 @@ final class PolyfillHandler implements CommandHandlerInterface
             );
         }
 
-        $whitelist = 'bootstrap.php';
-        if (!file_exists($tempPackageDir . DIRECTORY_SEPARATOR . $whitelist)) {
+        $whitelist = $command->getWhitelist();
+        if (!empty($whitelist) && !file_exists($tempPackageDir . DIRECTORY_SEPARATOR . $whitelist)) {
             $whitelist = null;
         }
 
-        $results = $this->analyse($tempPackageDir, $whitelist);
+        $results = $this->analyse($tempPackageDir, $whitelist, $command->getPhp()[0]);
         if (empty($results)) {
             return;
         }
         if ($io->isVerbose()) {
             $io->writeln(
                 sprintf(
-                    '> Polyfill analysed. Found <info>%d</info> constant(s) and <info>%d</info> function(s)',
+                    '> Polyfill analysed. Found <info>%d</info> constant(s), <info>%d</info> function(s) and <info>%d</info> class(es)',
                     count($results['constants']),
-                    count($results['functions'])
+                    count($results['functions']),
+                    count($results['classes'])
                 )
             );
         }
@@ -134,6 +136,11 @@ final class PolyfillHandler implements CommandHandlerInterface
 
             list($grabbed, $ignored) = $this->getListing($results['functions'], $phpVersions);
             $io->writeln('> Functions:');
+            $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
+            $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
+
+            list($grabbed, $ignored) = $this->getListing($results['classes'], $phpVersions);
+            $io->writeln('> Classes:');
             $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
             $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
         }
@@ -227,11 +234,11 @@ final class PolyfillHandler implements CommandHandlerInterface
     }
 
     /**
-     * @return array<string, mixed>
+     * @return null|array<string, mixed>
      */
-    private function analyse(string $packageDir, ?string $whitelist = null): ?array
+    private function analyse(string $packageDir, ?string $whitelist = null, string $php = '7.4'): ?array
     {
-        $dataSource = empty($whitelist) ? $packageDir : \implode(\DIRECTORY_SEPARATOR, [$packageDir, $whitelist]);
+        $dataSource = empty($whitelist) ? $packageDir : implode(DIRECTORY_SEPARATOR, [$packageDir, $whitelist]);
 
         $process = new Process([$this->compatInfoBin, 'analyser:run', '--output=json', $dataSource]);
         $process->start();
@@ -253,9 +260,11 @@ final class PolyfillHandler implements CommandHandlerInterface
 
         $jsonResult = json_decode(file_get_contents($matches[0]), true);
         $conditions = $jsonResult['Bartlett\CompatInfo\Application\Analyser\CompatibilityAnalyser']['conditions'];
+        $classes    = $jsonResult['Bartlett\CompatInfo\Application\Analyser\CompatibilityAnalyser']['classes'];
 
         $constantsFound = [];
         $functionsFound = [];
+        $classesFound   = [];
 
         foreach ($conditions as $condition => $values) {
             $matches = [];
@@ -272,9 +281,16 @@ final class PolyfillHandler implements CommandHandlerInterface
             }
         }
 
+        foreach ($classes as $class => $values) {
+            if ('user' == $values['ext.name']) {
+                $classesFound[$class] = ['core', $php];
+            }
+        }
+
         return [
             'constants' => $constantsFound,
             'functions' => $functionsFound,
+            'classes'   => $classesFound,
         ];
     }
 
@@ -304,7 +320,7 @@ final class PolyfillHandler implements CommandHandlerInterface
                 $shouldRewrite = false;
                 foreach ($meta as $index => $item) {
                     if ($item['name'] === $name) {
-                        if (isset($meta[$index]['polyfill'])) {
+                        if (isset($item['polyfill']) && stripos($item['polyfill'], $packageName) === false) {
                             $meta[$index]['polyfill'] .= ', ' . $packageName;
                         } else {
                             $meta[$index]['polyfill'] = $packageName;
