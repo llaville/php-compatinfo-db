@@ -18,6 +18,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Changed
 
 - Msgpack reference updated to version 2.2.0RC2 (beta)
+- Xdebug reference updated to version 3.2.0RC1 (beta)
 
 ### Fixed
 
