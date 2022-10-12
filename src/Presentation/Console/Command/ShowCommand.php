@@ -240,7 +240,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
             foreach ($values as $type => $names) {
                 $io->listing([$type], ['type' => ' > ', 'style' => 'fg=green', 'indent' => '']);
-                $io->listing($names);
+                $io->listing($names, []);
             }
         }
     }
