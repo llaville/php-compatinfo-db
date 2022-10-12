@@ -30,8 +30,11 @@ use function array_unshift;
 use function count;
 use function explode;
 use function implode;
+use function ksort;
+use function method_exists;
 use function sprintf;
 use function trim;
+use const SORT_NATURAL;
 
 /**
  * Show details of a reference (extension) supported.
@@ -63,6 +66,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             ->addOption('methods', null, null, 'Show methods')
             ->addOption('class-constants', null, null, 'Show class constants')
             ->addOption('dependencies', null, null, 'Show dependency constraints')
+            ->addOption('polyfills', null, null, 'Show polyfills supported')
         ;
     }
 
@@ -78,7 +82,8 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $input->getOption('classes'),
             $input->getOption('methods'),
             $input->getOption('class-constants'),
-            $input->getOption('dependencies')
+            $input->getOption('dependencies'),
+            $input->getOption('polyfills')
         );
 
         /** @var Extension|null $extension */
@@ -129,6 +134,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $summary = false;
             $this->formatDependency($extension->getDependencies(), $io);
         }
+        if ($showQuery->isPolyfills()) {
+            $summary = false;
+            $this->formatPolyfills($extension, $io);
+        }
 
         if (!$summary) {
             return self::SUCCESS;
@@ -143,16 +152,19 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             count($extension->getIniEntries()),
             '  INI entries                               %10d'
         );
+        $constants = $extension->getConstants();
         $io->columns(
-            count($extension->getConstants()),
+            count($constants),
             '  Constants                                 %10d'
         );
+        $functions = $extension->getFunctions();
         $io->columns(
-            count($extension->getFunctions()),
+            count($functions),
             '  Functions                                 %10d'
         );
+        $classes = $extension->getClasses();
         $io->columns(
-            count($extension->getClasses()),
+            count($classes),
             '  Classes                                   %10d'
         );
         $io->columns(
@@ -176,8 +188,61 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             count($dependencies),
             '  Dependencies                              %10d'
         );
+        $polyfills = [];
+        foreach ([$functions, $constants, $classes] as $components) {
+            foreach ($components as $name => $valueObject) {
+                if (!empty($valueObject->getPolyfill())) {
+                    foreach (explode(', ', $valueObject->getPolyfill()) as $package) {
+                        $polyfills[] = $package;
+                    }
+                }
+            }
+        }
+        $polyfills = array_unique($polyfills);
+        $io->columns(
+            count($polyfills),
+            '  Polyfills                                 %10d'
+        );
 
         return self::SUCCESS;
+    }
+
+    private function formatPolyfills(Extension $extension, StyleInterface $io): void
+    {
+        $functions = $extension->getFunctions();
+        $constants = $extension->getConstants();
+        $classes   = $extension->getClasses();
+
+        $polyfills = [];
+
+        foreach ([$functions, $constants, $classes] as $components) {
+            foreach ($components as $name => $valueObject) {
+                if (!empty($valueObject->getPolyfill())) {
+                    foreach (explode(', ', $valueObject->getPolyfill()) as $package) {
+                        if ($valueObject instanceof Function_) {
+                            $type = 'functions';
+                        } elseif ($valueObject instanceof Constant_) {
+                            $type = 'constants';
+                        } else {
+                            $type = 'classes';
+                        }
+                        $polyfills[$package][$type][] = $name;
+                    }
+                }
+            }
+        }
+        ksort($polyfills, SORT_NATURAL);
+
+        $io->title('Polyfills');
+
+        foreach ($polyfills as $package => $values) {
+            $io->section($package);
+
+            foreach ($values as $type => $names) {
+                $io->listing([$type], ['type' => ' > ', 'style' => 'fg=green', 'indent' => '']);
+                $io->listing($names);
+            }
+        }
     }
 
     /**
@@ -237,6 +302,12 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 $key = $domain->getName();
             }
 
+            if (method_exists($domain, 'getPolyfill')) {
+                $polyfills = $domain->getPolyfill() ?? '';
+            } else {
+                $polyfills = '';
+            }
+
             $flags = [];
             if ($domain instanceof Function_) {
                 $parameters = $domain->getParameters();
@@ -269,6 +340,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 implode(', ', $parameters),
                 implode(', ', $flags),
                 implode(', ', $dependencies),
+                $polyfills,
             ];
         }
         ksort($args);
@@ -282,9 +354,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
         $io->section($section);
 
-        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Parameters', 'Flags', 'Dependencies'];
+        $headers = ['', 'EXT min/Max', 'PHP min/Max', 'Deprecated', 'Parameters', 'Flags', 'Dependencies', 'Polyfills'];
         $footers = [
             sprintf('<info>Total [%d]</info>', count($results)),
+            '',
             '',
             '',
             '',

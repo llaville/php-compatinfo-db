@@ -38,6 +38,7 @@ final class ClassHydrator implements HydratorInterface
             'php_max' => $object->getPhpMax(),
             'is_abstract' => (bool) ($object->getFlags() & Class_::MODIFIER_ABSTRACT),
             'is_final' => (bool) ($object->getFlags() & Class_::MODIFIER_FINAL),
+            'polyfill' => $object->getPolyfill(),
         ];
     }
 
@@ -59,6 +60,7 @@ final class ClassHydrator implements HydratorInterface
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
         $object->setFlags(Class_::MODIFIER_PUBLIC);
+        $object->setPolyfill($data['polyfill'] ?? null);
 
         $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
@@ -87,7 +89,8 @@ final class ClassHydrator implements HydratorInterface
             $entity->getPhpMin(),
             $entity->getPhpMax(),
             $dependencies,
-            $entity->getFlags()
+            $entity->getFlags(),
+            $entity->getPolyfill()
         );
     }
 }

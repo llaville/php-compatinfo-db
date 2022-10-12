@@ -29,6 +29,7 @@ final class Class_
     /** @var array|Dependency[]  */
     private array $dependencies;
     private int $flags;
+    private ?string $polyfill;
 
     /**
      * Class_ constructor.
@@ -42,6 +43,7 @@ final class Class_
      * @param string|null $phpMax
      * @param array|Dependency[] $dependencies
      * @param int $flags
+     * @param string|null $polyfill
      */
     public function __construct(
         string $name,
@@ -52,7 +54,8 @@ final class Class_
         string $phpMin,
         ?string $phpMax,
         array $dependencies = [],
-        int $flags = self::MODIFIER_PUBLIC
+        int $flags = self::MODIFIER_PUBLIC,
+        ?string $polyfill = null
     ) {
         $this->name = $name;
         $this->isInterface = $isInterface;
@@ -63,6 +66,7 @@ final class Class_
         $this->phpMax = $phpMax;
         $this->dependencies = $dependencies;
         $this->flags = $flags;
+        $this->polyfill = $polyfill;
     }
 
     /**
@@ -111,5 +115,13 @@ final class Class_
     public function isFinal(): bool
     {
         return (bool) ($this->flags & self::MODIFIER_FINAL);
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPolyfill(): ?string
+    {
+        return $this->polyfill;
     }
 }

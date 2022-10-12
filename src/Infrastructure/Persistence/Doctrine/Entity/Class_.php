@@ -39,6 +39,11 @@ class Class_
     private int $flags;
 
     /**
+     * @Column(name="polyfill", type="string", nullable=true)
+     */
+    private ?string $polyfill;
+
+    /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="classes")
      */
     private Extension $extension;
@@ -155,5 +160,21 @@ class Class_
             $dependencies[] = $relationship->getDependency();
         }
         return $dependencies;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPolyfill(): ?string
+    {
+        return $this->polyfill;
+    }
+
+    /**
+     * @param string|null $polyfill
+     */
+    public function setPolyfill(?string $polyfill): void
+    {
+        $this->polyfill = $polyfill;
     }
 }
