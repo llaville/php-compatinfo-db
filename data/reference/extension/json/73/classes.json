@@ -2,6 +2,7 @@
     {
         "name": "JsonException",
         "ext_min": "1.6.0",
-        "php_min": "7.3.0alpha1"
+        "php_min": "7.3.0alpha1",
+        "polyfill": "symfony/polyfill-php73"
     }
 ]
