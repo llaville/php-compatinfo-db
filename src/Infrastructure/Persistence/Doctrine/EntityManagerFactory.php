@@ -11,8 +11,8 @@ use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\ORMException;
-use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\Exception\ORMException;
+use Doctrine\ORM\ORMSetup;
 
 use function getenv;
 use function implode;
@@ -37,7 +37,7 @@ final class EntityManagerFactory
     public static function create(array $connection, bool $isDevMode, string $proxyDir, ?Cache $cache = null): EntityManagerInterface
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
-        $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
+        $config = ORMSetup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
         if ($isDevMode) {
             // suggested for DEV mode: see Doctrine ORM documentation
             // at https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/advanced-configuration.html#auto-generating-proxy-classes-optional

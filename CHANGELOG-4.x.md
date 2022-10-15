@@ -20,6 +20,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Msgpack reference updated to version 2.2.0RC2 (beta)
 - Xdebug reference updated to version 3.2.0RC1 (beta)
 - updated `symfony/polyfill-*` polyfills that did not yet identify new classes or interfaces
+- raise `doctrine/orm` constraint to remove Deprecated [Doctrine\ORM\Tools\Setup](https://github.com/doctrine/orm/blob/2.13.x/UPGRADE.md#deprecate-doctrineormtoolssetup)
 
 ### Fixed
 
