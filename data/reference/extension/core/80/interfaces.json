@@ -2,6 +2,7 @@
     {
         "name": "Stringable",
         "ext_min": "8.0.0alpha1",
-        "php_min": "8.0.0alpha1"
+        "php_min": "8.0.0alpha1",
+        "polyfill": "symfony/polyfill-php80"
     }
 ]

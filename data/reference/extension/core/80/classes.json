@@ -2,7 +2,8 @@
     {
         "name": "ValueError",
         "ext_min": "8.0.0alpha1",
-        "php_min": "8.0.0alpha1"
+        "php_min": "8.0.0alpha1",
+        "polyfill": "symfony/polyfill-php80"
     },
     {
         "name": "WeakMap",
@@ -12,7 +13,8 @@
     {
         "name": "Attribute",
         "ext_min": "8.0.0alpha1",
-        "php_min": "8.0.0alpha1"
+        "php_min": "8.0.0alpha1",
+        "polyfill": "symfony/polyfill-php80"
     },
     {
         "name": "InternalIterator",
@@ -22,6 +24,7 @@
     {
         "name": "UnhandledMatchError",
         "ext_min": "8.0.0alpha3",
-        "php_min": "8.0.0alpha3"
+        "php_min": "8.0.0alpha3",
+        "polyfill": "symfony/polyfill-php80"
     }
 ]
