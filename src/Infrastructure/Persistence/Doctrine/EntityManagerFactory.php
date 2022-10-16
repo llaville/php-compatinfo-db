@@ -7,12 +7,13 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine;
 
-use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Exception\ORMException;
 use Doctrine\ORM\ORMSetup;
+
+use Psr\Cache\CacheItemPoolInterface;
 
 use function getenv;
 use function implode;
@@ -28,13 +29,9 @@ final class EntityManagerFactory
 {
     /**
      * @param array<string, string> $connection
-     * @param bool $isDevMode
-     * @param string $proxyDir
-     * @param Cache|null $cache
-     * @return EntityManagerInterface
      * @throws ORMException
      */
-    public static function create(array $connection, bool $isDevMode, string $proxyDir, ?Cache $cache = null): EntityManagerInterface
+    public static function create(array $connection, bool $isDevMode, string $proxyDir, ?CacheItemPoolInterface $cache = null): EntityManagerInterface
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
         $config = ORMSetup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
