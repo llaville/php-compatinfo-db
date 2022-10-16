@@ -244,6 +244,8 @@ class StandardExtensionTest extends GenericTest
             'array_key_last',
             'hrtime',
             'is_countable',
+            // requires ZEND_DEBUG
+            'config_get_hash',
         ];
 
         parent::setUpBeforeClass();
