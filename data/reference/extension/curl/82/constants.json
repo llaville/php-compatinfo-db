@@ -1,5 +1,16 @@
 [
     {
+        "name": "CURLINFO_EFFECTIVE_METHOD",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.72.0"
+            }
+        ]
+    },
+    {
         "name": "CURLOPT_MAXFILESIZE_LARGE",
         "ext_min": "8.2.0alpha1",
         "php_min": "8.2.0alpha1",
