@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [4.6.0] - 2022-10-16
+
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
@@ -14,6 +16,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Introduces `debug:event-dispatcher` command, of `symfony/framework-bundle`, when `APP_ENV=dev` is set
 - [#125](https://github.com/llaville/php-compatinfo-db/issues/125) : `db:polyfill` command is now able to detect new classes
 - [symfony/polyfill-php82](https://github.com/symfony/polyfill/tree/main/src/Php82) polyfill support
+- PHP 8.2.0RC4 support
 
 ### Changed
 
@@ -161,7 +164,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
 - display `manifest` on PHAR distribution. [Lear more](https://github.com/llaville/php-compatinfo-db/issues/111#issuecomment-1029708338)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.5.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.6.0...HEAD
+[4.6.0]: https://github.com/llaville/php-compatinfo-db/compare/4.5.0...4.6.0
 [4.5.0]: https://github.com/llaville/php-compatinfo-db/compare/4.4.0...4.5.0
 [4.4.0]: https://github.com/llaville/php-compatinfo-db/compare/4.3.0...4.4.0
 [4.3.0]: https://github.com/llaville/php-compatinfo-db/compare/4.2.0...4.3.0
