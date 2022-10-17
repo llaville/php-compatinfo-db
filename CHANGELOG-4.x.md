@@ -7,9 +7,11 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.6.0] - 2022-10-16
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - Introduces `debug:container` command, compatible with `symfony/framework-bundle`, when `APP_ENV=dev` is set
@@ -28,7 +30,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - `db:polyfill` command did not run anymore since version 4.4.0 (see code refactoring with issue [#123](https://github.com/llaville/php-compatinfo-db/issues/123))
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.5.0] - 2022-10-01
 

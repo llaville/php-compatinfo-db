@@ -23,6 +23,7 @@ This database is currently only support by its initial project [php-compatinfo](
 * CompatInfoDB 3.17.x to 3.18.x works with PHP >= 7.4 and CompatInfo 6.1
 * CompatInfoDB 4.0.x works with PHP >= 7.4 and CompatInfo 6.2
 * CompatInfoDB 4.2.x works with PHP >= 7.4 and CompatInfo 6.4
+* CompatInfoDB 4.6.x works with PHP >= 7.4 and CompatInfo 6.5
 
 ## Documentation
 
