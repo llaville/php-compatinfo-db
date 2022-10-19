@@ -8,6 +8,9 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 <!-- MARKDOWN-RELEASE:START -->
+### Fixed
+
+- Autowiring alias is deprecated since Symfony 5.1
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.6.0] - 2022-10-16

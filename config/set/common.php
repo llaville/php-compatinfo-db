@@ -10,6 +10,9 @@ use Bartlett\CompatInfoDb\Application\Event\Dispatcher\EventDispatcher;
 use Bartlett\CompatInfoDb\Application\Event\Subscriber\ProfileEventSubscriber;
 use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
+use Psr\Container\ContainerInterface;
+
+use Symfony\Component\DependencyInjection\ContainerInterface as SymfonyContainerInterface;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -39,6 +42,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         // for unit tests
         ->public()
     ;
+
+    // @see https://github.com/symfony/dependency-injection/commit/9591cba6e215ce688fcc301cc6eef1e39daa5ad9 since Symfony 5.1
+    $services->alias(ContainerInterface::class, 'service_container');
+    $services->alias(SymfonyContainerInterface::class, 'service_container');
 
     $services->load('Bartlett\\CompatInfoDb\\Application\\Event\\', __DIR__ . '/../../src/Application/Event');
 };
