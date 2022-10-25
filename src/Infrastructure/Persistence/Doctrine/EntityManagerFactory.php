@@ -53,17 +53,22 @@ final class EntityManagerFactory
      */
     private static function connection(): array
     {
-        $environment = $_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod';
-        $kernel = new ConsoleKernel($environment, false);
-
         $dbUrl = getenv('DATABASE_URL');
         if (false === $dbUrl) {
             $targetFile = 'compatinfo-db.sqlite';
-            $dbUrl = sprintf('sqlite:///%s/%s', $kernel->getCacheDir(), $targetFile);
-        } else {
-            $dbUrl = str_replace(['${HOME}', '%HOME%'], $kernel->getHomeDir(), $dbUrl);
+            $dbUrl = sprintf('sqlite:///%s/%s', '%kernel.cache_dir%', $targetFile);
         }
-        $connection['url'] = $dbUrl;
+        $connection['url'] = self::resolve($dbUrl);
         return $connection;
+    }
+
+    private static function resolve(string $url): string
+    {
+        $environment = $_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod';
+        $kernel = new ConsoleKernel($environment, false);
+
+        $dbUrl = str_replace('%kernel.cache_dir%', $kernel->getCacheDir(), $url);
+
+        return str_replace(['${HOME}', '%HOME%'], $kernel->getHomeDir(), $dbUrl);
     }
 }
