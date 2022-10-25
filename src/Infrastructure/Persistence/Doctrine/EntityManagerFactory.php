@@ -7,6 +7,8 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine;
 
+use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
+
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
@@ -17,9 +19,9 @@ use Psr\Cache\CacheItemPoolInterface;
 
 use function getenv;
 use function implode;
+use function sprintf;
 use function str_replace;
 use const DIRECTORY_SEPARATOR;
-use const PATH_SEPARATOR;
 
 /**
  * @since Release 3.0.0
@@ -28,10 +30,9 @@ use const PATH_SEPARATOR;
 final class EntityManagerFactory
 {
     /**
-     * @param array<string, string> $connection
      * @throws ORMException
      */
-    public static function create(array $connection, bool $isDevMode, string $proxyDir, ?CacheItemPoolInterface $cache = null): EntityManagerInterface
+    public static function create(bool $isDevMode, string $proxyDir, ?CacheItemPoolInterface $cache = null): EntityManagerInterface
     {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
         $config = ORMSetup::createAnnotationMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
@@ -44,29 +45,25 @@ final class EntityManagerFactory
             $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
         }
 
-        return EntityManager::create(self::connection($connection), $config);
+        return EntityManager::create(self::connection(), $config);
     }
 
     /**
-     * @param array<string, string> $connection
      * @return array<string, string>
      */
-    private static function connection(array $connection): array
+    private static function connection(): array
     {
-        $url = $connection['url'] ?? '';
-        if (empty($url)) {
-            return $connection;
-        }
+        $environment = $_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod';
+        $kernel = new ConsoleKernel($environment, false);
 
-        if (PATH_SEPARATOR === ';') {
-            // windows
-            $userHome = getenv('USERPROFILE');
+        $dbUrl = getenv('DATABASE_URL');
+        if (false === $dbUrl) {
+            $targetFile = 'compatinfo-db.sqlite';
+            $dbUrl = sprintf('sqlite:///%s/%s', $kernel->getCacheDir(), $targetFile);
         } else {
-            // unix
-            $userHome = getenv('HOME');
+            $dbUrl = str_replace(['${HOME}', '%HOME%'], $kernel->getHomeDir(), $dbUrl);
         }
-
-        $connection['url'] = str_replace(['${HOME}', '%HOME%'], $userHome, $connection['url']);
+        $connection['url'] = $dbUrl;
         return $connection;
     }
 }

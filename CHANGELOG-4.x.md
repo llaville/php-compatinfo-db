@@ -7,10 +7,13 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [4.6.1] - 2022-10-25
+
 <!-- MARKDOWN-RELEASE:START -->
 ### Fixed
 
 - Autowiring alias is deprecated since Symfony 5.1
+- [#128](https://github.com/llaville/php-compatinfo-db/issues/128) : `DATABASE_URL` runtime settings are not applied
 <!-- MARKDOWN-RELEASE:END -->
 
 ## [4.6.0] - 2022-10-16
@@ -168,7 +171,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
 - display `manifest` on PHAR distribution. [Lear more](https://github.com/llaville/php-compatinfo-db/issues/111#issuecomment-1029708338)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.6.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.6.1...HEAD
+[4.6.1]: https://github.com/llaville/php-compatinfo-db/compare/4.6.0...4.6.1
 [4.6.0]: https://github.com/llaville/php-compatinfo-db/compare/4.5.0...4.6.0
 [4.5.0]: https://github.com/llaville/php-compatinfo-db/compare/4.4.0...4.5.0
 [4.4.0]: https://github.com/llaville/php-compatinfo-db/compare/4.3.0...4.4.0

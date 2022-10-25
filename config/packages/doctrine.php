@@ -32,18 +32,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
  * @author Laurent Laville
  */
 return static function (ContainerConfigurator $containerConfigurator): void {
-    $parameters = $containerConfigurator->parameters();
-
-    // @see https://symfony.com/doc/current/configuration/env_var_processors.html
-    $dbUrl = getenv('DATABASE_URL');
-    if (false === $dbUrl) {
-        $targetFile = 'compatinfo-db.sqlite';
-        $dbUrl = sprintf('sqlite:///%s/%s', '%kernel.cache_dir%', $targetFile);
-    } else {
-        $dbUrl = str_replace(['${HOME}', '%HOME%'], '%kernel.home_dir%', $dbUrl);
-    }
-    $parameters->set('env(APP_DATABASE_URL)', $dbUrl);
-
     $services = $containerConfigurator->services();
 
     $services->alias(DistributionRepository::class, InfrastructureDistributionRepository::class);
@@ -54,7 +42,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $services->set(EntityManagerInterface::class)
         ->factory([service(EntityManagerFactory::class), 'create'])
-        ->arg('$connection', ['url' => '%env(APP_DATABASE_URL)%'])
         ->arg('$isDevMode', getenv('APP_ENV') === 'dev')
         ->arg('$proxyDir', '%compat_info_db.proxy_dir%')
         // for Doctrine Command Line Interface
