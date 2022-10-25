@@ -36,6 +36,6 @@ parameters:
 			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/Release.php
 
 		-
-			message: "#^Offset 'url' does not exist on array\\{charset\\?\\: string, dbname\\?\\: string, defaultTableOptions\\?\\: array\\<string, mixed\\>, default_dbname\\?\\: string, driver\\?\\: 'ibm_db2'\\|'mysqli'\\|'oci8'\\|'pdo_mysql'\\|'pdo_oci'\\|'pdo_pgsql'\\|'pdo_sqlite'\\|'pdo_sqlsrv'\\|'sqlsrv', driverClass\\?\\: class\\-string\\<Doctrine\\\\DBAL\\\\Driver\\>, driverOptions\\?\\: array, host\\?\\: string, \\.\\.\\.\\}\\.$#"
+			message: "#^Offset 'url' does not exist on array#"
 			count: 1
 			path: ../../src/Infrastructure/ProjectRequirements.php
