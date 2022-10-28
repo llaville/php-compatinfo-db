@@ -7,9 +7,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- PHP 8.2.0RC5 support
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.6.1] - 2022-10-25
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Changed
 
 - Igbinary reference updated to version 3.2.9 (stable)
@@ -18,7 +23,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - Autowiring alias is deprecated since Symfony 5.1
 - [#128](https://github.com/llaville/php-compatinfo-db/issues/128) : `DATABASE_URL` runtime settings are not applied
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.6.0] - 2022-10-16
 
