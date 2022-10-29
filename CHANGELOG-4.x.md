@@ -11,6 +11,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Added
 
 - PHP 8.0.25 support
+- PHP 8.1.12 support
 - PHP 8.2.0RC5 support
 <!-- MARKDOWN-RELEASE:END -->
 
