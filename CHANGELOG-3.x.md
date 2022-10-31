@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD013 MD024 -->
+<!-- markdownlint-disable MD013 MD024 MD053 -->
 # Changes in 3.x
 
 All notable changes of the CompatInfoDB 3 release series will be documented in this file.
