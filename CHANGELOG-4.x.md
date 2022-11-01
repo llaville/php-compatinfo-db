@@ -7,15 +7,19 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Fixed
+
+- add missing `bartlett/box-manifest` dev dependency to allow `bartlett/umlwriter` to draw diagram classes
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.7.0] - 2022-10-29
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - PHP 8.0.25 support
 - PHP 8.1.12 support
 - PHP 8.2.0RC5 support
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.6.1] - 2022-10-25
 
