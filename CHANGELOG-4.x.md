@@ -7,13 +7,17 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
-## [4.7.1] - 2022-11-01
-
 <!-- MARKDOWN-RELEASE:START -->
 ### Fixed
 
-- add missing `bartlett/box-manifest` dev dependency to allow `bartlett/umlwriter` to draw diagram classes
+- [#129](https://github.com/llaville/php-compatinfo-db/issues/129) : Project Directory is not well detected with PHAR distribution
 <!-- MARKDOWN-RELEASE:END -->
+
+## [4.7.1] - 2022-11-01
+
+### Fixed
+
+- add missing `bartlett/box-manifest` dev dependency to allow `bartlett/umlwriter` to draw diagram classes
 
 ## [4.7.0] - 2022-10-29
 

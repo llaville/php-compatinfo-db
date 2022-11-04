@@ -9,6 +9,7 @@ namespace Bartlett\CompatInfoDb\Application\Kernel;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+use Phar;
 use LogicException;
 use ReflectionObject;
 use function dirname;
@@ -66,6 +67,12 @@ trait MicroKernelTrait
     public function getProjectDir(): string
     {
         if (null === $this->projectDir) {
+            if (Phar::running()) {
+                $phar = new Phar($_SERVER['argv'][0]);
+                $this->projectDir = 'phar://' . $phar->getAlias();
+                return $this->projectDir;
+            }
+
             $r = new ReflectionObject($this);
 
             if (!is_file($dir = $r->getFileName())) {
