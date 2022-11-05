@@ -20,19 +20,19 @@
     {
         "name": "MB_OVERLOAD_MAIL",
         "ext_min": "4.0.6",
-        "ext_max": "7.4.32",
+        "ext_max": "7.4.33",
         "php_min": "4.0.6"
     },
     {
         "name": "MB_OVERLOAD_REGEX",
         "ext_min": "4.0.6",
-        "ext_max": "7.4.32",
+        "ext_max": "7.4.33",
         "php_min": "4.0.6"
     },
     {
         "name": "MB_OVERLOAD_STRING",
         "ext_min": "4.0.6",
-        "ext_max": "7.4.32",
+        "ext_max": "7.4.33",
         "php_min": "4.0.6"
     }
 ]

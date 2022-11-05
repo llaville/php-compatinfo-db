@@ -204,5 +204,11 @@
         "rel_date": "2022-09-29",
         "rel_state": "stable",
         "php_min": "7.4.32"
+    },
+    {
+        "rel_version": "7.4.33",
+        "rel_date": "2022-11-05",
+        "rel_state": "stable",
+        "php_min": "7.4.33"
     }
 ]

@@ -3,13 +3,13 @@
         "name": "ldap_control_paged_result",
         "ext_min": "5.4.0",
         "php_min": "5.4.0",
-        "php_max": "7.4.32"
+        "php_max": "7.4.33"
     },
     {
         "name": "ldap_control_paged_result_response",
         "ext_min": "5.4.0",
         "php_min": "5.4.0",
-        "php_max": "7.4.32"
+        "php_max": "7.4.33"
     },
     {
         "name": "ldap_modify_batch",

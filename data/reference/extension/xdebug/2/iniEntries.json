@@ -102,7 +102,7 @@
         "ext_min": "2.0.0beta1",
         "ext_max": "3.0.0RC1",
         "php_min": "4.3.0",
-        "php_max": "7.4.32"
+        "php_max": "7.4.33"
     },
     {
         "name": "xdebug.remote_log",
