@@ -20,38 +20,37 @@ final class ReleaseCommand implements CommandInterface
     private string $version;
     private string $date;
     private string $state;
+    private string $extension;
 
     public function __construct(
         string $version,
         string $date,
-        string $state
+        string $state,
+        string $extension
     ) {
         $this->version = $version;
         $this->date = $date;
         $this->state = $state;
+        $this->extension = $extension;
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;
     }
 
-    /**
-     * @return string
-     */
     public function getDate(): string
     {
         return $this->date;
     }
 
-    /**
-     * @return string
-     */
     public function getState(): string
     {
         return $this->state;
+    }
+
+    public function getExtension(): string
+    {
+        return $this->extension;
     }
 }

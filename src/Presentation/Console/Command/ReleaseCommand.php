@@ -12,8 +12,10 @@ use Bartlett\CompatInfoDb\Presentation\Console\Style;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
+use function strtolower;
 use function trim;
 
 /**
@@ -29,23 +31,30 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
     protected function configure(): void
     {
         $this->setName(self::NAME)
-            ->setDescription('Add new PHP release')
+            ->setDescription('Add new release')
             ->addArgument(
                 'rel_version',
                 InputArgument::REQUIRED,
-                'New PHP release version'
+                'New release version'
             )
             ->addArgument(
                 'rel_date',
                 InputArgument::OPTIONAL,
-                'New PHP release date',
+                'New release date',
                 date('Y-m-d')
             )
             ->addArgument(
                 'rel_state',
                 InputArgument::OPTIONAL,
-                'New PHP release state (alpha, beta, RC, stable)',
+                'New release state (alpha, beta, RC, stable)',
                 'stable'
+            )
+            ->addOption(
+                'extension',
+                null,
+                InputOption::VALUE_REQUIRED,
+                'Name of extension to which add new release',
+                'core'
             )
         ;
     }
@@ -55,7 +64,8 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
         $releaseCommand = new AppReleaseCommand(
             trim($input->getArgument('rel_version')),
             trim($input->getArgument('rel_date')),
-            trim($input->getArgument('rel_state'))
+            trim($input->getArgument('rel_state')),
+            trim(strtolower($input->getOption('extension')))
         );
 
         $this->commandBus->handle($releaseCommand);

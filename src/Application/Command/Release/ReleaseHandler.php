@@ -35,17 +35,15 @@ use const JSON_ERROR_NONE;
 final class ReleaseHandler implements CommandHandlerInterface
 {
     /** @var array<mixed, string>  */
-    private $latestPhpVersion = [
+    private array $latestPhpVersion = [
         '73' => ExtensionVersionProviderInterface::LATEST_PHP_7_3,
         '74' => ExtensionVersionProviderInterface::LATEST_PHP_7_4,
         '80' => ExtensionVersionProviderInterface::LATEST_PHP_8_0,
         '81' => ExtensionVersionProviderInterface::LATEST_PHP_8_1,
         '82' => ExtensionVersionProviderInterface::LATEST_PHP_8_2,
     ];
-    /** @var JsonFileHandler  */
-    private $jsonFileHandler;
-    /** @var string  */
-    private $refDir;
+    private JsonFileHandler $jsonFileHandler;
+    private string $refDir;
 
     /**
      * ReleaseHandler constructor.
@@ -67,25 +65,22 @@ final class ReleaseHandler implements CommandHandlerInterface
         list($maj, $min, ) = sscanf($relVersion, '%d.%d.%s');
 
         $major = $maj . $min;
-        $this->latestPhpVersion[$major] = $relVersion;
 
-        $this->addNewPhpVersion($major, $relVersion, $command->getDate(), $command->getState());
-        $this->tagPhpMaxVersion();
+        if ($command->getExtension() == 'core') {
+            $this->latestPhpVersion[$major] = $relVersion;
+            $this->addNewRelease($major, $relVersion, $command->getDate(), $command->getState(), $command->getExtension());
+            $this->tagPhpMaxVersion();
+        } else {
+            $this->addNewRelease((string) $maj, $relVersion, $command->getDate(), $command->getState(), $command->getExtension());
+        }
     }
 
     /**
-     * Adds a new PHP release.
-     *
-     * @param string $major
-     * @param string $relVersion
-     * @param string $relDate
-     * @param string $relState
-     * @return void
+     * Adds a new release.
      */
-    private function addNewPhpVersion($major, $relVersion, $relDate, $relState): void
+    private function addNewRelease(string $major, string $relVersion, string $relDate, string $relState, string $refName): void
     {
         $fileBasename = 'releases';
-        $refName = 'core';
         $path = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName]);
 
         $data = $this->jsonFileHandler->read($path, $fileBasename, $major);

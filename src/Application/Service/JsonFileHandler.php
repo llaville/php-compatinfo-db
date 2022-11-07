@@ -26,9 +26,6 @@ use const PHP_EOL;
 final class JsonFileHandler
 {
     /**
-     * @param string $path
-     * @param string $fileBasename
-     * @param string $ver
      * @return array<string, string>|array<int, mixed>|null
      */
     public function read(string $path, string $fileBasename, string $ver): ?array
@@ -48,11 +45,7 @@ final class JsonFileHandler
     }
 
     /**
-     * @param string $path
-     * @param string $fileBasename
-     * @param string $ver
      * @param array<int, mixed> $data
-     * @return bool
      */
     public function write(string $path, string $fileBasename, string $ver, array $data): bool
     {

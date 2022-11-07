@@ -7,9 +7,14 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+<!-- MARKDOWN-RELEASE:START -->
+### Changed
+
+The `db:release` command is now able to add new releases for all declared extensions (and not only the `core`)
+<!-- MARKDOWN-RELEASE:END -->
+
 ## [4.8.0] - 2022-11-05
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - PHP 7.4.33 support
@@ -17,7 +22,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ### Fixed
 
 - [#129](https://github.com/llaville/php-compatinfo-db/issues/129) : Project Directory is not well detected with PHAR distribution
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.7.1] - 2022-11-01
 
