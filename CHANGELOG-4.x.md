@@ -12,6 +12,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 - The `db:release` command is now able to add new releases for all declared extensions (and not only the `core`)
 - Igbinary reference updated to version 3.2.12 (stable)
+- Xdebug reference updated to version 3.1.6 (stable)
 - Xhprof reference updated to version 2.3.8 (stable)
 <!-- MARKDOWN-RELEASE:END -->
 
