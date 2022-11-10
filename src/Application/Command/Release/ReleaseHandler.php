@@ -16,7 +16,9 @@ use RuntimeException;
 use function array_key_exists;
 use function array_keys;
 use function array_search;
+use function current;
 use function dirname;
+use function end;
 use function explode;
 use function implode;
 use function in_array;
@@ -93,11 +95,14 @@ final class ReleaseHandler implements CommandHandlerInterface
             throw new RuntimeException($error);
         }
 
+        end($data);
+        $latestRelease = current($data);
+
         $newRelease = [
             'rel_version'   => $relVersion,
             'rel_date'      => $relDate,
             'rel_state'     => $relState,
-            'php_min'       => $relVersion,
+            'php_min'       => $latestRelease['php_min'],
         ];
         if (false !== array_search($newRelease, $data)) {
             // already exists

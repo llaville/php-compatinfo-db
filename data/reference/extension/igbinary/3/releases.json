@@ -129,18 +129,18 @@
         "rel_version": "3.2.10",
         "rel_date": "2022-11-06",
         "rel_state": "stable",
-        "php_min": "3.2.10"
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.11",
         "rel_date": "2022-11-06",
         "rel_state": "stable",
-        "php_min": "3.2.11"
+        "php_min": "7.0.0"
     },
     {
         "rel_version": "3.2.12",
         "rel_date": "2022-11-07",
         "rel_state": "stable",
-        "php_min": "3.2.12"
+        "php_min": "7.0.0"
     }
 ]

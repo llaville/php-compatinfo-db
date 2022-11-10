@@ -93,6 +93,6 @@
         "rel_version": "2.3.8",
         "rel_date": "2022-11-05",
         "rel_state": "stable",
-        "php_min": "2.3.8"
+        "php_min": "7.0.0"
     }
 ]
