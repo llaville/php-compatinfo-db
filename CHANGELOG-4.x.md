@@ -7,6 +7,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+## [4.9.0] - 2022-11-11
+
 <!-- MARKDOWN-RELEASE:START -->
 ### Added
 
@@ -211,7 +213,8 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - [#114](https://github.com/llaville/php-compatinfo-db/issues/114) `db:create` fails when database exists (thanks to @remicollet for reporting)
 - display `manifest` on PHAR distribution. [Lear more](https://github.com/llaville/php-compatinfo-db/issues/111#issuecomment-1029708338)
 
-[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.8.0...HEAD
+[unreleased]: https://github.com/llaville/php-compatinfo-db/compare/4.9.0...HEAD
+[4.9.0]: https://github.com/llaville/php-compatinfo-db/compare/4.8.0...4.9.0
 [4.8.0]: https://github.com/llaville/php-compatinfo-db/compare/4.7.1...4.8.0
 [4.7.1]: https://github.com/llaville/php-compatinfo-db/compare/4.7.0...4.7.1
 [4.7.0]: https://github.com/llaville/php-compatinfo-db/compare/4.6.1...4.7.0
