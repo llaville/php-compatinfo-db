@@ -8,6 +8,10 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 ## [Unreleased]
 
 <!-- MARKDOWN-RELEASE:START -->
+### Added
+
+- PHP 8.2.0RC6 support
+
 ### Changed
 
 - The `db:release` command is now able to add new releases for all declared extensions (and not only the `core`)
