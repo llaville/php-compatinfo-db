@@ -25,18 +25,15 @@ class FactoryCommandLoader extends SymfonyFactoryCommandLoader
      *
      * @param Command[] $commands
      */
-    public function __construct(iterable $commands)
+    public function __construct(iterable $commands, bool $isDevMode)
     {
         $factories = [];
 
-        if (Phar::running()) {
+        if (Phar::running() || !$isDevMode) {
             // these commands are disallowed in PHAR distribution
             $blacklist = [ReleaseCommand::class, BuildCommand::class];
         } else {
             $blacklist = [];
-            if (getenv('APP_ENV') === 'prod') {
-                $blacklist[] = BuildCommand::class;
-            }
         }
 
         foreach ($commands as $command) {

@@ -7,9 +7,12 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## [Unreleased]
 
+### Changed
+
+- `db:build` and `db:release` commands are only available when development mode is active (env var `APP_ENV` sets to `dev`)
+
 ## [4.9.0] - 2022-11-11
 
-<!-- MARKDOWN-RELEASE:START -->
 ### Added
 
 - PHP 8.2.0RC6 support
@@ -21,7 +24,6 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Solr reference updated to version 2.6.0 (stable)
 - Xdebug reference updated to version 3.1.6 (stable)
 - Xhprof reference updated to version 2.3.8 (stable)
-<!-- MARKDOWN-RELEASE:END -->
 
 ## [4.8.0] - 2022-11-05
 
