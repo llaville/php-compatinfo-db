@@ -49,7 +49,7 @@ jobs:
                 name: Build Release Notes
                 uses: miniscruff/changie-action@v0
                 with:
-                    version: latest
+                    version: v1.10.0
                     args: merge
                 env:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
