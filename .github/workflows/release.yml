@@ -50,7 +50,7 @@ jobs:
                 uses: miniscruff/changie-action@v0
                 with:
                     version: latest
-                    args: batch ${{ github.ref }}.0
+                    args: batch ${github.ref##*/}.0
                 env:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -78,7 +78,7 @@ jobs:
                 with:  # https://github.com/softprops/action-gh-release#-customizing
                     prerelease: false
                     draft: true
-                    body_path: ${{ github.workspace }}/.changes/${{ github.ref }}.0.md
+                    body_path: ${{ github.workspace }}/.changes/${github.ref##*/}.0.md
                     # https://github.com/softprops/action-gh-release#%EF%B8%8F-uploading-release-assets
                     files:
                         bin/compatinfo-db.phar
