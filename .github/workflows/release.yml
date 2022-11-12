@@ -3,14 +3,83 @@ name: Release
 
 on:
     push:
-        tags:
-            - "[0-9]+.[0-9]+.[0-9]+"
+        branches: ['4.10']
+#        tags:
+#            - "[0-9]+.[0-9]+.[0-9]+"
     workflow_dispatch:
 
 jobs:
+# @TODO in waiting migration of all projects that used this workflow
+#    build:
+#        uses: llaville/.github/.github/workflows/release.yml@master
+#        with:
+#            repository: ${{ github.repository }}
+#            box-output: bin/compatinfo-db.phar
+#            release-draft: true
+
     build:
-        uses: llaville/.github/.github/workflows/release.yml@master
-        with:
-            repository: ${{ github.repository }}
-            box-output: bin/compatinfo-db.phar
-            release-draft: true
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            fail-fast: false
+            matrix:
+                os:
+                    - ubuntu-latest
+                php:
+                    - '7.4'
+
+        steps:
+            -   # Git Checkout
+                name: Checkout
+                uses: actions/checkout@v3
+
+            -   # Setup PHP runtime
+                name: Setup PHP runtime
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+
+            -   # Install Composer dependencies
+                name: Install Composer dependencies
+                uses: ramsey/composer-install@v2
+                with:
+                    composer-options: "--prefer-dist"
+
+            -
+                name: Batch changes
+                uses: miniscruff/changie-action@v0
+                with:
+                    version: latest
+                    args: batch ${{ github.ref }}.0
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            -   # Build the current release changelog
+                name: Build Release Notes
+                uses: miniscruff/changie-action@v0
+                with:
+                    version: latest
+                    args: merge
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            -   # Build the current release with artifacts (php archive)
+                name: Build Release Artifacts
+                #if: endsWith(inputs.box-output, '.phar')
+                uses: docker://ghcr.io/llaville/box-manifest:latest
+                with:
+                    entrypoint: /usr/local/src/box-manifest/bin/box
+                    args: compile
+
+            -   # Create a new Release
+                name: Create Release
+                uses: softprops/action-gh-release@v1
+                #if: startsWith(github.ref, 'refs/tags/')
+                with:  # https://github.com/softprops/action-gh-release#-customizing
+                    prerelease: false
+                    draft: true
+                    body_path: ${{ github.workspace }}/.changes/${{ github.ref }}.0.md
+                    # https://github.com/softprops/action-gh-release#%EF%B8%8F-uploading-release-assets
+                    files:
+                        bin/compatinfo-db.phar
+                    fail_on_unmatched_files: true
