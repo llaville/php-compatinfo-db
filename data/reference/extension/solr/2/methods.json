@@ -606,5 +606,29 @@
         "name": "__wakeup",
         "ext_min": "2.5.0",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "SolrDocument",
+        "name": "__serialize",
+        "ext_min": "2.6.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "SolrDocument",
+        "name": "__unserialize",
+        "ext_min": "2.6.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "SolrParams",
+        "name": "__serialize",
+        "ext_min": "2.6.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "SolrParams",
+        "name": "__unserialize",
+        "ext_min": "2.6.0",
+        "php_min": "8.1.0"
     }
 ]
