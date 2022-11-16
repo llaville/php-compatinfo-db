@@ -16,4 +16,5 @@ jobs:
             repository: ${{ github.repository }}
             box-output: bin/compatinfo-db.phar
             release-draft: true
+            release-prerelease: ${{ github.ref_type == 'branch' }}
             legacy: false
