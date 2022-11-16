@@ -10,7 +10,12 @@ on:
     workflow_dispatch:
 
 jobs:
+    tests:
+        uses: ./.github/workflows/unit-tests.yaml
+
     build:
+        needs: tests
+
         uses: llaville/.github/.github/workflows/release.yml@master
         with:
             repository: ${{ github.repository }}

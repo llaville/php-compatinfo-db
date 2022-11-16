@@ -9,6 +9,7 @@ on:
         branches: [master]
         paths-ignore:
             - 'docs/**'
+    workflow_call:
 
 jobs:
     lint_files:
