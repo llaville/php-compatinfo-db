@@ -2,5 +2,5 @@
     "alias": "compatinfo-db.phar",
     "directories": ["bin", "config", "data", "src", "vendor"],
     "compression": "GZ",
-    "metadata": "Bartlett\\CompatInfoDb\\Infrastructure\\ManifestBuilder::toText"
+    "metadata": "Bartlett\\BoxManifest\\Composer\\ManifestFactory::toHighlight"
 }
