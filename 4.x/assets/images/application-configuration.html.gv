@@ -1,0 +1,17 @@
+graph {
+  graph [rankdir="LR" bgcolor="transparent"]
+  node [fillcolor="#FEFECE" style="filled"]
+  subgraph cluster_0 {
+    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Configuration"
+    "Bartlett\\CompatInfoDb\\Application\\Configuration\\ConfigResolver" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ConfigResolver</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(input : Symfony\\Component\\Console\\Input\\InputInterface)</td></tr>
+    <tr><td align="left">+ provide() : array</td></tr>
+</table></td></tr>
+</table>>]
+  }
+}

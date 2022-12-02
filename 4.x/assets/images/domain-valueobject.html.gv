@@ -1,0 +1,213 @@
+digraph {
+  graph [rankdir="LR" bgcolor="transparent"]
+  node [fillcolor="#FEFECE" style="filled"]
+  subgraph cluster_0 {
+    graph [bgcolor="cadetblue3"]
+    label = "Bartlett\\CompatInfoDb\\Domain\\ValueObject"
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Class_" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Class_</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» MODIFIER_PUBLIC : int = 1 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» MODIFIER_PROTECTED : int = 2 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» MODIFIER_PRIVATE : int = 4 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» MODIFIER_STATIC : int = 8 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» MODIFIER_ABSTRACT : int = 16 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» MODIFIER_FINAL : int = 32 {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(name : string, isInterface : bool, extension : string, extMin : string, extMax : string, phpMin : string, phpMax : string, dependencies : array = [], flags : int = MODIFIER_PUBLIC, polyfill : string = «unknown»)</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ isInterface() : bool</td></tr>
+    <tr><td align="left">+ getExtensionName() : string</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ isAbstract() : bool</td></tr>
+    <tr><td align="left">+ isFinal() : bool</td></tr>
+    <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Constant_" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Constant_</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(name : string, declaringClass : string, extension : string, extMin : string, extMax : string, phpMin : string, phpMax : string, dependencies : array = [], polyfill : string = «unknown»)</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ getDeclaringClass() : ?string</td></tr>
+    <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ getExtensionName() : string</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Dependency" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Dependency</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(name : string, constraint : string)</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ getConstraint() : string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Extension" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Extension</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» LATEST_PHP_5_2 : string = "5\.2\.17" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_3 : string = "5\.3\.29" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_4 : string = "5\.4\.45" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_5 : string = "5\.5\.38" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_6 : string = "5\.6\.40" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_0 : string = "7\.0\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_1 : string = "7\.1\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_2 : string = "7\.2\.34" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.26" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.13" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.0" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(name : string, version : string = PHP_VERSION, type : string = 'bundle', deprecated : bool = false, iniEntries : array = [], constants : array = [], functions : array = [], classes : array = [], dependencies : array = [], releases : array = [])</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ asArray() : array</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ getDescription() : string</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ getType() : string</td></tr>
+    <tr><td align="left">+ isDeprecated() : bool</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getIniEntries() : array</td></tr>
+    <tr><td align="left">+ getConstants() : array</td></tr>
+    <tr><td align="left">+ getFunctions() : array</td></tr>
+    <tr><td align="left">+ getClasses() : array</td></tr>
+    <tr><td align="left">+ getReleases() : array</td></tr>
+    <tr><td align="left">+ getLastRelease() : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Release</td></tr>
+    <tr><td align="left">+ getInterfaces() : array</td></tr>
+    <tr><td align="left">+ getMethods() : array</td></tr>
+    <tr><td align="left">+ getClassConstants() : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\ExtVersionTrait" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ExtVersionTrait</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Function_" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Function_</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(name : string, declaringClass : string, extension : string, extMin : string, extMax : string, phpMin : string, phpMax : string, parameters : array, excludes : array, dependencies : array, flags : int, polyfill : string)</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ getDeclaringClass() : ?string</td></tr>
+    <tr><td align="left">+ getExtensionName() : string</td></tr>
+    <tr><td align="left">+ getParameters() : ?array</td></tr>
+    <tr><td align="left">+ getExcludes() : ?array</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ isAbstract() : bool</td></tr>
+    <tr><td align="left">+ isFinal() : bool</td></tr>
+    <tr><td align="left">+ isStatic() : bool</td></tr>
+    <tr><td align="left">+ isPublic() : bool</td></tr>
+    <tr><td align="left">+ isProtected() : bool</td></tr>
+    <tr><td align="left">+ isPrivate() : bool</td></tr>
+    <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\IniEntry" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>IniEntry</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(name : string, extMin : string, extMax : string, phpMin : string, phpMax : string, dependencies : array)</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\PhpVersionTrait" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PhpVersionTrait</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Platform</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(description : string, version : string, createdAt : DateTimeImmutable, extensions : array)</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getDescription() : string</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ getCreatedAt() : DateTimeImmutable</td></tr>
+    <tr><td align="left">+ getExtensions() : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Release" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Release</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(version : string, date : DateTimeImmutable, state : string, extMin : string, extMax : string, phpMin : string, phpMax : string)</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ getDate() : DateTimeImmutable</td></tr>
+    <tr><td align="left">+ getState() : string</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    label = "Bartlett\\CompatInfoDb\\Domain\\Factory"
+    "Bartlett\\CompatInfoDb\\Domain\\Factory\\ExtensionVersionProviderInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ExtensionVersionProviderInterface</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» LATEST_PHP_5_2 : string = "5\.2\.17" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_3 : string = "5\.3\.29" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_4 : string = "5\.4\.45" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_5 : string = "5\.5\.38" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_6 : string = "5\.6\.40" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_0 : string = "7\.0\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_1 : string = "7\.1\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_2 : string = "7\.2\.34" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.26" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.13" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.0" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+  }
+  "Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Extension" -> "Bartlett\\CompatInfoDb\\Domain\\Factory\\ExtensionVersionProviderInterface" [arrowhead="empty" style="dashed"]
+}

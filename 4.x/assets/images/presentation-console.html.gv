@@ -1,0 +1,175 @@
+digraph {
+  graph [rankdir="TB" bgcolor="transparent"]
+  node [fillcolor="#FEFECE" style="filled"]
+  subgraph cluster_0 {
+    graph [bgcolor="chocolate3"]
+    label = "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command"
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\BuildCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>BuildCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:build" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«abstract»<br/>AbstractCommand</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(commandBus : Bartlett\\CompatInfoDb\\Application\\Command\\CommandBusInterface, queryBus : Bartlett\\CompatInfoDb\\Application\\Query\\QueryBusInterface)</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>CommandInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CreateCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>CreateCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:create" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(commandBus : Bartlett\\CompatInfoDb\\Application\\Command\\CommandBusInterface, queryBus : Bartlett\\CompatInfoDb\\Application\\Query\\QueryBusInterface, em : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\DiagnoseCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>DiagnoseCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "diagnose" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(commandBus : Bartlett\\CompatInfoDb\\Application\\Command\\CommandBusInterface, queryBus : Bartlett\\CompatInfoDb\\Application\\Query\\QueryBusInterface, entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\DoctorCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>DoctorCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "doctor" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\InitCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>InitCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:init" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ListCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ListCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:list" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\PolyfillCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PolyfillCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:polyfill" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ReleaseCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ReleaseCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:release" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ShowCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ShowCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» NAME : string = "db\:show" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    label = "Symfony\\Component\\Console\\Command"
+    "Symfony\\Component\\Console\\Command\\Command" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Command</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» SUCCESS : int = 0 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» FAILURE : int = 1 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» INVALID : int = 2 {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» getDefaultName()</td></tr>
+    <tr><td align="left">+ «static» getDefaultDescription() : ?string</td></tr>
+    <tr><td align="left">+ __construct(name : string = «unknown»)</td></tr>
+    <tr><td align="left">+ ignoreValidationErrors()</td></tr>
+    <tr><td align="left">+ setApplication(application : Symfony\\Component\\Console\\Application = «unknown»)</td></tr>
+    <tr><td align="left">+ setHelperSet(helperSet : Symfony\\Component\\Console\\Helper\\HelperSet)</td></tr>
+    <tr><td align="left">+ getHelperSet()</td></tr>
+    <tr><td align="left">+ getApplication()</td></tr>
+    <tr><td align="left">+ isEnabled()</td></tr>
+    <tr><td align="left">+ run(input : Symfony\\Component\\Console\\Input\\InputInterface, output : Symfony\\Component\\Console\\Output\\OutputInterface)</td></tr>
+    <tr><td align="left">+ complete(input : Symfony\\Component\\Console\\Completion\\CompletionInput, suggestions : Symfony\\Component\\Console\\Completion\\CompletionSuggestions) : void</td></tr>
+    <tr><td align="left">+ setCode(code : callable)</td></tr>
+    <tr><td align="left">+ mergeApplicationDefinition(mergeArgs : bool = true)</td></tr>
+    <tr><td align="left">+ setDefinition(definition : mixed)</td></tr>
+    <tr><td align="left">+ getDefinition()</td></tr>
+    <tr><td align="left">+ getNativeDefinition()</td></tr>
+    <tr><td align="left">+ addArgument(name : string, mode : int = «unknown», description : string = '', default = «unknown»)</td></tr>
+    <tr><td align="left">+ addOption(name : string, shortcut = «unknown», mode : int = «unknown», description : string = '', default = «unknown»)</td></tr>
+    <tr><td align="left">+ setName(name : string)</td></tr>
+    <tr><td align="left">+ setProcessTitle(title : string)</td></tr>
+    <tr><td align="left">+ getName()</td></tr>
+    <tr><td align="left">+ setHidden(hidden : bool)</td></tr>
+    <tr><td align="left">+ isHidden()</td></tr>
+    <tr><td align="left">+ setDescription(description : string)</td></tr>
+    <tr><td align="left">+ getDescription()</td></tr>
+    <tr><td align="left">+ setHelp(help : string)</td></tr>
+    <tr><td align="left">+ getHelp()</td></tr>
+    <tr><td align="left">+ getProcessedHelp()</td></tr>
+    <tr><td align="left">+ setAliases(aliases : iterable)</td></tr>
+    <tr><td align="left">+ getAliases()</td></tr>
+    <tr><td align="left">+ getSynopsis(short : bool = false)</td></tr>
+    <tr><td align="left">+ addUsage(usage : string)</td></tr>
+    <tr><td align="left">+ getUsages()</td></tr>
+    <tr><td align="left">+ getHelper(name : string)</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" -> "Symfony\\Component\\Console\\Command\\Command" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\BuildCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\BuildCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CreateCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CreateCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\DiagnoseCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\DiagnoseCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\DoctorCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\DoctorCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\InitCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\InitCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ListCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ListCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\PolyfillCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\PolyfillCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ReleaseCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ReleaseCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ShowCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AbstractCommand" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\ShowCommand" -> "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+}
