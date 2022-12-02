@@ -1,3 +1,0 @@
-kind: Fixed
-body: support to Solr 2.6.0 (see commit https://github.com/php/pecl-search_engine-solr/commit/080b98389a2c05ba68bb613e3a266dbf216340de)
-time: 2022-11-14T08:02:50.3142155Z

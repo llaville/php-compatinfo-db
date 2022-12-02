@@ -1,4 +1,0 @@
-kind: Removed
-body: '`bartlett/box-manifest` dev dependency is no more needed since we use the new
-  toHighlight manifest builder available since v2.1.0 (see https://github.com/llaville/box-manifest/releases/tag/2.1.0)'
-time: 2022-11-29T14:42:52.226164Z
