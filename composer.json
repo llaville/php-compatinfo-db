@@ -10,7 +10,7 @@
         "issues": "https://github.com/llaville/php-compatinfo-db/issues"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.0",
         "ext-json": "*",
         "ext-pcre": "*",
         "ext-pdo": "*",
@@ -67,9 +67,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "platform": {
-            "php": "7.4.0"
-        },
         "sort-packages": true,
         "optimize-autoloader": true,
         "allow-plugins": {
@@ -79,7 +76,7 @@
     "extra": {
         "enable-patching": true,
         "branch-alias": {
-            "dev-master": "4.x-dev"
+            "dev-master": "5.x-dev"
         }
     }
 }
