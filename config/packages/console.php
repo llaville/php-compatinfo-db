@@ -13,7 +13,6 @@ use Bartlett\CompatInfoDb\Presentation\Console\Command\Debug\ContainerDebugComma
 use Bartlett\CompatInfoDb\Presentation\Console\Command\FactoryCommandLoader;
 use Bartlett\CompatInfoDb\Presentation\Console\Input\Input;
 use Bartlett\CompatInfoDb\Presentation\Console\Output\Output;
-use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
 use Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
@@ -22,6 +21,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\tagged_iterator;
 
 /**
@@ -32,6 +32,7 @@ use function Symfony\Component\DependencyInjection\Loader\Configurator\tagged_it
  * @since 4.4.0
  * @author Laurent Laville
  */
+
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();
 

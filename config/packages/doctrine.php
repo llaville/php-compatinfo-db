@@ -17,11 +17,11 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\Constan
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\DistributionRepository as InfrastructureDistributionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\ExtensionRepository as InfrastructureExtensionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\FunctionRepository as InfrastructureFunctionRepository;
-use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
 use Doctrine\ORM\EntityManagerInterface;
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 /**
  * Build the Container with Doctrine ORM services

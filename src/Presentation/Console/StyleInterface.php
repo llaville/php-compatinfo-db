@@ -25,13 +25,11 @@ interface StyleInterface extends OutputInterface
     public function columns($lines, string $format): void;
 
     /**
-     * @param string $message
      * @return mixed
      */
     public function title(string $message);
 
     /**
-     * @param string $message
      * @return mixed
      */
     public function section(string $message);
@@ -54,13 +52,13 @@ interface StyleInterface extends OutputInterface
      * @param string|string[] $message
      * @return mixed
      */
-    public function success($message);
+    public function success(string|array $message);
 
     /**
      * @param string|string[] $message
      * @return mixed
      */
-    public function error($message);
+    public function error(string|array $message);
 
     /**
      * @param array<string> $headers

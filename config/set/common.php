@@ -8,7 +8,6 @@
 
 use Bartlett\CompatInfoDb\Application\Event\Dispatcher\EventDispatcher;
 use Bartlett\CompatInfoDb\Application\Event\Subscriber\ProfileEventSubscriber;
-use function Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\service;
 
 use Psr\Container\ContainerInterface;
 
@@ -17,6 +16,7 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Stopwatch\Stopwatch;
+use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 /**
  * Build the Container with common parameters and services
