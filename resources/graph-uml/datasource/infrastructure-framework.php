@@ -13,7 +13,6 @@
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\CompatInfoDbExtension;
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\DependencyInjection\Configuration;
-use Bartlett\CompatInfoDb\Infrastructure\Framework\Symfony\Polyfill;
 
 function dataSource(): Generator
 {
@@ -22,7 +21,6 @@ function dataSource(): Generator
 
         CompatInfoDbExtension::class,
         Configuration::class,
-        Polyfill::class,
     ];
     foreach ($classes as $class) {
         yield $class;
