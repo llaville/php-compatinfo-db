@@ -56,8 +56,7 @@
     "autoload": {
         "psr-4": {
             "Bartlett\\CompatInfoDb\\": "src/"
-        },
-        "files": ["src/Infrastructure/Framework/Php/Php82.php"]
+        }
     },
     "autoload-dev": {
         "psr-4": {

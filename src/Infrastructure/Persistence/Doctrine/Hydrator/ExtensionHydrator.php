@@ -10,9 +10,9 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension as Domain;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension as Entity;
-use function Bartlett\CompatInfoDb\Infrastructure\Framework\Php\version_compare;
 
 use function array_map;
+use function version_compare;
 use const PHP_VERSION;
 
 /**

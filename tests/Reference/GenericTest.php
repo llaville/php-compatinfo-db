@@ -14,7 +14,6 @@ use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
-use function Bartlett\CompatInfoDb\Infrastructure\Framework\Php\version_compare;
 
 use Composer\Semver\Semver;
 
@@ -56,6 +55,7 @@ use function str_split;
 use function strcasecmp;
 use function strlen;
 use function strtolower;
+use function version_compare;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, Generic extension base class.
