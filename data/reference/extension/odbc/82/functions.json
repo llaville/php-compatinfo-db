@@ -1,0 +1,17 @@
+[
+    {
+        "name": "odbc_connection_string_is_quoted",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "odbc_connection_string_should_quote",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    },
+    {
+        "name": "odbc_connection_string_quote",
+        "ext_min": "8.2.0alpha1",
+        "php_min": "8.2.0alpha1"
+    }
+]
