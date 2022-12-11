@@ -40,4 +40,5 @@ nav:
           - "Versions 2.x": appendix/SUPPORTED-VERSIONS_2.x.md
           - "Versions 3.x": appendix/SUPPORTED-VERSIONS_3.x.md
           - "Versions 4.x": appendix/SUPPORTED-VERSIONS_4.x.md
+          - "Versions 5.x": appendix/SUPPORTED-VERSIONS_5.x.md
           - "Supported extensions": appendix/SUPPORTED-EXTENSIONS.md
