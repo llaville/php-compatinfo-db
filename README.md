@@ -24,11 +24,12 @@ This database is currently only support by its initial project [php-compatinfo](
 * CompatInfoDB 4.0.x works with PHP >= 7.4 and CompatInfo 6.2
 * CompatInfoDB 4.2.x works with PHP >= 7.4 and CompatInfo 6.4
 * CompatInfoDB 4.6.x works with PHP >= 7.4 and CompatInfo 6.5
+* CompatInfoDB 5.0.x works with PHP >= 8.0 and CompatInfo 6.6
 
 ## Documentation
 
-All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/4.x),
-generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/4.x/docs) folder.
+All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/5.x),
+generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/5.x/docs) folder.
 
 * [Getting Started](docs/getting-started.md).
 
