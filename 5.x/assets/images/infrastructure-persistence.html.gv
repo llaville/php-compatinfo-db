@@ -1,0 +1,571 @@
+digraph {
+  graph [rankdir="LR" bgcolor="transparent"]
+  node [fillcolor="#FEFECE" style="filled"]
+  subgraph cluster_0 {
+    graph [bgcolor="chartreuse3"]
+    label = "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity"
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Class_" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Class_</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ setName(name : string) : void</td></tr>
+    <tr><td align="left">+ isInterface() : bool</td></tr>
+    <tr><td align="left">+ setInterface(isInterface : bool) : void</td></tr>
+    <tr><td align="left">+ getFlags() : int</td></tr>
+    <tr><td align="left">+ setFlags(flags : int) : void</td></tr>
+    <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ addDependencies(dependencies : array) : self</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ setPolyfill(polyfill : string) : void</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ setExtMin(extMin : string) : void</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ setExtMax(extMax : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ setPhpMin(phpMin : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+    <tr><td align="left">+ setPhpMax(phpMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\ClassRelationship" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ClassRelationship</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ setClass(class : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Class_) : void</td></tr>
+    <tr><td align="left">+ setDependency(dependency : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency) : void</td></tr>
+    <tr><td align="left">+ getDependency() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Constant_" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Constant_</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ setName(name : string) : void</td></tr>
+    <tr><td align="left">+ getDeclaringClass() : ?string</td></tr>
+    <tr><td align="left">+ setDeclaringClass(declaringClass : string) : void</td></tr>
+    <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ setPolyfill(polyfill : string) : void</td></tr>
+    <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ addDependencies(dependencies : array) : self</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ setExtMin(extMin : string) : void</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ setExtMax(extMax : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ setPhpMin(phpMin : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+    <tr><td align="left">+ setPhpMax(phpMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\ConstantRelationship" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ConstantRelationship</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ setConstant(constant : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Constant_) : void</td></tr>
+    <tr><td align="left">+ setDependency(dependency : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency) : void</td></tr>
+    <tr><td align="left">+ getDependency() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Dependency</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ setName(name : string) : void</td></tr>
+    <tr><td align="left">+ getConstraintExpression() : string</td></tr>
+    <tr><td align="left">+ setConstraintExpression(constraintExpression : string) : void</td></tr>
+    <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Extension</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getDescription() : string</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ setName(name : mixed) : void</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ setVersion(version : mixed) : void</td></tr>
+    <tr><td align="left">+ getType() : string</td></tr>
+    <tr><td align="left">+ setType(type : string) : void</td></tr>
+    <tr><td align="left">+ isDeprecated() : bool</td></tr>
+    <tr><td align="left">+ setDeprecated(deprecated : bool) : void</td></tr>
+    <tr><td align="left">+ addReleases(releases : array) : void</td></tr>
+    <tr><td align="left">+ getReleases() : Doctrine\\Common\\Collections\\Collection</td></tr>
+    <tr><td align="left">+ addIniEntries(configs : array) : void</td></tr>
+    <tr><td align="left">+ getIniEntries() : Doctrine\\Common\\Collections\\Collection</td></tr>
+    <tr><td align="left">+ addConstants(constants : array) : void</td></tr>
+    <tr><td align="left">+ getConstants() : Doctrine\\Common\\Collections\\Collection</td></tr>
+    <tr><td align="left">+ addFunctions(functions : array) : void</td></tr>
+    <tr><td align="left">+ getFunctions() : Doctrine\\Common\\Collections\\Collection</td></tr>
+    <tr><td align="left">+ addClasses(classes : array) : void</td></tr>
+    <tr><td align="left">+ getClasses() : Doctrine\\Common\\Collections\\Collection</td></tr>
+    <tr><td align="left">+ addDependencies(dependencies : array) : self</td></tr>
+    <tr><td align="left">+ getDependencies() : Doctrine\\Common\\Collections\\Collection</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\ExtVersionTrait" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ExtVersionTrait</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ setExtMin(extMin : string) : void</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ setExtMax(extMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Function_" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Function_</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ setName(name : string) : void</td></tr>
+    <tr><td align="left">+ getDeclaringClass() : ?string</td></tr>
+    <tr><td align="left">+ setDeclaringClass(declaringClass : string) : void</td></tr>
+    <tr><td align="left">+ getParameters() : ?array</td></tr>
+    <tr><td align="left">+ setParameters(parameters : array) : void</td></tr>
+    <tr><td align="left">+ getExcludes() : ?array</td></tr>
+    <tr><td align="left">+ setExcludes(excludes : array) : void</td></tr>
+    <tr><td align="left">+ getPrototype() : ?string</td></tr>
+    <tr><td align="left">+ setPrototype(prototype : string) : void</td></tr>
+    <tr><td align="left">+ getFlags() : int</td></tr>
+    <tr><td align="left">+ setFlags(flags : int) : void</td></tr>
+    <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ setPolyfill(polyfill : string) : void</td></tr>
+    <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ addDependencies(dependencies : array) : self</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ setExtMin(extMin : string) : void</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ setExtMax(extMax : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ setPhpMin(phpMin : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+    <tr><td align="left">+ setPhpMax(phpMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\FunctionRelationship" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>FunctionRelationship</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ setFunction(function : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Function_) : void</td></tr>
+    <tr><td align="left">+ setDependency(dependency : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency) : void</td></tr>
+    <tr><td align="left">+ getDependency() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\IniEntry" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>IniEntry</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getName() : string</td></tr>
+    <tr><td align="left">+ setName(name : string) : void</td></tr>
+    <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ addDependencies(dependencies : array) : self</td></tr>
+    <tr><td align="left">+ getDependencies() : array</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ setExtMin(extMin : string) : void</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ setExtMax(extMax : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ setPhpMin(phpMin : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+    <tr><td align="left">+ setPhpMax(phpMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\IniRelationship" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>IniRelationship</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ setIni(ini : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\IniEntry) : void</td></tr>
+    <tr><td align="left">+ setDependency(dependency : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency) : void</td></tr>
+    <tr><td align="left">+ getDependency() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\PhpVersionTrait" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PhpVersionTrait</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ setPhpMin(phpMin : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+    <tr><td align="left">+ setPhpMax(phpMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Platform" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Platform</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+    <tr><td align="left">+ getDescription() : string</td></tr>
+    <tr><td align="left">+ setDescription(description : string) : void</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ setVersion(version : string) : void</td></tr>
+    <tr><td align="left">+ getCreatedAt() : DateTimeImmutable</td></tr>
+    <tr><td align="left">+ setCreatedAt(createdAt : DateTimeImmutable) : void</td></tr>
+    <tr><td align="left">+ addExtensions(extensions : array) : self</td></tr>
+    <tr><td align="left">+ getExtensions() : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\PrimaryIdentifierTrait" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PrimaryIdentifierTrait</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Relationship" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Relationship</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ setPlatform(platform : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Platform) : void</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Release" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Release</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __toString() : string</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ setVersion(version : string) : void</td></tr>
+    <tr><td align="left">+ getDate() : DateTimeImmutable</td></tr>
+    <tr><td align="left">+ setDate(date : DateTimeImmutable) : void</td></tr>
+    <tr><td align="left">+ getState() : string</td></tr>
+    <tr><td align="left">+ setState(state : string) : void</td></tr>
+    <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
+    <tr><td align="left">+ getId() : int</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ setExtMin(extMin : string) : void</td></tr>
+    <tr><td align="left">+ getExtMax() : ?string</td></tr>
+    <tr><td align="left">+ setExtMax(extMax : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ setPhpMin(phpMin : string) : void</td></tr>
+    <tr><td align="left">+ getPhpMax() : ?string</td></tr>
+    <tr><td align="left">+ setPhpMax(phpMax : string) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    label = 0
+    "Stringable" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>Stringable</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» __toString() : string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_2 {
+    graph [bgcolor="chartreuse3"]
+    label = "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator"
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ClassHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ClassHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Class_') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Class_) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Class_</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>HydratorInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» hydrate(data : array, class : string) : object</td></tr>
+    <tr><td align="left">+ «abstract» hydrateArrays(data : array) : array</td></tr>
+    <tr><td align="left">+ «abstract» extract(object : object) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ConstantHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ConstantHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Constant_') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Constant_) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Constant_</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\DependencyHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>DependencyHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Dependency</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ExtensionHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ExtensionHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Extension</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\FunctionHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>FunctionHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Function_') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Function_) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Function_</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\IniEntryHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>IniEntryHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\IniEntry') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\IniEntry) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\IniEntry</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\PlatformHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PlatformHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Platform') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Platform) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ReleaseHydrator" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ReleaseHydrator</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ extract(object : object) : array</td></tr>
+    <tr><td align="left">+ hydrate(data : array, class : string = 'Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Release') : object</td></tr>
+    <tr><td align="left">+ toDomain(entity : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Release) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Release</td></tr>
+    <tr><td align="left">+ hydrateArrays(data : array) : array</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_3 {
+    graph [bgcolor="chartreuse3"]
+    label = "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository"
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\ClassRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ClassRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getAll() : array</td></tr>
+    <tr><td align="left">+ getClassByName(name : string, isInterface : bool) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Class_</td></tr>
+    <tr><td align="left">+ setEntityManager(entityManager : Doctrine\\ORM\\EntityManagerInterface) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\ConstantRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ConstantRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getAll() : array</td></tr>
+    <tr><td align="left">+ getConstantByName(name : string, declaringClass : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Constant_</td></tr>
+    <tr><td align="left">+ setEntityManager(entityManager : Doctrine\\ORM\\EntityManagerInterface) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\DistributionRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>DistributionRepository</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» DISTRIBUTION_DESC : string = "CompatInfoDB" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getDistributionByVersion(version : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">+ initialize(collection : Doctrine\\Common\\Collections\\Collection, distVersion : string) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">+ clear() : void</td></tr>
+    <tr><td align="left">+ setEntityManager(entityManager : Doctrine\\ORM\\EntityManagerInterface) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\ExtensionRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ExtensionRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getAll() : array</td></tr>
+    <tr><td align="left">+ getExtensionByName(name : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Extension</td></tr>
+    <tr><td align="left">+ setEntityManager(entityManager : Doctrine\\ORM\\EntityManagerInterface) : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\FunctionRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>FunctionRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getAll() : array</td></tr>
+    <tr><td align="left">+ getFunctionByName(name : string, declaringClass : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Function_</td></tr>
+    <tr><td align="left">+ setEntityManager(entityManager : Doctrine\\ORM\\EntityManagerInterface) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_4 {
+    label = "Bartlett\\CompatInfoDb\\Domain\\Repository"
+    "Bartlett\\CompatInfoDb\\Domain\\Repository\\ClassRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ClassRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getAll() : array</td></tr>
+    <tr><td align="left">+ «abstract» getClassByName(name : string, isInterface : bool) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Class_</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\Repository\\RepositoryInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>RepositoryInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\Repository\\ConstantRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ConstantRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getAll() : array</td></tr>
+    <tr><td align="left">+ «abstract» getConstantByName(name : string, declaringClass : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Constant_</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\Repository\\DistributionRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>DistributionRepository</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» DISTRIBUTION_DESC : string = "CompatInfoDB" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getDistributionByVersion(version : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">+ «abstract» initialize(collection : Doctrine\\Common\\Collections\\Collection, distVersion : string) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">+ «abstract» clear() : void</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\Repository\\ExtensionRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ExtensionRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getAll() : array</td></tr>
+    <tr><td align="left">+ «abstract» getExtensionByName(name : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Extension</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Domain\\Repository\\FunctionRepository" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>FunctionRepository</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getAll() : array</td></tr>
+    <tr><td align="left">+ «abstract» getFunctionByName(name : string, declaringClass : string) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Function_</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_5 {
+    graph [bgcolor="chartreuse3"]
+    label = "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine"
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\EntityManagerFactory" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>EntityManagerFactory</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» create(isDevMode : bool, proxyDir : string, cache : Psr\\Cache\\CacheItemPoolInterface = «unknown») : Doctrine\\ORM\\EntityManagerInterface</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Class_" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Constant_" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Dependency" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Function_" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\IniEntry" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Platform" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Release" -> "Stringable" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ClassHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ConstantHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\DependencyHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ExtensionHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\FunctionHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\IniEntryHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\PlatformHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\ReleaseHydrator" -> "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Hydrator\\HydratorInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Domain\\Repository\\ClassRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\RepositoryInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\ClassRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\ClassRepository" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Domain\\Repository\\ConstantRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\RepositoryInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\ConstantRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\ConstantRepository" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Domain\\Repository\\DistributionRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\RepositoryInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\DistributionRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\DistributionRepository" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Domain\\Repository\\ExtensionRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\RepositoryInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\ExtensionRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\ExtensionRepository" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Domain\\Repository\\FunctionRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\RepositoryInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Repository\\FunctionRepository" -> "Bartlett\\CompatInfoDb\\Domain\\Repository\\FunctionRepository" [arrowhead="empty" style="dashed"]
+}
