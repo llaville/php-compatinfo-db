@@ -792,7 +792,7 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'odbc' => [
             'constants'  => ['40', '43', '54'],
-            'functions'  => ['40'],
+            'functions'  => ['40', '82'],
             'iniEntries' => ['40', '53'],
             'releases'   => array_merge(
                 ['40', '43', '53', '54'],
