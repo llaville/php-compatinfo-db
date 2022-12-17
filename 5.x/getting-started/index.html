@@ -783,14 +783,13 @@ by cloning the repository into a directory of your choice.</p>
 <span class="nv">DATABASE_URL</span><span class="o">=</span><span class="s2">&quot;mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.5.8&quot;</span>
 
 <span class="c1"># to use sqlite:</span>
-<span class="nv">DATABASE_URL</span><span class="o">=</span><span class="s2">&quot;sqlite:///</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">/.cache/bartlett/compatinfo-db.sqlite&quot;</span>
+<span class="nv">DATABASE_URL</span><span class="o">=</span><span class="s2">&quot;sqlite:///%kernel.cache_dir%/compatinfo-db.sqlite&quot;</span>
 
 <span class="c1"># to use postgresql:</span>
 <span class="nv">DATABASE_URL</span><span class="o">=</span><span class="s2">&quot;postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&amp;charset=utf8&quot;</span>
 </code></pre></div>
-<p>If you change database connection, you have to run following command(s):</p>
+<p>After installation, or if you change database connection, you have to run following command(s):</p>
 <ul>
-<li>If you have CompatInfoDB 4.0 or greater</li>
 <li><code>bin/compatinfo-db db:create</code> (creates only the database schema)</li>
 <li><code>bin/compatinfo-db db:init</code> (loads the database from JSON data files)</li>
 </ul>
