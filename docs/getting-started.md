@@ -47,19 +47,18 @@ DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5
 DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.5.8"
 
 # to use sqlite:
-DATABASE_URL="sqlite:///${HOME}/.cache/bartlett/compatinfo-db.sqlite"
+DATABASE_URL="sqlite:///%kernel.cache_dir%/compatinfo-db.sqlite"
 
 # to use postgresql:
 DATABASE_URL="postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8"
 ```
 
-If you change database connection, you have to run following command(s):
+After installation, or if you change database connection, you have to run following command(s):
 
-* If you have CompatInfoDB 4.0 or greater
-  * `bin/compatinfo-db db:create` (creates only the database schema)
-  * `bin/compatinfo-db db:init` (loads the database from JSON data files)
+* `bin/compatinfo-db db:create` (creates only the database schema)
+* `bin/compatinfo-db db:init` (loads the database from JSON data files)
 
-  At first run of CompatInfoDB, `DATABASE_URL` will be set to use default SQLite connection
+At first run of CompatInfoDB, `DATABASE_URL` will be set to use default SQLite connection
 
 ## Quick start
 
