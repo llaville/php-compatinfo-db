@@ -1,0 +1,7 @@
+[
+    {
+        "name": "imap_is_open",
+        "ext_min": "8.2.1",
+        "php_min": "8.2.1RC1"
+    }
+]

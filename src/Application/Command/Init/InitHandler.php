@@ -589,7 +589,7 @@ final class InitHandler implements CommandHandlerInterface
         yield 'imap' => [
             'classes'    => ['81'],
             'constants'  => ['40', '53'],
-            'functions'  => ['40', '43', '50', '51', '53'],
+            'functions'  => ['40', '43', '50', '51', '53', '82'],
             'iniEntries' => ['56'],
             'releases'   => array_merge(
                 ['40', '43', '50', '51', '53', '56'],
