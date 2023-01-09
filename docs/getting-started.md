@@ -23,7 +23,7 @@ Install the PHP CompatInfoDB with [Composer](https://getcomposer.org/).
 If you don't know yet what is composer, have a look [on introduction](http://getcomposer.org/doc/00-intro.md).
 
 ```shell
-composer require bartlett/php-compatinfo-db
+composer require bartlett/php-compatinfo-db ^5.0
 ```
 
 ### With Git
