@@ -5,6 +5,7 @@ on:
     push:
         branches:
             - "[0-9]+.[0-9]+"
+            - master
         tags:
             - "[0-9]+.[0-9]+.[0-9]+"
     workflow_dispatch:
