@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Ast;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, ast extension Reference
@@ -15,6 +15,6 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @since Release 1.24.0
  * @author Laurent Laville
  */
-class AstExtensionTest extends GenericTest
+class AstExtensionTest extends GenericTestCase
 {
 }

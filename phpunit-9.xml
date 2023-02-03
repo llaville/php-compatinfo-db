@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
+<phpunit
     backupGlobals="false"
+    backupStaticAttributes="false"
     bootstrap="config/bootstrap.php"
     colors="true"
     stopOnError="false"
@@ -9,16 +9,15 @@
     stopOnIncomplete="false"
     stopOnRisky="false"
     stopOnSkipped="false"
+    verbose="true"
     beStrictAboutTestsThatDoNotTestAnything="false"
     processIsolation="false"
-    cacheDirectory=".phpunit.cache"
-    backupStaticProperties="false"
 >
-    <coverage>
-        <include>
+    <filter>
+        <whitelist>
             <directory suffix=".php">src/</directory>
-        </include>
-    </coverage>
+        </whitelist>
+    </filter>
     <testsuites>
         <testsuite name="bcmath">
             <directory prefix="Bcmath" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
@@ -72,9 +71,7 @@
             <directory prefix="Hash" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="mhash">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mhash" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpBundle
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt"  prefix="Mhash" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="iconv">
             <directory prefix="Iconv" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
@@ -98,8 +95,7 @@
             <directory prefix="Mbstring" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="mysql">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mysql" suffix="ExtensionTest.php">tests/
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mysql" suffix="ExtensionTest.php">tests/</directory>
             <directory prefix="Mysqli" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="mysqli">
@@ -121,9 +117,7 @@
             <directory prefix="Pcntl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="ereg">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Ereg" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpBundle
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Ereg" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="pcre">
             <directory prefix="Pcre" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
@@ -213,9 +207,7 @@
             <directory prefix="Apcu" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="apc">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Apc" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Apc" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="ast">
             <directory prefix="Ast" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -227,14 +219,10 @@
             <directory prefix="Geoip" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="haru">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Haru" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Haru" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="htscanner">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Htscanner" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Htscanner" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="http">
             <directory prefix="Http" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -246,17 +234,13 @@
             <directory prefix="Imagick" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="inclued">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Inclued" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Inclued" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="jsmin">
             <directory prefix="Jsmin" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="libevent">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Libevent" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Libevent" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="lzf">
             <directory prefix="Lzf" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -274,9 +258,7 @@
             <directory prefix="Memcached" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="mongo">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mongo" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mongo" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="msgpack">
             <directory prefix="Msgpack" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -288,14 +270,10 @@
             <directory prefix="Oauth" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="pdflib">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Pdflib" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Pdflib" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="pthreads">
-            <directory phpVersion="8.0.0" phpVersionOperator="lt" prefix="Pthreads" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="8.0.0" phpVersionOperator="lt" prefix="Pthreads" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="raphf">
             <directory prefix="Raphf" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -313,22 +291,16 @@
             <directory prefix="Redis" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="riak">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Riak" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Riak" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="solr">
             <directory prefix="Solr" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="sphinx">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Sphinx" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Sphinx" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="sqlite">
-            <directory phpVersion="5.4.0" phpVersionOperator="lt" prefix="Sqlite" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="5.4.0" phpVersionOperator="lt" prefix="Sqlite" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="ssh2">
             <directory prefix="Ssh2" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -355,9 +327,7 @@
             <directory prefix="Varnish" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="wddx">
-            <directory phpVersion="7.4.0" phpVersionOperator="lt" prefix="Wddx" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="7.4.0" phpVersionOperator="lt" prefix="Wddx" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="xcache">
             <directory prefix="Xcache" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
@@ -375,9 +345,7 @@
             <directory prefix="Xmldiff" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="xmlrpc">
-            <directory phpVersion="8.0.0" phpVersionOperator="lt" prefix="Xmlrpc" suffix="ExtensionTest.php">
-                tests/Reference/Extension/PhpPecl
-            </directory>
+            <directory phpVersion="8.0.0" phpVersionOperator="lt" prefix="Xmlrpc" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="yac">
             <directory prefix="Yac" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
