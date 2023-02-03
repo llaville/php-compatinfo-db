@@ -34,8 +34,3 @@ parameters:
 			message: "#^Property Bartlett\\\\CompatInfoDb\\\\Infrastructure\\\\Persistence\\\\Doctrine\\\\Entity\\\\Release\\:\\:\\$extension is never read, only written\\.$#"
 			count: 1
 			path: ../../src/Infrastructure/Persistence/Doctrine/Entity/Release.php
-
-		-
-			message: "#^Offset 'url' does not exist on array#"
-			count: 1
-			path: ../../src/Infrastructure/ProjectRequirements.php
