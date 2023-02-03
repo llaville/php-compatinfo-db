@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Opcache;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, opcache extension Reference
@@ -17,7 +17,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class OpcacheExtensionTest extends GenericTest
+class OpcacheExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.

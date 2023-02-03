@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Filter;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, filter extension Reference
@@ -17,7 +17,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class FilterExtensionTest extends GenericTest
+class FilterExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.

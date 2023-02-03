@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Json;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, json extension Reference
@@ -17,7 +17,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class JsonExtensionTest extends GenericTest
+class JsonExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.

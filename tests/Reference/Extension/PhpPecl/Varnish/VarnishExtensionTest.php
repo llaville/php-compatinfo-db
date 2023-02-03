@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Varnish;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, varnish extension Reference
@@ -17,6 +17,6 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class VarnishExtensionTest extends GenericTest
+class VarnishExtensionTest extends GenericTestCase
 {
 }

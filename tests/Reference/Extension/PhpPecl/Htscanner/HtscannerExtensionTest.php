@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Htscanner;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, htscanner extension Reference
@@ -17,6 +17,6 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class HtscannerExtensionTest extends GenericTest
+class HtscannerExtensionTest extends GenericTestCase
 {
 }

@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Ssh2;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, ssh2 extension Reference
@@ -17,7 +17,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class Ssh2ExtensionTest extends GenericTest
+class Ssh2ExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.

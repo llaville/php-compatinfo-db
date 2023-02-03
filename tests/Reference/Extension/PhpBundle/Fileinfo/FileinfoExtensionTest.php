@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Fileinfo;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 use Exception;
 
@@ -19,7 +19,7 @@ use Exception;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class FileinfoExtensionTest extends GenericTest
+class FileinfoExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.

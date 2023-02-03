@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Oci8;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, oci8 extension Reference
@@ -15,6 +15,6 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
  * @since Release 2.15.0
  * @author Laurent Laville
  */
-class Oci8ExtensionTest extends GenericTest
+class Oci8ExtensionTest extends GenericTestCase
 {
 }

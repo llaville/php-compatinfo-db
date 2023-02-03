@@ -65,7 +65,7 @@ use function version_compare;
  * @author Laurent Laville
  * @author Remi Collet
  */
-abstract class GenericTest extends TestCase implements ExtensionVersionProviderInterface
+abstract class GenericTestCase extends TestCase implements ExtensionVersionProviderInterface
 {
     use LibraryVersionProviderTrait;
     use ExtensionVersionProviderTrait;

@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Imagick;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 use Exception;
 
@@ -19,7 +19,7 @@ use Exception;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class ImagickExtensionTest extends GenericTest
+class ImagickExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.

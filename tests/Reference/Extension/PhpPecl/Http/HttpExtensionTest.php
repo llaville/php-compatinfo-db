@@ -7,7 +7,7 @@
  */
 namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Http;
 
-use Bartlett\CompatInfoDb\Tests\Reference\GenericTest;
+use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 use function array_keys;
 use function array_push;
@@ -23,7 +23,7 @@ use function version_compare;
  * @author Laurent Laville
  * @author Remi Collet
  */
-class HttpExtensionTest extends GenericTest
+class HttpExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.
