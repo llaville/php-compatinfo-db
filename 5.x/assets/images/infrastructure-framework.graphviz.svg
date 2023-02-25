@@ -42,14 +42,14 @@
 <!-- Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\CompatInfoDbExtension -->
 <g id="node2" class="node">
 <title>Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\CompatInfoDbExtension</title>
-<polygon fill="#fefece" stroke="transparent" points="844.5,-345 97.5,-345 97.5,-253 844.5,-253 844.5,-345"/>
-<polygon fill="#eeeeee" stroke="transparent" points="106,-307 106,-341 837,-341 837,-307 106,-307"/>
-<polygon fill="none" stroke="black" points="106,-307 106,-341 837,-341 837,-307 106,-307"/>
-<text text-anchor="start" x="375" y="-313.8" font-family="Times,serif" font-weight="bold" font-size="14.00">CompatInfoDbExtension</text>
-<polygon fill="none" stroke="black" points="106,-301 106,-307 837,-307 837,-301 106,-301"/>
-<polygon fill="none" stroke="black" points="106,-257 106,-301 837,-301 837,-257 106,-257"/>
-<text text-anchor="start" x="111" y="-284.8" font-family="Times,serif" font-size="14.00">+ getNamespace() : string</text>
-<text text-anchor="start" x="111" y="-265.8" font-family="Times,serif" font-size="14.00">+ load(configs : array, container : Symfony\Component\DependencyInjection\ContainerBuilder) : void</text>
+<polygon fill="#fefece" stroke="transparent" points="823,-345 119,-345 119,-253 823,-253 823,-345"/>
+<polygon fill="#eeeeee" stroke="transparent" points="127,-307 127,-341 815,-341 815,-307 127,-307"/>
+<polygon fill="none" stroke="black" points="127,-307 127,-341 815,-341 815,-307 127,-307"/>
+<text text-anchor="start" x="374.5" y="-313.8" font-family="Times,serif" font-weight="bold" font-size="14.00">CompatInfoDbExtension</text>
+<polygon fill="none" stroke="black" points="127,-301 127,-307 815,-307 815,-301 127,-301"/>
+<polygon fill="none" stroke="black" points="127,-257 127,-301 815,-301 815,-257 127,-257"/>
+<text text-anchor="start" x="132" y="-284.8" font-family="Times,serif" font-size="14.00">+ getNamespace() : string</text>
+<text text-anchor="start" x="132" y="-265.8" font-family="Times,serif" font-size="14.00">+ load(configs : array, container : Symfony\Component\DependencyInjection\ContainerBuilder)</text>
 </g>
 <!-- Symfony\\Component\\DependencyInjection\\Extension\\Extension -->
 <g id="node4" class="node">
@@ -70,8 +70,8 @@
 <!-- Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\CompatInfoDbExtension&#45;&gt;Symfony\\Component\\DependencyInjection\\Extension\\Extension -->
 <g id="edge3" class="edge">
 <title>Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\CompatInfoDbExtension&#45;&gt;Symfony\\Component\\DependencyInjection\\Extension\\Extension</title>
-<path fill="none" stroke="black" d="M844.66,-308.29C880.04,-309.17 916.02,-310.07 951.67,-310.96"/>
-<polygon fill="none" stroke="black" points="951.63,-314.46 961.71,-311.21 951.8,-307.46 951.63,-314.46"/>
+<path fill="none" stroke="black" d="M823.01,-307.75C865.27,-308.8 908.69,-309.89 951.62,-310.96"/>
+<polygon fill="none" stroke="black" points="951.56,-314.46 961.64,-311.21 951.73,-307.46 951.56,-314.46"/>
 </g>
 <!-- Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\Configuration -->
 <g id="node3" class="node">
