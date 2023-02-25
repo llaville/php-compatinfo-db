@@ -3,5 +3,10 @@
         "name": "zend.exception_string_param_max_len",
         "ext_min": "8.0.0beta1",
         "php_min": "8.0.0beta1"
+    },
+    {
+        "name": "max_multipart_body_parts",
+        "ext_min": "8.0.28",
+        "php_min": "8.0.28"
     }
 ]
