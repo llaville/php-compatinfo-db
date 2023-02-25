@@ -10,6 +10,7 @@ vendor/
 
 ###### PHPUnit ######
 .phpunit.result.cache
+.phpunit.cache
 
 ###### Box ######
 .box.metadata.cache
