@@ -621,5 +621,29 @@
         "name": "__construct",
         "ext_min": "1.5.0",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setPrintScale",
+        "ext_min": "1.5.3",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "borderColor",
+        "ext_min": "1.5.3",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "borderOfTheFourSides",
+        "ext_min": "1.5.3",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "borderColorOfTheFourSides",
+        "ext_min": "1.5.3",
+        "php_min": "7.0.0"
     }
 ]
