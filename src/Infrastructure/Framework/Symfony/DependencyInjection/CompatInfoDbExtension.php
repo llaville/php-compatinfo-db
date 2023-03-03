@@ -40,6 +40,7 @@ final class CompatInfoDbExtension extends Extension
      * @return void
      *
      * {@inheritDoc}
+     * @param array<string, mixed> $configs
      */
     public function load(array $configs, ContainerBuilder $container)
     {
