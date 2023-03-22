@@ -50,18 +50,6 @@ class Application extends SymfonyApplication implements ApplicationInterface
     protected function getDefaultInputDefinition(): InputDefinition
     {
         $definition = parent::getDefaultInputDefinition();
-        if (Phar::running()) {
-            $definition->addOption(
-                new InputOption(
-                    'manifest',
-                    null,
-                    InputOption::VALUE_NONE,
-                    'Show which versions of dependencies are bundled'
-                )
-            );
-            // handle external configuration files is not allowed with PHAR distribution
-            return $definition;
-        }
         $definition->addOption(
             new InputOption(
                 'config',
@@ -100,12 +88,6 @@ class Application extends SymfonyApplication implements ApplicationInterface
             } else {
                 $output = new ConsoleOutput();
             }
-        }
-
-        if ($input->hasParameterOption('--manifest')) {
-            $phar = new Phar($_SERVER['argv'][0]);
-            $output->writeln($phar->getMetadata());
-            return AbstractCommand::SUCCESS;
         }
 
         return parent::run($input, $output);
