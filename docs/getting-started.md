@@ -10,11 +10,6 @@
 * ext-spl
 * PHPUnit 9 or greater (if you want to run unit tests)
 
-![GraPHP Composer](./graph-composer.svg)
-
-Generated with [fork](https://github.com/markuspoerschke/graph-composer/tree/add-options-to-exclude) of [clue/graph-composer](https://github.com/clue/graph-composer).
-Read more on [PR request](https://github.com/clue/graph-composer/pull/45).
-
 ## Installation
 
 ### With Composer
@@ -23,7 +18,7 @@ Install the PHP CompatInfoDB with [Composer](https://getcomposer.org/).
 If you don't know yet what is composer, have a look [on introduction](http://getcomposer.org/doc/00-intro.md).
 
 ```shell
-composer require bartlett/php-compatinfo-db ^5.0
+composer require bartlett/php-compatinfo-db ^5
 ```
 
 ### With Git
