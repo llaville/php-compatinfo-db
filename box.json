@@ -1,7 +1,5 @@
 {
-    "stub": "stub.php",
     "alias": "compatinfo-db.phar",
     "directories": ["bin", "config", "data", "src", "vendor"],
-    "files-bin": ["sbom.xml", "manifest.txt"],
     "compression": "GZ"
 }

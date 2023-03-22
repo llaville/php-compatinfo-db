@@ -44,12 +44,24 @@ jobs:
                 with:
                     composer-options: "--prefer-dist"
 
+            -   # Prepare binaries BOX Manifest commands
+                name: Download BOX Manifest Artifacts
+                run: |
+                    cd ${{ github.workspace }}
+                    curl -Ls https://github.com/llaville/box-manifest/releases/download/3.1.0/box-manifest.phar -o /usr/local/bin/box-manifest
+                    chmod +x /usr/local/bin/box-manifest
+                    curl -Ls https://github.com/llaville/box-manifest/releases/download/3.1.0/box-stub.phar -o /usr/local/bin/box-stub
+                    chmod +x /usr/local/bin/box-stub
+                    curl -Ls https://github.com/llaville/box-manifest/releases/download/3.1.0/box-compile.phar -o /usr/local/bin/box-compile
+                    chmod +x /usr/local/bin/box-compile
+
             -   # Build the current release with artifacts (php archive)
                 name: Build Release Artifact
                 run: |
-                    curl -Ls https://github.com/llaville/box-manifest/releases/latest/download/box-manifest.phar -o /usr/local/bin/box-manifest
-                    chmod +x /usr/local/bin/box-manifest
-                    /usr/local/bin/box-manifest compile
+                    /usr/local/bin/box-manifest -c box.json --output-file=sbom.xml
+                    /usr/local/bin/box-manifest -c box.json --output-file=manifest.txt --format ansi
+                    /usr/local/bin/box-stub -c box.json --output-file=stub.php --resource manifest.txt --resource sbom.xml
+                    /usr/local/bin/box-compile -c box.json.dist
 
             -   # Create a new Release (from a tag)
                 name: Create Release from current tag
