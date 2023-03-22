@@ -1,4 +1,0 @@
-kind: Removed
-body: Clean-up Application code to display manifest at runtime (handled now by BOX
-  Manifest v3 with custom stub)
-time: 2023-03-22T15:32:53.772385365Z
