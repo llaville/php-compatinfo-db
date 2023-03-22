@@ -59,6 +59,6 @@
 
 * PHP 8.0.26 until 8.0.28
 * PHP 8.1.13 until 8.1.17
-* PHP 8.2.0 until 8.2.3
+* PHP 8.2.0 until 8.2.4
 
 Currently, [110 extensions](SUPPORTED-EXTENSIONS.md) referenced in the database.
