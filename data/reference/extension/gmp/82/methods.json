@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "GMP",
+        "name": "__construct",
+        "ext_min": "8.2.4RC1",
+        "php_min": "8.2.4RC1"
+    }
+]
