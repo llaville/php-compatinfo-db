@@ -3,5 +3,10 @@
         "name": "error_log_mode",
         "ext_min": "8.2.0beta1",
         "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "mail.mixed_lf_and_crlf",
+        "ext_min": "8.2.4RC1",
+        "php_min": "8.2.4RC1"
     }
 ]
