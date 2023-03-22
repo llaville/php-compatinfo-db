@@ -48,6 +48,6 @@
         "name": "mysqli.reconnect",
         "ext_min": "5.0.0",
         "php_min": "5.0.0",
-        "php_max": "8.1.16"
+        "php_max": "8.1.17"
     }
 ]
