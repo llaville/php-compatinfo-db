@@ -19,7 +19,7 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.28" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.16" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.17" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.3" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>
@@ -43,7 +43,7 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.28" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.16" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.17" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.3" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>
@@ -66,7 +66,7 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.28" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.16" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.17" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.3" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>

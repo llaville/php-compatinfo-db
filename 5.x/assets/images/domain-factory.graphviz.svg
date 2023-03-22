@@ -32,7 +32,7 @@
 <text text-anchor="start" x="29.5" y="-297.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="29.5" y="-278.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="29.5" y="-259.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.28&quot; {readOnly}</text>
-<text text-anchor="start" x="29.5" y="-240.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.16&quot; {readOnly}</text>
+<text text-anchor="start" x="29.5" y="-240.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.17&quot; {readOnly}</text>
 <text text-anchor="start" x="29.5" y="-221.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.3&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="24.5,-207 24.5,-213 761.5,-213 761.5,-207 24.5,-207"/>
 <polygon fill="none" stroke="black" points="24.5,-163 24.5,-207 761.5,-207 761.5,-163 24.5,-163"/>
@@ -59,7 +59,7 @@
 <text text-anchor="start" x="818" y="-288.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="818" y="-269.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="818" y="-250.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.28&quot; {readOnly}</text>
-<text text-anchor="start" x="818" y="-231.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.16&quot; {readOnly}</text>
+<text text-anchor="start" x="818" y="-231.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.17&quot; {readOnly}</text>
 <text text-anchor="start" x="818" y="-212.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.3&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="813,-198 813,-204 1481,-204 1481,-198 813,-198"/>
 <polygon fill="none" stroke="black" points="813,-173 813,-198 1481,-198 1481,-173 813,-173"/>
@@ -91,7 +91,7 @@
 <text text-anchor="start" x="1538" y="-278.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="1538" y="-259.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="1538" y="-240.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.28&quot; {readOnly}</text>
-<text text-anchor="start" x="1538" y="-221.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.16&quot; {readOnly}</text>
+<text text-anchor="start" x="1538" y="-221.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.17&quot; {readOnly}</text>
 <text text-anchor="start" x="1538" y="-202.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.3&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="1533,-188 1533,-194 1979,-194 1979,-188 1533,-188"/>
 <polygon fill="none" stroke="black" points="1533,-182 1533,-188 1979,-188 1979,-182 1533,-182"/>
