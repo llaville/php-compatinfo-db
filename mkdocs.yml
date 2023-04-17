@@ -27,7 +27,7 @@ markdown_extensions:
     - pymdownx.highlight # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
     - pymdownx.superfences # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#superfences
 nav:
-    - "Home": index.md
+    - "Home": README.md
     - "Getting-Started": getting-started.md
     - "Architecture":
           - "Application": application/README.md

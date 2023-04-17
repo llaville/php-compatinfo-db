@@ -18,20 +18,20 @@ This database is currently only support by its initial project [php-compatinfo](
 
 ## Version Compatibility
 
-| CompatInfoDB         | PHP      | CompatInfo   |
-|----------------------|----------|--------------|
+ | CompatInfoDB         | PHP      | CompatInfo   |
+ |----------------------|----------|--------------|
  | `3.6.x`  to `3.16.x` | `>= 7.2` | `5.5`        |
  | `3.6.x`  to `3.16.x` | `>= 7.4` | `6.0`        |
  | `3.17.x` to `3.18.x` | `>= 7.4` | `6.1`        |
  | `4.0.x`  to `4.1.x`  | `>= 7.4` | `6.2`, `6.3` |
  | `4.2.x`  to `4.5.x`  | `>= 7.4` | `6.4`        |
  | `4.6.x`  to `4.11.x` | `>= 7.4` | `6.5`        |
- | `5.0.x`  to `5.3.x`  | `>= 8.0` | `7.0`        |
+ | `5.0.x`  to `5.4.x`  | `>= 8.0` | `7.0`        |
 
 ## Documentation
 
 All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/5.x),
-generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/5.x/docs) folder.
+generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/master/docs) folder.
 
 * [Getting Started](docs/getting-started.md).
 
