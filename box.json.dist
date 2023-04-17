@@ -2,6 +2,10 @@
     "stub": "stub.php",
     "alias": "compatinfo-db.phar",
     "directories": ["bin", "config", "data", "src", "vendor"],
-    "files-bin": ["sbom.xml", "manifest.txt"],
+    "files-bin": ["sbom.json", "console.txt"],
+    "map": [
+        { "console.txt": ".box.manifests/console.txt" },
+        { "sbom.json": ".box.manifests/sbom.json" }
+    ],
     "compression": "GZ"
 }
