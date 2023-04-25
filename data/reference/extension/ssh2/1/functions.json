@@ -13,5 +13,10 @@
         "name": "ssh2_auth_pubkey",
         "ext_min": "1.4",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "ssh2_shell_resize",
+        "ext_min": "1.4",
+        "php_min": "7.0.0"
     }
 ]
