@@ -1,0 +1,7 @@
+[
+    {
+        "name": "oci_set_prefetch_lob",
+        "ext_min": "3.3.0",
+        "php_min": "8.2.0alpha1"
+    }
+]
