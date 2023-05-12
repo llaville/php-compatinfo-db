@@ -1,0 +1,4 @@
+kind: Changed
+body: Related to issue <https://github.com/llaville/php-compatinfo/issues/359>, upgrade
+  parameters setting of `setcookie` function
+time: 2023-05-12T05:02:32.893609329Z
