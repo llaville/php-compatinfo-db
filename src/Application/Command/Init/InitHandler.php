@@ -780,8 +780,8 @@ final class InitHandler implements CommandHandlerInterface
         yield 'oci8' => [
             'classes'    => ['1', '3'],
             'constants'  => ['1'],
-            'functions'  => ['1', '2'],
-            'iniEntries' => ['1'],
+            'functions'  => ['1', '2', '3'],
+            'iniEntries' => ['1', '3'],
             'methods'    => ['1', '3'],
             'releases'   => array_merge(
                 ['1', '2', '3'],
