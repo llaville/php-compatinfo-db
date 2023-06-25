@@ -103,9 +103,9 @@
 <text text-anchor="start" x="29.5" y="-1746.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_2 : string = &quot;7\.2\.34&quot; {readOnly}</text>
 <text text-anchor="start" x="29.5" y="-1727.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="29.5" y="-1708.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
-<text text-anchor="start" x="29.5" y="-1689.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.28&quot; {readOnly}</text>
-<text text-anchor="start" x="29.5" y="-1670.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.18&quot; {readOnly}</text>
-<text text-anchor="start" x="29.5" y="-1651.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.5&quot; {readOnly}</text>
+<text text-anchor="start" x="29.5" y="-1689.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.29&quot; {readOnly}</text>
+<text text-anchor="start" x="29.5" y="-1670.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.20&quot; {readOnly}</text>
+<text text-anchor="start" x="29.5" y="-1651.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.7&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="24.5,-1637 24.5,-1643 1811.5,-1643 1811.5,-1637 24.5,-1637"/>
 <polygon fill="none" stroke="black" points="24.5,-1289 24.5,-1637 1811.5,-1637 1811.5,-1289 24.5,-1289"/>
 <text text-anchor="start" x="29.5" y="-1620.8" font-family="Times,serif" font-size="14.00">+ __construct(name : string, version : string = PHP_VERSION, type : string = &#39;bundle&#39;, deprecated : bool = false, iniEntries : array = [], constants : array = [], functions : array = [], classes : array = [], dependencies : array = [], releases : array = [])</text>
@@ -146,9 +146,9 @@
 <text text-anchor="start" x="1868" y="-1575.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_2 : string = &quot;7\.2\.34&quot; {readOnly}</text>
 <text text-anchor="start" x="1868" y="-1556.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="1868" y="-1537.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
-<text text-anchor="start" x="1868" y="-1518.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.28&quot; {readOnly}</text>
-<text text-anchor="start" x="1868" y="-1499.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.18&quot; {readOnly}</text>
-<text text-anchor="start" x="1868" y="-1480.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.5&quot; {readOnly}</text>
+<text text-anchor="start" x="1868" y="-1518.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.29&quot; {readOnly}</text>
+<text text-anchor="start" x="1868" y="-1499.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.20&quot; {readOnly}</text>
+<text text-anchor="start" x="1868" y="-1480.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.7&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="1863,-1466 1863,-1472 2309,-1472 2309,-1466 1863,-1466"/>
 <polygon fill="none" stroke="black" points="1863,-1460 1863,-1466 2309,-1466 2309,-1460 1863,-1460"/>
 </g>
