@@ -466,5 +466,11 @@
         "rel_date": "2022-09-16",
         "rel_state": "stable",
         "php_min": "5.4.0"
+    },
+    {
+        "rel_version": "1.22.0",
+        "rel_date": "2023-06-26",
+        "rel_state": "stable",
+        "php_min": "5.4.0"
     }
 ]
