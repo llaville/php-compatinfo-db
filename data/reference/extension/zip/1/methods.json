@@ -326,5 +326,29 @@
         "name": "getStreamIndex",
         "ext_min": "1.20.0",
         "php_min": "5.4.0"
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "setArchiveFlag",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "getArchiveFlag",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
     }
 ]

@@ -664,5 +664,77 @@
         "name": "EM_UNKNOWN",
         "ext_min": "1.19.0",
         "php_min": "5.4.0"
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "ER_DATA_LENGTH",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "ER_NOT_ALLOWED",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "AFL_RDONLY",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "AFL_IS_TORRENTZIP",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "AFL_WANT_TORRENTZIP",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "AFL_CREATE_OR_KEEP_FILE_FOR_EMPTY_ARCHIVE",
+        "ext_min": "1.22.0",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.10.0"
+            }
+        ]
     }
 ]
