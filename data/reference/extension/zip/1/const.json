@@ -736,5 +736,11 @@
                 "constraint": ">=1.10.0"
             }
         ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "FL_OPEN_FILE_NOW",
+        "ext_min": "1.22.1",
+        "php_min": "5.4.0"
     }
 ]
