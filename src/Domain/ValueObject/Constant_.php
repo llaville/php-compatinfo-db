@@ -22,6 +22,7 @@ final class Constant_
     /** @var array|Dependency[] */
     private array $dependencies;
     private ?string $polyfill;
+    private ?string $deprecated;
 
     /**
      * Constant_ constructor.
@@ -45,7 +46,8 @@ final class Constant_
         string $phpMin,
         ?string $phpMax,
         array $dependencies = [],
-        ?string $polyfill = null
+        ?string $polyfill = null,
+        ?string $deprecated = null
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -56,6 +58,7 @@ final class Constant_
         $this->phpMax = $phpMax;
         $this->dependencies = $dependencies;
         $this->polyfill = $polyfill;
+        $this->deprecated = $deprecated;
     }
 
     /**
@@ -82,6 +85,14 @@ final class Constant_
         return $this->polyfill;
     }
 
+    /**
+     * @return string|null
+     */
+    public function getDeprecated(): ?string
+    {
+        return $this->deprecated;
+    }
+    
     /**
      * @return string
      */

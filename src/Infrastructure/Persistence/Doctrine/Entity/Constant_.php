@@ -39,6 +39,11 @@ class Constant_
     private ?string $polyfill;
 
     /**
+     * @Column(name="deprecated", type="string", nullable=true)
+     */
+    private ?string $deprecated;
+
+    /**
      * @ManyToOne(targetEntity=Extension::class, inversedBy="constants")
      */
     private Extension $extension;
@@ -109,6 +114,22 @@ class Constant_
     public function setPolyfill(?string $polyfill): void
     {
         $this->polyfill = $polyfill;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDeprecated(): ?string
+    {
+        return $this->deprecated;
+    }
+
+    /**
+     * @param string|null $deprecated
+     */
+    public function setDeprecated(?string $deprecated): void
+    {
+        $this->deprecated = $deprecated;
     }
 
     /**

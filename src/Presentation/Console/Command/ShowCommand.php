@@ -308,6 +308,12 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 $polyfills = '';
             }
 
+            if (method_exists($domain, 'getDeprecated')) {
+                $deprecated = $domain->getDeprecated() ?? '';
+            } else {
+                $deprecated = '';
+            }
+
             $flags = [];
             if ($domain instanceof Function_) {
                 $parameters = $domain->getParameters();
@@ -336,7 +342,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $args[$key] = [
                 $this->ext($domain) ? : $domain->getVersion(),
                 $this->php($domain),
-                '',
+                $deprecated,
                 implode(', ', $parameters),
                 implode(', ', $flags),
                 implode(', ', $dependencies),
