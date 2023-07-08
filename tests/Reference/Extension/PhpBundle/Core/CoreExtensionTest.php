@@ -50,7 +50,10 @@ class CoreExtensionTest extends GenericTestCase
         self::$optionalcfgs = array(
             // Requires --enable-zend-multibyte
             'zend.detect_unicode',
-            'zend.multibyte'
+            'zend.multibyte',
+            // was introduced by commit https://github.com/php/php-src/commit/716de0cff539f46294ef70fe75d548cd66766370
+            // available since PHP 8.0.28, 8.1.17RC1, 8.2.4RC1
+            'max_multipart_body_parts',
         );
         if (PATH_SEPARATOR == ':') {
             self::$optionalcfgs = array_merge(
