@@ -36,10 +36,11 @@ digraph {
     <tr><td bgcolor="#eeeeee"><b><br/>Constant_</b></td></tr>
     <tr><td></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
-    <tr><td align="left">+ __construct(name : string, declaringClass : string, extension : string, extMin : string, extMax : string, phpMin : string, phpMax : string, dependencies : array = [], polyfill : string = «unknown»)</td></tr>
+    <tr><td align="left">+ __construct(name : string, declaringClass : string, extension : string, extMin : string, extMax : string, phpMin : string, phpMax : string, dependencies : array = [], polyfill : string = «unknown», deprecated : string = «unknown»)</td></tr>
     <tr><td align="left">+ getName() : string</td></tr>
     <tr><td align="left">+ getDeclaringClass() : ?string</td></tr>
     <tr><td align="left">+ getPolyfill() : ?string</td></tr>
+    <tr><td align="left">+ getDeprecated() : ?string</td></tr>
     <tr><td align="left">+ getExtensionName() : string</td></tr>
     <tr><td align="left">+ getDependencies() : array</td></tr>
     <tr><td align="left">+ getExtMin() : string</td></tr>

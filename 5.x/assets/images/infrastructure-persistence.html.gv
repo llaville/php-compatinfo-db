@@ -58,6 +58,8 @@ digraph {
     <tr><td align="left">+ setDeclaringClass(declaringClass : string) : void</td></tr>
     <tr><td align="left">+ getPolyfill() : ?string</td></tr>
     <tr><td align="left">+ setPolyfill(polyfill : string) : void</td></tr>
+    <tr><td align="left">+ getDeprecated() : ?string</td></tr>
+    <tr><td align="left">+ setDeprecated(deprecated : string) : void</td></tr>
     <tr><td align="left">+ getExtension() : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension</td></tr>
     <tr><td align="left">+ setExtension(extension : Bartlett\\CompatInfoDb\\Infrastructure\\Persistence\\Doctrine\\Entity\\Extension) : void</td></tr>
     <tr><td align="left">+ addDependencies(dependencies : array) : self</td></tr>
