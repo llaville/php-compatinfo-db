@@ -1,0 +1,27 @@
+[
+    {
+        "name": "AMQPException",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQPConnectionException",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQPChannelException",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQPQueueException",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQPExchangeException",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    }
+]

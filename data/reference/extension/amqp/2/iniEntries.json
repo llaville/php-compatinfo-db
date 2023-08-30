@@ -1,0 +1,12 @@
+[
+    {
+        "name": "amqp.deserialization_depth",
+        "ext_min": "2.0.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "amqp.serialization_depth",
+        "ext_min": "2.0.0",
+        "php_min": "7.4.0"
+    }
+]

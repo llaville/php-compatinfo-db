@@ -1,0 +1,42 @@
+[
+    {
+        "name": "AMQP_EXTENSION_VERSION",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_EXTENSION_VERSION_MAJOR",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_EXTENSION_VERSION_MINOR",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_EXTENSION_VERSION_PATCH",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_EXTENSION_VERSION_EXTRA",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_EXTENSION_VERSION_ID",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_DELIVERY_MODE_TRANSIENT",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "AMQP_DELIVERY_MODE_PERSISTENT",
+        "ext_min": "2.0.0alpha1",
+        "php_min": "7.4.0"
+    }
+]

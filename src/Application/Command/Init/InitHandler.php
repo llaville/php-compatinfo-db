@@ -259,12 +259,12 @@ final class InitHandler implements CommandHandlerInterface
     private function majorReleaseDefinitionProvider(): Generator
     {
         yield 'amqp' => [
-            'classes'    => ['0', '1'],
+            'classes'    => ['0', '1', '2'],
             'const'      => ['1'],
-            'constants'  => ['1'],
-            'iniEntries' => ['0', '1'],
-            'methods'    => ['0', '1'],
-            'releases'   => ['0', '1'],
+            'constants'  => ['1', '2'],
+            'iniEntries' => ['0', '1', '2'],
+            'methods'    => ['0', '1', '2'],
+            'releases'   => ['0', '1', '2'],
         ];
 
         yield 'apc' => [
