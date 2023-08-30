@@ -92,7 +92,7 @@ final class Constant_
     {
         return $this->deprecated;
     }
-    
+
     /**
      * @return string
      */
