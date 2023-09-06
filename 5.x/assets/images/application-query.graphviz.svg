@@ -186,8 +186,8 @@
 <text text-anchor="start" x="254.5" y="-153.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="254.5" y="-134.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="254.5" y="-115.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.30&quot; {readOnly}</text>
-<text text-anchor="start" x="254.5" y="-96.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.22&quot; {readOnly}</text>
-<text text-anchor="start" x="254.5" y="-77.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.9&quot; {readOnly}</text>
+<text text-anchor="start" x="254.5" y="-96.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.23&quot; {readOnly}</text>
+<text text-anchor="start" x="254.5" y="-77.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.10&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="249.5,-63 249.5,-69 1223.5,-69 1223.5,-63 249.5,-63"/>
 <polygon fill="none" stroke="black" points="249.5,-19 249.5,-63 1223.5,-63 1223.5,-19 249.5,-19"/>
 <text text-anchor="start" x="254.5" y="-46.8" font-family="Times,serif" font-size="14.00">+ __construct(distributionRepository : Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository)</text>
@@ -219,8 +219,8 @@
 <text text-anchor="start" x="1594.5" y="-134.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="1594.5" y="-115.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="1594.5" y="-96.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.30&quot; {readOnly}</text>
-<text text-anchor="start" x="1594.5" y="-77.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.22&quot; {readOnly}</text>
-<text text-anchor="start" x="1594.5" y="-58.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.9&quot; {readOnly}</text>
+<text text-anchor="start" x="1594.5" y="-77.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.23&quot; {readOnly}</text>
+<text text-anchor="start" x="1594.5" y="-58.8" font-family="Times,serif" font-size="14.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.10&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="1589.5,-44 1589.5,-50 2035.5,-50 2035.5,-44 1589.5,-44"/>
 <polygon fill="none" stroke="black" points="1589.5,-38 1589.5,-44 2035.5,-44 2035.5,-38 1589.5,-38"/>
 </g>
