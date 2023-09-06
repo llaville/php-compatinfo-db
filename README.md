@@ -26,7 +26,7 @@ This database is currently only support by its initial project [php-compatinfo](
  | `4.0.x`  to `4.1.x`  | `>= 7.4` | `6.2`, `6.3` |
  | `4.2.x`  to `4.5.x`  | `>= 7.4` | `6.4`        |
  | `4.6.x`  to `4.11.x` | `>= 7.4` | `6.5`        |
- | `5.0.x`  to `5.8.x`  | `>= 8.0` | `7.0`        |
+ | `5.0.x`  to `5.9.x`  | `>= 8.0` | `7.0`        |
 
 ## Documentation
 
