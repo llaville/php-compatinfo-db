@@ -22,5 +22,11 @@
         "name": "removeArgument",
         "ext_min": "2.0.0beta1",
         "php_min": "7.4.0"
+    },
+    {
+        "class_name": "AMQPQueue",
+        "name": "recover",
+        "ext_min": "2.1.0",
+        "php_min": "7.4.0"
     }
 ]
