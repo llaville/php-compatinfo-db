@@ -1,0 +1,7 @@
+[
+    {
+        "name": "AMQPValue",
+        "ext_min": "2.1.0",
+        "php_min": "7.4.0"
+    }
+]

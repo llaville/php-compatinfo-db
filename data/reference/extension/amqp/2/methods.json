@@ -28,5 +28,11 @@
         "name": "recover",
         "ext_min": "2.1.0",
         "php_min": "7.4.0"
+    },
+    {
+        "class_name": "AMQPValue",
+        "name": "toAmqpValue",
+        "ext_min": "2.1.0",
+        "php_min": "7.4.0"
     }
 ]
