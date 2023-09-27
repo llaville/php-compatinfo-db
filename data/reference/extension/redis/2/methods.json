@@ -75,6 +75,7 @@
         "class_name": "Redis",
         "name": "getSet",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -87,6 +88,7 @@
         "class_name": "Redis",
         "name": "renameKey",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -99,6 +101,7 @@
         "class_name": "Redis",
         "name": "getMultiple",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -189,6 +192,7 @@
         "class_name": "Redis",
         "name": "getKeys",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -273,30 +277,35 @@
         "class_name": "Redis",
         "name": "lSize",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "lRemove",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "listTrim",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "lGet",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "lGetRange",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -321,12 +330,14 @@
         "class_name": "Redis",
         "name": "sSize",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "sRemove",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -351,6 +362,7 @@
         "class_name": "Redis",
         "name": "sContains",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -399,6 +411,7 @@
         "class_name": "Redis",
         "name": "setTimeout",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -556,6 +569,7 @@
         "class_name": "Redis",
         "name": "zDelete",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -568,6 +582,7 @@
         "class_name": "Redis",
         "name": "zReverseRange",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -598,12 +613,14 @@
         "class_name": "Redis",
         "name": "zDeleteRangeByScore",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "zDeleteRangeByRank",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -1090,6 +1107,7 @@
         "class_name": "Redis",
         "name": "sGetMembers",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -1120,6 +1138,7 @@
         "class_name": "Redis",
         "name": "zRemove",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -1132,6 +1151,7 @@
         "class_name": "Redis",
         "name": "zRemoveRangeByScore",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -1150,12 +1170,14 @@
         "class_name": "Redis",
         "name": "zSize",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "substr",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -1240,18 +1262,21 @@
         "class_name": "Redis",
         "name": "sendEcho",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "evaluate",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "Redis",
         "name": "evaluateSha",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
@@ -1414,12 +1439,14 @@
         "class_name": "RedisArray",
         "name": "delete",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {
         "class_name": "RedisArray",
         "name": "getMultiple",
         "ext_min": "2.2.3",
+        "ext_max": "5.3.7",
         "php_min": "5.2.0"
     },
     {

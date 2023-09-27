@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "Redis",
+        "name": "LEFT",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "RIGHT",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    }
+]

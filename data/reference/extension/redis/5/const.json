@@ -27,6 +27,7 @@
         "class_name": "Redis",
         "name": "COMPRESSION_ZSTD_MIN",
         "ext_min": "5.1.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
@@ -75,18 +76,21 @@
         "class_name": "RedisCluster",
         "name": "COMPRESSION_LZ4",
         "ext_min": "5.3.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SCAN_PREFIX",
         "ext_min": "5.3.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SCAN_NOPREFIX",
         "ext_min": "5.3.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
@@ -165,168 +169,196 @@
         "class_name": "RedisCluster",
         "name": "AFTER",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BEFORE",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_MAX_RETRIES",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_BACKOFF_ALGORITHM",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_DEFAULT",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_CONSTANT",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_UNIFORM",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_EXPONENTIAL",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_FULL_JITTER",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_EQUAL_JITTER",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "BACKOFF_ALGORITHM_DECORRELATED_JITTER",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_BACKOFF_BASE",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_BACKOFF_CAP",
         "ext_min": "5.3.5RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_NONE",
         "ext_min": "4.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_LZF",
         "ext_min": "4.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "REDIS_STREAM",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_REPLY_LITERAL",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SERIALIZER_NONE",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SERIALIZER_PHP",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SERIALIZER_IGBINARY",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SERIALIZER_MSGPACK",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "SERIALIZER_JSON",
         "ext_min": "5.0.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_COMPRESSION_LEVEL",
         "ext_min": "5.1.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_ZSTD",
         "ext_min": "5.1.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_ZSTD_MIN",
         "ext_min": "5.1.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_ZSTD_DEFAULT",
         "ext_min": "5.1.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "COMPRESSION_ZSTD_MAX",
         "ext_min": "5.1.0RC1",
+        "ext_max": "5.3.7",
         "php_min": "5.3.0"
     },
     {
         "class_name": "RedisCluster",
         "name": "OPT_NULL_MULTIBULK_AS_NULL",
         "ext_min": "5.3.2RC1",
+        "ext_max": "5.3.7",
         "php_min": "7.0.0"
     }
 ]

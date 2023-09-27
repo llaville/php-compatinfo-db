@@ -1,0 +1,482 @@
+[
+    {
+        "class_name": "Redis",
+        "name": "bzmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "blmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "lmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "copy",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "delete",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "eval_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "evalsha_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "failover",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "expiretime",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "pexpiretime",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "fcall",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "fcall_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "function",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "geosearch",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "geosearchstore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "getEx",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "getDel",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "lcs",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "getset",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "getTransferredBytes",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "clearTransferredBytes",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hRandField",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "lMove",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "blmove",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "lPos",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "rPush",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "rPushx",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "open",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "popen",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "reset",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "sintercard",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "slaveof",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "touch",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "sort_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "sunsubscribe",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "xautoclaim",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zMscore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zrangestore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zRandMember",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "replicaof",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "ssubscribe",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zdiff",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zdiffstore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zinter",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zintercard",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "zunion",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "bzmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "blmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "lmpop",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "blmove",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "lmove",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "copy",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "decrbyfloat",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "eval_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "evalsha_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "touch",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "expiretime",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "pexpiretime",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "geosearch",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "geosearchstore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "lcs",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "gettransferredbytes",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "cleartransferredbytes",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hrandfield",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "lpos",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "sintercard",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "smismember",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "sort_ro",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "xautoclaim",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zintercard",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zrangestore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zrandmember",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zmscore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zinter",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zdiffstore",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zunion",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "zdiff",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RedisSentinel",
+        "name": "myid",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.0.0"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "name": "redis.session.early_refresh",
+        "ext_min": "6.0.0RC1",
+        "php_min": "7.2.0"
+    }
+]

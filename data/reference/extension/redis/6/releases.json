@@ -1,0 +1,26 @@
+[
+    {
+        "rel_version": "6.0.0RC1",
+        "rel_date": "2023-08-01",
+        "rel_state": "alpha",
+        "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "6.0.0RC2",
+        "rel_date": "2023-08-20",
+        "rel_state": "beta",
+        "php_min": "7.2.0"
+    },
+    {
+        "rel_version": "6.0.0",
+        "rel_date": "2023-09-09",
+        "rel_state": "stable",
+        "php_min": "7.2.0"
+    },
+    {
+        "rel_version": "6.0.1",
+        "rel_date": "2023-09-26",
+        "rel_state": "stable",
+        "php_min": "7.2.0"
+    }
+]

@@ -951,10 +951,10 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'redis' => [
             'classes'    => ['2', '5'],
-            'const'      => ['2', '4', '5'],
-            'iniEntries' => ['2', '3', '4', '5'],
-            'methods'    => ['2', '3', '4', '5'],
-            'releases'   => ['2', '3', '4', '5'],
+            'const'      => ['2', '4', '5', '6'],
+            'iniEntries' => ['2', '3', '4', '5', '6'],
+            'methods'    => ['2', '3', '4', '5', '6'],
+            'releases'   => ['2', '3', '4', '5', '6'],
         ];
 
         yield 'reflection' => [
