@@ -74,8 +74,8 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.23" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.10" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.24" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.11" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
@@ -203,8 +203,8 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.23" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.10" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.24" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.11" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>
     <tr><td></td></tr>
