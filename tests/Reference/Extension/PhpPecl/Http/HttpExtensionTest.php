@@ -42,6 +42,8 @@ class HttpExtensionTest extends GenericTestCase
             'http\\Client\\Curl\\Versions\\ARES',
             // when age >=2
             'http\\Client\\Curl\\Versions\\IDN',
+            // when OpenSSL built with TLS-SRP support (https://github.com/openssl/openssl/blob/openssl-3.0.9/INSTALL.md#no-srp)
+            'http\\Client\\Curl\\TLSAUTH_SRP',
         ];
 
         self::$optionalclasses = [
