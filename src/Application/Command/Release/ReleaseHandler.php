@@ -43,6 +43,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         '80' => ExtensionVersionProviderInterface::LATEST_PHP_8_0,
         '81' => ExtensionVersionProviderInterface::LATEST_PHP_8_1,
         '82' => ExtensionVersionProviderInterface::LATEST_PHP_8_2,
+        '83' => ExtensionVersionProviderInterface::LATEST_PHP_8_3,
     ];
     private JsonFileHandler $jsonFileHandler;
     private string $refDir;

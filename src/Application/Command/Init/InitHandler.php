@@ -46,7 +46,7 @@ final class InitHandler implements CommandHandlerInterface
     private const RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS = 110;
     private const RETURN_CODE_DATABASE_READONLY = 120;
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
-    private const PHP_RELEASES_8 = ['80', '81', '82'];
+    private const PHP_RELEASES_8 = ['80', '81', '82', '83'];
     private JsonFileHandler $jsonFileHandler;
     private DistributionRepository $distributionRepository;
     private EntityManagerInterface $entityManager;
