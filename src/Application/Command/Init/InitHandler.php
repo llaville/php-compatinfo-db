@@ -444,7 +444,10 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'date' => [
-            'classes'    => ['52', '53', '55'],
+            'classes'    => [
+                '52', '53', '55',
+                '83',
+            ],
             'const'      => ['52', '53', '70', '71', '72', '82'],
             'constants'  => ['51', '70', '82'],
             'functions'  => ['40', '50', '51', '52', '53', '55'],
