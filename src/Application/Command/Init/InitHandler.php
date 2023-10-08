@@ -376,7 +376,7 @@ final class InitHandler implements CommandHandlerInterface
                 '40',
                 '50', '51', '53', '55',
                 '70', '71', '73', '74',
-                '80', '81', '82',
+                '80', '81', '82', '83',
             ],
             'const' => ['80'],
             'constants' => [
@@ -393,7 +393,7 @@ final class InitHandler implements CommandHandlerInterface
             'methods' => [
                 '51', '53', '55',
                 '70', '72', '74',
-                '80', '81', '82',
+                '80', '81', '82', '83',
             ],
             'iniEntries' => [
                 '40', '41',
