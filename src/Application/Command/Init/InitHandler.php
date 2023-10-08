@@ -399,7 +399,7 @@ final class InitHandler implements CommandHandlerInterface
                 '40', '41',
                 '50', '54', '55', '56',
                 '70', '71', '73', '74',
-                '80', '81', '82',
+                '80', '81', '82', '83',
             ],
             'interfaces' => [
                 '51', '53',

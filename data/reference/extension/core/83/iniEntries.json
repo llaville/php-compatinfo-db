@@ -1,0 +1,12 @@
+[
+    {
+        "name": "zend.max_allowed_stack_size",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "zend.reserved_stack_size",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]
