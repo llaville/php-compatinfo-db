@@ -1,0 +1,143 @@
+[
+    {
+        "name": "CURLINFO_CAPATH",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.84.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLINFO_CAINFO",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.84.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_MIME_OPTIONS",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.81.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLMIMEOPT_FORMESCAPE",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.81.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_WS_OPTIONS",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.86.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLWS_RAW_MODE",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.86.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_SSH_HOSTKEYFUNCTION",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.84.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PROTOCOLS_STR",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.85.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_REDIR_PROTOCOLS_STR",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.85.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_CA_CACHE_TIMEOUT",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.87.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_QUICK_EXIT",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.87.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLKHMATCH_OK",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "name": "CURLKHMATCH_MISMATCH",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "name": "CURLKHMATCH_MISSING",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "name": "CURLKHMATCH_LAST",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    }
+]

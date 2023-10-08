@@ -427,7 +427,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'curl' => [
             'classes'    => ['55', '80', '81'],
-            'constants'  => ['40', '51', '52', '53', '54', '55', '56', '70', '73', '81', '82'],
+            'constants'  => [
+                '40',
+                '51', '52', '53', '54', '55', '56',
+                '70', '73',
+                '81', '82', '83',
+            ],
             'functions'  => ['40', '50', '51', '55', '71', '82'],
             'iniEntries' => ['53'],
             'methods'    => ['55', '81'],
