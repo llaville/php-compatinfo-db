@@ -1,6 +1,12 @@
 [
     {
         "class_name": "DOMNode",
+        "name": "contains",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "class_name": "DOMNode",
         "name": "isEqualNode",
         "ext_min": "8.3.0beta1",
         "php_min": "8.3.0beta1"
