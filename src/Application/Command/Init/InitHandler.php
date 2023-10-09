@@ -761,7 +761,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'mbstring' => [
             'constants'  => ['40', '73', '74'],
-            'functions'  => ['40', '42', '43', '44', '50', '52', '53', '54', '72', '74'],
+            'functions'  => [
+                '40', '42', '43', '44',
+                '50', '52', '53', '54',
+                '72', '74',
+                '83',
+            ],
             'iniEntries' => ['40', '42', '43', '51', '73', '74'],
             'releases'   => array_merge(
                 ['40', '42', '43', '44', '50', '51', '52', '53', '54'],
