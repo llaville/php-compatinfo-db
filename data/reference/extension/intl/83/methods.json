@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "IntlCalendar",
+        "name": "setDate",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "class_name": "IntlCalendar",
+        "name": "setDateTime",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    }
+]

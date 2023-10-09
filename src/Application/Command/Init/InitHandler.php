@@ -674,7 +674,12 @@ final class InitHandler implements CommandHandlerInterface
             'constants'  => ['1', '2'],
             'functions'  => ['1', '2', '55', '71', '73'],
             'iniEntries' => ['1', '3'],
-            'methods'    => ['1', '2', '55', '70', '71', '73', '81'],
+            'methods'    => [
+                '1', '2',
+                '55',
+                '70', '71', '73',
+                '81', '83',
+            ],
             'releases'   => array_merge(
                 ['1', '2', '3', '55'],
                 self::PHP_RELEASES_7,
