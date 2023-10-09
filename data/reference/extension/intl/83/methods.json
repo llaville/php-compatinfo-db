@@ -10,5 +10,19 @@
         "name": "setDateTime",
         "ext_min": "8.3.0beta1",
         "php_min": "8.3.0beta1"
+    },
+    {
+        "class_name": "IntlGregorianCalendar",
+        "name": "createFromDate",
+        "static": true,
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "class_name": "IntlGregorianCalendar",
+        "name": "createFromDateTime",
+        "static": true,
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
     }
 ]
