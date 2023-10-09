@@ -714,7 +714,12 @@ final class InitHandler implements CommandHandlerInterface
         yield 'ldap' => [
             'classes'    => ['81'],
             'constants'  => ['40', '53', '54', '56', '70', '71', '72'],
-            'functions'  => ['40', '42', '50', '54', '56', '72', '73', '80'],
+            'functions'  => [
+                '40', '42',
+                '50', '54', '56',
+                '72', '73',
+                '80', '83',
+            ],
             'iniEntries' => ['40'],
             'releases'   => array_merge(
                 ['40', '42', '50', '53', '54', '56'],

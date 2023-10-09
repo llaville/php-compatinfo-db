@@ -1,0 +1,7 @@
+[
+    {
+        "name": "ldap_exop_sync",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    }
+]
