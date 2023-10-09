@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "Spoofchecker",
+        "name": "MIXED_NUMBERS",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "HIDDEN_OVERLAY",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]

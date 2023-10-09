@@ -670,7 +670,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'intl' => [
             'classes'    => ['1', '2', '55', '70', '81'],
-            'const'      => ['1', '2', '55', '70', '73', '74', '80'],
+            'const'      => [
+                '1', '2',
+                '55',
+                '70', '73', '74',
+                '80', '83',
+            ],
             'constants'  => ['1', '2'],
             'functions'  => ['1', '2', '55', '71', '73'],
             'iniEntries' => ['1', '3'],
