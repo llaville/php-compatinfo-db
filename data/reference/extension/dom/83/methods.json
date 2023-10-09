@@ -7,6 +7,18 @@
     },
     {
         "class_name": "DOMElement",
+        "name": "insertAdjacentElement",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "class_name": "DOMElement",
+        "name": "insertAdjacentText",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    },
+    {
+        "class_name": "DOMElement",
         "name": "toggleAttribute",
         "ext_min": "8.3.0beta1",
         "php_min": "8.3.0beta1"
