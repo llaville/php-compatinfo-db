@@ -13,5 +13,10 @@
         "name": "str_decrement",
         "ext_min": "8.3.0beta1",
         "php_min": "8.3.0beta1"
+    },
+    {
+        "name": "stream_context_set_options",
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
     }
 ]
