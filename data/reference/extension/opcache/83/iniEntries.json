@@ -1,0 +1,7 @@
+[
+    {
+        "name": "opcache.jit_max_trace_length",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]

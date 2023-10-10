@@ -890,7 +890,11 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'opcache' => [
             'functions'  => ['70'],
-            'iniEntries' => ['56', '70', '71', '74', '80'],
+            'iniEntries' => [
+                '56',
+                '70', '71', '74',
+                '80', '83',
+            ],
             'releases'   => array_merge(
                 ['56'],
                 self::PHP_RELEASES_7,
