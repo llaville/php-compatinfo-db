@@ -33,6 +33,9 @@ class PgsqlExtensionTest extends GenericTestCase
             'PGSQL_PIPELINE_ON',
             'PGSQL_PIPELINE_OFF',
             'PGSQL_PIPELINE_ABORTED',
+            // depends on TRACE support (PQTRACE_SUPPRESS_TIMESTAMPS, PQTRACE_REGRESS_MODE)
+            'PGSQL_TRACE_SUPPRESS_TIMESTAMPS',
+            'PGSQL_TRACE_REGRESS_MODE',
         ];
 
         self::$optionalfunctions = [

@@ -31,6 +31,16 @@
         ]
     },
     {
+        "name": "PGSQL_TRACE_SUPPRESS_TIMESTAMPS",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "PGSQL_TRACE_REGRESS_MODE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
         "name": "PGSQL_SHOW_CONTEXT_NEVER",
         "ext_min": "8.3.0alpha2",
         "php_min": "8.3.0alpha2"
