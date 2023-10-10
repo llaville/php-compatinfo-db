@@ -974,8 +974,17 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'pgsql' => [
             'classes'    => ['81'],
-            'constants'  => ['40', '51', '54', '56', '71', '73'],
-            'functions'  => ['40', '42', '43', '50', '51', '52', '54', '56'],
+            'constants'  => [
+                '40',
+                '51', '54', '56',
+                '71', '73',
+                '83',
+            ],
+            'functions'  => [
+                '40', '42', '43',
+                '50', '51', '52', '54', '56',
+                '83',
+            ],
             'iniEntries' => ['40'],
             'releases'   => array_merge(
                 ['40', '42', '43', '50', '51', '52', '54', '56'],

@@ -27,7 +27,20 @@ class PgsqlExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = [
-            'PGSQL_CONNECTION_SSL_STARTUP'
+            'PGSQL_CONNECTION_SSL_STARTUP',
+            // depends on LIBPQ_HAS_PIPELINING when adding PHP 8.3 support
+            'PGSQL_PIPELINE_SYNC',
+            'PGSQL_PIPELINE_ON',
+            'PGSQL_PIPELINE_OFF',
+            'PGSQL_PIPELINE_ABORTED',
+        ];
+
+        self::$optionalfunctions = [
+            // depends on LIBPQ_HAS_PIPELINING when adding PHP 8.3 support
+            'pg_enter_pipeline_mode',
+            'pg_exit_pipeline_mode',
+            'pg_pipeline_status',
+            'pg_pipeline_sync',
         ];
 
         parent::setUpBeforeClass();

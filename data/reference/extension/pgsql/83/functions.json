@@ -1,0 +1,22 @@
+[
+    {
+        "name": "pg_enter_pipeline_mode",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "pg_exit_pipeline_mode",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "pg_pipeline_status",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "pg_pipeline_sync",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]
