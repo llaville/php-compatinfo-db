@@ -904,7 +904,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'openssl' => [
             'classes'    => ['80'],
-            'constants'  => ['40', '43', '50', '52', '53', '54', '56', '71', '80'],
+            'constants'  => [
+                '40', '43',
+                '50', '52', '53', '54', '56',
+                '71',
+                '80', '83',
+            ],
             'functions'  => [
                 '40', '42',
                 '52', '53', '55', '56',

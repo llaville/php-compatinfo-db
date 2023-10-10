@@ -1,0 +1,12 @@
+[
+    {
+        "name": "OPENSSL_CMS_OLDMIMETYPE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "PKCS7_NOOLDMIMETYPE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]
