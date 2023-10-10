@@ -63,7 +63,8 @@
     {
         "name": "opcache.consistency_checks",
         "ext_min": "7.0.1",
-        "php_min": "5.2.0"
+        "php_min": "5.2.0",
+        "php_max": "8.2.11"
     },
     {
         "name": "opcache.force_restart_timeout",

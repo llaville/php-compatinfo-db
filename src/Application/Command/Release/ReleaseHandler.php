@@ -451,6 +451,15 @@ final class ReleaseHandler implements CommandHandlerInterface
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
+        $refName = 'opcache';
+        $ext     = 'iniEntries';
+        $major   = '70';
+        $entry   = 'php_max';
+        $names   = [
+            'opcache.consistency_checks'            => $this->latestPhpVersion['82'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
         $refName = 'reflection';
         $ext     = 'methods';
         $major   = '50';
