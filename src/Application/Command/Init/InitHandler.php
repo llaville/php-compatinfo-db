@@ -701,7 +701,10 @@ final class InitHandler implements CommandHandlerInterface
         yield 'json' => [
             'classes'    => ['73'],
             'constants'  => ['53', '54', '55', '56', '70', '71', '72', '73', '81'],
-            'functions'  => ['52', '53', '55'],
+            'functions'  => [
+                '52', '53', '55',
+                '83',
+            ],
             'interfaces' => ['54'],
             'methods'    => ['54'],
             'releases'   => array_merge(

@@ -1,10 +1,5 @@
 [
     {
-        "name": "json_validate",
-        "ext_min": "8.3.0alpha1",
-        "php_min": "8.3.0alpha1"
-    },
-    {
         "name": "str_increment",
         "ext_min": "8.3.0beta1",
         "php_min": "8.3.0beta1"
