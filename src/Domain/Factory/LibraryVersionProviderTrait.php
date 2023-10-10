@@ -150,6 +150,12 @@ trait LibraryVersionProviderTrait
                     $versionText = preg_replace('{^(\S+).*}', '$1', $constant);
                 }
                 break;
+            case 'libpq':
+                if ($constant = $this->constantExists('PGSQL_LIBPQ_VERSION')) {
+                    // @see https://github.com/php/php-src/commit/eae893bd3e426ea7f9fcf42b715efb1e49f055ab
+                    $versionText = $constant;
+                }
+                break;
             case 'sqlite3':
                 if (method_exists('sqlite3', 'version')) {
                     $meta = \SQLite3::version();
