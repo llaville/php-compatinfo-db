@@ -18,5 +18,16 @@
         "name": "pg_pipeline_sync",
         "ext_min": "8.3.0alpha1",
         "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "pg_set_error_context_visibility",
+        "ext_min": "8.3.0alpha2",
+        "php_min": "8.3.0alpha2",
+        "dependencies": [
+            {
+                "name": "libpq",
+                "constraint": ">=9.6"
+            }
+        ]
     }
 ]
