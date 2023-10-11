@@ -18,5 +18,20 @@
         "name": "UDPLITE_RECV_CSCOV",
         "ext_min": "8.3.0alpha1",
         "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "SO_ATTACH_REUSEPORT_CBPF",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "SO_DETACH_FILTER",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "SO_DETACH_BPF",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
     }
 ]

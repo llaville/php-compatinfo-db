@@ -266,6 +266,10 @@ class SocketsExtensionTest extends GenericTestCase
             // if def
             'UDPLITE_SEND_CSCOV',
             'UDPLITE_RECV_CSCOV',
+            // if def
+            'SO_ATTACH_REUSEPORT_CBPF',
+            'SO_DETACH_FILTER',
+            'SO_DETACH_BPF',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 
