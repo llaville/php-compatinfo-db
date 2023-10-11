@@ -261,6 +261,11 @@ class SocketsExtensionTest extends GenericTestCase
             'TCP_DEFER_ACCEPT',
             // if def
             'IP_BIND_ADDRESS_NO_PORT',
+            // if def IPPROTO_UDPLITE
+            'SOL_UDPLITE',
+            // if def
+            'UDPLITE_SEND_CSCOV',
+            'UDPLITE_RECV_CSCOV',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 

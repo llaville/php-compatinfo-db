@@ -3,5 +3,20 @@
         "name": "IP_BIND_ADDRESS_NO_PORT",
         "ext_min": "8.3.0alpha1",
         "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "SOL_UDPLITE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "UDPLITE_SEND_CSCOV",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "UDPLITE_RECV_CSCOV",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
     }
 ]
