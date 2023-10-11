@@ -152,7 +152,8 @@ trait LibraryVersionProviderTrait
                 break;
             case 'libpq':
                 if ($constant = $this->constantExists('PGSQL_LIBPQ_VERSION')) {
-                    // @see https://github.com/php/php-src/commit/eae893bd3e426ea7f9fcf42b715efb1e49f055ab
+                    // Available since PHP 5.4.4
+                    // (@see https://github.com/php/php-src/commit/cce0f8e507c05ecc7c8222efa5005991f04ce4c0)
                     $versionText = $constant;
                 }
                 break;
