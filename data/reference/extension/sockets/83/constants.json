@@ -38,5 +38,10 @@
         "name": "TCP_QUICKACK",
         "ext_min": "8.3.0alpha1",
         "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "TCP_REPAIR",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
     }
 ]
