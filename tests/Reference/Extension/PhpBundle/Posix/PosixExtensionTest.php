@@ -28,6 +28,17 @@ class PosixExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
+        self::$optionalconstants = [
+            // Requires _SC_ARG_MAX
+            'POSIX_SC_ARG_MAX',
+            // Requires _SC_PAGESIZE
+            'POSIX_SC_PAGESIZE',
+            // Requires _SC_NPROCESSORS_CONF
+            'POSIX_SC_NPROCESSORS_CONF',
+            // Requires _SC_NPROCESSORS_ONLN
+            'POSIX_SC_NPROCESSORS_ONLN',
+        ];
+
         self::$optionalfunctions = [
             // Requires HAVE_EACCESS
             'posix_eaccess',

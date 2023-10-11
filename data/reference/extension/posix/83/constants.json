@@ -1,0 +1,22 @@
+[
+    {
+        "name": "POSIX_SC_ARG_MAX",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "POSIX_SC_PAGESIZE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "POSIX_SC_NPROCESSORS_CONF",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "POSIX_SC_NPROCESSORS_ONLN",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]

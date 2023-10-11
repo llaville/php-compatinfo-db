@@ -1006,7 +1006,11 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'posix' => [
-            'constants'  => ['51', '70'],
+            'constants'  => [
+                '51',
+                '70',
+                '83',
+            ],
             'functions'  => [
                 '40', '42',
                 '51', '52',
