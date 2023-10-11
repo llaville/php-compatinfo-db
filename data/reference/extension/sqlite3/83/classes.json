@@ -1,0 +1,7 @@
+[
+    {
+        "name": "SQLite3Exception",
+        "ext_min": "8.3.0alpha3",
+        "php_min": "8.3.0alpha3"
+    }
+]

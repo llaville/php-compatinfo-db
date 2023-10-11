@@ -1240,7 +1240,10 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'sqlite3' => [
-            'classes'    => ['53'],
+            'classes'    => [
+                '53',
+                '83',
+            ],
             'const'      => ['80'],
             'constants'  => ['53', '71'],
             'iniEntries' => ['53', '56'],
