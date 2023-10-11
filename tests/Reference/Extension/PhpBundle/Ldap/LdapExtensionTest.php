@@ -9,6 +9,8 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Ldap;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
+use Exception;
+
 /**
  * Unit tests for PHP_CompatInfo_Db, ldap extension Reference
  *
@@ -22,7 +24,7 @@ class LdapExtensionTest extends GenericTestCase
     /**
      * Sets up the shared fixture.
      *
-     * @return void
+     * @throws Exception
      */
     public static function setUpBeforeClass(): void
     {
@@ -31,6 +33,8 @@ class LdapExtensionTest extends GenericTestCase
             'ldap_sasl_bind',
             // Requires OpenLdap
             'ldap_set_rebind_proc',
+            // Requires HAVE_ORALDAP and LDAP_API_FEATURE_X_OPENLDAP
+            'ldap_connect_wallet',
         );
 
         self::$optionalconstants = [
