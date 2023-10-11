@@ -9,6 +9,8 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Posix;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
+use Exception;
+
 /**
  * Unit tests for PHP_CompatInfo_Db, posix extension Reference
  *
@@ -19,4 +21,18 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
  */
 class PosixExtensionTest extends GenericTestCase
 {
+    /**
+     * Sets up the shared fixture.
+     *
+     * @throws Exception
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$optionalfunctions = [
+            // Requires HAVE_EACCESS
+            'posix_eaccess',
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }

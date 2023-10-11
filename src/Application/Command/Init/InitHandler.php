@@ -1007,7 +1007,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'posix' => [
             'constants'  => ['51', '70'],
-            'functions'  => ['40', '42', '51', '52', '70'],
+            'functions'  => [
+                '40', '42',
+                '51', '52',
+                '70',
+                '83',
+            ],
             'releases'   => array_merge(
                 ['40', '42', '51', '52'],
                 self::PHP_RELEASES_7,
