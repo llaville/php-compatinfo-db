@@ -8,5 +8,10 @@
         "name": "posix_sysconf",
         "ext_min": "8.3.0alpha1",
         "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "posix_pathconf",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
     }
 ]

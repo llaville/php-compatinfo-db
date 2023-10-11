@@ -37,11 +37,33 @@ class PosixExtensionTest extends GenericTestCase
             'POSIX_SC_NPROCESSORS_CONF',
             // Requires _SC_NPROCESSORS_ONLN
             'POSIX_SC_NPROCESSORS_ONLN',
+            // Requires _PC_LINK_MAX
+            'POSIX_PC_LINK_MAX',
+            // Requires _PC_MAX_CANON
+            'POSIX_PC_MAX_CANON',
+            // Requires _PC_MAX_INPUT
+            'POSIX_PC_MAX_INPUT',
+            // Requires _PC_NAME_MAX
+            'POSIX_PC_NAME_MAX',
+            // Requires _PC_PATH_MAX
+            'POSIX_PC_PATH_MAX',
+            // Requires _PC_PIPE_BUF
+            'POSIX_PC_PIPE_BUF',
+            // Requires _PC_CHOWN_RESTRICTED
+            'POSIX_PC_CHOWN_RESTRICTED',
+            // Requires _PC_NO_TRUNC
+            'POSIX_PC_NO_TRUNC',
+            // Requires _PC_ALLOC_SIZE_MIN
+            'POSIX_PC_ALLOC_SIZE_MIN',
+            // Requires _PC_SYMLINK_MAX
+            'POSIX_PC_SYMLINK_MAX',
         ];
 
         self::$optionalfunctions = [
             // Requires HAVE_EACCESS
             'posix_eaccess',
+            // Requires HAVE_POSIX_PATHCONF
+            'posix_pathconf',
         ];
 
         parent::setUpBeforeClass();
