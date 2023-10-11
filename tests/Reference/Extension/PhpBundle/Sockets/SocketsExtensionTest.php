@@ -106,6 +106,8 @@ class SocketsExtensionTest extends GenericTestCase
                 'SOCKET_EUNATCH',
                 'SOCKET_EXDEV',
                 'SOCKET_EXFULL',
+                // if def (from ext/sockets/sockets_arginfo.h)
+                'TCP_QUICKACK'
             );
         }
         // Common to Windows and Unix
