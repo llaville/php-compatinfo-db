@@ -1,0 +1,9 @@
+[
+    {
+        "class_name": "ReflectionMethod",
+        "name": "createFromMethodName",
+        "static": true,
+        "ext_min": "8.3.0beta1",
+        "php_min": "8.3.0beta1"
+    }
+]
