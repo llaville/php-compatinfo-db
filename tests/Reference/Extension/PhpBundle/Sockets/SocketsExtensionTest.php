@@ -9,6 +9,8 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Sockets;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
+use Exception;
+
 /**
  * Unit tests for PHP_CompatInfo_Db, sockets extension Reference
  *
@@ -22,7 +24,7 @@ class SocketsExtensionTest extends GenericTestCase
     /**
      * Sets up the shared fixture.
      *
-     * @return void
+     * @throws Exception
      */
     public static function setUpBeforeClass(): void
     {
@@ -263,6 +265,8 @@ class SocketsExtensionTest extends GenericTestCase
         self::$optionalfunctions = array(
             // requires HAVE_SOCKETPAIR
             'socket_create_pair',
+            // requires HAVE_SOCKATMARK
+            'socket_atmark',
         );
 
         parent::setUpBeforeClass();
