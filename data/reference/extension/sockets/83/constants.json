@@ -1,0 +1,7 @@
+[
+    {
+        "name": "IP_BIND_ADDRESS_NO_PORT",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]

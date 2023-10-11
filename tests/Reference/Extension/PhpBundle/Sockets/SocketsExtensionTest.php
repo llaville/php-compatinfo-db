@@ -259,6 +259,8 @@ class SocketsExtensionTest extends GenericTestCase
             'AI_NUMERICSERV',
             'SOL_LOCAL',
             'TCP_DEFER_ACCEPT',
+            // if def
+            'IP_BIND_ADDRESS_NO_PORT',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 
