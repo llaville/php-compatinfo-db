@@ -273,6 +273,16 @@ class SocketsExtensionTest extends GenericTestCase
             'SO_ATTACH_REUSEPORT_CBPF',
             'SO_DETACH_FILTER',
             'SO_DETACH_BPF',
+
+            // if def (from ext/sockets/sockets_arginfo.h)
+            'IP_DONTFRAG',
+            'IP_MTU_DISCOVER',
+            'IP_PMTUDISC_DO',
+            'IP_PMTUDISC_DONT',
+            'IP_PMTUDISC_WANT',
+            'IP_PMTUDISC_PROBE',
+            'IP_PMTUDISC_INTERFACE',
+            'IP_PMTUDISC_OMIT',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 

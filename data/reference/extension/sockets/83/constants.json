@@ -43,5 +43,45 @@
         "name": "TCP_REPAIR",
         "ext_min": "8.3.0alpha1",
         "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_DONTFRAG",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_MTU_DISCOVER",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_PMTUDISC_DO",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_PMTUDISC_DONT",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_PMTUDISC_WANT",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_PMTUDISC_PROBE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_PMTUDISC_INTERFACE",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "name": "IP_PMTUDISC_OMIT",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
     }
 ]
