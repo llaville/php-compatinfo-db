@@ -42,6 +42,30 @@
         "php_min": "8.3.0beta1"
     },
     {
+        "class_name": "DOMNode",
+        "name": "__sleep",
+        "ext_min": "8.3.0RC4",
+        "php_min": "8.3.0RC4"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "__wakeup",
+        "ext_min": "8.3.0RC4",
+        "php_min": "8.3.0RC4"
+    },
+    {
+        "class_name": "DOMNameSpaceNode",
+        "name": "__sleep",
+        "ext_min": "8.3.0RC4",
+        "php_min": "8.3.0RC4"
+    },
+    {
+        "class_name": "DOMNameSpaceNode",
+        "name": "__wakeup",
+        "ext_min": "8.3.0RC4",
+        "php_min": "8.3.0RC4"
+    },
+    {
         "class_name": "DOMParentNode",
         "name": "replaceChildren",
         "ext_min": "8.3.0beta1",
