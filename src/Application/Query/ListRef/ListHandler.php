@@ -57,6 +57,9 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         if (isset($filters['name'])) {
             $platform = $this->filterPlatformByExtensionName($platform, $filters['name']);
         }
+        if ($filters['installed']) {
+            $platform = $this->filterPlatformByExtensionInstalled($platform);
+        }
         if ($filters['outdated']) {
             $platform = $this->filterPlatformByExtensionOutdated($platform);
         }
@@ -87,6 +90,32 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         $extensions = [];
         foreach ($platform->getExtensions() as $extension) {
             if (preg_match('/^(' . $name . ')$/', $extension->getName())) {
+                $extensions[] = $extension;
+            }
+        }
+
+        return new Platform(
+            $platform->getDescription(),
+            $platform->getVersion(),
+            $platform->getCreatedAt(),
+            $extensions
+        );
+    }
+
+    private function filterPlatformByExtensionInstalled(Platform $platform): Platform
+    {
+        $extensions = [];
+
+        foreach ($platform->getExtensions() as $extension) {
+            $name = $extension->getName();
+            if (strcasecmp('opcache', $name) === 0) {
+                // special case
+                $name = 'Zend ' . $name;
+            }
+            $installed = phpversion($name) ? : '';
+            $provided = $extension->getVersion();
+
+            if ($installed !== '' && $installed == $provided) {
                 $extensions[] = $extension;
             }
         }

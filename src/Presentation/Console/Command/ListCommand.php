@@ -41,6 +41,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
             ->setDescription('List all references supported in the Database')
             ->addOption('type', null, InputOption::VALUE_REQUIRED, 'Filter extension by type')
             ->addOption('name', null, InputOption::VALUE_REQUIRED, 'Filter extension by name')
+            ->addOption('installed', 'i', InputOption::VALUE_NONE, 'List installed references only')
             ->addOption('outdated', 'o', InputOption::VALUE_NONE, 'List outdated references only')
         ;
     }
@@ -56,6 +57,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         if (!empty($name)) {
             $filters['name'] = $name;
         }
+        $filters['installed'] = $input->getOption('installed');
         $filters['outdated'] = $input->getOption('outdated');
 
         /** @var ApplicationInterface $app */

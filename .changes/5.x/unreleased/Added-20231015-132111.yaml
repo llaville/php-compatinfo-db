@@ -1,0 +1,4 @@
+kind: Added
+body: db:list command is now able to show installed references only depending of your
+  platform
+time: 2023-10-15T13:21:11.376622946Z
