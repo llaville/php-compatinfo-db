@@ -14,6 +14,7 @@ use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 
 use RuntimeException;
+use function phpversion;
 use function preg_match;
 use function str_replace;
 use function strcasecmp;
@@ -56,6 +57,9 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         if (isset($filters['name'])) {
             $platform = $this->filterPlatformByExtensionName($platform, $filters['name']);
         }
+        if ($filters['outdated']) {
+            $platform = $this->filterPlatformByExtensionOutdated($platform);
+        }
 
         return $platform;
     }
@@ -83,6 +87,32 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         $extensions = [];
         foreach ($platform->getExtensions() as $extension) {
             if (preg_match('/^(' . $name . ')$/', $extension->getName())) {
+                $extensions[] = $extension;
+            }
+        }
+
+        return new Platform(
+            $platform->getDescription(),
+            $platform->getVersion(),
+            $platform->getCreatedAt(),
+            $extensions
+        );
+    }
+
+    private function filterPlatformByExtensionOutdated(Platform $platform): Platform
+    {
+        $extensions = [];
+
+        foreach ($platform->getExtensions() as $extension) {
+            $name = $extension->getName();
+            if (strcasecmp('opcache', $name) === 0) {
+                // special case
+                $name = 'Zend ' . $name;
+            }
+            $installed = phpversion($name) ? : '';
+            $provided = $extension->getVersion();
+
+            if ($installed !== '' && $installed !== $provided) {
                 $extensions[] = $extension;
             }
         }
