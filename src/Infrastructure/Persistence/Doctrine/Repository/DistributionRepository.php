@@ -62,11 +62,13 @@ final class DistributionRepository implements DomainRepositoryInterface
         $hydrator = new ExtensionHydrator();
         $extensions = $hydrator->hydrateArrays($collection->toArray());
 
-        $platform = new PlatformEntity();
-        $platform->setDescription(self::DISTRIBUTION_DESC);
-        $platform->setVersion($distVersion);
-        $platform->addExtensions($extensions);
-        $platform->setCreatedAt(new DateTimeImmutable());
+        $hydrator = new PlatformHydrator();
+        $platform = $hydrator->hydrate([
+            'description' => self::DISTRIBUTION_DESC,
+            'version' => $distVersion,
+            'created_at' => new DateTimeImmutable(),
+            'extensions' => $extensions,
+        ]);
 
         $this->entityManager->persist($platform);
         $this->entityManager->flush();

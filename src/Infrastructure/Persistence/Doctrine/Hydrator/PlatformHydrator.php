@@ -45,6 +45,11 @@ final class PlatformHydrator implements HydratorInterface
             return $object;
         }
 
+        $object->setDescription($data['description']);
+        $object->setVersion($data['version']);
+        $object->setCreatedAt($data['created_at']);
+        $object->addExtensions($data['extensions']);
+
         return $object;
     }
 
