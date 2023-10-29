@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "DOMNode",
+        "name": "__sleep",
+        "ext_min": "8.1.25RC1",
+        "php_min": "8.1.25RC1"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "__wakeup",
+        "ext_min": "8.1.25RC1",
+        "php_min": "8.1.25RC1"
+    },
+    {
+        "class_name": "DOMNameSpaceNode",
+        "name": "__sleep",
+        "ext_min": "8.1.25RC1",
+        "php_min": "8.1.25RC1"
+    },
+    {
+        "class_name": "DOMNameSpaceNode",
+        "name": "__wakeup",
+        "ext_min": "8.1.25RC1",
+        "php_min": "8.1.25RC1"
+    }
+]
