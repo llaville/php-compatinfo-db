@@ -55,7 +55,7 @@ final class ClassRepository implements DomainRepository
         $entity = $this->repository->findOneBy(['name' => $name, 'isInterface' => $isInterface]);
 
         if (null === $entity) {
-            // class does not exists
+            // class does not exist
             return null;
         }
 
