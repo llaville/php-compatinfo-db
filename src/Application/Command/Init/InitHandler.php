@@ -195,6 +195,18 @@ final class InitHandler implements CommandHandlerInterface
                     )
                 );
             }
+
+            $io->section('Constant(s) referenced');
+            foreach ($distribution->getExtensions() as $extension) {
+                $io->text(
+                    array_map(
+                        function ($item) {
+                            return (string) $item;
+                        },
+                        $extension->getConstants()->toArray()
+                    )
+                );
+            }
         }
 
         if (count($extensions) > 0) {

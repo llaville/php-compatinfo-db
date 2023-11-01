@@ -11,6 +11,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
 
+use function sprintf;
+
 /**
  * @Entity
  * @Table(name="constants")
@@ -65,7 +67,14 @@ class Constant_
      */
     public function __toString(): string
     {
-        return sprintf('Constant (id: %s, version: "%s %s")', $this->id, $this->extMin, $this->phpMin);
+        return sprintf(
+            'Constant (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s)',
+            $this->id,
+            $this->getExtension()->getName(),
+            $this->name,
+            $this->extMin,
+            $this->phpMin
+        );
     }
 
     /**
