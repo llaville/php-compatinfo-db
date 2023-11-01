@@ -10,6 +10,7 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 use Doctrine\ORM\Mapping\{Entity, Table, Column, ManyToOne};
 
 use DateTimeImmutable;
+use function sprintf;
 
 /**
  * @Entity

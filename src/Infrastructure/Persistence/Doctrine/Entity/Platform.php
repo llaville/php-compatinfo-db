@@ -12,6 +12,8 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping\{Entity, Table, Id, Column, GeneratedValue, OneToMany};
 
 use DateTimeImmutable;
+use function count;
+use function sprintf;
 
 /**
  * @Entity
