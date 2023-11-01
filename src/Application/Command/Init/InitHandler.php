@@ -183,6 +183,18 @@ final class InitHandler implements CommandHandlerInterface
                     $distribution->getExtensions()
                 )
             );
+
+            $io->section('Configuration(s) referenced');
+            foreach ($distribution->getExtensions() as $extension) {
+                $io->text(
+                    array_map(
+                        function ($item) {
+                            return (string) $item;
+                        },
+                        $extension->getIniEntries()->toArray()
+                    )
+                );
+            }
         }
 
         if (count($extensions) > 0) {
