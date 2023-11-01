@@ -12,6 +12,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
 
 use function array_map;
+use function sprintf;
 
 /**
  * @Entity
@@ -84,10 +85,17 @@ class Function_
      */
     public function __toString(): string
     {
+        if ($this->declaringClass === null) {
+            $name = $this->name;
+        } else {
+            $name = sprintf('%s::%s', $this->declaringClass, $this->name);
+        }
+
         return sprintf(
-            'Function (id: %s, class: %s, version: "%s %s")',
+            'Function (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s)',
             $this->id,
-            $this->declaringClass,
+            $this->getExtension()->getName(),
+            $name,
             $this->extMin,
             $this->phpMin
         );
