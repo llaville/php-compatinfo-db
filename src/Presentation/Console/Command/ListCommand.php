@@ -18,6 +18,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\TableSeparator;
 
+use function array_map;
 use function phpversion;
 use function sprintf;
 use function strcasecmp;
@@ -73,6 +74,20 @@ final class ListCommand extends AbstractCommand implements CommandInterface
 
         $rows = [];
         $extensions = $platform->getExtensions();
+
+        if ($output->isDebug()) {
+            $io = new Style($input, $output);
+            $io->text(
+                array_map(
+                    function ($item) {
+                        return (string) $item;
+                    },
+                    $extensions
+                )
+            );
+            return self::SUCCESS;
+        }
+
         foreach ($extensions as $extension) {
             $name = $extension->getName();
             if (strcasecmp('opcache', $name) === 0) {
