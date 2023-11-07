@@ -1,0 +1,47 @@
+[
+    {
+        "name": "getrandmax",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "lcg_value",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "mt_getrandmax",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "mt_rand",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "mt_srand",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "rand",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "random_bytes",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "random_int",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "srand",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]

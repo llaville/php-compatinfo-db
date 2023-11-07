@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Random\\BrokenRandomEngineError",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\Engine\\Mt19937",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\Engine\\PcgOneseq128XslRr64",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\Engine\\Secure",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\Engine\\Xoshiro256StarStar",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\RandomError",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\RandomException",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\Randomizer",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]

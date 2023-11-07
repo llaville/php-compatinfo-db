@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Random\\CryptoSafeEngine",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "name": "Random\\Engine",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]

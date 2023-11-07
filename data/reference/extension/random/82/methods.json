@@ -1,0 +1,152 @@
+[
+    {
+        "class_name": "Random\\Engine",
+        "name": "generate",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Mt19937",
+        "name": "__construct",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Mt19937",
+        "name": "__debugInfo",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Mt19937",
+        "name": "__serialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Mt19937",
+        "name": "__unserialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\PcgOneseq128XslRr64",
+        "name": "__construct",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\PcgOneseq128XslRr64",
+        "name": "__debugInfo",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\PcgOneseq128XslRr64",
+        "name": "__serialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\PcgOneseq128XslRr64",
+        "name": "__unserialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\PcgOneseq128XslRr64",
+        "name": "jump",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Xoshiro256StarStar",
+        "name": "__construct",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Xoshiro256StarStar",
+        "name": "__debugInfo",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Xoshiro256StarStar",
+        "name": "__serialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Xoshiro256StarStar",
+        "name": "__unserialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Xoshiro256StarStar",
+        "name": "jumpLong",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Engine\\Xoshiro256StarStar",
+        "name": "jump",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "__construct",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "__serialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "__unserialize",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "getBytes",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "getInt",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "nextInt",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "pickArrayKeys",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "shuffleArray",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "shuffleBytes",
+        "ext_min": "8.2.0beta1",
+        "php_min": "8.2.0beta1"
+    }
+]

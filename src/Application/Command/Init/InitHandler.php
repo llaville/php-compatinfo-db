@@ -958,6 +958,17 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => ['0', '1', '2', '3'],
         ];
 
+        yield 'random' => [
+            'classes' => ['82'],
+            'constants' => ['82'],
+            'functions' => ['82'],
+            'interfaces' => ['82'],
+            'methods' => ['82'],
+            'releases' => [
+                '82', '83',
+            ],
+        ];
+
         yield 'raphf' => [
             'functions'  => ['2'],
             'iniEntries' => ['2'],

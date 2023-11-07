@@ -137,6 +137,9 @@
         <testsuite name="posix">
             <directory prefix="Posix" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
+        <testsuite name="random">
+            <directory prefix="Random" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
         <testsuite name="readline">
             <directory prefix="Readline" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
