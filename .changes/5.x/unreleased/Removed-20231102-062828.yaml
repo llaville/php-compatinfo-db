@@ -1,4 +1,4 @@
 kind: Removed
-body: `symfony/finder` is only required by `symfony/framework-bundle` which is
-  a dev requirement'
+body: symfony/finder is only required by symfony/framework-bundle which is
+  a dev requirement
 time: 2023-11-02T06:28:28.012657896Z
