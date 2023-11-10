@@ -1,0 +1,12 @@
+[
+    {
+        "name": "opentelemetry.conflicts",
+        "ext_min": "1.0.0beta7",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "opentelemetry.validate_hook_functions",
+        "ext_min": "1.0.0beta7",
+        "php_min": "8.0.0"
+    }
+]

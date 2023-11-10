@@ -287,6 +287,9 @@
         <testsuite name="oauth">
             <directory prefix="Oauth" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
+        <testsuite name="opentelemetry">
+            <directory prefix="OpenTelemetry" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
         <testsuite name="pdflib">
             <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Pdflib" suffix="ExtensionTest.php">
                 tests/Reference/Extension/PhpPecl

@@ -1,0 +1,7 @@
+[
+    {
+        "name": "OpenTelemetry\\Instrumentation\\hook",
+        "ext_min": "1.0.0beta1",
+        "php_min": "8.0.0"
+    }
+]

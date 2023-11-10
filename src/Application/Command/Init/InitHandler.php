@@ -877,6 +877,14 @@ final class InitHandler implements CommandHandlerInterface
             ),
         ];
 
+        yield 'opentelemetry' => [
+            'functions' => ['1'],
+            'iniEntries' => ['1'],
+            'releases' => [
+                '1',
+            ],
+        ];
+
         yield 'pcntl' => [
             'constants' => ['41', '50', '53', '70', '72', '74'],
             'functions' => ['41', '42', '43', '50', '53', '70', '71', '74'],
