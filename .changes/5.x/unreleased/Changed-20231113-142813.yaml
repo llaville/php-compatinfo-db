@@ -1,4 +1,0 @@
-kind: Changed
-body: CompatInfoDB 5.13 will be the last version to support PHP 8.0; 8.1 and 8.2
-  will be accepted but not 8.3
-time: 2023-11-13T14:28:13.934112307Z
