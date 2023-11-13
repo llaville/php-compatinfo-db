@@ -8,7 +8,7 @@
 | [![License](https://img.shields.io/packagist/l/bartlett/php-compatinfo-db)](https://github.com/llaville/php-compatinfo-db/blob/master/LICENSE) |
 
  [![GitHub Discussions](https://img.shields.io/github/discussions/llaville/php-compatinfo-db)](https://github.com/llaville/php-compatinfo-db/discussions)
- [![Tests](https://github.com/llaville/php-compatinfo-db/workflows/Tests/badge.svg)](https://github.com/llaville/php-compatinfo-db/actions)
+ [![Unit Tests](https://github.com/llaville/php-compatinfo-db/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/llaville/php-compatinfo-db/actions/workflows/unit-tests.yaml)
  [![GitHub-Pages](https://github.com/llaville/php-compatinfo-db/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/llaville/php-compatinfo-db/actions/workflows/gh-pages.yml)
 
 Main goal of this project is to provide a standalone database that references
