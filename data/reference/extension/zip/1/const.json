@@ -748,13 +748,7 @@
         "class_name": "ZipArchive",
         "name": "LENGTH_TO_END",
         "ext_min": "1.22.2",
-        "php_min": "5.4.0",
-        "dependencies": [
-            {
-                "name": "libzip",
-                "constraint": ">=1.10.1"
-            }
-        ]
+        "php_min": "5.4.0"
     },
     {
         "class_name": "ZipArchive",
