@@ -107,4 +107,4 @@ jobs:
             -   # https://github.com/sebastianbergmann/phpunit/tree/10.4
                 name: Unit tests with PHPUnit 10
                 if: ${{ matrix.php != '8.0' }}
-                run: phpunit --testdox --do-not-cache-result
+                run: phpunit --testdox --do-not-cache-result --no-progress
