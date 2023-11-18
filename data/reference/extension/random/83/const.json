@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "Random\\IntervalBoundary",
+        "name": "ClosedOpen",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "class_name": "Random\\IntervalBoundary",
+        "name": "ClosedClosed",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "class_name": "Random\\IntervalBoundary",
+        "name": "OpenClosed",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "class_name": "Random\\IntervalBoundary",
+        "name": "OpenOpen",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]

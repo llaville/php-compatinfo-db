@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "nextFloat",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    },
+    {
+        "class_name": "Random\\Randomizer",
+        "name": "getFloat",
+        "ext_min": "8.3.0alpha1",
+        "php_min": "8.3.0alpha1"
+    }
+]

@@ -1032,11 +1032,12 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'random' => [
-            'classes' => ['82'],
+            'classes' => ['82', '83'],
+            'const' => ['83'],
             'constants' => ['82'],
             'functions' => ['82'],
             'interfaces' => ['82'],
-            'methods' => ['82'],
+            'methods' => ['82', '83'],
             'releases' => [
                 '82', '83',
             ],
