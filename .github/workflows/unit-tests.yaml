@@ -104,10 +104,6 @@ jobs:
                     bin/compatinfo-db diagnose --ansi
                     bin/compatinfo-db db:list --ansi
 
-            -   # https://github.com/sebastianbergmann/phpunit/tree/9.6
-                name: Unit tests with PHPUnit 9
-                if: ${{ matrix.php == '8.0' }}
-                run: phpunit --configuration ./phpunit-9.xml --testdox --do-not-cache-result
             -   # https://github.com/sebastianbergmann/phpunit/tree/10.4
                 name: Unit tests with PHPUnit 10
                 if: ${{ matrix.php != '8.0' }}
