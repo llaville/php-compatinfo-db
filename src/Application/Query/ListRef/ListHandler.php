@@ -57,10 +57,10 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         if (isset($filters['name'])) {
             $platform = $this->filterPlatformByExtensionName($platform, $filters['name']);
         }
-        if ($filters['installed']) {
+        if (isset($filters['installed'])) {
             $platform = $this->filterPlatformByExtensionInstalled($platform);
         }
-        if ($filters['outdated']) {
+        if (isset($filters['outdated'])) {
             $platform = $this->filterPlatformByExtensionOutdated($platform);
         }
 
