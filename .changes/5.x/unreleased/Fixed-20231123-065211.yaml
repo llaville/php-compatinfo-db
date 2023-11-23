@@ -1,0 +1,4 @@
+kind: Fixed
+body: Prevent Event dispatcher "event_dispatcher" is not available. error when running
+  debug:event-dispatcher command
+time: 2023-11-23T06:52:11.497673408Z

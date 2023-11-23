@@ -42,6 +42,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         // for unit tests
         ->public()
     ;
+    $services->alias('event_dispatcher', EventDispatcher::class)
+        // for debug:event-dispatcher command
+        ->public()
+    ;
 
     // @see https://github.com/symfony/dependency-injection/commit/9591cba6e215ce688fcc301cc6eef1e39daa5ad9 since Symfony 5.1
     $services->alias(ContainerInterface::class, 'service_container');
