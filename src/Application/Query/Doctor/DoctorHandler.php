@@ -83,7 +83,7 @@ final class DoctorHandler implements QueryHandlerInterface
 
         foreach ($extensions as $name) {
             if ($withTests) {
-                $process = new Process([$phpunitBin, '--testsuite=' . $name, '--testdox']);
+                $process = new Process([$phpunitBin, '--testsuite=' . $name, '--testdox', '--no-progress']);
                 $process->start();
             } else {
                 $process = null;
