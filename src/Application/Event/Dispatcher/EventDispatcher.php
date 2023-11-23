@@ -44,10 +44,14 @@ final class EventDispatcher extends SymfonyEventDispatcher
 
         $this->addListener(ConsoleEvents::COMMAND, function (ConsoleCommandEvent $event) {
             $command = $event->getCommand();
-            if (
-                str_starts_with($command->getName(), 'db:')
-                && !in_array($command->getName(), ['db:create', 'db:init', 'db:release'])
-            ) {
+            $autoDiagnose = (
+                'doctor' == $command->getName()
+                || (
+                    str_starts_with($command->getName(), 'db:')
+                    && !in_array($command->getName(), ['db:create', 'db:init', 'db:release'])
+                )
+            );
+            if ($autoDiagnose) {
                 $app = $command->getApplication();
                 // launch auto diagnose
                 $diagnoseCommand = $app->find('diagnose');
