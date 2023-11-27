@@ -8,7 +8,6 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
 use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
-use Bartlett\CompatInfoDb\Presentation\Console\Command\AbstractCommand;
 
 use Symfony\Component\Console\Application as SymfonyApplication;
 use Symfony\Component\Console\Input\ArgvInput;
@@ -20,7 +19,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
-use Phar;
 use function sprintf;
 
 /**
@@ -38,10 +36,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
      */
     public function __construct()
     {
-        parent::__construct(
-            self::NAME,
-            $this->getInstalledVersion(false)
-        );
+        parent::__construct(self::NAME);
     }
 
     /**
@@ -108,9 +103,22 @@ class Application extends SymfonyApplication implements ApplicationInterface
     /**
      * {@inheritDoc}
      */
+    public function getVersion(): string
+    {
+        $version = parent::getVersion();
+
+        if ('UNKNOWN' == $version) {
+            $version = $this->getLongVersion();
+        }
+        return $version;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getLongVersion(): string
     {
-        return $this->getInstalledVersion();
+        return $this->getApplicationParameters()['compat_info_db.version'];
     }
 
     /**

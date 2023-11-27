@@ -77,7 +77,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
             sprintf(
                 '%s version %s',
                 $app->getName(),
-                $app->getInstalledVersion()
+                $app->getLongVersion()
             )
         );
 

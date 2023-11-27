@@ -65,7 +65,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $app = $this->getApplication();
 
         $listQuery = new ListQuery(
-            $app->getInstalledVersion(true),
+            $app->getLongVersion(),
             $filters
         );
 

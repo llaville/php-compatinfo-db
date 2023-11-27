@@ -50,7 +50,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
     {
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
-        $installedVersion = $app->getInstalledVersion(true);
+        $installedVersion = $app->getLongVersion();
 
         // retrieves only extensions installed in your platform
         $listQuery = new ListQuery($installedVersion);
