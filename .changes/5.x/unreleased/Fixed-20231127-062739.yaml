@@ -1,0 +1,3 @@
+kind: Fixed
+body: removed some deprecations with Doctrine ORM
+time: 2023-11-27T06:27:39.518857487Z
