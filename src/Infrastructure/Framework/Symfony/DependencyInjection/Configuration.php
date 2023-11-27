@@ -49,7 +49,8 @@ final class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('proxy_dir')->defaultValue($proxyDir)
+                ->scalarNode('version')->defaultValue($version)->end()
+                ->scalarNode('proxy_dir')->defaultValue($proxyDir)->end()
             ->end()
         ;
     }

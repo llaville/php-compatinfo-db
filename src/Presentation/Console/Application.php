@@ -115,6 +115,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
 
     /**
      * {@inheritDoc}
+     * @deprecated Will be removed in major version 6.0, use instead new container parameter 'compat_info_db.version'
      */
     public function getInstalledVersion(bool $withRef = true): ?string
     {
