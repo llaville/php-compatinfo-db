@@ -70,5 +70,11 @@
         "rel_date": "2023-11-09",
         "rel_state": "beta",
         "php_min": "8.3.0RC6"
+    },
+    {
+        "rel_version": "8.3.0",
+        "rel_date": "2023-11-23",
+        "rel_state": "stable",
+        "php_min": "8.3.0"
     }
 ]
