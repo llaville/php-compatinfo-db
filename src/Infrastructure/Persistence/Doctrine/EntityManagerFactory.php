@@ -21,8 +21,10 @@ use Psr\Cache\CacheItemPoolInterface;
 
 use function getenv;
 use function implode;
+use function phpversion;
 use function sprintf;
 use function str_replace;
+use function version_compare;
 use const DIRECTORY_SEPARATOR;
 
 /**
@@ -48,9 +50,10 @@ final class EntityManagerFactory
             $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
         }
 
+        $lazyGhostObject = version_compare(phpversion(), '8.1', 'ge');
         // 2.14. Use \Doctrine\Persistence\Proxy instead
         // @see Doctrine\ORM\Proxy\ProxyFactory
-        $config->setLazyGhostObjectEnabled(true);
+        $config->setLazyGhostObjectEnabled($lazyGhostObject);
 
         $connection = DriverManager::getConnection(self::connection(), $config);
         return new EntityManager($connection, $config);
