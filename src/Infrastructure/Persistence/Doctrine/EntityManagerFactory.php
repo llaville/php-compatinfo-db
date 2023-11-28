@@ -55,7 +55,7 @@ final class EntityManagerFactory
         // @see Doctrine\ORM\Proxy\ProxyFactory
         $config->setLazyGhostObjectEnabled($lazyGhostObject);
 
-        $connection = DriverManager::getConnection(self::connection(), $config);
+        $connection = DriverManager::getConnection(self::connection(), $config);    // @phpstan-ignore-line
         return new EntityManager($connection, $config);
     }
 
