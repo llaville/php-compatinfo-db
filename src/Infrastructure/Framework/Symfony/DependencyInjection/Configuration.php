@@ -47,6 +47,7 @@ final class Configuration implements ConfigurationInterface
         $defaultProxyDir = str_replace('%version%', $version, self::DEFAULT_PROXY_DIR);
         $proxyDir = ($_SERVER['APP_PROXY_DIR'] ?? $_ENV['APP_PROXY_DIR'] ?? $defaultProxyDir);
 
+        // @phpstan-ignore-next-line
         $rootNode
             ->children()
                 ->scalarNode('version')->defaultValue($version)->end()
