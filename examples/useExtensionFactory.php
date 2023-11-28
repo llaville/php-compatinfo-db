@@ -28,7 +28,8 @@ $command = new ShowQuery(
     true,
     true,
     true,
-    true
+    true,
+    false
 );
 
 /** @var Extension $extension */
