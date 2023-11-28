@@ -1,4 +1,0 @@
-kind: Fixed
-body: Removed ZipArchive::LENGTH_TO_END libzip condition (thanks to @remicollet to
-  clarify situation)
-time: 2023-11-17T09:14:47.316608982Z

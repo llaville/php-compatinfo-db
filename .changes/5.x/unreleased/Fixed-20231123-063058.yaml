@@ -1,3 +1,0 @@
-kind: Fixed
-body: prevent infrastructure error by running auto diagnose on doctor command
-time: 2023-11-23T06:30:58.005522102Z

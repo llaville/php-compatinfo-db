@@ -39,6 +39,11 @@ interface ApplicationInterface extends ContainerAwareInterface
     public function getInstalledVersion(bool $withRef = true): ?string;
 
     /**
+     * Returns the long version of the application.
+     */
+    public function getLongVersion(): string;
+
+    /**
      * @return array<string, mixed>
      */
     public function getApplicationParameters(): array;

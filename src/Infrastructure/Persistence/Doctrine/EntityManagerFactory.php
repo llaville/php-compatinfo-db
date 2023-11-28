@@ -10,6 +10,8 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine;
 use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 
 use Doctrine\Common\Proxy\AbstractProxyFactory;
+use Doctrine\DBAL\DriverManager;
+use Doctrine\DBAL\Exception;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Exception\ORMException;
@@ -31,6 +33,7 @@ final class EntityManagerFactory
 {
     /**
      * @throws ORMException
+     * @throws Exception
      */
     public static function create(bool $isDevMode, string $proxyDir, ?CacheItemPoolInterface $cache = null): EntityManagerInterface
     {
@@ -45,7 +48,12 @@ final class EntityManagerFactory
             $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
         }
 
-        return EntityManager::create(self::connection(), $config);
+        // 2.14. Use \Doctrine\Persistence\Proxy instead
+        // @see Doctrine\ORM\Proxy\ProxyFactory
+        $config->setLazyGhostObjectEnabled(true);
+
+        $connection = DriverManager::getConnection(self::connection(), $config);
+        return new EntityManager($connection, $config);
     }
 
     /**
