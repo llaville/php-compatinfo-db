@@ -64,6 +64,9 @@ class PosixExtensionTest extends GenericTestCase
             'posix_eaccess',
             // Requires HAVE_POSIX_PATHCONF
             'posix_pathconf',
+            // Requires HAVE_FPATHCONF
+            'posix_pathconf',
+            'posix_fpathconf',
         ];
 
         parent::setUpBeforeClass();
