@@ -18,7 +18,6 @@
         "ext-spl": "*",
         "composer-runtime-api": "^2.0",
         "composer/semver": "^3.0",
-        "doctrine/annotations": "^1.13",
         "doctrine/orm": "^2.12",
         "doctrine/dbal": "^3.2",
         "symfony/cache": "^5.4 || ^6.0",

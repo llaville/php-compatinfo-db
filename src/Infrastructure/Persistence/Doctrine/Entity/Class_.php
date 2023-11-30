@@ -13,9 +13,9 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
 
 use function sprintf;
 
+#[Entity]
+#[Table(name: "classes")]
 /**
- * @Entity
- * @Table(name="classes")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -25,33 +25,27 @@ class Class_
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $name;
 
-    /**
-     * @Column(name="interface", type="boolean")
-     */
+    #[Column(name: "interface", type: "boolean")]
     private bool $isInterface;
 
-    /**
-     * @Column(name="flags", type="integer")
-     */
+    #[Column(name: "flags", type: "integer")]
     private int $flags;
 
-    /**
-     * @Column(name="polyfill", type="string", nullable=true)
-     */
+    #[Column(name: "polyfill", type: "string", nullable: true)]
     private ?string $polyfill;
 
-    /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="classes")
-     */
+    #[ManyToOne(targetEntity: Extension::class, inversedBy: "classes")]
     private Extension $extension;
 
+    #[OneToMany(
+        mappedBy: "class",
+        targetEntity: ClassRelationship::class,
+        cascade: ["persist"]
+    )]
     /**
-     * @OneToMany(targetEntity=ClassRelationship::class, cascade={"persist"}, mappedBy="class")
      * @var Collection<int, ClassRelationship>
      */
     private $relationships;

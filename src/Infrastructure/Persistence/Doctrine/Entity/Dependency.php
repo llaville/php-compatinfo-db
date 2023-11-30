@@ -9,9 +9,9 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\{Entity, ManyToOne, Table, Column};
 
+#[Entity]
+#[Table(name: "dependencies")]
 /**
- * @Entity
- * @Table(name="dependencies")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -19,19 +19,13 @@ class Dependency
 {
     use PrimaryIdentifierTrait;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $name;
 
-    /**
-     * @Column(name="constraint_expression", type="string", length=16)
-     */
+    #[Column(name: "constraint_expression", type: "string", length: 16)]
     private string $constraintExpression;
 
-    /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="dependencies")
-     */
+    #[ManyToOne(targetEntity: Extension::class, inversedBy: "dependencies")]
     private Extension $extension;
 
     /**

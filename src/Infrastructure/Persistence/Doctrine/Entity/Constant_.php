@@ -13,9 +13,9 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
 
 use function sprintf;
 
+#[Entity]
+#[Table(name: "constants")]
 /**
- * @Entity
- * @Table(name="constants")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -25,33 +25,27 @@ class Constant_
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $name;
 
-    /**
-     * @Column(name="declaring_class", type="string", nullable=true)
-     */
+    #[Column(name: "declaring_class", type: "string", nullable: true)]
     private ?string $declaringClass;
 
-    /**
-     * @Column(name="polyfill", type="string", nullable=true)
-     */
+    #[Column(name: "polyfill", type: "string", nullable: true)]
     private ?string $polyfill;
 
-    /**
-     * @Column(name="deprecated", type="string", nullable=true)
-     */
+    #[Column(name: "deprecated", type: "string", nullable: true)]
     private ?string $deprecated;
 
-    /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="constants")
-     */
+    #[ManyToOne(targetEntity: Extension::class, inversedBy: "constants")]
     private Extension $extension;
 
+    #[OneToMany(
+        mappedBy: "constant",
+        targetEntity: ConstantRelationship::class,
+        cascade: ["persist"]
+    )]
     /**
-     * @OneToMany(targetEntity=ConstantRelationship::class, cascade={"persist"}, mappedBy="constant")
      * @var Collection<int, ConstantRelationship>
      */
     private $relationships;

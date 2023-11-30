@@ -12,9 +12,9 @@ use Doctrine\ORM\Mapping\{Entity, Table, Column, ManyToOne};
 use DateTimeImmutable;
 use function sprintf;
 
+#[Entity]
+#[Table(name: "releases")]
 /**
- * @Entity
- * @Table(name="releases")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -24,24 +24,16 @@ class Release
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /**
-     * @Column(type="string", length=16)
-     */
+    #[Column(type: "string", length: 16)]
     private string $version;
 
-    /**
-     * @Column(type="date_immutable")
-     */
+    #[Column(type: "date_immutable")]
     private DateTimeImmutable $date;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $state;
 
-    /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="releases")
-     */
+    #[ManyToOne(targetEntity: Extension::class, inversedBy: "releases")]
     private Extension $extension;
 
     /**

@@ -14,9 +14,9 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
 use function array_map;
 use function sprintf;
 
+#[Entity]
+#[Table(name: "functions")]
 /**
- * @Entity
- * @Table(name="functions")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -26,50 +26,42 @@ class Function_
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $name;
 
+    #[Column(type: "simple_array", nullable: true)]
     /**
-     * @Column(type="simple_array", nullable=true)
      * @var null|string[]
      */
     private ?array $parameters;
 
+    #[Column(type: "simple_array", nullable: true)]
     /**
-     * @Column(type="simple_array", nullable=true)
      * @var null|string[]
      */
     private ?array $excludes;
 
-    /**
-     * @Column(name="declaring_class", type="string", nullable=true)
-     */
+    #[Column(name: "declaring_class", type: "string", nullable: true)]
     private ?string $declaringClass;
 
-    /**
-     * @Column(name="prototype", type="string", nullable=true)
-     */
+    #[Column(name: "prototype", type: "string", nullable: true)]
     private ?string $prototype;
 
-    /**
-     * @Column(name="flags", type="integer")
-     */
+    #[Column(name: "flags", type: "integer")]
     private int $flags;
 
-    /**
-     * @Column(name="polyfill", type="string", nullable=true)
-     */
+    #[Column(name: "polyfill", type: "string", nullable: true)]
     private ?string $polyfill;
 
-    /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="functions")
-     */
+    #[ManyToOne(targetEntity: Extension::class, inversedBy: "functions")]
     private Extension $extension;
 
+    #[OneToMany(
+        mappedBy: "function",
+        targetEntity: FunctionRelationship::class,
+        cascade: ["persist"]
+    )]
     /**
-     * @OneToMany(targetEntity=FunctionRelationship::class, cascade={"persist"}, mappedBy="function")
      * @var Collection<int, FunctionRelationship>
      */
     private $relationships;

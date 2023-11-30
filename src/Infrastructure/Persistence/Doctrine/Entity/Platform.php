@@ -15,38 +15,34 @@ use DateTimeImmutable;
 use function count;
 use function sprintf;
 
+#[Entity]
+#[Table(name: "platforms")]
 /**
- * @Entity
- * @Table(name="platforms")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
 class Platform
 {
-    /**
-     * @Id
-     * @Column(type="integer")
-     * @GeneratedValue(strategy="AUTO")
-     */
+    #[Id]
+    #[Column(type: "integer")]
+    #[GeneratedValue(strategy: "AUTO")]
     private int $id;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $description;
 
-    /**
-     * @Column(type="string", length=16)
-     */
+    #[Column(type: "string", length: 16)]
     private string $version;
 
-    /**
-     * @Column(name="created_at", type="datetime_immutable")
-     */
+    #[Column(name: "created_at", type: "datetime_immutable")]
     private DateTimeImmutable $createdAt;
 
+    #[OneToMany(
+        mappedBy: "platform",
+        targetEntity: Relationship::class,
+        cascade: ["persist"],
+    )]
     /**
-     * @OneToMany(targetEntity=Relationship::class, cascade={"persist"}, mappedBy="platform")
      * @var Collection<int, Relationship>
      */
     private $relationships;

@@ -14,11 +14,10 @@ use Doctrine\ORM\Mapping\{Entity, Table, Column, UniqueConstraint, OneToMany};
 use function sprintf;
 use function strtolower;
 
+#[Entity]
+#[Table(name: "extensions")]
+#[UniqueConstraint(name: "extension_unique", columns: ["name"])]
 /**
- * @Entity
- * @Table(name="extensions",
- *    uniqueConstraints={@UniqueConstraint(name="extension_unique", columns={"name"})}
- * )
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -26,63 +25,77 @@ class Extension
 {
     use PrimaryIdentifierTrait;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $description;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $name;
 
-    /**
-     * @Column(type="string", length=16)
-     */
+    #[Column(type: "string", length: 16)]
     private string $version;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $type;
 
-    /**
-     * @Column(type="boolean")
-     */
+    #[Column(type: "boolean")]
     private bool $deprecated;
 
+    #[OneToMany(
+        mappedBy: "extension",
+        targetEntity: Release::class,
+        cascade: ["persist", "remove"]
+    )]
     /**
-     * @OneToMany(targetEntity=Release::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, Release>
      */
     private $releases;
 
+    #[OneToMany(
+        mappedBy: "extension",
+        targetEntity: Dependency::class,
+        cascade: ["persist", "remove"]
+    )]
     /**
-     * @OneToMany(targetEntity=Dependency::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, Dependency>
      */
     private $dependencies;
 
+    #[OneToMany(
+        mappedBy: "extension",
+        targetEntity :IniEntry::class,
+        cascade: ["persist", "remove"]
+    )]
     /**
-     * @OneToMany(targetEntity=IniEntry::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, IniEntry>
      */
     private $iniEntries;
 
+    #[OneToMany(
+        mappedBy:"extension",
+        targetEntity:Constant_::class,
+        cascade:["persist", "remove"]
+    )]
     /**
-     * @OneToMany(targetEntity=Constant_::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, Constant_>
      */
     private $constants;
 
+    #[OneToMany(
+        mappedBy: "extension",
+        targetEntity: Function_::class,
+        cascade: ["persist", "remove"]
+    )]
     /**
-     * @OneToMany(targetEntity=Function_::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, Function_>
      */
     private $functions;
 
+    #[OneToMany(
+        mappedBy: "extension",
+        targetEntity: Class_::class,
+        cascade: ["persist", "remove"]
+    )]
     /**
-     * @OneToMany(targetEntity=Class_::class, cascade={"persist", "remove"}, mappedBy="extension")
      * @var Collection<int, Class_>
      */
     private $classes;

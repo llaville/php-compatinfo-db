@@ -15,14 +15,10 @@ use Doctrine\ORM\Mapping\Column;
  */
 trait PhpVersionTrait
 {
-    /**
-     * @Column(name="php_min", type="string", length=16)
-     */
+    #[Column(name: "php_min", type: "string", length: 16)]
     private string $phpMin;
 
-    /**
-     * @Column(name="php_max", type="string", length=16, nullable=true)
-     */
+    #[Column(name: "php_max", type: "string", length: 16, nullable: true)]
     private ?string $phpMax;
 
     /**

@@ -9,11 +9,10 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\{Entity, Table, ManyToOne, UniqueConstraint};
 
+#[Entity]
+#[Table(name: "class_relationships")]
+#[UniqueConstraint(name: "class_dependency_unique", columns: ["class_id", "dependency_id"])]
 /**
- * @Entity
- * @Table(name="class_relationships",
- *    uniqueConstraints={@UniqueConstraint(name="class_dependency_unique", columns={"class_id", "dependency_id"})}
- * )
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -21,14 +20,10 @@ class ClassRelationship
 {
     use PrimaryIdentifierTrait;
 
-    /**
-     * @ManyToOne(targetEntity=Class_::class, cascade={"persist"}, inversedBy="relationships")
-     */
+    #[ManyToOne(targetEntity: Class_::class, cascade: ["persist"], inversedBy: "relationships")]
     private Class_ $class;
 
-    /**
-     * @ManyToOne(targetEntity=Dependency::class, cascade={"persist"})
-     */
+    #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
     private Dependency $dependency;
 
     /**

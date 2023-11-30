@@ -13,9 +13,9 @@ use Doctrine\ORM\Mapping\{Entity, OneToMany, Table, Column, ManyToOne};
 
 use function sprintf;
 
+#[Entity]
+#[Table(name: "ini_entries")]
 /**
- * @Entity
- * @Table(name="ini_entries")
  * @since Release 3.0.0
  * @author Laurent Laville
  */
@@ -25,18 +25,18 @@ class IniEntry
     use ExtVersionTrait;
     use PhpVersionTrait;
 
-    /**
-     * @Column(type="string")
-     */
+    #[Column(type: "string")]
     private string $name;
 
-    /**
-     * @ManyToOne(targetEntity=Extension::class, inversedBy="iniEntries")
-     */
+    #[ManyToOne(targetEntity: Extension::class, inversedBy: "iniEntries")]
     private Extension $extension;
 
+    #[OneToMany(
+        mappedBy: "ini",
+        targetEntity: IniRelationship::class,
+        cascade: ["persist"],
+    )]
     /**
-     * @OneToMany(targetEntity=IniRelationship::class, cascade={"persist"}, mappedBy="ini")
      * @var Collection<int, IniRelationship>
      */
     private $relationships;

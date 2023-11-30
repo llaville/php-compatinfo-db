@@ -15,11 +15,9 @@ use Doctrine\ORM\Mapping\{Id, Column, GeneratedValue};
  */
 trait PrimaryIdentifierTrait
 {
-    /**
-     * @Id
-     * @Column(type="integer")
-     * @GeneratedValue(strategy="AUTO")
-     */
+    #[Id]
+    #[Column(type: "integer")]
+    #[GeneratedValue(strategy: "AUTO")]
     private int $id;
 
     /**

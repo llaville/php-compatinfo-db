@@ -15,14 +15,10 @@ use Doctrine\ORM\Mapping\Column;
  */
 trait ExtVersionTrait
 {
-    /**
-     * @Column(name="ext_min", type="string", length=16)
-     */
+    #[Column(name:"ext_min", type:"string", length:16)]
     private string $extMin;
 
-    /**
-     * @Column(name="ext_max", type="string", length=16, nullable=true)
-     */
+    #[Column(name:"ext_max", type:"string", length:16, nullable:true)]
     private ?string $extMax;
 
     /**
