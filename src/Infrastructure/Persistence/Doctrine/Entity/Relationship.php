@@ -26,25 +26,16 @@ class Relationship
     #[ManyToOne(targetEntity: Extension::class, cascade: ["persist"])]
     private Extension $extension;
 
-    /**
-     * @param Platform $platform
-     */
     public function setPlatform(Platform $platform): void
     {
         $this->platform = $platform;
     }
 
-    /**
-     * @param Extension $extension
-     */
     public function setExtension(Extension $extension): void
     {
         $this->extension = $extension;
     }
 
-    /**
-     * @return Extension
-     */
     public function getExtension(): Extension
     {
         return $this->extension;

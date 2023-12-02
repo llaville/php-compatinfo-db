@@ -26,25 +26,16 @@ class IniRelationship
     #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
     private Dependency $dependency;
 
-    /**
-     * @param IniEntry $ini
-     */
     public function setIni(IniEntry $ini): void
     {
         $this->ini = $ini;
     }
 
-    /**
-     * @param Dependency $dependency
-     */
     public function setDependency(Dependency $dependency): void
     {
         $this->dependency = $dependency;
     }
 
-    /**
-     * @return Dependency
-     */
     public function getDependency(): Dependency
     {
         return $this->dependency;

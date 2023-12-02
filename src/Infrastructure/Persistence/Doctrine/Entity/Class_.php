@@ -46,9 +46,9 @@ class Class_
         cascade: ["persist"]
     )]
     /**
-     * @var Collection<int, ClassRelationship>
+     * @var Collection<int, ClassRelationship> $relationships
      */
-    private $relationships;
+    private Collection $relationships;
 
 
     public function __construct()
@@ -71,65 +71,41 @@ class Class_
         );
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    /**
-     * @return bool
-     */
     public function isInterface(): bool
     {
         return $this->isInterface;
     }
 
-    /**
-     * @param bool $isInterface
-     */
     public function setInterface(bool $isInterface): void
     {
         $this->isInterface = $isInterface;
     }
 
-    /**
-     * @return int
-     */
     public function getFlags(): int
     {
         return $this->flags;
     }
 
-    /**
-     * @param int $flags
-     */
     public function setFlags(int $flags): void
     {
         $this->flags = $flags;
     }
 
-    /**
-     * @return Extension
-     */
     public function getExtension(): Extension
     {
         return $this->extension;
     }
 
-    /**
-     * @param Extension $extension
-     */
     public function setExtension(Extension $extension): void
     {
         $this->extension = $extension;
@@ -165,17 +141,11 @@ class Class_
         return $dependencies;
     }
 
-    /**
-     * @return string|null
-     */
     public function getPolyfill(): ?string
     {
         return $this->polyfill;
     }
 
-    /**
-     * @param string|null $polyfill
-     */
     public function setPolyfill(?string $polyfill): void
     {
         $this->polyfill = $polyfill;

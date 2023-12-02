@@ -21,33 +21,21 @@ trait ExtVersionTrait
     #[Column(name:"ext_max", type:"string", length:16, nullable:true)]
     private ?string $extMax;
 
-    /**
-     * @return string
-     */
     public function getExtMin(): string
     {
         return $this->extMin;
     }
 
-    /**
-     * @param string $extMin
-     */
     public function setExtMin(string $extMin): void
     {
         $this->extMin = $extMin;
     }
 
-    /**
-     * @return null|string
-     */
     public function getExtMax(): ?string
     {
         return $this->extMax;
     }
 
-    /**
-     * @param null|string $extMax
-     */
     public function setExtMax(?string $extMax): void
     {
         $this->extMax = $extMax;

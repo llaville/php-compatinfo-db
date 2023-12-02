@@ -28,9 +28,6 @@ class Dependency
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "dependencies")]
     private Extension $extension;
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf(
@@ -41,49 +38,31 @@ class Dependency
         );
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    /**
-     * @return string
-     */
     public function getConstraintExpression(): string
     {
         return $this->constraintExpression;
     }
 
-    /**
-     * @param string $constraintExpression
-     */
     public function setConstraintExpression(string $constraintExpression): void
     {
         $this->constraintExpression = $constraintExpression;
     }
 
-    /**
-     * @return Extension
-     */
     public function getExtension(): Extension
     {
         return $this->extension;
     }
 
-    /**
-     * @param Extension $extension
-     */
     public function setExtension(Extension $extension): void
     {
         $this->extension = $extension;

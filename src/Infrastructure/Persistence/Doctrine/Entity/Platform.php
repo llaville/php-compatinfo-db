@@ -43,9 +43,9 @@ class Platform
         cascade: ["persist"],
     )]
     /**
-     * @var Collection<int, Relationship>
+     * @var Collection<int, Relationship> $relationships
      */
-    private $relationships;
+    private Collection $relationships;
 
 
     public function __construct()
@@ -53,9 +53,6 @@ class Platform
         $this->relationships = new ArrayCollection();
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf(
@@ -69,57 +66,36 @@ class Platform
         );
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @param string $description
-     */
     public function setDescription(string $description): void
     {
         $this->description = $description;
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;
     }
 
-    /**
-     * @param string $version
-     */
     public function setVersion(string $version): void
     {
         $this->version = $version;
     }
 
-    /**
-     * @return DateTimeImmutable
-     */
     public function getCreatedAt(): DateTimeImmutable
     {
         return $this->createdAt;
     }
 
-    /**
-     * @param DateTimeImmutable $createdAt
-     */
     public function setCreatedAt(DateTimeImmutable $createdAt): void
     {
         $this->createdAt = $createdAt;

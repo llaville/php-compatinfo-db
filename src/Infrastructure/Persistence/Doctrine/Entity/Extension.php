@@ -46,9 +46,9 @@ class Extension
         cascade: ["persist", "remove"]
     )]
     /**
-     * @var Collection<int, Release>
+     * @var Collection<int, Release> $releases
      */
-    private $releases;
+    private Collection $releases;
 
     #[OneToMany(
         mappedBy: "extension",
@@ -56,9 +56,9 @@ class Extension
         cascade: ["persist", "remove"]
     )]
     /**
-     * @var Collection<int, Dependency>
+     * @var Collection<int, Dependency> $dependencies
      */
-    private $dependencies;
+    private Collection $dependencies;
 
     #[OneToMany(
         mappedBy: "extension",
@@ -66,9 +66,9 @@ class Extension
         cascade: ["persist", "remove"]
     )]
     /**
-     * @var Collection<int, IniEntry>
+     * @var Collection<int, IniEntry> $iniEntries
      */
-    private $iniEntries;
+    private Collection $iniEntries;
 
     #[OneToMany(
         mappedBy:"extension",
@@ -76,9 +76,9 @@ class Extension
         cascade:["persist", "remove"]
     )]
     /**
-     * @var Collection<int, Constant_>
+     * @var Collection<int, Constant_> $constants
      */
-    private $constants;
+    private Collection $constants;
 
     #[OneToMany(
         mappedBy: "extension",
@@ -86,9 +86,9 @@ class Extension
         cascade: ["persist", "remove"]
     )]
     /**
-     * @var Collection<int, Function_>
+     * @var Collection<int, Function_> $functions
      */
-    private $functions;
+    private Collection $functions;
 
     #[OneToMany(
         mappedBy: "extension",
@@ -96,9 +96,9 @@ class Extension
         cascade: ["persist", "remove"]
     )]
     /**
-     * @var Collection<int, Class_>
+     * @var Collection<int, Class_> $relationships
      */
-    private $classes;
+    private Collection $classes;
 
 
     public function __construct()
@@ -111,82 +111,52 @@ class Extension
         $this->classes = new ArrayCollection();
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf('Extension (id: %s, desc: "%s", version: %s)', $this->id, $this->description, $this->version);
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param mixed $name
-     */
-    public function setName($name): void
+    public function setName(string $name): void
     {
         $this->name = strtolower($name);
         $this->description = sprintf('The %s PHP extension', $name);
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;
     }
 
-    /**
-     * @param mixed $version
-     */
-    public function setVersion($version): void
+    public function setVersion(string $version): void
     {
         $this->version = $version;
     }
 
-    /**
-     * @return string
-     */
     public function getType(): string
     {
         return $this->type;
     }
 
-    /**
-     * @param string $type
-     */
     public function setType(string $type): void
     {
         $this->type = $type;
     }
 
-    /**
-     * @return bool
-     */
     public function isDeprecated(): bool
     {
         return $this->deprecated;
     }
 
-    /**
-     * @param bool $deprecated
-     */
     public function setDeprecated(bool $deprecated): void
     {
         $this->deprecated = $deprecated;

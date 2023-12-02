@@ -46,9 +46,9 @@ class Constant_
         cascade: ["persist"]
     )]
     /**
-     * @var Collection<int, ConstantRelationship>
+     * @var Collection<int, ConstantRelationship> $relationships
      */
-    private $relationships;
+    private Collection $relationships;
 
 
     public function __construct()
@@ -56,9 +56,6 @@ class Constant_
         $this->relationships = new ArrayCollection();
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf(
@@ -71,86 +68,55 @@ class Constant_
         );
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDeclaringClass(): ?string
     {
         return $this->declaringClass;
     }
 
-    /**
-     * @param string|null $declaringClass
-     */
     public function setDeclaringClass(?string $declaringClass): void
     {
         $this->declaringClass = $declaringClass;
     }
 
-    /**
-     * @return string|null
-     */
     public function getPolyfill(): ?string
     {
         return $this->polyfill;
     }
 
-    /**
-     * @param string|null $polyfill
-     */
     public function setPolyfill(?string $polyfill): void
     {
         $this->polyfill = $polyfill;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDeprecated(): ?string
     {
         return $this->deprecated;
     }
 
-    /**
-     * @param string|null $deprecated
-     */
     public function setDeprecated(?string $deprecated): void
     {
         $this->deprecated = $deprecated;
     }
 
-    /**
-     * @return Extension
-     */
     public function getExtension(): Extension
     {
         return $this->extension;
     }
 
-    /**
-     * @param Extension $extension
-     */
     public function setExtension(Extension $extension): void
     {
         $this->extension = $extension;
     }
-
 
     /**
      * @param Dependency[] $dependencies

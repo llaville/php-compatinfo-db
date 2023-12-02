@@ -20,9 +20,6 @@ trait PrimaryIdentifierTrait
     #[GeneratedValue(strategy: "AUTO")]
     private int $id;
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;

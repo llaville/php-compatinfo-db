@@ -26,25 +26,16 @@ class FunctionRelationship
     #[ManyToOne(targetEntity: Dependency::class, cascade:["persist"])]
     private Dependency $dependency;
 
-    /**
-     * @param Function_ $function
-     */
     public function setFunction(Function_ $function): void
     {
         $this->function = $function;
     }
 
-    /**
-     * @param Dependency $dependency
-     */
     public function setDependency(Dependency $dependency): void
     {
         $this->dependency = $dependency;
     }
 
-    /**
-     * @return Dependency
-     */
     public function getDependency(): Dependency
     {
         return $this->dependency;

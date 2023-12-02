@@ -37,9 +37,9 @@ class IniEntry
         cascade: ["persist"],
     )]
     /**
-     * @var Collection<int, IniRelationship>
+     * @var Collection<int, IniRelationship> $relationships
      */
-    private $relationships;
+    private Collection $relationships;
 
 
     public function __construct()
@@ -47,9 +47,6 @@ class IniEntry
         $this->relationships = new ArrayCollection();
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf(
@@ -62,33 +59,21 @@ class IniEntry
         );
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    /**
-     * @return Extension
-     */
     public function getExtension(): Extension
     {
         return $this->extension;
     }
 
-    /**
-     * @param Extension $extension
-     */
     public function setExtension(Extension $extension): void
     {
         $this->extension = $extension;

@@ -30,16 +30,10 @@ class Function_
     private string $name;
 
     #[Column(type: "simple_array", nullable: true)]
-    /**
-     * @var null|string[]
-     */
-    private ?array $parameters;
+    private ?array $parameters; // @phpstan-ignore-line
 
     #[Column(type: "simple_array", nullable: true)]
-    /**
-     * @var null|string[]
-     */
-    private ?array $excludes;
+    private ?array $excludes;   // @phpstan-ignore-line
 
     #[Column(name: "declaring_class", type: "string", nullable: true)]
     private ?string $declaringClass;
@@ -62,9 +56,9 @@ class Function_
         cascade: ["persist"]
     )]
     /**
-     * @var Collection<int, FunctionRelationship>
+     * @var Collection<int, FunctionRelationship> $relationships
      */
-    private $relationships;
+    private Collection $relationships;
 
 
     public function __construct()
@@ -72,9 +66,6 @@ class Function_
         $this->relationships = new ArrayCollection();
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         if ($this->declaringClass === null) {
@@ -93,40 +84,29 @@ class Function_
         );
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
     public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDeclaringClass(): ?string
     {
         return $this->declaringClass;
     }
 
-    /**
-     * @param string|null $declaringClass
-     */
     public function setDeclaringClass(?string $declaringClass): void
     {
         $this->declaringClass = $declaringClass;
     }
 
     /**
-     * @return null|string[]
+     * @return ?string[]
+     * @phpstan-return  ?string[]
      */
     public function getParameters(): ?array
     {
@@ -134,7 +114,8 @@ class Function_
     }
 
     /**
-     * @param null|string[] $parameters
+     * @param ?string[] $parameters
+     * @phpstan-param  ?string[] $parameters
      */
     public function setParameters(?array $parameters): void
     {
@@ -142,7 +123,8 @@ class Function_
     }
 
     /**
-     * @return null|string[]
+     * @return ?string[]
+     * @phpstan-return ?string[]
      */
     public function getExcludes(): ?array
     {
@@ -150,72 +132,49 @@ class Function_
     }
 
     /**
-     * @param null|string[] $excludes
+     * @param ?string[] $excludes
+     * @phpstan-param ?string[] $excludes
      */
     public function setExcludes(?array $excludes): void
     {
         $this->excludes = $excludes;
     }
 
-    /**
-     * @return string|null
-     */
     public function getPrototype(): ?string
     {
         return $this->prototype;
     }
 
-    /**
-     * @param string|null $prototype
-     */
     public function setPrototype(?string $prototype): void
     {
         $this->prototype = $prototype;
     }
 
-    /**
-     * @return int
-     */
     public function getFlags(): int
     {
         return $this->flags;
     }
 
-    /**
-     * @param int $flags
-     */
     public function setFlags(int $flags): void
     {
         $this->flags = $flags;
     }
 
-    /**
-     * @return string|null
-     */
     public function getPolyfill(): ?string
     {
         return $this->polyfill;
     }
 
-    /**
-     * @param string|null $polyfill
-     */
     public function setPolyfill(?string $polyfill): void
     {
         $this->polyfill = $polyfill;
     }
 
-    /**
-     * @return Extension
-     */
     public function getExtension(): Extension
     {
         return $this->extension;
     }
 
-    /**
-     * @param Extension $extension
-     */
     public function setExtension(Extension $extension): void
     {
         $this->extension = $extension;

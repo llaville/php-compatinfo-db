@@ -26,25 +26,16 @@ class ClassRelationship
     #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
     private Dependency $dependency;
 
-    /**
-     * @param Class_ $class
-     */
     public function setClass(Class_ $class): void
     {
         $this->class = $class;
     }
 
-    /**
-     * @param Dependency $dependency
-     */
     public function setDependency(Dependency $dependency): void
     {
         $this->dependency = $dependency;
     }
 
-    /**
-     * @return Dependency
-     */
     public function getDependency(): Dependency
     {
         return $this->dependency;

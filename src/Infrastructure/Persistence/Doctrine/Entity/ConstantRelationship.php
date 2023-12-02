@@ -26,25 +26,16 @@ class ConstantRelationship
     #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
     private Dependency $dependency;
 
-    /**
-     * @param Constant_ $constant
-     */
     public function setConstant(Constant_ $constant): void
     {
         $this->constant = $constant;
     }
 
-    /**
-     * @param Dependency $dependency
-     */
     public function setDependency(Dependency $dependency): void
     {
         $this->dependency = $dependency;
     }
 
-    /**
-     * @return Dependency
-     */
     public function getDependency(): Dependency
     {
         return $this->dependency;
