@@ -321,16 +321,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
      */
     private function constantsFromExtensionProvider(): Generator
     {
-        $constants = get_defined_constants(true);
-
-        if (defined('__PHPUNIT_PHAR__')) {
-            // remove '' . "\0" . '__COMPILER_HALT_OFFSET__' . "\0" . __PHPUNIT_PHAR__
-            array_pop($constants['Core']);
-        }
-
-        $ext = self::$obj->getName();
-
-        $elements = isset($constants[$ext]) ? array_keys($constants[$ext]) : [];
+        $extension = $this->getReflectionExtension();
+        $elements  = array_keys($extension->getConstants());
 
         foreach ($elements as $name) {
             yield $name;
