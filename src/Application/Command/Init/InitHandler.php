@@ -381,7 +381,7 @@ final class InitHandler implements CommandHandlerInterface
             'const' => ['80'],
             'constants' => [
                 '40', '42', '43', '44',
-                '50', '51', '52', '53', '54',
+                '50', '51', '52', '53', '54', '55',
                 '70', '71', '72',
             ],
             'functions' => [
