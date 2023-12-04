@@ -30,7 +30,6 @@ use function array_filter;
 use function array_key_exists;
 use function array_keys;
 use function array_map;
-use function array_pop;
 use function array_push;
 use function array_unique;
 use function class_exists;
@@ -40,7 +39,6 @@ use function end;
 use function explode;
 use function extension_loaded;
 use function get_called_class;
-use function get_defined_constants;
 use function get_extension_funcs;
 use function hexdec;
 use function implode;
@@ -52,6 +50,7 @@ use function phpversion;
 use function sprintf;
 use function str_replace;
 use function str_split;
+use function str_starts_with;
 use function strcasecmp;
 use function strlen;
 use function strtolower;
@@ -325,6 +324,9 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         $elements  = array_keys($extension->getConstants());
 
         foreach ($elements as $name) {
+            if (str_starts_with($name, "\0" . '__COMPILER_HALT_OFFSET__' . "\0" . __PHPUNIT_PHAR__)) {
+                continue;
+            }
             yield $name;
         }
     }
