@@ -73,5 +73,10 @@
         "name": "xdebug.use_compression",
         "ext_min": "3.1.0beta1",
         "php_min": "7.2.0"
+    },
+    {
+        "name": "xdebug.control_socket",
+        "ext_min": "3.3.0",
+        "php_min": "8.0.0"
     }
 ]

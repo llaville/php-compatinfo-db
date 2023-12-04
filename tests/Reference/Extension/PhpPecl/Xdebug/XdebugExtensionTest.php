@@ -47,25 +47,6 @@ class XdebugExtensionTest extends GenericTestCase
             }
         }
 
-        self::$optionalconstants = [
-            'XDEBUG_CC_DEAD_CODE',
-            'XDEBUG_CC_UNUSED',
-            'XDEBUG_CC_BRANCH_CHECK',
-            'XDEBUG_FILTER_CODE_COVERAGE',
-            'XDEBUG_FILTER_NONE',
-            'XDEBUG_FILTER_TRACING',
-            'XDEBUG_FILTER_STACK',
-            'XDEBUG_NAMESPACE_BLACKLIST',
-            'XDEBUG_NAMESPACE_WHITELIST',
-            'XDEBUG_PATH_BLACKLIST',
-            'XDEBUG_PATH_WHITELIST',
-            'XDEBUG_STACK_NO_DESC',
-            'XDEBUG_TRACE_APPEND',
-            'XDEBUG_TRACE_COMPUTERIZED',
-            'XDEBUG_TRACE_HTML',
-            'XDEBUG_TRACE_NAKED_FILENAME',
-        ];
-
         self::$ignoredconstants = [
             'XDEBUG_PATH_INCLUDE',
             'XDEBUG_PATH_EXCLUDE',

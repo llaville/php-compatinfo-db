@@ -646,10 +646,6 @@ final class ReleaseHandler implements CommandHandlerInterface
             'XDEBUG_NAMESPACE_WHITELIST'            => $this->latestPhpVersion['74'],
             'XDEBUG_PATH_BLACKLIST'                 => $this->latestPhpVersion['74'],
             'XDEBUG_PATH_WHITELIST'                 => $this->latestPhpVersion['74'],
-            'XDEBUG_TRACE_APPEND'                   => $this->latestPhpVersion['74'],
-            'XDEBUG_TRACE_COMPUTERIZED'             => $this->latestPhpVersion['74'],
-            'XDEBUG_TRACE_HTML'                     => $this->latestPhpVersion['74'],
-            'XDEBUG_TRACE_NAKED_FILENAME'           => $this->latestPhpVersion['74'],
         ];
         yield $refName => [$ext, $major, $entry, $names];
 

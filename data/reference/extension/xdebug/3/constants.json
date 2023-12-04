@@ -8,5 +8,15 @@
         "name": "XDEBUG_FILTER_TRACING",
         "ext_min": "3.0.2",
         "php_min": "7.2.0"
+    },
+    {
+        "name": "XDEBUG_TRACE_FLAMEGRAPH_COST",
+        "ext_min": "3.3.0alpha3",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "XDEBUG_TRACE_FLAMEGRAPH_MEM",
+        "ext_min": "3.3.0alpha3",
+        "php_min": "8.0.0"
     }
 ]

@@ -12,35 +12,26 @@
     {
         "name": "XDEBUG_TRACE_APPEND",
         "ext_min": "2.0.0beta1",
-        "ext_max": "2.9.8",
-        "php_min": "4.3.0",
-        "php_max": "7.4.33"
+        "php_min": "4.3.0"
     },
     {
         "name": "XDEBUG_TRACE_COMPUTERIZED",
         "ext_min": "2.0.0beta1",
-        "ext_max": "2.9.8",
-        "php_min": "4.3.0",
-        "php_max": "7.4.33"
+        "php_min": "4.3.0"
     },
     {
         "name": "XDEBUG_TRACE_HTML",
         "ext_min": "2.0.0RC1",
-        "ext_max": "2.9.8",
-        "php_min": "4.3.0",
-        "php_max": "7.4.33"
+        "php_min": "4.3.0"
     },
     {
         "name": "XDEBUG_TRACE_NAKED_FILENAME",
         "ext_min": "2.3.0",
-        "ext_max": "2.9.8",
-        "php_min": "5.4.0",
-        "php_max": "7.4.33"
+        "php_min": "5.4.0"
     },
     {
         "name": "XDEBUG_STACK_NO_DESC",
         "ext_min": "2.3.0",
-        "ext_max": "2.9.8",
         "php_min": "5.4.0"
     },
     {
@@ -57,13 +48,11 @@
     {
         "name": "XDEBUG_FILTER_CODE_COVERAGE",
         "ext_min": "2.6.0beta1",
-        "ext_max": "2.9.8",
         "php_min": "7.0.0"
     },
     {
         "name": "XDEBUG_FILTER_NONE",
         "ext_min": "2.6.0beta1",
-        "ext_max": "2.9.8",
         "php_min": "7.0.0"
     },
     {
