@@ -84,6 +84,7 @@ jobs:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
                     tools: ${{ matrix.tools }}
+                    ini-values: xdebug.mode="develop"
 
             -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies
