@@ -39,13 +39,6 @@ interface StyleInterface extends OutputInterface
 
     /**
      * @param string|string[] $message
-     * @param string|null $format
-     * @return mixed
-     */
-    public function text($message, ?string $format = null);
-
-    /**
-     * @param string|string[] $message
      * @return mixed
      */
     public function success(string|array $message);

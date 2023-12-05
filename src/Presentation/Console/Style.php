@@ -15,6 +15,8 @@ use Symfony\Component\Console\Terminal;
 
 use function array_map;
 use function array_values;
+use function func_get_arg;
+use function func_num_args;
 use function is_array;
 use function min;
 use function sprintf;
@@ -43,17 +45,14 @@ final class Style extends SymfonyStyle implements StyleInterface
         $this->lineLength = min($width - (int) (DIRECTORY_SEPARATOR === '\\'), self::MAX_LINE_LENGTH);
     }
 
-    /**
-     * @param string|string[] $message
-     * @param string|null $format
-     * @return void
-     */
-    public function text($message, ?string $format = null)
+    public function text(string|array $message): void
     {
-        if (null === $format) {
+        if (func_num_args() === 1) {
             parent::text($message);
             return;
         }
+        $format = func_get_arg(1);
+
         $messages = is_array($message) ? array_values($message) : [$message];
         foreach ($messages as $message) {
             $message = wordwrap($message, $this->lineLength);
