@@ -1,4 +1,0 @@
-kind: Fixed
-body: '[#135](https://github.com/llaville/php-compatinfo-db/issues/135) : Better implementation
-  of provider to get constants from extension'
-time: 2023-12-03T18:50:35.762210442Z

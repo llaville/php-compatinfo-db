@@ -2,6 +2,7 @@
 
 | Major Version | Release    | PHP compatibility    |
 |---------------|------------|----------------------|
+| >=6.0         | 2022-12-06 | PHP >= 8.1.0         |
 | >=5.0         | 2022-12-11 | PHP >= 8.0.0         |
 | >=4.0         | 2022-02-04 | PHP >= 7.4.0         |
 | >=3.17        | 2022-01-05 | PHP >= 7.4.0         |
@@ -60,5 +61,11 @@
 * PHP 8.0.26 until 8.0.30
 * PHP 8.1.13 until 8.1.26
 * PHP 8.2.0 until 8.2.13
+
+## [Versions 6.x](SUPPORTED-VERSIONS_6.x.md)
+
+* PHP 8.1.26
+* PHP 8.2.13
+* PHP 8.3.0
 
 Currently, [113 extensions](SUPPORTED-EXTENSIONS.md) referenced in the database.

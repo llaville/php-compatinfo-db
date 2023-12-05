@@ -1,4 +1,0 @@
-kind: Changed
-body: upgrade Symfony components constraint now new LTS is 6.4 (drop support to old
-  LTS 5.4)
-time: 2023-12-02T14:53:31.51863235Z
