@@ -18,10 +18,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 interface StyleInterface extends OutputInterface
 {
-    /**
-     * @param string|string[] $lines
-     */
-    public function columns(string|array $lines, string $format): void;
+    public function columns(mixed $lines, string $format): void;
 
     /**
      * @return mixed

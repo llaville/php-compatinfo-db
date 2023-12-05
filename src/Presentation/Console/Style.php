@@ -85,7 +85,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     /**
      * {@inheritDoc}
      */
-    public function columns(string|array $lines, string $format): void
+    public function columns(mixed $lines, string $format): void
     {
         if (!is_array($lines)) {
             $lines = [$lines];
