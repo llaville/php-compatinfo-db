@@ -63,7 +63,7 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         try {
             $this->commandBus->handle($createCommand);
         } catch (HandlerFailedException $e) {
-            $firstFailure = $e->getNestedExceptions()[0];
+            $firstFailure = $e->getWrappedExceptions()[0];
             if ($firstFailure->getCode() < 500) {
                 $io->warning($firstFailure->getMessage());
             } else {

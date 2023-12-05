@@ -77,7 +77,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
         try {
             $this->commandBus->handle($initCommand);
         } catch (HandlerFailedException $e) {
-            $firstFailure = $e->getNestedExceptions()[0];
+            $firstFailure = $e->getWrappedExceptions()[0];
             $io->error($firstFailure->getMessage());
             return self::FAILURE;
         }

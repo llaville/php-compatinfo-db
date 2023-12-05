@@ -88,7 +88,7 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
             $this->commandBus->handle($polyfillCommand);
         } catch (HandlerFailedException $e) {
             $exceptions = [];
-            foreach ($e->getNestedExceptions() as $exception) {
+            foreach ($e->getWrappedExceptions() as $exception) {
                 $exceptions[] = $exception->getMessage();
                 if ($io->isDebug()) {
                     $exceptions[] = sprintf(
