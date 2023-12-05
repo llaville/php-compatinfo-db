@@ -33,7 +33,7 @@
     },
     "require-dev": {
         "psr/log": "^1.0 || ^3.0",
-        "symfony/framework-bundle": "^6.4"
+        "symfony/framework-bundle": "^6.4 || ^7.0"
     },
     "authors": [
         {
