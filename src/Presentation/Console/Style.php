@@ -45,6 +45,9 @@ final class Style extends SymfonyStyle implements StyleInterface
         $this->lineLength = min($width - (int) (DIRECTORY_SEPARATOR === '\\'), self::MAX_LINE_LENGTH);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function text(string|array $message): void
     {
         if (func_num_args() === 1) {

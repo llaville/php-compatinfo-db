@@ -31,6 +31,11 @@ interface StyleInterface extends OutputInterface
     public function section(string $message);
 
     /**
+     * @param string|string[] $message
+     */
+    public function text(string|array $message): void;
+
+    /**
      * @param string[] $elements
      * @param array<string, string> $attributes
      * @return mixed

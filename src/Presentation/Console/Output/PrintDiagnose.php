@@ -42,7 +42,7 @@ trait PrintDiagnose
         if ($iniPath = $requirements->getPhpIniPath()) {
             $io->text(sprintf('<info>%s</info>', $iniPath));
         } else {
-            $io->text('   WARNING: No configuration file (php.ini) used by PHP!', 'fg=yellow');
+            $io->text('   WARNING: No configuration file (php.ini) used by PHP!', 'fg=yellow');  // @phpstan-ignore-line
         }
 
         $io->text('');
