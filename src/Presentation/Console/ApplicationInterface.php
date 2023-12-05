@@ -8,7 +8,7 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Console Application contract.
@@ -16,9 +16,11 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
  * @since 3.0.0
  * @author Laurent Laville
  */
-interface ApplicationInterface extends ContainerAwareInterface
+interface ApplicationInterface
 {
     public const NAME = 'Database handler for CompatInfo';
+
+    public function setContainer(ContainerInterface $container = null): void;
 
     /**
      * @return void
