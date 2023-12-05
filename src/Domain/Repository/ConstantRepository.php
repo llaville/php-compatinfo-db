@@ -20,10 +20,5 @@ interface ConstantRepository extends RepositoryInterface
      */
     public function getAll(): array;
 
-    /**
-     * @param string $name
-     * @param string|null $declaringClass
-     * @return Constant_|null
-     */
     public function getConstantByName(string $name, ?string $declaringClass): ?Constant_;
 }

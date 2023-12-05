@@ -56,9 +56,6 @@ class Class_
         $this->relationships = new ArrayCollection();
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf(

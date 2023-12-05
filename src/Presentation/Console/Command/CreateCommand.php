@@ -36,6 +36,9 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         $this->entityManager = $em;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -43,6 +46,9 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new Style($input, $output);

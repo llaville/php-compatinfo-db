@@ -29,10 +29,6 @@ final class ShowHandler implements QueryHandlerInterface
         $this->factory = $extensionFactory;
     }
 
-    /**
-     * @param ShowQuery $query
-     * @return Extension|null
-     */
     public function __invoke(ShowQuery $query): ?Extension
     {
         return $this->factory->create($query->getExtension());

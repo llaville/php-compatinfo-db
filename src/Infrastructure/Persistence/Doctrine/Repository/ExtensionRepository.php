@@ -25,7 +25,7 @@ final class ExtensionRepository implements DomainRepository
     use EntityManagerTrait;
 
     /** @var EntityRepository<ExtensionEntity> */
-    private $repository;
+    private EntityRepository $repository;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

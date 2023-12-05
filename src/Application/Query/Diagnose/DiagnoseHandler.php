@@ -19,10 +19,6 @@ use Bartlett\CompatInfoDb\Infrastructure\RequirementsInterface;
  */
 final class DiagnoseHandler implements QueryHandlerInterface
 {
-    /**
-     * @param DiagnoseQuery $query
-     * @return RequirementsInterface
-     */
     public function __invoke(DiagnoseQuery $query): RequirementsInterface
     {
         return new ProjectRequirements($query);

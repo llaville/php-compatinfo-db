@@ -19,10 +19,8 @@ interface RequirementsInterface
 {
     /**
      * Returns the PHP configuration file (php.ini) path.
-     *
-     * @return false|string php.ini file path
      */
-    public function getPhpIniPath();
+    public function getPhpIniPath(): false|string;
 
     /**
      * Returns all mandatory requirements.

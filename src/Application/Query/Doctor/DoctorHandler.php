@@ -20,7 +20,9 @@ use Symfony\Component\Process\Process;
 
 use function array_search;
 use function count;
+use function phpversion;
 use function sprintf;
+use function strcasecmp;
 use function trim;
 use const PHP_VERSION;
 
@@ -51,7 +53,6 @@ final class DoctorHandler implements QueryHandlerInterface
     }
 
     /**
-     * @param DoctorQuery $query
      * @return array<string, mixed>
      */
     public function __invoke(DoctorQuery $query): array

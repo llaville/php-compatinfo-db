@@ -10,6 +10,7 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension;
 
 use DateTimeImmutable;
+use function count;
 use function sprintf;
 
 /**
@@ -27,9 +28,6 @@ final class Platform
     /**
      * Platform constructor.
      *
-     * @param string $description
-     * @param string $version
-     * @param DateTimeImmutable $createdAt
      * @param Extension[] $extensions
      */
     public function __construct(
@@ -44,9 +42,6 @@ final class Platform
         $this->extensions = $extensions;
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return sprintf(
@@ -59,25 +54,16 @@ final class Platform
         );
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;
     }
 
-    /**
-     * @return DateTimeImmutable
-     */
     public function getCreatedAt(): DateTimeImmutable
     {
         return $this->createdAt;

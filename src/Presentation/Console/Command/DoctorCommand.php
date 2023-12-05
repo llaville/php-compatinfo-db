@@ -36,6 +36,9 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'doctor';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this
@@ -46,6 +49,9 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         /** @var ApplicationInterface $app */

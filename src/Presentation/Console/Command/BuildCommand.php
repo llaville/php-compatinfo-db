@@ -24,6 +24,9 @@ final class BuildCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:build';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -48,6 +51,9 @@ final class BuildCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $buildCommand = new AppBuildCommand(

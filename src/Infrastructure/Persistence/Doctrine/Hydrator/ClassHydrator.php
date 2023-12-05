@@ -68,10 +68,6 @@ final class ClassHydrator implements HydratorInterface
         return $object;
     }
 
-    /**
-     * @param Entity $entity
-     * @return Domain
-     */
     public function toDomain(Entity $entity): Domain
     {
         $hydrator = new DependencyHydrator();

@@ -23,11 +23,6 @@ final class IniEntry
     /**
      * IniEntry constructor.
      *
-     * @param string $name
-     * @param string $extMin
-     * @param string|null $extMax
-     * @param string $phpMin
-     * @param string|null $phpMax
      * @param Dependency[] $dependencies
      */
     public function __construct(
@@ -46,9 +41,6 @@ final class IniEntry
         $this->dependencies = $dependencies;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;

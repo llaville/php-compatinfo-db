@@ -33,33 +33,21 @@ final class BuildCommand implements CommandInterface
         $this->output = $output;
     }
 
-    /**
-     * @return string
-     */
     public function getExtension(): string
     {
         return $this->extension;
     }
 
-    /**
-     * @return string
-     */
     public function getExtMin(): string
     {
         return $this->extMin;
     }
 
-    /**
-     * @return string
-     */
     public function getPhpMin(): string
     {
         return $this->phpMin;
     }
 
-    /**
-     * @return OutputInterface
-     */
     public function getOutput(): OutputInterface
     {
         return $this->output;

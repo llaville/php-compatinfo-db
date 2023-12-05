@@ -10,7 +10,6 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Output;
 use Bartlett\CompatInfoDb\Infrastructure\RequirementsInterface;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
-use function getenv;
 use function php_uname;
 use function sprintf;
 use const PHP_VERSION;

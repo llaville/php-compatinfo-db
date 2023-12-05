@@ -40,25 +40,16 @@ final class Release
         $this->phpMax = $phpMax;
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;
     }
 
-    /**
-     * @return DateTimeImmutable
-     */
     public function getDate(): DateTimeImmutable
     {
         return $this->date;
     }
 
-    /**
-     * @return string
-     */
     public function getState(): string
     {
         return $this->state;

@@ -7,8 +7,6 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use Bartlett\CompatInfoDb\Infrastructure\Framework\Composer\InstalledVersions;
-
 use Symfony\Component\Console\Application as SymfonyApplication;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\InputDefinition;
@@ -119,15 +117,6 @@ class Application extends SymfonyApplication implements ApplicationInterface
     public function getLongVersion(): string
     {
         return $this->getApplicationParameters()['compat_info_db.version'];
-    }
-
-    /**
-     * {@inheritDoc}
-     * @deprecated Will be removed in major version 6.0, use instead new container parameter 'compat_info_db.version'
-     */
-    public function getInstalledVersion(bool $withRef = true): ?string
-    {
-        return InstalledVersions::getPrettyVersion('bartlett/php-compatinfo-db', $withRef);
     }
 
     /**

@@ -30,7 +30,7 @@ final class DistributionRepository implements DomainRepositoryInterface
     use EntityManagerTrait;
 
     /** @var EntityRepository<PlatformEntity> */
-    private $repository;
+    private EntityRepository $repository;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

@@ -246,7 +246,6 @@ final class InitHandler implements CommandHandlerInterface
      *
      * @param array<string, string> $meta
      * @param array<string, mixed> $definition
-     * @param string $refPathname
      * @return array<string, mixed>
      */
     private function buildExtension(array $meta, array $definition, string $refPathname): array
@@ -266,10 +265,7 @@ final class InitHandler implements CommandHandlerInterface
     /**
      * Reads split JSON data files
      *
-     * @param string $path
      * @param string[] $majorReleases
-     * @param string $fileBasename
-     * @param string $type
      * @return string[]
      */
     private function readData(string $path, array $majorReleases, string $fileBasename, string $type): array

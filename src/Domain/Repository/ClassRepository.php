@@ -20,10 +20,5 @@ interface ClassRepository extends RepositoryInterface
      */
     public function getAll(): array;
 
-    /**
-     * @param string $name
-     * @param bool $isInterface
-     * @return Class_|null
-     */
     public function getClassByName(string $name, bool $isInterface): ?Class_;
 }

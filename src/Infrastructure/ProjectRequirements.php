@@ -94,7 +94,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     /**
      * {@inheritDoc}
      */
-    public function getPhpIniPath()
+    public function getPhpIniPath(): false|string
     {
         return get_cfg_var('cfg_file_path');
     }

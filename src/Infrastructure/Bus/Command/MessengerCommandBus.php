@@ -24,8 +24,6 @@ final class MessengerCommandBus implements CommandBusInterface
 
     /**
      * MessengerCommandBus constructor.
-     *
-     * @param MessageBusInterface $commandBus
      */
     public function __construct(MessageBusInterface $commandBus)
     {
@@ -35,7 +33,7 @@ final class MessengerCommandBus implements CommandBusInterface
     /**
      * {@inheritDoc}
      */
-    public function handle(CommandInterface $command)
+    public function handle(CommandInterface $command): void
     {
         $this->messageBus->dispatch($command);
     }

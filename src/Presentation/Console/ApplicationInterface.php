@@ -7,7 +7,6 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
-use Bartlett\CompatInfoDb\Application\Kernel\KernelInterface;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
@@ -28,15 +27,8 @@ interface ApplicationInterface extends ContainerAwareInterface
 
     /**
      * Gets the name of the application.
-     *
-     * @return string
      */
-    public function getName();
-
-    /**
-     * Gets the current version installed of the application.
-     */
-    public function getInstalledVersion(bool $withRef = true): ?string;
+    public function getName(): string;
 
     /**
      * Returns the long version of the application.

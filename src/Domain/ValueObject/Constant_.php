@@ -27,15 +27,7 @@ final class Constant_
     /**
      * Constant_ constructor.
      *
-     * @param string $name
-     * @param string|null $declaringClass
-     * @param string $extension
-     * @param string $extMin
-     * @param string|null $extMax
-     * @param string $phpMin
-     * @param string|null $phpMax
      * @param array|Dependency[] $dependencies
-     * @param string|null $polyfill
      */
     public function __construct(
         string $name,
@@ -61,41 +53,26 @@ final class Constant_
         $this->deprecated = $deprecated;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDeclaringClass(): ?string
     {
         return $this->declaringClass;
     }
 
-    /**
-     * @return string|null
-     */
     public function getPolyfill(): ?string
     {
         return $this->polyfill;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDeprecated(): ?string
     {
         return $this->deprecated;
     }
 
-    /**
-     * @return string
-     */
     public function getExtensionName(): string
     {
         return $this->extension;

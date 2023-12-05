@@ -29,6 +29,9 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:polyfill';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -60,6 +63,9 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new Style($input, $output);

@@ -36,6 +36,9 @@ final class ListCommand extends AbstractCommand implements CommandInterface
 
     public const NAME = 'db:list';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -47,6 +50,9 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $filters = [];

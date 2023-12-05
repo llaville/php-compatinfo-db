@@ -41,17 +41,11 @@ final class DoctorQuery implements QueryInterface
         return $this->extensions;
     }
 
-    /**
-     * @return bool
-     */
     public function withTests(): bool
     {
         return $this->tests;
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;

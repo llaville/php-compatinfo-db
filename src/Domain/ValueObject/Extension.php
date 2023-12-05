@@ -9,6 +9,7 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 
+use function count;
 use function in_array;
 use function sprintf;
 use function strtolower;
@@ -47,10 +48,6 @@ final class Extension implements ExtensionVersionProviderInterface
     /**
      * Extension constructor.
      *
-     * @param string $name
-     * @param string $version
-     * @param string $type
-     * @param bool $deprecated
      * @param array|IniEntry[] $iniEntries
      * @param array|Constant_[] $constants
      * @param array|Function_[] $functions
@@ -236,9 +233,6 @@ final class Extension implements ExtensionVersionProviderInterface
         return $this->releases;
     }
 
-    /**
-     * @return Release
-     */
     public function getLastRelease(): Release
     {
         return end($this->releases);

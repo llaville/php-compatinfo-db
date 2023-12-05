@@ -19,8 +19,6 @@ interface HydratorInterface
      * Hydrate $object with the provided $data.
      *
      * @param array<string, string|bool|mixed> $data
-     * @param string $class
-     * @return object
      */
     public function hydrate(array $data, string $class): object;
 
@@ -35,7 +33,6 @@ interface HydratorInterface
     /**
      * Extract values from an object.
      *
-     * @param object $object
      * @return array<string, DateTimeImmutable|string|bool|null>
      */
     public function extract(object $object): array;

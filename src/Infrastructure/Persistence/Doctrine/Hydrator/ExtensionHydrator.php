@@ -91,10 +91,6 @@ final class ExtensionHydrator implements HydratorInterface
         return $object;
     }
 
-    /**
-     * @param Entity $entity
-     * @return Domain
-     */
     public function toDomain(Entity $entity): Domain
     {
         $iniEntries = [];
@@ -176,10 +172,6 @@ final class ExtensionHydrator implements HydratorInterface
      *
      * See Xmlrpc extension example that was bundled before PHP 8.0, and now is an external pecl extension.
      * @see https://github.com/llaville/php-compatinfo-db/issues/64
-     *
-     *
-     * @param object $object
-     * @return bool
      */
     private function shouldSkip(object $object): bool
     {

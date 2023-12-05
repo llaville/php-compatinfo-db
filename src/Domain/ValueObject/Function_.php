@@ -31,18 +31,9 @@ final class Function_
     /**
      * Function_ constructor.
      *
-     * @param string $name
-     * @param string|null $declaringClass
-     * @param string $extension
-     * @param string $extMin
-     * @param string|null $extMax
-     * @param string $phpMin
-     * @param string|null $phpMax
      * @param string[]|null $parameters
      * @param string[]|null $excludes
      * @param Dependency[] $dependencies
-     * @param int $flags
-     * @param string|null $polyfill
      */
     public function __construct(
         string $name,
@@ -72,25 +63,16 @@ final class Function_
         $this->polyfill = $polyfill;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDeclaringClass(): ?string
     {
         return $this->declaringClass;
     }
 
-    /**
-     * @return string
-     */
     public function getExtensionName(): string
     {
         return $this->extension;
@@ -120,57 +102,36 @@ final class Function_
         return $this->dependencies;
     }
 
-    /**
-     * @return bool
-     */
     public function isAbstract(): bool
     {
         return (bool) (!empty($this->declaringClass) && $this->flags & Class_::MODIFIER_ABSTRACT);
     }
 
-    /**
-     * @return bool
-     */
     public function isFinal(): bool
     {
         return (bool) (!empty($this->declaringClass) && $this->flags & Class_::MODIFIER_FINAL);
     }
 
-    /**
-     * @return bool
-     */
     public function isStatic(): bool
     {
         return (bool) (!empty($this->declaringClass) && $this->flags & Class_::MODIFIER_STATIC);
     }
 
-    /**
-     * @return bool
-     */
     public function isPublic(): bool
     {
         return (bool) ($this->flags & Class_::MODIFIER_PUBLIC);
     }
 
-    /**
-     * @return bool
-     */
     public function isProtected(): bool
     {
         return (bool) ($this->flags & Class_::MODIFIER_PROTECTED);
     }
 
-    /**
-     * @return bool
-     */
     public function isPrivate(): bool
     {
         return (bool) ($this->flags & Class_::MODIFIER_PRIVATE);
     }
 
-    /**
-     * @return string|null
-     */
     public function getPolyfill(): ?string
     {
         return $this->polyfill;

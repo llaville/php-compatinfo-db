@@ -53,10 +53,6 @@ final class PlatformHydrator implements HydratorInterface
         return $object;
     }
 
-    /**
-     * @param Entity $entity
-     * @return Domain
-     */
     public function toDomain(Entity $entity): Domain
     {
         return new Domain(

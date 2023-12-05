@@ -28,6 +28,9 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:release';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -59,6 +62,9 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $releaseCommand = new AppReleaseCommand(

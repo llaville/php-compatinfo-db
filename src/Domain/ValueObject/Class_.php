@@ -34,16 +34,7 @@ final class Class_
     /**
      * Class_ constructor.
      *
-     * @param string $name
-     * @param bool $isInterface
-     * @param string $extension
-     * @param string $extMin
-     * @param string|null $extMax
-     * @param string $phpMin
-     * @param string|null $phpMax
      * @param array|Dependency[] $dependencies
-     * @param int $flags
-     * @param string|null $polyfill
      */
     public function __construct(
         string $name,
@@ -69,25 +60,16 @@ final class Class_
         $this->polyfill = $polyfill;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return bool
-     */
     public function isInterface(): bool
     {
         return $this->isInterface;
     }
 
-    /**
-     * @return string
-     */
     public function getExtensionName(): string
     {
         return $this->extension;
@@ -101,25 +83,16 @@ final class Class_
         return $this->dependencies;
     }
 
-    /**
-     * @return bool
-     */
     public function isAbstract(): bool
     {
         return (bool) ($this->flags & self::MODIFIER_ABSTRACT);
     }
 
-    /**
-     * @return bool
-     */
     public function isFinal(): bool
     {
         return (bool) ($this->flags & self::MODIFIER_FINAL);
     }
 
-    /**
-     * @return string|null
-     */
     public function getPolyfill(): ?string
     {
         return $this->polyfill;

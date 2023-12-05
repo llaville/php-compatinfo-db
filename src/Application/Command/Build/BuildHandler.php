@@ -39,7 +39,6 @@ use const JSON_PRETTY_PRINT;
 final class BuildHandler implements CommandHandlerInterface
 {
     /**
-     * @param BuildCommand $command
      * @throws ReflectionException
      */
     public function __invoke(BuildCommand $command): void
@@ -115,12 +114,6 @@ final class BuildHandler implements CommandHandlerInterface
         $this->buildFunctions($extMin, $phpMin, $re, $output);
     }
 
-    /**
-     * @param string $extMin
-     * @param string $phpMin
-     * @param ReflectionExtension $re
-     * @param OutputInterface $output
-     */
     private function buildClasses(string $extMin, string $phpMin, ReflectionExtension $re, OutputInterface $output): void
     {
         $objects = [];
@@ -145,12 +138,6 @@ final class BuildHandler implements CommandHandlerInterface
         );
     }
 
-    /**
-     * @param string $extMin
-     * @param string $phpMin
-     * @param ReflectionExtension $re
-     * @param OutputInterface $output
-     */
     private function buildInterfaces(string $extMin, string $phpMin, ReflectionExtension $re, OutputInterface $output): void
     {
         $objects = [];
@@ -176,10 +163,7 @@ final class BuildHandler implements CommandHandlerInterface
     }
 
     /**
-     * @param string $extMin
-     * @param string $phpMin
      * @param string[] $classes
-     * @param OutputInterface $output
      * @throws ReflectionException
      */
     private function buildMethods(string $extMin, string $phpMin, array $classes, OutputInterface $output): void
@@ -237,10 +221,7 @@ final class BuildHandler implements CommandHandlerInterface
     }
 
     /**
-     * @param string $extMin
-     * @param string $phpMin
      * @param string[] $classes
-     * @param OutputInterface $output
      * @throws ReflectionException
      */
     private function buildClassConstants(string $extMin, string $phpMin, array $classes, OutputInterface $output): void
@@ -269,12 +250,6 @@ final class BuildHandler implements CommandHandlerInterface
         );
     }
 
-    /**
-     * @param string $extMin
-     * @param string $phpMin
-     * @param ReflectionExtension $re
-     * @param OutputInterface $output
-     */
     private function buildConstants(string $extMin, string $phpMin, ReflectionExtension $re, OutputInterface $output): void
     {
         $objects = [];
@@ -295,12 +270,6 @@ final class BuildHandler implements CommandHandlerInterface
         );
     }
 
-    /**
-     * @param string $extMin
-     * @param string $phpMin
-     * @param ReflectionExtension $re
-     * @param OutputInterface $output
-     */
     private function buildFunctions(string $extMin, string $phpMin, ReflectionExtension $re, OutputInterface $output): void
     {
         $objects = [];

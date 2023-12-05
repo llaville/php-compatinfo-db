@@ -29,6 +29,9 @@ class InitCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:init';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -43,6 +46,9 @@ class InitCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new Style($input, $output);
@@ -57,7 +63,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
         $app = $this->getApplication();
 
         if (null === $relVersion) {
-            $appVersion = $app->getInstalledVersion(true);
+            $appVersion = $app->getLongVersion();
         } else {
             $appVersion = trim($relVersion);
         }

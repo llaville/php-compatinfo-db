@@ -34,9 +34,6 @@ final class Style extends SymfonyStyle implements StyleInterface
 
     /**
      * Style constructor.
-     *
-     * @param InputInterface $input
-     * @param OutputInterface $output
      */
     public function __construct(InputInterface $input, OutputInterface $output)
     {
@@ -49,7 +46,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     /**
      * @param string|string[] $message
      * @param string|null $format
-     * @return mixed
+     * @return void
      */
     public function text($message, ?string $format = null)
     {
@@ -88,7 +85,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     /**
      * {@inheritDoc}
      */
-    public function columns($lines, string $format): void
+    public function columns(string|array $lines, string $format): void
     {
         if (!is_array($lines)) {
             $lines = [$lines];

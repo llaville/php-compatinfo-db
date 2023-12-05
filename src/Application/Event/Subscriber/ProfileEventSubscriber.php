@@ -29,8 +29,6 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
 
     /**
      * ProfileEventSubscriber constructor.
-     *
-     * @param Stopwatch $stopwatch
      */
     public function __construct(Stopwatch $stopwatch)
     {
@@ -49,9 +47,6 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
         ];
     }
 
-    /**
-     * @param ConsoleCommandEvent $event
-     */
     public function onConsoleCommand(ConsoleCommandEvent $event): void
     {
         $this->stopwatch->reset();
@@ -59,9 +54,6 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
         $this->stopwatch->start($event->getCommand()->getName());
     }
 
-    /**
-     * @param ConsoleTerminateEvent $event
-     */
     public function onConsoleTerminate(ConsoleTerminateEvent $event): void
     {
         // Just after executing any command
@@ -87,10 +79,6 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
         $output->writeln($text);
     }
 
-    /**
-     * @param int $time
-     * @return string
-     */
     private function toTimeString(int $time): string
     {
         $times = [

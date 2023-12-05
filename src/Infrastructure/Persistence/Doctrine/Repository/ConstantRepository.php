@@ -25,7 +25,7 @@ final class ConstantRepository implements DomainRepository
     use EntityManagerTrait;
 
     /** @var EntityRepository<ConstantEntity> */
-    private $repository;
+    private EntityRepository $repository;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

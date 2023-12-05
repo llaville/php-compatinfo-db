@@ -15,9 +15,5 @@ namespace Bartlett\CompatInfoDb\Application\Command;
  */
 interface CommandBusInterface
 {
-    /**
-     * @param CommandInterface $command
-     * @return mixed
-     */
-    public function handle(CommandInterface $command);
+    public function handle(CommandInterface $command): void;
 }

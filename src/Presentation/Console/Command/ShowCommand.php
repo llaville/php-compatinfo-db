@@ -48,6 +48,9 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
     public const NAME = 'db:show';
 
+    /**
+     * {@inheritDoc}
+     */
     protected function configure(): void
     {
         $this->setName(self::NAME)
@@ -70,6 +73,9 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $showQuery = new ShowQuery(
@@ -247,7 +253,6 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
     /**
      * @param Dependency[] $data
-     * @param StyleInterface $io
      */
     private function formatDependency(array $data, StyleInterface $io): void
     {
@@ -279,8 +284,6 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
     /**
      * @param array<object> $data
-     * @param string $section
-     * @param StyleInterface $io
      */
     private function formatSection(array $data, string $section, StyleInterface $io): void
     {
@@ -376,11 +379,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $io->table($headers, $rows);
     }
 
-    /**
-     * @param object $domain
-     * @return string
-     */
-    private function ext($domain): string
+    private function ext(object $domain): string
     {
         return empty($domain->getExtMax())
             ? $domain->getExtMin()
@@ -388,11 +387,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         ;
     }
 
-    /**
-     * @param object $domain
-     * @return string
-     */
-    private function php($domain): string
+    private function php(object $domain): string
     {
         return empty($domain->getPhpMax())
             ? $domain->getPhpMin()

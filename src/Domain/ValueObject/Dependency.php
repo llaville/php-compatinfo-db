@@ -24,17 +24,11 @@ final class Dependency
         $this->constraint = $constraint;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getConstraint(): string
     {
         return $this->constraint;

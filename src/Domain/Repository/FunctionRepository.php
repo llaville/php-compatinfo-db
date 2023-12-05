@@ -20,10 +20,5 @@ interface FunctionRepository extends RepositoryInterface
      */
     public function getAll(): array;
 
-    /**
-     * @param string $name
-     * @param string|null $declaringClass
-     * @return Function_|null
-     */
     public function getFunctionByName(string $name, ?string $declaringClass): ?Function_;
 }

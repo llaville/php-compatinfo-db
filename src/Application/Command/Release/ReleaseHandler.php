@@ -50,8 +50,6 @@ final class ReleaseHandler implements CommandHandlerInterface
 
     /**
      * ReleaseHandler constructor.
-     *
-     * @param JsonFileHandler $jsonFileHandler
      */
     public function __construct(JsonFileHandler $jsonFileHandler)
     {
@@ -59,9 +57,6 @@ final class ReleaseHandler implements CommandHandlerInterface
         $this->refDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 4), 'data', 'reference', 'extension']);
     }
 
-    /**
-     * @param ReleaseCommand $command
-     */
     public function __invoke(ReleaseCommand $command): void
     {
         $relVersion = $command->getVersion();
@@ -115,8 +110,6 @@ final class ReleaseHandler implements CommandHandlerInterface
 
     /**
      * Tags the latest PHP version added.
-     *
-     * @return void
      */
     private function tagPhpMaxVersion(): void
     {

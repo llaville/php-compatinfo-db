@@ -25,7 +25,7 @@ final class FunctionRepository implements DomainRepository
     use EntityManagerTrait;
 
     /** @var EntityRepository<FunctionEntity> */
-    private $repository;
+    private EntityRepository $repository;
 
     public function __construct(EntityManagerInterface $entityManager)
     {

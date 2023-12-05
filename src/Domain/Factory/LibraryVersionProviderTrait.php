@@ -191,12 +191,8 @@ trait LibraryVersionProviderTrait
 
     /**
      * Checks if the constant or class constant exists, and return its value.
-     *
-     * @param string $name
-     * @param string|null $class
-     * @return mixed
      */
-    private function constantExists(string $name, ?string $class = null)
+    private function constantExists(string $name, ?string $class = null): mixed
     {
         if (null === $class) {
             return defined($name) ? constant($name) : null;

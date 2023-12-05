@@ -36,7 +36,7 @@ final class MessengerQueryBus implements QueryBusInterface
     /**
      * {@inheritDoc}
      */
-    public function query(QueryInterface $query)
+    public function query(QueryInterface $query): mixed
     {
         return $this->handle($query);
     }

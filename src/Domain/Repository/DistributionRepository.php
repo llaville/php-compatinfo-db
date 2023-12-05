@@ -19,16 +19,10 @@ interface DistributionRepository extends RepositoryInterface
 {
     public const DISTRIBUTION_DESC = 'CompatInfoDB';
 
-    /**
-     * @param string $version
-     * @return Platform|null
-     */
     public function getDistributionByVersion(string $version): ?Platform;
 
     /**
      * @param Collection<int, mixed> $collection
-     * @param string $distVersion
-     * @return Platform
      */
     public function initialize(Collection $collection, string $distVersion): Platform;
 

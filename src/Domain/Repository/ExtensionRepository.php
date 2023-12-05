@@ -20,9 +20,5 @@ interface ExtensionRepository extends RepositoryInterface
      */
     public function getAll(): array;
 
-    /**
-     * @param string $name
-     * @return Extension|null
-     */
     public function getExtensionByName(string $name): ?Extension;
 }

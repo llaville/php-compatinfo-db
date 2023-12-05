@@ -23,8 +23,6 @@ final class DiagnoseQuery implements QueryInterface
 
     /**
      * DiagnoseQuery constructor.
-     *
-     * @param Connection $connection
      */
     public function __construct(Connection $connection)
     {
@@ -33,8 +31,6 @@ final class DiagnoseQuery implements QueryInterface
 
     /**
      * Returns Doctrine database connection.
-     *
-     * @return Connection
      */
     public function getDatabaseConnection(): Connection
     {
