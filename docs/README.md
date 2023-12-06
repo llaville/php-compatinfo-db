@@ -10,7 +10,7 @@ This database is currently only support by its initial project [php-compatinfo](
 
 * a Symfony console application to handle data (json files) of the SQL database is provided on CLI API
 
-More than 100 extensions (PHP standard distribution, but also PECL) are currently support :
+More than 110 extensions (PHP standard distribution, but also PECL) are currently support :
 
 * reference all functions
 * reference all constants

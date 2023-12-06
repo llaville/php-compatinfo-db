@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD013 -->
 # PHP CompatInfoDB
 
-| Releases        |                     Branch                     |                               PHP                               |                          Packagist                           |                      License                      |                            Documentation                            |
-|:----------------|:----------------------------------------------:|:---------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------------------------:|
-| Stable v5.14.x  | [![Branch 5.14][Branch_514x-img]][Branch_514x] | [![Minimum PHP Version)][PHPVersion_514x-img]][PHPVersion_514x] | [![Stable Version 5.14][Packagist_514x-img]][Packagist_514x] | [![License 5.14][License_514x-img]][License_514x] | [![Documentation 5.14][Documentation_514x-img]][Documentation_514x] |
-| Unstable v6.0.x |  [![Branch 6.0][Branch_60x-img]][Branch_60x]   |  [![Minimum PHP Version)][PHPVersion_60x-img]][PHPVersion_60x]  |  [![Stable Version 6.0][Packagist_60x-img]][Packagist_60x]   |  [![License 6.0][License_60x-img]][License_60x]   |  [![Documentation 6.0][Documentation_60x-img]][Documentation_60x]   |
+| Releases       |                     Branch                     |                               PHP                               |                          Packagist                           |                      License                      |                            Documentation                            |
+|:---------------|:----------------------------------------------:|:---------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------------------------:|
+| Stable v5.14.x | [![Branch 5.14][Branch_514x-img]][Branch_514x] | [![Minimum PHP Version)][PHPVersion_514x-img]][PHPVersion_514x] | [![Stable Version 5.14][Packagist_514x-img]][Packagist_514x] | [![License 5.14][License_514x-img]][License_514x] | [![Documentation 5.14][Documentation_514x-img]][Documentation_514x] |
+| Stable v6.0.x  |  [![Branch 6.0][Branch_60x-img]][Branch_60x]   |  [![Minimum PHP Version)][PHPVersion_60x-img]][PHPVersion_60x]  |  [![Stable Version 6.0][Packagist_60x-img]][Packagist_60x]   |  [![License 6.0][License_60x-img]][License_60x]   |  [![Documentation 6.0][Documentation_60x-img]][Documentation_60x]   |
 
 [Branch_514x-img]: https://img.shields.io/badge/branch-5.14-orange
 [Branch_514x]: https://github.com/llaville/php-compatinfo-db/tree/5.14
@@ -44,7 +44,7 @@ This database is currently only support by its initial project [php-compatinfo](
  | `4.2.x`  to `4.5.x`  | `>= 7.4`             | `6.4`        |
  | `4.6.x`  to `4.11.x` | `>= 7.4`             | `6.5`        |
  | `5.0.x`  to `5.14.x` | `>= 8.0` and `< 8.3` | `7.0`        |
- | `6.0.x`              | `>= 8.1`             | `8.0`        |
+ | `6.0.x`              | `>= 8.1`             | `7.0`, `8.0` |
 
 ## Documentation
 
