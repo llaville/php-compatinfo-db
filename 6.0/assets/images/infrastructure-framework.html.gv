@@ -1,0 +1,89 @@
+digraph {
+  graph [rankdir="LR" bgcolor="transparent"]
+  node [fillcolor="#FEFECE" style="filled"]
+  subgraph cluster_0 {
+    graph [bgcolor="chartreuse3"]
+    label = "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Composer"
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Composer\\InstalledVersions" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>InstalledVersions</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» getPrettyVersion(packageName : string) : ?string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    graph [bgcolor="chartreuse3"]
+    label = "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection"
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\CompatInfoDbExtension" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>CompatInfoDbExtension</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getNamespace() : string</td></tr>
+    <tr><td align="left">+ load(configs : array, container : Symfony\\Component\\DependencyInjection\\ContainerBuilder)</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\Configuration" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>Configuration</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» DEFAULT_PROXY_DIR : string = "\%kernel\.cache_dir\%\/php\-compatinfo\-db\/\%version\%\/proxies" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getConfigTreeBuilder() : Symfony\\Component\\Config\\Definition\\Builder\\TreeBuilder</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_2 {
+    label = "Symfony\\Component\\DependencyInjection\\Extension"
+    "Symfony\\Component\\DependencyInjection\\Extension\\Extension" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«abstract»<br/>Extension</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ getXsdValidationBasePath()</td></tr>
+    <tr><td align="left">+ getNamespace()</td></tr>
+    <tr><td align="left">+ getAlias() : string</td></tr>
+    <tr><td align="left">+ getConfiguration(config : array, container : Symfony\\Component\\DependencyInjection\\ContainerBuilder)</td></tr>
+    <tr><td align="left">+ getProcessedConfigs() : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Symfony\\Component\\DependencyInjection\\Extension\\ExtensionInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ExtensionInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» load(configs : array, container : Symfony\\Component\\DependencyInjection\\ContainerBuilder)</td></tr>
+    <tr><td align="left">+ «abstract» getNamespace()</td></tr>
+    <tr><td align="left">+ «abstract» getXsdValidationBasePath()</td></tr>
+    <tr><td align="left">+ «abstract» getAlias()</td></tr>
+</table></td></tr>
+</table>>]
+    "Symfony\\Component\\DependencyInjection\\Extension\\ConfigurationExtensionInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ConfigurationExtensionInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getConfiguration(config : array, container : Symfony\\Component\\DependencyInjection\\ContainerBuilder)</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_3 {
+    label = "Symfony\\Component\\Config\\Definition"
+    "Symfony\\Component\\Config\\Definition\\ConfigurationInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ConfigurationInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» getConfigTreeBuilder()</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  "Symfony\\Component\\DependencyInjection\\Extension\\Extension" -> "Symfony\\Component\\DependencyInjection\\Extension\\ExtensionInterface" [arrowhead="empty" style="dashed"]
+  "Symfony\\Component\\DependencyInjection\\Extension\\Extension" -> "Symfony\\Component\\DependencyInjection\\Extension\\ConfigurationExtensionInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\CompatInfoDbExtension" -> "Symfony\\Component\\DependencyInjection\\Extension\\Extension" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Infrastructure\\Framework\\Symfony\\DependencyInjection\\Configuration" -> "Symfony\\Component\\Config\\Definition\\ConfigurationInterface" [arrowhead="empty" style="dashed"]
+}
