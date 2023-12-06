@@ -5,7 +5,7 @@ on:
     push:
         branches:
             - master
-            - "5.14"
+            - "6.0"
         paths:
             - docs/**
     pull_request:
@@ -15,7 +15,8 @@ jobs:
     deploy:
         uses: llaville/.github/.github/workflows/gh-pages.yml@uml
         with:
-            destination-dir: "5.14"
+            destination-dir: "6.0"
             force-orphan: false
             hook-script: "resources/gh-pages-hook.sh"
             graph-uml: true
+            php-version: "8.1"
