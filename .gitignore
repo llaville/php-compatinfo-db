@@ -11,7 +11,7 @@ vendor-bin/**/vendor/
 .phplint.cache/
 
 ###### PHPUnit ######
-.phpunit.cache
+.phpunit.cache/
 
 ###### Box ######
 .box.metadata.cache

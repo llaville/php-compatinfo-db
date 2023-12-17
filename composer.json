@@ -88,10 +88,12 @@
             "@composer bin all install --ansi"
         ],
         "code:check": "vendor/bin/phpstan analyse --configuration .github/linters/phpstan.neon.dist --ansi",
-        "code:lint": "vendor/bin/phplint --configuration .github/linters/.phplint.yml --verbose --progress=indicator --ansi"
+        "code:lint": "vendor/bin/phplint --configuration .github/linters/.phplint.yml --verbose --progress=indicator --ansi",
+        "tests:unit": "vendor/bin/phpunit --configuration phpunit.xml.dist"
     },
     "scripts-descriptions" : {
         "code:check": "Run PHPStan code analysis on PHP CompatInfo DB source code",
-        "code:lint": "Run PHPLint on PHP CompatInfo DB source code"
+        "code:lint": "Run PHPLint on PHP CompatInfo DB source code",
+        "tests:unit": "Run unit tests"
     }
 }
