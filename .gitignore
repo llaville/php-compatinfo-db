@@ -8,7 +8,7 @@ vendor/
 vendor-bin/**/vendor/
 
 ###### PHPLint ######
-.phplint-cache
+.phplint.cache/
 
 ###### PHPUnit ######
 .phpunit.cache
