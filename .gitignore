@@ -4,6 +4,8 @@
 
 ###### Composer dependencies ######
 vendor/
+###### Composer bin plugin ######
+vendor-bin/**/vendor/
 
 ###### PHPLint ######
 .phplint-cache
