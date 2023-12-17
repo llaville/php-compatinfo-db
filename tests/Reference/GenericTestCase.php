@@ -324,7 +324,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         $elements  = array_keys($extension->getConstants());
 
         foreach ($elements as $name) {
-            if (str_starts_with($name, "\0" . '__COMPILER_HALT_OFFSET__' . "\0" . __PHPUNIT_PHAR__)) {
+            if (defined('__PHPUNIT_PHAR__') && str_starts_with($name, "\0" . '__COMPILER_HALT_OFFSET__' . "\0" . __PHPUNIT_PHAR__)) {
                 continue;
             }
             yield $name;
