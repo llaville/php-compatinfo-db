@@ -37,6 +37,7 @@ jobs:
                 uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
+                    coverage: "none"
 
             -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies

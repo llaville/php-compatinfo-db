@@ -66,6 +66,7 @@ jobs:
                 uses: shivammathur/cache-extensions@v1
                 with:
                     php-version: ${{ matrix.php }}
+                    coverage: "none"
                     extensions: ${{ matrix.extensions }}
                     key: cache-v5
 
