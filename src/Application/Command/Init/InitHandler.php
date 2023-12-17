@@ -168,6 +168,7 @@ final class InitHandler implements CommandHandlerInterface
             $progress->setMessage('');
             $progress->display();
             $progress->finish();
+            $progress->clear();
         }
 
         if ($io->isDebug()) {
