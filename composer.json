@@ -86,6 +86,10 @@
         ],
         "post-install-cmd": [
             "@composer bin all install --ansi"
-        ]
+        ],
+        "code:check": "vendor/bin/phpstan analyse --configuration .github/linters/phpstan.neon.dist --ansi"
+    },
+    "scripts-descriptions" : {
+        "code:check": "Run PHPStan code analysis on PHP CompatInfo DB source code"
     }
 }
