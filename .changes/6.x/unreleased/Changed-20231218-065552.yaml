@@ -1,3 +1,0 @@
-kind: Changed
-body: Do not include by default deprecated references in db:list output
-time: 2023-12-18T06:55:52.971257141Z
