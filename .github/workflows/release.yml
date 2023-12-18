@@ -25,7 +25,9 @@ jobs:
                 os:
                     - ubuntu-22.04
                 php:
-                    - 8.1
+                    - 8.2
+                tools:
+                    - box:4.6  # available since https://github.com/shivammathur/setup-php/releases/tag/2.27.0
 
         steps:
             -   # https://github.com/actions/checkout
@@ -38,6 +40,11 @@ jobs:
                 with:
                     php-version: ${{ matrix.php }}
                     coverage: "none"
+
+            -   # https://getcomposer.org/doc/06-config.md#platform
+                name: Setup Composer Platform
+                run: |
+                    composer config platform.php 8.1
 
             -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies
@@ -57,7 +64,7 @@ jobs:
                     box-manifest manifest:build --ansi -vv -c box.json --output-file=sbom.json
                     box-manifest manifest:build --ansi -vv -c box.json --output-file=console.txt --format console
                     box-manifest manifest:stub  --ansi -vv -c box.json --output-file=stub.php --resource console.txt --resource sbom.json
-                    box-manifest box:compile    --ansi -vv -c box.json.dist
+                    box compile --ansi -vv -c box.json.dist
 
             -   # https://github.com/softprops/action-gh-release
                 name: Create Release from current tag
