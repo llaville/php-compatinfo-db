@@ -2,6 +2,8 @@
 # CUSTOM
 ######################################
 
+docs/assets/images/
+
 ###### Composer dependencies ######
 vendor/
 ###### Composer bin plugin ######
