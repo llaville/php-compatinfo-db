@@ -49,6 +49,9 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             );
         }
 
+        // @since Release 6.1.0, do not display by default deprecated references
+        $platform = $this->filterPlatformByExtensionDeprecated($platform, false);
+
         $filters = $query->getFilters();
 
         if (isset($filters['type'])) {
@@ -62,6 +65,9 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         }
         if (!empty($filters['outdated'])) {
             $platform = $this->filterPlatformByExtensionOutdated($platform);
+        }
+        if (!empty($filters['deprecated'])) {
+            $platform = $this->filterPlatformByExtensionDeprecated($platform, true);
         }
 
         return $platform;
@@ -142,6 +148,33 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $provided = $extension->getVersion();
 
             if ($installed !== '' && $installed !== $provided) {
+                $extensions[] = $extension;
+            }
+        }
+
+        return new Platform(
+            $platform->getDescription(),
+            $platform->getVersion(),
+            $platform->getCreatedAt(),
+            $extensions
+        );
+    }
+
+    private function filterPlatformByExtensionDeprecated(Platform $platform, bool $deprecated): Platform
+    {
+        $extensions = [];
+
+        foreach ($platform->getExtensions() as $extension) {
+            $name = $extension->getName();
+            if (strcasecmp('opcache', $name) === 0) {
+                // special case
+                $name = 'Zend ' . $name;
+            }
+
+            if ($deprecated && $extension->isDeprecated()) {
+                $extensions[] = $extension;
+            }
+            if (!$deprecated && !$extension->isDeprecated()) {
                 $extensions[] = $extension;
             }
         }

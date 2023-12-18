@@ -47,6 +47,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
             ->addOption('name', null, InputOption::VALUE_REQUIRED, 'Filter extension by name')
             ->addOption('installed', 'i', InputOption::VALUE_NONE, 'List installed references only')
             ->addOption('outdated', 'o', InputOption::VALUE_NONE, 'List outdated references only')
+            ->addOption('deprecated', 'd', InputOption::VALUE_NONE, 'List deprecated references only')
         ;
     }
 
@@ -66,6 +67,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         }
         $filters['installed'] = $input->getOption('installed');
         $filters['outdated'] = $input->getOption('outdated');
+        $filters['deprecated'] = $input->getOption('deprecated');
 
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
