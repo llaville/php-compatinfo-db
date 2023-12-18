@@ -123,9 +123,8 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
                 $name = 'Zend ' . $name;
             }
             $installed = phpversion($name) ? : '';
-            $provided = $extension->getVersion();
 
-            if ($installed !== '' && $installed == $provided) {
+            if ($installed !== '') {
                 $extensions[] = $extension;
             }
         }
