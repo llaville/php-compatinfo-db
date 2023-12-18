@@ -1,0 +1,3 @@
+kind: Fixed
+body: CI release workflow (missed BOX tool setup from matrix)
+time: 2023-12-18T08:47:14.662218148Z
