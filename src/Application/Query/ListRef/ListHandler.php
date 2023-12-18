@@ -14,10 +14,14 @@ use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 
 use RuntimeException;
+use function explode;
 use function phpversion;
 use function preg_match;
 use function str_replace;
 use function strcasecmp;
+use function strpos;
+use const PHP_MAJOR_VERSION;
+use const PHP_MINOR_VERSION;
 
 /**
  * Handler to list references in the database.
@@ -136,6 +140,25 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
 
     private function filterPlatformByExtensionOutdated(Platform $platform): Platform
     {
+        $versionCompare = function (string $string1, string $string2): int {
+            $provided = explode('.', $string1);
+            $baseline = (int) $provided[0] * 100 + (int) $provided[1];
+            $installed = explode('.', $string2);
+            $current = (int) $installed[0] * 100 + (int) $installed[1];
+
+            if (PHP_MAJOR_VERSION == $provided[0] && PHP_MINOR_VERSION != $provided[1]) {
+                return 1;
+            }
+
+            if ($current < $baseline) {
+                return -1;
+            }
+            if ($current == $baseline) {
+                return 0;
+            }
+            return 1;
+        };
+
         $extensions = [];
 
         foreach ($platform->getExtensions() as $extension) {
@@ -148,7 +171,13 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $provided = $extension->getVersion();
 
             if ($installed !== '' && $installed !== $provided) {
-                $extensions[] = $extension;
+                if (strpos($installed, '.')) {
+                    if ($versionCompare($provided, $installed) < 0) {
+                        $extensions[] = $extension;
+                    }
+                } else {
+                    $extensions[] = $extension;
+                }
             }
         }
 
