@@ -1,4 +1,5 @@
 {
     "name": "mcrypt",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }
