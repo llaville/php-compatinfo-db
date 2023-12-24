@@ -32,7 +32,7 @@
         "symfony/stopwatch": "^6.4 || ^7.0"
     },
     "require-dev": {
-        "psr/log": "^1.0 || ^3.0",
+        "psr/log": "^3.0",
         "symfony/framework-bundle": "^6.4 || ^7.0",
         "bamarni/composer-bin-plugin": "^1.8"
     },
