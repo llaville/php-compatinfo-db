@@ -18,7 +18,7 @@ Install the PHP CompatInfoDB with [Composer](https://getcomposer.org/).
 If you don't know yet what is composer, have a look [on introduction](http://getcomposer.org/doc/00-intro.md).
 
 ```shell
-composer require bartlett/php-compatinfo-db ^6
+composer require bartlett/php-compatinfo-db ^6.1
 ```
 
 ### With Git
@@ -27,7 +27,7 @@ The PHP CompatInfoDB can be directly used from [GitHub](https://github.com/llavi
 by cloning the repository into a directory of your choice.
 
 ```shell
-git clone -b 6.0 https://github.com/llaville/php-compatinfo-db.git
+git clone -b 6.1 https://github.com/llaville/php-compatinfo-db.git
 ```
 
 ## Configuring the Database
