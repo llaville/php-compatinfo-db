@@ -1,0 +1,170 @@
+digraph {
+  graph [rankdir="LR" bgcolor="transparent"]
+  node [fillcolor="#FEFECE" style="filled"]
+  subgraph cluster_0 {
+    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Build"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>BuildCommand</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(extension : string, extMin : string, phpMin : string, output : Symfony\\Component\\Console\\Output\\OutputInterface)</td></tr>
+    <tr><td align="left">+ getExtension() : string</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getOutput() : Symfony\\Component\\Console\\Output\\OutputInterface</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>BuildHandler</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __invoke(command : Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    graph [bgcolor="burlywood3"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>CommandInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\CommandHandlerInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>CommandHandlerInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\CommandBusInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>CommandBusInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» handle(command : Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_2 {
+    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Create"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>CreateCommand</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(em : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getEntityManager() : Doctrine\\ORM\\EntityManagerInterface</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>CreateHandler</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» RETURN_CODE_DATABASE_ALREADY_EXISTS : int = 110 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» RETURN_CODE_SCHEMA_TOOL_FAILURE : int = 500 {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __invoke(command : Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateCommand) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_3 {
+    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Init"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>InitCommand</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(version : string, io : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface, force : bool, progress : bool)</td></tr>
+    <tr><td align="left">+ getAppVersion() : string</td></tr>
+    <tr><td align="left">+ getStyle() : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface</td></tr>
+    <tr><td align="left">+ isForce() : bool</td></tr>
+    <tr><td align="left">+ isProgress() : bool</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>InitHandler</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS : int = 110 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» RETURN_CODE_DATABASE_READONLY : int = 120 {readOnly}</td></tr>
+    <tr><td align="left">+ «static» PHP_RELEASES_7 : array = […] {readOnly}</td></tr>
+    <tr><td align="left">+ «static» PHP_RELEASES_8 : array = […] {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(jsonFileHandler : Bartlett\\CompatInfoDb\\Application\\Service\\JsonFileHandler, distributionRepository : Bartlett\\CompatInfoDb\\Domain\\Repository\\DistributionRepository, entityManager : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ __invoke(query : Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitCommand) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_4 {
+    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PolyfillCommand</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(package : string, tag : string, php : array, io : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface, cacheDir : string, whitelist : string)</td></tr>
+    <tr><td align="left">+ getPackage() : string</td></tr>
+    <tr><td align="left">+ getTag() : string</td></tr>
+    <tr><td align="left">+ getPhp() : array</td></tr>
+    <tr><td align="left">+ getStyle() : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface</td></tr>
+    <tr><td align="left">+ getCacheDir() : string</td></tr>
+    <tr><td align="left">+ getWhitelist() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PolyfillHandler</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(jsonFileHandler : Bartlett\\CompatInfoDb\\Application\\Service\\JsonFileHandler)</td></tr>
+    <tr><td align="left">+ __invoke(command : Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillCommand) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_5 {
+    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Release"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ReleaseCommand</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(version : string, date : string, state : string, extension : string)</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ getDate() : string</td></tr>
+    <tr><td align="left">+ getState() : string</td></tr>
+    <tr><td align="left">+ getExtension() : string</td></tr>
+</table></td></tr>
+</table>>]
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ReleaseHandler</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(jsonFileHandler : Bartlett\\CompatInfoDb\\Application\\Service\\JsonFileHandler)</td></tr>
+    <tr><td align="left">+ __invoke(command : Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseCommand) : void</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildHandler" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandHandlerInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateHandler" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandHandlerInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitHandler" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandHandlerInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillHandler" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandHandlerInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseHandler" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandHandlerInterface" [arrowhead="empty" style="dashed"]
+}
