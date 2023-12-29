@@ -51,32 +51,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://llaville.github.io/php-compatinfo-db/application/</loc>
-         <lastmod>2023-12-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://llaville.github.io/php-compatinfo-db/architecture/</loc>
          <lastmod>2023-12-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://llaville.github.io/php-compatinfo-db/domain/</loc>
+         <loc>https://llaville.github.io/php-compatinfo-db/usage/</loc>
          <lastmod>2023-12-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://llaville.github.io/php-compatinfo-db/infrastructure/</loc>
-         <lastmod>2023-12-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://llaville.github.io/php-compatinfo-db/presentation/</loc>
+         <loc>https://llaville.github.io/php-compatinfo-db/usage/console/</loc>
          <lastmod>2023-12-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://llaville.github.io/php-compatinfo-db/usage/docker/</loc>
+         <lastmod>2023-12-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://llaville.github.io/php-compatinfo-db/usage/programmatically/</loc>
          <lastmod>2023-12-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
