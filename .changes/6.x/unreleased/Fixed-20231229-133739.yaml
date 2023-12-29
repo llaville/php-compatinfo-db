@@ -1,0 +1,4 @@
+kind: Fixed
+body: fixed usage of "Symfony\Component\Messenger\Exception\WrappedExceptionsTrait::getWrappedExceptions"
+  calls
+time: 2023-12-29T13:37:39.279810737Z

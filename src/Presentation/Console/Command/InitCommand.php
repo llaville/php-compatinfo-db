@@ -16,6 +16,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Messenger\Exception\HandlerFailedException;
 
+use function array_shift;
 use function getenv;
 use function trim;
 
@@ -77,7 +78,8 @@ class InitCommand extends AbstractCommand implements CommandInterface
         try {
             $this->commandBus->handle($initCommand);
         } catch (HandlerFailedException $e) {
-            $firstFailure = $e->getWrappedExceptions()[0];
+            $failures = $e->getWrappedExceptions();
+            $firstFailure = array_shift($failures);
             $io->error($firstFailure->getMessage());
             return self::FAILURE;
         }

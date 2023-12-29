@@ -18,6 +18,8 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Messenger\Exception\HandlerFailedException;
 
+use function array_shift;
+
 /**
  * Create the database schema and load its contents from JSON files
  *
@@ -63,7 +65,8 @@ class CreateCommand extends AbstractCommand implements CommandInterface
         try {
             $this->commandBus->handle($createCommand);
         } catch (HandlerFailedException $e) {
-            $firstFailure = $e->getWrappedExceptions()[0];
+            $failures = $e->getWrappedExceptions();
+            $firstFailure = array_shift($failures);
             if ($firstFailure->getCode() < 500) {
                 $io->warning($firstFailure->getMessage());
             } else {
