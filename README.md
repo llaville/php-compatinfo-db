@@ -5,7 +5,7 @@
 |:----------------|:----------------------------------------------:|:---------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------------------------:|
 | Stable v5.14.x  | [![Branch 5.14][Branch_514x-img]][Branch_514x] | [![Minimum PHP Version)][PHPVersion_514x-img]][PHPVersion_514x] | [![Stable Version 5.14][Packagist_514x-img]][Packagist_514x] | [![License 5.14][License_514x-img]][License_514x] | [![Documentation 5.14][Documentation_514x-img]][Documentation_514x] |
 | Stable v6.0.x   |  [![Branch 6.0][Branch_60x-img]][Branch_60x]   |  [![Minimum PHP Version)][PHPVersion_60x-img]][PHPVersion_60x]  |  [![Stable Version 6.0][Packagist_60x-img]][Packagist_60x]   |  [![License 6.0][License_60x-img]][License_60x]   |  [![Documentation 6.0][Documentation_60x-img]][Documentation_60x]   |
-| Upcoming v6.1.x |  [![Branch 6.1][Branch_61x-img]][Branch_61x]   |  [![Minimum PHP Version)][PHPVersion_61x-img]][PHPVersion_61x]  |  [![Stable Version 6.1][Packagist_61x-img]][Packagist_61x]   |  [![License 6.1][License_61x-img]][License_61x]   |  [![Documentation 6.1][Documentation_61x-img]][Documentation_61x]   |
+| Stable v6.1.x   |  [![Branch 6.1][Branch_61x-img]][Branch_61x]   |  [![Minimum PHP Version)][PHPVersion_61x-img]][PHPVersion_61x]  |  [![Stable Version 6.1][Packagist_61x-img]][Packagist_61x]   |  [![License 6.1][License_61x-img]][License_61x]   |  [![Documentation 6.1][Documentation_61x-img]][Documentation_61x]   |
 
 [Branch_514x-img]: https://img.shields.io/badge/branch-5.14-orange
 [Branch_514x]: https://github.com/llaville/php-compatinfo-db/tree/5.14
