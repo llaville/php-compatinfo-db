@@ -48,7 +48,7 @@ final class CreateHandler implements CommandHandlerInterface
                 $conn->executeQuery($sql);
             } catch (Throwable $e) {
                 if (str_contains($e->getMessage(), 'already exists')) {
-                    $error = 'Database already exists. Use `db:init -f` command to reset contents.';
+                    $error = 'Database already exists. Use instead `db:init --force` command to reset contents.';
                     $code = self::RETURN_CODE_DATABASE_ALREADY_EXISTS;
                 } else {
                     $error = sprintf('Schema-Tool failed with Error "%s" while executing DDL: %s', $e->getMessage(), $sql);

@@ -70,7 +70,7 @@ final class InitHandler implements CommandHandlerInterface
             if (null !== $distribution) {
                 if (!$query->isForce()) {
                     throw new RuntimeException(
-                        'Distribution platform already exists. Use `db:init -f` to reset contents.',
+                        'Distribution platform already exists. Use `--force` option to reset contents.',
                         self::RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS
                     );
                 }
