@@ -21,7 +21,7 @@ use Symfony\Component\Messenger\Exception\HandlerFailedException;
 use function array_shift;
 
 /**
- * Create the database schema and load its contents from JSON files
+ * Create the database schema
  *
  * @since Release 3.18.0
  * @author Laurent Laville
@@ -44,7 +44,7 @@ class CreateCommand extends AbstractCommand implements CommandInterface
     protected function configure(): void
     {
         $this->setName(self::NAME)
-            ->setDescription('Create the database schema and load its contents from JSON files')
+            ->setDescription('Create the database schema')
         ;
     }
 
