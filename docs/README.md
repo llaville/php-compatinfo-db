@@ -2,7 +2,7 @@
 # About
 
 Main goal of this project is to provide a standalone database that references all functions, constants, classes,
-interfaces on PHP standard distribution and about 110 extensions.
+interfaces on PHP standard distribution and about 100 extensions.
 
 This database is currently only support by its initial project [php-compatinfo](https://github.com/llaville/php-compatinfo)
 
@@ -10,7 +10,7 @@ This database is currently only support by its initial project [php-compatinfo](
 
 * a Symfony console application to handle data (json files) of the SQL database is provided on CLI API
 
-More than 110 extensions (PHP standard distribution, but also PECL) are currently support :
+More than 100 extensions (PHP standard distribution, but also PECL) are currently support :
 
 * reference all functions
 * reference all constants
@@ -26,3 +26,9 @@ More than 110 extensions (PHP standard distribution, but also PECL) are currentl
 > Learn how to install `CompatInfoDB` application in different way.
 
 See [Installation Guide](installation.md)
+
+## Architecture
+
+> As a developer you want to learn more about CompatInfoDB architecture.
+
+See [Architecture's Guide](architecture/README.md)
