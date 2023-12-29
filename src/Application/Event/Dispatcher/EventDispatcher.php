@@ -48,7 +48,7 @@ final class EventDispatcher extends SymfonyEventDispatcher
                 'doctor' == $command->getName()
                 || (
                     str_starts_with($command->getName(), 'db:')
-                    && !in_array($command->getName(), ['db:create', 'db:init', 'db:release'])
+                    && !in_array($command->getName(), ['db:create', 'db:init', 'db:new', 'db:release'])
                 )
             );
             if ($autoDiagnose) {
