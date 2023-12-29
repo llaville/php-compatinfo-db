@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # Architecture
 
 This guide is dedicated to all PHP developers that want to learn more about each component.
@@ -14,7 +15,7 @@ src/
 
 ## Entity Relationship diagram
 
-Here is the database structure that will contain all data you may find it into `data/reference/` directory.
+Here is the database [ER model][er-model] that will contain all data you may find it into `data/reference/` directory.
 
 ![ER diagram](../assets/images/db-er-diagram.archi.plantuml.svg)
 
