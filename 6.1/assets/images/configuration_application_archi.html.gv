@@ -1,8 +1,23 @@
 digraph {
-  graph [rankdir="LR" bgcolor="transparent"]
-  node [fillcolor="#FEFECE" style="filled"]
+  graph [name="G" overlap="false" rankdir="TB" bgcolor="transparent"]
+  node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
+  edge [fontname="Verdana" fontsize=8]
   subgraph cluster_0 {
-    graph [bgcolor="burlywood1"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Configuration"
+    "Bartlett\\CompatInfoDb\\Application\\Configuration\\ConfigResolver" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ConfigResolver</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– input</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(input : Symfony\\Component\\Console\\Input\\InputInterface)</td></tr>
+    <tr><td align="left">+ provide() : array</td></tr>
+    <tr><td align="left">– getOptionValue(input : Symfony\\Component\\Console\\Input\\InputInterface) : ?string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
     label = "Bartlett\\CompatInfoDb\\Application\\Kernel"
     "Bartlett\\CompatInfoDb\\Application\\Kernel\\ConsoleKernel" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -17,12 +32,29 @@ digraph {
     "Bartlett\\CompatInfoDb\\Application\\Kernel\\AbstractKernel" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b>«abstract»<br/>AbstractKernel</b></td></tr>
-    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left"># configFiles : mixed</td></tr>
+    <tr><td align="left"># compilerPasses : mixed</td></tr>
+    <tr><td align="left"># extensions : mixed</td></tr>
+    <tr><td align="left"># environment</td></tr>
+    <tr><td align="left"># debug</td></tr>
+    <tr><td align="left"># container</td></tr>
+    <tr><td align="left"># projectDir</td></tr>
+</table></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">+ __construct(environment : string, debug : bool)</td></tr>
     <tr><td align="left">+ createFromConfigs(configFiles : array) : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
     <tr><td align="left">+ create(configFiles : array, compilerPasses : array = [], extensions : array = []) : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
+    <tr><td align="left"># getContainerClass() : string</td></tr>
+    <tr><td align="left"># initializeContainer() : void</td></tr>
+    <tr><td align="left"># buildContainer() : Symfony\\Component\\DependencyInjection\\ContainerBuilder</td></tr>
+    <tr><td align="left"># prepareContainer(container : Symfony\\Component\\DependencyInjection\\ContainerBuilder) : void</td></tr>
+    <tr><td align="left"># registerContainerConfiguration(loader : Symfony\\Component\\Config\\Loader\\LoaderInterface) : void</td></tr>
+    <tr><td align="left"># dumpContainer(cache : Symfony\\Component\\Config\\ConfigCacheInterface, container : Symfony\\Component\\DependencyInjection\\ContainerBuilder, class : string, baseClass : string) : void</td></tr>
+    <tr><td align="left"># getContainerLoader(container : Symfony\\Component\\DependencyInjection\\ContainerBuilder) : Symfony\\Component\\Config\\Loader\\LoaderInterface</td></tr>
+    <tr><td align="left"># getContainerBaseClass() : string</td></tr>
     <tr><td align="left">+ getContainerBuilder() : Symfony\\Component\\DependencyInjection\\ContainerBuilder</td></tr>
+    <tr><td align="left"># getKernelParameters() : array</td></tr>
     <tr><td align="left">+ getEnvironment() : string</td></tr>
     <tr><td align="left">+ isDebug() : bool</td></tr>
     <tr><td align="left">+ getHomeDir() : string</td></tr>
@@ -31,6 +63,7 @@ digraph {
     <tr><td align="left">+ getLogDir() : string</td></tr>
     <tr><td align="left">+ getContainer() : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
     <tr><td align="left">+ boot() : void</td></tr>
+    <tr><td align="left"># getConfigDir() : string</td></tr>
 </table></td></tr>
 </table>>]
     "Bartlett\\CompatInfoDb\\Application\\Kernel\\KernelInterface" [shape="none" label=<
@@ -64,21 +97,6 @@ digraph {
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">+ «abstract» handle(input : Symfony\\Component\\Console\\Input\\InputInterface = «unknown») : int</td></tr>
     <tr><td align="left">+ «abstract» createFromInput(input : Symfony\\Component\\Console\\Input\\InputInterface = «unknown») : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
-</table></td></tr>
-</table>>]
-    "Bartlett\\CompatInfoDb\\Application\\Kernel\\MicroKernelTrait" [shape="none" label=<
-<table cellspacing="0" border="0" cellborder="1">
-    <tr><td bgcolor="#eeeeee"><b>«abstract»<br/>MicroKernelTrait</b></td></tr>
-    <tr><td></td></tr>
-    <tr><td><table border="0" cellspacing="0" cellpadding="2">
-    <tr><td align="left">+ getEnvironment() : string</td></tr>
-    <tr><td align="left">+ isDebug() : bool</td></tr>
-    <tr><td align="left">+ getHomeDir() : string</td></tr>
-    <tr><td align="left">+ getProjectDir() : string</td></tr>
-    <tr><td align="left">+ getCacheDir() : string</td></tr>
-    <tr><td align="left">+ getLogDir() : string</td></tr>
-    <tr><td align="left">+ getContainer() : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
-    <tr><td align="left">+ boot() : void</td></tr>
 </table></td></tr>
 </table>>]
   }

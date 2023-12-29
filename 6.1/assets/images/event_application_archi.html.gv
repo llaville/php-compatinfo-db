@@ -1,13 +1,15 @@
 digraph {
-  graph [rankdir="TB" bgcolor="transparent"]
-  node [fillcolor="#FEFECE" style="filled"]
+  graph [name="G" overlap="false" rankdir="TB" bgcolor="transparent"]
+  node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
+  edge [fontname="Verdana" fontsize=8]
   subgraph cluster_0 {
-    graph [bgcolor="burlywood3"]
     label = "Bartlett\\CompatInfoDb\\Application\\Event\\Dispatcher"
     "Bartlett\\CompatInfoDb\\Application\\Event\\Dispatcher\\EventDispatcher" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b><br/>EventDispatcher</b></td></tr>
-    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– diagnoseOutput</td></tr>
+</table></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">+ __construct(input : Symfony\\Component\\Console\\Input\\InputInterface, profileEventSubscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface)</td></tr>
 </table></td></tr>
@@ -18,7 +20,11 @@ digraph {
     "Symfony\\Component\\EventDispatcher\\EventDispatcher" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b><br/>EventDispatcher</b></td></tr>
-    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– listeners = []</td></tr>
+    <tr><td align="left">– sorted = []</td></tr>
+    <tr><td align="left">– optimized</td></tr>
+</table></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">+ __construct()</td></tr>
     <tr><td align="left">+ dispatch(event : object, eventName : string = «unknown») : object</td></tr>
@@ -29,6 +35,9 @@ digraph {
     <tr><td align="left">+ removeListener(eventName : string, listener)</td></tr>
     <tr><td align="left">+ addSubscriber(subscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface)</td></tr>
     <tr><td align="left">+ removeSubscriber(subscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface)</td></tr>
+    <tr><td align="left"># callListeners(listeners : iterable, eventName : string, event : object)</td></tr>
+    <tr><td align="left">– sortListeners(eventName : string) : void</td></tr>
+    <tr><td align="left">– optimizeListeners(eventName : string) : array</td></tr>
 </table></td></tr>
 </table>>]
     "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface" [shape="none" label=<
@@ -77,17 +86,19 @@ digraph {
 </table>>]
   }
   subgraph cluster_4 {
-    graph [bgcolor="burlywood3"]
     label = "Bartlett\\CompatInfoDb\\Application\\Event\\Subscriber"
     "Bartlett\\CompatInfoDb\\Application\\Event\\Subscriber\\ProfileEventSubscriber" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b><br/>ProfileEventSubscriber</b></td></tr>
-    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– stopwatch</td></tr>
+</table></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">+ __construct(stopwatch : Symfony\\Component\\Stopwatch\\Stopwatch)</td></tr>
     <tr><td align="left">+ «static» getSubscribedEvents()</td></tr>
     <tr><td align="left">+ onConsoleCommand(event : Symfony\\Component\\Console\\Event\\ConsoleCommandEvent) : void</td></tr>
     <tr><td align="left">+ onConsoleTerminate(event : Symfony\\Component\\Console\\Event\\ConsoleTerminateEvent) : void</td></tr>
+    <tr><td align="left">– toTimeString(time : int) : string</td></tr>
 </table></td></tr>
 </table>>]
   }
