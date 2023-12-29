@@ -13,7 +13,7 @@ LABEL org.opencontainers.image.authors="llaville"
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh \
-  && cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
+    && cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
 
 # Create a group and user
 RUN addgroup appgroup && adduser appuser -D -G appgroup
