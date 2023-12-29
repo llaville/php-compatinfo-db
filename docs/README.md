@@ -21,6 +21,12 @@ More than 100 extensions (PHP standard distribution, but also PECL) are currentl
 * reference all ini entries
 * reference all releases
 
+## Usage
+
+> Learn more about different usages with console, Docker and programmatically.
+
+See [Getting-Started's Guide](usage/README.md) to know how to use it.
+
 ## Installation
 
 > Learn how to install `CompatInfoDB` application in different way.
