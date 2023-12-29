@@ -75,4 +75,9 @@
          <lastmod>2023-12-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://llaville.github.io/php-compatinfo-db/usage/docker/</loc>
+         <lastmod>2023-12-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
