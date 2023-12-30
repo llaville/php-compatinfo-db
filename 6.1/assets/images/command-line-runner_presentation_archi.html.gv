@@ -3,6 +3,7 @@ digraph {
   node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
   edge [fontname="Verdana" fontsize=8]
   subgraph cluster_0 {
+    graph [bgcolor="BurlyWood"]
     label = "Bartlett\\CompatInfoDb\\Presentation\\Console"
     "Bartlett\\CompatInfoDb\\Presentation\\Console\\Application" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -133,6 +134,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_3 {
+    graph [bgcolor="LightSkyBlue"]
     label = "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command"
     "Bartlett\\CompatInfoDb\\Presentation\\Console\\Command\\AboutCommand" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">

@@ -2,7 +2,10 @@ digraph {
   graph [name="G" overlap="false" rankdir="TB" bgcolor="transparent"]
   node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
   edge [fontname="Verdana" fontsize=8]
-  "Bartlett\\CompatInfoDb\\Application\\Kernel\\ConsoleKernel" [shape="none" label=<
+  subgraph cluster_0 {
+    graph [bgcolor="BurlyWood"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Kernel"
+    "Bartlett\\CompatInfoDb\\Application\\Kernel\\ConsoleKernel" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b><br/>ConsoleKernel</b></td></tr>
     <tr><td></td></tr>
@@ -12,7 +15,7 @@ digraph {
     <tr><td align="left">+ createFromInput(input : Symfony\\Component\\Console\\Input\\InputInterface = «unknown») : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
 </table></td></tr>
 </table>>]
-  "Bartlett\\CompatInfoDb\\Application\\Kernel\\AbstractKernel" [shape="none" label=<
+    "Bartlett\\CompatInfoDb\\Application\\Kernel\\AbstractKernel" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b>«abstract»<br/>AbstractKernel</b></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
@@ -49,7 +52,7 @@ digraph {
     <tr><td align="left"># getConfigDir() : string</td></tr>
 </table></td></tr>
 </table>>]
-  "Bartlett\\CompatInfoDb\\Application\\Kernel\\KernelInterface" [shape="none" label=<
+    "Bartlett\\CompatInfoDb\\Application\\Kernel\\KernelInterface" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b>«interface»<br/>KernelInterface</b></td></tr>
     <tr><td></td></tr>
@@ -58,7 +61,7 @@ digraph {
     <tr><td align="left">+ «abstract» create(configFiles : array, compilerPasses : array = [], extensions : array = []) : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
 </table></td></tr>
 </table>>]
-  "Bartlett\\CompatInfoDb\\Application\\Kernel\\MicroKernelInterface" [shape="none" label=<
+    "Bartlett\\CompatInfoDb\\Application\\Kernel\\MicroKernelInterface" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b>«interface»<br/>MicroKernelInterface</b></td></tr>
     <tr><td></td></tr>
@@ -73,7 +76,7 @@ digraph {
     <tr><td align="left">+ «abstract» boot() : void</td></tr>
 </table></td></tr>
 </table>>]
-  "Bartlett\\CompatInfoDb\\Application\\Kernel\\ConsoleKernelInterface" [shape="none" label=<
+    "Bartlett\\CompatInfoDb\\Application\\Kernel\\ConsoleKernelInterface" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
     <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ConsoleKernelInterface</b></td></tr>
     <tr><td></td></tr>
@@ -82,6 +85,7 @@ digraph {
     <tr><td align="left">+ «abstract» createFromInput(input : Symfony\\Component\\Console\\Input\\InputInterface = «unknown») : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
 </table></td></tr>
 </table>>]
+  }
   "Bartlett\\CompatInfoDb\\Application\\Kernel\\AbstractKernel" -> "Bartlett\\CompatInfoDb\\Application\\Kernel\\KernelInterface" [arrowhead="empty" style="dashed"]
   "Bartlett\\CompatInfoDb\\Application\\Kernel\\AbstractKernel" -> "Bartlett\\CompatInfoDb\\Application\\Kernel\\MicroKernelInterface" [arrowhead="empty" style="dashed"]
   "Bartlett\\CompatInfoDb\\Application\\Kernel\\ConsoleKernel" -> "Bartlett\\CompatInfoDb\\Application\\Kernel\\AbstractKernel" [arrowhead="empty" style="filled"]

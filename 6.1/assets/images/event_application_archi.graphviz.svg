@@ -10,7 +10,7 @@
 <title>%3</title>
 <g id="clust1" class="cluster">
 <title>cluster_0</title>
-<polygon fill="transparent" stroke="black" points="8,-659 8,-758 698,-758 698,-659 8,-659"/>
+<polygon fill="BurlyWood" stroke="black" points="8,-659 8,-758 698,-758 698,-659 8,-659"/>
 <text text-anchor="middle" x="353" y="-742.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Event\Dispatcher</text>
 </g>
 <g id="clust2" class="cluster">
@@ -30,7 +30,7 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="transparent" stroke="black" points="706,-633 706,-784 1136,-784 1136,-633 706,-633"/>
+<polygon fill="BurlyWood" stroke="black" points="706,-633 706,-784 1136,-784 1136,-633 706,-633"/>
 <text text-anchor="middle" x="921" y="-768.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Event\Subscriber</text>
 </g>
 <!-- Bartlett\\CompatInfoDb\\Application\\Event\\Dispatcher\\EventDispatcher -->

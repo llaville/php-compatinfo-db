@@ -10,47 +10,47 @@
 <title>%3</title>
 <g id="clust1" class="cluster">
 <title>cluster_0</title>
-<polygon fill="transparent" stroke="black" points="109,-777 109,-968 652,-968 652,-777 109,-777"/>
+<polygon fill="LightBlue" stroke="black" points="109,-777 109,-968 652,-968 652,-777 109,-777"/>
 <text text-anchor="middle" x="380.5" y="-952.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Command\Build</text>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_1</title>
-<polygon fill="transparent" stroke="black" points="773,-515 773,-590 1115,-590 1115,-515 773,-515"/>
+<polygon fill="LightSkyBlue" stroke="black" points="773,-515 773,-590 1115,-590 1115,-515 773,-515"/>
 <text text-anchor="middle" x="944" y="-574.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Command</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="transparent" stroke="black" points="183.5,-656 183.5,-769 578.5,-769 578.5,-656 183.5,-656"/>
+<polygon fill="LightBlue" stroke="black" points="183.5,-656 183.5,-769 578.5,-769 578.5,-656 183.5,-656"/>
 <text text-anchor="middle" x="381" y="-753.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Command\Create</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="transparent" stroke="black" points="117,-457 117,-648 644,-648 644,-457 117,-457"/>
+<polygon fill="LightBlue" stroke="black" points="117,-457 117,-648 644,-648 644,-457 117,-457"/>
 <text text-anchor="middle" x="380.5" y="-632.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Command\Init</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="transparent" stroke="black" points="53.5,-207 53.5,-449 707.5,-449 707.5,-207 53.5,-207"/>
+<polygon fill="LightBlue" stroke="black" points="53.5,-207 53.5,-449 707.5,-449 707.5,-207 53.5,-207"/>
 <text text-anchor="middle" x="380.5" y="-433.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Command\Polyfill</text>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="transparent" stroke="black" points="180,-8 180,-199 582,-199 582,-8 180,-8"/>
+<polygon fill="LightBlue" stroke="black" points="180,-8 180,-199 582,-199 582,-8 180,-8"/>
 <text text-anchor="middle" x="381" y="-183.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Command\Release</text>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="transparent" stroke="black" points="62.5,-1496 62.5,-1583 698.5,-1583 698.5,-1496 62.5,-1496"/>
+<polygon fill="Bisque" stroke="black" points="62.5,-1496 62.5,-1583 698.5,-1583 698.5,-1496 62.5,-1496"/>
 <text text-anchor="middle" x="380.5" y="-1567.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Query\Diagnose</text>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="transparent" stroke="black" points="787,-1394 787,-1469 1101,-1469 1101,-1394 787,-1394"/>
+<polygon fill="BurlyWood" stroke="black" points="787,-1394 787,-1469 1101,-1469 1101,-1394 787,-1394"/>
 <text text-anchor="middle" x="944" y="-1453.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Query</text>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="transparent" stroke="black" points="8,-976 8,-1367 753,-1367 753,-976 8,-976"/>
+<polygon fill="Bisque" stroke="black" points="8,-976 8,-1367 753,-1367 753,-976 8,-976"/>
 <text text-anchor="middle" x="380.5" y="-1351.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Query\ListRef</text>
 </g>
 <g id="clust10" class="cluster">
@@ -60,7 +60,7 @@
 </g>
 <g id="clust11" class="cluster">
 <title>cluster_10</title>
-<polygon fill="transparent" stroke="black" points="89.5,-1375 89.5,-1488 671.5,-1488 671.5,-1375 89.5,-1375"/>
+<polygon fill="Bisque" stroke="black" points="89.5,-1375 89.5,-1488 671.5,-1488 671.5,-1375 89.5,-1375"/>
 <text text-anchor="middle" x="380.5" y="-1472.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Application\Query\Show</text>
 </g>
 <!-- Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand -->

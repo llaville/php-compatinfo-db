@@ -10,7 +10,7 @@
 <title>%3</title>
 <g id="clust1" class="cluster">
 <title>cluster_0</title>
-<polygon fill="transparent" stroke="black" points="142,-973 142,-1196 1689,-1196 1689,-973 142,-973"/>
+<polygon fill="BurlyWood" stroke="black" points="142,-973 142,-1196 1689,-1196 1689,-973 142,-973"/>
 <text text-anchor="middle" x="915.5" y="-1180.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Presentation\Console</text>
 </g>
 <g id="clust2" class="cluster">
@@ -25,7 +25,7 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="transparent" stroke="black" points="8,-1204 8,-2281 1777,-2281 1777,-1204 8,-1204"/>
+<polygon fill="LightSkyBlue" stroke="black" points="8,-1204 8,-2281 1777,-2281 1777,-1204 8,-1204"/>
 <text text-anchor="middle" x="892.5" y="-2265.8" font-family="Times,serif" font-size="14.00">Bartlett\CompatInfoDb\Presentation\Console\Command</text>
 </g>
 <g id="clust5" class="cluster">

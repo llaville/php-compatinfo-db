@@ -3,6 +3,7 @@ digraph {
   node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
   edge [fontname="Verdana" fontsize=8]
   subgraph cluster_0 {
+    graph [bgcolor="LightBlue"]
     label = "Bartlett\\CompatInfoDb\\Application\\Command\\Build"
     "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -23,6 +24,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_1 {
+    graph [bgcolor="LightSkyBlue"]
     label = "Bartlett\\CompatInfoDb\\Application\\Command"
     "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -32,6 +34,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_2 {
+    graph [bgcolor="LightBlue"]
     label = "Bartlett\\CompatInfoDb\\Application\\Command\\Create"
     "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateCommand" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -46,6 +49,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_3 {
+    graph [bgcolor="LightBlue"]
     label = "Bartlett\\CompatInfoDb\\Application\\Command\\Init"
     "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitCommand" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -66,6 +70,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_4 {
+    graph [bgcolor="LightBlue"]
     label = "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill"
     "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillCommand" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -90,6 +95,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_5 {
+    graph [bgcolor="LightBlue"]
     label = "Bartlett\\CompatInfoDb\\Application\\Command\\Release"
     "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseCommand" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -110,6 +116,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_6 {
+    graph [bgcolor="Bisque"]
     label = "Bartlett\\CompatInfoDb\\Application\\Query\\Diagnose"
     "Bartlett\\CompatInfoDb\\Application\\Query\\Diagnose\\DiagnoseHandler" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -121,6 +128,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_7 {
+    graph [bgcolor="BurlyWood"]
     label = "Bartlett\\CompatInfoDb\\Application\\Query"
     "Bartlett\\CompatInfoDb\\Application\\Query\\QueryHandlerInterface" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -130,6 +138,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_8 {
+    graph [bgcolor="Bisque"]
     label = "Bartlett\\CompatInfoDb\\Application\\Query\\ListRef"
     "Bartlett\\CompatInfoDb\\Application\\Query\\ListRef\\ListHandler" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
@@ -192,6 +201,7 @@ digraph {
 </table>>]
   }
   subgraph cluster_10 {
+    graph [bgcolor="Bisque"]
     label = "Bartlett\\CompatInfoDb\\Application\\Query\\Show"
     "Bartlett\\CompatInfoDb\\Application\\Query\\Show\\ShowHandler" [shape="none" label=<
 <table cellspacing="0" border="0" cellborder="1">
