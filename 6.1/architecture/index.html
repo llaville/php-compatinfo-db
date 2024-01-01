@@ -858,22 +858,22 @@
 <h2 id="command-line-runner">Command Line Runner</h2>
 <p><code>CompatInfoDB</code> is a Symfony Console Application with many Command.</p>
 <h3 id="presentation-layer">Presentation layer</h3>
-<p><img alt="CLI presentation layer UML" src="../assets/images/command-line-runner_presentation_archi.graphviz.svg" /></p>
+<p><img alt="CLI presentation layer UML" src="../assets/images/command-line-runner_presentation.graphviz.svg" /></p>
 <h3 id="application-layer">Application layer</h3>
-<p><img alt="CLI application layer UML" src="../assets/images/command-line-runner_application_archi.graphviz.svg" /></p>
+<p><img alt="CLI application layer UML" src="../assets/images/command-line-runner_application.graphviz.svg" /></p>
 <h2 id="configuration">Configuration</h2>
 <p>The <code>ConfigResolver</code> component is in charge to handle all arguments/options provided by an instance of <code>Symfony\Component\Console\Input\InputInterface</code></p>
 <p>You will find usage into the <code>Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel::createFromInput</code> function.</p>
-<p><img alt="Configuration application layer UML" src="../assets/images/configuration_application_archi.graphviz.svg" /></p>
+<p><img alt="Configuration application layer UML" src="../assets/images/configuration_application.graphviz.svg" /></p>
 <h2 id="kernel">Kernel</h2>
 <p>This element is the main entry point of the <code>bin/compatinfo-db</code> command line runner.</p>
-<p><img alt="Kernel application layer UML" src="../assets/images/kernel_application_archi.graphviz.svg" /></p>
+<p><img alt="Kernel application layer UML" src="../assets/images/kernel_application.graphviz.svg" /></p>
 <h2 id="events">Events</h2>
 <p><code>CompatInfoDB</code> use the <a href="https://symfony.com/doc/current/components/event_dispatcher.html">Symfony Event-Dispatcher</a> component to avoid tight coupling
 between a set of interacting objects.</p>
 <p>For example, the <code>Bartlett\CompatInfoDb\Application\Event\Subscriber\ProfileEventSubscriber</code> allows to print
 the consume summary results only on demand (with command line runner <code>--profile</code> option).</p>
-<p><img alt="Event application layer UML" src="../assets/images/event_application_archi.graphviz.svg" /></p>
+<p><img alt="Event application layer UML" src="../assets/images/event_application.graphviz.svg" /></p>
 
 
 
