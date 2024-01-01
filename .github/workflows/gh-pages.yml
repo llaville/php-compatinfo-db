@@ -13,10 +13,10 @@ on:
 
 jobs:
     deploy:
-        uses: llaville/.github/.github/workflows/gh-pages.yml@uml
+        uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
             destination-dir: "6.1"
             force-orphan: false
             hook-script: "resources/gh-pages-hook.sh"
             graph-uml: true
-            php-version: "8.1"
+            graph-composer: true

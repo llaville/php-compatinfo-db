@@ -13,12 +13,37 @@ use Bartlett\GraphUml\Generator\GraphVizGenerator;
 use Bartlett\UmlWriter\Generator\GeneratorFactory;
 use Bartlett\UmlWriter\Service\ClassDiagramRenderer;
 
+use Clue\GraphComposer\Command\Export;
+
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\NullOutput;
+
 require_once dirname(__DIR__) . '/config/bootstrap.php';
 require_once dirname(__DIR__) . '/vendor-bin/umlwriter/vendor/autoload.php';
 
 $script = $_SERVER['argv'][1] ?? null;
 $folder = $_SERVER['argv'][2] ?? sys_get_temp_dir();
 $format = $_SERVER['argv'][3] ?? 'svg';
+
+$graphComposer = 'phar://' . __DIR__ . '/graph-composer.phar';
+if ('graph-composer' == $script) {
+    if (!file_exists($graphComposer)) {
+        exit(1);
+    }
+    require_once $graphComposer . '/vendor/autoload.php';
+
+    $export = new Export('export');
+    $target = $folder . '/graph-composer.svg';
+    $input = new ArrayInput([
+        'dir' => dirname(__DIR__),
+        'output' => $target,
+        '--depth' => 2,
+        '--orientation' => 'LR',
+    ]);
+    $status = $export->run($input, new NullOutput());
+    echo ($status != 0 ? 'no' : $target) . ' file generated' . PHP_EOL;
+    exit($status);
+}
 
 $baseDir = __DIR__ . DIRECTORY_SEPARATOR . $script . DIRECTORY_SEPARATOR;
 $available = is_dir($baseDir) && file_exists($baseDir);
@@ -48,10 +73,10 @@ $renderer = new ClassDiagramRenderer();
 $graph = $renderer($datasource(), $generator, $options ?? []);
 
 // writes graph statements to file
-$output = rtrim($folder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $script . '_archi.html.gv';
+$output = rtrim($folder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $script . '.html.gv';
 file_put_contents($output, $generator->createScript($graph));
 
-$output = rtrim($folder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $script . '_archi.graphviz.' . $format;
+$output = rtrim($folder, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $script . '.graphviz.' . $format;
 $cmdFormat = '%E -T%F %t -o ' . $output;
 $target = $generator->createImageFile($graph, $cmdFormat);
 echo (empty($target) ? 'no' : $target) . ' file generated' . PHP_EOL;

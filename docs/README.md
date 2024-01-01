@@ -6,6 +6,8 @@ interfaces on PHP standard distribution and about 100 extensions.
 
 This database is currently only support by its initial project [php-compatinfo](https://github.com/llaville/php-compatinfo)
 
+![Graph Composer](./assets/images/graph-composer.svg)
+
 ## Features
 
 * a Symfony console application to handle data (json files) of the SQL database is provided on CLI API

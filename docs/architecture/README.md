@@ -25,11 +25,11 @@ Here is the database [ER model][er-model] that will contain all data you may fin
 
 ### Presentation layer
 
-![CLI presentation layer UML](../assets/images/command-line-runner_presentation_archi.graphviz.svg)
+![CLI presentation layer UML](../assets/images/command-line-runner_presentation.graphviz.svg)
 
 ### Application layer
 
-![CLI application layer UML](../assets/images/command-line-runner_application_archi.graphviz.svg)
+![CLI application layer UML](../assets/images/command-line-runner_application.graphviz.svg)
 
 ## Configuration
 
@@ -37,13 +37,13 @@ The `ConfigResolver` component is in charge to handle all arguments/options prov
 
 You will find usage into the `Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel::createFromInput` function.
 
-![Configuration application layer UML](../assets/images/configuration_application_archi.graphviz.svg)
+![Configuration application layer UML](../assets/images/configuration_application.graphviz.svg)
 
 ## Kernel
 
 This element is the main entry point of the `bin/compatinfo-db` command line runner.
 
-![Kernel application layer UML](../assets/images/kernel_application_archi.graphviz.svg)
+![Kernel application layer UML](../assets/images/kernel_application.graphviz.svg)
 
 ## Events
 
@@ -53,7 +53,7 @@ between a set of interacting objects.
 For example, the `Bartlett\CompatInfoDb\Application\Event\Subscriber\ProfileEventSubscriber` allows to print
 the consume summary results only on demand (with command line runner `--profile` option).
 
-![Event application layer UML](../assets/images/event_application_archi.graphviz.svg)
+![Event application layer UML](../assets/images/event_application.graphviz.svg)
 
 [ddd-archi]: https://en.wikipedia.org/wiki/Domain-driven_design
 [er-model]: https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
