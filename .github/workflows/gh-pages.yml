@@ -19,4 +19,3 @@ jobs:
             force-orphan: false
             hook-script: "resources/gh-pages-hook.sh"
             graph-uml: true
-            graph-composer: true
