@@ -630,5 +630,17 @@
         "name": "__unserialize",
         "ext_min": "2.6.0",
         "php_min": "8.1.0"
+    },
+    {
+        "class_name": "SolrQuery",
+        "name": "getHighlightQuery",
+        "ext_min": "2.7.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "SolrQuery",
+        "name": "setHighlightQuery",
+        "ext_min": "2.7.0",
+        "php_min": "7.4.0"
     }
 ]
