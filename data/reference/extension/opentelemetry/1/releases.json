@@ -64,5 +64,17 @@
         "rel_date": "2023-10-25",
         "rel_state": "stable",
         "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "1.0.1beta1",
+        "rel_date": "2024-01-25",
+        "rel_state": "beta",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "1.0.1beta2",
+        "rel_date": "2024-01-29",
+        "rel_state": "beta",
+        "php_min": "8.0.0"
     }
 ]
