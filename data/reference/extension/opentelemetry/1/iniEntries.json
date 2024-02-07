@@ -8,5 +8,10 @@
         "name": "opentelemetry.validate_hook_functions",
         "ext_min": "1.0.0beta7",
         "php_min": "8.0.0"
+    },
+    {
+        "name": "opentelemetry.allow_stack_extension",
+        "ext_min": "1.0.2beta1",
+        "php_min": "8.0.0"
     }
 ]
