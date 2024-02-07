@@ -1,5 +1,6 @@
 {
     "alias": "compatinfo-db.phar",
-    "directories": ["bin", "config", "data", "src", "vendor"],
+    "force-autodiscovery": true,
+    "directories": ["config", "data"],
     "compression": "GZ"
 }

@@ -1,6 +1,7 @@
 {
     "alias": "compatinfo-db.phar",
-    "directories": ["bin", "config", "data", "src", "vendor"],
+    "force-autodiscovery": true,
+    "directories": ["config", "data"],
     "compression": "GZ",
     "stub": "stub.php",
     "files-bin": ["sbom.json", "console.txt"],
