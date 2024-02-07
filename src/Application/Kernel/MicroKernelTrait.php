@@ -95,13 +95,14 @@ trait MicroKernelTrait
     /**
      * {@inheritDoc}
      */
-    public function getCacheDir(): string
+    public function getCacheDir(string $default = null): string
     {
-        if (isset($_SERVER['APP_CACHE_DIR'])) {
-            return $_SERVER['APP_CACHE_DIR'] . DIRECTORY_SEPARATOR . $this->environment;
-        }
+        $cacheDir = $_SERVER['APP_CACHE_DIR'] ?? $_ENV['APP_CACHE_DIR'] ?? null;
 
-        return sys_get_temp_dir();
+        if (null === $cacheDir) {
+            return $default ?? sys_get_temp_dir();
+        }
+        return $cacheDir;
     }
 
     /**
@@ -109,7 +110,7 @@ trait MicroKernelTrait
      */
     public function getLogDir(): string
     {
-        return $_SERVER['APP_LOG_DIR'] ?? sys_get_temp_dir();
+        return $_SERVER['APP_LOG_DIR'] ?? $_ENV['APP_LOG_DIR'] ?? $this->getCacheDir();
     }
 
     /**
