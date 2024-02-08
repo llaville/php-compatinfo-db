@@ -1,4 +1,0 @@
-kind: Fixed
-body: Be able to use all 6.2 versions familly without to hardcode a composer constraint
-  that will be wrong with greater releases (6.3 or next)
-time: 2024-02-07T09:02:52.144315726Z

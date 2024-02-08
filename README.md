@@ -45,7 +45,7 @@
 [Branch_62x]: https://github.com/llaville/php-compatinfo-db/tree/6.2
 [PHPVersion_62x-img]: https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db/6.2.0
 [PHPVersion_62x]: https://www.php.net/supported-versions.php
-[Packagist_62x-img]: https://img.shields.io/badge/packagist-v6.2.0-blue
+[Packagist_62x-img]: https://img.shields.io/badge/packagist-v6.2.1-blue
 [Packagist_62x]: https://packagist.org/packages/bartlett/php-compatinfo-db
 [License_62x-img]: https://img.shields.io/packagist/l/bartlett/php-compatinfo-db
 [License_62x]: https://github.com/llaville/php-compatinfo-db/blob/6.2/LICENSE
