@@ -25,7 +25,7 @@ digraph {
     <tr><td bgcolor="#eeeeee"><b><br/>ConsoleKernel</b></td></tr>
     <tr><td></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
-    <tr><td align="left">+ getCacheDir() : string</td></tr>
+    <tr><td align="left">+ getCacheDir(default : string = «unknown») : string</td></tr>
     <tr><td align="left">+ handle(input : Symfony\\Component\\Console\\Input\\InputInterface = «unknown») : int</td></tr>
     <tr><td align="left">+ createFromInput(input : Symfony\\Component\\Console\\Input\\InputInterface = «unknown») : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
 </table></td></tr>
@@ -60,7 +60,7 @@ digraph {
     <tr><td align="left">+ isDebug() : bool</td></tr>
     <tr><td align="left">+ getHomeDir() : string</td></tr>
     <tr><td align="left">+ getProjectDir() : string</td></tr>
-    <tr><td align="left">+ getCacheDir() : string</td></tr>
+    <tr><td align="left">+ getCacheDir(default : string = «unknown») : string</td></tr>
     <tr><td align="left">+ getLogDir() : string</td></tr>
     <tr><td align="left">+ getContainer() : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
     <tr><td align="left">+ boot() : void</td></tr>
@@ -85,7 +85,7 @@ digraph {
     <tr><td align="left">+ «abstract» isDebug() : bool</td></tr>
     <tr><td align="left">+ «abstract» getHomeDir() : string</td></tr>
     <tr><td align="left">+ «abstract» getProjectDir() : string</td></tr>
-    <tr><td align="left">+ «abstract» getCacheDir() : string</td></tr>
+    <tr><td align="left">+ «abstract» getCacheDir(default : string = «unknown») : string</td></tr>
     <tr><td align="left">+ «abstract» getLogDir() : string</td></tr>
     <tr><td align="left">+ «abstract» getContainer() : Symfony\\Component\\DependencyInjection\\ContainerInterface</td></tr>
     <tr><td align="left">+ «abstract» boot() : void</td></tr>

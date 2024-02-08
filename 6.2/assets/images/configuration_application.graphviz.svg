@@ -41,7 +41,7 @@
 <text text-anchor="start" x="1134" y="-699.6" font-family="Verdana" font-weight="bold" font-size="8.00">ConsoleKernel</text>
 <polygon fill="none" stroke="black" points="842,-688 842,-694 1491,-694 1491,-688 842,-688"/>
 <polygon fill="none" stroke="black" points="842,-643 842,-688 1491,-688 1491,-643 842,-643"/>
-<text text-anchor="start" x="847" y="-676.6" font-family="Verdana" font-size="8.00">+ getCacheDir() : string</text>
+<text text-anchor="start" x="847" y="-676.6" font-family="Verdana" font-size="8.00">+ getCacheDir(default : string = «unknown») : string</text>
 <text text-anchor="start" x="847" y="-663.6" font-family="Verdana" font-size="8.00">+ handle(input : Symfony\Component\Console\Input\InputInterface = «unknown») : int</text>
 <text text-anchor="start" x="847" y="-650.6" font-family="Verdana" font-size="8.00">+ createFromInput(input : Symfony\Component\Console\Input\InputInterface = «unknown») : Symfony\Component\DependencyInjection\ContainerInterface</text>
 </g>
@@ -79,7 +79,7 @@
 <text text-anchor="start" x="402" y="-288.1" font-family="Verdana" font-size="8.00">+ isDebug() : bool</text>
 <text text-anchor="start" x="402" y="-275.1" font-family="Verdana" font-size="8.00">+ getHomeDir() : string</text>
 <text text-anchor="start" x="402" y="-262.1" font-family="Verdana" font-size="8.00">+ getProjectDir() : string</text>
-<text text-anchor="start" x="402" y="-249.1" font-family="Verdana" font-size="8.00">+ getCacheDir() : string</text>
+<text text-anchor="start" x="402" y="-249.1" font-family="Verdana" font-size="8.00">+ getCacheDir(default : string = «unknown») : string</text>
 <text text-anchor="start" x="402" y="-236.1" font-family="Verdana" font-size="8.00">+ getLogDir() : string</text>
 <text text-anchor="start" x="402" y="-223.1" font-family="Verdana" font-size="8.00">+ getContainer() : Symfony\Component\DependencyInjection\ContainerInterface</text>
 <text text-anchor="start" x="402" y="-210.1" font-family="Verdana" font-size="8.00">+ boot() : void</text>
@@ -143,7 +143,7 @@
 <text text-anchor="start" x="1095" y="-101.6" font-family="Verdana" font-size="8.00">+ «abstract» isDebug() : bool</text>
 <text text-anchor="start" x="1095" y="-88.6" font-family="Verdana" font-size="8.00">+ «abstract» getHomeDir() : string</text>
 <text text-anchor="start" x="1095" y="-75.6" font-family="Verdana" font-size="8.00">+ «abstract» getProjectDir() : string</text>
-<text text-anchor="start" x="1095" y="-62.6" font-family="Verdana" font-size="8.00">+ «abstract» getCacheDir() : string</text>
+<text text-anchor="start" x="1095" y="-62.6" font-family="Verdana" font-size="8.00">+ «abstract» getCacheDir(default : string = «unknown») : string</text>
 <text text-anchor="start" x="1095" y="-49.6" font-family="Verdana" font-size="8.00">+ «abstract» getLogDir() : string</text>
 <text text-anchor="start" x="1095" y="-36.6" font-family="Verdana" font-size="8.00">+ «abstract» getContainer() : Symfony\Component\DependencyInjection\ContainerInterface</text>
 <text text-anchor="start" x="1095" y="-23.6" font-family="Verdana" font-size="8.00">+ «abstract» boot() : void</text>
