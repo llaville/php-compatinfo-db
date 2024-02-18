@@ -172,5 +172,11 @@
         "rel_date": "2024-01-18",
         "rel_state": "stable",
         "php_min": "8.2.15"
+    },
+    {
+        "rel_version": "8.2.16",
+        "rel_date": "2024-02-15",
+        "rel_state": "stable",
+        "php_min": "8.2.16"
     }
 ]
