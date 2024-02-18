@@ -6,6 +6,7 @@ Here are the links to the documentation for versions that are still supported :
 - [PHP CompatInfo DB 6.0](https://llaville.github.io/php-compatinfo-db/6.0/)
 - [PHP CompatInfo DB 6.1](https://llaville.github.io/php-compatinfo-db/6.1/)
 - [PHP CompatInfo DB 6.2](https://llaville.github.io/php-compatinfo-db/6.2/)
+- [PHP CompatInfo DB 6.3](https://llaville.github.io/php-compatinfo-db/6.3/)
 
 Full documentation may be found in `docs` folder into this repository, and may be read online without to do anything else.
 
