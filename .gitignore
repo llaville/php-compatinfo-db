@@ -16,9 +16,6 @@ vendor-bin/**/vendor/
 ###### PHPUnit ######
 .phpunit.cache/
 
-###### Box ######
-.box.metadata.cache
-
 ###### BOX Manifest ######
 sbom.json
 sbom.xml
@@ -27,9 +24,7 @@ manifest.txt
 stub.php
 
 ###### Mega-Linter ######
-report/
 megalinter-reports/
-
 
 ######################################
 # GENERIC
@@ -71,7 +66,6 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 *.lnk
-
 
 ######################################
 # Editors
