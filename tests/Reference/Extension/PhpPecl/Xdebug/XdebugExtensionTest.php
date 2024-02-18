@@ -21,8 +21,6 @@ class XdebugExtensionTest extends GenericTestCase
 {
     /**
      * Sets up the shared fixture.
-     *
-     * @return void
      */
     public static function setUpBeforeClass(): void
     {
@@ -46,6 +44,11 @@ class XdebugExtensionTest extends GenericTestCase
                 );
             }
         }
+
+        self::$optionalconstants = [
+            // strange behavior since Xdebug 3.3.1 on CI with 'shivammathur/setup-php@v2' (SHA:6d7209f44a25a59e904b1ee9f3b0c33ab2cd888d)
+            'XDEBUG_STACK_NO_DESC',
+        ];
 
         self::$ignoredconstants = [
             'XDEBUG_PATH_INCLUDE',
