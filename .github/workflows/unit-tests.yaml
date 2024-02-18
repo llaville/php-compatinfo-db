@@ -82,10 +82,8 @@ jobs:
                 uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
-                    coverage: "none"
                     extensions: ${{ matrix.extensions }}
                     tools: ${{ matrix.tools }}
-                    ini-values: xdebug.mode="develop" # TODO remove when v3.3.1 will be online (see https://bugs.xdebug.org/view.php?id=2223)
 
             -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies
