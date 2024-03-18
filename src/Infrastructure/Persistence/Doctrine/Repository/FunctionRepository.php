@@ -13,8 +13,12 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ as FunctionEntity;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\FunctionHydrator;
 
+use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
+
+use function version_compare;
+use const PHP_VERSION;
 
 /**
  * @since Release 3.2.0
@@ -52,7 +56,19 @@ final class FunctionRepository implements DomainRepository
      */
     public function getFunctionByName(string $name, ?string $declaringClass): ?Function_
     {
-        $entity = $this->repository->findOneBy(['name' => $name, 'declaringClass' => $declaringClass]);
+        $criteria = new Criteria();
+        $criteria->where(Criteria::expr()->eq('name', $name));
+        $criteria->andWhere(Criteria::expr()->eq('declaringClass', $declaringClass));
+        $criteria->orderBy(['phpMin' => 'desc']);
+
+        $collection = $this->repository->matching($criteria);
+
+        $entity = $collection->isEmpty()
+            ? null
+            : $collection->filter(
+                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le')
+            )->first()
+        ;
 
         if (null === $entity) {
             // function does not exists

@@ -13,8 +13,12 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Constant_ as ConstantEntity;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\ConstantHydrator;
 
+use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
+
+use function version_compare;
+use const PHP_VERSION;
 
 /**
  * @since Release 3.2.0
@@ -52,17 +56,26 @@ final class ConstantRepository implements DomainRepository
      */
     public function getConstantByName(string $name, ?string $declaringClass): ?Constant_
     {
+        $criteria = new Criteria();
+
         if (strpos($name, '\\') === false) {
             // standard constant should be uppercase in database
-            $criteria = ['name' => strtoupper($name)];
+            $criteria->where(Criteria::expr()->eq('name', strtoupper($name)));
         } else {
             // special case for constants that have namespace like in ast extension
-            $criteria = ['name' => $name];
+            $criteria->where(Criteria::expr()->eq('name', $name));
         }
-        if ($declaringClass !== null) {
-            $criteria['declaringClass'] = $declaringClass;
-        }
-        $entity = $this->repository->findOneBy($criteria);
+        $criteria->andWhere(Criteria::expr()->eq('declaringClass', $declaringClass));
+        $criteria->orderBy(['phpMin' => 'desc']);
+
+        $collection = $this->repository->matching($criteria);
+
+        $entity = $collection->isEmpty()
+            ? null
+            : $collection->filter(
+                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le')
+            )->first()
+        ;
 
         if (null === $entity) {
             // function does not exists

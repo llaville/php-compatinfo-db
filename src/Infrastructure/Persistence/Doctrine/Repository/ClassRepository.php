@@ -13,8 +13,12 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Class_ as ClassEntity;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\ClassHydrator;
 
+use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
+
+use function version_compare;
+use const PHP_VERSION;
 
 /**
  * @since Release 3.2.0
@@ -52,7 +56,19 @@ final class ClassRepository implements DomainRepository
      */
     public function getClassByName(string $name, bool $isInterface): ?Class_
     {
-        $entity = $this->repository->findOneBy(['name' => $name, 'isInterface' => $isInterface]);
+        $criteria = new Criteria();
+        $criteria->where(Criteria::expr()->eq('name', $name));
+        $criteria->andWhere(Criteria::expr()->eq('isInterface', $isInterface));
+        $criteria->orderBy(['phpMin' => 'desc']);
+
+        $collection = $this->repository->matching($criteria);
+
+        $entity = $collection->isEmpty()
+            ? null
+            : $collection->filter(
+                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le')
+            )->first()
+        ;
 
         if (null === $entity) {
             // class does not exist
