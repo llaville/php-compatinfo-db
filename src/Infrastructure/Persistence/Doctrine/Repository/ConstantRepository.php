@@ -77,7 +77,7 @@ final class ConstantRepository implements DomainRepository
             )->first()
         ;
 
-        if (null === $entity) {
+        if (empty($entity)) {
             // function does not exists
             return null;
         }

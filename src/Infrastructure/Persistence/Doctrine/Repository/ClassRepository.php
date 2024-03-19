@@ -70,7 +70,7 @@ final class ClassRepository implements DomainRepository
             )->first()
         ;
 
-        if (null === $entity) {
+        if (empty($entity)) {
             // class does not exist
             return null;
         }
