@@ -9,6 +9,7 @@
 | Stable v6.2.x  |  [![Branch 6.2][Branch_62x-img]][Branch_62x]   |  [![Minimum PHP Version)][PHPVersion_62x-img]][PHPVersion_62x]  |  [![Stable Version 6.2][Packagist_62x-img]][Packagist_62x]   |  [![License 6.2][License_62x-img]][License_62x]   |  [![Documentation 6.2][Documentation_62x-img]][Documentation_62x]   |
 | Stable v6.3.x  |  [![Branch 6.3][Branch_63x-img]][Branch_63x]   |  [![Minimum PHP Version)][PHPVersion_63x-img]][PHPVersion_63x]  |  [![Stable Version 6.3][Packagist_63x-img]][Packagist_63x]   |  [![License 6.3][License_63x-img]][License_63x]   |  [![Documentation 6.3][Documentation_63x-img]][Documentation_63x]   |
 | Stable v6.4.x  |  [![Branch 6.4][Branch_64x-img]][Branch_64x]   |  [![Minimum PHP Version)][PHPVersion_64x-img]][PHPVersion_64x]  |  [![Stable Version 6.4][Packagist_64x-img]][Packagist_64x]   |  [![License 6.4][License_64x-img]][License_64x]   |  [![Documentation 6.4][Documentation_64x-img]][Documentation_64x]   |
+| Stable v6.5.x  |  [![Branch 6.5][Branch_65x-img]][Branch_65x]   |  [![Minimum PHP Version)][PHPVersion_65x-img]][PHPVersion_65x]  |  [![Stable Version 6.5][Packagist_65x-img]][Packagist_65x]   |  [![License 6.5][License_65x-img]][License_65x]   |  [![Documentation 6.5][Documentation_65x-img]][Documentation_65x]   |
 
 [Branch_514x-img]: https://img.shields.io/badge/branch-5.14-orange
 [Branch_514x]: https://github.com/llaville/php-compatinfo-db/tree/5.14
@@ -75,6 +76,17 @@
 [License_64x]: https://github.com/llaville/php-compatinfo-db/blob/6.4/LICENSE
 [Documentation_64x-img]: https://img.shields.io/badge/documentation-v6.4-green
 [Documentation_64x]: https://github.com/llaville/php-compatinfo-db/tree/6.4/docs
+
+[Branch_65x-img]: https://img.shields.io/badge/branch-6.5-orange
+[Branch_65x]: https://github.com/llaville/php-compatinfo-db/tree/6.5
+[PHPVersion_65x-img]: https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db/6.5.0
+[PHPVersion_65x]: https://www.php.net/supported-versions.php
+[Packagist_65x-img]: https://img.shields.io/badge/packagist-v6.5.0-blue
+[Packagist_65x]: https://packagist.org/packages/bartlett/php-compatinfo-db
+[License_65x-img]: https://img.shields.io/packagist/l/bartlett/php-compatinfo-db
+[License_65x]: https://github.com/llaville/php-compatinfo-db/blob/6.5/LICENSE
+[Documentation_65x-img]: https://img.shields.io/badge/documentation-v6.5-green
+[Documentation_65x]: https://github.com/llaville/php-compatinfo-db/tree/6.5/docs
 
 Main goal of this project is to provide a standalone database that references
 all functions, constants, classes, interfaces on PHP standard distribution and about 110 extensions.
