@@ -104,12 +104,12 @@ This database is currently only support by its initial project [php-compatinfo](
  | `4.2.x`  to `4.5.x`  | `>= 7.4`             | `6.4`        |
  | `4.6.x`  to `4.11.x` | `>= 7.4`             | `6.5`        |
  | `5.0.x`  to `5.14.x` | `>= 8.0` and `< 8.3` | `7.0`        |
- | `6.0.x`  to `6.4.x`  | `>= 8.1`             | `7.0`, `7.1` |
+ | `6.0.x`  to `6.5.x`  | `>= 8.1`             | `7.0`, `7.1` |
 
 ## Documentation
 
-All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/6.4),
-generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/6.4/docs) folder.
+All the documentation is available on [website](https://llaville.github.io/php-compatinfo-db/6.5),
+generated from the [docs](https://github.com/llaville/php-compatinfo-db/tree/6.5/docs) folder.
 
 ## Contributors
 
