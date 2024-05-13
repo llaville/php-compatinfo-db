@@ -244,7 +244,7 @@
 <text text-anchor="start" x="21.5" y="-1198.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="21.5" y="-1185.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="21.5" y="-1172.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.30&quot; {readOnly}</text>
-<text text-anchor="start" x="21.5" y="-1159.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.27&quot; {readOnly}</text>
+<text text-anchor="start" x="21.5" y="-1159.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.28&quot; {readOnly}</text>
 <text text-anchor="start" x="21.5" y="-1146.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.18&quot; {readOnly}</text>
 <text text-anchor="start" x="21.5" y="-1133.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_3 : string = &quot;8\.3\.6&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="16.5,-1107 16.5,-1126 745.5,-1126 745.5,-1107 16.5,-1107"/>
@@ -286,7 +286,7 @@
 <text text-anchor="start" x="823" y="-1133.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="823" y="-1120.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="823" y="-1107.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.30&quot; {readOnly}</text>
-<text text-anchor="start" x="823" y="-1094.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.27&quot; {readOnly}</text>
+<text text-anchor="start" x="823" y="-1094.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.28&quot; {readOnly}</text>
 <text text-anchor="start" x="823" y="-1081.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.18&quot; {readOnly}</text>
 <text text-anchor="start" x="823" y="-1068.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_3 : string = &quot;8\.3\.6&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="818,-1055 818,-1061 1070,-1061 1070,-1055 818,-1055"/>
