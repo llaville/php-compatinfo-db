@@ -63,8 +63,9 @@ jobs:
                 name: Build Release Artifact
                 run: |
                     box-manifest manifest:build --ansi -vv -c box.json --output-file=sbom.json
+                    box-manifest manifest:build --ansi -vv -c box.json --output-file=manifest.txt --format plain
                     box-manifest manifest:build --ansi -vv -c box.json --output-file=console.txt --format console
-                    box-manifest manifest:stub  --ansi -vv -c box.json --output-file=stub.php --resource console.txt --resource sbom.json
+                    box-manifest manifest:stub  --ansi -vv -c box.json --output-file=stub.php --resource console.txt --resource manifest.txt --resource sbom.json
                     box compile --ansi -vv -c box.json.dist
 
             -   # https://github.com/softprops/action-gh-release
