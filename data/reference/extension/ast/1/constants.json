@@ -202,5 +202,15 @@
         "ext_min": "1.1.0",
         "ext_max": "",
         "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\AST_PROPERTY_HOOK",
+        "ext_min": "1.1.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\AST_PROPERTY_HOOK_SHORT_BODY",
+        "ext_min": "1.1.2",
+        "php_min": "7.2.0"
     }
 ]
