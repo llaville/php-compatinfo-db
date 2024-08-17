@@ -160,5 +160,11 @@
         "rel_date": "2023-12-02",
         "rel_state": "stable",
         "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "3.2.16",
+        "rel_date": "2024-08-10",
+        "rel_state": "stable",
+        "php_min": "7.0.0"
     }
 ]
