@@ -13,5 +13,20 @@
         "name": "opentelemetry.allow_stack_extension",
         "ext_min": "1.0.2beta1",
         "php_min": "8.0.0"
+    },
+    {
+        "name": "opentelemetry.attr_hooks_enabled",
+        "ext_min": "1.1.0beta1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "opentelemetry.attr_pre_handler_function",
+        "ext_min": "1.1.0beta1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "opentelemetry.attr_post_handler_function",
+        "ext_min": "1.1.0beta1",
+        "php_min": "8.0.0"
     }
 ]
