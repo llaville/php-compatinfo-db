@@ -10,7 +10,7 @@ ENABLE:
     - PHP
     - YAML
 DISABLE_LINTERS:
-    - JSON_JSONLINT
+    - JSON_PRETTIER
     - JSON_V8R
     - MARKDOWN_MARKDOWN_TABLE_FORMATTER
     - MARKDOWN_MARKDOWN_LINK_CHECK
@@ -19,7 +19,6 @@ DISABLE_LINTERS:
     - PHP_PHPCSFIXER
     - YAML_V8R
 EDITORCONFIG_EDITORCONFIG_CHECKER_CLI_LINT_MODE: project
-JSON_PRETTIER_FILTER_REGEX_EXCLUDE: "(composer.json)"
 MARKDOWN_MARKDOWNLINT_CONFIG_FILE: ".markdown-lint.json"
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: "(\\.github|\\.changes)"
 PHP_PHPSTAN_CLI_LINT_MODE: project # to avoid https://github.com/nvuillam/mega-linter/issues/725
@@ -32,7 +31,6 @@ YAML_PRETTIER_FILTER_REGEX_EXCLUDE: "(\\.github|\\.mega-linter\\.yml|\\.changie\
 YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: "(\\.github)" # As it cannot be added in .gitignore for ML actionlint linter
 CONFIG_REPORTER: false
 UPDATED_SOURCES_REPORTER: false
-#TEXT_REPORTER: true # cannot be set to true, and should use default value (true), otherwise TAP REPORTER is also generated. See https://github.com/nvuillam/mega-linter/issues/744
 CONSOLE_REPORTER: true
 LOG_LEVEL: INFO
 PRINT_ALL_FILES: false
