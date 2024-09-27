@@ -761,5 +761,17 @@
                 "constraint": ">=1.10.1"
             }
         ]
+    },
+    {
+        "class_name": "ZipArchive",
+        "name": "ER_TRUNCATED_ZIP",
+        "ext_min": "1.22.4",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "libzip",
+                "constraint": ">=1.11.0"
+            }
+        ]
     }
 ]
