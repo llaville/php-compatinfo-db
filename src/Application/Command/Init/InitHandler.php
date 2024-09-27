@@ -818,12 +818,12 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'msgpack' => [
             'classes'    => ['0'],
-            'const'      => ['0'],
-            'constants'  => ['2'],
+            'const'      => ['0', '3'],
+            'constants'  => ['2', '3'],
             'functions'  => ['0'],
-            'iniEntries' => ['0'],
+            'iniEntries' => ['0', '3'],
             'methods'    => ['0'],
-            'releases'   => ['0', '2'],
+            'releases'   => ['0', '2', '3'],
         ];
 
         yield 'mssql' => [

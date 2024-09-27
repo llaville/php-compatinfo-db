@@ -1,0 +1,7 @@
+[
+    {
+        "name": "msgpack.assoc",
+        "ext_min": "3.0.0RC1",
+        "php_min": "7.0.0"
+    }
+]

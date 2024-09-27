@@ -1,0 +1,14 @@
+[
+    {
+        "rel_version": "3.0.0RC1",
+        "rel_date": "2024-08-23",
+        "rel_state": "beta",
+        "php_min": "7.0.0"
+    },
+    {
+        "rel_version": "3.0.0",
+        "rel_date": "2024-09-25",
+        "rel_state": "stable",
+        "php_min": "7.0.0"
+    }
+]
