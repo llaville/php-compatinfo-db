@@ -816,6 +816,17 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => ['0', '1'],
         ];
 
+        yield 'mongodb' => [
+            'classes'    => ['1'],
+            'const'      => ['1'],
+            'constants'  => ['1'],
+            'functions'  => ['1'],
+            'iniEntries' => ['1'],
+            'interfaces' => ['1'],
+            'methods'    => ['1'],
+            'releases'   => ['0', '1'],
+        ];
+
         yield 'msgpack' => [
             'classes'    => ['0'],
             'const'      => ['0', '3'],

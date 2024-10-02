@@ -1,0 +1,47 @@
+[
+    {
+        "name": "MongoDB\\BSON\\fromJSON",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\fromPHP",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\toCanonicalExtendedJSON",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\toJSON",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\toPHP",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\toRelaxedExtendedJSON",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\addSubscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\mongoc_log",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\removeSubscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    }
+]

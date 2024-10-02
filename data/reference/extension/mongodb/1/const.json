@@ -1,0 +1,452 @@
+[
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_COLUMN",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_ENCRYPTED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_FUNCTION",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_GENERIC",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_MD5",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_OLD_BINARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_OLD_UUID",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_SENSITIVE",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_USER_DEFINED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_UUID",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "AEAD_AES_256_CBC_HMAC_SHA_512_DETERMINISTIC",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "AEAD_AES_256_CBC_HMAC_SHA_512_RANDOM",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "ALGORITHM_INDEXED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "ALGORITHM_RANGE",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "ALGORITHM_RANGE_PREVIEW",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "ALGORITHM_UNINDEXED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "QUERY_TYPE_EQUALITY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "QUERY_TYPE_RANGE",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "QUERY_TYPE_RANGE_PREVIEW",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "LEVEL_CRITICAL",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "LEVEL_DEBUG",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "LEVEL_ERROR",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "LEVEL_INFO",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "LEVEL_MESSAGE",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "LEVEL_WARNING",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "AVAILABLE",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "LINEARIZABLE",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "LOCAL",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "MAJORITY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "SNAPSHOT",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "NEAREST",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "NO_MAX_STALENESS",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "PRIMARY_PREFERRED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "RP_NEAREST",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "RP_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "RP_PRIMARY_PREFERRED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "RP_SECONDARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "RP_SECONDARY_PREFERRED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "SECONDARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "SECONDARY_PREFERRED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "SMALLEST_MAX_STALENESS_SECONDS",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_LOAD_BALANCER",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_MONGOS",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_POSSIBLE_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_RS_ARBITER",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_RS_GHOST",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_RS_OTHER",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_RS_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_RS_SECONDARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_STANDALONE",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "TYPE_UNKNOWN",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "V1",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_LOAD_BALANCER",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_MONGOS",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_POSSIBLE_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_RS_ARBITER",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_RS_GHOST",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_RS_OTHER",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_RS_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_RS_SECONDARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_STANDALONE",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "TYPE_UNKNOWN",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "TRANSACTION_ABORTED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "TRANSACTION_COMMITTED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "TRANSACTION_IN_PROGRESS",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "TRANSACTION_NONE",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "TRANSACTION_STARTING",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "TYPE_LOAD_BALANCED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "TYPE_REPLICA_SET_NO_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "TYPE_REPLICA_SET_WITH_PRIMARY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "TYPE_SHARDED",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "TYPE_SINGLE",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "TYPE_UNKNOWN",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "MAJORITY",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    }
+]

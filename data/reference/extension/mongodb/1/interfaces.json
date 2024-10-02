@@ -1,0 +1,97 @@
+[
+    {
+        "name": "MongoDB\\BSON\\BinaryInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\Decimal128Interface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\JavascriptInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\MaxKeyInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\MinKeyInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\ObjectIdInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\Persistable",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\RegexInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\Serializable",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\TimestampInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\Type",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\UTCDateTimeInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\Unserializable",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\CursorInterface",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Exception\\Exception",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\CommandSubscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "MongoDB\\Driver\\Monitoring\\Subscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    }
+]

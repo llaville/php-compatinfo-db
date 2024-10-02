@@ -1,0 +1,68 @@
+[
+    {
+        "rel_version": "0.2.0",
+        "rel_date": "2015-03-23",
+        "rel_state": "alpha",
+        "php_min": "5.2.0"
+    },
+    {
+        "rel_version": "0.3.0",
+        "rel_date": "2015-03-25",
+        "rel_state": "alpha",
+        "php_min": "5.2.0"
+    },
+    {
+        "rel_version": "0.3.1",
+        "rel_date": "2015-03-25",
+        "rel_state": "alpha",
+        "php_min": "5.2.0"
+    },
+    {
+        "rel_version": "0.4.0",
+        "rel_date": "2015-04-10",
+        "rel_state": "alpha",
+        "php_min": "5.2.0"
+    },
+    {
+        "rel_version": "0.4.1",
+        "rel_date": "2015-04-10",
+        "rel_state": "alpha",
+        "php_min": "5.2.0"
+    },
+    {
+        "rel_version": "0.5.0",
+        "rel_date": "2015-04-21",
+        "rel_state": "alpha",
+        "php_min": "5.3.0"
+    },
+    {
+        "rel_version": "0.5.1",
+        "rel_date": "2015-04-24",
+        "rel_state": "alpha",
+        "php_min": "5.3.0"
+    },
+    {
+        "rel_version": "0.6.0",
+        "rel_date": "2015-05-05",
+        "rel_state": "alpha",
+        "php_min": "5.3.0"
+    },
+    {
+        "rel_version": "0.6.1",
+        "rel_date": "2015-05-06",
+        "rel_state": "alpha",
+        "php_min": "5.3.0"
+    },
+    {
+        "rel_version": "0.6.2",
+        "rel_date": "2015-05-06",
+        "rel_state": "alpha",
+        "php_min": "5.3.0"
+    },
+    {
+        "rel_version": "0.6.3",
+        "rel_date": "2015-05-06",
+        "rel_state": "alpha",
+        "php_min": "5.3.0"
+    }
+]

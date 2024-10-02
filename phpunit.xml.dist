@@ -278,6 +278,9 @@
                 tests/Reference/Extension/PhpPecl
             </directory>
         </testsuite>
+        <testsuite name="mongodb">
+            <directory prefix="Mongodb" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
         <testsuite name="msgpack">
             <directory prefix="Msgpack" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>

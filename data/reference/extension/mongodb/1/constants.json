@@ -1,0 +1,12 @@
+[
+    {
+        "name": "MONGODB_STABILITY",
+        "ext_min": "0.2.0",
+        "php_min": "5.2.0"
+    },
+    {
+        "name": "MONGODB_VERSION",
+        "ext_min": "0.2.0",
+        "php_min": "5.2.0"
+    }
+]

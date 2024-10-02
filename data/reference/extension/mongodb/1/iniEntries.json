@@ -1,0 +1,7 @@
+[
+    {
+        "name": "mongodb.debug",
+        "ext_min": "1.11.0",
+        "php_min": "7.1.0"
+    }
+]

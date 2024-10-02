@@ -1,0 +1,2574 @@
+[
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "getData",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "getType",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\BinaryInterface",
+        "name": "getData",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\BinaryInterface",
+        "name": "getType",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\BinaryInterface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\DBPointer",
+        "name": "__set_state",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Decimal128Interface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "__serialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "__unserialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "serialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "unserialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "get",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "getIterator",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "has",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "toCanonicalExtendedJSON",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "toPHP",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "toRelaxedExtendedJSON",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "__set_state",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "fromBSON",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "fromJSON",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Document",
+        "name": "fromPHP",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Int64",
+        "name": "__set_state",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Iterator",
+        "name": "__wakeup",
+        "ext_min": "1.16.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Iterator",
+        "name": "current",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Iterator",
+        "name": "key",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Iterator",
+        "name": "next",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Iterator",
+        "name": "rewind",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Iterator",
+        "name": "valid",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "getCode",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "getScope",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Javascript",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\JavascriptInterface",
+        "name": "getCode",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\JavascriptInterface",
+        "name": "getScope",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\JavascriptInterface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MaxKey",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MaxKey",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MaxKey",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MaxKey",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MaxKey",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MaxKey",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MinKey",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MinKey",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MinKey",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MinKey",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MinKey",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\MinKey",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "getTimestamp",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectId",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectIdInterface",
+        "name": "getTimestamp",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\ObjectIdInterface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "__serialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "__unserialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "serialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "unserialize",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "get",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "has",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "toCanonicalExtendedJSON",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "toPHP",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "toRelaxedExtendedJSON",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "__toString",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "__set_state",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "fromJSON",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\PackedArray",
+        "name": "fromPHP",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Persistable",
+        "name": "bsonSerialize",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "getFlags",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "getPattern",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Regex",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\RegexInterface",
+        "name": "getFlags",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\RegexInterface",
+        "name": "getPattern",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\RegexInterface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Serializable",
+        "name": "bsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Symbol",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "getIncrement",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "getTimestamp",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Timestamp",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.5.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\TimestampInterface",
+        "name": "getIncrement",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\TimestampInterface",
+        "name": "getTimestamp",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\TimestampInterface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "toDateTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "toDateTimeImmutable",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTime",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTimeInterface",
+        "name": "toDateTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTimeInterface",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "jsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Undefined",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Unserializable",
+        "name": "bsonUnserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWrite",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWrite",
+        "name": "count",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWrite",
+        "name": "insert",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWrite",
+        "name": "delete",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWrite",
+        "name": "update",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWrite",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "addKeyAltName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "createDataKey",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "decrypt",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "deleteKey",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "encryptExpression",
+        "ext_min": "1.16.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "encrypt",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "getKeyByAltName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "getKey",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "getKeys",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "removeKeyAltName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ClientEncryption",
+        "name": "rewrapManyDataKey",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Command",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Command",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorId",
+        "name": "__toString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorId",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorId",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorId",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorId",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorId",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "current",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "getId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "isDead",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "key",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "next",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "rewind",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "setTypeMap",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "toArray",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "valid",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Cursor",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "getId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "isDead",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "setTypeMap",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "toArray",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\CommandException",
+        "name": "getResultDocument",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\RuntimeException",
+        "name": "hasErrorLabel",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\WriteException",
+        "name": "getWriteResult",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "addSubscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "createClientEncryption",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeBulkWrite",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeQuery",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeReadCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeReadWriteCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeWriteCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "getEncryptedFieldsMap",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "getReadConcern",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "getReadPreference",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "getServers",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "getWriteConcern",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "removeSubscriber",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "selectServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "startSession",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getCommandName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getDatabaseName",
+        "ext_min": "1.19.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getDurationMicros",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getError",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getHost",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getOperationId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getPort",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getReply",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getRequestId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getServerConnectionId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "getServiceId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getCommandName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getDatabaseName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getHost",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getOperationId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getPort",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getRequestId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getServerConnectionId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "getServiceId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSubscriber",
+        "name": "commandFailed",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSubscriber",
+        "name": "commandStarted",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSubscriber",
+        "name": "commandSucceeded",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getCommandName",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getDatabaseName",
+        "ext_min": "1.19.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getDurationMicros",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getHost",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getOperationId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getPort",
+        "ext_min": "1.20.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getReply",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getRequestId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getServerConnectionId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "getServiceId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\LogSubscriber",
+        "name": "log",
+        "ext_min": "1.17.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "serverChanged",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "serverClosed",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "serverHeartbeatFailed",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "serverHeartbeatStarted",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "serverHeartbeatSucceeded",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "serverOpening",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "topologyChanged",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "topologyClosed",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\SDAMSubscriber",
+        "name": "topologyOpening",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerChangedEvent",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerChangedEvent",
+        "name": "getNewDescription",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerChangedEvent",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerChangedEvent",
+        "name": "getPreviousDescription",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerChangedEvent",
+        "name": "getTopologyId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerChangedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerClosedEvent",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerClosedEvent",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerClosedEvent",
+        "name": "getTopologyId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerClosedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatFailedEvent",
+        "name": "getDurationMicros",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatFailedEvent",
+        "name": "getError",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatFailedEvent",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatFailedEvent",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatFailedEvent",
+        "name": "isAwaited",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatFailedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatStartedEvent",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatStartedEvent",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatStartedEvent",
+        "name": "isAwaited",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatStartedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatSucceededEvent",
+        "name": "getDurationMicros",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatSucceededEvent",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatSucceededEvent",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatSucceededEvent",
+        "name": "getReply",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatSucceededEvent",
+        "name": "isAwaited",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerHeartbeatSucceededEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerOpeningEvent",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerOpeningEvent",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerOpeningEvent",
+        "name": "getTopologyId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\ServerOpeningEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyChangedEvent",
+        "name": "getNewDescription",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyChangedEvent",
+        "name": "getPreviousDescription",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyChangedEvent",
+        "name": "getTopologyId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyChangedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyClosedEvent",
+        "name": "getTopologyId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyClosedEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyOpeningEvent",
+        "name": "getTopologyId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Monitoring\\TopologyOpeningEvent",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Query",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Query",
+        "name": "__wakeup",
+        "ext_max": "1.17.2",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "bsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "getLevel",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "isDefault",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadConcern",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "bsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "getHedge",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "getMaxStalenessSeconds",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "getMode",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "getModeString",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "getTagSets",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ReadPreference",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeBulkWrite",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeQuery",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeReadCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeReadWriteCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeWriteCommand",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getInfo",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getLatency",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getServerDescription",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getTags",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "getType",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "isArbiter",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "isHidden",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "isPassive",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "isPrimary",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "isSecondary",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "bsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerApi",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "getHelloResponse",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "getHost",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "getLastUpdateTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "getPort",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "getRoundTripTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "getType",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\ServerDescription",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "abortTransaction",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "advanceClusterTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "advanceOperationTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "commitTransaction",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "endSession",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "getClusterTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "getLogicalSessionId",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "getOperationTime",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "getTransactionOptions",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "getTransactionState",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "isDirty",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "isInTransaction",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "startTransaction",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Session",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "getServers",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "getType",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "hasReadableServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "hasWritableServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\TopologyDescription",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "__construct",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "__serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "__unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "serialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "unserialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "bsonSerialize",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "getJournal",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "getW",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "getWtimeout",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "isDefault",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcern",
+        "name": "__set_state",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0",
+        "static": true
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcernError",
+        "name": "getCode",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcernError",
+        "name": "getInfo",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcernError",
+        "name": "getMessage",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteConcernError",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteError",
+        "name": "getCode",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteError",
+        "name": "getIndex",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteError",
+        "name": "getInfo",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteError",
+        "name": "getMessage",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteError",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getDeletedCount",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getErrorReplies",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getInsertedCount",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getMatchedCount",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getModifiedCount",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getServer",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getUpsertedCount",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getUpsertedIds",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getWriteConcernError",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "getWriteErrors",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "isAcknowledged",
+        "ext_min": "1.15.0",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\WriteResult",
+        "name": "__wakeup",
+        "ext_min": "1.15.0",
+        "ext_max": "1.17.2",
+        "php_min": "7.2.0"
+    }
+]
