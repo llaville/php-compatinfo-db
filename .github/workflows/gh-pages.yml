@@ -5,7 +5,7 @@ on:
     push:
         branches:
             - master
-            - "6.10"
+            - "6.11"
         paths:
             - docs/**
     pull_request:
@@ -15,6 +15,6 @@ jobs:
     deploy:
         uses: llaville/.github/.github/workflows/gh-pages.yml@master
         with:
-            destination-dir: "6.10"
+            destination-dir: "6.11"
             force-orphan: false
             hook-script: "resources/gh-pages-hook.sh"
