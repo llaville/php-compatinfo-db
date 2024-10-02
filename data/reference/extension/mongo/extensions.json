@@ -1,4 +1,5 @@
 {
     "name": "mongo",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }
