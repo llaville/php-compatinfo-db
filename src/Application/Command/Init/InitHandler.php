@@ -1503,6 +1503,12 @@ final class InitHandler implements CommandHandlerInterface
             ),
         ];
 
+        yield 'xpass' => [
+            'constants' => ['1'],
+            'functions' => ['1'],
+            'releases'  => ['1'],
+        ];
+
         yield 'xsl' => [
             'classes'    => ['50'],
             'constants'  => ['50', '51', '53'],

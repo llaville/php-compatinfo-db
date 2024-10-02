@@ -1,0 +1,82 @@
+[
+    {
+        "name": "CRYPT_PREFIX_BLOWFISH",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_EXT_DES",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_GOST_YESCRYPT",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_MD5",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_SCRYPT",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_SHA256",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_SHA512",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_STD_DES",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_PREFIX_YESCRYPT",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_SALT_INVALID",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_SALT_METHOD_DISABLED",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_SALT_METHOD_LEGACY",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_SALT_OK",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "CRYPT_SALT_TOO_CHEAP",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "PASSWORD_SHA512",
+        "ext_min": "1.0.0",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "PASSWORD_YESCRYPT",
+        "ext_min": "1.0.0",
+        "php_min": "8.0.0"
+    }
+]

@@ -385,6 +385,9 @@
                 tests/Reference/Extension/PhpPecl
             </directory>
         </testsuite>
+        <testsuite name="xpass">
+            <directory prefix="Xpass" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
+        </testsuite>
         <testsuite name="yac">
             <directory prefix="Yac" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>

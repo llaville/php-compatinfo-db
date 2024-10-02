@@ -1,0 +1,17 @@
+[
+    {
+        "name": "crypt_checksalt",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "crypt_gensalt",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "crypt_preferred_method",
+        "ext_min": "1.1.0RC1",
+        "php_min": "8.0.0"
+    }
+]

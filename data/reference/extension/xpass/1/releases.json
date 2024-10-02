@@ -1,0 +1,32 @@
+[
+    {
+        "rel_version": "1.0.0RC1",
+        "rel_date": "2024-08-28",
+        "rel_state": "beta",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "1.0.0RC2",
+        "rel_date": "2024-09-02",
+        "rel_state": "beta",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "1.0.0",
+        "rel_date": "2024-09-09",
+        "rel_state": "stable",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "1.1.0RC1",
+        "rel_date": "2024-09-13",
+        "rel_state": "beta",
+        "php_min": "8.0.0"
+    },
+    {
+        "rel_version": "1.1.0",
+        "rel_date": "2024-09-26",
+        "rel_state": "stable",
+        "php_min": "8.0.0"
+    }
+]
