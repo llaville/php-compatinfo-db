@@ -110,7 +110,7 @@
 <g id="node9" class="node">
 <title>composer/semver</title>
 <path fill="#eeeeee" stroke="black" d="M886.18,-1863C886.18,-1863 722.18,-1863 722.18,-1863 716.18,-1863 710.18,-1857 710.18,-1851 710.18,-1851 710.18,-1839 710.18,-1839 710.18,-1833 716.18,-1827 722.18,-1827 722.18,-1827 886.18,-1827 886.18,-1827 892.18,-1827 898.18,-1833 898.18,-1839 898.18,-1839 898.18,-1851 898.18,-1851 898.18,-1857 892.18,-1863 886.18,-1863"/>
-<text text-anchor="middle" x="804.18" y="-1841.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">composer/semver: 3.4.2</text>
+<text text-anchor="middle" x="804.18" y="-1841.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">composer/semver: 3.4.3</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;composer/semver -->
 <g id="edge9" class="edge">
@@ -136,7 +136,7 @@
 <g id="node14" class="node">
 <title>doctrine/dbal</title>
 <path fill="#eeeeee" stroke="black" d="M1181.18,-234C1181.18,-234 1049.18,-234 1049.18,-234 1043.18,-234 1037.18,-228 1037.18,-222 1037.18,-222 1037.18,-210 1037.18,-210 1037.18,-204 1043.18,-198 1049.18,-198 1049.18,-198 1181.18,-198 1181.18,-198 1187.18,-198 1193.18,-204 1193.18,-210 1193.18,-210 1193.18,-222 1193.18,-222 1193.18,-228 1187.18,-234 1181.18,-234"/>
-<text text-anchor="middle" x="1115.18" y="-212.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">doctrine/dbal: 3.9.0</text>
+<text text-anchor="middle" x="1115.18" y="-212.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">doctrine/dbal: 3.9.1</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;doctrine/dbal -->
 <g id="edge28" class="edge">
@@ -149,7 +149,7 @@
 <g id="node23" class="node">
 <title>symfony/console</title>
 <path fill="#eeeeee" stroke="black" d="M1201.68,-288C1201.68,-288 1028.68,-288 1028.68,-288 1022.68,-288 1016.68,-282 1016.68,-276 1016.68,-276 1016.68,-264 1016.68,-264 1016.68,-258 1022.68,-252 1028.68,-252 1028.68,-252 1201.68,-252 1201.68,-252 1207.68,-252 1213.68,-258 1213.68,-264 1213.68,-264 1213.68,-276 1213.68,-276 1213.68,-282 1207.68,-288 1201.68,-288"/>
-<text text-anchor="middle" x="1115.18" y="-266.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/console: v6.4.11</text>
+<text text-anchor="middle" x="1115.18" y="-266.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/console: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/console -->
 <g id="edge41" class="edge">
@@ -162,7 +162,7 @@
 <g id="node26" class="node">
 <title>symfony/cache</title>
 <path fill="#eeeeee" stroke="black" d="M1195.18,-1998C1195.18,-1998 1035.18,-1998 1035.18,-1998 1029.18,-1998 1023.18,-1992 1023.18,-1986 1023.18,-1986 1023.18,-1974 1023.18,-1974 1023.18,-1968 1029.18,-1962 1035.18,-1962 1035.18,-1962 1195.18,-1962 1195.18,-1962 1201.18,-1962 1207.18,-1968 1207.18,-1974 1207.18,-1974 1207.18,-1986 1207.18,-1986 1207.18,-1992 1201.18,-1998 1195.18,-1998"/>
-<text text-anchor="middle" x="1115.18" y="-1976.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/cache: v6.4.11</text>
+<text text-anchor="middle" x="1115.18" y="-1976.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/cache: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/cache -->
 <g id="edge35" class="edge">
@@ -175,7 +175,7 @@
 <g id="node27" class="node">
 <title>psr/log</title>
 <path fill="#eeeeee" stroke="black" d="M1581.18,-2557C1581.18,-2557 1494.18,-2557 1494.18,-2557 1488.18,-2557 1482.18,-2551 1482.18,-2545 1482.18,-2545 1482.18,-2533 1482.18,-2533 1482.18,-2527 1488.18,-2521 1494.18,-2521 1494.18,-2521 1581.18,-2521 1581.18,-2521 1587.18,-2521 1593.18,-2527 1593.18,-2533 1593.18,-2533 1593.18,-2545 1593.18,-2545 1593.18,-2551 1587.18,-2557 1581.18,-2557"/>
-<text text-anchor="middle" x="1537.68" y="-2535.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">psr/log: 3.0.1</text>
+<text text-anchor="middle" x="1537.68" y="-2535.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">psr/log: 3.0.2</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;psr/log -->
 <g id="edge71" class="edge">
@@ -201,7 +201,7 @@
 <g id="node35" class="node">
 <title>symfony/dependency&#45;injection</title>
 <path fill="#eeeeee" stroke="black" d="M1250.68,-2139C1250.68,-2139 979.68,-2139 979.68,-2139 973.68,-2139 967.68,-2133 967.68,-2127 967.68,-2127 967.68,-2115 967.68,-2115 967.68,-2109 973.68,-2103 979.68,-2103 979.68,-2103 1250.68,-2103 1250.68,-2103 1256.68,-2103 1262.68,-2109 1262.68,-2115 1262.68,-2115 1262.68,-2127 1262.68,-2127 1262.68,-2133 1256.68,-2139 1250.68,-2139"/>
-<text text-anchor="middle" x="1115.18" y="-2117.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/dependency&#45;injection: v6.4.11</text>
+<text text-anchor="middle" x="1115.18" y="-2117.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/dependency&#45;injection: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/dependency&#45;injection -->
 <g id="edge47" class="edge">
@@ -240,7 +240,7 @@
 <g id="node40" class="node">
 <title>symfony/http&#45;client</title>
 <path fill="#eeeeee" stroke="black" d="M1212.18,-2438C1212.18,-2438 1018.18,-2438 1018.18,-2438 1012.18,-2438 1006.18,-2432 1006.18,-2426 1006.18,-2426 1006.18,-2414 1006.18,-2414 1006.18,-2408 1012.18,-2402 1018.18,-2402 1018.18,-2402 1212.18,-2402 1212.18,-2402 1218.18,-2402 1224.18,-2408 1224.18,-2414 1224.18,-2414 1224.18,-2426 1224.18,-2426 1224.18,-2432 1218.18,-2438 1212.18,-2438"/>
-<text text-anchor="middle" x="1115.18" y="-2416.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/http&#45;client: v6.4.11</text>
+<text text-anchor="middle" x="1115.18" y="-2416.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/http&#45;client: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/http&#45;client -->
 <g id="edge58" class="edge">
@@ -253,7 +253,7 @@
 <g id="node42" class="node">
 <title>symfony/messenger</title>
 <path fill="#eeeeee" stroke="black" d="M1213.68,-2557C1213.68,-2557 1016.68,-2557 1016.68,-2557 1010.68,-2557 1004.68,-2551 1004.68,-2545 1004.68,-2545 1004.68,-2533 1004.68,-2533 1004.68,-2527 1010.68,-2521 1016.68,-2521 1016.68,-2521 1213.68,-2521 1213.68,-2521 1219.68,-2521 1225.68,-2527 1225.68,-2533 1225.68,-2533 1225.68,-2545 1225.68,-2545 1225.68,-2551 1219.68,-2557 1213.68,-2557"/>
-<text text-anchor="middle" x="1115.18" y="-2535.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/messenger: v6.4.10</text>
+<text text-anchor="middle" x="1115.18" y="-2535.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/messenger: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/messenger -->
 <g id="edge63" class="edge">
@@ -265,14 +265,14 @@
 <!-- symfony/process -->
 <g id="node44" class="node">
 <title>symfony/process</title>
-<path fill="#eeeeee" stroke="black" d="M886.68,-1908C886.68,-1908 721.68,-1908 721.68,-1908 715.68,-1908 709.68,-1902 709.68,-1896 709.68,-1896 709.68,-1884 709.68,-1884 709.68,-1878 715.68,-1872 721.68,-1872 721.68,-1872 886.68,-1872 886.68,-1872 892.68,-1872 898.68,-1878 898.68,-1884 898.68,-1884 898.68,-1896 898.68,-1896 898.68,-1902 892.68,-1908 886.68,-1908"/>
-<text text-anchor="middle" x="804.18" y="-1886.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/process: v6.4.8</text>
+<path fill="#eeeeee" stroke="black" d="M891.18,-1908C891.18,-1908 717.18,-1908 717.18,-1908 711.18,-1908 705.18,-1902 705.18,-1896 705.18,-1896 705.18,-1884 705.18,-1884 705.18,-1878 711.18,-1872 717.18,-1872 717.18,-1872 891.18,-1872 891.18,-1872 897.18,-1872 903.18,-1878 903.18,-1884 903.18,-1884 903.18,-1896 903.18,-1896 903.18,-1902 897.18,-1908 891.18,-1908"/>
+<text text-anchor="middle" x="804.18" y="-1886.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/process: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/process -->
 <g id="edge65" class="edge">
 <title>bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/process</title>
-<path fill="none" stroke="#1a2833" d="M151.45,-1639.95C177.11,-1670.69 232.94,-1734.24 289.68,-1777 409.49,-1867.31 587.14,-1888.23 698.96,-1891.64"/>
-<polygon fill="#1a2833" stroke="#1a2833" points="699.15,-1895.15 709.24,-1891.91 699.33,-1888.15 699.15,-1895.15"/>
+<path fill="none" stroke="#1a2833" d="M151.45,-1639.95C177.11,-1670.69 232.94,-1734.24 289.68,-1777 407.9,-1866.11 582.43,-1887.67 694.47,-1891.5"/>
+<polygon fill="#1a2833" stroke="#1a2833" points="694.68,-1895.01 704.78,-1891.81 694.89,-1888.01 694.68,-1895.01"/>
 <text text-anchor="middle" x="319.18" y="-1812" font-family="Times,serif" font-size="10.00" fill="#767676">^6.4 || ^7.0</text>
 </g>
 <!-- symfony/requirements&#45;checker -->
@@ -305,7 +305,7 @@
 <g id="node47" class="node">
 <title>symfony/framework&#45;bundle</title>
 <path fill="#eeeeee" stroke="black" d="M628.68,-1481C628.68,-1481 378.68,-1481 378.68,-1481 372.68,-1481 366.68,-1475 366.68,-1469 366.68,-1469 366.68,-1457 366.68,-1457 366.68,-1451 372.68,-1445 378.68,-1445 378.68,-1445 628.68,-1445 628.68,-1445 634.68,-1445 640.68,-1451 640.68,-1457 640.68,-1457 640.68,-1469 640.68,-1469 640.68,-1475 634.68,-1481 628.68,-1481"/>
-<text text-anchor="middle" x="503.68" y="-1459.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/framework&#45;bundle: v6.4.10</text>
+<text text-anchor="middle" x="503.68" y="-1459.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/framework&#45;bundle: v6.4.12</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;symfony/framework&#45;bundle -->
 <g id="edge87" class="edge">
@@ -509,7 +509,7 @@
 <g id="node24" class="node">
 <title>symfony/polyfill&#45;php72</title>
 <path fill="#eeeeee" stroke="black" d="M1223.68,-936C1223.68,-936 1006.68,-936 1006.68,-936 1000.68,-936 994.68,-930 994.68,-924 994.68,-924 994.68,-912 994.68,-912 994.68,-906 1000.68,-900 1006.68,-900 1006.68,-900 1223.68,-900 1223.68,-900 1229.68,-900 1235.68,-906 1235.68,-912 1235.68,-912 1235.68,-924 1235.68,-924 1235.68,-930 1229.68,-936 1223.68,-936"/>
-<text text-anchor="middle" x="1115.18" y="-914.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;php72: v1.30.0</text>
+<text text-anchor="middle" x="1115.18" y="-914.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;php72: v1.31.0</text>
 </g>
 <!-- doctrine/orm&#45;&gt;symfony/polyfill&#45;php72 -->
 <g id="edge25" class="edge">
@@ -522,7 +522,7 @@
 <g id="node25" class="node">
 <title>symfony/polyfill&#45;php80</title>
 <path fill="#eeeeee" stroke="black" d="M1223.68,-882C1223.68,-882 1006.68,-882 1006.68,-882 1000.68,-882 994.68,-876 994.68,-870 994.68,-870 994.68,-858 994.68,-858 994.68,-852 1000.68,-846 1006.68,-846 1006.68,-846 1223.68,-846 1223.68,-846 1229.68,-846 1235.68,-852 1235.68,-858 1235.68,-858 1235.68,-870 1235.68,-870 1235.68,-876 1229.68,-882 1223.68,-882"/>
-<text text-anchor="middle" x="1115.18" y="-860.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;php80: v1.30.0</text>
+<text text-anchor="middle" x="1115.18" y="-860.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;php80: v1.31.0</text>
 </g>
 <!-- doctrine/orm&#45;&gt;symfony/polyfill&#45;php80 -->
 <g id="edge26" class="edge">
@@ -614,21 +614,21 @@
 <!-- symfony/filesystem -->
 <g id="node33" class="node">
 <title>symfony/filesystem</title>
-<path fill="#eeeeee" stroke="black" d="M1629.18,-1147C1629.18,-1147 1446.18,-1147 1446.18,-1147 1440.18,-1147 1434.18,-1141 1434.18,-1135 1434.18,-1135 1434.18,-1123 1434.18,-1123 1434.18,-1117 1440.18,-1111 1446.18,-1111 1446.18,-1111 1629.18,-1111 1629.18,-1111 1635.18,-1111 1641.18,-1117 1641.18,-1123 1641.18,-1123 1641.18,-1135 1641.18,-1135 1641.18,-1141 1635.18,-1147 1629.18,-1147"/>
-<text text-anchor="middle" x="1537.68" y="-1125.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/filesystem: v6.4.9</text>
+<path fill="#eeeeee" stroke="black" d="M1633.68,-1147C1633.68,-1147 1441.68,-1147 1441.68,-1147 1435.68,-1147 1429.68,-1141 1429.68,-1135 1429.68,-1135 1429.68,-1123 1429.68,-1123 1429.68,-1117 1435.68,-1111 1441.68,-1111 1441.68,-1111 1633.68,-1111 1633.68,-1111 1639.68,-1111 1645.68,-1117 1645.68,-1123 1645.68,-1123 1645.68,-1135 1645.68,-1135 1645.68,-1141 1639.68,-1147 1633.68,-1147"/>
+<text text-anchor="middle" x="1537.68" y="-1125.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/filesystem: v6.4.12</text>
 </g>
 <!-- symfony/config&#45;&gt;symfony/filesystem -->
 <g id="edge38" class="edge">
 <title>symfony/config&#45;&gt;symfony/filesystem</title>
-<path fill="none" stroke="#1a2833" d="M1203.81,-1079.13C1267.71,-1088.7 1354.82,-1101.75 1423.9,-1112.1"/>
-<polygon fill="#1a2833" stroke="#1a2833" points="1423.55,-1115.59 1433.96,-1113.61 1424.59,-1108.67 1423.55,-1115.59"/>
+<path fill="none" stroke="#1a2833" d="M1203.81,-1079.13C1266.33,-1088.5 1351.08,-1101.19 1419.41,-1111.43"/>
+<polygon fill="#1a2833" stroke="#1a2833" points="1418.96,-1114.9 1429.37,-1112.92 1420,-1107.98 1418.96,-1114.9"/>
 <text text-anchor="middle" x="1318.68" y="-1104" font-family="Times,serif" font-size="10.00" fill="#767676">^5.4|^6.0|^7.0</text>
 </g>
 <!-- symfony/polyfill&#45;ctype -->
 <g id="node34" class="node">
 <title>symfony/polyfill&#45;ctype</title>
 <path fill="#eeeeee" stroke="black" d="M1643.18,-964C1643.18,-964 1432.18,-964 1432.18,-964 1426.18,-964 1420.18,-958 1420.18,-952 1420.18,-952 1420.18,-940 1420.18,-940 1420.18,-934 1426.18,-928 1432.18,-928 1432.18,-928 1643.18,-928 1643.18,-928 1649.18,-928 1655.18,-934 1655.18,-940 1655.18,-940 1655.18,-952 1655.18,-952 1655.18,-958 1649.18,-964 1643.18,-964"/>
-<text text-anchor="middle" x="1537.68" y="-942.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;ctype: v1.30.0</text>
+<text text-anchor="middle" x="1537.68" y="-942.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;ctype: v1.31.0</text>
 </g>
 <!-- symfony/config&#45;&gt;symfony/polyfill&#45;ctype -->
 <g id="edge39" class="edge">
@@ -783,7 +783,7 @@
 <!-- symfony/process&#45;&gt;php -->
 <g id="edge64" class="edge">
 <title>symfony/process&#45;&gt;php</title>
-<path fill="none" stroke="#1a2833" d="M898.88,-1891.8C1014.61,-1892.4 1203.46,-1887.59 1262.68,-1852 1275.36,-1844.38 1268.26,-1832.05 1280.68,-1824 1316.24,-1800.93 1438.34,-1790.69 1500.17,-1786.89"/>
+<path fill="none" stroke="#1a2833" d="M903.42,-1891.82C1019.49,-1892.27 1204.23,-1887.13 1262.68,-1852 1275.36,-1844.38 1268.26,-1832.05 1280.68,-1824 1316.24,-1800.93 1438.34,-1790.69 1500.17,-1786.89"/>
 <polygon fill="#1a2833" stroke="#1a2833" points="1500.49,-1790.38 1510.27,-1786.29 1500.08,-1783.39 1500.49,-1790.38"/>
 <text text-anchor="middle" x="1115.18" y="-1894" font-family="Times,serif" font-size="10.00" fill="#767676">&gt;=8.1</text>
 </g>
@@ -855,7 +855,7 @@
 <title>symfony/framework&#45;bundle&#45;&gt;symfony/dependency&#45;injection</title>
 <path fill="none" stroke="#1a2833" d="M524.25,-1481.43C553.62,-1510.11 608.99,-1568.33 640.68,-1628 653.93,-1652.97 637.34,-1670.46 658.68,-1689 757.37,-1774.74 861.64,-1635.34 949.68,-1732 1000.17,-1787.45 922.8,-2008.92 967.68,-2069 977.15,-2081.68 989.97,-2091.28 1004.11,-2098.55"/>
 <polygon fill="#1a2833" stroke="#1a2833" points="1003.03,-2101.91 1013.57,-2102.99 1006.01,-2095.57 1003.03,-2101.91"/>
-<text text-anchor="middle" x="804.18" y="-1735" font-family="Times,serif" font-size="10.00" fill="#767676">^6.4|^7.0</text>
+<text text-anchor="middle" x="804.18" y="-1735" font-family="Times,serif" font-size="10.00" fill="#767676">^6.4.12|^7.0</text>
 </g>
 <!-- symfony/framework&#45;bundle&#45;&gt;symfony/event&#45;dispatcher -->
 <g id="edge80" class="edge">
@@ -901,7 +901,7 @@
 <g id="node50" class="node">
 <title>symfony/http&#45;foundation</title>
 <path fill="#eeeeee" stroke="black" d="M1230.18,-1610C1230.18,-1610 1000.18,-1610 1000.18,-1610 994.18,-1610 988.18,-1604 988.18,-1598 988.18,-1598 988.18,-1586 988.18,-1586 988.18,-1580 994.18,-1574 1000.18,-1574 1000.18,-1574 1230.18,-1574 1230.18,-1574 1236.18,-1574 1242.18,-1580 1242.18,-1586 1242.18,-1586 1242.18,-1598 1242.18,-1598 1242.18,-1604 1236.18,-1610 1230.18,-1610"/>
-<text text-anchor="middle" x="1115.18" y="-1588.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/http&#45;foundation: v6.4.10</text>
+<text text-anchor="middle" x="1115.18" y="-1588.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/http&#45;foundation: v6.4.12</text>
 </g>
 <!-- symfony/framework&#45;bundle&#45;&gt;symfony/http&#45;foundation -->
 <g id="edge83" class="edge">
@@ -914,7 +914,7 @@
 <g id="node51" class="node">
 <title>symfony/http&#45;kernel</title>
 <path fill="#eeeeee" stroke="black" d="M1214.68,-1556C1214.68,-1556 1015.68,-1556 1015.68,-1556 1009.68,-1556 1003.68,-1550 1003.68,-1544 1003.68,-1544 1003.68,-1532 1003.68,-1532 1003.68,-1526 1009.68,-1520 1015.68,-1520 1015.68,-1520 1214.68,-1520 1214.68,-1520 1220.68,-1520 1226.68,-1526 1226.68,-1532 1226.68,-1532 1226.68,-1544 1226.68,-1544 1226.68,-1550 1220.68,-1556 1214.68,-1556"/>
-<text text-anchor="middle" x="1115.18" y="-1534.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/http&#45;kernel: v6.4.11</text>
+<text text-anchor="middle" x="1115.18" y="-1534.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/http&#45;kernel: v6.4.12</text>
 </g>
 <!-- symfony/framework&#45;bundle&#45;&gt;symfony/http&#45;kernel -->
 <g id="edge84" class="edge">
@@ -927,7 +927,7 @@
 <g id="node52" class="node">
 <title>symfony/polyfill&#45;mbstring</title>
 <path fill="#eeeeee" stroke="black" d="M1233.68,-1455C1233.68,-1455 996.68,-1455 996.68,-1455 990.68,-1455 984.68,-1449 984.68,-1443 984.68,-1443 984.68,-1431 984.68,-1431 984.68,-1425 990.68,-1419 996.68,-1419 996.68,-1419 1233.68,-1419 1233.68,-1419 1239.68,-1419 1245.68,-1425 1245.68,-1431 1245.68,-1431 1245.68,-1443 1245.68,-1443 1245.68,-1449 1239.68,-1455 1233.68,-1455"/>
-<text text-anchor="middle" x="1115.18" y="-1433.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;mbstring: v1.30.0</text>
+<text text-anchor="middle" x="1115.18" y="-1433.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/polyfill&#45;mbstring: v1.31.0</text>
 </g>
 <!-- symfony/framework&#45;bundle&#45;&gt;symfony/polyfill&#45;mbstring -->
 <g id="edge85" class="edge">
@@ -940,7 +940,7 @@
 <g id="node53" class="node">
 <title>symfony/routing</title>
 <path fill="#eeeeee" stroke="black" d="M1201.18,-1401C1201.18,-1401 1029.18,-1401 1029.18,-1401 1023.18,-1401 1017.18,-1395 1017.18,-1389 1017.18,-1389 1017.18,-1377 1017.18,-1377 1017.18,-1371 1023.18,-1365 1029.18,-1365 1029.18,-1365 1201.18,-1365 1201.18,-1365 1207.18,-1365 1213.18,-1371 1213.18,-1377 1213.18,-1377 1213.18,-1389 1213.18,-1389 1213.18,-1395 1207.18,-1401 1201.18,-1401"/>
-<text text-anchor="middle" x="1115.18" y="-1379.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/routing: v6.4.11</text>
+<text text-anchor="middle" x="1115.18" y="-1379.3" font-family="Times,serif" font-size="14.00" fill="#314b5f">symfony/routing: v6.4.12</text>
 </g>
 <!-- symfony/framework&#45;bundle&#45;&gt;symfony/routing -->
 <g id="edge86" class="edge">
