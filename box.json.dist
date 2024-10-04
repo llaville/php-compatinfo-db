@@ -6,7 +6,7 @@
         "data"
     ],
     "compression": "GZ",
-    "dump-autoload": false,
+    "dump-autoload": true,
     "files-bin": [
         "console-table.txt",
         "plain.txt",
