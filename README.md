@@ -151,9 +151,9 @@
 
 [Branch_611x-img]: https://img.shields.io/badge/branch-6.11-orange
 [Branch_611x]: https://github.com/llaville/php-compatinfo-db/tree/6.11
-[PHPVersion_611x-img]: https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db/6.11.0
+[PHPVersion_611x-img]: https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db/6.11.1
 [PHPVersion_611x]: https://www.php.net/supported-versions.php
-[Packagist_611x-img]: https://img.shields.io/badge/packagist-v6.11.0-blue
+[Packagist_611x-img]: https://img.shields.io/badge/packagist-v6.11.1-blue
 [Packagist_611x]: https://packagist.org/packages/bartlett/php-compatinfo-db
 [License_611x-img]: https://img.shields.io/packagist/l/bartlett/php-compatinfo-db
 [License_611x]: https://github.com/llaville/php-compatinfo-db/blob/6.11/LICENSE
