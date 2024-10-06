@@ -13,14 +13,14 @@
     beStrictAboutTestsThatDoNotTestAnything="false"
     processIsolation="false"
 >
-    <filter>
-        <whitelist>
-            <directory suffix=".php">src/</directory>
-        </whitelist>
-    </filter>
     <testsuites>
         <testsuite name="Odbc Reference Test Suite">
-            <directory prefix="" suffix="ExtensionTest.php">tests/</directory>
+            <directory prefix="" suffix="ExtensionTest.php">./</directory>
         </testsuite>
     </testsuites>
+    <source>
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+    </source>
 </phpunit>
