@@ -478,5 +478,23 @@
         "name": "myid",
         "ext_min": "6.0.0RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "waitaof",
+        "ext_min": "6.1.0RC1",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "waitaof",
+        "ext_min": "6.1.0RC1",
+        "php_min": "7.2.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "getex",
+        "ext_min": "6.1.0RC1",
+        "php_min": "7.2.0"
     }
 ]
