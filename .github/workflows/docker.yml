@@ -15,7 +15,7 @@ jobs:
     build:
         env:
             DOCKER_REGISTRY: ghcr.io
-            DOCKER_BUILD_TAG: ${{ env.DOCKER_REGISTRY }}/llaville/php-compatinfo-db:${{ github.event.inputs.tag || 'latest' }}
+            DOCKER_BUILD_TAG: ghcr.io/llaville/php-compatinfo-db:${{ github.event.inputs.tag || 'latest' }}
 
         runs-on: ubuntu-22.04
 
