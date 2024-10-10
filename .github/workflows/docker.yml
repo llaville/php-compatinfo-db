@@ -10,9 +10,6 @@ on:
                 required: false
                 default: "latest"
                 type: string
-    #push:
-    #    branches:
-    #        - 'master'
 
 jobs:
     build:
