@@ -18,6 +18,9 @@ jobs:
 
         runs-on: ubuntu-22.04
 
+        permissions:
+            packages: write
+
         steps:
             -   # https://github.com/actions/checkout
                 name: Checkout code
