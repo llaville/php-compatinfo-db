@@ -48,3 +48,5 @@ jobs:
                 with:
                     push: true
                     tags: ${{ env.DOCKER_BUILD_TAG }}
+                    secrets: |
+                        GIT_AUTH_TOKEN=${{ secrets.DOCKER_PASSWORD }}
