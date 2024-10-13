@@ -38,7 +38,7 @@ interface MicroKernelInterface
     /**
      * Gets the cache directory.
      */
-    public function getCacheDir(string $default = null): string;
+    public function getCacheDir(?string $default = null): string;
 
     /**
      * Gets the log directory.

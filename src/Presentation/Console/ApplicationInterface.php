@@ -20,7 +20,7 @@ interface ApplicationInterface
 {
     public const NAME = 'Database handler for CompatInfo';
 
-    public function setContainer(ContainerInterface $container = null): void;
+    public function setContainer(?ContainerInterface $container = null): void;
 
     /**
      * @return void

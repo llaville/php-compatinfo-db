@@ -95,7 +95,7 @@ trait MicroKernelTrait
     /**
      * {@inheritDoc}
      */
-    public function getCacheDir(string $default = null): string
+    public function getCacheDir(?string $default = null): string
     {
         $cacheDir = $_SERVER['APP_CACHE_DIR'] ?? $_ENV['APP_CACHE_DIR'] ?? null;
 

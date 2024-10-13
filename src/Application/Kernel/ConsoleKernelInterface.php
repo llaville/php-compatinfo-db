@@ -21,10 +21,10 @@ interface ConsoleKernelInterface
     /**
      * @throws Exception
      */
-    public function handle(InputInterface $input = null): int;
+    public function handle(?InputInterface $input = null): int;
 
     /**
      * @throws Exception
      */
-    public function createFromInput(InputInterface $input = null): ContainerInterface;
+    public function createFromInput(?InputInterface $input = null): ContainerInterface;
 }
