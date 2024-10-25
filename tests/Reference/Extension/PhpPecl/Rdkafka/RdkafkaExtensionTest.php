@@ -19,9 +19,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class RdkafkaExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -31,9 +29,19 @@ class RdkafkaExtensionTest extends GenericTestCase
             'RD_KAFKA_MSG_PARTITIONER_MURMUR2_RANDOM',
         ];
 
-        // depends on HAVE_RD_KAFKA_MESSAGE_HEADERS
         self::$optionalmethods = [
+            // depends on HAVE_RD_KAFKA_MESSAGE_HEADERS
             'RdKafka\\ProducerTopic::producev',
+            // depends on HAS_RD_KAFKA_INCREMENTAL_ASSIGN
+            'RdKafka\\KafkaConsumer::incrementalAssign',
+            'RdKafka\\KafkaConsumer::incrementalUnassign',
+            // depends on HAS_RD_KAFKA_CONTROLLERID
+            'RdKafka::getControllerId',
+            'RdKafka\\KafkaConsumer::getControllerId',
+            // depends on HAS_RD_KAFKA_OAUTHBEARER
+            'RdKafka\\Conf::setOauthbearerTokenRefreshCb',
+            'RdKafka::oauthbearerSetToken',
+            'RdKafka::oauthbearerSetTokenFailure',
         ];
 
         parent::setUpBeforeClass();

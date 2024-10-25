@@ -40,5 +40,12 @@
         "rel_state": "stable",
         "php_min": "7.0.0",
         "php_max": "8.99.99"
+    },
+    {
+        "rel_version": "6.0.4",
+        "rel_date": "2024-10-24",
+        "rel_state": "stable",
+        "php_min": "7.0.0",
+        "php_max": "8.99.99"
     }
 ]

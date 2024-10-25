@@ -1,0 +1,44 @@
+[
+    {
+        "class_name": "RdKafka",
+        "name": "oauthbearerSetToken",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "oauthbearerSetTokenFailure",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka",
+        "name": "getControllerId",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "getControllerId",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "incrementalAssign",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\KafkaConsumer",
+        "name": "incrementalUnassign",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "RdKafka\\Conf",
+        "name": "setOauthbearerTokenRefreshCb",
+        "ext_min": "6.0.4",
+        "php_min": "7.0.0"
+    }
+]
