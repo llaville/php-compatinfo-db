@@ -20,9 +20,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class PgsqlExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -36,6 +34,11 @@ class PgsqlExtensionTest extends GenericTestCase
             // depends on TRACE support (PQTRACE_SUPPRESS_TIMESTAMPS, PQTRACE_REGRESS_MODE)
             'PGSQL_TRACE_SUPPRESS_TIMESTAMPS',
             'PGSQL_TRACE_REGRESS_MODE',
+            // requires HAVE_PQERRORS_SQLSTATE
+            // (since PHP 8.4, @see https://github.com/php/php-src/commit/65ff5117ab191c1a17754e40d4ba2fef78829ad2)
+            'PGSQL_ERRORS_SQLSTATE',
+            // requires HAVE_PG_SET_CHUNKED_ROWS_SIZE
+            'PGSQL_TUPLES_CHUNK',
         ];
 
         self::$optionalfunctions = [
@@ -44,6 +47,10 @@ class PgsqlExtensionTest extends GenericTestCase
             'pg_exit_pipeline_mode',
             'pg_pipeline_status',
             'pg_pipeline_sync',
+            // requires HAVE_PG_SET_CHUNKED_ROWS_SIZE
+            'pg_set_chunked_rows_size',
+            // requires HAVE_PG_RESULT_MEMORY_SIZE
+            'pg_result_memory_size',
         ];
 
         parent::setUpBeforeClass();

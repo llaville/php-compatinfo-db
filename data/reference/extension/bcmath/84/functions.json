@@ -1,0 +1,22 @@
+[
+    {
+        "name": "bcfloor",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.alpha1"
+    },
+    {
+        "name": "bcceil",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.alpha1"
+    },
+    {
+        "name": "bcround",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.alpha1"
+    },
+    {
+        "name": "bcdivmod",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    }
+]

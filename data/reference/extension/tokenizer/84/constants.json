@@ -1,0 +1,22 @@
+[
+    {
+        "name": "T_PROPERTY_C",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "name": "T_PRIVATE_SET",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "name": "T_PROTECTED_SET",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "name": "T_PUBLIC_SET",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    }
+]

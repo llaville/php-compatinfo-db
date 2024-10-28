@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "IntlDateFormatter",
+        "name": "parseToCalendar",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "setAllowedChars",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    }
+]

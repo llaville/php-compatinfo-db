@@ -1,0 +1,56 @@
+[
+    {
+        "name": "X509_PURPOSE_OCSP_HELPER",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "X509_PURPOSE_TIMESTAMP_SIGN",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "OPENSSL_KEYTYPE_X25519",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": ">=3.0.0"
+            }
+        ]
+    },
+    {
+        "name": "OPENSSL_KEYTYPE_ED25519",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": ">=3.0.0"
+            }
+        ]
+    },
+    {
+        "name": "OPENSSL_KEYTYPE_X448",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": ">=3.0.0"
+            }
+        ]
+    },
+    {
+        "name": "OPENSSL_KEYTYPE_ED448",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": ">=3.0.0"
+            }
+        ]
+    }
+]

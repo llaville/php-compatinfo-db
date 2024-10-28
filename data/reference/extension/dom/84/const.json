@@ -1,0 +1,98 @@
+[
+    {
+        "class_name": "DOMNode",
+        "name": "DOCUMENT_POSITION_DISCONNECTED",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "DOCUMENT_POSITION_PRECEDING",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "DOCUMENT_POSITION_FOLLOWING",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "DOCUMENT_POSITION_CONTAINS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "DOCUMENT_POSITION_CONTAINED_BY",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNode",
+        "name": "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\AdjacentPosition",
+        "name": "BeforeBegin",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\AdjacentPosition",
+        "name": "AfterBegin",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\AdjacentPosition",
+        "name": "BeforeEnd",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\AdjacentPosition",
+        "name": "AfterEnd",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "DOCUMENT_POSITION_DISCONNECTED",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "DOCUMENT_POSITION_PRECEDING",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "DOCUMENT_POSITION_FOLLOWING",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "DOCUMENT_POSITION_CONTAINS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "DOCUMENT_POSITION_CONTAINED_BY",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

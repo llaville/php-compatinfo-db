@@ -22,9 +22,7 @@ use Exception;
 class LdapExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @throws Exception
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -46,6 +44,9 @@ class LdapExtensionTest extends GenericTestCase
             // RFC 3829
             'LDAP_CONTROL_AUTHZID_REQUEST',
             'LDAP_CONTROL_AUTHZID_RESPONSE',
+            //
+            'LDAP_OPT_X_TLS_PROTOCOL_TLS1_3',
+            'LDAP_OPT_X_TLS_PROTOCOL_MAX',
         ];
 
         parent::setUpBeforeClass();

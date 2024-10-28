@@ -1,0 +1,46 @@
+[
+    {
+        "class_name": "DateTimeInterface",
+        "name": "getMicrosecond",
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DateTime",
+        "name": "getMicrosecond",
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DateTime",
+        "name": "setMicrosecond",
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "getMicrosecond",
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "setMicrosecond",
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DateTimeImmutable",
+        "name": "createFromTimestamp",
+        "static": true,
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DateTime",
+        "name": "createFromTimestamp",
+        "static": true,
+        "ext_min": "8.4.alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

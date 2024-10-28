@@ -44,6 +44,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         '81' => ExtensionVersionProviderInterface::LATEST_PHP_8_1,
         '82' => ExtensionVersionProviderInterface::LATEST_PHP_8_2,
         '83' => ExtensionVersionProviderInterface::LATEST_PHP_8_3,
+        '84' => ExtensionVersionProviderInterface::LATEST_PHP_8_4,
     ];
     private JsonFileHandler $jsonFileHandler;
     private string $refDir;
@@ -386,6 +387,15 @@ final class ReleaseHandler implements CommandHandlerInterface
         ];
         yield $refName => [$ext, $major, $entry, $names];
 
+        $refName = 'mysqli';
+        $ext     = 'constants';
+        $major   = '53';
+        $entry   = 'php_max';
+        $names   = [
+            'MYSQLI_SET_CHARSET_DIR'                => $this->latestPhpVersion['83'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
         $refName = 'oci8';
         $ext     = 'functions';
         $major   = '1';
@@ -441,6 +451,17 @@ final class ReleaseHandler implements CommandHandlerInterface
             'OCI-Lob::write'                        => $this->latestPhpVersion['74'],
             'OCI-Lob::writetemporary'               => $this->latestPhpVersion['74'],
             'OCI-Lob::writetofile'                  => $this->latestPhpVersion['74'],
+        ];
+        yield $refName => [$ext, $major, $entry, $names];
+
+        $refName = 'odbc';
+        $ext     = 'iniEntries';
+        $major   = '40';
+        $entry   = 'php_max';
+        $names   = [
+            'odbc.default_db'                       => $this->latestPhpVersion['83'],
+            'odbc.default_pw'                       => $this->latestPhpVersion['83'],
+            'odbc.default_user'                     => $this->latestPhpVersion['83'],
         ];
         yield $refName => [$ext, $major, $entry, $names];
 

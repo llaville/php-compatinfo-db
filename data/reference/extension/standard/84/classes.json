@@ -1,0 +1,12 @@
+[
+    {
+        "name": "StreamBucket",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "RoundingMode",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    }
+]

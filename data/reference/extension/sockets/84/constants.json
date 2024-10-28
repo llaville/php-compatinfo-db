@@ -1,0 +1,42 @@
+[
+    {
+        "name": "SO_EXCLBIND",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "SO_LINGER_SEC",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "SOCK_CONN_DGRAM",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "SOCK_DCCP",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "TCP_SYNCNT",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "SOCK_CLOEXEC",
+        "ext_min": "8.4.0beta1",
+        "php_min": "8.4.0beta1"
+    },
+    {
+        "name": "SOCK_NONBLOCK",
+        "ext_min": "8.4.0beta1",
+        "php_min": "8.4.0beta1"
+    },
+    {
+        "name": "SO_BINDTOIFINDEX",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    }
+]

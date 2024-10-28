@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "SoapServer",
+        "name": "__getLastResponse",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    }
+]

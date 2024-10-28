@@ -1,0 +1,12 @@
+[
+    {
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_MAX",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "LDAP_OPT_X_TLS_PROTOCOL_TLS1_3",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

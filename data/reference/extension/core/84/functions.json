@@ -1,0 +1,12 @@
+[
+    {
+        "name": "exit",
+        "ext_min": "8.4.0beta3",
+        "php_min": "8.4.0beta3"
+    },
+    {
+        "name": "die",
+        "ext_min": "8.4.0beta3",
+        "php_min": "8.4.0beta3"
+    }
+]

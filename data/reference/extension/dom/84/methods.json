@@ -1,0 +1,1048 @@
+[
+    {
+        "class_name": "DOMNode",
+        "name": "compareDocumentPosition",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMXPath",
+        "name": "registerPhpFunctionNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMXPath",
+        "name": "quote",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNameSpaceNode",
+        "name": "__sleep",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "DOMNameSpaceNode",
+        "name": "__wakeup",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "createEmpty",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "createFromFile",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "createFromString",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "saveXml",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "saveXmlFile",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "saveHtml",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "saveHtmlFile",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLDocument",
+        "name": "debugGetTemplateCount",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "createEmpty",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "createFromFile",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "createFromString",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "createEntityReference",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "validate",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "xinclude",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "saveXml",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XMLDocument",
+        "name": "saveXmlFile",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "insertAdjacentElement",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "insertAdjacentText",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NodeList",
+        "name": "count",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NodeList",
+        "name": "getIterator",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NodeList",
+        "name": "item",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NamedNodeMap",
+        "name": "item",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NamedNodeMap",
+        "name": "getNamedItem",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NamedNodeMap",
+        "name": "getNamedItemNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NamedNodeMap",
+        "name": "count",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\NamedNodeMap",
+        "name": "getIterator",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DtdNamedNodeMap",
+        "name": "item",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DtdNamedNodeMap",
+        "name": "getNamedItem",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DtdNamedNodeMap",
+        "name": "getNamedItemNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DtdNamedNodeMap",
+        "name": "count",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DtdNamedNodeMap",
+        "name": "getIterator",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLCollection",
+        "name": "item",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLCollection",
+        "name": "namedItem",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLCollection",
+        "name": "count",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\HTMLCollection",
+        "name": "getIterator",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "hasAttributes",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getAttributeNames",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getAttributeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setAttributeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "removeAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "removeAttributeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "toggleAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "hasAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "hasAttributeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getAttributeNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getAttributeNodeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setAttributeNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setAttributeNodeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "removeAttributeNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getElementsByTagName",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getElementsByTagNameNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "insertAdjacentElement",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "insertAdjacentText",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setIdAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setIdAttributeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "setIdAttributeNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "remove",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "before",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "after",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "replaceWith",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "append",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "prepend",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "replaceChildren",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "querySelector",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "querySelectorAll",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "closest",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "matches",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Attr",
+        "name": "isId",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "substringData",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "appendData",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "insertData",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "deleteData",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "replaceData",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "remove",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "before",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "after",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\CharacterData",
+        "name": "replaceWith",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ChildNode",
+        "name": "remove",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ChildNode",
+        "name": "before",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ChildNode",
+        "name": "after",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ChildNode",
+        "name": "replaceWith",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "appendXml",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "append",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "prepend",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "replaceChildren",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Text",
+        "name": "splitText",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentType",
+        "name": "remove",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentType",
+        "name": "before",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentType",
+        "name": "after",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentType",
+        "name": "replaceWith",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "appendXML",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "append",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "prepend",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\DocumentFragment",
+        "name": "replaceChildren",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "getElementsByTagName",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "getElementsByTagNameNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createElement",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createElementNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createDocumentFragment",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createTextNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createCDATASection",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createComment",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createProcessingInstruction",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "importNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "adoptNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createAttribute",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "createAttributeNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "getElementById",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "registerNodeClass",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "append",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "prepend",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "replaceChildren",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "importLegacyNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "schemaValidate",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "schemaValidateSource",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "relaxNgValidate",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Document",
+        "name": "relaxNgValidateSource",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Implementation",
+        "name": "createDocumentType",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Implementation",
+        "name": "createDocument",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Implementation",
+        "name": "createHTMLDocument",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "getRootNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "hasChildNodes",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "normalize",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "cloneNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "isEqualNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "isSameNode",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "compareDocumentPosition",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "contains",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "lookupPrefix",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "lookupNamespaceURI",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "isDefaultNamespace",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "insertBefore",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "appendChild",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "replaceChild",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "removeChild",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "getLineNo",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "getNodePath",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "C14N",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "C14NFile",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "__sleep",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Node",
+        "name": "__wakeup",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ParentNode",
+        "name": "append",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ParentNode",
+        "name": "prepend",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ParentNode",
+        "name": "replaceChildren",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ParentNode",
+        "name": "querySelector",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\ParentNode",
+        "name": "querySelectorAll",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "__construct",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "evaluate",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "query",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "registerNamespace",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "registerPhpFunctions",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "registerPhpFunctionNS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\XPath",
+        "name": "quote",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getInScopeNamespaces",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "getDescendantNamespaces",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "rename",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\Attr",
+        "name": "rename",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "item",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "contains",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "add",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "remove",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "toggle",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "replace",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "supports",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "count",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Dom\\TokenList",
+        "name": "getIterator",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    }
+]

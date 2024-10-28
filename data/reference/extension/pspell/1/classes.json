@@ -1,0 +1,12 @@
+[
+    {
+        "name": "PSpell\\Config",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "PSpell\\Dictionary",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    }
+]

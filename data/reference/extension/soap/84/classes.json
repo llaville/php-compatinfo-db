@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Soap\\Url",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Soap\\Sdl",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

@@ -22,13 +22,7 @@
     {
         "name": "PGSQL_ERRORS_SQLSTATE",
         "ext_min": "8.3.0alpha1",
-        "php_min": "8.3.0alpha1",
-        "dependencies": [
-            {
-                "name": "libpq",
-                "constraint": ">11.0"
-            }
-        ]
+        "php_min": "8.3.0alpha1"
     },
     {
         "name": "PGSQL_TRACE_SUPPRESS_TIMESTAMPS",

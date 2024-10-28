@@ -1,0 +1,56 @@
+[
+    {
+        "class_name": "IntlDateFormatter",
+        "name": "PATTERN",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "NumberFormatter",
+        "name": "ROUND_HALFODD",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "NumberFormatter",
+        "name": "ROUND_TOWARD_ZERO",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "NumberFormatter",
+        "name": "ROUND_AWAY_FROM_ZERO",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "IGNORE_SPACE",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "CASE_INSENSITIVE",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "ADD_CASE_MAPPINGS",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "Spoofchecker",
+        "name": "SIMPLE_CASE_INSENSITIVE",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=73"
+            }
+        ]
+    }
+]

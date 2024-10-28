@@ -1,0 +1,56 @@
+[
+    {
+        "class_name": "PropertyHookType",
+        "name": "Get",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "PropertyHookType",
+        "name": "Set",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "IS_ABSTRACT",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "IS_PROTECTED_SET",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "IS_PRIVATE_SET",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "SKIP_INITIALIZATION_ON_SERIALIZE",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "SKIP_DESTRUCTOR",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "IS_FINAL",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "IS_VIRTUAL",
+        "ext_min": "8.4.0RC2",
+        "php_min": "8.4.0RC2"
+    }
+]

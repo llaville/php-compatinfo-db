@@ -55,6 +55,7 @@ use function strcasecmp;
 use function strlen;
 use function strtolower;
 use function version_compare;
+use const PHP_VERSION;
 
 /**
  * Unit tests for PHP_CompatInfo_Db, Generic extension base class.
@@ -95,7 +96,6 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     /**
      * Sets up the shared fixture.
      *
-     * @return void
      * @throws Exception
      * @link   http://phpunit.de/manual/current/en/fixtures.html#fixtures.sharing-fixture
      */
@@ -763,7 +763,11 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             }
 
             try {
-                $method = new ReflectionMethod($element);
+                if (version_compare(PHP_VERSION, '8.3.0', 'ge')) {
+                    $method = ReflectionMethod::createFromMethodName($element);
+                } else {
+                    $method = new ReflectionMethod($element);
+                }
                 $extensionName = $method->getExtensionName() ?: '';
                 if (strcasecmp($extensionName, self::$obj->getName()) != 0) {
                     continue;

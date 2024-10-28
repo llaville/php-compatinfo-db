@@ -1,0 +1,56 @@
+[
+    {
+        "rel_version": "8.4.0alpha1",
+        "rel_date": "2024-07-05",
+        "rel_state": "alpha",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "rel_version": "8.4.0alpha2",
+        "rel_date": "2024-07-18",
+        "rel_state": "alpha",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "rel_version": "8.4.0alpha4",
+        "rel_date": "2024-08-01",
+        "rel_state": "alpha",
+        "php_min": "8.4.0alpha4"
+    },
+    {
+        "rel_version": "8.4.0beta3",
+        "rel_date": "2024-08-15",
+        "rel_state": "beta",
+        "php_min": "8.4.0beta3"
+    },
+    {
+        "rel_version": "8.4.0beta4",
+        "rel_date": "2024-08-29",
+        "rel_state": "beta",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "rel_version": "8.4.0beta5",
+        "rel_date": "2024-09-12",
+        "rel_state": "beta",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "rel_version": "8.4.0RC1",
+        "rel_date": "2024-09-26",
+        "rel_state": "beta",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "rel_version": "8.4.0RC2",
+        "rel_date": "2024-10-10",
+        "rel_state": "beta",
+        "php_min": "8.4.0RC2"
+    },
+    {
+        "rel_version": "8.4.0RC3",
+        "rel_date": "2024-10-24",
+        "rel_state": "beta",
+        "php_min": "8.4.0RC3"
+    }
+]

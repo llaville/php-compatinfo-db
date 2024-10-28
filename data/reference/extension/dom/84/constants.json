@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Dom\\STRING_SIZE_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\HIERARCHY_REQUEST_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\INDEX_SIZE_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\INUSE_ATTRIBUTE_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\INVALID_CHARACTER_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\INVALID_MODIFICATION_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\INVALID_STATE_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\NAMESPACE_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\NOT_FOUND_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\NOT_SUPPORTED_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\NO_DATA_ALLOWED_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\NO_MODIFICATION_ALLOWED_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\SYNTAX_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\VALIDATION_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\WRONG_DOCUMENT_ERR",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "Dom\\HTML_NO_DEFAULT_NS",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "class_name": "BcMath\\Number",
+        "name": "__construct",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "add",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "sub",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "mul",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "div",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "mod",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "powmod",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "pow",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "sqrt",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "floor",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "ceil",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "round",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "compare",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "__toString",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "__serialize",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "__unserialize",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "BcMath\\Number",
+        "name": "divmod",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    }
+]

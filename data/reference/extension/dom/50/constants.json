@@ -67,7 +67,11 @@
     {
         "name": "DOM_PHP_ERR",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.4.0beta1",
+            "message": "is no longer used"
+        }
     },
     {
         "name": "DOM_SYNTAX_ERR",

@@ -1,0 +1,23 @@
+[
+    {
+        "class_name": "XMLWriter",
+        "name": "toUri",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "toMemory",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "XMLWriter",
+        "name": "toStream",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

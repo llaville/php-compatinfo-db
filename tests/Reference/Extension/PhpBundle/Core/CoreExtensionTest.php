@@ -20,13 +20,12 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class CoreExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = array(
+            'ZEND_VERIFY_TYPE_INFERENCE',
             // Not real constant
             '__CLASS__',
             '__FILE__',

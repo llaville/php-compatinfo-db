@@ -52,7 +52,8 @@
     {
         "name": "MYSQLI_CURSOR_TYPE_FOR_UPDATE",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "8.4.0beta3"
     },
     {
         "name": "MYSQLI_CURSOR_TYPE_NO_CURSOR",
@@ -67,7 +68,8 @@
     {
         "name": "MYSQLI_CURSOR_TYPE_SCROLLABLE",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "8.4.0beta3"
     },
     {
         "name": "MYSQLI_GROUP_FLAG",
@@ -190,7 +192,8 @@
     {
         "name": "MYSQLI_STMT_ATTR_PREFETCH_ROWS",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "8.4.0beta3"
     },
     {
         "name": "MYSQLI_STMT_ATTR_UPDATE_MAX_LENGTH",
@@ -265,7 +268,8 @@
     {
         "name": "MYSQLI_TYPE_INTERVAL",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "8.4.0beta3"
     },
     {
         "name": "MYSQLI_TYPE_LONG",

@@ -20,9 +20,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class PdoExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -31,6 +29,11 @@ class PdoExtensionTest extends GenericTestCase
             'PDO::__wakeup',
             'PDOStatement::__sleep',
             'PDOStatement::__wakeup',
+        ];
+
+        self::$optionalconstants = [
+            // ifdef HAVE_PG_RESULT_MEMORY_SIZE
+            'PDO_PGSQL_ATTR_RESULT_MEMORY_SIZE',
         ];
 
         self::$ignoredconsts = [

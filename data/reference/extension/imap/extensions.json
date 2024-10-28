@@ -1,4 +1,4 @@
 {
     "name": "imap",
-    "type": "bundle"
+    "type": "pecl"
 }

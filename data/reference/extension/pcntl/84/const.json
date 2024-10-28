@@ -1,0 +1,32 @@
+[
+    {
+        "class_name": "Pcntl\\QosClass",
+        "name": "UserInteractive",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Pcntl\\QosClass",
+        "name": "UserInitiated",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Pcntl\\QosClass",
+        "name": "Default",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Pcntl\\QosClass",
+        "name": "Utility",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "Pcntl\\QosClass",
+        "name": "Background",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    }
+]

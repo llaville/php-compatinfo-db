@@ -1,0 +1,7 @@
+[
+    {
+        "name": "MYSQLI_TYPE_VECTOR",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    }
+]

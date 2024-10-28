@@ -9,6 +9,9 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Mysqli;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
+use function version_compare;
+use const PHP_VERSION;
+
 /**
  * Unit tests for PHP_CompatInfo_Db, mysqli extension Reference
  *
@@ -20,9 +23,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class MysqliExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -50,20 +51,25 @@ class MysqliExtensionTest extends GenericTestCase
             'MYSQLI_SERVER_PUBLIC_KEY',
             // Requires MYSQL_VERSION_ID >= 50110 or MYSQLI_USE_MYSQLND
             'MYSQLI_OPT_SSL_VERIFY_SERVER_CERT',
-            // Requires MYSQL_VERSION_ID >= 50007 or MYSQLI_USE_MYSQLND
-            'MYSQLI_STMT_ATTR_PREFETCH_ROWS',
             // Requires MYSQL_VERSION_ID >= 50003 or MYSQLI_USE_MYSQLND
             'MYSQLI_STMT_ATTR_CURSOR_TYPE',
             'MYSQLI_CURSOR_TYPE_NO_CURSOR',
             'MYSQLI_CURSOR_TYPE_READ_ONLY',
-            'MYSQLI_CURSOR_TYPE_FOR_UPDATE',
-            'MYSQLI_CURSOR_TYPE_SCROLLABLE',
             // Requires MYSQL_VERSION_ID > 50002 or MYSQLI_USE_MYSQLND
             'MYSQLI_TYPE_NEWDECIMAL',
             'MYSQLI_TYPE_BIT',
             // Requires MYSQL_VERSION_ID >= 50001 or MYSQLI_USE_MYSQLND
             'MYSQLI_NO_DEFAULT_VALUE_FLAG',
         );
+
+        if (version_compare(PHP_VERSION, '8.4.0beta3', 'le')) {
+            // Requires MYSQL_VERSION_ID >= 50007 or MYSQLI_USE_MYSQLND
+            self::$optionalconstants[] = 'MYSQLI_STMT_ATTR_PREFETCH_ROWS';
+            // Requires MYSQL_VERSION_ID >= 50003 or MYSQLI_USE_MYSQLND
+            self::$optionalconstants[] = 'MYSQLI_CURSOR_TYPE_FOR_UPDATE';
+            self::$optionalconstants[] = 'MYSQLI_CURSOR_TYPE_SCROLLABLE';
+        }
+
         self::$optionalfunctions = array(
             // Requires HAVE_EMBEDDED_MYSQLI
             'mysqli_embedded_server_end',

@@ -1,0 +1,97 @@
+[
+    {
+        "name": "pspell_add_to_personal",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_add_to_session",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_check",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_clear_session",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_create",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_data_dir",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_dict_dir",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_ignore",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_mode",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_personal",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_repl",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_runtogether",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_config_save_repl",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_new",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_new_config",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_new_personal",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_save_wordlist",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_store_replacement",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "pspell_suggest",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    }
+]

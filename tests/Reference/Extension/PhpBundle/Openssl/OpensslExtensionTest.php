@@ -20,9 +20,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class OpensslExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -36,6 +34,8 @@ class OpensslExtensionTest extends GenericTestCase
             'OPENSSL_KEYTYPE_EC',
             // requires OPENSSL_VERSION_NUMBER < 0x10100000L or LIBRESSL_VERSION_NUMBER < 0x20700000L
             'OPENSSL_ALGO_DSS1',
+            // before PHP 8.4 (@see https://github.com/php/php-src/commit/98e2948ca7abaf38358ec4f938470aca2568f263)
+            'X509_PURPOSE_ANY',
         );
 
         parent::setUpBeforeClass();

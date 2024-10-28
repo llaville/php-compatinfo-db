@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "tidyNode",
+        "name": "getPreviousSibling",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "tidyNode",
+        "name": "getNextSibling",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    }
+]

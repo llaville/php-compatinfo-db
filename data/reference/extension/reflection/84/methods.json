@@ -1,0 +1,194 @@
+[
+    {
+        "class_name": "ReflectionConstant",
+        "name": "__construct",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionConstant",
+        "name": "getName",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionConstant",
+        "name": "getNamespaceName",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionConstant",
+        "name": "getShortName",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionConstant",
+        "name": "getValue",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionConstant",
+        "name": "isDeprecated",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionConstant",
+        "name": "__toString",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionGenerator",
+        "name": "isClosed",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionClassConstant",
+        "name": "isDeprecated",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isAbstract",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isVirtual",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getSettableType",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getHooks",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getHook",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "getRawValue",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "setRawValue",
+        "ext_min": "8.4.0alpha2",
+        "php_min": "8.4.0alpha2"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isPrivateSet",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isProtectedSet",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "newLazyGhost",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "newLazyProxy",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "resetAsLazyGhost",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "resetAsLazyProxy",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "initializeLazyObject",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "isUninitializedLazyObject",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "markLazyObjectAsInitialized",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionClass",
+        "name": "getLazyInitializer",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "setRawValueWithoutLazyInitialization",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "skipLazyInitialization",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isFinal",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isDynamic",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "hasHooks",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "hasHook",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    }
+]

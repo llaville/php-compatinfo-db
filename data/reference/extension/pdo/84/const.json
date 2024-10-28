@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "PDO",
+        "name": "PGSQL_ATTR_RESULT_MEMORY_SIZE",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

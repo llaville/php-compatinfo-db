@@ -20,9 +20,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class EnchantExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -37,9 +35,14 @@ class EnchantExtensionTest extends GenericTestCase
         ];
 
         self::$ignoredconstants = [
-            'LIBENCHANT_VERSION',
+            // deprecated since https://github.com/php/php-src/pull/8679
             'ENCHANT_ISPELL',
             'ENCHANT_MYSPELL',
+        ];
+
+        self::$optionalconstants = [
+            // requires HAVE_ENCHANT_GET_VERSION
+            'LIBENCHANT_VERSION'
         ];
         parent::setUpBeforeClass();
     }

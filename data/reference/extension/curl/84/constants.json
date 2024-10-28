@@ -1,0 +1,90 @@
+[
+    {
+        "name": "CURL_HTTP_VERSION_3",
+        "ext_min": "8.4.0beta1",
+        "php_min": "8.4.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.66.0"
+            }
+        ]
+    },
+    {
+        "name": "CURL_HTTP_VERSION_3ONLY",
+        "ext_min": "8.4.0beta1",
+        "php_min": "8.4.0beta1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=7.88.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLOPT_PREREQFUNCTION",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "name": "CURL_PREREQFUNC_OK",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "name": "CURL_PREREQFUNC_ABORT",
+        "ext_min": "8.4.0beta4",
+        "php_min": "8.4.0beta4"
+    },
+    {
+        "name": "CURLOPT_SERVER_RESPONSE_TIMEOUT",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    },
+    {
+        "name": "CURLOPT_DEBUGFUNCTION",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_TEXT",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_HEADER_IN",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_DATA_IN",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_DATA_OUT",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_SSL_DATA_IN",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_SSL_DATA_OUT",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1"
+    },
+    {
+        "name": "CURLINFO_POSTTRANSFER_TIME_T",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.10.0"
+            }
+        ]
+    }
+]

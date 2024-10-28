@@ -19,4 +19,32 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
  */
 class DomExtensionTest extends GenericTestCase
 {
+    /**
+     * @inheritDoc
+     */
+    protected function setUp(): void
+    {
+        self::$optionalclasses = [
+            // requires LIBXML_XPATH_ENABLED
+            'DOMXPath',
+            'Dom\\XPath',
+        ];
+
+        self::$optionalmethods = [
+            // requires LIBXML_SCHEMAS_ENABLED
+            'Dom\\Document::schemaValidate',
+            'Dom\\Document::schemaValidateSource',
+            'Dom\\Document::relaxNgValidate',
+            'Dom\\Document::relaxNgValidateSource',
+
+            // requires ZEND_DEBUG
+            'Dom\\HTMLDocument::debugGetTemplateCount',
+        ];
+
+        self::$ignoredclasses = [
+            'dom\\domexception'
+        ];
+
+        parent::setUp();
+    }
 }

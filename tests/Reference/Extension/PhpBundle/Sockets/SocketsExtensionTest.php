@@ -22,9 +22,7 @@ use Exception;
 class SocketsExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @throws Exception
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -275,6 +273,7 @@ class SocketsExtensionTest extends GenericTestCase
             'SO_DETACH_BPF',
 
             // if def (from ext/sockets/sockets_arginfo.h)
+            'AF_DIVERT',
             'IP_DONTFRAG',
             'IP_MTU_DISCOVER',
             'IP_PMTUDISC_DO',
@@ -283,6 +282,13 @@ class SocketsExtensionTest extends GenericTestCase
             'IP_PMTUDISC_PROBE',
             'IP_PMTUDISC_INTERFACE',
             'IP_PMTUDISC_OMIT',
+            'SO_EXCLBIND',
+            'SO_LINGER_SEC',
+            'SOCK_CONN_DGRAM',
+            'SOCK_DCCP',
+            'SOCK_CLOEXEC',
+            'SOCK_NONBLOCK',
+            'TCP_SYNCNT',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 

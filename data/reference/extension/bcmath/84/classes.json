@@ -1,0 +1,7 @@
+[
+    {
+        "name": "BcMath\\Number",
+        "ext_min": "8.4.0beta5",
+        "php_min": "8.4.0beta5"
+    }
+]

@@ -77,7 +77,8 @@
             <directory prefix="Iconv" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
         <testsuite name="imap">
-            <directory prefix="Imap" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+            <directory phpVersion="8.4.0" phpVersionOperator="lt" prefix="Imap" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+            <directory phpVersion="8.4.0alpha1" phpVersionOperator="ge" prefix="Imap" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="intl">
             <directory prefix="Intl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
@@ -136,6 +137,10 @@
         </testsuite>
         <testsuite name="posix">
             <directory prefix="Posix" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+        </testsuite>
+        <testsuite name="pspell">
+            <directory phpVersion="8.4.0" phpVersionOperator="lt" prefix="Pspell" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
+            <directory phpVersion="8.4.0alpha1" phpVersionOperator="ge" prefix="Pspell" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="random">
             <directory prefix="Random" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>

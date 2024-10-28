@@ -428,7 +428,8 @@
         "class_name": "DOMImplementation",
         "name": "getFeature",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "php_max": "8.3.99"
     },
     {
         "class_name": "DOMImplementation",

@@ -1,0 +1,7 @@
+[
+    {
+        "name": "XML_OPTION_PARSE_HUGE",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

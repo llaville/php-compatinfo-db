@@ -1,0 +1,22 @@
+[
+    {
+        "name": "PSPELL_BAD_SPELLERS",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "PSPELL_FAST",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "PSPELL_NORMAL",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "name": "PSPELL_RUN_TOGETHER",
+        "ext_min": "1.0.0",
+        "php_min": "8.1.0"
+    }
+]

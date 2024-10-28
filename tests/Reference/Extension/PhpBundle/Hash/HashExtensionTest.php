@@ -20,9 +20,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class HashExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {
@@ -60,6 +58,7 @@ class HashExtensionTest extends GenericTestCase
             'MHASH_JOAAT',
         );
         $mhashfunctions = array(
+            // requires PHP_MHASH_BC
             'mhash',
             'mhash_count',
             'mhash_get_block_size',

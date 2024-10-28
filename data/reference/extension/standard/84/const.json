@@ -1,0 +1,50 @@
+[
+    {
+        "class_name": "RoundingMode",
+        "name": "HalfAwayFromZero",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "HalfTowardsZero",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "HalfEven",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "HalfOdd",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "TowardsZero",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "AwayFromZero",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "NegativeInfinity",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "RoundingMode",
+        "name": "PositiveInfinity",
+        "ext_min": "8.4.0alpha3",
+        "php_min": "8.4.0alpha3"
+    }
+]

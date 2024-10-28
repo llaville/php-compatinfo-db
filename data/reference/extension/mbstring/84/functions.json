@@ -1,0 +1,32 @@
+[
+    {
+        "name": "mb_trim",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "polyfill": "symfony/polyfill-php84"
+    },
+    {
+        "name": "mb_ltrim",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "polyfill": "symfony/polyfill-php84"
+    },
+    {
+        "name": "mb_rtrim",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "polyfill": "symfony/polyfill-php84"
+    },
+    {
+        "name": "mb_ucfirst",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "polyfill": "symfony/polyfill-php84"
+    },
+    {
+        "name": "mb_lcfirst",
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1",
+        "polyfill": "symfony/polyfill-php84"
+    }
+]

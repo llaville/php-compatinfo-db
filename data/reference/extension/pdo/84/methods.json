@@ -1,0 +1,9 @@
+[
+    {
+        "class_name": "PDO",
+        "name": "connect",
+        "static": true,
+        "ext_min": "8.4.0alpha1",
+        "php_min": "8.4.0alpha1"
+    }
+]

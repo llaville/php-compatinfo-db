@@ -77,7 +77,8 @@
     {
         "name": "SOAP_FUNCTIONS_ALL",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": "8.4.0beta1"
     },
     {
         "name": "SOAP_LITERAL",
