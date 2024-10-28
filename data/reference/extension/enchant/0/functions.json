@@ -12,12 +12,20 @@
     {
         "name": "enchant_broker_free",
         "ext_min": "0.1.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.0",
+            "message": "as EnchantBroker objects are freed automatically"
+        }
     },
     {
         "name": "enchant_broker_free_dict",
         "ext_min": "0.1.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.0",
+            "message": "as EnchantBroker objects are freed automatically"
+        }
     },
     {
         "name": "enchant_broker_get_error",
@@ -47,7 +55,12 @@
     {
         "name": "enchant_dict_add_to_personal",
         "ext_min": "0.1.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.0",
+            "message": "use enchant_dict_add() instead"
+        },
+        "alias": "enchant_dict_add"
     },
     {
         "name": "enchant_dict_add_to_session",
@@ -72,7 +85,12 @@
     {
         "name": "enchant_dict_is_in_session",
         "ext_min": "0.1.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.0",
+            "message": "use enchant_dict_is_added() instead"
+        },
+        "alias": "enchant_dict_is_added"
     },
     {
         "name": "enchant_dict_quick_check",

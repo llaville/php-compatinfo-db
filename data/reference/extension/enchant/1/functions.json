@@ -2,7 +2,10 @@
     {
         "name": "enchant_broker_get_dict_path",
         "ext_min": "1.1.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.0"
+        }
     },
     {
         "name": "enchant_broker_list_dicts",
@@ -12,6 +15,9 @@
     {
         "name": "enchant_broker_set_dict_path",
         "ext_min": "1.1.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.0"
+        }
     }
 ]

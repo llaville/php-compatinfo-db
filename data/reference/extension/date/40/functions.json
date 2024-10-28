@@ -27,7 +27,11 @@
     {
         "name": "gmstrftime",
         "ext_min": "4.0.0",
-        "php_min": "4.0.0"
+        "php_min": "4.0.0",
+        "deprecated": {
+            "since": "8.1",
+            "message": "use IntlDateFormatter::format() instead"
+        }
     },
     {
         "name": "localtime",
@@ -42,7 +46,11 @@
     {
         "name": "strftime",
         "ext_min": "4.0.0",
-        "php_min": "4.0.0"
+        "php_min": "4.0.0",
+        "deprecated": {
+            "since": "8.1",
+            "message": "use IntlDateFormatter::format() instead"
+        }
     },
     {
         "name": "strtotime",

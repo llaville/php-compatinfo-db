@@ -587,7 +587,8 @@
     {
         "name": "CURLOPT_BINARYTRANSFER",
         "ext_min": "4.0.2",
-        "php_min": "4.0.2"
+        "php_min": "4.0.2",
+        "deprecated": "5.1.2"
     },
     {
         "name": "CURLOPT_BUFFERSIZE",

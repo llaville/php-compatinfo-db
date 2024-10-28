@@ -2,12 +2,20 @@
     {
         "name": "date_sunrise",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.1",
+            "message": "use date_sun_info() instead"
+        }
     },
     {
         "name": "date_sunset",
         "ext_min": "5.0.0",
-        "php_min": "5.0.0"
+        "php_min": "5.0.0",
+        "deprecated": {
+            "since": "8.1",
+            "message": "use date_sun_info() instead"
+        }
     },
     {
         "name": "idate",
