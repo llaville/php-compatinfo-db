@@ -9,7 +9,10 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "allow_url_fopen",
@@ -78,7 +81,10 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "disable_classes",
@@ -166,7 +172,10 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "highlight.comment",
@@ -239,21 +248,30 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "magic_quotes_runtime",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "magic_quotes_sybase",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "mail.add_x_header",
@@ -345,7 +363,10 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "report_memleaks",
@@ -367,14 +388,20 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "safe_mode_exec_dir",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "sendmail_from",
@@ -468,7 +495,10 @@
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
         "php_max": "5.3.29",
-        "deprecated": "5.3.0"
+        "deprecated": {
+            "since": "5.3.0",
+            "message": "and was removed in PHP 5.4"
+        }
     },
     {
         "name": "zend.detect_unicode",

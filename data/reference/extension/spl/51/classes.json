@@ -125,7 +125,10 @@
         "ext_max": "5.2.17",
         "php_min": "5.1.0",
         "php_max": "5.2.17",
-        "deprecated": "5.2.17"
+        "deprecated": {
+            "since": "5.2.17",
+            "message": "and was moved to simplexml extension since PHP 5.1"
+        }
     },
     {
         "name": "SplFileInfo",

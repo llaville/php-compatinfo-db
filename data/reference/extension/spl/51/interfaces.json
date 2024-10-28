@@ -5,7 +5,10 @@
         "ext_max": "5.2.17",
         "php_min": "5.1.0",
         "php_max": "5.2.17",
-        "deprecated": "5.2.17"
+        "deprecated": {
+            "since": "5.2.17",
+            "message": "and was moved to core extension since PHP 5.3"
+        }
     },
     {
         "name": "Countable",
@@ -13,7 +16,10 @@
         "ext_max": "7.1.25",
         "php_min": "5.1.0",
         "php_max": "7.1.25",
-        "deprecated": "7.1.25"
+        "deprecated": {
+            "since": "7.1.25",
+            "message": "and was moved to core extension since PHP 7.2"
+        }
     },
     {
         "name": "Iterator",
@@ -21,7 +27,10 @@
         "ext_max": "5.2.17",
         "php_min": "5.1.0",
         "php_max": "5.2.17",
-        "deprecated": "5.2.17"
+        "deprecated": {
+            "since": "5.2.17",
+            "message": "and was moved to core extension since PHP 5.3"
+        }
     },
     {
         "name": "IteratorAggregate",
@@ -29,7 +38,10 @@
         "ext_max": "5.2.17",
         "php_min": "5.1.0",
         "php_max": "5.2.17",
-        "deprecated": "5.2.17"
+        "deprecated": {
+            "since": "5.2.17",
+            "message": "and was moved to core extension since PHP 5.3"
+        }
     },
     {
         "name": "OuterIterator",
@@ -52,7 +64,10 @@
         "ext_max": "5.2.17",
         "php_min": "5.1.0",
         "php_max": "5.2.17",
-        "deprecated": "5.2.17"
+        "deprecated": {
+            "since": "5.2.17",
+            "message": "and was moved to core extension since PHP 5.3"
+        }
     },
     {
         "name": "SplObserver",
@@ -70,6 +85,9 @@
         "ext_max": "5.2.17",
         "php_min": "5.1.0",
         "php_max": "5.2.17",
-        "deprecated": "5.2.17"
+        "deprecated": {
+            "since": "5.2.17",
+            "message": "and was moved to core extension since PHP 5.3"
+        }
     }
 ]

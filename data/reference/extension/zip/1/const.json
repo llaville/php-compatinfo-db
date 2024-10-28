@@ -628,7 +628,9 @@
         "name": "FL_RECOMPRESS",
         "ext_min": "1.18.0RC1",
         "php_min": "5.4.0",
-        "deprecated": "1.22.1"
+        "deprecated": {
+            "message": "since version 1.22.1, and will be removed in a future version of libzip"
+        }
     },
     {
         "class_name": "ZipArchive",
