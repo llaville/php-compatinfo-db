@@ -7,6 +7,8 @@
  */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
+use Deprecated;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -15,6 +17,7 @@ final class IniEntry
 {
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use DeprecationTrait;
 
     private string $name;
     /** @var Dependency[] */
@@ -31,7 +34,8 @@ final class IniEntry
         ?string $extMax,
         string $phpMin,
         ?string $phpMax,
-        array $dependencies
+        array $dependencies,
+        ?Deprecated $deprecated
     ) {
         $this->name = $name;
         $this->extMin = $extMin;
@@ -39,6 +43,7 @@ final class IniEntry
         $this->phpMin = $phpMin;
         $this->phpMax = $phpMax;
         $this->dependencies = $dependencies;
+        $this->deprecated = $deprecated;
     }
 
     public function getName(): string

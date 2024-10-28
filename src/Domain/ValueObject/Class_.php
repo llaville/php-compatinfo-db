@@ -7,6 +7,8 @@
  */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
+use Deprecated;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -15,6 +17,7 @@ final class Class_
 {
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use DeprecationTrait;
 
     public const MODIFIER_PUBLIC    =  1;
     public const MODIFIER_PROTECTED =  2;
@@ -46,7 +49,8 @@ final class Class_
         ?string $phpMax,
         array $dependencies = [],
         int $flags = self::MODIFIER_PUBLIC,
-        ?string $polyfill = null
+        ?string $polyfill = null,
+        ?Deprecated $deprecated = null
     ) {
         $this->name = $name;
         $this->isInterface = $isInterface;
@@ -58,6 +62,7 @@ final class Class_
         $this->dependencies = $dependencies;
         $this->flags = $flags;
         $this->polyfill = $polyfill;
+        $this->deprecated = $deprecated;
     }
 
     public function getName(): string

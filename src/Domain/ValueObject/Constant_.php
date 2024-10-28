@@ -7,6 +7,8 @@
  */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
+use Deprecated;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -15,6 +17,7 @@ final class Constant_
 {
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use DeprecationTrait;
 
     private string $name;
     private ?string $declaringClass;
@@ -22,7 +25,6 @@ final class Constant_
     /** @var array|Dependency[] */
     private array $dependencies;
     private ?string $polyfill;
-    private ?string $deprecated;
 
     /**
      * Constant_ constructor.
@@ -39,7 +41,7 @@ final class Constant_
         ?string $phpMax,
         array $dependencies = [],
         ?string $polyfill = null,
-        ?string $deprecated = null
+        ?Deprecated $deprecated = null
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -66,11 +68,6 @@ final class Constant_
     public function getPolyfill(): ?string
     {
         return $this->polyfill;
-    }
-
-    public function getDeprecated(): ?string
-    {
-        return $this->deprecated;
     }
 
     public function getExtensionName(): string

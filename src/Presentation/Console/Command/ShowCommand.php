@@ -9,10 +9,12 @@ namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
 use Bartlett\CompatInfoDb\Application\Query\Show\ShowQuery;
 use Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait;
+use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Dependency;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
+use Bartlett\CompatInfoDb\Domain\ValueObject\IniEntry;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Release;
 use Bartlett\CompatInfoDb\Presentation\Console\Style;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
@@ -70,6 +72,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             ->addOption('class-constants', null, null, 'Show class constants')
             ->addOption('dependencies', null, null, 'Show dependency constraints')
             ->addOption('polyfills', null, null, 'Show polyfills supported')
+            ->addOption('deprecations', null, null, 'Show deprecated components')
         ;
     }
 
@@ -89,7 +92,8 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $input->getOption('methods'),
             $input->getOption('class-constants'),
             $input->getOption('dependencies'),
-            $input->getOption('polyfills')
+            $input->getOption('polyfills'),
+            $input->getOption('deprecations')
         );
 
         /** @var Extension|null $extension */
@@ -144,6 +148,10 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $summary = false;
             $this->formatPolyfills($extension, $io);
         }
+        if ($showQuery->isDeprecations()) {
+            $summary = false;
+            $this->formatDeprecations($extension, $io);
+        }
 
         if (!$summary) {
             return self::SUCCESS;
@@ -154,8 +162,9 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             count($extension->getReleases()),
             '  Releases                                  %10d'
         );
+        $configs = $extension->getIniEntries();
         $io->columns(
-            count($extension->getIniEntries()),
+            count($configs),
             '  INI entries                               %10d'
         );
         $constants = $extension->getConstants();
@@ -173,8 +182,9 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             count($classes),
             '  Classes                                   %10d'
         );
+        $interfaces = $extension->getInterfaces();
         $io->columns(
-            count($extension->getInterfaces()),
+            count($interfaces),
             '  Interfaces                                %10d'
         );
         $io->columns(
@@ -208,6 +218,21 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $io->columns(
             count($polyfills),
             '  Polyfills                                 %10d'
+        );
+        $deprecations = [];
+        foreach ([$functions, $constants, $configs, $classes, $interfaces] as $components) {
+            foreach ($components as $name => $valueObject) {
+                if (method_exists($valueObject, 'getDeprecated')) {
+                    if (!empty($valueObject->getDeprecated())) {
+                        $deprecations[] = $name;
+                    }
+                }
+            }
+        }
+        $deprecations = array_unique($deprecations);
+        $io->columns(
+            count($deprecations),
+            '  Deprecations                              %10d'
         );
 
         return self::SUCCESS;
@@ -248,6 +273,46 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                 $io->listing([$type], ['type' => ' > ', 'style' => 'fg=green', 'indent' => '']);
                 $io->listing($names, []);
             }
+        }
+    }
+
+    private function formatDeprecations(Extension $extension, StyleInterface $io): void
+    {
+        $functions  = $extension->getFunctions();
+        $constants  = $extension->getConstants();
+        $configs    = $extension->getIniEntries();
+        $classes    = $extension->getClasses();
+        $interfaces = $extension->getInterfaces();
+
+        $deprecations = [];
+
+        foreach ([$functions, $constants, $configs, $classes, $interfaces] as $components) {
+            foreach ($components as $name => $valueObject) {
+                $deprecation = $valueObject->getDeprecated();
+                if (!empty($deprecation)) {
+                    if ($valueObject instanceof Function_) {
+                        $declaringClass = $valueObject->getDeclaringClass();
+                        $type = empty($declaringClass) ? 'functions' : 'methods';
+                    } elseif ($valueObject instanceof Constant_) {
+                        $declaringClass = $valueObject->getDeclaringClass();
+                        $type = empty($declaringClass) ? 'constants' : 'class constants';
+                    } elseif ($valueObject instanceof IniEntry) {
+                        $type = 'configuration';
+                    } elseif ($valueObject instanceof Class_) {
+                        $type = $valueObject->isInterface() ? 'interfaces' : 'classes';
+                    } else {
+                        continue;
+                    }
+                    $deprecations[$type][] = $name . ' ' . $deprecation;
+                }
+            }
+        }
+
+        $io->title('Deprecations');
+
+        foreach ($deprecations as $type => $messages) {
+            $io->listing([$type], ['type' => ' > ', 'style' => 'fg=green', 'indent' => '']);
+            $io->listing($messages, []);
         }
     }
 

@@ -24,6 +24,8 @@ class Class_
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use PolyfillTrait;
+    use DeprecatedElementTrait;
 
     #[Column(type: "string")]
     private string $name;
@@ -33,9 +35,6 @@ class Class_
 
     #[Column(name: "flags", type: "integer")]
     private int $flags;
-
-    #[Column(name: "polyfill", type: "string", nullable: true)]
-    private ?string $polyfill;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "classes")]
     private Extension $extension;
@@ -59,12 +58,13 @@ class Class_
     public function __toString(): string
     {
         return sprintf(
-            'Class (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s)',
+            'Class (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s, Deprecated: %s)',
             $this->id,
             $this->getExtension()->getName(),
             $this->name,
             $this->extMin,
-            $this->phpMin
+            $this->phpMin,
+            $this->getDeprecated() === null ? 'N' : 'Y',
         );
     }
 
@@ -136,15 +136,5 @@ class Class_
             $dependencies[] = $relationship->getDependency();
         }
         return $dependencies;
-    }
-
-    public function getPolyfill(): ?string
-    {
-        return $this->polyfill;
-    }
-
-    public function setPolyfill(?string $polyfill): void
-    {
-        $this->polyfill = $polyfill;
     }
 }

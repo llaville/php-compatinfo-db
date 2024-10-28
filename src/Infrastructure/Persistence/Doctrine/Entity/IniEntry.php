@@ -24,6 +24,7 @@ class IniEntry
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use DeprecatedElementTrait;
 
     #[Column(type: "string")]
     private string $name;
@@ -50,12 +51,13 @@ class IniEntry
     public function __toString(): string
     {
         return sprintf(
-            'IniEntry (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s)',
+            'IniEntry (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s, Deprecated: %s)',
             $this->id,
             $this->getExtension()->getName(),
             $this->name,
             $this->extMin,
-            $this->phpMin
+            $this->phpMin,
+            $this->getDeprecated() === null ? 'N' : 'Y',
         );
     }
 

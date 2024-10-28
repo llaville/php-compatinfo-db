@@ -7,6 +7,8 @@
  */
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
+use Deprecated;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -15,6 +17,7 @@ final class Function_
 {
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use DeprecationTrait;
 
     private string $name;
     private ?string $declaringClass;
@@ -47,7 +50,8 @@ final class Function_
         ?array $excludes,
         array $dependencies,
         int $flags,
-        ?string $polyfill
+        ?string $polyfill,
+        ?Deprecated $deprecated
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;
@@ -61,6 +65,7 @@ final class Function_
         $this->dependencies = $dependencies;
         $this->flags = $flags;
         $this->polyfill = $polyfill;
+        $this->deprecated = $deprecated;
     }
 
     public function getName(): string

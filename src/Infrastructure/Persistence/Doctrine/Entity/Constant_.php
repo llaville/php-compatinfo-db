@@ -24,18 +24,14 @@ class Constant_
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use PolyfillTrait;
+    use DeprecatedElementTrait;
 
     #[Column(type: "string")]
     private string $name;
 
     #[Column(name: "declaring_class", type: "string", nullable: true)]
     private ?string $declaringClass;
-
-    #[Column(name: "polyfill", type: "string", nullable: true)]
-    private ?string $polyfill;
-
-    #[Column(name: "deprecated", type: "string", nullable: true)]
-    private ?string $deprecated;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "constants")]
     private Extension $extension;
@@ -59,12 +55,13 @@ class Constant_
     public function __toString(): string
     {
         return sprintf(
-            'Constant (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s)',
+            'Constant (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s, Deprecated: %s)',
             $this->id,
             $this->getExtension()->getName(),
             $this->name,
             $this->extMin,
-            $this->phpMin
+            $this->phpMin,
+            $this->getDeprecated() === null ? 'N' : 'Y',
         );
     }
 
@@ -86,26 +83,6 @@ class Constant_
     public function setDeclaringClass(?string $declaringClass): void
     {
         $this->declaringClass = $declaringClass;
-    }
-
-    public function getPolyfill(): ?string
-    {
-        return $this->polyfill;
-    }
-
-    public function setPolyfill(?string $polyfill): void
-    {
-        $this->polyfill = $polyfill;
-    }
-
-    public function getDeprecated(): ?string
-    {
-        return $this->deprecated;
-    }
-
-    public function setDeprecated(?string $deprecated): void
-    {
-        $this->deprecated = $deprecated;
     }
 
     public function getExtension(): Extension

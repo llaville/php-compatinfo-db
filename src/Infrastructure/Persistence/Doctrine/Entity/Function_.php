@@ -25,6 +25,8 @@ class Function_
     use PrimaryIdentifierTrait;
     use ExtVersionTrait;
     use PhpVersionTrait;
+    use PolyfillTrait;
+    use DeprecatedElementTrait;
 
     #[Column(type: "string")]
     private string $name;
@@ -43,9 +45,6 @@ class Function_
 
     #[Column(name: "flags", type: "integer")]
     private int $flags;
-
-    #[Column(name: "polyfill", type: "string", nullable: true)]
-    private ?string $polyfill;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "functions")]
     private Extension $extension;
@@ -75,12 +74,13 @@ class Function_
         }
 
         return sprintf(
-            'Function (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s)',
+            'Function (id: %s, extension: %s, name: %s, EXT version: %s, PHP version: %s, Deprecated: %s)',
             $this->id,
             $this->getExtension()->getName(),
             $name,
             $this->extMin,
-            $this->phpMin
+            $this->phpMin,
+            $this->getDeprecated() === null ? 'N' : 'Y',
         );
     }
 
@@ -158,16 +158,6 @@ class Function_
     public function setFlags(int $flags): void
     {
         $this->flags = $flags;
-    }
-
-    public function getPolyfill(): ?string
-    {
-        return $this->polyfill;
-    }
-
-    public function setPolyfill(?string $polyfill): void
-    {
-        $this->polyfill = $polyfill;
     }
 
     public function getExtension(): Extension

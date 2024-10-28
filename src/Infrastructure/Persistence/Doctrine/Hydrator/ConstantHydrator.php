@@ -10,6 +10,9 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Constant_ as Entity;
 
+use Deprecated;
+use function is_array;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -17,6 +20,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Constant_ a
 final class ConstantHydrator implements HydratorInterface
 {
     use HydrationArraysTrait;
+    use DeprecationHydratorTrait;
 
     /**
      * {@inheritDoc}
@@ -58,7 +62,10 @@ final class ConstantHydrator implements HydratorInterface
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
         $object->setPolyfill($data['polyfill'] ?? null);
-        $object->setDeprecated($data['deprecated'] ?? null);
+
+        if (isset($data['deprecated'])) {
+            $this->hydrateDeprecation($data['deprecated'], $object);
+        }
 
         $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
@@ -74,6 +81,13 @@ final class ConstantHydrator implements HydratorInterface
             $dependencies[] = $hydrator->toDomain($dependencyEntity);
         }
 
+        $deprecation = $entity->getDeprecated();
+        if (is_array($deprecation)) {
+            $deprecated = new Deprecated($deprecation['message'], $deprecation['since']);
+        } else {
+            $deprecated = null;
+        }
+
         return new Domain(
             $entity->getName(),
             $entity->getDeclaringClass(),
@@ -84,7 +98,7 @@ final class ConstantHydrator implements HydratorInterface
             $entity->getPhpMax(),
             $dependencies,
             $entity->getPolyfill(),
-            $entity->getDeprecated(),
+            $deprecated
         );
     }
 }

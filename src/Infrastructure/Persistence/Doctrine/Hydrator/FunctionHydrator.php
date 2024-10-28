@@ -11,7 +11,9 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Function_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ as Entity;
 
+use Deprecated;
 use function explode;
+use function is_array;
 
 /**
  * @since Release 3.0.0
@@ -20,6 +22,7 @@ use function explode;
 final class FunctionHydrator implements HydratorInterface
 {
     use HydrationArraysTrait;
+    use DeprecationHydratorTrait;
 
     /**
      * {@inheritDoc}
@@ -46,6 +49,7 @@ final class FunctionHydrator implements HydratorInterface
             'is_protected' => (bool) ($object->getFlags() & Class_::MODIFIER_PROTECTED),
             'is_private' => (bool) ($object->getFlags() & Class_::MODIFIER_PRIVATE),
             'polyfill' => $object->getPolyfill(),
+            'deprecated' => $object->getDeprecated(),
         ];
     }
 
@@ -71,6 +75,10 @@ final class FunctionHydrator implements HydratorInterface
         $object->setPrototype($data['prototype'] ?? null);
         $object->setPolyfill($data['polyfill'] ?? null);
 
+        if (isset($data['deprecated'])) {
+            $this->hydrateDeprecation($data['deprecated'], $object);
+        }
+
         $flags = Class_::MODIFIER_PUBLIC;
         if (isset($data['static']) && $data['static'] === true) {
             $flags = $flags | Class_::MODIFIER_STATIC;
@@ -94,6 +102,13 @@ final class FunctionHydrator implements HydratorInterface
             $dependencies[] = $hydrator->toDomain($dependencyEntity);
         }
 
+        $deprecation = $entity->getDeprecated();
+        if (is_array($deprecation)) {
+            $deprecated = new Deprecated($deprecation['message'], $deprecation['since']);
+        } else {
+            $deprecated = null;
+        }
+
         return new Domain(
             $entity->getName(),
             $entity->getDeclaringClass(),
@@ -106,7 +121,8 @@ final class FunctionHydrator implements HydratorInterface
             $entity->getExcludes(),
             $dependencies,
             $entity->getFlags(),
-            $entity->getPolyfill()
+            $entity->getPolyfill(),
+            $deprecated
         );
     }
 }

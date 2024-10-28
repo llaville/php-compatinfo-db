@@ -10,6 +10,8 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 use Bartlett\CompatInfoDb\Domain\ValueObject\IniEntry as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\IniEntry as Entity;
 
+use Deprecated;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -17,6 +19,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\IniEntry as
 final class IniEntryHydrator implements HydratorInterface
 {
     use HydrationArraysTrait;
+    use DeprecationHydratorTrait;
 
     /**
      * {@inheritDoc}
@@ -33,6 +36,7 @@ final class IniEntryHydrator implements HydratorInterface
             'ext_max' => $object->getExtMax(),
             'php_min' => $object->getPhpMin(),
             'php_max' => $object->getPhpMax(),
+            'deprecated' => $object->getDeprecated(),
         ];
     }
 
@@ -53,6 +57,10 @@ final class IniEntryHydrator implements HydratorInterface
         $object->setPhpMin($data['php_min']);
         $object->setPhpMax($data['php_max'] ?? null);
 
+        if (isset($data['deprecated'])) {
+            $this->hydrateDeprecation($data['deprecated'], $object);
+        }
+
         $dependencies = (new DependencyHydrator())->hydrateArrays($data['dependencies'] ?? []);
         $object->addDependencies($dependencies);
 
@@ -67,13 +75,21 @@ final class IniEntryHydrator implements HydratorInterface
             $dependencies[] = $hydrator->toDomain($dependencyEntity);
         }
 
+        $deprecation = $entity->getDeprecated();
+        if (is_array($deprecation)) {
+            $deprecated = new Deprecated($deprecation['message'], $deprecation['since']);
+        } else {
+            $deprecated = null;
+        }
+
         return new Domain(
             $entity->getName(),
             $entity->getExtMin(),
             $entity->getExtMax(),
             $entity->getPhpMin(),
             $entity->getPhpMax(),
-            $dependencies
+            $dependencies,
+            $deprecated,
         );
     }
 }
