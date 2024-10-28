@@ -22,8 +22,8 @@ trait DeprecationHydratorTrait
             $since = $data;
             $message = null;
         } else {
-            // accept new enhanced format -- array{since: string, message?: string}
-            $since = $data['since'];
+            // accept new enhanced format -- array{since?: string, message?: string}
+            $since = $data['since'] ?? null;
             $message = $data['message'] ?? null;
         }
 

@@ -187,8 +187,9 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             count($interfaces),
             '  Interfaces                                %10d'
         );
+        $classConstants = $extension->getClassConstants();
         $io->columns(
-            count($extension->getClassConstants()),
+            count($classConstants),
             '  Class Constants                           %10d'
         );
         $io->columns(
@@ -220,7 +221,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             '  Polyfills                                 %10d'
         );
         $deprecations = [];
-        foreach ([$functions, $constants, $configs, $classes, $interfaces] as $components) {
+        foreach ([$functions, $constants, $configs, $classes, $interfaces, $classConstants] as $components) {
             foreach ($components as $name => $valueObject) {
                 if (method_exists($valueObject, 'getDeprecated')) {
                     if (!empty($valueObject->getDeprecated())) {
@@ -278,15 +279,16 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 
     private function formatDeprecations(Extension $extension, StyleInterface $io): void
     {
-        $functions  = $extension->getFunctions();
-        $constants  = $extension->getConstants();
-        $configs    = $extension->getIniEntries();
-        $classes    = $extension->getClasses();
-        $interfaces = $extension->getInterfaces();
+        $functions      = $extension->getFunctions();
+        $constants      = $extension->getConstants();
+        $configs        = $extension->getIniEntries();
+        $classes        = $extension->getClasses();
+        $interfaces     = $extension->getInterfaces();
+        $classConstants = $extension->getClassConstants();
 
         $deprecations = [];
 
-        foreach ([$functions, $constants, $configs, $classes, $interfaces] as $components) {
+        foreach ([$functions, $constants, $configs, $classes, $interfaces, $classConstants] as $components) {
             foreach ($components as $name => $valueObject) {
                 $deprecation = $valueObject->getDeprecated();
                 if (!empty($deprecation)) {
