@@ -4,7 +4,7 @@
   "IgnoreDefaults": false,
   "SpacesAftertabs": false,
   "NoColor": false,
-  "Exclude": ["\\.idea", "\\.editorconfig", "\\.github", "LICENSE", "vendor", "mkdocs\\.yml", "\\.changes"],
+  "Exclude": ["\\.idea", "\\.editorconfig", "\\.github", "LICENSE", "vendor", "mkdocs\\.yml", "\\.changes", "phpunit\\.xml"],
   "AllowedContentTypes": [],
   "PassedFiles": [],
   "Disable": {
