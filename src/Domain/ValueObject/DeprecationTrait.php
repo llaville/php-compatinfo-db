@@ -27,7 +27,8 @@ trait DeprecationTrait
         $deprecated = 'is deprecated';
         if ($this->deprecated->since !== null) {
             $deprecated .= sprintf(
-                ' since PHP %s', $this->deprecated->since
+                ' since PHP %s',
+                $this->deprecated->since
             );
         }
         if ($this->deprecated->message !== null) {
