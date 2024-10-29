@@ -1,0 +1,229 @@
+digraph {
+  graph [name="G" overlap="false" rankdir="LR" bgcolor="transparent"]
+  node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
+  edge [fontname="Verdana" fontsize=8]
+  subgraph cluster_0 {
+    graph [bgcolor="LightBlue"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Build"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>BuildCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– extension</td></tr>
+    <tr><td align="left">– extMin</td></tr>
+    <tr><td align="left">– phpMin</td></tr>
+    <tr><td align="left">– output</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(extension : string, extMin : string, phpMin : string, output : Symfony\\Component\\Console\\Output\\OutputInterface)</td></tr>
+    <tr><td align="left">+ getExtension() : string</td></tr>
+    <tr><td align="left">+ getExtMin() : string</td></tr>
+    <tr><td align="left">+ getPhpMin() : string</td></tr>
+    <tr><td align="left">+ getOutput() : Symfony\\Component\\Console\\Output\\OutputInterface</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    graph [bgcolor="LightSkyBlue"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>CommandInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+  }
+  subgraph cluster_2 {
+    graph [bgcolor="LightBlue"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Create"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>CreateCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– entityManager</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(em : Doctrine\\ORM\\EntityManagerInterface)</td></tr>
+    <tr><td align="left">+ getEntityManager() : Doctrine\\ORM\\EntityManagerInterface</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_3 {
+    graph [bgcolor="LightBlue"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Init"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>InitCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– appVersion</td></tr>
+    <tr><td align="left">– io</td></tr>
+    <tr><td align="left">– force</td></tr>
+    <tr><td align="left">– progress</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(version : string, io : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface, force : bool, progress : bool)</td></tr>
+    <tr><td align="left">+ getAppVersion() : string</td></tr>
+    <tr><td align="left">+ getStyle() : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface</td></tr>
+    <tr><td align="left">+ isForce() : bool</td></tr>
+    <tr><td align="left">+ isProgress() : bool</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_4 {
+    graph [bgcolor="LightBlue"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>PolyfillCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– package</td></tr>
+    <tr><td align="left">– tag</td></tr>
+    <tr><td align="left">– php : mixed</td></tr>
+    <tr><td align="left">– io</td></tr>
+    <tr><td align="left">– cacheDir</td></tr>
+    <tr><td align="left">– whitelist</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(package : string, tag : string, php : array, io : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface, cacheDir : string, whitelist : string)</td></tr>
+    <tr><td align="left">+ getPackage() : string</td></tr>
+    <tr><td align="left">+ getTag() : string</td></tr>
+    <tr><td align="left">+ getPhp() : array</td></tr>
+    <tr><td align="left">+ getStyle() : Bartlett\\CompatInfoDb\\Presentation\\Console\\StyleInterface</td></tr>
+    <tr><td align="left">+ getCacheDir() : string</td></tr>
+    <tr><td align="left">+ getWhitelist() : ?string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_5 {
+    graph [bgcolor="LightBlue"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Command\\Release"
+    "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseCommand" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ReleaseCommand</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– version</td></tr>
+    <tr><td align="left">– date</td></tr>
+    <tr><td align="left">– state</td></tr>
+    <tr><td align="left">– extension</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(version : string, date : string, state : string, extension : string)</td></tr>
+    <tr><td align="left">+ getVersion() : string</td></tr>
+    <tr><td align="left">+ getDate() : string</td></tr>
+    <tr><td align="left">+ getState() : string</td></tr>
+    <tr><td align="left">+ getExtension() : string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_6 {
+    graph [bgcolor="Bisque"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Query\\Diagnose"
+    "Bartlett\\CompatInfoDb\\Application\\Query\\Diagnose\\DiagnoseHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>DiagnoseHandler</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __invoke(query : Bartlett\\CompatInfoDb\\Application\\Query\\Diagnose\\DiagnoseQuery) : Bartlett\\CompatInfoDb\\Infrastructure\\RequirementsInterface</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_7 {
+    graph [bgcolor="BurlyWood"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Query"
+    "Bartlett\\CompatInfoDb\\Application\\Query\\QueryHandlerInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>QueryHandlerInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+  }
+  subgraph cluster_8 {
+    graph [bgcolor="Bisque"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Query\\ListRef"
+    "Bartlett\\CompatInfoDb\\Application\\Query\\ListRef\\ListHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ListHandler</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» LATEST_PHP_5_2 : string = "5\.2\.17" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_3 : string = "5\.3\.29" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_4 : string = "5\.4\.45" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_5 : string = "5\.5\.38" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_6 : string = "5\.6\.40" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_0 : string = "7\.0\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_1 : string = "7\.1\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_2 : string = "7\.2\.34" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.30" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.25" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.13" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.0RC3" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– distributionRepository</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(distributionRepository : Bartlett\\CompatInfoDb\\Domain\\Repository\\DistributionRepository)</td></tr>
+    <tr><td align="left">+ __invoke(query : Bartlett\\CompatInfoDb\\Application\\Query\\ListRef\\ListQuery) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">– filterPlatformByExtensionType(platform : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform, type : string) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">– filterPlatformByExtensionName(platform : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform, name : string) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">– filterPlatformByExtensionInstalled(platform : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">– filterPlatformByExtensionOutdated(platform : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left">– filterPlatformByExtensionDeprecated(platform : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform, deprecated : bool) : Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Platform</td></tr>
+    <tr><td align="left"># getExtensionVersion(name : string) : string</td></tr>
+    <tr><td align="left"># getLatestPhpVersion(phpVersion : string = PHP_VERSION) : string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_9 {
+    label = "Bartlett\\CompatInfoDb\\Domain\\Factory"
+    "Bartlett\\CompatInfoDb\\Domain\\Factory\\ExtensionVersionProviderInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>ExtensionVersionProviderInterface</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «static» LATEST_PHP_5_2 : string = "5\.2\.17" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_3 : string = "5\.3\.29" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_4 : string = "5\.4\.45" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_5 : string = "5\.5\.38" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_5_6 : string = "5\.6\.40" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_0 : string = "7\.0\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_1 : string = "7\.1\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_2 : string = "7\.2\.34" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.30" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.25" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.13" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.0RC3" {readOnly}</td></tr>
+</table></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>>]
+  }
+  subgraph cluster_10 {
+    graph [bgcolor="Bisque"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Query\\Show"
+    "Bartlett\\CompatInfoDb\\Application\\Query\\Show\\ShowHandler" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ShowHandler</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– factory</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(extensionFactory : Bartlett\\CompatInfoDb\\Domain\\Factory\\ExtensionFactoryInterface)</td></tr>
+    <tr><td align="left">+ __invoke(query : Bartlett\\CompatInfoDb\\Application\\Query\\Show\\ShowQuery) : ?Bartlett\\CompatInfoDb\\Domain\\ValueObject\\Extension</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Build\\BuildCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Create\\CreateCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Init\\InitCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Polyfill\\PolyfillCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Command\\Release\\ReleaseCommand" -> "Bartlett\\CompatInfoDb\\Application\\Command\\CommandInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Query\\Diagnose\\DiagnoseHandler" -> "Bartlett\\CompatInfoDb\\Application\\Query\\QueryHandlerInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Query\\ListRef\\ListHandler" -> "Bartlett\\CompatInfoDb\\Application\\Query\\QueryHandlerInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Query\\ListRef\\ListHandler" -> "Bartlett\\CompatInfoDb\\Domain\\Factory\\ExtensionVersionProviderInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Query\\Show\\ShowHandler" -> "Bartlett\\CompatInfoDb\\Application\\Query\\QueryHandlerInterface" [arrowhead="empty" style="dashed"]
+}
