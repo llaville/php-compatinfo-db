@@ -23,6 +23,9 @@ trait DeprecatedElementTrait
     #[Column(name: "deprecated_message", type: "string", nullable: true)]
     private ?string $deprecatedMessage = null;
 
+    /**
+     * @return array<string, string|null>|null
+     */
     public function getDeprecated(): ?array
     {
         if ($this->deprecatedSince === null && $this->deprecatedMessage === null) {

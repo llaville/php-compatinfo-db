@@ -15,7 +15,10 @@ use Deprecated;
  */
 trait DeprecationHydratorTrait
 {
-    public function hydrateDeprecation($data, object $object): void
+    /**
+     * @param string|array<string, string> $data
+     */
+    public function hydrateDeprecation(string|array $data, object $object): void
     {
         if (is_string($data)) {
             // accept legacy format
