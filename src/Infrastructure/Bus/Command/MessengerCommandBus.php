@@ -30,9 +30,6 @@ final class MessengerCommandBus implements CommandBusInterface
         $this->messageBus = $commandBus;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function handle(CommandInterface $command): void
     {
         $this->messageBus->dispatch($command);

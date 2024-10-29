@@ -22,10 +22,7 @@ use Exception;
 class ImagickExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @return void
-     * @throws Exception
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {

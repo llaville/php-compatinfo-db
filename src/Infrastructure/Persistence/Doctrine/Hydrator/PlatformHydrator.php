@@ -19,7 +19,7 @@ final class PlatformHydrator implements HydratorInterface
     use HydrationArraysTrait;
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function extract(object $object): array
     {
@@ -35,7 +35,7 @@ final class PlatformHydrator implements HydratorInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function hydrate(array $data, string $class = Entity::class): object
     {

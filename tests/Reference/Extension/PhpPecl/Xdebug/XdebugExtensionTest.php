@@ -20,7 +20,7 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 class XdebugExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {

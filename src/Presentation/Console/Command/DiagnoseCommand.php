@@ -46,7 +46,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -57,7 +57,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

@@ -31,7 +31,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
     public const NAME = 'db:init';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -48,7 +48,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

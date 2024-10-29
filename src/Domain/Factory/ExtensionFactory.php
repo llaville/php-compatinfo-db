@@ -67,9 +67,6 @@ final class ExtensionFactory implements ExtensionFactoryInterface
         $this->extensionRepository = $extensionRepository;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function create(string $name): ?Extension
     {
         return $this->extensionRepository->getExtensionByName($name);

@@ -92,7 +92,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getPhpIniPath(): false|string
     {

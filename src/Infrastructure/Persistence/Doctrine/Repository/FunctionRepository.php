@@ -38,7 +38,7 @@ final class FunctionRepository implements DomainRepository
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      * @return Function_[]
      */
     public function getAll(): array
@@ -51,9 +51,6 @@ final class FunctionRepository implements DomainRepository
         return $functions;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function getFunctionByName(string $name, ?string $declaringClass): ?Function_
     {
         $criteria = new Criteria();

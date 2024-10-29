@@ -38,7 +38,7 @@ final class ConstantRepository implements DomainRepository
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      * @return Constant_[]
      */
     public function getAll(): array
@@ -51,9 +51,6 @@ final class ConstantRepository implements DomainRepository
         return $constants;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function getConstantByName(string $name, ?string $declaringClass): ?Constant_
     {
         $criteria = new Criteria();

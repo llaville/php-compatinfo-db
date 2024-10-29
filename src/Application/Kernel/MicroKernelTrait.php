@@ -31,7 +31,7 @@ trait MicroKernelTrait
     protected ?string $projectDir;
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getEnvironment(): string
     {
@@ -39,7 +39,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function isDebug(): bool
     {
@@ -47,7 +47,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getHomeDir(): string
     {
@@ -62,7 +62,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getProjectDir(): string
     {
@@ -93,7 +93,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getCacheDir(?string $default = null): string
     {
@@ -106,7 +106,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getLogDir(): string
     {
@@ -114,7 +114,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getContainer(): ContainerInterface
     {
@@ -122,7 +122,7 @@ trait MicroKernelTrait
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function boot(): void
     {

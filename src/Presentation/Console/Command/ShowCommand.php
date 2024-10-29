@@ -51,7 +51,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
     public const NAME = 'db:show';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -77,7 +77,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

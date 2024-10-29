@@ -34,7 +34,7 @@ final class ExtensionRepository implements DomainRepository
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      * @return Extension[]
      */
     public function getAll(): array
@@ -47,9 +47,6 @@ final class ExtensionRepository implements DomainRepository
         return $extensions;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function getExtensionByName(string $name): ?Extension
     {
         $entity = $this->repository->findOneBy(['name' => $name]);

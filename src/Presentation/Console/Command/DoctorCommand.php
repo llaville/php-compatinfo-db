@@ -37,7 +37,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
     public const NAME = 'doctor';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -50,7 +50,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

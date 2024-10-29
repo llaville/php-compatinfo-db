@@ -14,7 +14,7 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 trait HydrationArraysTrait
 {
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function hydrateArrays(array $data): array
     {

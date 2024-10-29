@@ -19,7 +19,7 @@ class DependencyHydrator implements HydratorInterface
     use HydrationArraysTrait;
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function extract(object $object): array
     {
@@ -34,7 +34,7 @@ class DependencyHydrator implements HydratorInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function hydrate(array $data, string $class = Entity::class): object
     {

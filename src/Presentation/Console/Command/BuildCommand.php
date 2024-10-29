@@ -25,7 +25,7 @@ final class BuildCommand extends AbstractCommand implements CommandInterface
     public const NAME = 'db:build';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -52,7 +52,7 @@ final class BuildCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

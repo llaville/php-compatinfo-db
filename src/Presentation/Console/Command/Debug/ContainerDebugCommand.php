@@ -36,7 +36,7 @@ final class ContainerDebugCommand extends ContainerDebugCommandSymfonyFrameworkB
     public const NAME = 'debug:container';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -45,7 +45,7 @@ final class ContainerDebugCommand extends ContainerDebugCommandSymfonyFrameworkB
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

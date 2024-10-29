@@ -46,7 +46,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function text(string|array $message): void
     {
@@ -65,7 +65,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function listing(array $elements, array $attributes = ['type' => '*', 'style' => '', 'indent' => '  ']): void
     {
@@ -84,9 +84,6 @@ final class Style extends SymfonyStyle implements StyleInterface
         $this->newLine();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function columns(mixed $lines, string $format): void
     {
         if (!is_array($lines)) {
@@ -99,7 +96,7 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function table(array $headers, array $rows, string $style = 'compact'): void
     {

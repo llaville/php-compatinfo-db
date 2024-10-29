@@ -24,7 +24,7 @@ final class ExtensionHydrator implements HydratorInterface
     use HydrationArraysTrait;
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function extract(object $object): array
     {
@@ -42,7 +42,7 @@ final class ExtensionHydrator implements HydratorInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function hydrate(array $data, string $class = Entity::class): object
     {

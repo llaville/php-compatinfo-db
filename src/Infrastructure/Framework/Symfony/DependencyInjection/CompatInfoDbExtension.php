@@ -28,7 +28,7 @@ use const DIRECTORY_SEPARATOR;
 final class CompatInfoDbExtension extends Extension
 {
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getNamespace(): string
     {
@@ -39,7 +39,7 @@ final class CompatInfoDbExtension extends Extension
      * @throws Exception
      * @return void
      *
-     * {@inheritDoc}
+     * @inheritDoc
      * @param array<string, mixed> $configs
      */
     public function load(array $configs, ContainerBuilder $container)

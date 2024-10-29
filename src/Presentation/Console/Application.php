@@ -43,7 +43,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function getDefaultInputDefinition(): InputDefinition
     {
@@ -68,7 +68,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function run(?InputInterface $input = null, ?OutputInterface $output = null): int
     {
@@ -92,7 +92,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getHelp(): string
     {
@@ -104,7 +104,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getVersion(): string
     {
@@ -117,7 +117,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getLongVersion(): string
     {
@@ -125,7 +125,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getApplicationParameters(): array
     {
@@ -135,7 +135,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getKernel(): object
     {

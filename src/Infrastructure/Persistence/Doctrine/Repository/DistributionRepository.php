@@ -38,9 +38,6 @@ final class DistributionRepository implements DomainRepositoryInterface
         $this->repository = $entityManager->getRepository(PlatformEntity::class);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function getDistributionByVersion(string $version): ?Platform
     {
         /** @var PlatformEntity|null $entity */
@@ -55,7 +52,7 @@ final class DistributionRepository implements DomainRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function initialize(Collection $collection, string $distVersion): Platform
     {
@@ -76,9 +73,6 @@ final class DistributionRepository implements DomainRepositoryInterface
         return (new PlatformHydrator())->toDomain($platform);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function clear(): void
     {
         $logger = $this->entityManager->getConnection()->getConfiguration()->getSQLLogger();

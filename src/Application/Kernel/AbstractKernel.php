@@ -68,7 +68,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function createFromConfigs(array $configFiles): ContainerInterface
     {
@@ -76,7 +76,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function create(array $configFiles, array $compilerPasses = [], array $extensions = []): ContainerInterface
     {

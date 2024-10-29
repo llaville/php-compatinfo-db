@@ -22,9 +22,7 @@ use Exception;
 class PosixExtensionTest extends GenericTestCase
 {
     /**
-     * Sets up the shared fixture.
-     *
-     * @throws Exception
+     * @inheritDoc
      */
     public static function setUpBeforeClass(): void
     {

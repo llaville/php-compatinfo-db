@@ -30,7 +30,7 @@ use const DIRECTORY_SEPARATOR;
 final class ConsoleKernel extends AbstractKernel implements ConsoleKernelInterface
 {
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getCacheDir(?string $default = null): string
     {
@@ -39,7 +39,7 @@ final class ConsoleKernel extends AbstractKernel implements ConsoleKernelInterfa
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function handle(?InputInterface $input = null): int
     {
@@ -60,7 +60,7 @@ final class ConsoleKernel extends AbstractKernel implements ConsoleKernelInterfa
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function createFromInput(?InputInterface $input = null): ContainerInterface
     {

@@ -24,7 +24,7 @@ final class ClassHydrator implements HydratorInterface
     use DeprecationHydratorTrait;
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function extract(object $object): array
     {
@@ -48,7 +48,7 @@ final class ClassHydrator implements HydratorInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function hydrate(array $data, string $class = Entity::class): object
     {

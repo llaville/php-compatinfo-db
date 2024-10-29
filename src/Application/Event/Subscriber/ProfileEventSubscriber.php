@@ -36,7 +36,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      * @return array<string, string>
      */
     public static function getSubscribedEvents()

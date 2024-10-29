@@ -38,7 +38,7 @@ final class ClassRepository implements DomainRepository
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      * @return Class_[]
      */
     public function getAll(): array
@@ -51,9 +51,6 @@ final class ClassRepository implements DomainRepository
         return $classes;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function getClassByName(string $name, bool $isInterface): ?Class_
     {
         $criteria = new Criteria();

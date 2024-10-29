@@ -26,7 +26,7 @@ final class Configuration implements ConfigurationInterface
     private const DEFAULT_PROXY_DIR = "%kernel.cache_dir%/php-compatinfo-db/%version%/proxies";
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {

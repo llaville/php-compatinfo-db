@@ -29,7 +29,7 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
     public const NAME = 'db:release';
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function configure(): void
     {
@@ -63,7 +63,7 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
     }
 
     /**
-     * {@inheritDoc}
+     * @inheritDoc
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
