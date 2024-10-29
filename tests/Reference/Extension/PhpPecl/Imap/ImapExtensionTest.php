@@ -23,10 +23,23 @@ class ImapExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
-            'imap_mutf7_to_utf8', // build option, HAVE_IMAP_MUTF7
+        self::$optionalconstants = [
+            'LATT_REFERRAL',        // ifdef LATT_REFERRAL
+            'LATT_HASCHILDREN',     // ifdef LATT_HASCHILDREN
+            'LATT_HASNOCHILDREN',   // ifdef LATT_HASNOCHILDREN
+        ];
+
+        self::$optionalfunctions = [
+            // ifdef HAVE_IMAP_MUTF7
+            'imap_mutf7_to_utf8',
             'imap_utf8_to_mutf7',
-        );
+            // if (defined(HAVE_IMAP2000) || defined(HAVE_IMAP2001))
+            'imap_get_quota',
+            'imap_get_quotaroot',
+            'imap_set_quota',
+            'imap_setacl',
+            'imap_getacl',
+        ];
 
         parent::setUpBeforeClass();
     }
