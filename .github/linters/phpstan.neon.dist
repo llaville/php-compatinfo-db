@@ -10,3 +10,4 @@ parameters:
     ignoreErrors:
         -
             identifier: missingType.generics
+    reportUnmatchedIgnoredErrors: true
