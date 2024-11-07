@@ -1,12 +1,26 @@
 {
     "alias": "compatinfo-db.phar",
-    "force-autodiscovery": true,
-    "directories": [
-        "config",
-        "data"
-    ],
     "compression": "GZ",
-    "dump-autoload": true,
+    "blacklist": [
+        "tests",
+        "Test",
+        "dist",
+        "vendor-bin"
+    ],
+    "directories": [
+        "bin",
+        "src",
+        "config",
+        "data",
+        "vendor"
+    ],
+    "directories-bin": [
+        "resources"
+    ],
+    "files": [
+        "autoload.php"
+    ],
+    "stub": "stub.php",
     "files-bin": [
         "console-table.txt",
         "plain.txt",
@@ -24,5 +38,5 @@
             "sbom.json": ".box.manifests/sbom.json"
         }
     ],
-    "stub": "stub.php"
+    "dump-autoload": true
 }

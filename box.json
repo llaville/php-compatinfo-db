@@ -1,10 +1,25 @@
 {
     "alias": "compatinfo-db.phar",
-    "force-autodiscovery": true,
-    "directories": [
-        "config",
-        "data"
-    ],
     "compression": "GZ",
+    "blacklist": [
+        "tests",
+        "Test",
+        "dist",
+        "vendor-bin"
+    ],
+    "directories": [
+        "bin",
+        "src",
+        "config",
+        "data",
+        "vendor"
+    ],
+    "directories-bin": [
+        "resources"
+    ],
+    "files": [
+        "autoload.php"
+    ],
+    "stub": "stub.php",
     "dump-autoload": true
 }
