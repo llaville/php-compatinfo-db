@@ -8,12 +8,19 @@ on:
             - 'docs/**'
     workflow_call:
     workflow_dispatch:
+        inputs:
+            composer-options:
+                description: "Composer options for ramsey/composer-install GitHub Action"
+                required: false
+                default: "--prefer-dist --no-scripts"
+                type: string
 
 jobs:
     lint_files:
         uses: llaville/.github/.github/workflows/mega-linter.yml@master
         with:
             repository: ${{ github.repository }}
+            composer-options: ${{ inputs.composer-options }}
             php-version: "8.1"
 
     unit_tests:
@@ -99,7 +106,7 @@ jobs:
                 uses: ramsey/composer-install@v3
                 with:
                     dependency-versions: "highest"
-                    composer-options: "--prefer-dist --no-scripts"
+                    composer-options: ${{ inputs.composer-options }}
 
             -
                 name: Build Database
