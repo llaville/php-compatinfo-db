@@ -19,9 +19,10 @@ vendor-bin/**/vendor/
 ###### BOX Manifest ######
 sbom.json
 sbom.xml
-console.txt
-manifest.txt
+console-table.txt
+plain.txt
 stub.php
+.box.manifests.bin
 
 ###### Mega-Linter ######
 megalinter-reports/
