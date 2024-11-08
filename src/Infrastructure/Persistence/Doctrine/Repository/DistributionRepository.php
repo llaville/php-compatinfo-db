@@ -15,6 +15,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\Extension
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformHydrator;
 
 use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Platforms\SqlitePlatform;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
@@ -73,13 +74,13 @@ final class DistributionRepository implements DomainRepositoryInterface
         return (new PlatformHydrator())->toDomain($platform);
     }
 
+    /**
+     * @throws Exception
+     */
     public function clear(): void
     {
-        $logger = $this->entityManager->getConnection()->getConfiguration()->getSQLLogger();
-        $this->entityManager->getConnection()->getConfiguration()->setSQLLogger(null);
-
         $conn = $this->entityManager->getConnection();
-        $dbPlatform = $conn->getDriver()->getDatabasePlatform();
+        $dbPlatform = $conn->getDatabasePlatform();
 
         if ($dbPlatform instanceof SqlitePlatform) {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = OFF;";
@@ -100,7 +101,5 @@ final class DistributionRepository implements DomainRepositoryInterface
             $foreignKeyChecksQuery = "SET FOREIGN_KEY_CHECKS = 1;";
         }
         $conn->prepare($foreignKeyChecksQuery)->executeQuery();
-
-        $conn->getConfiguration()->setSQLLogger($logger);
     }
 }

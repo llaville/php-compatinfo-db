@@ -9,13 +9,14 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine;
 
 use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 
-use Doctrine\Common\Proxy\AbstractProxyFactory;
+use Doctrine\DBAL\Driver\PDO\SQLite\Driver;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Exception;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Exception\ORMException;
 use Doctrine\ORM\ORMSetup;
+use Doctrine\ORM\Proxy\ProxyFactory;
 
 use Psr\Cache\CacheItemPoolInterface;
 
@@ -34,7 +35,6 @@ use const DIRECTORY_SEPARATOR;
 final class EntityManagerFactory
 {
     /**
-     * @throws ORMException
      * @throws Exception
      */
     public static function create(bool $isDevMode, string $proxyDir, ?CacheItemPoolInterface $cache = null): EntityManagerInterface
@@ -44,30 +44,34 @@ final class EntityManagerFactory
         if ($isDevMode) {
             // suggested for DEV mode: see Doctrine ORM documentation
             // at https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/advanced-configuration.html#auto-generating-proxy-classes-optional
-            $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_ALWAYS);
+            $config->setAutogenerateProxyClasses(ProxyFactory::AUTOGENERATE_ALWAYS);
         } else {
             // lazy generation on PROD or TEST modes (i.e: CI)
-            $config->setAutogenerateProxyClasses(AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
+            $config->setAutogenerateProxyClasses(ProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
         }
+        $config->setLazyGhostObjectEnabled(true);
 
-        $lazyGhostObject = version_compare(phpversion(), '8.1', 'ge');
-        // 2.14. Use \Doctrine\Persistence\Proxy instead
-        // @see Doctrine\ORM\Proxy\ProxyFactory
-        $config->setLazyGhostObjectEnabled($lazyGhostObject);
-
-        $connection = DriverManager::getConnection(self::connection(), $config);    // @phpstan-ignore-line
+        $connection = DriverManager::getConnection(self::connection(), $config);
         return new EntityManager($connection, $config);
     }
 
     /**
-     * @return array<string, string>
+     * @return array{url?: string, driverClass?: string, driver?: string, path ?: string}
      */
     private static function connection(): array
     {
+        $connection = [];
         $dbUrl = getenv('DATABASE_URL');
         if (false === $dbUrl) {
+            $connection['driverClass'] = Driver::class;
+            $connection['driver'] = 'sqlite3';
             $targetFile = 'compatinfo-db.sqlite';
-            $dbUrl = sprintf('sqlite:///%s/%s', '%kernel.cache_dir%', $targetFile);
+            $driver = $connection['driver'] . '://';
+            $path = sprintf('%s/%s', '%kernel.cache_dir%', $targetFile);
+            $pathResolved = self::resolve($path);
+            $connection['path'] = $pathResolved;
+            $connection['url'] = $driver . $pathResolved;
+            return $connection;
         }
         $connection['url'] = self::resolve($dbUrl);
         return $connection;

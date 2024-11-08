@@ -11,12 +11,13 @@ use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Exception;
 
 use Symfony\Requirements\RequirementCollection;
 
-use Exception;
 use function extension_loaded;
 use function get_cfg_var;
+use function in_array;
 use function is_file;
 use function phpversion;
 use function sprintf;
@@ -112,7 +113,9 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     private function checkDoctrineConnection(Connection $connection): bool
     {
         try {
-            $connection->executeQuery($connection->getDatabasePlatform()->getDummySelectSQL());
+            $abstractPlatform = $connection->getDatabasePlatform();
+
+            $connection->executeQuery($abstractPlatform->getDummySelectSQL());
             $this->helpStatus = 'Connection to database server was successful.';
             return true;
         } catch (Exception $e) {
@@ -124,15 +127,16 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     private function checkDoctrineListTables(Connection $connection): bool
     {
         try {
-            $tables = $connection->executeQuery($connection->getDatabasePlatform()->getListTablesSQL())
-                ->fetchFirstColumn()
-            ;
-            if (empty($tables)) {
-                throw new Exception();
+            $abstractPlatform = $connection->getDatabasePlatform();
+
+            $schemaManager = $abstractPlatform->createSchemaManager($connection);
+            if (empty($schemaManager->listTableNames())) {
+                throw new \Exception();
             }
+
             $this->helpStatus = 'Schema was already proceeded.';
             return true;
-        } catch (Exception $e) {
+        } catch (Exception | \Exception $e) {
             $this->helpStatus = 'Create the schema with "db:create" command.';
             return false;
         }
@@ -142,21 +146,21 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
     {
         try {
             if (!$tablesExists) {
-                throw new Exception();
+                throw new \Exception();
             }
 
             $stmt = $connection->prepare('select id from platforms where description = :description limit 1');
             $var = DistributionRepository::DISTRIBUTION_DESC;
-            $stmt->bindParam('description', $var);
+            $stmt->bindValue('description', $var);
 
             $platforms = $stmt->executeQuery()
                 ->fetchFirstColumn()
             ;
             if (empty($platforms)) {
-                throw new Exception();
+                throw new \Exception();
             }
             return true;
-        } catch (Exception $e) {
+        } catch (Exception | \Exception $e) {
             $this->helpStatus = 'At least one distribution platform should exist. None available. Run "db:init" command to build one.';
             return false;
         }
