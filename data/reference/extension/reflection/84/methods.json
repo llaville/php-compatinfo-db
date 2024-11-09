@@ -190,5 +190,11 @@
         "name": "hasHook",
         "ext_min": "8.4.0RC1",
         "php_min": "8.4.0RC1"
+    },
+    {
+        "class_name": "ReflectionProperty",
+        "name": "isLazy",
+        "ext_min": "8.4.0RC4",
+        "php_min": "8.4.0RC4"
     }
 ]
