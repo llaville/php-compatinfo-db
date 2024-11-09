@@ -49,7 +49,6 @@ final class EntityManagerFactory
             // lazy generation on PROD or TEST modes (i.e: CI)
             $config->setAutogenerateProxyClasses(ProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS);
         }
-        $config->setLazyGhostObjectEnabled(true);
 
         $connection = DriverManager::getConnection(self::connection(), $config);
         return new EntityManager($connection, $config);
