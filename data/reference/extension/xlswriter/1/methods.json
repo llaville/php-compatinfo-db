@@ -645,5 +645,17 @@
         "name": "borderColorOfTheFourSides",
         "ext_min": "1.5.3",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "defaultRowOptions",
+        "ext_min": "1.5.8",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "rotation",
+        "ext_min": "1.5.8",
+        "php_min": "7.0.0"
     }
 ]
