@@ -1,0 +1,3 @@
+kind: Added
+body: ability to customize generation of Doctrine Proxy Classes by config setting or env var
+time: 2024-11-12T15:04:34.960321143Z

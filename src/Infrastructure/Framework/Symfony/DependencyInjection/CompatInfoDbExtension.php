@@ -63,6 +63,7 @@ final class CompatInfoDbExtension extends Extension
 
         $container->setParameter($this->getAlias() . '.version', $config['version']);
         $container->setParameter($this->getAlias() . '.proxy_dir', $config['proxy_dir']);
+        $container->setParameter($this->getAlias() . '.proxy_generate', $config['proxy_generate']);
 
         if ($container::willBeAvailable('symfony/console', Application::class, ['bartlett/php-compatinfo-db'])) {
             $loader->load(implode(DIRECTORY_SEPARATOR, ['packages', 'console.php']));

@@ -62,7 +62,7 @@ trait PrintDiagnose
         $io->listing($messages['ko'], ['type' => '[ ]', 'style' => 'fg=red']);
 
         $env = [];
-        $keys = ['APP_ENV', 'APP_DEBUG', 'APP_PROXY_DIR', 'APP_CACHE_DIR', 'DATABASE_URL'];
+        $keys = ['APP_ENV', 'APP_DEBUG', 'APP_PROXY_DIR', 'APP_PROXY_GENERATE', 'APP_CACHE_DIR', 'DATABASE_URL'];
         foreach ($keys as $key) {
             $value = $_SERVER[$key] ?? $_ENV[$key] ?? null;
             if (null !== $value) {

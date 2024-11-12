@@ -83,6 +83,8 @@ class NewCommand extends AbstractCommand implements CommandInterface
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
 
+        $io->writeln('> Loading database ...');
+
         $appVersion = $app->getLongVersion();
         $initCommand = new AppInitCommand(
             $appVersion,
@@ -98,6 +100,17 @@ class NewCommand extends AbstractCommand implements CommandInterface
             $firstFailure = array_shift($failures);
             $io->error($firstFailure->getMessage());
             return self::FAILURE;
+        }
+
+        $autoGenerate = $app->getApplicationParameters()['compat_info_db.proxy_generate'];
+
+        if ($autoGenerate === 'always') {
+            $io->writeln('> Generating Proxies ...');
+
+            $metadata = $this->entityManager->getMetadataFactory()->getAllMetadata();
+            $destPath = $this->entityManager->getConfiguration()->getProxyDir();
+
+            $this->entityManager->getProxyFactory()->generateProxyClasses($metadata, $destPath);
         }
 
         $io->success('Database built successfully!');

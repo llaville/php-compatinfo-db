@@ -44,7 +44,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->factory([service(EntityManagerFactory::class), 'create'])
         ->arg('$isDevMode', getenv('APP_ENV') === 'dev')
         ->arg('$proxyDir', '%compat_info_db.proxy_dir%')
-        // for Doctrine Command Line Interface
-        ->public()
+        ->arg('$autogenerateProxyClasses', '%compat_info_db.proxy_generate%')
     ;
 };
