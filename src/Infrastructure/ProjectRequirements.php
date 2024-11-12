@@ -11,10 +11,10 @@ use Bartlett\CompatInfoDb\Application\Query\Diagnose\DiagnoseQuery;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 
 use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\Exception;
 
 use Symfony\Requirements\RequirementCollection;
 
+use Throwable;
 use function extension_loaded;
 use function get_cfg_var;
 use function in_array;
@@ -118,7 +118,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
             $connection->executeQuery($abstractPlatform->getDummySelectSQL());
             $this->helpStatus = 'Connection to database server was successful.';
             return true;
-        } catch (Exception $e) {
+        } catch (Throwable) {
             $this->helpStatus = 'Could not talk to database server.';
             return false;
         }
@@ -136,7 +136,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
 
             $this->helpStatus = 'Schema was already proceeded.';
             return true;
-        } catch (Exception | \Exception $e) {
+        } catch (Throwable) {
             $this->helpStatus = 'Create the schema with "db:create" command.';
             return false;
         }
@@ -160,7 +160,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
                 throw new \Exception();
             }
             return true;
-        } catch (Exception | \Exception $e) {
+        } catch (Throwable) {
             $this->helpStatus = 'At least one distribution platform should exist. None available. Run "db:init" command to build one.';
             return false;
         }
