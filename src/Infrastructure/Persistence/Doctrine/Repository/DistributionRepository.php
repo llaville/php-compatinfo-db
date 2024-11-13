@@ -16,7 +16,7 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\PlatformH
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Exception;
-use Doctrine\DBAL\Platforms\SqlitePlatform;
+use Doctrine\DBAL\Platforms\SQLitePlatform;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 
@@ -82,7 +82,7 @@ final class DistributionRepository implements DomainRepositoryInterface
         $conn = $this->entityManager->getConnection();
         $dbPlatform = $conn->getDatabasePlatform();
 
-        if ($dbPlatform instanceof SqlitePlatform) {
+        if ($dbPlatform instanceof SQLitePlatform) {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = OFF;";
             $truncateQuery = "DELETE FROM";
         } else {
@@ -95,7 +95,7 @@ final class DistributionRepository implements DomainRepositoryInterface
             $this->entityManager->getConnection()->prepare($truncateQuery . ' ' . $tableName)->executeQuery();
         }
 
-        if ($dbPlatform instanceof SqlitePlatform) {
+        if ($dbPlatform instanceof SQLitePlatform) {
             $foreignKeyChecksQuery = "PRAGMA foreign_keys = ON;";
         } else {
             $foreignKeyChecksQuery = "SET FOREIGN_KEY_CHECKS = 1;";
