@@ -9,6 +9,7 @@ namespace Bartlett\CompatInfoDb\Application\Command\Create;
 
 use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
 
+use Doctrine\DBAL\Exception;
 use Doctrine\ORM\Tools\SchemaTool;
 
 use RuntimeException;
@@ -27,6 +28,9 @@ final class CreateHandler implements CommandHandlerInterface
     private const RETURN_CODE_DATABASE_ALREADY_EXISTS = 110;
     private const RETURN_CODE_SCHEMA_TOOL_FAILURE = 500;
 
+    /**
+     * @throws Exception
+     */
     public function __invoke(CreateCommand $command): void
     {
         $entityManager = $command->getEntityManager();
