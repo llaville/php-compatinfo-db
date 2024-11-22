@@ -56,6 +56,7 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
         );
 
         $conn = $query->getDatabaseConnection();
+        /** @var array{driver: string, path?:string, url?:string} $dbParams */
         $dbParams = $conn->getParams();
 
         $this->addRequirement(
