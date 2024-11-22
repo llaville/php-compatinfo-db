@@ -89,9 +89,9 @@
         "tests:unit": "vendor/bin/phpunit --configuration phpunit.xml.dist"
     },
     "scripts-descriptions" : {
-        "code:check": "Run PHPStan code analysis on PHP CompatInfo DB source code",
-        "code:lint": "Run PHPLint on PHP CompatInfo DB source code",
-        "style:check": "Run PHP CodeSniffer on PHP CompatInfo DB source code",
-        "tests:unit": "Run unit tests"
+        "code:check": "Run PHPStan code analysis on project source code",
+        "code:lint": "Run PHPLint on project source code",
+        "style:check": "Run PHP CodeSniffer on project source code",
+        "tests:unit": "Run unit tests on project source code"
     }
 }
