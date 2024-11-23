@@ -20,6 +20,5 @@
     "files": [
         "autoload.php"
     ],
-    "stub": "stub.php",
     "dump-autoload": true
 }
