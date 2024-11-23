@@ -24,10 +24,8 @@ if (class_exists(__NAMESPACE__ . '\Autoload', false) === false) {
     {
         /**
          * The composer autoloader.
-         *
-         * @var \Composer\Autoload\ClassLoader
          */
-        private static $composerAutoloader = null;
+        private static ?\Composer\Autoload\ClassLoader $composerAutoloader = null;
 
         public static function load(string $class): void
         {
