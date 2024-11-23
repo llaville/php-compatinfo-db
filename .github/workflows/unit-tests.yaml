@@ -117,7 +117,7 @@ jobs:
                 name: Check Database
                 run: |
                     bin/compatinfo-db diagnose --ansi
-                    bin/compatinfo-db db:list --ansi
+                    bin/compatinfo-db db:list --installed --ansi
 
             -   # https://github.com/sebastianbergmann/phpunit/tree/10.5
                 name: Unit tests with PHPUnit 10
