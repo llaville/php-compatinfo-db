@@ -14,18 +14,19 @@ use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Exception;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Exception\ORMException;
 use Doctrine\ORM\ORMSetup;
 use Doctrine\ORM\Proxy\ProxyFactory;
 
 use Psr\Cache\CacheItemPoolInterface;
 
+use function explode;
 use function getenv;
 use function implode;
-use function phpversion;
+use function ltrim;
 use function sprintf;
+use function str_contains;
 use function str_replace;
-use function version_compare;
+use function strcasecmp;
 use const DIRECTORY_SEPARATOR;
 
 /**
@@ -62,34 +63,40 @@ final class EntityManagerFactory
     }
 
     /**
-     * @return array{url?: string, driverClass?: string, driver?: string, path ?: string}
+     * @return array{url: string, driverClass: string, driver: string, path: string}
      */
     private static function connection(): array
     {
-        $connection = [];
-        $dbUrl = getenv('DATABASE_URL');
-        if (false === $dbUrl) {
-            $connection['driverClass'] = Driver::class;
-            $connection['driver'] = 'sqlite3';
+        $url = getenv('DATABASE_URL');
+        if (false === $url) {
+            // default database string connection
             $targetFile = 'compatinfo-db.sqlite';
-            $driver = $connection['driver'] . '://';
             $path = sprintf('%s/%s', '%kernel.cache_dir%', $targetFile);
-            $pathResolved = self::resolve($path);
-            $connection['path'] = $pathResolved;
-            $connection['url'] = $driver . $pathResolved;
-            return $connection;
+            $url = 'sqlite://' . $path;
         }
-        $connection['url'] = self::resolve($dbUrl);
-        return $connection;
-    }
 
-    private static function resolve(string $url): string
-    {
         $environment = $_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'prod';
         $kernel = new ConsoleKernel($environment, false);
 
         $dbUrl = str_replace('%kernel.cache_dir%', $kernel->getCacheDir(), $url);
+        $url = str_replace(['${HOME}', '%HOME%'], $kernel->getHomeDir(), $dbUrl);
 
-        return str_replace(['${HOME}', '%HOME%'], $kernel->getHomeDir(), $dbUrl);
+        if (str_contains($url, '://')) {
+            list($driver, $pathResolved) = explode('://', $url);
+
+            if (strcasecmp($driver, 'sqlite') === 0) {
+                $driver = 'sqlite3';
+                $driverClass = Driver::class;
+            }
+        }
+
+        $pathResolved ??= '/';
+
+        return [
+            'driverClass' => $driverClass ?? null,
+            'driver' => $driver ?? null,
+            'url' => $url,
+            'path' => '/' . ltrim($pathResolved, '/'),
+        ];
     }
 }
