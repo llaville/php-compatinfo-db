@@ -45,5 +45,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->arg('$isDevMode', getenv('APP_ENV') === 'dev')
         ->arg('$proxyDir', '%compat_info_db.proxy_dir%')
         ->arg('$autogenerateProxyClasses', '%compat_info_db.proxy_generate%')
+        // because PHP CompatInfo v7.x does not yet support full dependency injection and continue to use container directly
+        ->public()
     ;
 };
