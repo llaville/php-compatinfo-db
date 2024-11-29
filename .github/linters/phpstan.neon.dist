@@ -1,5 +1,5 @@
 includes:
-    - phpstan-baseline.neon
+    - ../../vendor-bin/phpstan/vendor/phpstan/phpstan-doctrine/extension.neon
 
 parameters:
     level: 6
