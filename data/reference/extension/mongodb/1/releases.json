@@ -640,5 +640,11 @@
         "rel_date": "2024-09-24",
         "rel_state": "stable",
         "php_min": "7.4.0"
+    },
+    {
+        "rel_version": "1.20.1",
+        "rel_date": "2024-11-27",
+        "rel_state": "stable",
+        "php_min": "7.4.0"
     }
 ]
