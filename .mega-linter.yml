@@ -22,6 +22,7 @@ EDITORCONFIG_EDITORCONFIG_CHECKER_CLI_LINT_MODE: project
 MARKDOWN_MARKDOWNLINT_CONFIG_FILE: ".markdown-lint.json"
 MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: "(\\.github|\\.changes)"
 PHP_PHPSTAN_CLI_LINT_MODE: project # to avoid https://github.com/nvuillam/mega-linter/issues/725
+PHP_PHPSTAN_DISABLE_ERRORS: true # disabled temporary due to https://github.com/oxsecurity/megalinter/issues/4328
 PHP_PHPCS_CLI_LINT_MODE: project
 PHP_PHPCS_CONFIG_FILE: ".phpcs.xml.dist"
 PHP_PHPCS_ARGUMENTS: "-n"
