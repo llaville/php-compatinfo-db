@@ -47,7 +47,7 @@ final class ExtensionRepository implements DomainRepository
         return $extensions;
     }
 
-    public function getExtensionByName(string $name): ?Extension
+    public function getExtensionByName(string $name, ?string $phpVersion): ?Extension
     {
         $entity = $this->repository->findOneBy(['name' => $name]);
 
@@ -56,6 +56,6 @@ final class ExtensionRepository implements DomainRepository
             return null;
         }
 
-        return (new ExtensionHydrator())->toDomain($entity);
+        return (new ExtensionHydrator($phpVersion))->toDomain($entity);
     }
 }

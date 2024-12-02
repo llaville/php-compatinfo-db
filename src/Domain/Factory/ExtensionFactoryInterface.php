@@ -15,5 +15,5 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  */
 interface ExtensionFactoryInterface extends ExtensionVersionProviderInterface
 {
-    public function create(string $name): ?Extension;
+    public function create(string $name, ?string $phpVersion = null): ?Extension;
 }

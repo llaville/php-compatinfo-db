@@ -112,7 +112,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         );
 
         $factory = $container->get(ExtensionFactoryInterface::class);
-        self::$obj = $factory->create($name);
+        self::$obj = $factory->create($name, PHP_VERSION);
 
         $currentVersion = phpversion($name);
         if ($currentVersion === false) {

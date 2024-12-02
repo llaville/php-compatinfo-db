@@ -20,5 +20,5 @@ interface ExtensionRepository extends RepositoryInterface
      */
     public function getAll(): array;
 
-    public function getExtensionByName(string $name): ?Extension;
+    public function getExtensionByName(string $name, ?string $phpVersion): ?Extension;
 }

@@ -23,6 +23,10 @@ final class ExtensionHydrator implements HydratorInterface
 {
     use HydrationArraysTrait;
 
+    public function __construct(private readonly ?string $phpVersion = null)
+    {
+    }
+
     /**
      * @inheritDoc
      */
@@ -175,6 +179,9 @@ final class ExtensionHydrator implements HydratorInterface
      */
     private function shouldSkip(object $object): bool
     {
-        return version_compare(PHP_VERSION, $object->getPhpMin(), 'lt');
+        if ($this->phpVersion === null) {
+            return false;
+        }
+        return version_compare($this->phpVersion, $object->getPhpMin(), 'lt');
     }
 }

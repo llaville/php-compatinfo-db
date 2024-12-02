@@ -1,0 +1,3 @@
+kind: Fixed
+body: '[#142](https://github.com/llaville/php-compatinfo-db/issues/142) : db:show command do not display all elements available in the database'
+time: 2024-12-02T07:44:32.60554164Z

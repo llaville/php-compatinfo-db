@@ -62,13 +62,11 @@ final class FunctionRepository implements DomainRepository
 
         $entity = $collection->isEmpty()
             ? null
-            : $collection->filter(
-                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le')
-            )->first()
+            : $collection->first()
         ;
 
         if (empty($entity)) {
-            // function does not exists
+            // function does not exist
             return null;
         }
 

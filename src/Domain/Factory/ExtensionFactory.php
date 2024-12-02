@@ -67,8 +67,8 @@ final class ExtensionFactory implements ExtensionFactoryInterface
         $this->extensionRepository = $extensionRepository;
     }
 
-    public function create(string $name): ?Extension
+    public function create(string $name, ?string $phpVersion = null): ?Extension
     {
-        return $this->extensionRepository->getExtensionByName($name);
+        return $this->extensionRepository->getExtensionByName($name, $phpVersion);
     }
 }
