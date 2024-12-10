@@ -53,5 +53,15 @@
         "name": "memcached.sess_consistent_hash_type",
         "ext_min": "3.1.0",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "memcached.compression_level",
+        "ext_min": "3.3.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "memcached.item_size_limit",
+        "ext_min": "3.3.0RC1",
+        "php_min": "7.0.0"
     }
 ]

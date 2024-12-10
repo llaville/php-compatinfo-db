@@ -22,5 +22,29 @@
         "name": "RES_CONNECTION_FAILURE",
         "ext_min": "3.1.5",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "HAVE_ZSTD",
+        "ext_min": "3.3.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "COMPRESSION_ZSTD",
+        "ext_min": "3.3.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "OPT_COMPRESSION_LEVEL",
+        "ext_min": "3.3.0RC1",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Memcached",
+        "name": "OPT_ITEM_SIZE_LIMIT",
+        "ext_min": "3.3.0RC1",
+        "php_min": "7.0.0"
     }
 ]
