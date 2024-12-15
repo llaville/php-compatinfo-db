@@ -14,6 +14,11 @@ use Bartlett\CompatInfoDb\Presentation\Console\Command\FactoryCommandLoader;
 use Bartlett\CompatInfoDb\Presentation\Console\Input\Input;
 use Bartlett\CompatInfoDb\Presentation\Console\Output\Output;
 
+use Doctrine\DBAL\Tools\Console\Command\RunSqlCommand;
+use Doctrine\ORM\Tools\Console\Command\InfoCommand;
+use Doctrine\ORM\Tools\Console\Command\MappingDescribeCommand;
+use Doctrine\ORM\Tools\Console\Command\ValidateSchemaCommand;
+
 use Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\Console\Input\InputInterface;
@@ -51,6 +56,20 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ;
 
         $services->set('console.command.eventdispatcher_debug', EventDispatcherDebugCommand::class)
+            ->tag('console.command')
+        ;
+
+        // Doctrine commands
+        $services->set(RunSqlCommand::class)
+            ->tag('console.command')
+        ;
+        $services->set(InfoCommand::class)
+            ->tag('console.command')
+        ;
+        $services->set(MappingDescribeCommand::class)
+            ->tag('console.command')
+        ;
+        $services->set(ValidateSchemaCommand::class)
             ->tag('console.command')
         ;
     }

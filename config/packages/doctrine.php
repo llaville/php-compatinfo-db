@@ -18,7 +18,11 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\Distrib
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\ExtensionRepository as InfrastructureExtensionRepository;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository\FunctionRepository as InfrastructureFunctionRepository;
 
+use Doctrine\DBAL\Tools\Console\ConnectionProvider;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider\ConnectionFromManagerProvider;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
@@ -34,6 +38,10 @@ use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();
 
+    $services->defaults()
+        ->autowire()
+    ;
+
     $services->alias(DistributionRepository::class, InfrastructureDistributionRepository::class);
     $services->alias(ExtensionRepository::class, InfrastructureExtensionRepository::class);
     $services->alias(FunctionRepository::class, InfrastructureFunctionRepository::class);
@@ -48,4 +56,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         // because PHP CompatInfo v7.x does not yet support full dependency injection and continue to use container directly
         ->public()
     ;
+
+    $services->set(EntityManagerProvider::class, SingleManagerProvider::class);
+    $services->set(ConnectionProvider::class, ConnectionFromManagerProvider::class);
 };
