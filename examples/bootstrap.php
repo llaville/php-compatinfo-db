@@ -10,6 +10,6 @@
 
 use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 
-require_once dirname(__DIR__) . '/config/bootstrap.php';
+require_once dirname(__DIR__) . '/autoload.php';
 
 return (new ConsoleKernel('dev', true))->createFromConfigs([]);

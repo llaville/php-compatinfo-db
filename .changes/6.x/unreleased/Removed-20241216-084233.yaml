@@ -1,0 +1,3 @@
+kind: Removed
+body: config/bootstrap.php file; use direct autoload.php instead
+time: 2024-12-16T08:42:33.936704148Z

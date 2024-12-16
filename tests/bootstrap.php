@@ -9,7 +9,7 @@
  * @since Release 5.13.0
  */
 
-require_once dirname(__DIR__) . '/config/bootstrap.php';
+require_once dirname(__DIR__) . '/autoload.php';
 
 use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
