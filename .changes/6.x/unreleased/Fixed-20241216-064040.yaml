@@ -1,0 +1,3 @@
+kind: Fixed
+body: cannot use PHAR version with APP_ENV other than prod (default)
+time: 2024-12-16T06:40:40.454361011Z

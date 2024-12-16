@@ -20,5 +20,5 @@
     "files": [
         "autoload.php"
     ],
-    "dump-autoload": true
+    "dump-autoload": false
 }

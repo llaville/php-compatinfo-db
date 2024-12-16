@@ -38,5 +38,5 @@
             "sbom.json": ".box.manifests/sbom.json"
         }
     ],
-    "dump-autoload": true
+    "dump-autoload": false
 }
