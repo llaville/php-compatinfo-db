@@ -29,6 +29,7 @@ $command = new ShowQuery(
     true,
     true,
     true,
+    false,
     false
 );
 
