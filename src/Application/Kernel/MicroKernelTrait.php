@@ -9,6 +9,7 @@ namespace Bartlett\CompatInfoDb\Application\Kernel;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+use Exception;
 use Phar;
 use LogicException;
 use ReflectionObject;
@@ -120,6 +121,7 @@ trait MicroKernelTrait
 
     /**
      * @inheritDoc
+     * @throws Exception
      */
     public function boot(): void
     {
