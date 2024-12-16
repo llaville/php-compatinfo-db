@@ -119,6 +119,8 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
      *
      * The built version of the service container is used when fresh, otherwise the
      * container is built.
+     *
+     * @throws Exception
      */
     protected function initializeContainer(): void
     {
