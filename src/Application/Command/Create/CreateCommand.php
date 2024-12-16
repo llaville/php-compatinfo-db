@@ -19,11 +19,9 @@ use Doctrine\ORM\EntityManagerInterface;
  */
 final class CreateCommand implements CommandInterface
 {
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(EntityManagerInterface $em)
-    {
-        $this->entityManager = $em;
+    public function __construct(
+        private readonly EntityManagerInterface $entityManager
+    ) {
     }
 
     public function getEntityManager(): EntityManagerInterface

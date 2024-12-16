@@ -7,7 +7,6 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository;
 
-use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\Repository\ExtensionRepository as DomainRepository;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension as ExtensionEntity;
@@ -22,15 +21,13 @@ use Doctrine\ORM\EntityRepository;
  */
 final class ExtensionRepository implements DomainRepository
 {
-    use EntityManagerTrait;
-
     /** @var EntityRepository<ExtensionEntity> */
     private EntityRepository $repository;
 
-    public function __construct(EntityManagerInterface $entityManager)
-    {
-        $this->setEntityManager($entityManager);
-        $this->repository = $entityManager->getRepository(ExtensionEntity::class);
+    public function __construct(
+        private readonly EntityManagerInterface $entityManager
+    ) {
+        $this->repository = $this->entityManager->getRepository(ExtensionEntity::class);
     }
 
     /**

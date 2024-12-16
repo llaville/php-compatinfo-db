@@ -19,14 +19,12 @@ use Doctrine\DBAL\Connection;
  */
 final class DiagnoseQuery implements QueryInterface
 {
-    private Connection $connection;
-
     /**
      * DiagnoseQuery constructor.
      */
-    public function __construct(Connection $connection)
-    {
-        $this->connection = $connection;
+    public function __construct(
+        private readonly Connection $connection
+    ) {
     }
 
     /**

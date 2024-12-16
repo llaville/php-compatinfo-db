@@ -38,7 +38,6 @@ final class DoctorHandler implements QueryHandlerInterface
 
     private const CONSTRAINT_SKIPPED = 'skipped';
     private const CONSTRAINT_PASSED  = 'passed';
-    private ExtensionFactoryInterface $factory;
     /** @var array<string, mixed> */
     private array $dependencies;
     /** @var array<string, mixed> */
@@ -47,9 +46,9 @@ final class DoctorHandler implements QueryHandlerInterface
     /**
      * ShowHandler constructor.
      */
-    public function __construct(ExtensionFactoryInterface $extensionFactory)
-    {
-        $this->factory = $extensionFactory;
+    public function __construct(
+        private readonly ExtensionFactoryInterface $factory
+    ) {
     }
 
     /**

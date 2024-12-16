@@ -20,18 +20,16 @@ use Symfony\Component\Messenger\MessageBusInterface;
  */
 final class MessengerCommandBus implements CommandBusInterface
 {
-    private MessageBusInterface $messageBus;
-
     /**
      * MessengerCommandBus constructor.
      */
-    public function __construct(MessageBusInterface $commandBus)
-    {
-        $this->messageBus = $commandBus;
+    public function __construct(
+        private readonly MessageBusInterface $commandBus,
+    ) {
     }
 
     public function handle(CommandInterface $command): void
     {
-        $this->messageBus->dispatch($command);
+        $this->commandBus->dispatch($command);
     }
 }

@@ -25,14 +25,12 @@ use const PHP_EOL;
  */
 final class ProfileEventSubscriber implements EventSubscriberInterface
 {
-    private Stopwatch $stopwatch;
-
     /**
      * ProfileEventSubscriber constructor.
      */
-    public function __construct(Stopwatch $stopwatch)
-    {
-        $this->stopwatch = $stopwatch;
+    public function __construct(
+        private readonly Stopwatch $stopwatch
+    ) {
     }
 
     /**

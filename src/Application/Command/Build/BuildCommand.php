@@ -20,17 +20,12 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 final class BuildCommand implements CommandInterface
 {
-    private string $extension;
-    private string $extMin;
-    private string $phpMin;
-    private OutputInterface $output;
-
-    public function __construct(string $extension, string $extMin, string $phpMin, OutputInterface $output)
-    {
-        $this->extension = $extension;
-        $this->extMin = $extMin;
-        $this->phpMin = $phpMin;
-        $this->output = $output;
+    public function __construct(
+        private readonly string $extension,
+        private readonly string $extMin,
+        private readonly string $phpMin,
+        private readonly OutputInterface $output
+    ) {
     }
 
     public function getExtension(): string

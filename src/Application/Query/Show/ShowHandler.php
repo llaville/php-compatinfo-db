@@ -19,14 +19,12 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Extension;
  */
 final class ShowHandler implements QueryHandlerInterface
 {
-    private ExtensionFactoryInterface $factory;
-
     /**
      * ShowHandler constructor.
      */
-    public function __construct(ExtensionFactoryInterface $extensionFactory)
-    {
-        $this->factory = $extensionFactory;
+    public function __construct(
+        private readonly ExtensionFactoryInterface $factory
+    ) {
     }
 
     public function __invoke(ShowQuery $query): ?Extension

@@ -47,18 +47,12 @@ final class InitHandler implements CommandHandlerInterface
     private const RETURN_CODE_DATABASE_READONLY = 120;
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
     private const PHP_RELEASES_8 = ['80', '81', '82', '83', '84'];
-    private JsonFileHandler $jsonFileHandler;
-    private DistributionRepository $distributionRepository;
-    private EntityManagerInterface $entityManager;
 
     public function __construct(
-        JsonFileHandler $jsonFileHandler,
-        DistributionRepository $distributionRepository,
-        EntityManagerInterface $entityManager
+        private readonly JsonFileHandler $jsonFileHandler,
+        private readonly DistributionRepository $distributionRepository,
+        private readonly EntityManagerInterface $entityManager
     ) {
-        $this->jsonFileHandler = $jsonFileHandler;
-        $this->distributionRepository = $distributionRepository;
-        $this->entityManager = $entityManager;
     }
 
     public function __invoke(InitCommand $query): void

@@ -49,13 +49,12 @@ use const DIRECTORY_SEPARATOR;
  */
 final class PolyfillHandler implements CommandHandlerInterface
 {
-    private JsonFileHandler $jsonFileHandler;
     private string $composerBin;
     private string $compatInfoBin;
 
-    public function __construct(JsonFileHandler $jsonFileHandler)
-    {
-        $this->jsonFileHandler = $jsonFileHandler;
+    public function __construct(
+        private readonly JsonFileHandler $jsonFileHandler
+    ) {
     }
 
     public function __invoke(PolyfillCommand $command): void

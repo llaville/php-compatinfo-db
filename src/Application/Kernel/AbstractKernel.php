@@ -60,11 +60,11 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
      */
     protected array $extensions;
 
-    public function __construct(string $environment, bool $debug)
-    {
-        $this->environment = $environment;
-        $this->debug = $debug;
-        $this->projectDir = null;
+    public function __construct(
+        protected string $environment,
+        protected bool $debug,
+        protected ?string $projectDir = null,
+    ) {
     }
 
     /**

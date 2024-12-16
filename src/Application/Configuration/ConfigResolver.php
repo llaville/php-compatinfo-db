@@ -15,11 +15,9 @@ use Symfony\Component\Console\Input\InputInterface;
  */
 final class ConfigResolver
 {
-    private InputInterface $input;
-
-    public function __construct(InputInterface $input)
-    {
-        $this->input = $input;
+    public function __construct(
+        private readonly InputInterface $input
+    ) {
     }
 
     /**

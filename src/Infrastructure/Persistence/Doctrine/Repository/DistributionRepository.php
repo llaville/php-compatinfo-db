@@ -8,7 +8,6 @@
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository;
 
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository as DomainRepositoryInterface;
-use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Platform as PlatformEntity;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator\ExtensionHydrator;
@@ -28,15 +27,13 @@ use DateTimeImmutable;
  */
 final class DistributionRepository implements DomainRepositoryInterface
 {
-    use EntityManagerTrait;
-
     /** @var EntityRepository<PlatformEntity> */
     private EntityRepository $repository;
 
-    public function __construct(EntityManagerInterface $entityManager)
-    {
-        $this->setEntityManager($entityManager);
-        $this->repository = $entityManager->getRepository(PlatformEntity::class);
+    public function __construct(
+        private readonly EntityManagerInterface $entityManager
+    ) {
+        $this->repository = $this->entityManager->getRepository(PlatformEntity::class);
     }
 
     public function getDistributionByVersion(string $version): ?Platform

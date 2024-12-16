@@ -18,25 +18,17 @@ use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
  */
 final class PolyfillCommand implements CommandInterface
 {
-    private string $package;
-    private string $tag;
-    /** @var string[]  */
-    private array $php;
-    private StyleInterface $io;
-    private string $cacheDir;
-    private ?string $whitelist;
-
     /**
      * @param string[] $php
      */
-    public function __construct(string $package, string $tag, array $php, StyleInterface $io, string $cacheDir, ?string $whitelist)
-    {
-        $this->package = $package;
-        $this->tag = $tag;
-        $this->php = $php;
-        $this->io = $io;
-        $this->cacheDir = $cacheDir;
-        $this->whitelist = $whitelist;
+    public function __construct(
+        private readonly string $package,
+        private readonly string $tag,
+        private readonly array $php,
+        private readonly StyleInterface $io,
+        private readonly string $cacheDir,
+        private readonly ?string $whitelist
+    ) {
     }
 
     public function getPackage(): string

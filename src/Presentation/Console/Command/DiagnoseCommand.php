@@ -34,15 +34,12 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
 
     public const NAME = 'diagnose';
 
-    private EntityManagerInterface $entityManager;
-
     public function __construct(
         CommandBusInterface $commandBus,
         QueryBusInterface $queryBus,
-        EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager
     ) {
         parent::__construct($commandBus, $queryBus);
-        $this->entityManager = $entityManager;
     }
 
     /**

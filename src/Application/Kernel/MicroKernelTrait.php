@@ -25,10 +25,7 @@ use const PATH_SEPARATOR;
  */
 trait MicroKernelTrait
 {
-    protected string $environment;
-    protected bool $debug;
     protected ContainerInterface $container;
-    protected ?string $projectDir;
 
     /**
      * @inheritDoc

@@ -33,15 +33,12 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
 {
     use ExtensionVersionProviderTrait;
 
-    private DistributionRepository $distributionRepository;
-
     /**
      * ListHandler constructor.
      */
     public function __construct(
-        DistributionRepository $distributionRepository
+        private readonly DistributionRepository $distributionRepository
     ) {
-        $this->distributionRepository = $distributionRepository;
     }
 
     public function __invoke(ListQuery $query): Platform

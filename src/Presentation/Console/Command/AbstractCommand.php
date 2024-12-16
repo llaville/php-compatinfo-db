@@ -23,13 +23,10 @@ abstract class AbstractCommand extends Command
     public const SUCCESS = 0;
     public const FAILURE = 1;
 
-    protected CommandBusInterface $commandBus;
-    protected QueryBusInterface $queryBus;
-
-    public function __construct(CommandBusInterface $commandBus, QueryBusInterface $queryBus)
-    {
+    public function __construct(
+        protected CommandBusInterface $commandBus,
+        protected QueryBusInterface $queryBus
+    ) {
         parent::__construct();
-        $this->commandBus = $commandBus;
-        $this->queryBus = $queryBus;
     }
 }

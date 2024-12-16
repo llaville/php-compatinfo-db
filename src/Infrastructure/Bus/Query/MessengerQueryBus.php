@@ -26,7 +26,6 @@ final class MessengerQueryBus implements QueryBusInterface
     /**
      * MessengerQueryBus constructor.
      *
-     * @param MessageBusInterface $queryBus
      */
     public function __construct(MessageBusInterface $queryBus)
     {

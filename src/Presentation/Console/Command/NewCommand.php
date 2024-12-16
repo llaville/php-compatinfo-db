@@ -35,12 +35,12 @@ class NewCommand extends AbstractCommand implements CommandInterface
 {
     public const NAME = 'db:new';
 
-    protected EntityManagerInterface $entityManager;
-
-    public function __construct(CommandBusInterface $commandBus, QueryBusInterface $queryBus, EntityManagerInterface $em)
-    {
+    public function __construct(
+        CommandBusInterface $commandBus,
+        QueryBusInterface $queryBus,
+        protected EntityManagerInterface $entityManager
+    ) {
         parent::__construct($commandBus, $queryBus);
-        $this->entityManager = $em;
     }
 
     /**

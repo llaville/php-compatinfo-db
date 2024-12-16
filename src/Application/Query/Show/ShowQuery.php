@@ -17,45 +17,20 @@ use Bartlett\CompatInfoDb\Application\Query\QueryInterface;
  */
 final class ShowQuery implements QueryInterface
 {
-    private string $extension;
-    private bool $releases;
-    private bool $ini;
-    private bool $constants;
-    private bool $functions;
-    private bool $interfaces;
-    private bool $classes;
-    private bool $methods;
-    private bool $classConstants;
-    private bool $dependencies;
-    private bool $polyfills;
-    private bool $deprecations;
-
     public function __construct(
-        string $extension,
-        bool $releases,
-        bool $ini,
-        bool $constants,
-        bool $functions,
-        bool $interfaces,
-        bool $classes,
-        bool $methods,
-        bool $classConstants,
-        bool $dependencies,
-        bool $polyfills,
-        bool $deprecations
+        private readonly string $extension,
+        private readonly bool $releases,
+        private readonly bool $ini,
+        private readonly bool $constants,
+        private readonly bool $functions,
+        private readonly bool $interfaces,
+        private readonly bool $classes,
+        private readonly bool $methods,
+        private readonly bool $classConstants,
+        private readonly bool $dependencies,
+        private readonly bool $polyfills,
+        private readonly bool $deprecations
     ) {
-        $this->extension      = $extension;
-        $this->releases       = $releases;
-        $this->ini            = $ini;
-        $this->constants      = $constants;
-        $this->functions      = $functions;
-        $this->interfaces     = $interfaces;
-        $this->classes        = $classes;
-        $this->methods        = $methods;
-        $this->classConstants = $classConstants;
-        $this->dependencies   = $dependencies;
-        $this->polyfills      = $polyfills;
-        $this->deprecations   = $deprecations;
     }
 
     public function getExtension(): string

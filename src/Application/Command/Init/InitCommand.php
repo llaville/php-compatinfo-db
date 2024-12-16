@@ -18,21 +18,12 @@ use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
  */
 final class InitCommand implements CommandInterface
 {
-    private string $appVersion;
-    private StyleInterface $io;
-    private bool $force;
-    private bool $progress;
-
     public function __construct(
-        string $version,
-        StyleInterface $io,
-        bool $force,
-        bool $progress
+        private readonly string $appVersion,
+        private readonly StyleInterface $io,
+        private readonly bool $force,
+        private readonly bool $progress
     ) {
-        $this->appVersion = $version;
-        $this->io = $io;
-        $this->force = $force;
-        $this->progress = $progress;
     }
 
     public function getAppVersion(): string

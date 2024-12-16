@@ -7,7 +7,6 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Repository;
 
-use Bartlett\CompatInfoDb\Domain\Repository\EntityManagerTrait;
 use Bartlett\CompatInfoDb\Domain\Repository\ClassRepository as DomainRepository;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Class_;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Class_ as ClassEntity;
@@ -26,15 +25,13 @@ use const PHP_VERSION;
  */
 final class ClassRepository implements DomainRepository
 {
-    use EntityManagerTrait;
-
     /** @var EntityRepository<ClassEntity> */
     private EntityRepository $repository;
 
-    public function __construct(EntityManagerInterface $entityManager)
-    {
-        $this->setEntityManager($entityManager);
-        $this->repository = $entityManager->getRepository(ClassEntity::class);
+    public function __construct(
+        private readonly EntityManagerInterface $entityManager
+    ) {
+        $this->repository = $this->entityManager->getRepository(ClassEntity::class);
     }
 
     /**

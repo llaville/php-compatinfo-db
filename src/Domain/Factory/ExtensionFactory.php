@@ -60,11 +60,9 @@ final class ExtensionFactory implements ExtensionFactoryInterface
 {
     use ExtensionVersionProviderTrait;
 
-    private ExtensionRepository $extensionRepository;
-
-    public function __construct(ExtensionRepository $extensionRepository)
-    {
-        $this->extensionRepository = $extensionRepository;
+    public function __construct(
+        private readonly ExtensionRepository $extensionRepository
+    ) {
     }
 
     public function create(string $name, ?string $phpVersion = null): ?Extension

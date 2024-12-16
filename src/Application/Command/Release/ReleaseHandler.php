@@ -46,15 +46,14 @@ final class ReleaseHandler implements CommandHandlerInterface
         '83' => ExtensionVersionProviderInterface::LATEST_PHP_8_3,
         '84' => ExtensionVersionProviderInterface::LATEST_PHP_8_4,
     ];
-    private JsonFileHandler $jsonFileHandler;
     private string $refDir;
 
     /**
      * ReleaseHandler constructor.
      */
-    public function __construct(JsonFileHandler $jsonFileHandler)
-    {
-        $this->jsonFileHandler = $jsonFileHandler;
+    public function __construct(
+        private readonly JsonFileHandler $jsonFileHandler
+    ) {
         $this->refDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 4), 'data', 'reference', 'extension']);
     }
 
