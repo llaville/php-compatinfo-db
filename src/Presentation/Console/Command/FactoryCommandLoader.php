@@ -7,8 +7,16 @@
  */
 namespace Bartlett\CompatInfoDb\Presentation\Console\Command;
 
+use Bartlett\CompatInfoDb\Presentation\Console\Command\Debug\ContainerDebugCommand;
+use Doctrine\DBAL\Tools\Console\Command\RunSqlCommand;
+use Doctrine\ORM\Tools\Console\Command\InfoCommand;
+use Doctrine\ORM\Tools\Console\Command\MappingDescribeCommand;
+use Doctrine\ORM\Tools\Console\Command\ValidateSchemaCommand;
+
+use Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader as SymfonyFactoryCommandLoader;
+use Symfony\Component\Messenger\Command\DebugCommand;
 
 use Phar;
 use function get_class;
@@ -25,15 +33,30 @@ class FactoryCommandLoader extends SymfonyFactoryCommandLoader
      *
      * @param Command[] $commands
      */
-    public function __construct(iterable $commands, bool $isDevMode)
+    public function __construct(iterable $commands, string $environment)
     {
         $factories = [];
+        $blacklist = [];
 
-        if (Phar::running() || !$isDevMode) {
+        if ('prod' === $environment) {
+            // these commands are disallowed in production environment
+            $blacklist = [
+                // Debug commands
+                ContainerDebugCommand::class,
+                EventDispatcherDebugCommand::class,
+                DebugCommand::class,
+                // Doctrine commands
+                RunSqlCommand::class,
+                InfoCommand::class,
+                MappingDescribeCommand::class,
+                ValidateSchemaCommand::class,
+            ];
+        }
+
+        if (Phar::running()) {
             // these commands are disallowed in PHAR distribution
-            $blacklist = [ReleaseCommand::class, BuildCommand::class];
-        } else {
-            $blacklist = [];
+            $blacklist[] = ReleaseCommand::class;
+            $blacklist[] = BuildCommand::class;
         }
 
         foreach ($commands as $command) {

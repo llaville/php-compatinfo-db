@@ -69,12 +69,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(CommandBusInterface::class, MessengerCommandBus::class);
     $services->set(QueryBusInterface::class, MessengerQueryBus::class);
 
-    if (getenv('APP_ENV') === 'dev') {
-        $services->set('console.command.messenger_debug', DebugCommand::class)
-            ->args([[]])
-            ->tag('console.command')
-        ;
-    }
+    $services->set('console.command.messenger_debug', DebugCommand::class)
+        ->args([[]])
+        ->tag('console.command')
+    ;
 
     $services->load('Bartlett\\CompatInfoDb\\Application\\Command\\', __DIR__ . '/../../src/Application/Command');
     $services->load('Bartlett\\CompatInfoDb\\Application\\Query\\', __DIR__ . '/../../src/Application/Query');

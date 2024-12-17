@@ -50,29 +50,29 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->tag('console.command')
     ;
 
-    if (getenv('APP_ENV') === 'dev') {
-        $services->set('console.command.container_debug', ContainerDebugCommand::class)
-            ->tag('console.command')
-        ;
+    // Dependency-Injection commands
+    $services->set('console.command.container_debug', ContainerDebugCommand::class)
+        ->tag('console.command')
+    ;
 
-        $services->set('console.command.eventdispatcher_debug', EventDispatcherDebugCommand::class)
-            ->tag('console.command')
-        ;
+    // Event-Dispatcher commands
+    $services->set(EventDispatcherDebugCommand::class)
+        ->tag('console.command')
+    ;
 
-        // Doctrine commands
-        $services->set(RunSqlCommand::class)
-            ->tag('console.command')
-        ;
-        $services->set(InfoCommand::class)
-            ->tag('console.command')
-        ;
-        $services->set(MappingDescribeCommand::class)
-            ->tag('console.command')
-        ;
-        $services->set(ValidateSchemaCommand::class)
-            ->tag('console.command')
-        ;
-    }
+    // Doctrine commands
+    $services->set(RunSqlCommand::class)
+        ->tag('console.command')
+    ;
+    $services->set(InfoCommand::class)
+        ->tag('console.command')
+    ;
+    $services->set(MappingDescribeCommand::class)
+        ->tag('console.command')
+    ;
+    $services->set(ValidateSchemaCommand::class)
+        ->tag('console.command')
+    ;
 
     $services->set(InputInterface::class, Input::class);
     $services->set(OutputInterface::class, Output::class);
@@ -88,7 +88,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     // @link https://symfony.com/doc/current/console/lazy_commands.html#factorycommandloader
     $services->set(CommandLoaderInterface::class, FactoryCommandLoader::class)
         ->arg('$commands', tagged_iterator('console.command'))
-        ->arg('$isDevMode', getenv('APP_ENV') === 'dev')
+        ->arg('$environment', '%kernel.environment%')
     ;
 
     $services->load('Bartlett\\CompatInfoDb\\Presentation\\Console\\', __DIR__ . '/../../src/Presentation/Console');
