@@ -16,7 +16,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Stopwatch\Stopwatch;
-use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 /**
  * Build the Container with common parameters and services
@@ -33,9 +32,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $services->set(Stopwatch::class);
 
-    $services->set(ProfileEventSubscriber::class)
-        ->args([service(Stopwatch::class)])
-    ;
+    $services->set(ProfileEventSubscriber::class);
     $services->alias(EventSubscriberInterface::class . ' $profileEventSubscriber', ProfileEventSubscriber::class);
 
     $services->set(EventDispatcherInterface::class, EventDispatcher::class)
@@ -43,7 +40,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->public()
     ;
     $services->alias('event_dispatcher', EventDispatcher::class)
-        // for debug:event-dispatcher command
+        // required for debug:event-dispatcher command
         ->public()
     ;
 
