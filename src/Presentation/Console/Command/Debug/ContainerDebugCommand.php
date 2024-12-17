@@ -11,6 +11,7 @@ use Bartlett\CompatInfoDb\Presentation\Console\ApplicationInterface;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerDebugCommand as ContainerDebugCommandSymfonyFrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Console\Helper\DescriptorHelper;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -31,19 +32,9 @@ use function stripos;
  * @since Release 4.6.0
  * @author Laurent Laville
  */
+#[AsCommand(name: 'debug:container', description: 'Display current services for an application')]
 final class ContainerDebugCommand extends ContainerDebugCommandSymfonyFrameworkBundle
 {
-    public const NAME = 'debug:container';
-
-    /**
-     * @inheritDoc
-     */
-    protected function configure(): void
-    {
-        parent::configure();
-        $this->setName(self::NAME);
-    }
-
     /**
      * @inheritDoc
      */
