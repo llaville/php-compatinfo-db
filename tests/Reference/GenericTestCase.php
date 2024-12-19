@@ -30,7 +30,6 @@ use function array_filter;
 use function array_key_exists;
 use function array_keys;
 use function array_map;
-use function array_push;
 use function array_unique;
 use function class_exists;
 use function dechex;
@@ -125,7 +124,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         // platform dependant
         foreach ($releases as $release) {
             if (version_compare($currentVersion, $release->getVersion(), 'lt')) {
-                array_push(self::$optionalreleases, $release->getVersion());
+                self::$optionalreleases[] = $release->getVersion();
             }
         }
     }
@@ -249,7 +248,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         if (array_key_exists('php.excludes', $range)) {
             if (in_array(PHP_VERSION, $range['php.excludes'])) {
                 // We are in min/max, so add it as optional
-                array_push($optional, $element);
+                $optional[] = $element;
             }
         }
 
