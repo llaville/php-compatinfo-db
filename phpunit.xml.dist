@@ -405,4 +405,7 @@
             <directory suffix=".php">src/</directory>
         </include>
     </source>
+    <php>
+        <env name="APP_ENV" value="tests" force="true"/>
+    </php>
 </phpunit>
