@@ -17,4 +17,16 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
  */
 class AstExtensionTest extends GenericTestCase
 {
+    /**
+     * @inheritDoc
+     */
+    public static function setUpBeforeClass(): void
+    {
+        self::$optionalconstants = [
+            // strange behavior since Ast 1.1.2 on CI with 'shivammathur/setup-php@v2' (SHA:c541c155eee45413f5b09a52248675b1a2575231)
+            "ast\\flags\\DIM_ALTERNATIVE_SYNTAX",
+        ];
+
+        parent::setUpBeforeClass();
+    }
 }
