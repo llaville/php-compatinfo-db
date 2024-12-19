@@ -129,9 +129,12 @@ final class InitHandler implements CommandHandlerInterface
             $refPathname = $extensions[$refName];
 
             $component = 'extensions';
+            $message = sprintf("Building %s (%s)", $component, $refName);
             if ($withProgressBar) {
-                $progress->setMessage(sprintf("Building %s (%s)", $component, $refName));
+                $progress->setMessage($message);
                 $progress->display();
+            } elseif ($io->isVerbose()) {
+                $io->writeln('> ' . $message . ' ...');
             }
 
             $meta = $this->jsonFileHandler->read($refPathname, $component, '');
@@ -151,9 +154,12 @@ final class InitHandler implements CommandHandlerInterface
             }
         }
 
+        $message = 'Flushing all changes to the database ...';
         if ($withProgressBar) {
-            $progress->setMessage('Flushing all changes to the database ...');
+            $progress->setMessage($message);
             $progress->display();
+        } elseif ($io->isVerbose()) {
+            $io->writeln('> ' . $message);
         }
 
         $distribution = $this->distributionRepository->initialize($collection, $appVersion);
