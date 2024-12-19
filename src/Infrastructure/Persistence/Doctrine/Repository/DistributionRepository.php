@@ -42,7 +42,7 @@ final class DistributionRepository implements DomainRepositoryInterface
         $entity = $this->repository->findOneBy(['description' => self::DISTRIBUTION_DESC, 'version' => $version]);
 
         if (null === $entity) {
-            // distribution does not exists
+            // distribution does not exist
             return null;
         }
 
