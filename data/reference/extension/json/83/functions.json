@@ -2,6 +2,7 @@
     {
         "name": "json_validate",
         "ext_min": "8.3.0alpha1",
-        "php_min": "8.3.0alpha1"
+        "php_min": "8.3.0alpha1",
+        "polyfill": "symfony/polyfill-php83"
     }
 ]
