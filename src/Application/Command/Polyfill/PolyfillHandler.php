@@ -235,7 +235,7 @@ final class PolyfillHandler implements CommandHandlerInterface
     /**
      * @return null|array<string, mixed>
      */
-    private function analyse(string $packageDir, ?string $whitelist = null, string $php = '7.4'): ?array
+    private function analyse(string $packageDir, ?string $whitelist = null, string $php = '8.1'): ?array
     {
         $dataSource = empty($whitelist) ? $packageDir : implode(DIRECTORY_SEPARATOR, [$packageDir, $whitelist]);
 
