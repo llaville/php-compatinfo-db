@@ -50,8 +50,7 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
                 'php',
                 null,
                 InputOption::VALUE_IS_ARRAY | InputOption::VALUE_REQUIRED,
-                'Polyfill for PHP version',
-                ['7.4']
+                'Polyfill for PHP version'
             )
             ->addOption(
                 'whitelist',
