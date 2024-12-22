@@ -64,5 +64,11 @@
         "rel_date": "2024-11-21",
         "rel_state": "stable",
         "php_min": "8.4.1"
+    },
+    {
+        "rel_version": "8.4.2",
+        "rel_date": "2024-12-19",
+        "rel_state": "stable",
+        "php_min": "8.4.2"
     }
 ]

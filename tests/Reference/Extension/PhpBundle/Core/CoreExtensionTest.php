@@ -36,6 +36,7 @@ class CoreExtensionTest extends GenericTestCase
             '__METHOD__',
             '__NAMESPACE__',
             '__TRAIT__',
+            '__PROPERTY__',
         );
         self::$ignoredconstants = array(
             // add by swig framework as core constant
