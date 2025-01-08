@@ -1,3 +1,0 @@
-kind: Changed
-body: Use [class constructor property promotion](https://php.watch/versions/8.0/constructor-property-promotion) PHP 8.0 syntax and [read only properties](https://php.watch/versions/8.1/readonly) PHP 8.1 syntax
-time: 2024-12-16T08:38:15.236129996Z

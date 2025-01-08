@@ -65,8 +65,8 @@
 ## [Versions 6.x](SUPPORTED-VERSIONS_6.x.md)
 
 * PHP 8.1.26 until 8.1.31
-* PHP 8.2.13 until 8.2.26
-* PHP 8.3.0 until 8.3.14
-* PHP 8.4.1
+* PHP 8.2.13 until 8.2.27
+* PHP 8.3.0 until 8.3.15
+* PHP 8.4.1 until 8.4.2
 
 Currently, [115 extensions](SUPPORTED-EXTENSIONS.md) referenced in the database.
