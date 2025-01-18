@@ -136,7 +136,7 @@
 <g id="node12" class="node">
 <title>doctrine/dbal</title>
 <path fill="#eeeeee" stroke="black" d="M1181.18,-1328.41C1181.18,-1328.41 1049.18,-1328.41 1049.18,-1328.41 1043.18,-1328.41 1037.18,-1322.41 1037.18,-1316.41 1037.18,-1316.41 1037.18,-1304.41 1037.18,-1304.41 1037.18,-1298.41 1043.18,-1292.41 1049.18,-1292.41 1049.18,-1292.41 1181.18,-1292.41 1181.18,-1292.41 1187.18,-1292.41 1193.18,-1298.41 1193.18,-1304.41 1193.18,-1304.41 1193.18,-1316.41 1193.18,-1316.41 1193.18,-1322.41 1187.18,-1328.41 1181.18,-1328.41"/>
-<text text-anchor="middle" x="1115.18" y="-1306.71" font-family="Times,serif" font-size="14.00" fill="#314b5f">doctrine/dbal: 4.2.1</text>
+<text text-anchor="middle" x="1115.18" y="-1306.71" font-family="Times,serif" font-size="14.00" fill="#314b5f">doctrine/dbal: 4.2.2</text>
 </g>
 <!-- bartlett/php&#45;compatinfo&#45;db&#45;&gt;doctrine/dbal -->
 <g id="edge25" class="edge">
