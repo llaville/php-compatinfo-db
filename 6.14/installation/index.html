@@ -10,7 +10,7 @@
         <meta name="author" content="Laurent Laville">
       
       
-        <link rel="canonical" href="https://llaville.github.io/php-compatinfo-db/6.15/installation/">
+        <link rel="canonical" href="https://llaville.github.io/php-compatinfo-db/6.14/installation/">
       
       
       
@@ -763,7 +763,7 @@ docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/llaville/php-c
 <p>You can also install application locally to your project with <a href="https://github.com/phar-io/phive">Phive</a> and configuration file <code>.phive/phars.xml</code></p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;phive</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;https://phar.io/phive&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;phar</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;llaville/php-compatinfo-db&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;^6.15&quot;</span><span class="w"> </span><span class="na">copy=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;phar</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;llaville/php-compatinfo-db&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;^6.14&quot;</span><span class="w"> </span><span class="na">copy=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/phive&gt;</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>phive<span class="w"> </span>install<span class="w"> </span>--force-accept-unsigned
@@ -771,7 +771,7 @@ docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/llaville/php-c
 <h2 id="composer">Composer</h2>
 <p>The recommended way to install this library is <a href="https://getcomposer.org">through composer</a>.
 If you don't know yet what is composer, have a look <a href="http://getcomposer.org/doc/00-intro.md">on introduction</a>.</p>
-<div class="highlight"><pre><span></span><code>composer<span class="w"> </span>require<span class="w"> </span>bartlett/php-compatinfo-db<span class="w"> </span>^6.15
+<div class="highlight"><pre><span></span><code>composer<span class="w"> </span>require<span class="w"> </span>bartlett/php-compatinfo-db<span class="w"> </span>^6.14
 </code></pre></div>
 <p>If you cannot install it because of a dependency conflict, or you prefer to install it for your project, we recommend
 you to take a look at <a href="https://github.com/bamarni/composer-bin-plugin">bamarni/composer-bin-plugin</a>. Example:</p>
