@@ -45,7 +45,7 @@ final class AboutCommand extends AbstractCommand implements CommandInterface
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();
 
-        $defaultVersion = '6.14';
+        $defaultVersion = '6.15';
 
         $lines = [
             sprintf(

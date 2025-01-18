@@ -2,7 +2,7 @@
 # Console CLI
 
 ```text
-Database handler for CompatInfo version 6.7.0
+Database handler for CompatInfo version 6.15.0
 
 Usage:
   command [options] [arguments]
@@ -25,11 +25,12 @@ Available commands:
   help         Display help for a command
   list         List commands
  db
+  db:build     Build JSON definition file(s) for an extension
   db:create    Create the database schema
-  db:diagram   Draws ER diagram of the database
   db:init      Load JSON file(s) into database
   db:list      List all references supported in the Database
   db:new       Create the database schema and load its contents from JSON files
   db:polyfill  Add new Polyfill elements
+  db:release   Add new release
   db:show      Show details of a reference supported in the Database
 ```

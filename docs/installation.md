@@ -56,7 +56,7 @@ You can also install application locally to your project with [Phive][phive] and
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <phive xmlns="https://phar.io/phive">
-    <phar name="llaville/php-compatinfo-db" version="^6.14" copy="false" />
+    <phar name="llaville/php-compatinfo-db" version="^6.15" copy="false" />
 </phive>
 ```
 
@@ -70,7 +70,7 @@ The recommended way to install this library is [through composer][composer].
 If you don't know yet what is composer, have a look [on introduction][composer-intro].
 
 ```shell
-composer require bartlett/php-compatinfo-db ^6.14
+composer require bartlett/php-compatinfo-db ^6.15
 ```
 
 If you cannot install it because of a dependency conflict, or you prefer to install it for your project, we recommend
