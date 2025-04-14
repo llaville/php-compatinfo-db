@@ -10,5 +10,11 @@
         "name": "RIGHT",
         "ext_min": "6.0.0RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "OPT_PACK_IGNORE_NUMBERS",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
     }
 ]

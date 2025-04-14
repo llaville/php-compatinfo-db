@@ -496,5 +496,59 @@
         "name": "getex",
         "ext_min": "6.1.0RC1",
         "php_min": "7.2.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "getWithMeta",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "getWithMeta",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "serverName",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "serverVersion",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "expiremember",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "expirememberat",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "expiremember",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "expirememberat",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "getdel",
+        "ext_min": "6.2.0",
+        "php_min": "7.4.0"
     }
 ]
