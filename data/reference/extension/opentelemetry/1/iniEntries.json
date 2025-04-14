@@ -28,5 +28,10 @@
         "name": "opentelemetry.attr_post_handler_function",
         "ext_min": "1.1.0beta1",
         "php_min": "8.0.0"
+    },
+    {
+        "name": "opentelemetry.display_warnings",
+        "ext_min": "1.1.0",
+        "php_min": "8.0.0"
     }
 ]
