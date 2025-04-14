@@ -1,4 +1,5 @@
 {
     "name": "recode",
-    "type": "pecl"
+    "type": "pecl",
+    "deprecated": true
 }
