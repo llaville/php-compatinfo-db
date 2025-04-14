@@ -118,6 +118,6 @@
         "name": "MYSQLI_SET_CHARSET_DIR",
         "ext_min": "5.3.4",
         "php_min": "5.3.4",
-        "php_max": "8.3.17"
+        "php_max": "8.3.19"
     }
 ]
