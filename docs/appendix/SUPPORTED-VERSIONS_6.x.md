@@ -1,6 +1,30 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.16.x
+
+|                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:--------------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.16.0][6.16.0] - 2025-04-14 |               |  8.4.6  | 8.3.20  | 8.2.28  | 8.1.32  |         |         |         |         |         |         |         |
+|      [1.21.0][mongodb-1.21.0] | mongodb       | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.0.0][mongodb-2.0.0] | mongodb       | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|  [1.1.2][opentelemetry-1.1.2] | opentelemetry | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|          [6.2.0][redis-6.2.0] | redis         | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [2.8.0][solr-2.8.0] | solr          | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [3.4.2][xdebug-3.4.2] | xdebug        | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [1.1.5][xmldiff-1.1.5] | xmldiff       | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|          [1.22.5][zip-1.22.5] | zip           | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.16.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.16.0
+[mongodb-1.21.0]: https://pecl.php.net/package/mongodb/1.21.0
+[mongodb-2.0.0]: https://pecl.php.net/package/mongodb/2.0.0
+[opentelemetry-1.1.2]: https://pecl.php.net/package/opentelemetry/1.1.2
+[redis-6.2.0]: https://pecl.php.net/package/redis/6.2.0
+[solr-2.8.0]: https://pecl.php.net/package/solr/2.8.0
+[xdebug-3.4.2]: https://pecl.php.net/package/xdebug/3.4.2
+[xmldiff-1.1.5]: https://pecl.php.net/package/xmldiff/1.1.5
+[zip-1.22.5]: https://pecl.php.net/package/zip/1.22.5
+
 ## Releases 6.15.x
 
 |                       Release | Extension | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
