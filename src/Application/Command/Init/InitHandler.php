@@ -1024,8 +1024,8 @@ final class InitHandler implements CommandHandlerInterface
             'functions'  => ['1'],
             'iniEntries' => ['1'],
             'interfaces' => ['1'],
-            'methods'    => ['1'],
-            'releases'   => ['0', '1'],
+            'methods'    => ['1', '2'],
+            'releases'   => ['0', '1', '2'],
         ];
 
         yield 'msgpack' => [

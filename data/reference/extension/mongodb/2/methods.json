@@ -1,0 +1,44 @@
+[
+    {
+        "class_name": "MongoDB\\BSON\\UTCDateTimeInterface",
+        "name": "toDateTimeImmutable",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "current",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "key",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "next",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "rewind",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\CursorInterface",
+        "name": "valid",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\BulkWriteException",
+        "name": "getWriteResult",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    }
+]
