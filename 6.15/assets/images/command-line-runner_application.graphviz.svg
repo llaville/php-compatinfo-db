@@ -244,10 +244,10 @@
 <text text-anchor="start" x="21.5" y="-1210.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="21.5" y="-1197.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="21.5" y="-1184.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.30&quot; {readOnly}</text>
-<text text-anchor="start" x="21.5" y="-1171.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.31&quot; {readOnly}</text>
-<text text-anchor="start" x="21.5" y="-1158.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.27&quot; {readOnly}</text>
-<text text-anchor="start" x="21.5" y="-1145.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_3 : string = &quot;8\.3\.16&quot; {readOnly}</text>
-<text text-anchor="start" x="21.5" y="-1132.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_4 : string = &quot;8\.4\.3&quot; {readOnly}</text>
+<text text-anchor="start" x="21.5" y="-1171.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.32&quot; {readOnly}</text>
+<text text-anchor="start" x="21.5" y="-1158.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.28&quot; {readOnly}</text>
+<text text-anchor="start" x="21.5" y="-1145.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_3 : string = &quot;8\.3\.20&quot; {readOnly}</text>
+<text text-anchor="start" x="21.5" y="-1132.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_4 : string = &quot;8\.4\.6&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="16.5,-1106 16.5,-1125 745.5,-1125 745.5,-1106 16.5,-1106"/>
 <text text-anchor="start" x="21.5" y="-1113.6" font-family="Verdana" font-size="8.00">– distributionRepository</text>
 <polygon fill="none" stroke="black" points="16.5,-983 16.5,-1106 745.5,-1106 745.5,-983 16.5,-983"/>
@@ -287,10 +287,10 @@
 <text text-anchor="start" x="823" y="-1145.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_3 : string = &quot;7\.3\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="823" y="-1132.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_7_4 : string = &quot;7\.4\.33&quot; {readOnly}</text>
 <text text-anchor="start" x="823" y="-1119.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_0 : string = &quot;8\.0\.30&quot; {readOnly}</text>
-<text text-anchor="start" x="823" y="-1106.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.31&quot; {readOnly}</text>
-<text text-anchor="start" x="823" y="-1093.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.27&quot; {readOnly}</text>
-<text text-anchor="start" x="823" y="-1080.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_3 : string = &quot;8\.3\.16&quot; {readOnly}</text>
-<text text-anchor="start" x="823" y="-1067.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_4 : string = &quot;8\.4\.3&quot; {readOnly}</text>
+<text text-anchor="start" x="823" y="-1106.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_1 : string = &quot;8\.1\.32&quot; {readOnly}</text>
+<text text-anchor="start" x="823" y="-1093.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_2 : string = &quot;8\.2\.28&quot; {readOnly}</text>
+<text text-anchor="start" x="823" y="-1080.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_3 : string = &quot;8\.3\.20&quot; {readOnly}</text>
+<text text-anchor="start" x="823" y="-1067.6" font-family="Verdana" font-size="8.00">+ «static» LATEST_PHP_8_4 : string = &quot;8\.4\.6&quot; {readOnly}</text>
 <polygon fill="none" stroke="black" points="818,-1054 818,-1060 1070,-1060 1070,-1054 818,-1054"/>
 <polygon fill="none" stroke="black" points="818,-1048 818,-1054 1070,-1054 1070,-1048 818,-1048"/>
 </g>

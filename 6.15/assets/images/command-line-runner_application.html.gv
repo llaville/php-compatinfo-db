@@ -155,10 +155,10 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.31" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.27" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.16" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.3" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.32" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.28" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.20" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.6" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">– distributionRepository</td></tr>
@@ -193,10 +193,10 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_7_3 : string = "7\.3\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_7_4 : string = "7\.4\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.31" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.27" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.16" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.3" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.32" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.28" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.20" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.6" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>
     <tr><td></td></tr>
