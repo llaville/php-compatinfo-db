@@ -24,7 +24,7 @@ class SphinxExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        // Constants conditionnaly exists (according to libsphinx version)
+        // Constants conditionally exists (according to libsphinx version)
         self::$optionalconstants = array(
             'SPH_RANK_EXPR',
             'SPH_RANK_FIELDMASK',

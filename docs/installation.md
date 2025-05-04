@@ -25,7 +25,7 @@ without it was initialized (schema created and data loaded), the `diagnose` comm
 ## PHAR
 
 The preferred method of installation is to use the CompatInfoDB PHAR version which can be downloaded from the most recent
-[Github Release][releases]. This method ensures you will not have any dependency conflict issue.
+[GitHub Release][releases]. This method ensures you will not have any dependency conflict issue.
 
 ## Docker
 
