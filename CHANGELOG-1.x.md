@@ -258,7 +258,7 @@ using the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 - Support to PHP 5.6.31
 - New `db:build:ext` command to generate a draft (json format) of each components in one extension.
 - New `db:list` command to see what are extensions supported by the database.
-- New `ExtensionFactory::getExtensions()` method to retrieve all extensions informations (status/versions)
+- New `ExtensionFactory::getExtensions()` method to retrieve all extensions information (status/versions)
 - New `db:show` command to see details of extensions supported by the database.
 
 ### Changed
