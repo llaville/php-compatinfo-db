@@ -19,6 +19,7 @@ use Doctrine\ORM\Tools\Console\Command\InfoCommand;
 use Doctrine\ORM\Tools\Console\Command\MappingDescribeCommand;
 use Doctrine\ORM\Tools\Console\Command\ValidateSchemaCommand;
 
+use Symfony\Bundle\FrameworkBundle\Command\ContainerDebugCommand as ContainerDebugCommandSymfonyFrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand;
 use Symfony\Component\Console\CommandLoader\CommandLoaderInterface;
 use Symfony\Component\Console\Input\InputInterface;
@@ -50,29 +51,35 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->tag('console.command')
     ;
 
-    // Dependency-Injection commands
-    $services->set('console.command.container_debug', ContainerDebugCommand::class)
-        ->tag('console.command')
-    ;
+    if ('prod' !== $containerConfigurator->env()) {
+        // Dependency-Injection commands
+        if (class_exists(ContainerDebugCommandSymfonyFrameworkBundle::class)) {
+            $services->set('console.command.container_debug', ContainerDebugCommand::class)
+                ->tag('console.command')
+            ;
+        }
 
-    // Event-Dispatcher commands
-    $services->set(EventDispatcherDebugCommand::class)
-        ->tag('console.command')
-    ;
+        // Event-Dispatcher commands
+        if (class_exists(EventDispatcherDebugCommand::class)) {
+            $services->set(EventDispatcherDebugCommand::class)
+                ->tag('console.command')
+            ;
+        }
 
-    // Doctrine commands
-    $services->set(RunSqlCommand::class)
-        ->tag('console.command')
-    ;
-    $services->set(InfoCommand::class)
-        ->tag('console.command')
-    ;
-    $services->set(MappingDescribeCommand::class)
-        ->tag('console.command')
-    ;
-    $services->set(ValidateSchemaCommand::class)
-        ->tag('console.command')
-    ;
+        // Doctrine commands
+        $services->set(RunSqlCommand::class)
+            ->tag('console.command')
+        ;
+        $services->set(InfoCommand::class)
+            ->tag('console.command')
+        ;
+        $services->set(MappingDescribeCommand::class)
+            ->tag('console.command')
+        ;
+        $services->set(ValidateSchemaCommand::class)
+            ->tag('console.command')
+        ;
+    }
 
     $services->set(InputInterface::class, Input::class);
     $services->set(OutputInterface::class, Output::class);
