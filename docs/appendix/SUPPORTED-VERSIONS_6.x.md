@@ -1,6 +1,18 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.18.x
+
+|                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:--------------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.18.0][6.18.0] - 2025-05-11 |               |  8.4.7  | 8.3.21  | 8.2.28  | 8.1.32  |         |         |         |         |         |         |         |
+|           [2.8.1][solr-2.8.1] | solr          | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|          [1.22.6][zip-1.22.6] | zip           | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.18.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.18.0
+[solr-2.8.1]: https://pecl.php.net/package/solr/2.8.1
+[zip-1.22.6]: https://pecl.php.net/package/zip/1.22.6
+
 ## Releases 6.17.x
 
 |                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
