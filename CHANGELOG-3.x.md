@@ -240,7 +240,7 @@ See Box issue <https://github.com/box-project/box/issues/576> for info.
 - PHP 8.0.7 support
 - PHP 7.4.20 support
 - ability to display dependency constraints on each extension with the `db:show` command
-- display PHP version of each function parameters with the `db:show <extenion> --functions` command
+- display PHP version of each function parameters with the `db:show <extension> --functions` command
 - summary on `doctor` command (with status code 0: OK, 1:dependency constraint failures, 2:test failures, 3:dependency and test failures)
 
 ### Changed
@@ -258,7 +258,7 @@ See Box issue <https://github.com/box-project/box/issues/576> for info.
 
 - PHP 8.0.6 support
 - PHP 7.4.19 support
-- new `Dependencies` column in `db:show` command output that will display librairies dependency constraints
+- new `Dependencies` column in `db:show` command output that will display libraries dependency constraints
 - new `doctor` command to help to debug issues by checking current installation
 
 ### Changed
@@ -356,7 +356,7 @@ Some other extensions have support limited :
 ### Changed
 
 - Add progress flag on `db:init` command to display a progress bar only on demand (for slow system)
-- Use [PHPStan](https://github.com/phpstan/phpstan/) for static analysis in Github Actions Workflows
+- Use [PHPStan](https://github.com/phpstan/phpstan/) for static analysis in GitHub Actions Workflows
 - Use the `ramsey/composer-install` action to install dependencies
 - APCu reference updated to version 5.1.20 (stable)
 - Ssh2 reference updated to version 1.3.1 (beta)
