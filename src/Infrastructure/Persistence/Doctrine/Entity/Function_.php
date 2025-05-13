@@ -47,7 +47,7 @@ class Function_
     private int $flags;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "functions")]
-    private Extension $extension;
+    private ?Extension $extension;
 
     #[OneToMany(
         mappedBy: "function",
@@ -57,7 +57,7 @@ class Function_
     /**
      * @var Collection<int, FunctionRelationship> $relationships
      */
-    private Collection $relationships;
+    private Collection $relationships;  // @phpstan-ignore doctrine.associationType
 
 
     public function __construct()

@@ -21,10 +21,10 @@ class ConstantRelationship
     use PrimaryIdentifierTrait;
 
     #[ManyToOne(targetEntity: Constant_::class, cascade: ["persist"], inversedBy: "relationships")]
-    private Constant_ $constant;
+    private ?Constant_ $constant;
 
     #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
-    private Dependency $dependency;
+    private ?Dependency $dependency;
 
     public function setConstant(Constant_ $constant): void
     {

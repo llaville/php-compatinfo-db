@@ -7,8 +7,6 @@
  */
 namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 
-use DateTimeImmutable;
-
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -33,7 +31,7 @@ interface HydratorInterface
     /**
      * Extract values from an object.
      *
-     * @return array<string, DateTimeImmutable|string|bool|null>
+     * @return array<string, array<string, string|null>|string|null>
      */
     public function extract(object $object): array;
 }

@@ -26,7 +26,7 @@ class Dependency
     private string $constraintExpression;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "dependencies")]
-    private Extension $extension;
+    private ?Extension $extension;
 
     public function __toString(): string
     {

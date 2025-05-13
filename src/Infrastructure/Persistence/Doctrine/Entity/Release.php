@@ -34,7 +34,7 @@ class Release
     private string $state;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "releases")]
-    private Extension $extension;
+    private ?Extension $extension;
 
     public function __toString(): string
     {

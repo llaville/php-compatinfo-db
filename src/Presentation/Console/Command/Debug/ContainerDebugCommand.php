@@ -46,7 +46,7 @@ final class ContainerDebugCommand extends ContainerDebugCommandSymfonyFrameworkB
         $this->validateInput($input);
 
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
         $kernel = $app->getKernel();
 

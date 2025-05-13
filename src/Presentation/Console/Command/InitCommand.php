@@ -61,7 +61,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
         $relVersion = $input->getArgument('rel_version') ?? null;
 
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
         if (null === $relVersion) {
             $appVersion = $app->getLongVersion();

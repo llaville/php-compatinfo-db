@@ -45,7 +45,7 @@ class Platform
     /**
      * @var Collection<int, Relationship> $relationships
      */
-    private Collection $relationships;
+    private Collection $relationships;  // @phpstan-ignore doctrine.associationType
 
 
     public function __construct()

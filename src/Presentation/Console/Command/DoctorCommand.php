@@ -55,7 +55,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
         $installedVersion = $app->getLongVersion();
 
         // retrieves only extensions installed in your platform

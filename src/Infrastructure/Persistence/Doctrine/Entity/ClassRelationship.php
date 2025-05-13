@@ -21,10 +21,10 @@ class ClassRelationship
     use PrimaryIdentifierTrait;
 
     #[ManyToOne(targetEntity: Class_::class, cascade: ["persist"], inversedBy: "relationships")]
-    private Class_ $class;
+    private ?Class_ $class;
 
     #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
-    private Dependency $dependency;
+    private ?Dependency $dependency;
 
     public function setClass(Class_ $class): void
     {

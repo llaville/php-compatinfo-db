@@ -13,7 +13,6 @@ use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension a
 
 use function array_map;
 use function version_compare;
-use const PHP_VERSION;
 
 /**
  * @since Release 3.0.0
@@ -28,7 +27,7 @@ final class ExtensionHydrator implements HydratorInterface
     }
 
     /**
-     * @inheritDoc
+     * @return array<string, bool|string>
      */
     public function extract(object $object): array
     {

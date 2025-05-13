@@ -100,6 +100,7 @@ trait LibraryVersionProviderTrait
                 }
                 break;
             case 'imagick':
+                // @phpstan-ignore function.alreadyNarrowedType
                 if (method_exists('Imagick', 'getVersion')) {
                     $meta = \Imagick::getVersion();
                     preg_match('/^ImageMagick ([\d.]+)(?:-(\d+))?/', $meta['versionString'], $matches);
@@ -158,6 +159,7 @@ trait LibraryVersionProviderTrait
                 }
                 break;
             case 'sqlite3':
+                // @phpstan-ignore function.alreadyNarrowedType
                 if (method_exists('sqlite3', 'version')) {
                     $meta = \SQLite3::version();
                     $versionText = $meta['versionString'];

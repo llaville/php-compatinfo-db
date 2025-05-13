@@ -23,7 +23,7 @@ final class ConstantHydrator implements HydratorInterface
     use DeprecationHydratorTrait;
 
     /**
-     * @inheritDoc
+     * @return array<string, array<string, string|null>|string|null>
      */
     public function extract(object $object): array
     {

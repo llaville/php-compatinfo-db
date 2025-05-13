@@ -70,7 +70,7 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
         $io = new Style($input, $output);
 
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
         $kernel = $app->getKernel();
 

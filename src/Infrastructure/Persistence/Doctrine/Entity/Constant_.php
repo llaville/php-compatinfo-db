@@ -34,7 +34,7 @@ class Constant_
     private ?string $declaringClass;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "constants")]
-    private Extension $extension;
+    private ?Extension $extension;
 
     #[OneToMany(
         mappedBy: "constant",
@@ -44,7 +44,7 @@ class Constant_
     /**
      * @var Collection<int, ConstantRelationship> $relationships
      */
-    private Collection $relationships;
+    private Collection $relationships;  // @phpstan-ignore doctrine.associationType
 
 
     public function __construct()

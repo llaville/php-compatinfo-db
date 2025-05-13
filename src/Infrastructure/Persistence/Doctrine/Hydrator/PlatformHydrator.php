@@ -10,6 +10,8 @@ namespace Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Hydrator;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Platform as Entity;
 
+use DateTimeImmutable;
+
 /**
  * @since Release 3.0.0
  * @author Laurent Laville
@@ -19,7 +21,7 @@ final class PlatformHydrator implements HydratorInterface
     use HydrationArraysTrait;
 
     /**
-     * @inheritDoc
+     * @return array<string, DateTimeImmutable|string>
      */
     public function extract(object $object): array
     {

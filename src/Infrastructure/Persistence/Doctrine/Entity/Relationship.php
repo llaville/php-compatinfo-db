@@ -21,10 +21,10 @@ class Relationship
     use PrimaryIdentifierTrait;
 
     #[ManyToOne(targetEntity: Platform::class, cascade: ["persist"], inversedBy: "relationships")]
-    private Platform $platform;
+    private ?Platform $platform;
 
     #[ManyToOne(targetEntity: Extension::class, cascade: ["persist"])]
-    private Extension $extension;
+    private ?Extension $extension;
 
     public function setPlatform(Platform $platform): void
     {

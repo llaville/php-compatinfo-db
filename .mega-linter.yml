@@ -17,3 +17,5 @@ DISABLE_LINTERS:
     - PHP_PHPCSFIXER
     - YAML_V8R
 PRINT_ALL_FILES: false
+PHP_PHPSTAN_CLI_EXECUTABLE: "vendor/bin/phpstan" # force to use PHPStan locally version when additional extensions are required
+PHP_PHPSTAN_DISABLE_ERRORS: false # project is now compatible PHPStan 2.x

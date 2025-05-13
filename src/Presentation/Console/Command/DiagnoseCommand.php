@@ -64,7 +64,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
         $projectRequirements = $this->queryBus->query($diagnoseQuery);
 
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
         $io = new Style($input, $output);
 

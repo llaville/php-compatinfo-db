@@ -25,7 +25,7 @@ final class FunctionHydrator implements HydratorInterface
     use DeprecationHydratorTrait;
 
     /**
-     * @inheritDoc
+     * @return array<string, array<string|null>|bool|string|null>
      */
     public function extract(object $object): array
     {

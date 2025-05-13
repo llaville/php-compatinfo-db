@@ -57,7 +57,7 @@ final class BuildHandler implements CommandHandlerInterface
             mkdir($extDir, 0755, true);
         }
 
-        if (is_array($classes)) {
+        if (!empty($classes)) {
             // CLASSES
             $filename = $extDir . DIRECTORY_SEPARATOR . 'classes.json';
             if ($output->isDebug()) {

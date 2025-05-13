@@ -70,7 +70,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
         $filters['deprecated'] = $input->getOption('deprecated');
 
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
         $listQuery = new ListQuery(
             $app->getLongVersion(),

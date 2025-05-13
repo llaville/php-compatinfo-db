@@ -48,7 +48,7 @@ class Extension
     /**
      * @var Collection<int, Release> $releases
      */
-    private Collection $releases;
+    private Collection $releases;   // @phpstan-ignore doctrine.associationType
 
     #[OneToMany(
         mappedBy: "extension",
@@ -58,7 +58,7 @@ class Extension
     /**
      * @var Collection<int, Dependency> $dependencies
      */
-    private Collection $dependencies;
+    private Collection $dependencies;   // @phpstan-ignore doctrine.associationType
 
     #[OneToMany(
         mappedBy: "extension",
@@ -68,7 +68,7 @@ class Extension
     /**
      * @var Collection<int, IniEntry> $iniEntries
      */
-    private Collection $iniEntries;
+    private Collection $iniEntries; // @phpstan-ignore doctrine.associationType
 
     #[OneToMany(
         mappedBy:"extension",
@@ -78,7 +78,7 @@ class Extension
     /**
      * @var Collection<int, Constant_> $constants
      */
-    private Collection $constants;
+    private Collection $constants;  // @phpstan-ignore doctrine.associationType
 
     #[OneToMany(
         mappedBy: "extension",
@@ -88,7 +88,7 @@ class Extension
     /**
      * @var Collection<int, Function_> $functions
      */
-    private Collection $functions;
+    private Collection $functions;  // @phpstan-ignore doctrine.associationType
 
     #[OneToMany(
         mappedBy: "extension",
@@ -98,7 +98,7 @@ class Extension
     /**
      * @var Collection<int, Class_> $relationships
      */
-    private Collection $classes;
+    private Collection $classes;    // @phpstan-ignore doctrine.associationType
 
 
     public function __construct()

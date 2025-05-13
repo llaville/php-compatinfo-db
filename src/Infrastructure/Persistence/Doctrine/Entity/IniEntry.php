@@ -30,7 +30,7 @@ class IniEntry
     private string $name;
 
     #[ManyToOne(targetEntity: Extension::class, inversedBy: "iniEntries")]
-    private Extension $extension;
+    private ?Extension $extension;
 
     #[OneToMany(
         mappedBy: "ini",
@@ -40,7 +40,7 @@ class IniEntry
     /**
      * @var Collection<int, IniRelationship> $relationships
      */
-    private Collection $relationships;
+    private Collection $relationships;  // @phpstan-ignore doctrine.associationType
 
 
     public function __construct()

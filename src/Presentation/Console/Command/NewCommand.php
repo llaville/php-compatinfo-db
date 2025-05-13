@@ -81,7 +81,7 @@ class NewCommand extends AbstractCommand implements CommandInterface
         }
 
         /** @var ApplicationInterface $app */
-        $app = $this->getApplication();
+        $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
         $io->writeln('> Loading database ...');
 

@@ -21,7 +21,7 @@ final class ReleaseHydrator implements HydratorInterface
     use HydrationArraysTrait;
 
     /**
-     * @inheritDoc
+     * @return array<string, DateTimeImmutable|string|null>
      */
     public function extract(object $object): array
     {
