@@ -48,7 +48,7 @@ trait PrintDiagnose
         $io->text('');
         $io->text('> Checking ' . $appName . ' requirements:');
 
-        $messages = ['ko' => [], 'error' => []];
+        $messages = ['ok' => [], 'ko' => [], 'error' => []];
 
         foreach ($requirements->getRequirements() as $requirement) {
             if ($requirement->isFulfilled()) {
