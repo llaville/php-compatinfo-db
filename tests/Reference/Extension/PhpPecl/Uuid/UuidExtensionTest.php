@@ -9,6 +9,8 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpPecl\Uuid;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
+use function array_push;
+
 /**
  * Unit tests for PHP_CompatInfo_Db, uuid extension Reference
  *
@@ -18,4 +20,20 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
  */
 class UuidExtensionTest extends GenericTestCase
 {
+    /**
+     * @inheritDoc
+     */
+    public static function setUpBeforeClass(): void
+    {
+        // ifdef UUID_TYPE_DCE_TIME_V6
+        array_push(self::$optionalconstants, 'UUID_TYPE_TIME_V6');
+
+        // ifdef UUID_TYPE_DCE_TIME_V7
+        array_push(self::$optionalconstants, 'UUID_TYPE_TIME_V7');
+
+        // ifdef UUID_TYPE_DCE_VENDOR
+        array_push(self::$optionalconstants, 'UUID_TYPE_VENDOR');
+
+        parent::setUpBeforeClass();
+    }
 }
