@@ -4,5 +4,11 @@
         "rel_date": "2025-04-10",
         "rel_state": "stable",
         "php_min": "8.1.0"
+    },
+    {
+        "rel_version": "2.1.0",
+        "rel_date": "2025-05-23",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
     }
 ]

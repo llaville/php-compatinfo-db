@@ -40,5 +40,137 @@
         "name": "getWriteResult",
         "ext_min": "2.0.0",
         "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\BulkWriteCommandException",
+        "name": "getErrorReply",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\BulkWriteCommandException",
+        "name": "getPartialResult",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\BulkWriteCommandException",
+        "name": "getWriteConcernErrors",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Exception\\BulkWriteCommandException",
+        "name": "getWriteErrors",
+        "ext_min": "2.0.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "__construct",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "deleteMany",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "deleteOne",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "insertOne",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "replaceOne",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "updateMany",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommand",
+        "name": "updateOne",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getDeletedCount",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getDeleteResults",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getInsertedCount",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getInsertResults",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getMatchedCount",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getModifiedCount",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getUpdateResults",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "getUpsertedCount",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\BulkWriteCommandResult",
+        "name": "isAcknowledged",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Manager",
+        "name": "executeBulkWriteCommand",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\Driver\\Server",
+        "name": "executeBulkWriteCommand",
+        "ext_min": "2.1.0",
+        "php_min": "8.1.0"
     }
 ]
