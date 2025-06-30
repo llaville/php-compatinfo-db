@@ -33,14 +33,14 @@
         "class_name": "MongoDB\\BSON\\Binary",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Binary",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -109,14 +109,14 @@
         "class_name": "MongoDB\\BSON\\DBPointer",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\DBPointer",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -160,14 +160,14 @@
         "class_name": "MongoDB\\BSON\\Decimal128",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Decimal128",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -205,14 +205,14 @@
         "class_name": "MongoDB\\BSON\\Document",
         "name": "serialize",
         "ext_min": "1.16.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Document",
         "name": "unserialize",
         "ext_min": "1.16.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -307,14 +307,14 @@
         "class_name": "MongoDB\\BSON\\Int64",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Int64",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -395,14 +395,14 @@
         "class_name": "MongoDB\\BSON\\Javascript",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Javascript",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -464,14 +464,14 @@
         "class_name": "MongoDB\\BSON\\MaxKey",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\MaxKey",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -503,14 +503,14 @@
         "class_name": "MongoDB\\BSON\\MinKey",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\MinKey",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -548,14 +548,14 @@
         "class_name": "MongoDB\\BSON\\ObjectId",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\ObjectId",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -611,14 +611,14 @@
         "class_name": "MongoDB\\BSON\\PackedArray",
         "name": "serialize",
         "ext_min": "1.16.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\PackedArray",
         "name": "unserialize",
         "ext_min": "1.16.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -712,14 +712,14 @@
         "class_name": "MongoDB\\BSON\\Regex",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Regex",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -793,14 +793,14 @@
         "class_name": "MongoDB\\BSON\\Symbol",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Symbol",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -856,14 +856,14 @@
         "class_name": "MongoDB\\BSON\\Timestamp",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Timestamp",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -919,14 +919,14 @@
         "class_name": "MongoDB\\BSON\\UTCDateTime",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\UTCDateTime",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -988,14 +988,14 @@
         "class_name": "MongoDB\\BSON\\Undefined",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\BSON\\Undefined",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -1150,42 +1150,42 @@
         "class_name": "MongoDB\\Driver\\CursorId",
         "name": "__toString",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\CursorId",
         "name": "__serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\CursorId",
         "name": "__unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\CursorId",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\CursorId",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\CursorId",
         "name": "__set_state",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0",
         "static": true
     },
@@ -1302,7 +1302,7 @@
         "class_name": "MongoDB\\Driver\\Exception\\WriteException",
         "name": "getWriteResult",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -1418,7 +1418,7 @@
         "class_name": "MongoDB\\Driver\\Monitoring\\CommandFailedEvent",
         "name": "getServer",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -1498,7 +1498,7 @@
         "class_name": "MongoDB\\Driver\\Monitoring\\CommandStartedEvent",
         "name": "getServer",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -1584,7 +1584,7 @@
         "class_name": "MongoDB\\Driver\\Monitoring\\CommandSucceededEvent",
         "name": "getServer",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -1986,14 +1986,14 @@
         "class_name": "MongoDB\\Driver\\ReadConcern",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\ReadConcern",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -2043,14 +2043,14 @@
         "class_name": "MongoDB\\Driver\\ReadPreference",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\ReadPreference",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -2075,7 +2075,7 @@
         "class_name": "MongoDB\\Driver\\ReadPreference",
         "name": "getMode",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -2234,14 +2234,14 @@
         "class_name": "MongoDB\\Driver\\ServerApi",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\ServerApi",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
@@ -2444,14 +2444,14 @@
         "class_name": "MongoDB\\Driver\\WriteConcern",
         "name": "serialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
         "class_name": "MongoDB\\Driver\\WriteConcern",
         "name": "unserialize",
         "ext_min": "1.15.0",
-        "ext_max": "1.21.0",
+        "ext_max": "1.21.1",
         "php_min": "7.2.0"
     },
     {
