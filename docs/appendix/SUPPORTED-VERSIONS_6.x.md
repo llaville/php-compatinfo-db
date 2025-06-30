@@ -1,6 +1,22 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.19.x
+
+|                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:--------------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.19.0][6.19.0] - 2025-06-30 |               |  8.4.8  | 8.3.22  | 8.2.28  | 8.1.32  |         |         |         |         |         |         |         |
+|      [1.21.1][mongodb-1.21.1] | mongodb       | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.1.1][mongodb-2.1.1] | mongodb       | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|  [1.1.3][opentelemetry-1.1.3] | opentelemetry | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [3.4.4][xdebug-3.4.4] | xdebug        | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.19.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.19.0
+[mongodb-1.21.1]: https://pecl.php.net/package/mongodb/1.21.1
+[mongodb-2.1.1]: https://pecl.php.net/package/mongodb/2.1.1
+[opentelemetry-1.1.3]: https://pecl.php.net/package/opentelemetry/1.1.3
+[xdebug-3.4.4]: https://pecl.php.net/package/xdebug/3.4.4
+
 ## Releases 6.18.x
 
 |                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |

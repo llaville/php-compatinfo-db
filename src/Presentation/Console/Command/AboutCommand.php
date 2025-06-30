@@ -46,7 +46,7 @@ final class AboutCommand extends AbstractCommand implements CommandInterface
         /** @var ApplicationInterface $app */
         $app = $this->getApplication();  // @phpstan-ignore varTag.nativeType
 
-        $defaultVersion = '6.18';
+        $defaultVersion = '6.19';
 
         $lines = [
             sprintf(
