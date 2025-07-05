@@ -1,6 +1,14 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.20.x
+
+|                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:--------------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.20.0][6.20.0] - 2025-07-05 |               | 8.4.10  | 8.3.23  | 8.2.29  | 8.1.33  |         |         |         |         |         |         |         |
+
+[6.20.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.20.0
+
 ## Releases 6.19.x
 
 |                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |

@@ -2,7 +2,7 @@
 # Console CLI
 
 ```text
-Database handler for CompatInfo version 6.15.0
+Database handler for CompatInfo version 6.20.0
 
 Usage:
   command [options] [arguments]
