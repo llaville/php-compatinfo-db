@@ -800,7 +800,7 @@ docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/llaville/php-c
 <p>You can also install application locally to your project with <a href="https://github.com/phar-io/phive">Phive</a> and configuration file <code>.phive/phars.xml</code></p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;phive</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;https://phar.io/phive&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;phar</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;llaville/php-compatinfo-db&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;^6.19&quot;</span><span class="w"> </span><span class="na">copy=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;phar</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;llaville/php-compatinfo-db&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;^6.20&quot;</span><span class="w"> </span><span class="na">copy=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/phive&gt;</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>phive<span class="w"> </span>install<span class="w"> </span>--force-accept-unsigned
@@ -808,7 +808,7 @@ docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/llaville/php-c
 <h2 id="composer">Composer</h2>
 <p>The recommended way to install this library is <a href="https://getcomposer.org">through composer</a>.
 If you don't know yet what is composer, have a look <a href="http://getcomposer.org/doc/00-intro.md">on introduction</a>.</p>
-<div class="highlight"><pre><span></span><code>composer<span class="w"> </span>require<span class="w"> </span>bartlett/php-compatinfo-db<span class="w"> </span>^6.19
+<div class="highlight"><pre><span></span><code>composer<span class="w"> </span>require<span class="w"> </span>bartlett/php-compatinfo-db<span class="w"> </span>^6.20
 </code></pre></div>
 <p>If you cannot install it because of a dependency conflict, or you prefer to install it for your project, we recommend
 you to take a look at <a href="https://github.com/bamarni/composer-bin-plugin">bamarni/composer-bin-plugin</a>. Example:</p>
@@ -819,7 +819,7 @@ vendor/bin/compatinfo-db
 </code></pre></div>
 <h2 id="git">Git</h2>
 <p>The PHP CompatInfoDB can be directly used from <a href="https://github.com/llaville/php-compatinfo-db.git">GitHub</a> by cloning the repository into a directory of your choice.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">6</span>.19<span class="w"> </span>https://github.com/llaville/php-compatinfo-db.git
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">6</span>.20<span class="w"> </span>https://github.com/llaville/php-compatinfo-db.git
 </code></pre></div>
 <h2 id="configuring-the-database">Configuring the Database</h2>
 <p>The database connection information is stored as an environment variable called <code>DATABASE_URL</code>.</p>
