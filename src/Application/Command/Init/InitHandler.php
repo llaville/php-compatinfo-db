@@ -326,7 +326,7 @@ final class InitHandler implements CommandHandlerInterface
             'classes'    => ['5'],
             'constants'  => ['4'],
             'functions'  => ['4', '5'],
-            'iniEntries' => ['4'],
+            'iniEntries' => ['4', '5'],
             'methods'    => ['5'],
             'releases'   => ['4', '5'],
         ];

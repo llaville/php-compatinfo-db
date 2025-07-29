@@ -1,0 +1,7 @@
+[
+    {
+        "name": "apc.mmap_hugepage_size",
+        "ext_min": "5.1.25",
+        "php_min": "7.0.0"
+    }
+]
