@@ -2,30 +2,26 @@
 name: Unit Tests
 
 on:
-    pull_request:
-        branches: [master]
-        paths-ignore:
-            - 'docs/**'
     workflow_call:
-    workflow_dispatch:
+        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_callinputs
         inputs:
+            # Ubuntu 20.04 runner no more supported (see https://github.com/actions/runner-images/issues/11101)
+            operating-system:
+                description: "OS name and version runtime"
+                required: false
+                default: "ubuntu-latest"
+                type: string
             composer-options:
                 description: "Composer options for ramsey/composer-install GitHub Action"
                 required: false
                 default: "--prefer-dist --no-scripts"
                 type: string
 
+permissions:
+    contents: read
+
 jobs:
-    lint_files:
-        uses: llaville/.github/.github/workflows/mega-linter.yml@master
-        with:
-            repository: ${{ github.repository }}
-            composer-options: ${{ inputs.composer-options }}
-            php-version: "8.1"
-
     unit_tests:
-        needs: lint_files
-
         runs-on: ${{ matrix.os }}
 
         strategy:
@@ -33,36 +29,37 @@ jobs:
             matrix:
                 include:
                     -
-                        os: ubuntu-22.04  # Ubuntu 20.04 runner no more supported (see https://github.com/actions/runner-images/issues/11101)
+                        os: ${{ inputs.operating-system }}
                         php: 8.1
                         extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mbstring,memcache,memcached,mongodb,msgpack,mysqli,oauth,oci8,opcache,openssl,opentelemetry,pcntl,pcre,pdo,pgsql,phar,posix,raphf,pecl_http,readline,redis,reflection,session,shmop,simplexml,sockets,solr,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xml,xmldiff,xmlreader,xmlwriter,xpass,xsl,yac,zip,zlib
-                        continue-on-error: false
+                        tools: phpunit:10.5
                     -
-                        os: ubuntu-22.04
+                        os: ${{ inputs.operating-system }}
                         php: 8.2
                         extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mbstring,memcache,memcached,mongodb,msgpack,mysqli,oauth,oci8,opcache,openssl,opentelemetry,pcntl,pcre,pdo,pgsql,phar,posix,random,raphf,pecl_http,readline,redis,reflection,session,shmop,simplexml,sockets,solr,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xml,xmldiff,xmlreader,xmlwriter,xpass,xsl,yac,zip,zlib
-                        continue-on-error: false
+                        tools: phpunit:10.5
                     -
-                        os: ubuntu-22.04
+                        os: ${{ inputs.operating-system }}
                         php: 8.3
                         extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mbstring,memcache,memcached,mongodb,msgpack,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,random,raphf,pecl_http,readline,redis,reflection,session,shmop,simplexml,sockets,solr,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xml,xmldiff,xmlreader,xmlwriter,xpass,xsl,yac,zip,zlib
-                        continue-on-error: false
+                        tools: phpunit:10.5
                     -
                         os: ubuntu-22.04
                         php: 8.4
                         extensions: amqp,apcu,ast,bcmath,bz2,calendar,core,ctype,curl,date,dom,enchant,exif,fileinfo,filter,ftp,gd,gettext,gmp,hash,iconv,igbinary,imagick,imap,intl,json,ldap,libxml,lzf,mbstring,memcache,memcached,mongodb,msgpack,mysqli,oauth,oci8,opcache,openssl,pcntl,pcre,pdo,pgsql,phar,posix,random,raphf,pecl_http,readline,redis,reflection,session,shmop,simplexml,sockets,solr,spl,sqlite3,ssh2-beta,standard,sysvmsg,sysvsem,sysvshm,tokenizer,uuid,xdebug,xhprof,xml,xmldiff,xmlreader,xmlwriter,xpass,xsl,yac,zip,zlib
-                        continue-on-error: false
-
-        name: Test DB References
+                        tools: phpunit:10.5
 
         env:
-            APP_ENV: tests
+            APP_ENV: dev  # see explains at https://github.com/llaville/php-compatinfo-db/issues/101
             DATABASE_URL: "sqlite:///%kernel.cache_dir%/compatinfo-db.sqlite"
 
         steps:
             -   # https://github.com/actions/checkout
                 name: Checkout
-                uses: actions/checkout@v4
+                uses: actions/checkout@v4.2.2
+                with:
+                    # Make sure the value of GITHUB_TOKEN will not be persisted in repo's config
+                    persist-credentials: false
 
             -
                 name: Setup Libraries
@@ -75,7 +72,7 @@ jobs:
             -   # https://github.com/shivammathur/cache-extensions
                 name: Setup cache environment
                 id: extcache
-                uses: shivammathur/cache-extensions@v1
+                uses: shivammathur/cache-extensions@1.12.0
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
@@ -83,7 +80,7 @@ jobs:
 
             -   # https://github.com/actions/cache
                 name: Cache extensions
-                uses: actions/cache@v4
+                uses: actions/cache@v4.2.3
                 with:
                     path: ${{ steps.extcache.outputs.dir }}
                     key: ${{ steps.extcache.outputs.key }}
@@ -91,30 +88,30 @@ jobs:
 
             -   # https://github.com/shivammathur/setup-php
                 name: Setup PHP runtime
-                uses: shivammathur/setup-php@v2
+                uses: shivammathur/setup-php@2.35.2
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
+                    tools: ${{ matrix.tools }}
 
             -   # https://github.com/ramsey/composer-install
                 name: Install Composer dependencies
-                uses: ramsey/composer-install@v3
+                uses: ramsey/composer-install@3.1.1
                 with:
                     dependency-versions: "highest"
                     composer-options: ${{ inputs.composer-options }}
 
-            -
+            -   # https://github.com/llaville/php-compatinfo-db
                 name: Build Database
                 run: |
                     bin/compatinfo-db db:new --ansi
 
-            -
+            -   # https://github.com/llaville/php-compatinfo-db
                 name: Check Database
                 run: |
                     bin/compatinfo-db diagnose --ansi
                     bin/compatinfo-db db:list --installed --ansi
 
-            -   # https://github.com/sebastianbergmann/phpunit/tree/10.5
-                name: Unit tests with PHPUnit 10
-                run: vendor/bin/phpunit --testdox --do-not-cache-result --no-progress
-                continue-on-error: ${{ matrix.continue-on-error }}
+            -   # https://github.com/sebastianbergmann/phpunit
+                name: Unit tests with PHPUnit
+                run: phpunit --group features,large,reference,regression,default --do-not-cache-result --no-progress
