@@ -1,6 +1,20 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.21.x
+
+|                       Release | Extension | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.21.0][6.21.0] - 2025-08-07 |           | 8.4.11  | 8.3.24  | 8.2.29  | 8.1.33  |         |         |         |         |         |         |         |
+|         [5.1.26][APCu-5.1.26] | apcu      | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [3.4.5][xdebug-3.4.5] | xdebug    | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [2.2.5][yaml-2.2.5] | yaml      | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.21.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.21.0
+[APCu-5.1.26]: https://pecl.php.net/package/APCu/5.1.26
+[xdebug-3.4.5]: https://pecl.php.net/package/xdebug/3.4.5
+[yaml-2.2.5]: https://pecl.php.net/package/yaml/2.2.5
+
 ## Releases 6.20.x
 
 |                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
