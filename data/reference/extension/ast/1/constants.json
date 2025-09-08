@@ -212,5 +212,29 @@
         "name": "ast\\AST_PROPERTY_HOOK_SHORT_BODY",
         "ext_min": "1.1.2",
         "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_PUBLIC_SET",
+        "ext_min": "1.1.3",
+        "ext_max": "",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_PROTECTED_SET",
+        "ext_min": "1.1.3",
+        "ext_max": "",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\MODIFIER_PRIVATE_SET",
+        "ext_min": "1.1.3",
+        "ext_max": "",
+        "php_min": "7.2.0"
+    },
+    {
+        "name": "ast\\flags\\BINARY_PIPE",
+        "ext_min": "1.1.3",
+        "ext_max": "",
+        "php_min": "7.2.0"
     }
 ]
