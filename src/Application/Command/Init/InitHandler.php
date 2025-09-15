@@ -1378,7 +1378,7 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'rdkafka' => [
             'classes' => ['1', '4'],
-            'constants' => ['1', '5'],
+            'constants' => ['1', '5', '6'],
             'functions' => ['1', '5'],
             'methods' => ['1', '3', '4', '5', '6'],
             'releases' => ['1', '2', '3', '4', '5', '6'],
