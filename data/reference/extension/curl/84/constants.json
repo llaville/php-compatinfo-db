@@ -86,5 +86,16 @@
                 "constraint": ">=8.10.0"
             }
         ]
+    },
+    {
+        "name": "CURLOPT_TCP_KEEPCNT",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.9.0"
+            }
+        ]
     }
 ]
