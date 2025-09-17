@@ -52,5 +52,41 @@
                 "constraint": ">=73"
             }
         ]
+    },
+    {
+        "class_name": "IntlChar",
+        "name": "PROPERTY_IDS_UNARY_OPERATOR",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=74"
+            }
+        ]
+    },
+    {
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ID_COMPAT_MATH_START",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=74"
+            }
+        ]
+    },
+    {
+        "class_name": "IntlChar",
+        "name": "PROPERTY_ID_COMPAT_MATH_CONTINUE",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=74"
+            }
+        ]
     }
 ]

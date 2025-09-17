@@ -3,5 +3,16 @@
         "name": "grapheme_str_split",
         "ext_min": "8.4.0alpha1",
         "php_min": "8.4.0alpha1"
+    },
+    {
+        "name": "intltz_get_iana_id",
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=74"
+            }
+        ]
     }
 ]

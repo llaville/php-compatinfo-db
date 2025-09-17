@@ -10,5 +10,18 @@
         "name": "setAllowedChars",
         "ext_min": "8.4.0alpha3",
         "php_min": "8.4.0alpha3"
+    },
+    {
+        "class_name": "IntlTimeZone",
+        "name": "getIanaID",
+        "static": true,
+        "ext_min": "8.4.0RC1",
+        "php_min": "8.4.0RC1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=74"
+            }
+        ]
     }
 ]
