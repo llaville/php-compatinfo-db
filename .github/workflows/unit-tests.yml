@@ -9,7 +9,7 @@ on:
             operating-system:
                 description: "OS name and version runtime"
                 required: false
-                default: "ubuntu-latest"
+                default: "ubuntu-22.04"
                 type: string
             composer-options:
                 description: "Composer options for ramsey/composer-install GitHub Action"
