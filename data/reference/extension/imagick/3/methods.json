@@ -8131,5 +8131,113 @@
                 "constraint": ">6.2.8"
             }
         ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "interpolativeResizeImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "levelImageColors",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "levelizeImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "orderedDitherImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "whiteBalanceImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "channelFxImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "complexImages",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "colorThresholdImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "borderImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "borderImageWithComposite",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "frameImageWithComposite",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "cannyEdgeImage",
+        "ext_min": "3.6.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0.9"
+            }
+        ]
+    },
+    {
+        "class_name": "Imagick",
+        "name": "addNoiseImageWithAttenuate",
+        "ext_min": "3.7.0RC1",
+        "php_min": "5.4.0"
+    },
+    {
+        "class_name": "Imagick",
+        "name": "clutImageWithInterpolate",
+        "ext_min": "3.8.0RC1",
+        "php_min": "5.4.0",
+        "dependencies": [
+            {
+                "name": "imagick",
+                "constraint": ">=7.0"
+            }
+        ]
     }
 ]

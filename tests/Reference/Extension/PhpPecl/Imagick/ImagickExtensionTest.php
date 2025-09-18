@@ -47,6 +47,17 @@ class ImagickExtensionTest extends GenericTestCase
             'Imagick::setExtract',              // if IM_HAVE_IMAGICK_SET_EXTRACT
             'Imagick::setInterpolateMethod',    // if IM_HAVE_IMAGICK_SET_INTERPOLATE_METHOD
             'Imagick::setOrientation',          // if IM_HAVE_IMAGICK_SET_ORIENTATION
+            'Imagick::setSeed',                 // if IM_HAVE_IMAGICK_SETSEED
+            'Imagick::addNoiseImageWithAttenuate',  // if IM_HAVE_IMAGICK_ADD_NOISE_WITH_ATTENUATE
+            'Imagick::claheImage',              // if IM_HAVE_IMAGICK_CLAHEIMAGE
+            'Imagick::channelFxImage',          // if IM_HAVE_IMAGICK_CHANNELFXIMAGE
+            'Imagick::colorThresholdImage',     // if IM_HAVE_IMAGICK_COLORTHRESHOLDIMAGE
+            'Imagick::complexImages',           // if IM_HAVE_IMAGICK_COMPLEXIMAGES
+            'Imagick::interpolativeResizeImage',// if IM_HAVE_IMAGICK_INTERPOLATIVERESIZEIMAGE
+            'Imagick::levelImageColors',        // if IM_HAVE_IMAGICK_LEVELIMAGECOLORS
+            'Imagick::levelizeImage',           // if IM_HAVE_IMAGICK_LEVELIZEIMAGE
+            'Imagick::orderedDitherImage',      // if IM_HAVE_IMAGICK_ORDEREDDITHERIMAGE
+            'Imagick::whiteBalanceImage',       // if IM_HAVE_IMAGICK_WHITEBALANCEIMAGE
         ];
 
         parent::setUpBeforeClass();
