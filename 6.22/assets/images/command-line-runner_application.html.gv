@@ -157,8 +157,8 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.29" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.24" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.11" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.25" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.12" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td><table border="0" cellspacing="0" cellpadding="2">
     <tr><td align="left">– distributionRepository</td></tr>
@@ -195,8 +195,8 @@ digraph {
     <tr><td align="left">+ «static» LATEST_PHP_8_0 : string = "8\.0\.30" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_1 : string = "8\.1\.33" {readOnly}</td></tr>
     <tr><td align="left">+ «static» LATEST_PHP_8_2 : string = "8\.2\.29" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.24" {readOnly}</td></tr>
-    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.11" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_3 : string = "8\.3\.25" {readOnly}</td></tr>
+    <tr><td align="left">+ «static» LATEST_PHP_8_4 : string = "8\.4\.12" {readOnly}</td></tr>
 </table></td></tr>
     <tr><td></td></tr>
     <tr><td></td></tr>
