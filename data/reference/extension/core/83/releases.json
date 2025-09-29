@@ -214,5 +214,11 @@
         "rel_date": "2025-08-28",
         "rel_state": "stable",
         "php_min": "8.3.25"
+    },
+    {
+        "rel_version": "8.3.26",
+        "rel_date": "2025-09-25",
+        "rel_state": "stable",
+        "php_min": "8.3.26"
     }
 ]
