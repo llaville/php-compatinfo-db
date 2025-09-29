@@ -508,5 +508,11 @@
         "rel_date": "2025-05-07",
         "rel_state": "stable",
         "php_min": "5.6.0"
+    },
+    {
+        "rel_version": "1.22.7",
+        "rel_date": "2025-09-25",
+        "rel_state": "stable",
+        "php_min": "5.6.0"
     }
 ]
