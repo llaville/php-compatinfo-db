@@ -83,3 +83,4 @@ jobs:
                     # DISABLE: COPYPASTE,SPELL # Uncomment to disable copy-paste and spell checks
                     #LOG_LEVEL: INFO
                     #TEXT_REPORTER: false
+                    PHP_PHPSTAN_CLI_EXECUTABLE: ${{ github.workspace }}/vendor/bin/phpstan
