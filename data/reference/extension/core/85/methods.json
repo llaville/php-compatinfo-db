@@ -5,5 +5,11 @@
         "static": true,
         "ext_min": "8.5.0alpha3",
         "php_min": "8.5.0alpha3"
+    },
+    {
+        "class_name": "NoDiscard",
+        "name": "__construct",
+        "ext_min": "8.5.0alpha3",
+        "php_min": "8.5.0alpha3"
     }
 ]
