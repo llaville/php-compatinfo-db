@@ -5,6 +5,11 @@
         "php_min": "8.5.0alpha1"
     },
     {
+        "name": "PHP_BUILD_PROVIDER",
+        "ext_min": "8.5.0alpha3",
+        "php_min": "8.5.0alpha3"
+    },
+    {
         "name": "ZEND_VM_KIND",
         "ext_min": "8.5.0beta2",
         "php_min": "8.5.0beta2"
