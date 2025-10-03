@@ -1,5 +1,10 @@
 [
     {
+        "name": "max_memory_limit",
+        "ext_min": "8.5.0beta1",
+        "php_min": "8.5.0beta1"
+    },
+    {
         "name": "mail.cr_lf_mode",
         "ext_min": "8.5.0beta3",
         "php_min": "8.5.0beta3"
