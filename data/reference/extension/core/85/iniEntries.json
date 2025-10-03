@@ -1,5 +1,10 @@
 [
     {
+        "name": "fatal_error_backtraces",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
         "name": "max_memory_limit",
         "ext_min": "8.5.0beta1",
         "php_min": "8.5.0beta1"
