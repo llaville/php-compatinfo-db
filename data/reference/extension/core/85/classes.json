@@ -1,0 +1,7 @@
+[
+    {
+        "name": "NoDiscard",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    }
+]
