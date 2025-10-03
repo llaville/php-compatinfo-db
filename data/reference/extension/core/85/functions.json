@@ -1,5 +1,15 @@
 [
     {
+        "name": "get_error_handler",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "get_exception_handler",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
         "name": "clone",
         "ext_min": "8.5.0alpha3",
         "php_min": "8.5.0alpha3"
