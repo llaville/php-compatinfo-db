@@ -46,7 +46,7 @@ final class InitHandler implements CommandHandlerInterface
     private const RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS = 110;
     private const RETURN_CODE_DATABASE_READONLY = 120;
     private const PHP_RELEASES_7 = ['70', '71', '72', '73', '74'];
-    private const PHP_RELEASES_8 = ['80', '81', '82', '83', '84'];
+    private const PHP_RELEASES_8 = ['80', '81', '82', '83', '84', '85'];
 
     public function __construct(
         private readonly JsonFileHandler $jsonFileHandler,
@@ -388,31 +388,31 @@ final class InitHandler implements CommandHandlerInterface
                 '40',
                 '50', '51', '53', '55',
                 '70', '71', '73', '74',
-                '80', '81', '82', '83', '84',
+                '80', '81', '82', '83', '84', '85',
             ],
-            'const' => ['80'],
+            'const' => ['80', '85'],
             'constants' => [
                 '40', '42', '43', '44',
                 '50', '51', '52', '53', '54', '55',
                 '70', '71', '72',
-                '84',
+                '84', '85',
             ],
             'functions' => [
                 '40', '42', '43',
                 '50', '51', '53', '54',
                 '70', '73', '74',
-                '80', '81', '84',
+                '80', '81', '84', '85',
             ],
             'methods' => [
                 '51', '53', '55',
                 '70', '72', '74',
-                '80', '81', '82', '83', '84',
+                '80', '81', '82', '83', '84', '85',
             ],
             'iniEntries' => [
                 '40', '41',
                 '50', '54', '55', '56',
                 '70', '71', '73', '74',
-                '80', '81', '82', '83',
+                '80', '81', '82', '83', '85',
             ],
             'interfaces' => [
                 '51', '53',

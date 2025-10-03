@@ -1,0 +1,44 @@
+[
+    {
+        "rel_version": "8.5.0alpha1",
+        "rel_date": "2025-07-03",
+        "rel_state": "alpha",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "rel_version": "8.5.0alpha2",
+        "rel_date": "2025-07-17",
+        "rel_state": "alpha",
+        "php_min": "8.5.0alpha2"
+    },
+    {
+        "rel_version": "8.5.0alpha4",
+        "rel_date": "2025-07-31",
+        "rel_state": "alpha",
+        "php_min": "8.5.0alpha4"
+    },
+    {
+        "rel_version": "8.5.0beta1",
+        "rel_date": "2025-08-14",
+        "rel_state": "beta",
+        "php_min": "8.5.0beta1"
+    },
+    {
+        "rel_version": "8.5.0beta2",
+        "rel_date": "2025-08-28",
+        "rel_state": "beta",
+        "php_min": "8.5.0beta2"
+    },
+    {
+        "rel_version": "8.5.0beta3",
+        "rel_date": "2025-09-11",
+        "rel_state": "beta",
+        "php_min": "8.5.0beta3"
+    },
+    {
+        "rel_version": "8.5.0RC1",
+        "rel_date": "2025-09-25",
+        "rel_state": "beta",
+        "php_min": "8.5.0RC1"
+    }
+]
