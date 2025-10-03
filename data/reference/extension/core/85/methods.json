@@ -1,0 +1,9 @@
+[
+    {
+        "class_name": "Closure",
+        "name": "getCurrent",
+        "static": true,
+        "ext_min": "8.5.0alpha3",
+        "php_min": "8.5.0alpha3"
+    }
+]
