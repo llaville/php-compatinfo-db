@@ -1,5 +1,10 @@
 [
     {
+        "name": "PHP_BUILD_DATE",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
         "name": "ZEND_VM_KIND",
         "ext_min": "8.5.0beta2",
         "php_min": "8.5.0beta2"
