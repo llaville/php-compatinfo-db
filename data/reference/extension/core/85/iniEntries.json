@@ -1,0 +1,7 @@
+[
+    {
+        "name": "mail.cr_lf_mode",
+        "ext_min": "8.5.0beta3",
+        "php_min": "8.5.0beta3"
+    }
+]
