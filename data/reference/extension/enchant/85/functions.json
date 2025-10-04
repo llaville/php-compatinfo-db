@@ -3,5 +3,10 @@
         "name": "enchant_dict_remove",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "enchant_dict_remove_from_session",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
