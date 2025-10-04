@@ -3,5 +3,38 @@
         "name": "CURLOPT_INFILESIZE_LARGE",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "CURLFOLLOW_ALL",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.13.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLFOLLOW_OBEYCODE",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.13.0"
+            }
+        ]
+    },
+    {
+        "name": "CURLFOLLOW_FIRSTONLY",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.13.0"
+            }
+        ]
     }
 ]
