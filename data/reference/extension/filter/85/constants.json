@@ -1,0 +1,7 @@
+[
+    {
+        "name": "FILTER_THROW_ON_FAILURE",
+        "ext_min": "8.5.0beta2",
+        "php_min": "8.5.0beta2"
+    }
+]

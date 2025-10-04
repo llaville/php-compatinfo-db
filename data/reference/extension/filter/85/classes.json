@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Filter\\FilterException",
+        "ext_min": "8.5.0beta2",
+        "php_min": "8.5.0beta2"
+    },
+    {
+        "name": "Filter\\FilterFailedException",
+        "ext_min": "8.5.0beta2",
+        "php_min": "8.5.0beta2"
+    }
+]
