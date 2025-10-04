@@ -39,6 +39,7 @@ class DomExtensionTest extends GenericTestCase
             // aliases
             'Dom\\Document::getElementsByClassName',
             'Dom\\Element::getElementsByClassName',
+            'Dom\\Element::insertAdjacentHTML',
 
             // requires ZEND_DEBUG
             'Dom\\HTMLDocument::debugGetTemplateCount',

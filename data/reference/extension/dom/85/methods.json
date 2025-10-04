@@ -11,5 +11,11 @@
         "name": "getElementsByClassName",
         "ext_min": "8.5.0alpha2",
         "php_min": "8.5.0alpha2"
+    },
+    {
+        "class_name": "Dom\\Element",
+        "name": "insertAdjacentHTML",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
