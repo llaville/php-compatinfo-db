@@ -3,5 +3,10 @@
         "name": "curl_multi_get_handles",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "curl_share_init_persistent",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
