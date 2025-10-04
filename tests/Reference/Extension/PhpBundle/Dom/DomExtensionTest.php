@@ -36,6 +36,9 @@ class DomExtensionTest extends GenericTestCase
             'Dom\\Document::schemaValidateSource',
             'Dom\\Document::relaxNgValidate',
             'Dom\\Document::relaxNgValidateSource',
+            // aliases
+            'Dom\\Document::getElementsByClassName',
+            'Dom\\Element::getElementsByClassName',
 
             // requires ZEND_DEBUG
             'Dom\\HTMLDocument::debugGetTemplateCount',
