@@ -80,5 +80,16 @@
                 "constraint": ">=8.6.0"
             }
         ]
+    },
+    {
+        "name": "CURLINFO_CONN_ID",
+        "ext_min": "8.5.0alpha3",
+        "php_min": "8.5.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.2.0"
+            }
+        ]
     }
 ]
