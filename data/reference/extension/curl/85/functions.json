@@ -1,0 +1,7 @@
+[
+    {
+        "name": "curl_multi_get_handles",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    }
+]
