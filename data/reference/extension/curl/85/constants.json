@@ -91,5 +91,16 @@
                 "constraint": ">=8.2.0"
             }
         ]
+    },
+    {
+        "name": "CURLOPT_SSL_SIGNATURE_ALGORITHMS",
+        "ext_min": "8.5.0alpha3",
+        "php_min": "8.5.0alpha3",
+        "dependencies": [
+            {
+                "name": "libcurl",
+                "constraint": ">=8.14.0"
+            }
+        ]
     }
 ]
