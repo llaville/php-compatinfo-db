@@ -29,6 +29,7 @@ class OpcacheExtensionTest extends GenericTestCase
             'opcache.file_cache',
             'opcache.file_cache_only',
             'opcache.file_cache_consistency_checks',
+            'opcache.file_cache_read_only',
             // if ENABLE_FILE_CACHE_FALLBACK
             'opcache.file_cache_fallback',
             // strange result behaviour on CI
