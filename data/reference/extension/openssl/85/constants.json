@@ -1,0 +1,22 @@
+[
+    {
+        "name": "PKCS7_NOSMIMECAP",
+        "ext_min": "8.5.0beta1",
+        "php_min": "8.5.0beta1"
+    },
+    {
+        "name": "PKCS7_CRLFEOL",
+        "ext_min": "8.5.0beta1",
+        "php_min": "8.5.0beta1"
+    },
+    {
+        "name": "PKCS7_NOCRL",
+        "ext_min": "8.5.0beta1",
+        "php_min": "8.5.0beta1"
+    },
+    {
+        "name": "PKCS7_NO_DUAL_CONTENT",
+        "ext_min": "8.5.0beta1",
+        "php_min": "8.5.0beta1"
+    }
+]
