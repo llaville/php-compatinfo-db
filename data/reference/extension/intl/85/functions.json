@@ -2,6 +2,7 @@
     {
         "name": "grapheme_levenshtein",
         "ext_min": "8.5.0alpha1",
-        "php_min": "8.5.0alpha1"
+        "php_min": "8.5.0alpha1",
+        "parameters": "8.5.0alpha1, 8.5.0alpha1, 8.5.0alpha1, 8.5.0alpha1, 8.5.0alpha1, 8.5.0beta3"
     }
 ]

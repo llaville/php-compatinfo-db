@@ -162,12 +162,14 @@
     {
         "name": "grapheme_stripos",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "grapheme_stristr",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "grapheme_strlen",
@@ -177,27 +179,32 @@
     {
         "name": "grapheme_strpos",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "grapheme_strripos",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "grapheme_strrpos",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "grapheme_strstr",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "grapheme_substr",
         "ext_min": "1.0.0RC1",
-        "php_min": "5.2.4"
+        "php_min": "5.2.4",
+        "parameters": "5.2.4, 5.2.4, 5.2.4, 8.5.0beta3"
     },
     {
         "name": "idn_to_ascii",
