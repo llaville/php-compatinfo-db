@@ -1,0 +1,10 @@
+[
+    {
+        "class_name": "Locale",
+        "name": "isRightToLeft",
+        "static": true,
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "alias": "locale_is_right_to_left"
+    }
+]

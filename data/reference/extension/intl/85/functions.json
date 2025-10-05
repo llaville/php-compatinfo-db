@@ -4,5 +4,10 @@
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1",
         "parameters": "8.5.0alpha1, 8.5.0alpha1, 8.5.0alpha1, 8.5.0alpha1, 8.5.0alpha1, 8.5.0beta3"
+    },
+    {
+        "name": "locale_is_right_to_left",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
