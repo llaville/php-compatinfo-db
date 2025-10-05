@@ -1,0 +1,13 @@
+[
+    {
+        "name": "openssl.libctx",
+        "ext_min": "8.5.0alpha2",
+        "php_min": "8.5.0alpha2",
+        "dependencies": [
+            {
+                "name": "openssl",
+                "constraint": ">=3.0.0"
+            }
+        ]
+    }
+]
