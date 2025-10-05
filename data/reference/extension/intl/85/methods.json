@@ -6,5 +6,21 @@
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1",
         "alias": "locale_is_right_to_left"
+    },
+    {
+        "class_name": "Locale",
+        "name": "addLikelySubtags",
+        "static": true,
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "alias": "locale_add_likely_subtags"
+    },
+    {
+        "class_name": "Locale",
+        "name": "minimizeSubtags",
+        "static": true,
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "alias": "locale_minimize_subtags"
     }
 ]

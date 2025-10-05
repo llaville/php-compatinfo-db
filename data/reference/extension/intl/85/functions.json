@@ -9,5 +9,15 @@
         "name": "locale_is_right_to_left",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "locale_add_likely_subtags",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "locale_minimize_subtags",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
