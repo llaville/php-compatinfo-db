@@ -22,5 +22,29 @@
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1",
         "alias": "locale_minimize_subtags"
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "__construct",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "format",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "getErrorCode",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "getErrorMessage",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]

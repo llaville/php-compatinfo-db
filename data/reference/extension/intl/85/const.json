@@ -1,0 +1,62 @@
+[
+    {
+        "class_name": "IntlListFormatter",
+        "name": "TYPE_AND",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "TYPE_OR",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=67"
+            }
+        ]
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "TYPE_UNITS",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=67"
+            }
+        ]
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "WIDTH_WIDE",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "WIDTH_SHORT",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=67"
+            }
+        ]
+    },
+    {
+        "class_name": "IntlListFormatter",
+        "name": "WIDTH_NARROW",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "ICU",
+                "constraint": ">=67"
+            }
+        ]
+    }
+]
