@@ -51,6 +51,8 @@ class PgsqlExtensionTest extends GenericTestCase
             'pg_set_chunked_rows_size',
             // requires HAVE_PG_RESULT_MEMORY_SIZE
             'pg_result_memory_size',
+            // requires HAVE_PG_CLOSE_STMT
+            'pg_close_stmt',
         ];
 
         parent::setUpBeforeClass();
