@@ -18,5 +18,10 @@
         "name": "PKCS7_NO_DUAL_CONTENT",
         "ext_min": "8.5.0beta1",
         "php_min": "8.5.0beta1"
+    },
+    {
+        "name": "OPENSSL_PKCS1_PSS_PADDING",
+        "ext_min": "8.5.0beta1",
+        "php_min": "8.5.0beta1"
     }
 ]
