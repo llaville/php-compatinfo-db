@@ -290,6 +290,8 @@ class SocketsExtensionTest extends GenericTestCase
             'SOCK_CLOEXEC',
             'SOCK_NONBLOCK',
             'TCP_SYNCNT',
+            'IPPROTO_ICMP',
+            'IPPROTO_ICMPV6',
 
             // if def(AF_PACKET)
             'AF_PACKET',

@@ -28,5 +28,15 @@
         "name": "SO_BUSY_POLL",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "IPPROTO_ICMP",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "IPPROTO_ICMPV6",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
