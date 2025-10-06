@@ -35,6 +35,8 @@ class PosixExtensionTest extends GenericTestCase
             'POSIX_SC_NPROCESSORS_CONF',
             // Requires _SC_NPROCESSORS_ONLN
             'POSIX_SC_NPROCESSORS_ONLN',
+            // Requires _SC_OPEN_MAX
+            'POSIX_SC_OPEN_MAX',
             // Requires _PC_LINK_MAX
             'POSIX_PC_LINK_MAX',
             // Requires _PC_MAX_CANON
