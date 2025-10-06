@@ -289,6 +289,15 @@ class SocketsExtensionTest extends GenericTestCase
             'SOCK_CLOEXEC',
             'SOCK_NONBLOCK',
             'TCP_SYNCNT',
+
+            // if def(AF_PACKET)
+            'AF_PACKET',
+
+            // if definded(ETH_P_ALL)
+            'ETH_P_IP',
+            'ETH_P_IPV6',
+            'ETH_P_LOOP',
+            'ETH_P_ALL',
         );
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 
