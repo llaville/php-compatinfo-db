@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "__serialize",
+        "ext_min": "8.5.0RC1",
+        "php_min": "8.5.0RC1"
+    },
+    {
+        "class_name": "SplPriorityQueue",
+        "name": "__unserialize",
+        "ext_min": "8.5.0RC1",
+        "php_min": "8.5.0RC1"
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "__serialize",
+        "ext_min": "8.5.0RC1",
+        "php_min": "8.5.0RC1"
+    },
+    {
+        "class_name": "SplHeap",
+        "name": "__unserialize",
+        "ext_min": "8.5.0RC1",
+        "php_min": "8.5.0RC1"
+    }
+]
