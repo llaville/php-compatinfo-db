@@ -1,0 +1,7 @@
+[
+    {
+        "name": "session.cookie_partitioned",
+        "ext_min": "8.5.0beta2",
+        "php_min": "8.5.0beta2"
+    }
+]
