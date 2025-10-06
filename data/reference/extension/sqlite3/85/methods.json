@@ -28,5 +28,11 @@
                 "constraint": ">=3.43"
             }
         ]
+    },
+    {
+        "class_name": "SQLite3Result",
+        "name": "fetchAll",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
