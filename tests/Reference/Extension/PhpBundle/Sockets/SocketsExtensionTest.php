@@ -293,6 +293,9 @@ class SocketsExtensionTest extends GenericTestCase
             'IPPROTO_ICMP',
             'IPPROTO_ICMPV6',
 
+            // if def(UDP_SEGMENT)
+            'UDP_SEGMENT',
+
             // if def(AF_PACKET)
             'AF_PACKET',
 

@@ -38,5 +38,10 @@
         "name": "IPPROTO_ICMPV6",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "UDP_SEGMENT",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
     }
 ]
