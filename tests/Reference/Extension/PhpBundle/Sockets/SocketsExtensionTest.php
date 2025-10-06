@@ -299,7 +299,12 @@ class SocketsExtensionTest extends GenericTestCase
             // if def(AF_PACKET)
             'AF_PACKET',
 
-            // if definded(ETH_P_ALL)
+            // if def(SHUT_RDWR)
+            'SHUT_RD',
+            'SHUT_WR',
+            'SHUT_RDWR',
+
+            // if defined(ETH_P_ALL)
             'ETH_P_IP',
             'ETH_P_IPV6',
             'ETH_P_LOOP',
