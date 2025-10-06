@@ -107,6 +107,7 @@ class SocketsExtensionTest extends GenericTestCase
                 // if def (from ext/sockets/sockets_arginfo.h)
                 'TCP_QUICKACK',
                 'TCP_REPAIR',
+                'SO_BUSY_POLL',
             );
         }
         // Common to Windows and Unix
