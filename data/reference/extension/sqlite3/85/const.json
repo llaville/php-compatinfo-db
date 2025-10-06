@@ -1,13 +1,7 @@
 [
     {
         "class_name": "SQLite3Stmt",
-        "name": "busy",
-        "ext_min": "8.5.0alpha1",
-        "php_min": "8.5.0alpha1"
-    },
-    {
-        "class_name": "SQLite3Stmt",
-        "name": "explain",
+        "name": "EXPLAIN_MODE_PREPARED",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1",
         "dependencies": [
@@ -19,7 +13,19 @@
     },
     {
         "class_name": "SQLite3Stmt",
-        "name": "setExplain",
+        "name": "EXPLAIN_MODE_EXPLAIN",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1",
+        "dependencies": [
+            {
+                "name": "sqlite3",
+                "constraint": ">=3.43"
+            }
+        ]
+    },
+    {
+        "class_name": "SQLite3Stmt",
+        "name": "EXPLAIN_MODE_EXPLAIN_QUERY_PLAN",
         "ext_min": "8.5.0alpha1",
         "php_min": "8.5.0alpha1",
         "dependencies": [
