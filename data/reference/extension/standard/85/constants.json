@@ -3,5 +3,10 @@
         "name": "IMAGETYPE_HEIF",
         "ext_min": "8.5.0alpha3",
         "php_min": "8.5.0alpha3"
+    },
+    {
+        "name": "IMAGETYPE_SVG",
+        "ext_min": "8.5.0alpha3",
+        "php_min": "8.5.0alpha3"
     }
 ]
