@@ -441,19 +441,19 @@ final class InitHandler implements CommandHandlerInterface
         yield 'curl' => [
             'classes'    => [
                 '55',
-                '80', '81',
+                '80', '81', '85',
             ],
             'constants'  => [
                 '40',
                 '51', '52', '53', '54', '55', '56',
                 '70', '73',
-                '81', '82', '83', '84',
+                '81', '82', '83', '84', '85',
             ],
             'functions'  => [
                 '40',
                 '50', '51', '55',
                 '71',
-                '82',
+                '82', '85',
             ],
             'iniEntries' => ['53'],
             'methods'    => [
@@ -525,7 +525,7 @@ final class InitHandler implements CommandHandlerInterface
             ],
             'methods'    => [
                 '50',
-                '80', '81', '83', '84',
+                '80', '81', '83', '84', '85',
             ],
             'releases'   => array_merge(
                 ['50', '51'],
@@ -542,7 +542,7 @@ final class InitHandler implements CommandHandlerInterface
             ],
             'functions'  => [
                 '0', '1',
-                '80',
+                '80', '85',
             ],
             'releases'   => array_merge(
                 ['0', '1'],
@@ -586,10 +586,11 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'filter' => [
+            'classes'    => ['85'],
             'constants'  => [
                 '0',
                 '70', '71', '73',
-                '80', '82',
+                '80', '82', '85',
             ],
             'functions'  => ['0'],
             'iniEntries' => ['0'],
@@ -813,27 +814,27 @@ final class InitHandler implements CommandHandlerInterface
                 '1', '2',
                 '55',
                 '70',
-                '81',
+                '81', '85',
             ],
             'const'      => [
                 '1', '2',
                 '55',
                 '70', '73', '74',
-                '80', '83', '84',
+                '80', '83', '84', '85',
             ],
             'constants'  => ['1', '2'],
             'functions'  => [
                 '1', '2',
                 '55',
                 '71', '73',
-                '84'
+                '84', '85',
             ],
             'iniEntries' => ['1', '3'],
             'methods'    => [
                 '1', '2',
                 '55',
                 '70', '71', '73',
-                '81', '83', '84',
+                '81', '83', '84', '85',
             ],
             'releases'   => array_merge(
                 [
@@ -1142,7 +1143,7 @@ final class InitHandler implements CommandHandlerInterface
             'iniEntries' => [
                 '56',
                 '70', '71', '74',
-                '80', '83',
+                '80', '83', '85',
             ],
             'releases'   => array_merge(
                 ['56'],
@@ -1157,7 +1158,7 @@ final class InitHandler implements CommandHandlerInterface
                 '40', '43',
                 '50', '52', '53', '54', '56',
                 '71',
-                '80', '83', '84',
+                '80', '83', '84', '85',
             ],
             'functions'  => [
                 '40', '42',
@@ -1165,7 +1166,10 @@ final class InitHandler implements CommandHandlerInterface
                 '71', '72', '73', '74',
                 '80', '82',
             ],
-            'iniEntries' => ['56'],
+            'iniEntries' => [
+                '56',
+                '85',
+            ],
             'releases'   => array_merge(
                 [
                     '40', '42', '43',
@@ -1275,7 +1279,7 @@ final class InitHandler implements CommandHandlerInterface
             'functions'  => [
                 '40', '42', '43',
                 '50', '51', '52', '54', '56',
-                '83', '84',
+                '83', '84', '85',
             ],
             'iniEntries' => ['40'],
             'releases'   => array_merge(
@@ -1307,7 +1311,7 @@ final class InitHandler implements CommandHandlerInterface
             'constants'  => [
                 '51',
                 '70',
-                '83', '84',
+                '83', '84', '85',
             ],
             'functions'  => [
                 '40', '42',
@@ -1428,7 +1432,7 @@ final class InitHandler implements CommandHandlerInterface
             'methods'    => [
                 '50', '54',
                 '70', '71', '72', '74',
-                '80', '81', '82', '83', '84',
+                '80', '81', '82', '83', '84', '85',
             ],
             'releases'   => array_merge(
                 ['50', '51', '54'],
@@ -1460,6 +1464,7 @@ final class InitHandler implements CommandHandlerInterface
                 '40', '43',
                 '50', '52', '54', '55',
                 '70', '71', '73',
+                '85',
             ],
             'interfaces' => [
                 '54', '55',
@@ -1547,7 +1552,7 @@ final class InitHandler implements CommandHandlerInterface
                 '41', '43',
                 '52', '54', '55',
                 '70', '72',
-                '81', '82', '83', '84',
+                '81', '82', '83', '84', '85',
             ],
             'functions'  => [
                 '41', '42', '43',
@@ -1586,7 +1591,7 @@ final class InitHandler implements CommandHandlerInterface
             'methods'    => [
                 '50', '51', '52', '53', '54',
                 '70',
-                '82',
+                '82', '85',
             ],
             'releases'   => array_merge(
                 ['50', '51', '52', '53', '54'],
@@ -1608,7 +1613,7 @@ final class InitHandler implements CommandHandlerInterface
                 '53',
                 '83',
             ],
-            'const'      => ['80'],
+            'const'      => ['80', '85'],
             'constants'  => [
                 '53',
                 '71',
@@ -1617,7 +1622,7 @@ final class InitHandler implements CommandHandlerInterface
             'methods'    => [
                 '53',
                 '74',
-                '80',
+                '80', '85',
             ],
             'releases'   => array_merge(
                 ['53', '56'],
@@ -1646,13 +1651,13 @@ final class InitHandler implements CommandHandlerInterface
                 '40', '41', '43',
                 '51', '52', '53', '54', '55', '56',
                 '70', '71', '72', '73', '74',
-                '80', '81', '84',
+                '80', '81', '84', '85',
             ],
             'functions' => [
                 '40', '41', '42', '43',
                 '50', '51', '52', '53', '54', '55',
                 '70', '71', '72', '73', '74',
-                '80', '81', '82', '83', '84',
+                '80', '81', '82', '83', '84', '85',
             ],
             'iniEntries' => [
                 '40',
@@ -1775,7 +1780,7 @@ final class InitHandler implements CommandHandlerInterface
                 '42', '43',
                 '50', '51', '53', '54', '55', '56',
                 '70', '74',
-                '80', '81', '84',
+                '80', '81', '84', '85',
             ],
             'functions' => ['42'],
             'methods'   => ['80'],
