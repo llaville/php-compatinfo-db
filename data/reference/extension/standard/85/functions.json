@@ -1,0 +1,12 @@
+[
+    {
+        "name": "array_first",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    },
+    {
+        "name": "array_last",
+        "ext_min": "8.5.0alpha1",
+        "php_min": "8.5.0alpha1"
+    }
+]
