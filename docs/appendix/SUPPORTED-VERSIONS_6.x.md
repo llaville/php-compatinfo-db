@@ -1,6 +1,24 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.24.x
+
+|                       Release | Extension     | PHP 8.5  | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:--------------|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.24.0][6.24.0] - 2025-10-08 |               | 8.5.0RC1 | 8.4.13  | 8.3.26  | 8.2.29  | 8.1.33  |         |         |         |         |         |         |         |
+|      [1.21.2][mongodb-1.21.2] | mongodb       | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.1.3][mongodb-2.1.3] | mongodb       | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.1.2][mongodb-2.1.2] | mongodb       | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|  [1.2.1][opentelemetry-1.2.1] | opentelemetry |          | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [3.4.6][xdebug-3.4.6] | xdebug        |          | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.24.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.24.0
+[mongodb-1.21.2]: https://pecl.php.net/package/mongodb/1.21.2
+[mongodb-2.1.3]: https://pecl.php.net/package/mongodb/2.1.3
+[mongodb-2.1.2]: https://pecl.php.net/package/mongodb/2.1.2
+[opentelemetry-1.2.1]: https://pecl.php.net/package/opentelemetry/1.2.1
+[xdebug-3.4.6]: https://pecl.php.net/package/xdebug/3.4.6
+
 ## Releases 6.23.x
 
 |                       Release | Extension     | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
