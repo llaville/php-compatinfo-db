@@ -1361,7 +1361,7 @@ final class InitHandler implements CommandHandlerInterface
             'interfaces' => ['82'],
             'methods' => ['82', '83'],
             'releases' => [
-                '82', '83', '84',
+                '82', '83', '84', '85',
             ],
         ];
 
