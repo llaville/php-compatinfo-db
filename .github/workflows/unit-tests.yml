@@ -88,7 +88,7 @@ jobs:
 
             -   # https://github.com/shivammathur/setup-php
                 name: Setup PHP runtime
-                uses: shivammathur/setup-php@2.35.3
+                uses: shivammathur/setup-php@2.35.5
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
