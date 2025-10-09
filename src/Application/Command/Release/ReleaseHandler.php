@@ -45,6 +45,7 @@ final class ReleaseHandler implements CommandHandlerInterface
         '82' => ExtensionVersionProviderInterface::LATEST_PHP_8_2,
         '83' => ExtensionVersionProviderInterface::LATEST_PHP_8_3,
         '84' => ExtensionVersionProviderInterface::LATEST_PHP_8_4,
+        '85' => ExtensionVersionProviderInterface::LATEST_PHP_8_5,
     ];
     private string $refDir;
 
