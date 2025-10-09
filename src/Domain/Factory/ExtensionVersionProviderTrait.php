@@ -115,7 +115,7 @@ trait ExtensionVersionProviderTrait
         $pattern = '/^[0-9]+\.[0-9]+/';
         if (false === $version || !preg_match($pattern, $version)) {
             /**
-             * When version is not provided by the extension, or not standard format
+             * When version is not provided by the extension, or not standard format,
              * or we don't have it in our reference (ex snmp) because have no sense
              * be sure at least to return latest PHP version supported.
              */
@@ -168,6 +168,9 @@ trait ExtensionVersionProviderTrait
         if (version_compare($phpVersion, '8.4', 'lt')) {
             return ExtensionVersionProviderInterface::LATEST_PHP_8_3;
         }
-        return ExtensionVersionProviderInterface::LATEST_PHP_8_4;
+        if (version_compare($phpVersion, '8.5', 'lt')) {
+            return ExtensionVersionProviderInterface::LATEST_PHP_8_4;
+        }
+        return ExtensionVersionProviderInterface::LATEST_PHP_8_5;
     }
 }
