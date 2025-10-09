@@ -21,7 +21,6 @@ use Symfony\Component\Console\CommandLoader\FactoryCommandLoader as SymfonyFacto
 use Symfony\Component\Messenger\Command\DebugCommand;
 
 use Phar;
-use function class_exists;
 use function get_class;
 use function in_array;
 
