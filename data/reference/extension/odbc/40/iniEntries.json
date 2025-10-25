@@ -13,19 +13,19 @@
         "name": "odbc.default_db",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "8.3.26"
+        "php_max": "8.3.27"
     },
     {
         "name": "odbc.default_pw",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "8.3.26"
+        "php_max": "8.3.27"
     },
     {
         "name": "odbc.default_user",
         "ext_min": "4.0.0",
         "php_min": "4.0.0",
-        "php_max": "8.3.26"
+        "php_max": "8.3.27"
     },
     {
         "name": "odbc.defaultbinmode",
