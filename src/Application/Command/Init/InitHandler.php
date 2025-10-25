@@ -1497,7 +1497,10 @@ final class InitHandler implements CommandHandlerInterface
         yield 'simplexml' => [
             'classes'    => ['50', '51'],
             'functions'  => ['50'],
-            'methods'    => ['50'],
+            'methods'    => [
+                '50',
+                '85',
+            ],
             'releases'   => array_merge(
                 ['50', '51'],
                 self::PHP_RELEASES_7,

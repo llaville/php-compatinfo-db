@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "SimpleXMLElement",
+        "name": "__debugInfo",
+        "ext_min": "8.5.0RC3",
+        "php_min": "8.5.0RC3"
+    }
+]
