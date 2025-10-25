@@ -1,6 +1,24 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.25.x
+
+|                       Release | Extension | PHP 8.5  | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.25.0][6.25.0] - 2025-10-24 |           | 8.5.0RC3 | 8.4.14  | 8.3.27  | 8.2.29  | 8.1.33  |         |         |         |         |         |         |         |
+|           [4.3.1][http-4.3.1] | http      | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [4.3.0][http-4.3.0] | http      | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|      [3.1.9][mailparse-3.1.9] | maiparse  | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|      [3.4.0][memcached-3.4.0] | memcached | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.0.10][oauth-2.0.10] | oauth     | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.25.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.25.0
+[http-4.3.1]: https://pecl.php.net/package/pecl_http/4.3.1
+[http-4.3.0]: https://pecl.php.net/package/pecl_http/4.3.0
+[mailparse-3.1.9]: https://pecl.php.net/package/mailparse/3.1.9
+[memcached-3.4.0]: https://pecl.php.net/package/memcached/3.4.0
+[oauth-2.0.10]: https://pecl.php.net/package/oauth/2.0.10
+
 ## Releases 6.24.x
 
 |                       Release | Extension     | PHP 8.5  | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
