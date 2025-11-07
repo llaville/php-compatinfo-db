@@ -52,5 +52,17 @@
         "rel_date": "2025-03-24",
         "rel_state": "stable",
         "php_min": "7.4.0"
+    },
+    {
+        "rel_version": "6.3.0RC1",
+        "rel_date": "2025-10-15",
+        "rel_state": "beta",
+        "php_min": "7.4.0"
+    },
+    {
+        "rel_version": "6.3.0",
+        "rel_date": "2025-11-06",
+        "rel_state": "stable",
+        "php_min": "7.4.0"
     }
 ]

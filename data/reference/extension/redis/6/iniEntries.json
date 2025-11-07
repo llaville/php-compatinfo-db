@@ -13,5 +13,10 @@
         "name": "redis.session.compression_level",
         "ext_min": "6.1.0RC1",
         "php_min": "7.2.0"
+    },
+    {
+        "name": "redis.session.lock_failure_readonly",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
     }
 ]

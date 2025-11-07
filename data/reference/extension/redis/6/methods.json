@@ -550,5 +550,329 @@
         "name": "getdel",
         "ext_min": "6.2.0",
         "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "delifeq",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hGetWithMeta",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hgetex",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hsetex",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hgetdel",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hexpire",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hpexpire",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hexpireat",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hpexpireat",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "httl",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hpttl",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hexpiretime",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hpexpiretime",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "hpersist",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vadd",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vsim",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vcard",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vdim",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vinfo",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vismember",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vemb",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vrandmember",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vrange",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vrem",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vsetattr",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vgetattr",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "vlinks",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "delifeq",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hgetWithMeta",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hgetex",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hsetex",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hgetdel",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hexpire",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hpexpire",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hexpireat",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hpexpireat",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "httl",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hpttl",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hexpiretime",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hpexpiretime",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "hpersist",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vadd",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vsim",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vcard",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vdim",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vinfo",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vismember",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vemb",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vrandmember",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vrange",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vrem",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vsetattr",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vgetattr",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
+    },
+    {
+        "class_name": "RedisCluster",
+        "name": "vlinks",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
     }
 ]

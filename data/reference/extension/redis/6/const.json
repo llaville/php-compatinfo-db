@@ -16,5 +16,11 @@
         "name": "OPT_PACK_IGNORE_NUMBERS",
         "ext_min": "6.2.0",
         "php_min": "7.4.0"
+    },
+    {
+        "class_name": "Redis",
+        "name": "REDIS_VECTORSET",
+        "ext_min": "6.3.0RC1",
+        "php_min": "7.4.0"
     }
 ]
