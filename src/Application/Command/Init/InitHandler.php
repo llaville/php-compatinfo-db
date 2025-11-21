@@ -1499,7 +1499,7 @@ final class InitHandler implements CommandHandlerInterface
             'functions'  => ['50'],
             'methods'    => [
                 '50',
-                '85',
+                '83', '85',
             ],
             'releases'   => array_merge(
                 ['50', '51'],
