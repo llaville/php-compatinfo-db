@@ -10,7 +10,6 @@
 |         [3.4.7][xdebug-3.4.7] | xdebug    |          | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
 |           [2.3.0][yaml-2.3.0] | yaml      | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
 
-
 [6.26.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.26.0
 [redis-6.3.0]: https://pecl.php.net/package/redis/6.3.0
 [xdebug-3.4.7]: https://pecl.php.net/package/xdebug/3.4.7
