@@ -1,6 +1,21 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.26.x
+
+|                       Release | Extension | PHP 8.5  | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.26.0][6.26.0] - 2025-11-22 |           |  8.5.0   | 8.4.15  | 8.3.28  | 8.2.29  | 8.1.33  |         |         |         |         |         |         |         |
+|          [6.3.0][redis-6.3.0] | redis     | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [3.4.7][xdebug-3.4.7] | xdebug    |          | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [2.3.0][yaml-2.3.0] | yaml      | &check;  | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+
+[6.26.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.26.0
+[redis-6.3.0]: https://pecl.php.net/package/redis/6.3.0
+[xdebug-3.4.7]: https://pecl.php.net/package/xdebug/3.4.7
+[yaml-2.3.0]: https://pecl.php.net/package/yaml/2.3.0
+
 ## Releases 6.25.x
 
 |                       Release | Extension | PHP 8.5  | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
