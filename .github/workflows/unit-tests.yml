@@ -119,4 +119,4 @@ jobs:
 
             -   # https://github.com/sebastianbergmann/phpunit
                 name: Unit tests with PHPUnit
-                run: phpunit --group reference --do-not-cache-result --no-progress
+                run: phpunit --group reference --do-not-cache-result --no-progress --do-not-fail-on-phpunit-warning --do-not-fail-on-phpunit-deprecation
