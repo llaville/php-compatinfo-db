@@ -78,5 +78,10 @@
         "name": "xdebug.control_socket",
         "ext_min": "3.3.0",
         "php_min": "8.0.0"
+    },
+    {
+        "name": "xdebug.path_mapping",
+        "ext_min": "3.5.0",
+        "php_min": "8.0.0"
     }
 ]
