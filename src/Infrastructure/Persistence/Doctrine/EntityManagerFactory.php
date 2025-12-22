@@ -45,18 +45,24 @@ final class EntityManagerFactory
         string $autogenerateProxyClasses = 'auto'
     ): EntityManagerInterface {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
-        $config = ORMSetup::createAttributeMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
 
-        if ($isDevMode) {
-            $autoGenerate = ProxyFactory::AUTOGENERATE_ALWAYS;
+        if (PHP_VERSION_ID >= 80400) {
+            $config = ORMSetup::createAttributeMetadataConfig($paths, $isDevMode);
+            $config->enableNativeLazyObjects(true);
         } else {
-            $autoGenerate = match ($autogenerateProxyClasses) {
-                'never' => ProxyFactory::AUTOGENERATE_NEVER,
-                'always' => ProxyFactory::AUTOGENERATE_ALWAYS,
-                default => ProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS_OR_CHANGED,
-            };
+            $config = ORMSetup::createAttributeMetadataConfiguration($paths, $isDevMode, $proxyDir, $cache);
+
+            if ($isDevMode) {
+                $autoGenerate = ProxyFactory::AUTOGENERATE_ALWAYS;
+            } else {
+                $autoGenerate = match ($autogenerateProxyClasses) {
+                    'never' => ProxyFactory::AUTOGENERATE_NEVER,
+                    'always' => ProxyFactory::AUTOGENERATE_ALWAYS,
+                    default => ProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS_OR_CHANGED,
+                };
+            }
+            $config->setAutogenerateProxyClasses($autoGenerate);
         }
-        $config->setAutogenerateProxyClasses($autoGenerate);
 
         $connection = DriverManager::getConnection(self::connection(), $config);
         return new EntityManager($connection, $config);
