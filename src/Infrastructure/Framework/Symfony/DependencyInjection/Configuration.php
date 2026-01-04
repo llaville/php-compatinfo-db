@@ -48,7 +48,6 @@ final class Configuration implements ConfigurationInterface
         $proxyDir = ($_SERVER['APP_PROXY_DIR'] ?? $_ENV['APP_PROXY_DIR'] ?? $defaultProxyDir);
         $proxyGenerate = ($_SERVER['APP_PROXY_GENERATE'] ?? $_ENV['APP_PROXY_GENERATE'] ?? 'auto');
 
-        // @phpstan-ignore method.notFound
         $rootNode
             ->children()
                 ->scalarNode('version')->defaultValue($version)->end()
