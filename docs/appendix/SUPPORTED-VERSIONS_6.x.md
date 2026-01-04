@@ -1,6 +1,26 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.27.x
+
+|                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.27.0][6.27.0] - 2024-01-04 |           |  8.5.1  | 8.4.16  | 8.3.29  | 8.2.30  | 8.1.34  |         |         |         |         |         |         |         |
+|           [2.2.0][amqp-2.2.0] | amqp      | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [5.1.28][APCu-5.1.28] | apcu      | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [3.8.1][imagick-3.8.1] | imagick   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [2.9.1][solr-2.9.1] | solr      | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|         [3.5.0][xdebug-3.5.0] | xdebug    | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [1.1.6][xmldiff-1.1.6] | xmldiff   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.27.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.27.0
+[amqp-2.2.0]: https://pecl.php.net/package/amqp/2.2.0
+[APCu-5.1.28]: https://pecl.php.net/package/APCu/5.1.28
+[imagick-3.8.1]: https://pecl.php.net/package/imagick/3.8.1
+[solr-2.9.1]: https://pecl.php.net/package/solr/2.9.1
+[xdebug-3.5.0]: https://pecl.php.net/package/xdebug/3.5.0
+[xmldiff-1.1.6]: https://pecl.php.net/package/xmldiff/1.1.6
+
 ## Releases 6.26.x
 
 |                       Release | Extension | PHP 8.5  | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
