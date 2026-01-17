@@ -76,5 +76,11 @@
         "rel_date": "2025-12-18",
         "rel_state": "stable",
         "php_min": "8.5.1"
+    },
+    {
+        "rel_version": "8.5.2",
+        "rel_date": "2026-01-15",
+        "rel_state": "stable",
+        "php_min": "8.5.2"
     }
 ]
