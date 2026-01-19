@@ -53,7 +53,7 @@ if (class_exists(__NAMESPACE__ . '\Autoload', false) === false) {
                 ];
                 $autoloader = 'vendor/autoload.php';
                 try {
-                    require_once self::getAutoloadFile($possibleAutoloadPaths, $autoloader);
+                    self::$composerAutoloader = require_once self::getAutoloadFile($possibleAutoloadPaths, $autoloader);
                 } catch (RuntimeException $e) {
                     // unable to find additional/optional dev deps: it's not an error
                 }
