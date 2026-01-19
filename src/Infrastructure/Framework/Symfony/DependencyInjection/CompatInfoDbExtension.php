@@ -37,12 +37,11 @@ final class CompatInfoDbExtension extends Extension
 
     /**
      * @throws Exception
-     * @return void
      *
      * @inheritDoc
      * @param array<string, mixed> $configs
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $configFiles = [
             implode(DIRECTORY_SEPARATOR, ['set', 'common.php']),
