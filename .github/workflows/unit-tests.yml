@@ -70,9 +70,9 @@ jobs:
                 name: Setup Libraries
                 run: |
                     sudo apt-get update
-                    sudo apt-fast install libcurl4-openssl-dev -y
-                    sudo apt-fast install libssh2-1-dev -y
-                    sudo apt-fast install librdkafka-dev -y
+                    sudo apt-get install libcurl4-openssl-dev -y
+                    sudo apt-get install libssh2-1-dev -y
+                    sudo apt-get install librdkafka-dev -y
 
             -   # https://github.com/shivammathur/cache-extensions
                 name: Setup cache environment
