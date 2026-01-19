@@ -76,7 +76,7 @@ jobs:
                 name: Setup Libraries
                 run: |
                     sudo apt-get update
-                    sudo apt-fast install graphviz -y
+                    sudo apt-get install graphviz -y
 
             -   # https://github.com/shivammathur/setup-php
                 name: Setup PHP runtime
