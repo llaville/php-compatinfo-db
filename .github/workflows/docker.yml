@@ -17,7 +17,7 @@ jobs:
             DOCKER_REGISTRY: ghcr.io
             DOCKER_BUILD_TAG: ghcr.io/llaville/php-compatinfo-db:${{ github.event.inputs.tag || 'latest' }}
 
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-24.04
 
         permissions:
             packages: write
