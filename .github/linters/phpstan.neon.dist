@@ -7,10 +7,11 @@ parameters:
     ignoreErrors:
         -
             identifier: missingType.generics
-        -
-            message: '#^Call to an undefined method Symfony\\Component\\Config\\Definition\\Builder\\NodeParentInterface\:\:scalarNode\(\)\.$#'
-            identifier: method.notFound
-            count: 1
-            path: ../../src/Infrastructure/Framework/Symfony/DependencyInjection/Configuration.php
+        # This PHPStan error occurs only with PHP 8.1 (that reached End-Of-Life, so forgot it)
+        #-
+        #    message: '#^Call to an undefined method Symfony\\Component\\Config\\Definition\\Builder\\NodeParentInterface\:\:scalarNode\(\)\.$#'
+        #    identifier: method.notFound
+        #    count: 1
+        #    path: ../../src/Infrastructure/Framework/Symfony/DependencyInjection/Configuration.php
     reportUnmatchedIgnoredErrors: true
     treatPhpDocTypesAsCertain: false
