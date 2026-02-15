@@ -172,5 +172,24 @@
         "name": "executeBulkWriteCommand",
         "ext_min": "2.1.0",
         "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "fromVector",
+        "static": true,
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "getVectorType",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "toArray",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
     }
 ]

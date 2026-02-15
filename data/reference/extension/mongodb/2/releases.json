@@ -34,5 +34,29 @@
         "rel_date": "2025-10-08",
         "rel_state": "stable",
         "php_min": "8.1.0"
+    },
+    {
+        "rel_version": "2.1.7",
+        "rel_date": "2026-01-28",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
+    },
+    {
+        "rel_version": "2.1.8",
+        "rel_date": "2026-02-04",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
+    },
+    {
+        "rel_version": "2.2.0",
+        "rel_date": "2026-02-11",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
+    },
+    {
+        "rel_version": "2.2.1",
+        "rel_date": "2026-02-13",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
     }
 ]

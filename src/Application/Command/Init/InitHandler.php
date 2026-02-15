@@ -1020,7 +1020,7 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'mongodb' => [
             'classes'    => ['1', '2'],
-            'const'      => ['1'],
+            'const'      => ['1', '2'],
             'constants'  => ['1'],
             'functions'  => ['1'],
             'iniEntries' => ['1'],

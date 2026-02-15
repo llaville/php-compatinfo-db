@@ -13,5 +13,10 @@
         "name": "MongoDB\\Driver\\Exception\\BulkWriteCommandException",
         "ext_min": "2.1.0",
         "php_min": "8.1.0"
+    },
+    {
+        "name": "MongoDB\\BSON\\VectorType",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
     }
 ]

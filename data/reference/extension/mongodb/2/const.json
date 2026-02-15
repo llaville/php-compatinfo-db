@@ -1,0 +1,26 @@
+[
+    {
+        "class_name": "MongoDB\\BSON\\Binary",
+        "name": "TYPE_VECTOR",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\VectorType",
+        "name": "Float32",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\VectorType",
+        "name": "Int8",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
+    },
+    {
+        "class_name": "MongoDB\\BSON\\VectorType",
+        "name": "PackedBit",
+        "ext_min": "2.2.0",
+        "php_min": "8.1.0"
+    }
+]
