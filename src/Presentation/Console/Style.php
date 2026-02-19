@@ -8,6 +8,7 @@
 namespace Bartlett\CompatInfoDb\Presentation\Console;
 
 use Symfony\Component\Console\Helper\Table;
+use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -46,7 +47,9 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * @inheritDoc
+     * Formats informational text.
+     *
+     * @param string|array<string> $message
      */
     public function text(string|array $message): void
     {
@@ -65,7 +68,10 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * @inheritDoc
+     * Formats a list.
+     *
+     * @param array<string> $elements
+     * @param array<string, string> $attributes
      */
     public function listing(array $elements, array $attributes = ['type' => '*', 'style' => '', 'indent' => '  ']): void
     {
@@ -96,7 +102,10 @@ final class Style extends SymfonyStyle implements StyleInterface
     }
 
     /**
-     * @inheritDoc
+     * Formats a table.
+     *
+     * @param array<string> $headers
+     * @param list<list<string>|TableSeparator> $rows
      */
     public function table(array $headers, array $rows, string $style = 'compact'): void
     {

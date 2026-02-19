@@ -1,6 +1,22 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.29.x
+
+|                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.29.0][6.29.0] - 2024-02-15 |           |  8.5.3  | 8.4.18  | 8.3.30  | 8.2.30  | 8.1.34  |         |         |         |         |         |         |         |
+|        [2.2.1][mongodb-2.2.1] | mongodb   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.2.0][mongodb-2.2.0] | mongodb   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.1.8][mongodb-2.1.8] | mongodb   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.1.7][mongodb-2.1.7] | mongodb   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.29.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.29.0
+[mongodb-2.2.1]: https://pecl.php.net/package/mongodb/2.2.1
+[mongodb-2.2.0]: https://pecl.php.net/package/mongodb/2.2.0
+[mongodb-2.1.8]: https://pecl.php.net/package/mongodb/2.1.8
+[mongodb-2.1.7]: https://pecl.php.net/package/mongodb/2.1.7
+
 ## Releases 6.28.x
 
 |                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
