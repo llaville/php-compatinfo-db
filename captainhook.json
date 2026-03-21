@@ -3,14 +3,38 @@
         "verbosity": "normal",
         "allow-failure": false,
         "ansi-colors": true,
+        "bootstrap": "autoload.php",
         "git-directory": ".git",
-        "fail-on-first-error": true,
-        "plugins": [],
+        "fail-on-first-error": false,
+        "custom": {
+            "ecs.config-file": ".github/linters/ecs.php",
+            "php-cs.config-file": ".github/linters/.phpcs.xml.dist",
+            "php-cs-fixer.config-file": ".github/linters/.php-cs-fixer.dist.php",
+            "phplint.config-file": ".github/linters/.phplint.yml",
+            "phpstan.config-file": ".github/linters/phpstan.neon.dist",
+            "phpunit.config-file": "./phpunit.xml.dist"
+        },
+        "plugins": [
+            {
+                "plugin": "\\Bartlett\\CaptainHookBinPlugin\\BinPlugin",
+                "options": {
+                    "binary-directory": "{$ENV|value-of:VENDOR_BIN_DIR|default:vendor/bin}",
+                    "config-directory": ".github/linters",
+                    "ansi-colors-flag": "--ansi",
+                    "auto-colors-flag": "--colors=auto",
+                    "always-colors-flag": "--colors=always",
+                    "never-colors-flag": "--colors=never"
+                }
+            }
+        ],
         "includes": [
-            ".config/captainhook/pre-push.phpstan.json",
-            ".config/captainhook/pre-push.phpunit.json",
+            ".config/captainhook/pre-commit.ecs.json",
+            ".config/captainhook/pre-commit.mago.json",
+            ".config/captainhook/pre-commit.phpcs.json",
+            ".config/captainhook/pre-commit.phpcs-fixer.json",
             ".config/captainhook/pre-commit.phplint.json",
-            ".config/captainhook/pre-commit.phpcs.json"
+            ".config/captainhook/pre-push.phpstan.json",
+            ".config/captainhook/pre-push.phpunit.json"
         ]
     }
 }

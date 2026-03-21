@@ -1,11 +1,28 @@
 {
     "pre-commit": {
-        "enabled": false,
+        "enabled": true,
         "actions": [
             {
-                "action": "{$ENV|value-of:VENDOR_BIN_DIR|default:vendor/bin/}php-cs-fixer fix --dry-run --config=.github/linters/.php-cs-fixer.dist.php --using-cache=no --verbose --ansi {$STAGED_FILES|of-type:php|separated-by: }",
+                "action": [
+                    "{$ENV|value-of:XDG_BIN_HOME}php-cs-fixer",
+                    "fix",
+                    "--dry-run",
+                    "--config={$CONFIG|value-of:custom>>php-cs-fixer.config-file}",
+                    "--using-cache=no",
+                    "--show-progress=none",
+                    "--verbose",
+                    "{$CONFIG|value-of:plugin>>\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.ansi-colors-flag}",
+                    "{$STAGED_FILES|of-type:php|separated-by: }"
+                ],
                 "config": {
                     "label": "Checks Coding Standard (with PHP-CS-Fixer)"
+                },
+                "options": {
+                    "config-file": ".php-cs-fixer.dist.php",
+                    "package-require": [
+                        "friendsofphp/php-cs-fixer",
+                        "^3.5"
+                    ]
                 }
             }
         ]
