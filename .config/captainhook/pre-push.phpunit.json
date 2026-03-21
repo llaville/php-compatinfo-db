@@ -6,6 +6,8 @@
                 "action": [
                     "{$ENV|value-of:XDG_BIN_HOME}phpunit",
                     "--config {$CONFIG|value-of:custom>>phpunit.config-file|default:./phpunit.xml}",
+                    "--do-not-fail-on-phpunit-warning",
+                    "--no-progress",
                     "{$CONFIG|value-of:plugin>>\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.always-colors-flag}"
                 ],
                 "config": {
