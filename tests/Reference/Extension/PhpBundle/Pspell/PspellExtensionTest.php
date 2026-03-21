@@ -17,5 +17,4 @@ use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
  */
 class PspellExtensionTest extends GenericTestCase
 {
-
 }
