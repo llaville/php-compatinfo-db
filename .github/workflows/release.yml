@@ -75,7 +75,7 @@ jobs:
                 php:
                     - ${{ inputs.php-version }}
                 tools:
-                    - box:4.6  # available since https://github.com/shivammathur/setup-php/releases/tag/2.27.0
+                    - box:4.7  # available since https://github.com/shivammathur/setup-php/releases/tag/2.27.0
 
         steps:
             -   # https://github.com/actions/checkout

@@ -1,6 +1,16 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.30.x
+
+|                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.30.0][6.30.0] - 2024-03-23 |           |  8.5.4  | 8.4.19  | 8.3.30  | 8.2.30  | 8.1.34  |         |         |         |         |         |         |         |
+|         [3.5.1][xdebug-3.5.1] | xdebug    | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.30.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.30.0
+[xdebug-3.5.1]: https://pecl.php.net/package/xdebug/3.5.1
+
 ## Releases 6.29.x
 
 |                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
