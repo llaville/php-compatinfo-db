@@ -5,7 +5,7 @@
             {
                 "action": [
                     "{$ENV|value-of:XDG_BIN_HOME}phplint",
-                    "--configuration={$CONFIG|value-of:custom>>phplint.config-file}",
+                    "--configuration={$ENV|value-of:XDG_CONFIG_HOME|cache:false}",
                     "--no-progress",
                     "{$CONFIG|value-of:plugin>>\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.ansi-colors-flag}",
                     "{$STAGED_FILES|of-type:php|separated-by: }"

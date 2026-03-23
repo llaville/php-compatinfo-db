@@ -6,14 +6,6 @@
         "bootstrap": "autoload.php",
         "git-directory": ".git",
         "fail-on-first-error": false,
-        "custom": {
-            "ecs.config-file": ".github/linters/ecs.php",
-            "php-cs.config-file": ".github/linters/.phpcs.xml.dist",
-            "php-cs-fixer.config-file": ".github/linters/.php-cs-fixer.dist.php",
-            "phplint.config-file": ".github/linters/.phplint.yml",
-            "phpstan.config-file": ".github/linters/phpstan.neon.dist",
-            "phpunit.config-file": "./phpunit.xml.dist"
-        },
         "plugins": [
             {
                 "plugin": "\\Bartlett\\CaptainHookBinPlugin\\BinPlugin",

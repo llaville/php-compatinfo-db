@@ -7,7 +7,7 @@
                     "{$ENV|value-of:XDG_BIN_HOME}php-cs-fixer",
                     "fix",
                     "--dry-run",
-                    "--config={$CONFIG|value-of:custom>>php-cs-fixer.config-file}",
+                    "--config={$ENV|value-of:XDG_CONFIG_HOME|cache:false}",
                     "--using-cache=no",
                     "--show-progress=none",
                     "--verbose",

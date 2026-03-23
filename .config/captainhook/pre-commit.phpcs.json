@@ -5,7 +5,7 @@
             {
                 "action": [
                     "{$ENV|value-of:XDG_BIN_HOME}phpcs",
-                    "--standard={$CONFIG|value-of:custom>>php-cs.config-file}",
+                    "--standard={$ENV|value-of:XDG_CONFIG_HOME|cache:false}",
                     "--warning-severity=0",
                     "--colors",
                     "{$STAGED_FILES|of-type:php|separated-by: }"

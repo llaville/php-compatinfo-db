@@ -6,7 +6,7 @@
                 "action": [
                     "{$ENV|value-of:XDG_BIN_HOME}ecs",
                     "check",
-                    "--config={$CONFIG|value-of:custom>>ecs.config-file}",
+                    "--config={$ENV|value-of:XDG_CONFIG_HOME|cache:false}",
                     "--no-diffs",
                     "--no-progress-bar",
                     "{$CONFIG|value-of:plugin>>\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.ansi-colors-flag}",
