@@ -32,6 +32,9 @@ class Ssh2ExtensionTest extends GenericTestCase
             'ssh2_poll',
             // Requires libssh >= 1.2.3
             'ssh2_auth_agent',
+            // Have libssh2 with keepalive support
+            'ssh2_keepalive_config',
+            'ssh2_keepalive_send',
         );
         self::$optionalconstants = array(
             // Requires PHP_SSH2_POLL

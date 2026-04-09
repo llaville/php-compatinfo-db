@@ -18,5 +18,25 @@
         "name": "ssh2_shell_resize",
         "ext_min": "1.4",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "ssh2_set_timeout",
+        "ext_min": "1.5",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "ssh2_send_signal",
+        "ext_min": "1.5",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "ssh2_keepalive_config",
+        "ext_min": "1.5",
+        "php_min": "8.0.0"
+    },
+    {
+        "name": "ssh2_keepalive_send",
+        "ext_min": "1.5",
+        "php_min": "8.0.0"
     }
 ]
