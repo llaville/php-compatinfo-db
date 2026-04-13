@@ -24,6 +24,7 @@ use function getenv;
 use function ini_get;
 use function php_sapi_name;
 use function sprintf;
+use function sscanf;
 use const FILTER_VALIDATE_BOOLEAN;
 use const PHP_VERSION;
 
@@ -59,7 +60,7 @@ final class AboutCommand extends AbstractCommand implements CommandInterface
 
         $parameters = $app->getApplicationParameters();
 
-        list($majorVersion, $minorVersion, ) = \sscanf($app->getLongVersion(), '%d.%d.%s');
+        list($majorVersion, $minorVersion, ) = sscanf($app->getLongVersion(), '%d.%d.%s');
 
         $webSite = sprintf(
             '%s/%d.%d',

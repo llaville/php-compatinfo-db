@@ -1,6 +1,18 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.31.x
+
+|                       Release | Extension    | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:-------------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.31.0][6.31.0] - 2024-04-13 |              |  8.5.5  | 8.4.20  | 8.3.30  | 8.2.30  | 8.1.34  |         |         |         |         |         |         |         |
+|      [3.2.0][mailparse-3.2.0] | maiparse     | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [1.5.0][ssh2-1.5.0] | ssh2         | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.31.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.31.0
+[mailparse-3.2.0]: https://pecl.php.net/package/mailparse/3.2.0
+[ssh2-1.5.0]: https://pecl.php.net/package/ssh2/1.5.0
+
 ## Releases 6.30.x
 
 |                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
