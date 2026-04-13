@@ -11,7 +11,7 @@
                 "plugin": "\\Bartlett\\CaptainHookBinPlugin\\BinPlugin",
                 "options": {
                     "binary-directory": "{$ENV|value-of:VENDOR_BIN_DIR|default:vendor/bin}",
-                    "config-directory": ".github/linters",
+                    "config-directory": "{$ENV|value-of:XDG_CONFIG_HOME|default:.github/linters}",
                     "ansi-colors-flag": "--ansi",
                     "auto-colors-flag": "--colors=auto",
                     "always-colors-flag": "--colors=always",

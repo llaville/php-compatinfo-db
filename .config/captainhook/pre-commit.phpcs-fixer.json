@@ -7,18 +7,19 @@
                     "{$ENV|value-of:XDG_BIN_HOME}php-cs-fixer",
                     "fix",
                     "--dry-run",
-                    "--config={$ENV|value-of:XDG_CONFIG_HOME|cache:false}",
+                    "--config={$ENV|value-of:\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.config-file|cache:false}",
                     "--using-cache=no",
                     "--show-progress=none",
                     "--verbose",
-                    "{$CONFIG|value-of:plugin>>\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.ansi-colors-flag}",
+                    "{$ENV|value-of:\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.colors-flag|cache:false}",
                     "{$STAGED_FILES|of-type:php|separated-by: }"
                 ],
                 "config": {
                     "label": "Checks Coding Standard (with PHP-CS-Fixer)"
                 },
                 "options": {
-                    "config-file": ".php-cs-fixer.dist.php",
+                    "colors": "ansi",
+                    "config-file": "{$ENV|value-of:XDG_CONFIG_HOME}/.php-cs-fixer.dist.php",
                     "package-require": [
                         "friendsofphp/php-cs-fixer",
                         "^3.5"
