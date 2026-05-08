@@ -188,7 +188,7 @@ final class BuildHandler implements CommandHandlerInterface
                         );
                     }
                     continue;
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                 }
 
                 $from = $method->getDeclaringClass()->getName();

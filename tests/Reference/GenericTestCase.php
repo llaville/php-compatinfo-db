@@ -395,7 +395,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         foreach ($classes as $classname) {
             try {
                 $class = new ReflectionClass($classname);
-            } catch (ReflectionException $e) {
+            } catch (ReflectionException) {
                 // abstract class
                 continue;
             }
@@ -429,7 +429,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         foreach ($classes as $classname) {
             try {
                 $class = new ReflectionClass($classname);
-            } catch (ReflectionException $e) {
+            } catch (ReflectionException) {
                 // abstract class
                 continue;
             }
@@ -452,7 +452,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $method->getPrototype();
                     // don't check prototype methods
                     continue;
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                     // none prototype for this method
                 }
 
@@ -563,7 +563,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                             "Function '$element', found in Reference ($min, $max), does not exists."
                         );
                     } // else it should be a user function provided by symfony/polyfill-php packages
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                     // thrown if the given function does not exist.
                     $this->assertTrue(
                         false,
@@ -580,7 +580,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                             "Function '$element', found in Reference ($min, $max), exists."
                         );
                     } // else it should be a user function provided by symfony/polyfill-php packages
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                     // thrown if the given function does not exist.
                 }
             } // else (null) test $element should be skipped because it was marked as optional or ignored
@@ -706,7 +706,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                         (strcasecmp($extensionName, self::$obj->getName()) === 0),
                         "Class '$element', found in Reference ($min, $max), exists."
                     );
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                     // thrown if the given class does not exist.
                 }
             } // else (null) test $element should be skipped because it was marked as optional or ignored
@@ -781,11 +781,11 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $method->getPrototype();
                     // don't check prototype methods
                     continue;
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                     // none prototype for this method
                 }
                 $methodExists = true;
-            } catch (ReflectionException $e) {
+            } catch (ReflectionException) {
                 // thrown if the given method does not exist.
                 $methodExists = false;
             }
@@ -911,7 +911,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                             "Interface '$element', found in Reference ($min, $max), exists."
                         );
                     }
-                } catch (ReflectionException $e) {
+                } catch (ReflectionException) {
                     // thrown if the given interface does not exist.
                 }
             } // else (null) test $element should be skipped because it was marked as optional or ignored

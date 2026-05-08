@@ -226,7 +226,7 @@ final class PolyfillHandler implements CommandHandlerInterface
             $phar = new PharData($tempArchive);
             $phar->extractTo(sys_get_temp_dir(), null, true);
             $targetDir = sys_get_temp_dir() . DIRECTORY_SEPARATOR . basename($phar->current()->getPathname());
-        } catch (Exception $e) {
+        } catch (Exception) {
             return null;
         }
         return $targetDir;
