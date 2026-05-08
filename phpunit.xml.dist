@@ -95,11 +95,6 @@
         <testsuite name="mbstring">
             <directory prefix="Mbstring" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
-        <testsuite name="mysql">
-            <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mysql" suffix="ExtensionTest.php">tests/
-            </directory>
-            <directory prefix="Mysqli" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
-        </testsuite>
         <testsuite name="mysqli">
             <directory prefix="Mysqli" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
@@ -196,12 +191,6 @@
         <testsuite name="xml">
             <directory prefix="Xml" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
-        <testsuite name="xmlreader">
-            <directory prefix="Xmlreader" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
-        </testsuite>
-        <testsuite name="xmlwriter">
-            <directory prefix="Xmlwriter" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
-        </testsuite>
         <testsuite name="xsl">
             <directory prefix="Xsl" suffix="ExtensionTest.php">tests/Reference/Extension/PhpBundle</directory>
         </testsuite>
@@ -274,9 +263,6 @@
         </testsuite>
         <testsuite name="memcache">
             <directory prefix="Memcache" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
-        </testsuite>
-        <testsuite name="memcached">
-            <directory prefix="Memcached" suffix="ExtensionTest.php">tests/Reference/Extension/PhpPecl</directory>
         </testsuite>
         <testsuite name="mongo">
             <directory phpVersion="7.0.0" phpVersionOperator="lt" prefix="Mongo" suffix="ExtensionTest.php">
