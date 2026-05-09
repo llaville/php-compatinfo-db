@@ -15,12 +15,12 @@ without it was initialized (schema created and data loaded), the `diagnose` comm
 
 ## Requirements
 
-* PHP 8.1 or greater
+* PHP 8.2 or greater
 * ext-json
 * ext-pcre
 * ext-pdo
 * ext-spl
-* PHPUnit 10 or greater (if you want to run unit tests)
+* PHPUnit 11 or greater (if you want to run unit tests)
 
 ## PHAR
 
@@ -56,7 +56,7 @@ You can also install application locally to your project with [Phive][phive] and
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <phive xmlns="https://phar.io/phive">
-    <phar name="llaville/php-compatinfo-db" version="^6.31" copy="false" />
+    <phar name="llaville/php-compatinfo-db" version="^6.32" copy="false" />
 </phive>
 ```
 
@@ -70,7 +70,7 @@ The recommended way to install this library is [through composer][composer].
 If you don't know yet what is composer, have a look [on introduction][composer-intro].
 
 ```shell
-composer require bartlett/php-compatinfo-db ^6.31
+composer require bartlett/php-compatinfo-db ^6.32
 ```
 
 If you cannot install it because of a dependency conflict, or you prefer to install it for your project, we recommend
@@ -88,7 +88,7 @@ vendor/bin/compatinfo-db
 The PHP CompatInfoDB can be directly used from [GitHub][github-repo] by cloning the repository into a directory of your choice.
 
 ```shell
-git clone -b 6.31 https://github.com/llaville/php-compatinfo-db.git
+git clone -b 6.32 https://github.com/llaville/php-compatinfo-db.git
 ```
 
 ## Configuring the Database
