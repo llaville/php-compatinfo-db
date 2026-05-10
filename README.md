@@ -33,7 +33,7 @@
 [Branch_632x]: https://github.com/llaville/php-compatinfo-db/tree/6.32
 [PHPVersion_632x-img]: https://img.shields.io/packagist/php-v/bartlett/php-compatinfo-db/6.32.0
 [PHPVersion_632x]: https://www.php.net/supported-versions.php
-[Packagist_632x-img]: https://img.shields.io/badge/packagist-v6.32.0-blue
+[Packagist_632x-img]: https://img.shields.io/badge/packagist-v6.32.1-blue
 [Packagist_632x]: https://packagist.org/packages/bartlett/php-compatinfo-db
 [License_632x-img]: https://img.shields.io/packagist/l/bartlett/php-compatinfo-db
 [License_632x]: https://github.com/llaville/php-compatinfo-db/blob/6.32/LICENSE
