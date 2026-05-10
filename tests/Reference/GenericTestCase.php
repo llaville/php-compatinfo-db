@@ -17,6 +17,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Function_;
 
 use Composer\Semver\Semver;
 
+use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\ExpectationFailedException;
 
 use Exception;
@@ -467,10 +468,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that all referenced ini entries exists
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetIniEntriesFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getIniEntries(), 'optionalcfgs') as $args) {
@@ -502,10 +501,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each ini entry is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetIniEntriesFromExtension(): void
     {
         $ext = self::$obj->getName();
@@ -534,10 +531,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that all referenced functions exists
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetFunctionsFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getFunctions(), 'optionalfunctions') as $args) {
@@ -589,10 +584,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each function is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetFunctionsFromExtension(): void
     {
         $generator = $this->functionsFromExtensionProvider();
@@ -614,10 +607,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that all referenced constants exists
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetConstantsFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getConstants(), 'optionalconstants') as $args) {
@@ -649,10 +640,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each constant is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetConstantsFromExtension(): void
     {
         $generator = $this->constantsFromExtensionProvider();
@@ -674,10 +663,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that all referenced classes exists
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetClassesFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getClasses(), 'optionalclasses') as $args) {
@@ -715,10 +702,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each class is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetClassesFromExtension(): void
     {
         $generator = $this->classesFromExtensionProvider();
@@ -740,10 +725,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that all referenced class methods exists
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetMethodsFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getMethods(), 'optionalmethods') as $args) {
@@ -818,10 +801,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each class method is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetMethodsFromExtension(): void
     {
         $generator = $this->classMethodsFromExtensionProvider();
@@ -852,10 +833,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each class constant is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetClassConstantsFromExtension(): void
     {
         $generator = $this->classConstantsFromExtensionProvider();
@@ -877,10 +856,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that all referenced interfaces exists
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetInterfacesFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getInterfaces(), 'optionalinterfaces') as $args) {
@@ -920,10 +897,8 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
     /**
      * Test that each interface is defined in reference
-     *
-     * @group  reference
-     * @return void
      */
+    #[Group('reference')]
     public function testGetInterfacesFromExtension(): void
     {
         $generator = $this->interfacesFromExtensionProvider();
