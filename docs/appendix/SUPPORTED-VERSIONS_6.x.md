@@ -1,6 +1,20 @@
 <!-- markdownlint-disable MD013 -->
 # Releases 6.x
 
+## Releases 6.32.x
+
+|                       Release | Extension | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |
+|------------------------------:|:----------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [6.32.0][6.32.0] - 2026-05-10 |           |  8.5.6  | 8.4.21  | 8.3.31  | 8.2.31  |         |         |         |         |         |         |         |         |
+|        [2.3.1][mongodb-2.3.1] | mongodb   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|        [2.3.0][mongodb-2.3.0] | mongodb   | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+|           [2.9.3][solr-2.9.3] | solr      | &check; | &check; | &check; | &check; | &check; |         |         |         |         |         |         |         |
+
+[6.32.0]: https://github.com/llaville/php-compatinfo-db/releases/tag/6.32.0
+[mongodb-2.3.1]: https://pecl.php.net/package/mongodb/2.3.1
+[mongodb-2.3.0]: https://pecl.php.net/package/mongodb/2.3.0
+[solr-2.9.3]: https://pecl.php.net/package/solr/2.9.3
+
 ## Releases 6.31.x
 
 |                       Release | Extension    | PHP 8.5 | PHP 8.4 | PHP 8.3 | PHP 8.2 | PHP 8.1 | PHP 8.0 | PHP 7.4 | PHP 7.3 | PHP 7.2 | PHP 7.1 | PHP 7.0 | PHP 5.6 |

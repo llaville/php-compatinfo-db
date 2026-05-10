@@ -8,7 +8,7 @@ that match a PHP minimum value.
 ```php
 <?php declare(strict_types=1);
 
-require_once __DIR__ . '/config/bootstrap.php';
+require_once __DIR__ . '/autoload.php';
 
 use Bartlett\CompatInfoDb\Application\Kernel\ConsoleKernel;
 use Bartlett\CompatInfoDb\Application\Query\Show\ShowHandler;
