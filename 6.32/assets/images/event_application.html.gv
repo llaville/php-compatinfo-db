@@ -1,0 +1,112 @@
+digraph {
+  graph [name="G" overlap="false" rankdir="TB" bgcolor="transparent"]
+  node [fontname="Verdana" fontsize=8 shape="none" margin=0 fillcolor="#FEFECE" style="filled"]
+  edge [fontname="Verdana" fontsize=8]
+  subgraph cluster_0 {
+    graph [bgcolor="BurlyWood"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Event\\Dispatcher"
+    "Bartlett\\CompatInfoDb\\Application\\Event\\Dispatcher\\EventDispatcher" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>EventDispatcher</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– diagnoseOutput</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(input : Symfony\\Component\\Console\\Input\\InputInterface, profileEventSubscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface)</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_1 {
+    label = "Symfony\\Component\\EventDispatcher"
+    "Symfony\\Component\\EventDispatcher\\EventDispatcher" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>EventDispatcher</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– listeners = []</td></tr>
+    <tr><td align="left">– sorted = []</td></tr>
+    <tr><td align="left">– optimized</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct()</td></tr>
+    <tr><td align="left">+ dispatch(event : object, eventName : string = «unknown») : object</td></tr>
+    <tr><td align="left">+ getListeners(eventName : string = «unknown») : array</td></tr>
+    <tr><td align="left">+ getListenerPriority(eventName : string, listener) : ?int</td></tr>
+    <tr><td align="left">+ hasListeners(eventName : string = «unknown») : bool</td></tr>
+    <tr><td align="left">+ addListener(eventName : string, listener, priority : int = 0) : void</td></tr>
+    <tr><td align="left">+ removeListener(eventName : string, listener) : void</td></tr>
+    <tr><td align="left">+ addSubscriber(subscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface) : void</td></tr>
+    <tr><td align="left">+ removeSubscriber(subscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface) : void</td></tr>
+    <tr><td align="left"># callListeners(listeners : iterable, eventName : string, event : object) : void</td></tr>
+    <tr><td align="left">– sortListeners(eventName : string) : void</td></tr>
+    <tr><td align="left">– optimizeListeners(eventName : string) : array</td></tr>
+</table></td></tr>
+</table>>]
+    "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>EventDispatcherInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» addListener(eventName : string, listener : callable, priority : int = 0) : void</td></tr>
+    <tr><td align="left">+ «abstract» addSubscriber(subscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface) : void</td></tr>
+    <tr><td align="left">+ «abstract» removeListener(eventName : string, listener : callable) : void</td></tr>
+    <tr><td align="left">+ «abstract» removeSubscriber(subscriber : Symfony\\Component\\EventDispatcher\\EventSubscriberInterface) : void</td></tr>
+    <tr><td align="left">+ «abstract» getListeners(eventName : string = «unknown») : array</td></tr>
+    <tr><td align="left">+ «abstract» getListenerPriority(eventName : string, listener : callable) : ?int</td></tr>
+    <tr><td align="left">+ «abstract» hasListeners(eventName : string = «unknown») : bool</td></tr>
+</table></td></tr>
+</table>>]
+    "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>EventSubscriberInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» «static» getSubscribedEvents()</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_2 {
+    label = "Symfony\\Contracts\\EventDispatcher"
+    "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>EventDispatcherInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» dispatch(event : object, eventName : string = «unknown») : object</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_3 {
+    label = "Psr\\EventDispatcher"
+    "Psr\\EventDispatcher\\EventDispatcherInterface" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b>«interface»<br/>EventDispatcherInterface</b></td></tr>
+    <tr><td></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ «abstract» dispatch(event : object)</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  subgraph cluster_4 {
+    graph [bgcolor="BurlyWood"]
+    label = "Bartlett\\CompatInfoDb\\Application\\Event\\Subscriber"
+    "Bartlett\\CompatInfoDb\\Application\\Event\\Subscriber\\ProfileEventSubscriber" [shape="none" label=<
+<table cellspacing="0" border="0" cellborder="1">
+    <tr><td bgcolor="#eeeeee"><b><br/>ProfileEventSubscriber</b></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">– stopwatch</td></tr>
+</table></td></tr>
+    <tr><td><table border="0" cellspacing="0" cellpadding="2">
+    <tr><td align="left">+ __construct(stopwatch : Symfony\\Component\\Stopwatch\\Stopwatch)</td></tr>
+    <tr><td align="left">+ «static» getSubscribedEvents() : array</td></tr>
+    <tr><td align="left">+ onConsoleCommand(event : Symfony\\Component\\Console\\Event\\ConsoleCommandEvent) : void</td></tr>
+    <tr><td align="left">+ onConsoleTerminate(event : Symfony\\Component\\Console\\Event\\ConsoleTerminateEvent) : void</td></tr>
+    <tr><td align="left">– toTimeString(time : int) : string</td></tr>
+</table></td></tr>
+</table>>]
+  }
+  "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface" -> "Psr\\EventDispatcher\\EventDispatcherInterface" [arrowhead="empty" style="dashed"]
+  "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface" -> "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface" [arrowhead="empty" style="dashed"]
+  "Symfony\\Component\\EventDispatcher\\EventDispatcher" -> "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface" [arrowhead="empty" style="dashed"]
+  "Bartlett\\CompatInfoDb\\Application\\Event\\Dispatcher\\EventDispatcher" -> "Symfony\\Component\\EventDispatcher\\EventDispatcher" [arrowhead="empty" style="filled"]
+  "Bartlett\\CompatInfoDb\\Application\\Event\\Subscriber\\ProfileEventSubscriber" -> "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface" [arrowhead="empty" style="dashed"]
+}
