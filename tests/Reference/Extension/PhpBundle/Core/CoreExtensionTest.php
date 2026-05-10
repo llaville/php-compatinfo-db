@@ -37,6 +37,8 @@ class CoreExtensionTest extends GenericTestCase
             '__NAMESPACE__',
             '__TRAIT__',
             '__PROPERTY__',
+            // @link https://github.com/llaville/php-compatinfo-db/issues/147
+            'PHP_BUILD_PROVIDER',
         );
         self::$ignoredconstants = array(
             // add by swig framework as core constant
