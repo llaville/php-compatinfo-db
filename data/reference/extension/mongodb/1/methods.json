@@ -1974,6 +1974,7 @@
         "class_name": "MongoDB\\Driver\\ReadConcern",
         "name": "__serialize",
         "ext_min": "1.15.0",
+        "ext_max": "2.2.1",
         "php_min": "7.2.0"
     },
     {
@@ -2031,6 +2032,7 @@
         "class_name": "MongoDB\\Driver\\ReadPreference",
         "name": "__serialize",
         "ext_min": "1.15.0",
+        "ext_max": "2.2.1",
         "php_min": "7.2.0"
     },
     {
@@ -2432,6 +2434,7 @@
         "class_name": "MongoDB\\Driver\\WriteConcern",
         "name": "__serialize",
         "ext_min": "1.15.0",
+        "ext_max": "2.2.1",
         "php_min": "7.2.0"
     },
     {
