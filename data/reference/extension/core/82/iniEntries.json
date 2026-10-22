@@ -8,5 +8,10 @@
         "name": "mail.mixed_lf_and_crlf",
         "ext_min": "8.2.4RC1",
         "php_min": "8.2.4RC1"
+    },
+    {
+        "name": "memory_hard_limit_percent",
+        "ext_min": "8.2.35",
+        "php_min": "8.2.35"
     }
 ]
