@@ -30,5 +30,5 @@ interface ExtensionVersionProviderInterface
     public const LATEST_PHP_8_2 = '8.2.35';
     public const LATEST_PHP_8_3 = '8.3.36';
     public const LATEST_PHP_8_4 = '8.4.27';
-    public const LATEST_PHP_8_5 = '8.5.6';
+    public const LATEST_PHP_8_5 = '8.5.12';
 }
