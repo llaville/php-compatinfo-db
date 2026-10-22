@@ -1,0 +1,8 @@
+[
+    {
+        "class_name": "Yac",
+        "name": "has",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    }
+]

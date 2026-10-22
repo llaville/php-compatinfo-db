@@ -28,6 +28,9 @@ class YacExtensionTest extends GenericTestCase
             'YAC_SERIALIZER_MSGPACK',   // requires YAC_ENABLE_MSGPACK
             'YAC_SERIALIZER_IGBINARY',  // requires YAC_ENABLE_IGBINARY
             'YAC_SERIALIZER_JSON',      // requires YAC_ENABLE_JSON
+            'YAC_SERIALIZER_PHP',
+            'YAC_SERIALIZER',
+            'YAC_DEBUG',
         ];
 
         self::$optionalmethods = [

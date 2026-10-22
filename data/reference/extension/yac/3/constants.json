@@ -1,0 +1,72 @@
+[
+    {
+        "name": "YAC_KIND_MISS",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_KIND_FLAG",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_KIND_LONG",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_KIND_DOUBLE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_KIND_STRING",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_KIND_BLOB",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_LOC_BLOCK",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_LOC_VALWORD",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_LOC_INLINE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_ENC_NONE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_ENC_PHP",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_ENC_YAC",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_SERIALIZER",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "YAC_DEBUG",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    }
+]

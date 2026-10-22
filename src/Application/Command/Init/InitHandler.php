@@ -1941,10 +1941,10 @@ final class InitHandler implements CommandHandlerInterface
 
         yield 'yac' => [
             'classes'    => ['0'],
-            'constants'  => ['0', '2'],
+            'constants'  => ['0', '2', '3'],
             'iniEntries' => ['0', '2'],
-            'methods'    => ['0', '2'],
-            'releases'   => ['0', '2'],
+            'methods'    => ['0', '2', '3'],
+            'releases'   => ['0', '2', '3'],
         ];
 
         yield 'yaml' => [
