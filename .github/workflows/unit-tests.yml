@@ -56,7 +56,7 @@ jobs:
         steps:
             -   # https://github.com/actions/checkout
                 name: Checkout
-                uses: actions/checkout@v6.0.2
+                uses: actions/checkout@v7.0.1
                 with:
                     # Make sure the value of GITHUB_TOKEN will not be persisted in repo's config
                     persist-credentials: false
@@ -72,7 +72,7 @@ jobs:
             -   # https://github.com/shivammathur/cache-extensions
                 name: Setup cache environment
                 id: extcache
-                uses: shivammathur/cache-extensions@1.14.3
+                uses: shivammathur/cache-extensions@1.15.5
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
@@ -80,7 +80,7 @@ jobs:
 
             -   # https://github.com/actions/cache
                 name: Cache extensions
-                uses: actions/cache@v5.0.4
+                uses: actions/cache@v6.1.0
                 with:
                     path: ${{ steps.extcache.outputs.dir }}
                     key: ${{ steps.extcache.outputs.key }}
@@ -88,7 +88,7 @@ jobs:
 
             -   # https://github.com/shivammathur/setup-php
                 name: Setup PHP runtime
-                uses: shivammathur/setup-php@2.37.1
+                uses: shivammathur/setup-php@2.37.2
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
