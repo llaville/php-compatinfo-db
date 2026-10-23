@@ -1,0 +1,14 @@
+[
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "evaluateFormula",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "computeFormula",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    }
+]

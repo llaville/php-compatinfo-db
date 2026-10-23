@@ -1,0 +1,50 @@
+[
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "COMMENT_DISPLAY_DEFAULT",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "COMMENT_DISPLAY_HIDDEN",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "COMMENT_DISPLAY_VISIBLE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "OBJECT_POSITION_DEFAULT",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "OBJECT_MOVE_AND_SIZE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "OBJECT_MOVE_DONT_SIZE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "OBJECT_DONT_MOVE_DONT_SIZE",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "OBJECT_MOVE_AND_SIZE_AFTER",
+        "ext_min": "3.0.0",
+        "php_min": "7.0.0"
+    }
+]

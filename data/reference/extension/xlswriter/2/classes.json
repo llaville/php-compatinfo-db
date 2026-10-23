@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Vtiful\\Kernel\\ConditionalFormat",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "name": "Vtiful\\Kernel\\Table",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    }
+]

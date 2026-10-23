@@ -1,0 +1,555 @@
+[
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "__construct",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "type",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "criteria",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "value",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "valueString",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "minimum",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "minimumString",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "minimumRule",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "minimumColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "middle",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "middleString",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "middleRule",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "middleColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "maximum",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "maximumString",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "maximumRule",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "maximumColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "format",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barOnly",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "dataBar2010",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barSolid",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barNegativeColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barBorderColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barNegativeBorderColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barNoBorder",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barDirection",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barAxisPosition",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "barAxisColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "iconStyle",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "reverseIcons",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "iconsOnly",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "multiRange",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "stopIfTrue",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertCommentOpt",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertImageBuffer",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertImageOpt",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setHeader",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setFooter",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "repeatRows",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "repeatColumns",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "printArea",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "horizontalPageBreaks",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "verticalPageBreaks",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "fitToPages",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setTabColor",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setProperties",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setCustomProperty",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "defineName",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setBackgroundImage",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "setBackgroundImageBuffer",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "conditionalFormatCell",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "conditionalFormatRange",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "addTable",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "sheetListWithMeta",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getMergedCells",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getHyperlinks",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getSheetProtection",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getRowOptions",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getColumnOptions",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getDefaultRowHeight",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getDefaultColumnWidth",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getDefinedNames",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getDataValidations",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getAutoFilter",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getFormulaAst",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0",
+        "static": true
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getPageSetup",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "nextRowRich",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getConditionalFormats",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "iterateComments",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "iterateCharts",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "iterateImages",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "getStyleFormat",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "nextRowWithFormula",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertDynamicFormula",
+        "ext_min": "2.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "insertDynamicArrayFormula",
+        "ext_min": "2.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "outlineSettings",
+        "ext_min": "2.0.2",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "autoSize",
+        "ext_min": "2.0.3",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "locked",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "hidden",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Format",
+        "name": "indent",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "__construct",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "name",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "noHeaderRow",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "noAutofilter",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "noBandedRows",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "bandedColumns",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "firstColumn",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "lastColumn",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "totalRow",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "style",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "columns",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    }
+]

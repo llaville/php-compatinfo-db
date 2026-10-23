@@ -1851,11 +1851,11 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'xlswriter' => [
-            'classes'   => ['1'],
-            'const'     => ['1'],
+            'classes'   => ['1', '2'],
+            'const'     => ['1', '2', '3'],
             'functions' => ['1'],
-            'methods'   => ['1'],
-            'releases'  => ['1'],
+            'methods'   => ['1', '2', '3'],
+            'releases'  => ['1', '2', '3'],
         ];
 
         yield 'xml' => [

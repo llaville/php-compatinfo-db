@@ -1,0 +1,518 @@
+[
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_CELL",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_TEXT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_TIME_PERIOD",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_AVERAGE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_DUPLICATE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_UNIQUE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_TOP",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_BOTTOM",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_BLANKS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_NO_BLANKS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_ERRORS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_NO_ERRORS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_FORMULA",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_2_COLOR_SCALE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_3_COLOR_SCALE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_DATA_BAR",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "TYPE_ICON_SETS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_EQUAL_TO",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_NOT_EQUAL_TO",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_GREATER_THAN",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_LESS_THAN",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_GREATER_THAN_OR_EQUAL_TO",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_LESS_THAN_OR_EQUAL_TO",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_BETWEEN",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_NOT_BETWEEN",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TEXT_CONTAINING",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TEXT_NOT_CONTAINING",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TEXT_BEGINS_WITH",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TEXT_ENDS_WITH",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_YESTERDAY",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_TODAY",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_TOMORROW",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_LAST_7_DAYS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_LAST_WEEK",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_THIS_WEEK",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_NEXT_WEEK",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_LAST_MONTH",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_THIS_MONTH",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TIME_PERIOD_NEXT_MONTH",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_AVERAGE_ABOVE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_AVERAGE_BELOW",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "CRITERIA_TOP_OR_BOTTOM_PERCENT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "RULE_MINIMUM",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "RULE_NUMBER",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "RULE_PERCENT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "RULE_PERCENTILE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "RULE_FORMULA",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "RULE_MAXIMUM",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "BAR_DIRECTION_CONTEXT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "BAR_DIRECTION_LEFT_TO_RIGHT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "BAR_DIRECTION_RIGHT_TO_LEFT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "BAR_AXIS_AUTOMATIC",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "BAR_AXIS_MIDPOINT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "BAR_AXIS_NONE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_ARROWS_COLORED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_ARROWS_GRAY",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_FLAGS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_TRAFFIC_LIGHTS_UNRIMMED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_TRAFFIC_LIGHTS_RIMMED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_SIGNS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_SYMBOLS_CIRCLED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_3_SYMBOLS_UNCIRCLED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_4_ARROWS_COLORED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_4_ARROWS_GRAY",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_4_RED_TO_BLACK",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_4_RATINGS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_4_TRAFFIC_LIGHTS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_5_ARROWS_COLORED",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_5_ARROWS_GRAY",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_5_RATINGS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\ConditionalFormat",
+        "name": "ICONS_5_QUARTERS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "FORMULA_VERBOSE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Excel",
+        "name": "SKIP_MERGED_FOLLOW",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "STYLE_TYPE_DEFAULT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "STYLE_TYPE_LIGHT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "STYLE_TYPE_MEDIUM",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "STYLE_TYPE_DARK",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_NONE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_AVERAGE",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_COUNT_NUMS",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_COUNT",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_MAX",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_MIN",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_STD_DEV",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_SUM",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    },
+    {
+        "class_name": "Vtiful\\Kernel\\Table",
+        "name": "FUNCTION_VAR",
+        "ext_min": "2.0.0",
+        "php_min": "7.0.0"
+    }
+]
