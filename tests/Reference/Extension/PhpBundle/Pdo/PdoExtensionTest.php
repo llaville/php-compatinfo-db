@@ -57,6 +57,9 @@ class PdoExtensionTest extends GenericTestCase
             'PDO::SQLSRV_ATTR_FORMAT_DECIMALS',
             'PDO::SQLSRV_ATTR_DECIMAL_PLACES',
             'PDO::SQLSRV_ATTR_DATA_CLASSIFICATION',
+            // @see https://github.com/microsoft/msphpsql/blame/v5.13.2/source/pdo_sqlsrv/pdo_init.cpp#L307
+            'PDO::SQLSRV_ATTR_BATCH_ERROR_CONTINUE',
+
             'PDO::SQLSRV_PARAM_OUT_DEFAULT_SIZE',
             'PDO::SQLSRV_ENCODING_DEFAULT',
             'PDO::SQLSRV_ENCODING_SYSTEM',
