@@ -72,7 +72,7 @@ jobs:
             -   # https://github.com/shivammathur/cache-extensions
                 name: Setup cache environment
                 id: extcache
-                uses: shivammathur/cache-extensions@1.15.5
+                uses: shivammathur/cache-extensions@1.15.6
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: ${{ matrix.extensions }}
