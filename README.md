@@ -70,6 +70,7 @@ This database is currently only support by its initial project [php-compatinfo](
  | `5.0.x`  to `5.14.x` | `>= 8.0` and `< 8.3` | `7.0`               |
  | `6.0.x`  to `6.31.x` | `>= 8.1` and `< 8.6` | `7.0`, `7.1`, `7.2` |
  | `6.32.x` to `6.33.x` | `>= 8.2` and `< 8.6` | `7.3`               |
+ | `6.34.x`             | `>= 8.3` and `< 8.6` | `7.3`               |
 
 ## Documentation
 
