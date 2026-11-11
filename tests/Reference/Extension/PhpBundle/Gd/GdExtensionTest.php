@@ -24,7 +24,7 @@ class GdExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // Win32 only
             'imagegrabscreen',
             'imagegrabwindow',
@@ -48,7 +48,7 @@ class GdExtensionTest extends GenericTestCase
             // requires HAVE_GD_AVIF (libavif >= 0.8.2)
             'imagecreatefromavif',
             'imageavif',
-        );
+        ];
         if (defined('GD_BUNDLED') && ! GD_BUNDLED) {
             self::$optionalfunctions[] = 'imageantialias';
         }

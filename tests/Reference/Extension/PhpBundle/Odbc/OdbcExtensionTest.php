@@ -25,7 +25,7 @@ class OdbcExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         // This constants require ODBC >= 3.0.0
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             // Standard data types
             'SQL_TYPE_DATE',
             'SQL_TYPE_TIME',
@@ -43,7 +43,7 @@ class OdbcExtensionTest extends GenericTestCase
             'SQL_INDEX_ALL',
             'SQL_ENSURE',
             'SQL_QUICK',
-        );
+        ];
 
         if (PATH_SEPARATOR == ';') {
             // Windows only

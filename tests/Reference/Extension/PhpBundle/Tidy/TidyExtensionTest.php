@@ -24,14 +24,14 @@ class TidyExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // Requires HAVE_TIDYOPTGETDOC
             'tidy_get_opt_doc',
             // Removes in 0.7.0
             'tidy_create',
             // Removes in 2.0 (PHP 5 only)
             'tidy_load_config_enc',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

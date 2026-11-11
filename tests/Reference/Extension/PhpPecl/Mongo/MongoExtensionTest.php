@@ -24,10 +24,10 @@ class MongoExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalclasses = array(
+        self::$optionalclasses = [
             // only available with 0.9.0
             'MongoUtil',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

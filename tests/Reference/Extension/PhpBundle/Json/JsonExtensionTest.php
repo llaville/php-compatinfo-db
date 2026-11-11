@@ -25,16 +25,16 @@ class JsonExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         // New features of JSONC alternative extension
-        self::$ignoredconstants = array(
+        self::$ignoredconstants = [
             'JSON_C_BUNDLED',
             'JSON_C_VERSION',
             'JSON_PARSER_NOTSTRICT',
-        );
-        self::$ignoredclasses = array(
+        ];
+        self::$ignoredclasses = [
             'JsonIncrementalParser',
             // @see https://github.com/symfony/polyfill-php73/blob/main/Resources/stubs/JsonException.php
             'JsonException'
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

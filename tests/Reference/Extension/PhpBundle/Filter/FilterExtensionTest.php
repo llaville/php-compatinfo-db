@@ -24,24 +24,24 @@ class FilterExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             'FILTER_SANITIZE_ALL',
             'FILTER_VALIDATE_ALL',
 
             // ignores all old API constants before 0.11.0
             'FILTER_FLAG_ARRAY',
             'FILTER_FLAG_SCALAR',
-        );
+        ];
 
         // ignores all old API functions before 0.11.0
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             'input_get',
             'input_filters_list',
             'input_has_variable',
             'filter_data',
             'input_name_to_filter',
             'input_get_args',
-        );
+        ];
 
         self::$ignoredconstants = [
             // exists on PHP 7.x even if https://github.com/php/php-src/commit/f13d0a72d5cf92785c91ffc33c27df3df3f8e96e

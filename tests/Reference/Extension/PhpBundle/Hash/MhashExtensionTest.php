@@ -24,7 +24,7 @@ class MhashExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             'MHASH_MD2',
             'MHASH_RIPEMD128',
             'MHASH_RIPEMD256',
@@ -35,7 +35,7 @@ class MhashExtensionTest extends GenericTestCase
             'MHASH_SNEFRU128',
             'MHASH_SNEFRU256',
             'MHASH_WHIRLPOOL',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

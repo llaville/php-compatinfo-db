@@ -24,11 +24,11 @@ class MysqlExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // deprecated, requires MySQL < 4
             'mysql_create_db',
             'mysql_drop_db',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

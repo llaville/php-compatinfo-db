@@ -24,7 +24,7 @@ class HashExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        $mhashconstants = array(
+        $mhashconstants = [
             'MHASH_CRC32',
             'MHASH_MD5',
             'MHASH_SHA1',
@@ -56,15 +56,15 @@ class HashExtensionTest extends GenericTestCase
             'MHASH_FNV164',
             'MHASH_FNV1A64',
             'MHASH_JOAAT',
-        );
-        $mhashfunctions = array(
+        ];
+        $mhashfunctions = [
             // requires PHP_MHASH_BC
             'mhash',
             'mhash_count',
             'mhash_get_block_size',
             'mhash_get_hash_name',
             'mhash_keygen_s2k',
-        );
+        ];
         // Since php 5.3.0 mhash is emulated by hash ext.
         // So this constants/functions are reported in "hash"
         if (version_compare(PHP_VERSION, '5.3.0', 'ge')) {

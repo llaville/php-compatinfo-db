@@ -27,7 +27,7 @@ class MysqliExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             // Requires MYSQLI_USE_MYSQLND
             'MYSQLI_OPT_NET_CMD_BUFFER_SIZE',
             'MYSQLI_OPT_NET_READ_BUFFER_SIZE',
@@ -60,7 +60,7 @@ class MysqliExtensionTest extends GenericTestCase
             'MYSQLI_TYPE_BIT',
             // Requires MYSQL_VERSION_ID >= 50001 or MYSQLI_USE_MYSQLND
             'MYSQLI_NO_DEFAULT_VALUE_FLAG',
-        );
+        ];
 
         if (version_compare(PHP_VERSION, '8.4.0beta3', 'le')) {
             // Requires MYSQL_VERSION_ID >= 50007 or MYSQLI_USE_MYSQLND
@@ -70,7 +70,7 @@ class MysqliExtensionTest extends GenericTestCase
             self::$optionalconstants[] = 'MYSQLI_CURSOR_TYPE_SCROLLABLE';
         }
 
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // Requires HAVE_EMBEDDED_MYSQLI
             'mysqli_embedded_server_end',
             'mysqli_embedded_server_start',
@@ -86,7 +86,7 @@ class MysqliExtensionTest extends GenericTestCase
             'mysqli_stmt_get_result',
             'mysqli_stmt_more_results',
             'mysqli_stmt_next_result',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

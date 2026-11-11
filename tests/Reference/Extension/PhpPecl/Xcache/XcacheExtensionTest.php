@@ -24,7 +24,7 @@ class XcacheExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalcfgs = array(
+        self::$optionalcfgs = [
             'xcache.admin.user',
             'xcache.admin.pass',
             'xcache.optimizer',
@@ -32,16 +32,16 @@ class XcacheExtensionTest extends GenericTestCase
             'xcache.coveragedumper',
             // Windows only
             'xcache.coredump_type',
-        );
-        self::$optionalfunctions = array(
+        ];
+        self::$optionalfunctions = [
             // Requires specific build options
             // so not available everywhere
             'xcache_dasm_file',
             'xcache_dasm_string',
-        );
-        self::$ignoredconstants = array(
+        ];
+        self::$ignoredconstants = [
             'XC_OPSPEC_FETCHTYPE',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

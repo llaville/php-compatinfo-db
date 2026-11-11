@@ -24,10 +24,10 @@ class PharExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalcfgs = array(
+        self::$optionalcfgs = [
             // Available from phar 1.1.0 to 1.2.3, removed in 2.0.0
             'phar.extract_list'
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

@@ -24,7 +24,7 @@ class StandardExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$ignoredfunctions = array(
+        self::$ignoredfunctions = [
             // functions moved from internal to ereg extension in 5.3.0
             'ereg_replace',
             'ereg',
@@ -33,10 +33,10 @@ class StandardExtensionTest extends GenericTestCase
             'split',
             'spliti',
             'sql_regcase',
-        );
+        ];
 
         if (PATH_SEPARATOR == ':') {
-            self::$optionalfunctions = array(
+            self::$optionalfunctions = [
                 // requires HAVE_CHROOT
                 'chroot',
                 // remove in some Linux distribution (Redhat, ...)
@@ -48,9 +48,9 @@ class StandardExtensionTest extends GenericTestCase
                 'getdir',
                 // windows only
                 'sapi_windows_vt100_support',
-            );
+            ];
         } else {
-            self::$optionalfunctions = array(
+            self::$optionalfunctions = [
                 // requires HAVE_NL_LANGINFO (linux only)
                 'nl_langinfo',
                 // requires HAVE_STRPTIME (linux only)
@@ -92,14 +92,14 @@ class StandardExtensionTest extends GenericTestCase
                 'symlink',
                 'time_nanosleep',
                 'time_sleep_until',
-            );
+            ];
 
             if (php_sapi_name() != 'cli') {
                 // dl function still exists in CLI but was removed from other SAPI since PHP 5.3
                 array_push(self::$optionalfunctions, 'dl');
             }
         }
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             // requires syslog
             'LOG_LOCAL0',
             'LOG_LOCAL1',
@@ -222,7 +222,7 @@ class StandardExtensionTest extends GenericTestCase
             'STREAM_IPPROTO_UDP',
             'STREAM_IPPROTO_ICMP',
             'STREAM_IPPROTO_RAW',
-        );
+        ];
 
         // requires HAVE_ARGON2LIB
         array_push(

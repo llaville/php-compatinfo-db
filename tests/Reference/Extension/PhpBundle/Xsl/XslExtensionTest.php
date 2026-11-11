@@ -26,10 +26,10 @@ class XslExtensionTest extends GenericTestCase
     {
         if (version_compare(PHP_VERSION, '5.3.3', 'eq')) {
             // Security fix backported in PHP 5.3.3 / RHEL-6
-            self::$ignoredcfgs = array(
+            self::$ignoredcfgs = [
                 'xsl.security_prefs',
-            );
-            self::$ignoredconstants = array(
+            ];
+            self::$ignoredconstants = [
                 'XSL_SECPREF_CREATE_DIRECTORY',
                 'XSL_SECPREF_DEFAULT',
                 'XSL_SECPREF_NONE',
@@ -37,7 +37,7 @@ class XslExtensionTest extends GenericTestCase
                 'XSL_SECPREF_READ_NETWORK',
                 'XSL_SECPREF_WRITE_FILE',
                 'XSL_SECPREF_WRITE_NETWORK',
-            );
+            ];
         }
 
         parent::setUpBeforeClass();

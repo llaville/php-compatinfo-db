@@ -25,10 +25,10 @@ class LibxmlExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         if (PATH_SEPARATOR == ';') {
-            self::$optionalconstants = array(
+            self::$optionalconstants = [
                 'LIBXML_HTML_NODEFDTD',
                 'LIBXML_HTML_NOIMPLIED',
-            );
+            ];
         }
 
         parent::setUpBeforeClass();

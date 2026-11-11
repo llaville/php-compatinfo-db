@@ -24,7 +24,7 @@ class ReadlineExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // Not available with libedit (only with readline)
             'readline_list_history',
             'readline_callback_handler_install',
@@ -32,7 +32,7 @@ class ReadlineExtensionTest extends GenericTestCase
             'readline_callback_read_char',
             'readline_on_new_line',
             'readline_redisplay',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

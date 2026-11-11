@@ -24,7 +24,7 @@ class OpcacheExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalcfgs = array(
+        self::$optionalcfgs = [
             // if HAVE_OPCACHE_FILE_CACHE
             'opcache.file_cache',
             'opcache.file_cache_only',
@@ -34,7 +34,7 @@ class OpcacheExtensionTest extends GenericTestCase
             'opcache.file_cache_fallback',
             // strange result behaviour on CI
             'opcache.inherited_hack',
-        );
+        ];
 
         if (PATH_SEPARATOR == ':') {
             // Windows only

@@ -26,14 +26,14 @@ class LdapExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // Requires LDAP SASL
             'ldap_sasl_bind',
             // Requires OpenLdap
             'ldap_set_rebind_proc',
             // Requires HAVE_ORALDAP and LDAP_API_FEATURE_X_OPENLDAP
             'ldap_connect_wallet',
-        );
+        ];
 
         self::$optionalconstants = [
             // Requires LDAP SASL

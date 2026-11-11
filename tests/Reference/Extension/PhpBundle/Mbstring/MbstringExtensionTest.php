@@ -25,11 +25,11 @@ class MbstringExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         // WARNING: strange to found it on PHP 7.1.x versions, while it supposed to appears since PHP 7.2.0alpha1
-        self::$ignoredfunctions = array(
+        self::$ignoredfunctions = [
             'mb_chr',
             'mb_ord',
             'mb_scrub',
-        );
+        ];
 
         // WARNING: strange to find it on PHP 7.3.x versions, while it supposed to appears since PHP 7.4.0alpha1
         self::$ignoredfunctions = [
