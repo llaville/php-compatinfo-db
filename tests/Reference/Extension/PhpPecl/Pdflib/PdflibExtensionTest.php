@@ -26,7 +26,7 @@ class PdflibExtensionTest extends GenericTestCase
     {
         // functions only available if PDFLIB_MAJORVERSION >= 8
         // so not available with pdflib-lite free library
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             'pdf_add_path_point',
             'pdf_add_portfolio_file',
             'pdf_add_portfolio_folder',
@@ -66,7 +66,7 @@ class PdflibExtensionTest extends GenericTestCase
             'pdf_utf8_to_utf16',
             'pdf_utf8_to_utf32',
             'pdf_utf32_to_utf8',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

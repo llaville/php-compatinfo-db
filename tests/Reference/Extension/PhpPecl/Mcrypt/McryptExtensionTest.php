@@ -24,7 +24,7 @@ class McryptExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             // Non-free
             'MCRYPT_IDEA',
             // only in libmcrypt = 2.2.x
@@ -58,10 +58,10 @@ class McryptExtensionTest extends GenericTestCase
             'MCRYPT_TWOFISH',
             'MCRYPT_WAKE',
             'MCRYPT_XTEA',
-        );
-        self::$ignoredconstants = array(
+        ];
+        self::$ignoredconstants = [
             'MCRYPT_BLOWFISH_COMPAT',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

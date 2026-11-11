@@ -26,15 +26,15 @@ class SnmpExtensionTest extends GenericTestCase
     {
         if (PATH_SEPARATOR == ';') {
             // Win32 only
-            self::$optionalconstants = array(
+            self::$optionalconstants = [
                 'SNMP_OID_OUTPUT_FULL',
                 'SNMP_OID_OUTPUT_NUMERIC',
-            );
-            self::$optionalfunctions = array(
+            ];
+            self::$optionalfunctions = [
                 'snmp_set_enum_print',
                 'snmp_set_oid_output_format',
                 'snmp_set_oid_numeric_print',
-            );
+            ];
         }
 
         parent::setUpBeforeClass();

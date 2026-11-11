@@ -24,9 +24,9 @@ class MssqlExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalcfgs = array(
+        self::$optionalcfgs = [
             'mssql.charset',  // build option, only when HAVE_FREETDS
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

@@ -24,11 +24,11 @@ class SoapExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$ignoredfunctions = array(
+        self::$ignoredfunctions = [
             // Found in php < 5.1.6, nothing in doc
             'soap_encode_to_xml',
             'soap_encode_to_zval',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

@@ -24,7 +24,7 @@ class GeoipExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // requires GeoIP C library 1.4.1 or higher (LIBGEOIP_VERSION >= 1004001)
             'geoip_region_name_by_code',
             'geoip_time_zone_by_country_and_region',
@@ -32,11 +32,11 @@ class GeoipExtensionTest extends GenericTestCase
             'geoip_country_code_by_name_v6',
             'geoip_country_code3_by_name_v6',
             'geoip_country_name_by_name_v6',
-        );
-        self::$optionalconstants = array(
+        ];
+        self::$optionalconstants = [
             // requires GeoIP C library 1.4.8 or higher (LIBGEOIP_VERSION >= 1004008)
             'GEOIP_NETSPEED_EDITION_REV1',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

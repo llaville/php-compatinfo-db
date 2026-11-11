@@ -24,10 +24,10 @@ class SessionExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             // Only defined after session_start
             'SID',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

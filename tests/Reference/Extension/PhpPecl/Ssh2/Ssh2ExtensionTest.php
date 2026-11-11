@@ -24,7 +24,7 @@ class Ssh2ExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // Requires PHP_SSH2_REMOTE_FORWARDING
             'ssh2_forward_accept',
             'ssh2_forward_listen',
@@ -35,8 +35,8 @@ class Ssh2ExtensionTest extends GenericTestCase
             // Have libssh2 with keepalive support
             'ssh2_keepalive_config',
             'ssh2_keepalive_send',
-        );
-        self::$optionalconstants = array(
+        ];
+        self::$optionalconstants = [
             // Requires PHP_SSH2_POLL
             'SSH2_POLLIN',
             'SSH2_POLLEXT',
@@ -47,7 +47,7 @@ class Ssh2ExtensionTest extends GenericTestCase
             'SSH2_POLL_SESSION_CLOSED',
             'SSH2_POLL_CHANNEL_CLOSED',
             'SSH2_POLL_LISTENER_CLOSED',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

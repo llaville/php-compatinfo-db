@@ -24,10 +24,10 @@ class ApcExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalcfgs = array(
+        self::$optionalcfgs = [
             'apc.mmap_file_mask',  // when APC_MMAP
             'apc.optimization',
-        );
+        ];
 
         if (PATH_SEPARATOR == ';') {
             // Win*
@@ -62,7 +62,7 @@ class ApcExtensionTest extends GenericTestCase
         }
 
         // Constants and Classes not available in CLI mode
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             'APC_LIST_ACTIVE',
             'APC_LIST_DELETED',
             'APC_ITER_TYPE',
@@ -84,19 +84,19 @@ class ApcExtensionTest extends GenericTestCase
             'APC_ITER_ALL',
             'APC_BIN_VERIFY_MD5',
             'APC_BIN_VERIFY_CRC32',
-        );
-        self::$optionalclasses = array(
+        ];
+        self::$optionalclasses = [
             'APCIterator',
-        );
+        ];
         if (extension_loaded('apcu')) {
             // APCu is a drop in replacement for APC
             // present as "apc" but only provides user data cache functions
-            self::$optionalfunctions = array(
+            self::$optionalfunctions = [
                 'apc_define_constants',
                 'apc_load_constants',
                 'apc_compile_file',
                 'apc_delete_file',
-            );
+            ];
         }
 
         parent::setUpBeforeClass();

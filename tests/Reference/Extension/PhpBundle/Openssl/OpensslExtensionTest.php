@@ -24,7 +24,7 @@ class OpensslExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             // requires HAVE_OPENSSL_MD2_H
             'OPENSSL_ALGO_MD2',
             // requires OPENSSL_VERSION_NUMBER >= 0x0090806fL
@@ -36,7 +36,7 @@ class OpensslExtensionTest extends GenericTestCase
             'OPENSSL_ALGO_DSS1',
             // before PHP 8.4 (@see https://github.com/php/php-src/commit/98e2948ca7abaf38358ec4f938470aca2568f263)
             'X509_PURPOSE_ANY',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

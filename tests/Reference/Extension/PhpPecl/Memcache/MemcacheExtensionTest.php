@@ -24,21 +24,21 @@ class MemcacheExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             'MEMCACHE_SERIALIZED'
-        );
+        ];
 
         if (PATH_SEPARATOR == ';') {
             // Win32 only
-            self::$optionalfunctions = array(
+            self::$optionalfunctions = [
                 'memcache_append',
                 'memcache_cas',
                 'memcache_prepend',
                 'memcache_set_failure_callback',
-            );
-            self::$ignoredfunctions = array(
+            ];
+            self::$ignoredfunctions = [
                 'memcache_setoptimeout',
-            );
+            ];
             array_push(
                 self::$optionalconstants,
                 'MEMCACHE_USER1',

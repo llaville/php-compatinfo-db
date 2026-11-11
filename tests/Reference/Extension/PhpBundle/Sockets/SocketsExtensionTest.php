@@ -27,7 +27,7 @@ class SocketsExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         if (PATH_SEPARATOR == ':') {
-            self::$optionalconstants = array(
+            self::$optionalconstants = [
                 // Win32 only (from ext/sockets/win32_socket_constants.h)
                 'SOCKET_EDISCON',
                 'SOCKET_EPROCLIM',
@@ -40,9 +40,9 @@ class SocketsExtensionTest extends GenericTestCase
                 'SOCKET_SYSNOTREADY',
                 'SOCKET_TRY_AGAIN',
                 'SOCKET_VERNOTSUPPORTED',
-            );
+            ];
         } else {
-            self::$optionalconstants = array(
+            self::$optionalconstants = [
                 // Unix only (from ext/sockets/unix_socket_constants.h)
                 'SOCKET_E2BIG',
                 'SOCKET_EADV',
@@ -108,11 +108,11 @@ class SocketsExtensionTest extends GenericTestCase
                 'TCP_QUICKACK',
                 'TCP_REPAIR',
                 'SO_BUSY_POLL',
-            );
+            ];
         }
         // Common to Windows and Unix
         // (from ext/sockets/ win32_socket_constants.h and unix_socket_constants.h)
-        $tmp = array(
+        $tmp = [
             'SOCKET_EACCES',
             'SOCKET_EADDRINUSE',
             'SOCKET_EADDRNOTAVAIL',
@@ -309,15 +309,15 @@ class SocketsExtensionTest extends GenericTestCase
             'ETH_P_IPV6',
             'ETH_P_LOOP',
             'ETH_P_ALL',
-        );
+        ];
         self::$optionalconstants = array_merge(self::$optionalconstants, $tmp);
 
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             // requires HAVE_SOCKETPAIR
             'socket_create_pair',
             // requires HAVE_SOCKATMARK
             'socket_atmark',
-        );
+        ];
 
         parent::setUpBeforeClass();
     }

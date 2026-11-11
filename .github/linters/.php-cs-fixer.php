@@ -21,6 +21,12 @@ return (new PhpCsFixer\Config())
         new PhpCsFixerCustomFixers\Fixers()
     )
     ->setRules([
+        '@PHP8x3Migration' => true,
+        'assign_null_coalescing_to_coalesce_equal' => false,
+        'octal_notation' => false,
+        'list_syntax' => false,
+        'trailing_comma_in_multiline' => false,
+        'no_whitespace_before_comma_in_array' => false,
         PhpCsFixerCustomFixers\Fixer\TypedClassConstantFixer::name() => true,
     ])
     // default source code to scan

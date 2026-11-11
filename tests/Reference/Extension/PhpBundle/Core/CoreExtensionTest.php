@@ -24,7 +24,7 @@ class CoreExtensionTest extends GenericTestCase
      */
     public static function setUpBeforeClass(): void
     {
-        self::$optionalconstants = array(
+        self::$optionalconstants = [
             'ZEND_VERIFY_TYPE_INFERENCE',
             // Not real constant
             '__CLASS__',
@@ -39,34 +39,34 @@ class CoreExtensionTest extends GenericTestCase
             '__PROPERTY__',
             // @link https://github.com/llaville/php-compatinfo-db/issues/147
             'PHP_BUILD_PROVIDER',
-        );
-        self::$ignoredconstants = array(
+        ];
+        self::$ignoredconstants = [
             // add by swig framework as core constant
             'swig_runtime_data_type_pointer',
-        );
-        self::$ignoredfunctions = array(
+        ];
+        self::$ignoredfunctions = [
             // Provided by PHP/CodeCoverage/Util.php when not available in PHP
             // So no reliable check for this one
             'trait_exists',
-        );
-        self::$optionalcfgs = array(
+        ];
+        self::$optionalcfgs = [
             // Requires --enable-zend-multibyte
             'zend.detect_unicode',
             'zend.multibyte',
             // was introduced by commit https://github.com/php/php-src/commit/716de0cff539f46294ef70fe75d548cd66766370
             // available since PHP 8.0.28, 8.1.17RC1, 8.2.4RC1
             'max_multipart_body_parts',
-        );
+        ];
         if (PATH_SEPARATOR == ':') {
             self::$optionalcfgs = array_merge(
                 self::$optionalcfgs,
-                array(
+                [
                     'windows.show_crt_warning',
-                )
+                ]
             );
             self::$optionalconstants = array_merge(
                 self::$optionalconstants,
-                array(
+                [
                     // Win32 Only
                     'PHP_WINDOWS_VERSION_MAJOR',
                     'PHP_WINDOWS_VERSION_MINOR',
@@ -79,35 +79,35 @@ class CoreExtensionTest extends GenericTestCase
                     'PHP_WINDOWS_NT_DOMAIN_CONTROLLER',
                     'PHP_WINDOWS_NT_SERVER',
                     'PHP_WINDOWS_NT_WORKSTATION',
-                )
+                ]
             );
         } else {
             self::$optionalconstants = array_merge(
                 self::$optionalconstants,
-                array(
+                [
                     // Non Windows only
                     'PHP_MANDIR',
-                )
+                ]
             );
         }
         if (php_sapi_name() != 'cli') {
             array_push(self::$optionalconstants, 'STDIN', 'STDOUT', 'STDERR');
         }
 
-        self::$optionalfunctions = array(
+        self::$optionalfunctions = [
             'empty',
             'isset',
             'list',
             // Requires ZTS
             'zend_thread_id',
-        );
+        ];
 
         // special classes
-        self::$optionalclasses = array(
+        self::$optionalclasses = [
             'parent',
             'static',
             'self',
-        );
+        ];
 
         self::$optionalinterfaces = [
             'Stringable',
