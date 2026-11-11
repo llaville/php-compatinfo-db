@@ -16,7 +16,7 @@
                 },
                 "options": {
                     "colors": "ansi",
-                    "config-file": "{$ENV|value-of:XDG_CONFIG_HOME}/.phplint.yml",
+                    "config-file": "auto",
                     "package-require": [
                         "overtrue/phplint",
                         "^9.8"
