@@ -25,7 +25,7 @@ class OauthExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = [
-            'OAUTH_REQENGINE_CURL' // requires OAUTH_USE_CURL
+            'OAUTH_REQENGINE_CURL', // requires OAUTH_USE_CURL
         ];
 
         parent::setUpBeforeClass();

@@ -82,7 +82,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
         $times = [
             'hour'   => 3600000,
             'minute' => 60000,
-            'second' => 1000
+            'second' => 1000,
         ];
 
         $ms = $time;

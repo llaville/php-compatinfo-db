@@ -33,7 +33,7 @@ class SphinxExtensionTest extends GenericTestCase
             'SPH_RANK_SPH04',
             'SPH_RANK_TOTAL',
             // only defined when build with --enable-redis-igbinary option
-            'SERIALIZER_IGBINARY'
+            'SERIALIZER_IGBINARY',
         ];
 
         parent::setUpBeforeClass();

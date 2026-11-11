@@ -26,7 +26,7 @@ class CurlExtensionTest extends GenericTestCase
     {
         self::$optionalconstants = [
             'CURLOPT_MUTE',
-            'CURLOPT_PASSWDFUNCTION'
+            'CURLOPT_PASSWDFUNCTION',
         ];
 
         self::$optionalmethods = [

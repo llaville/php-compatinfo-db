@@ -26,7 +26,7 @@ class PharExtensionTest extends GenericTestCase
     {
         self::$optionalcfgs = [
             // Available from phar 1.1.0 to 1.2.3, removed in 2.0.0
-            'phar.extract_list'
+            'phar.extract_list',
         ];
 
         parent::setUpBeforeClass();

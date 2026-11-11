@@ -25,7 +25,7 @@ class MemcacheExtensionTest extends GenericTestCase
     public static function setUpBeforeClass(): void
     {
         self::$optionalconstants = [
-            'MEMCACHE_SERIALIZED'
+            'MEMCACHE_SERIALIZED',
         ];
 
         if (PATH_SEPARATOR == ';') {

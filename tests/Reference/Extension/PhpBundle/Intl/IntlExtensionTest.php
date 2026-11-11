@@ -50,7 +50,7 @@ class IntlExtensionTest extends GenericTestCase
         }
 
         self::$optionalcfgs = [
-            'intl.use_exceptions'
+            'intl.use_exceptions',
         ];
 
         parent::setUpBeforeClass();
