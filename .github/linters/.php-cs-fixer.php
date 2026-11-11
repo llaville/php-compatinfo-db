@@ -18,7 +18,7 @@ return (new PhpCsFixer\Config())
     ->setUnsupportedPhpVersionAllowed(true)
     // use default @link https://www.php-fig.org/per/coding-style/
     ->registerCustomFixers(
-        (new PhpCsFixerCustomFixers\Fixers())->getIterator(),
+        new PhpCsFixerCustomFixers\Fixers()
     )
     ->setRules([
         PhpCsFixerCustomFixers\Fixer\TypedClassConstantFixer::name() => true,
