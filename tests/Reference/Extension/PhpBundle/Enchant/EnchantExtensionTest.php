@@ -42,7 +42,7 @@ class EnchantExtensionTest extends GenericTestCase
 
         self::$optionalconstants = [
             // requires HAVE_ENCHANT_GET_VERSION
-            'LIBENCHANT_VERSION'
+            'LIBENCHANT_VERSION',
         ];
         parent::setUpBeforeClass();
     }

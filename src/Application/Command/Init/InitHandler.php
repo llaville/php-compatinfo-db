@@ -355,7 +355,7 @@ final class InitHandler implements CommandHandlerInterface
                 ],
                 self::PHP_RELEASES_7,
                 self::PHP_RELEASES_8
-            )
+            ),
         ];
 
         yield 'bz2' => [
@@ -1665,7 +1665,7 @@ final class InitHandler implements CommandHandlerInterface
             'iniEntries' => [
                 '40',
                 '53',
-                '70', '71', '74'
+                '70', '71', '74',
             ],
             'methods' => [
                 '40',
@@ -1729,7 +1729,7 @@ final class InitHandler implements CommandHandlerInterface
             'functions' => ['40', '41'],
             'releases'  => array_merge(
                 [
-                    '40', '41'
+                    '40', '41',
                 ],
                 self::PHP_RELEASES_7,
                 self::PHP_RELEASES_8
@@ -1790,7 +1790,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 [
                     '42', '43',
-                    '50', '51', '53', '54', '55', '56'
+                    '50', '51', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
                 self::PHP_RELEASES_8

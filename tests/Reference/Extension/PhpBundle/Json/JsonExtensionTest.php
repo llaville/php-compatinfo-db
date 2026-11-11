@@ -33,7 +33,7 @@ class JsonExtensionTest extends GenericTestCase
         self::$ignoredclasses = [
             'JsonIncrementalParser',
             // @see https://github.com/symfony/polyfill-php73/blob/main/Resources/stubs/JsonException.php
-            'JsonException'
+            'JsonException',
         ];
 
         parent::setUpBeforeClass();

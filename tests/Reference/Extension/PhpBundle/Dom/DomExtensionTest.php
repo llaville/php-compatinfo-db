@@ -46,7 +46,7 @@ class DomExtensionTest extends GenericTestCase
         ];
 
         self::$ignoredclasses = [
-            'dom\\domexception'
+            'dom\\domexception',
         ];
 
         parent::setUp();
