@@ -36,7 +36,7 @@ use const PHP_VERSION;
  */
 final class AboutCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'about';
+    public const string NAME = 'about';
 
     /**
      * @inheritDoc

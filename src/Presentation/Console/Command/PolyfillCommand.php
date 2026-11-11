@@ -27,7 +27,7 @@ use function trim;
  */
 final class PolyfillCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:polyfill';
+    public const string NAME = 'db:polyfill';
 
     /**
      * @inheritDoc

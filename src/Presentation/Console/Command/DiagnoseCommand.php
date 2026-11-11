@@ -32,7 +32,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
 {
     use PrintDiagnose;
 
-    public const NAME = 'diagnose';
+    public const string NAME = 'diagnose';
 
     public function __construct(
         CommandBusInterface $commandBus,

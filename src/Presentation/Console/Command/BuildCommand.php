@@ -22,7 +22,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 final class BuildCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:build';
+    public const string NAME = 'db:build';
 
     /**
      * @inheritDoc

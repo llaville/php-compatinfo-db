@@ -36,8 +36,8 @@ final class DoctorHandler implements QueryHandlerInterface
 {
     use LibraryVersionProviderTrait;
 
-    private const CONSTRAINT_SKIPPED = 'skipped';
-    private const CONSTRAINT_PASSED  = 'passed';
+    private const string CONSTRAINT_SKIPPED = 'skipped';
+    private const string CONSTRAINT_PASSED  = 'passed';
     /** @var array<string, mixed> */
     private array $dependencies;
     /** @var array<string, mixed> */

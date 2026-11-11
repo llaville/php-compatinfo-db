@@ -25,8 +25,8 @@ use function str_contains;
  */
 final class CreateHandler implements CommandHandlerInterface
 {
-    private const RETURN_CODE_DATABASE_ALREADY_EXISTS = 110;
-    private const RETURN_CODE_SCHEMA_TOOL_FAILURE = 500;
+    private const int RETURN_CODE_DATABASE_ALREADY_EXISTS = 110;
+    private const int RETURN_CODE_SCHEMA_TOOL_FAILURE = 500;
 
     /**
      * @throws Exception
