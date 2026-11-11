@@ -19,12 +19,12 @@ final class Class_
     use PhpVersionTrait;
     use DeprecationTrait;
 
-    public const MODIFIER_PUBLIC    =  1;
-    public const MODIFIER_PROTECTED =  2;
-    public const MODIFIER_PRIVATE   =  4;
-    public const MODIFIER_STATIC    =  8;
-    public const MODIFIER_ABSTRACT  = 16;
-    public const MODIFIER_FINAL     = 32;
+    public const int MODIFIER_PUBLIC    =  1;
+    public const int MODIFIER_PROTECTED =  2;
+    public const int MODIFIER_PRIVATE   =  4;
+    public const int MODIFIER_STATIC    =  8;
+    public const int MODIFIER_ABSTRACT  = 16;
+    public const int MODIFIER_FINAL     = 32;
 
     private string $name;
     private bool $isInterface;

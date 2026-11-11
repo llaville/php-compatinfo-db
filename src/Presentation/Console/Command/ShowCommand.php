@@ -48,7 +48,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
 {
     use LibraryVersionProviderTrait;
 
-    public const NAME = 'db:show';
+    public const string NAME = 'db:show';
 
     /**
      * @inheritDoc

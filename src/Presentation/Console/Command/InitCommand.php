@@ -28,7 +28,7 @@ use function trim;
  */
 class InitCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:init';
+    public const string NAME = 'db:init';
 
     /**
      * @inheritDoc

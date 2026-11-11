@@ -34,7 +34,7 @@ use const JSON_PRETTY_PRINT;
  */
 final class DoctorCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'doctor';
+    public const string NAME = 'doctor';
 
     /**
      * @inheritDoc

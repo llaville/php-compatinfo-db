@@ -34,7 +34,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
 {
     use ExtensionVersionProviderTrait;
 
-    public const NAME = 'db:list';
+    public const string NAME = 'db:list';
 
     /**
      * @inheritDoc

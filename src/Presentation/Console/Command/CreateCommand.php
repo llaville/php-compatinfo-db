@@ -28,7 +28,7 @@ use function array_shift;
  */
 class CreateCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:create';
+    public const string NAME = 'db:create';
 
     public function __construct(
         CommandBusInterface $commandBus,

@@ -20,8 +20,8 @@ use Symfony\Component\Console\Command\Command;
  */
 abstract class AbstractCommand extends Command
 {
-    public const SUCCESS = 0;
-    public const FAILURE = 1;
+    public const int SUCCESS = 0;
+    public const int FAILURE = 1;
 
     public function __construct(
         protected CommandBusInterface $commandBus,

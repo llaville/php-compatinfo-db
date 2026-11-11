@@ -23,7 +23,7 @@ use function str_replace;
  */
 final class Configuration implements ConfigurationInterface
 {
-    private const DEFAULT_PROXY_DIR = "%kernel.cache_dir%/php-compatinfo-db/%version%/proxies";
+    private const string DEFAULT_PROXY_DIR = "%kernel.cache_dir%/php-compatinfo-db/%version%/proxies";
 
     /**
      * @inheritDoc

@@ -26,7 +26,7 @@ use function trim;
  */
 class ReleaseCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:release';
+    public const string NAME = 'db:release';
 
     /**
      * @inheritDoc

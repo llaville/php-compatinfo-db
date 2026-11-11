@@ -33,7 +33,7 @@ use function array_shift;
  */
 class NewCommand extends AbstractCommand implements CommandInterface
 {
-    public const NAME = 'db:new';
+    public const string NAME = 'db:new';
 
     public function __construct(
         CommandBusInterface $commandBus,
