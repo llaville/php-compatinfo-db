@@ -21,7 +21,6 @@ trait PolyfillTrait
     #[Column(name: "polyfill", type: "string", nullable: true)]
     private ?string $polyfill = null;
 
-
     public function getPolyfill(): ?string
     {
         return $this->polyfill;

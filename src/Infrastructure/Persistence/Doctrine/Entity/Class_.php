@@ -52,7 +52,6 @@ class Class_
      */
     private Collection $relationships;  // @phpstan-ignore doctrine.associationType
 
-
     public function __construct()
     {
         $this->relationships = new ArrayCollection();

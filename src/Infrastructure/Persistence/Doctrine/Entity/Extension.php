@@ -103,7 +103,6 @@ class Extension
      */
     private Collection $classes;    // @phpstan-ignore doctrine.associationType
 
-
     public function __construct()
     {
         $this->releases = new ArrayCollection();
