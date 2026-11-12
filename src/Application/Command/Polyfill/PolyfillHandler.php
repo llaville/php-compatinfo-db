@@ -187,7 +187,7 @@ final class PolyfillHandler implements CommandHandlerInterface
      */
     private function getInfo(string $packageName, string $packageTag): ?array
     {
-        $process = new Process([$this->composerBin, 'show', '--all', '--format=json' , $packageName, $packageTag]);
+        $process = new Process([$this->composerBin, 'show', '--all', '--format=json', $packageName, $packageTag]);
         $process->start();
         while ($process->isRunning()) {
             // waiting for process to finish
