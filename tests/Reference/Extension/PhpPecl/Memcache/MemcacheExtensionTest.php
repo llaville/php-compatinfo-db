@@ -47,7 +47,7 @@ class MemcacheExtensionTest extends GenericTestCase
                 'MEMCACHE_USER1',
                 'MEMCACHE_USER2',
                 'MEMCACHE_USER3',
-                'MEMCACHE_USER4'
+                'MEMCACHE_USER4',
             );
         }
 
