@@ -22,7 +22,6 @@ return (new PhpCsFixer\Config())
     )
     ->setRules([
         '@PHP8x3Migration' => true,
-        'assign_null_coalescing_to_coalesce_equal' => false,
         'octal_notation' => false,
         'list_syntax' => false,
         'no_whitespace_before_comma_in_array' => false,

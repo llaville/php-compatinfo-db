@@ -34,7 +34,7 @@ final class ConsoleKernel extends AbstractKernel implements ConsoleKernelInterfa
      */
     public function getCacheDir(?string $default = null): string
     {
-        $default = $default ?? implode(DIRECTORY_SEPARATOR, [$this->getHomeDir(), '.cache', 'bartlett']);
+        $default ??= implode(DIRECTORY_SEPARATOR, [$this->getHomeDir(), '.cache', 'bartlett']);
         return parent::getCacheDir($default) . DIRECTORY_SEPARATOR . $this->environment;
     }
 
