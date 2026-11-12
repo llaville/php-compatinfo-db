@@ -117,7 +117,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
                 } elseif ('tests' === $key) {
                     $io->text(sprintf('  %-20s:', $key));
                     $io->note($value);
-                    list($result) = array_values($value);
+                    [$result] = array_values($value);
                     if ($offset = strpos($result, 'Tests:')) {
                         $statusNote[$section] = sprintf('<info>%s</info> -- %s', $section, trim(substr($result, $offset)));
                     }

@@ -60,7 +60,7 @@ final class AboutCommand extends AbstractCommand implements CommandInterface
 
         $parameters = $app->getApplicationParameters();
 
-        list($majorVersion, $minorVersion, ) = sscanf($app->getLongVersion(), '%d.%d.%s');
+        [$majorVersion, $minorVersion, ] = sscanf($app->getLongVersion(), '%d.%d.%s');
 
         $webSite = sprintf(
             '%s/%d.%d',

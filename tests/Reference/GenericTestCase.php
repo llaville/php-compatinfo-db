@@ -473,7 +473,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     public function testGetIniEntriesFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getIniEntries(), 'optionalcfgs') as $args) {
-            list($element, $range) = $args;
+            [$element, $range] = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(
                 $element,
@@ -536,7 +536,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     public function testGetFunctionsFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getFunctions(), 'optionalfunctions') as $args) {
-            list($element, $range) = $args;
+            [$element, $range] = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(
                 $element,
@@ -612,7 +612,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     public function testGetConstantsFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getConstants(), 'optionalconstants') as $args) {
-            list($element, $range) = $args;
+            [$element, $range] = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(
                 $element,
@@ -668,7 +668,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     public function testGetClassesFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getClasses(), 'optionalclasses') as $args) {
-            list($element, $range) = $args;
+            [$element, $range] = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(
                 $element,
@@ -730,7 +730,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     public function testGetMethodsFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getMethods(), 'optionalmethods') as $args) {
-            list($element, $range) = $args;
+            [$element, $range] = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(
                 $element,
@@ -755,7 +755,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     continue;
                 }
 
-                list(, $methodName) = explode('::', $element);
+                [, $methodName] = explode('::', $element);
                 if ($method->getName() !== $methodName) {
                     // case does not match; probably use case like https://3v4l.org/LL80T
                     continue;
@@ -861,7 +861,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
     public function testGetInterfacesFromReference(): void
     {
         foreach ($this->provideReferenceValues(self::$obj->getInterfaces(), 'optionalinterfaces') as $args) {
-            list($element, $range) = $args;
+            [$element, $range] = $args;
 
             $shouldBeThere = $this->checkValuesFromReference(
                 $element,
