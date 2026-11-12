@@ -23,10 +23,10 @@ class FunctionRelationship
 {
     use PrimaryIdentifierTrait;
 
-    #[ManyToOne(targetEntity: Function_::class, cascade:["persist"], inversedBy: "relationships")]
+    #[ManyToOne(targetEntity: Function_::class, cascade: ["persist"], inversedBy: "relationships")]
     private ?Function_ $function;
 
-    #[ManyToOne(targetEntity: Dependency::class, cascade:["persist"])]
+    #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]
     private ?Dependency $dependency;
 
     public function setFunction(Function_ $function): void

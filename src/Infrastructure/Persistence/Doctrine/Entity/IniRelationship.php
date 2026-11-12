@@ -23,7 +23,7 @@ class IniRelationship
 {
     use PrimaryIdentifierTrait;
 
-    #[ManyToOne(targetEntity: IniEntry::class, cascade:["persist"], inversedBy: "relationships")]
+    #[ManyToOne(targetEntity: IniEntry::class, cascade: ["persist"], inversedBy: "relationships")]
     private ?IniEntry $ini;
 
     #[ManyToOne(targetEntity: Dependency::class, cascade: ["persist"])]

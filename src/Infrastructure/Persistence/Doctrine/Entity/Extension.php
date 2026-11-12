@@ -65,7 +65,7 @@ class Extension
 
     #[OneToMany(
         mappedBy: "extension",
-        targetEntity :IniEntry::class,
+        targetEntity: IniEntry::class,
         cascade: ["persist", "remove"],
     )]
     /**
@@ -74,9 +74,9 @@ class Extension
     private Collection $iniEntries; // @phpstan-ignore doctrine.associationType
 
     #[OneToMany(
-        mappedBy:"extension",
-        targetEntity:Constant_::class,
-        cascade:["persist", "remove"],
+        mappedBy: "extension",
+        targetEntity: Constant_::class,
+        cascade: ["persist", "remove"],
     )]
     /**
      * @var Collection<int, Constant_> $constants
