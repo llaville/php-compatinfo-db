@@ -18,6 +18,7 @@ use Doctrine\DBAL\Connection;
 use Symfony\Requirements\RequirementCollection;
 
 use Throwable;
+
 use function extension_loaded;
 use function get_cfg_var;
 use function in_array;

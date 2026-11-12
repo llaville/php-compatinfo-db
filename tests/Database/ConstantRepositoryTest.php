@@ -15,6 +15,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Input\ArrayInput;
 
 use function version_compare;
+
 use const PHP_VERSION;
 
 /**

@@ -16,6 +16,7 @@ use function count;
 use function in_array;
 use function sprintf;
 use function strtolower;
+
 use const PHP_VERSION;
 
 /**

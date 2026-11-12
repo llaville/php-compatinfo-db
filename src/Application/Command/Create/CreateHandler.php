@@ -17,6 +17,7 @@ use Doctrine\ORM\Tools\SchemaTool;
 
 use RuntimeException;
 use Throwable;
+
 use function sprintf;
 use function str_contains;
 

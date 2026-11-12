@@ -27,6 +27,7 @@ use ReflectionException;
 use ReflectionExtension;
 use ReflectionFunction;
 use ReflectionMethod;
+
 use function array_filter;
 use function array_key_exists;
 use function array_keys;
@@ -55,6 +56,7 @@ use function strcasecmp;
 use function strlen;
 use function strtolower;
 use function version_compare;
+
 use const PHP_VERSION;
 
 /**

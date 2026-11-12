@@ -39,6 +39,7 @@ use function ksort;
 use function method_exists;
 use function sprintf;
 use function trim;
+
 use const SORT_NATURAL;
 
 /**

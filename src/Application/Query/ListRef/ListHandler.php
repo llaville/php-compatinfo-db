@@ -17,12 +17,14 @@ use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Domain\ValueObject\Platform;
 
 use RuntimeException;
+
 use function explode;
 use function phpversion;
 use function preg_match;
 use function str_replace;
 use function strcasecmp;
 use function strpos;
+
 use const PHP_MAJOR_VERSION;
 use const PHP_MINOR_VERSION;
 

@@ -12,6 +12,7 @@ namespace Bartlett\CompatInfoDb\Domain\Factory;
 
 use Exception;
 use ReflectionClassConstant;
+
 use function constant;
 use function dechex;
 use function defined;

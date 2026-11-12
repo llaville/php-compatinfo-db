@@ -19,6 +19,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 use DateTimeImmutable;
 use Locale;
+
 use function class_exists;
 use function date_default_timezone_get;
 use function extension_loaded;
@@ -28,6 +29,7 @@ use function ini_get;
 use function php_sapi_name;
 use function sprintf;
 use function sscanf;
+
 use const FILTER_VALIDATE_BOOLEAN;
 use const PHP_VERSION;
 

@@ -10,6 +10,7 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Mysqli;
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
 use function version_compare;
+
 use const PHP_VERSION;
 
 /**

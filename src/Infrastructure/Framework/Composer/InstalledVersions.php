@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace Bartlett\CompatInfoDb\Infrastructure\Framework\Composer;
 
 use OutOfBoundsException;
+
 use function func_get_arg;
 use function func_num_args;
 use function sprintf;

@@ -16,6 +16,7 @@ use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 
 use Generator;
 use RuntimeException;
+
 use function array_key_exists;
 use function array_keys;
 use function array_search;
@@ -28,6 +29,7 @@ use function in_array;
 use function json_last_error;
 use function sprintf;
 use function sscanf;
+
 use const DIRECTORY_SEPARATOR;
 use const JSON_ERROR_NONE;
 

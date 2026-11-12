@@ -14,6 +14,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Constant_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Constant_ as Entity;
 
 use Deprecated;
+
 use function is_array;
 
 /**

@@ -27,6 +27,7 @@ use function sprintf;
 use function strpos;
 use function substr;
 use function trim;
+
 use const JSON_PRETTY_PRINT;
 
 /**
