@@ -22,7 +22,6 @@ return (new PhpCsFixer\Config())
     )
     ->setRules([
         '@PHP8x3Migration' => true,
-        'no_whitespace_before_comma_in_array' => false,
         PhpCsFixerCustomFixers\Fixer\TypedClassConstantFixer::name() => true,
     ])
     // default source code to scan
