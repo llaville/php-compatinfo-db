@@ -97,9 +97,9 @@ final class DoctorHandler implements QueryHandlerInterface
 
             if (strcasecmp('opcache', $name) === 0) {
                 // special case
-                $installed = phpversion('Zend ' . $name) ? : false;
+                $installed = phpversion('Zend ' . $name) ?: false;
             } else {
-                $installed = phpversion($name) ? : false;
+                $installed = phpversion($name) ?: false;
             }
 
             $this->dependencies = [];

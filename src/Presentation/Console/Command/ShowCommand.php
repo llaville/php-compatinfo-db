@@ -414,7 +414,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             }
 
             $args[$key] = [
-                $this->ext($domain) ? : $domain->getVersion(),
+                $this->ext($domain) ?: $domain->getVersion(),
                 $this->php($domain),
                 $deprecated,
                 implode(', ', $parameters),
