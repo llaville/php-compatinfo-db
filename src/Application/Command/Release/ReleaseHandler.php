@@ -61,7 +61,7 @@ final class ReleaseHandler implements CommandHandlerInterface
     public function __invoke(ReleaseCommand $command): void
     {
         $relVersion = $command->getVersion();
-        list($maj, $min, ) = sscanf($relVersion, '%d.%d.%s');
+        [$maj, $min, ] = sscanf($relVersion, '%d.%d.%s');
 
         $major = $maj . $min;
 
@@ -116,10 +116,10 @@ final class ReleaseHandler implements CommandHandlerInterface
     {
         foreach ($this->componentDataProvider() as $refName => $definition) {
             if (count($definition) < 5) {
-                list($fileBasename, $major, $entry, $names) = $definition;
+                [$fileBasename, $major, $entry, $names] = $definition;
                 $static = null;
             } else {
-                list($fileBasename, $major, $entry, $names, $static) = $definition;
+                [$fileBasename, $major, $entry, $names, $static] = $definition;
             }
 
             $path = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName]);

@@ -88,7 +88,7 @@ final class EntityManagerFactory
         $url = str_replace(['${HOME}', '%HOME%'], $kernel->getHomeDir(), $dbUrl);
 
         if (str_contains($url, '://')) {
-            list($driver, $pathResolved) = explode('://', $url);
+            [$driver, $pathResolved] = explode('://', $url);
 
             if (strcasecmp($driver, 'sqlite') === 0) {
                 $driver = 'sqlite3';

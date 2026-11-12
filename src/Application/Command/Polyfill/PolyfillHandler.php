@@ -128,17 +128,17 @@ final class PolyfillHandler implements CommandHandlerInterface
         if ($io->isDebug()) {
             $phpVersions = $command->getPhp();
 
-            list($grabbed, $ignored) = $this->getListing($results['constants'], $phpVersions);
+            [$grabbed, $ignored] = $this->getListing($results['constants'], $phpVersions);
             $io->writeln('> Constants:');
             $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
             $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
 
-            list($grabbed, $ignored) = $this->getListing($results['functions'], $phpVersions);
+            [$grabbed, $ignored] = $this->getListing($results['functions'], $phpVersions);
             $io->writeln('> Functions:');
             $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
             $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
 
-            list($grabbed, $ignored) = $this->getListing($results['classes'], $phpVersions);
+            [$grabbed, $ignored] = $this->getListing($results['classes'], $phpVersions);
             $io->writeln('> Classes:');
             $io->listing($grabbed, ['type' => '[x]', 'style' => 'fg=green']);
             $io->listing($ignored, ['type' => '[ ]', 'style' => 'fg=red']);
