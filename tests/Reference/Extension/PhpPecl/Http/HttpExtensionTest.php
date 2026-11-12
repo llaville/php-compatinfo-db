@@ -64,7 +64,7 @@ class HttpExtensionTest extends GenericTestCase
         parent::setUpBeforeClass();
 
         if (!is_null(self::$obj)) {
-            $currentVersion = phpversion(self::$obj->getName()) ? : '';
+            $currentVersion = phpversion(self::$obj->getName()) ?: '';
 
             // platform dependant
             if (version_compare($currentVersion, '2.0.0', 'lt')) {

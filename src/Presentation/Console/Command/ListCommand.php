@@ -107,7 +107,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
             }
 
             $provided = $extension->getVersion();
-            $installed = phpversion($name) ? : '';
+            $installed = phpversion($name) ?: '';
 
             $row = [
                 $extension->getDescription(),
