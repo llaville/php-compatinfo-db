@@ -72,7 +72,7 @@ final class PolyfillHandler implements CommandHandlerInterface
         $targetDir = $command->getCacheDir() . DIRECTORY_SEPARATOR . $jsonResult['name'];
 
         if (!file_exists($targetDir)) {
-            mkdir($targetDir, 0755, true);
+            mkdir($targetDir, 0o755, true);
             if ($io->isVerbose()) {
                 $io->writeln(sprintf('> Create <info>%s</info> target dir', $targetDir));
             }

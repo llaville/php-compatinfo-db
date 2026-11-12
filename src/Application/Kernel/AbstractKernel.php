@@ -150,7 +150,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
     {
         foreach (['cache' => $this->getCacheDir(), 'logs' => $this->getLogDir()] as $name => $dir) {
             if (!is_dir($dir)) {
-                if (false === @mkdir($dir, 0777, true) && !is_dir($dir)) {
+                if (false === @mkdir($dir, 0o777, true) && !is_dir($dir)) {
                     throw new RuntimeException(sprintf('Unable to create the "%s" directory (%s).', $name, $dir));
                 }
             } elseif (!is_writable($dir)) {
