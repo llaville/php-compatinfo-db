@@ -15,6 +15,7 @@ use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
 use function php_uname;
 use function sprintf;
+
 use const PHP_VERSION;
 
 /**

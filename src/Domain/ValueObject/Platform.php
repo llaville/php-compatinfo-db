@@ -13,6 +13,7 @@ namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Extension;
 
 use DateTimeImmutable;
+
 use function count;
 use function sprintf;
 

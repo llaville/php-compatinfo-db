@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace Bartlett\CompatInfoDb\Domain\ValueObject;
 
 use Deprecated;
+
 use function sprintf;
 
 /**

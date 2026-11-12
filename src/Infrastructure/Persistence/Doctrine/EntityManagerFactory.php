@@ -30,6 +30,7 @@ use function sprintf;
 use function str_contains;
 use function str_replace;
 use function strcasecmp;
+
 use const DIRECTORY_SEPARATOR;
 
 /**

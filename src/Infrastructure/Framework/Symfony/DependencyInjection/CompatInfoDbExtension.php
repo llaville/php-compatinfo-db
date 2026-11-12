@@ -20,8 +20,10 @@ use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Symfony\Component\Messenger\MessageBus;
 
 use Exception;
+
 use function dirname;
 use function implode;
+
 use const DIRECTORY_SEPARATOR;
 
 /**

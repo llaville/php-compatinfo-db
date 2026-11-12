@@ -16,10 +16,12 @@ use Exception;
 use Phar;
 use LogicException;
 use ReflectionObject;
+
 use function dirname;
 use function getenv;
 use function is_file;
 use function sys_get_temp_dir;
+
 use const DIRECTORY_SEPARATOR;
 use const PATH_SEPARATOR;
 

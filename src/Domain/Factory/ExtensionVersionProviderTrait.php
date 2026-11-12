@@ -12,6 +12,7 @@ namespace Bartlett\CompatInfoDb\Domain\Factory;
 
 use function strtolower;
 use function version_compare;
+
 use const PHP_VERSION;
 
 /**

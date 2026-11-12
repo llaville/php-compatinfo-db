@@ -17,6 +17,7 @@ use function implode;
 use function is_int;
 use function json_decode;
 use function json_encode;
+
 use const DIRECTORY_SEPARATOR;
 use const PHP_EOL;
 

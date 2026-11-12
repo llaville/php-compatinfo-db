@@ -27,6 +27,7 @@ use function phpversion;
 use function sprintf;
 use function strcasecmp;
 use function trim;
+
 use const PHP_VERSION;
 
 /**

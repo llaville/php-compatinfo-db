@@ -23,6 +23,7 @@ use LogicException;
 use PharData;
 use RecursiveDirectoryIterator;
 use RuntimeException;
+
 use function basename;
 use function count;
 use function dirname;
@@ -42,6 +43,7 @@ use function str_replace;
 use function stripos;
 use function substr;
 use function sys_get_temp_dir;
+
 use const DIRECTORY_SEPARATOR;
 
 /**

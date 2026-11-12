@@ -18,6 +18,7 @@ use Symfony\Component\Stopwatch\Stopwatch;
 
 use function floor;
 use function sprintf;
+
 use const PHP_EOL;
 
 /**

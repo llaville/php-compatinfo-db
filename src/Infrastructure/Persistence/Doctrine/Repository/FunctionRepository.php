@@ -20,6 +20,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 
 use function version_compare;
+
 use const PHP_VERSION;
 
 /**

@@ -15,6 +15,7 @@ use Bartlett\CompatInfoDb\Domain\ValueObject\Function_ as Domain;
 use Bartlett\CompatInfoDb\Infrastructure\Persistence\Doctrine\Entity\Function_ as Entity;
 
 use Deprecated;
+
 use function explode;
 use function is_array;
 
