@@ -36,7 +36,7 @@ class CreateCommand extends AbstractCommand implements CommandInterface
     public function __construct(
         CommandBusInterface $commandBus,
         QueryBusInterface $queryBus,
-        protected EntityManagerInterface $entityManager
+        protected EntityManagerInterface $entityManager,
     ) {
         parent::__construct($commandBus, $queryBus);
     }

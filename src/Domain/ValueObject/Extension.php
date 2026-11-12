@@ -68,7 +68,7 @@ final class Extension implements ExtensionVersionProviderInterface
         array $functions = [],
         array $classes = [],
         array $dependencies = [],
-        array $releases = []
+        array $releases = [],
     ) {
         $this->name = strtolower($name);
         $this->description = sprintf('The %s PHP extension', $this->name);
@@ -137,7 +137,7 @@ final class Extension implements ExtensionVersionProviderInterface
             count($this->iniEntries),
             count($this->constants),
             count($this->functions),
-            count($this->classes)
+            count($this->classes),
         );
     }
 

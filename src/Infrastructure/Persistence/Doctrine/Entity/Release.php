@@ -46,7 +46,7 @@ class Release
             $this->id,
             $this->version,
             $this->date->format('c'),
-            $this->state
+            $this->state,
         );
     }
 

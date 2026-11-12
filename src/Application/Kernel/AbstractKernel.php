@@ -109,8 +109,8 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
             throw new InvalidArgumentException(
                 sprintf(
                     'The environment "%s" contains invalid characters, it can only contain characters allowed in PHP class names.',
-                    $this->environment
-                )
+                    $this->environment,
+                ),
             );
         }
 
@@ -203,7 +203,7 @@ abstract class AbstractKernel implements KernelInterface, MicroKernelInterface
                 $loader->load($configFile);
             } else {
                 throw new FileLocatorFileNotFoundException(
-                    sprintf('Format of file "%s" is not supported.', $configFile)
+                    sprintf('Format of file "%s" is not supported.', $configFile),
                 );
             }
         }

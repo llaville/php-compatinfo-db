@@ -64,7 +64,7 @@ final class ExtensionFactory implements ExtensionFactoryInterface
     use ExtensionVersionProviderTrait;
 
     public function __construct(
-        private readonly ExtensionRepository $extensionRepository
+        private readonly ExtensionRepository $extensionRepository,
     ) {
     }
 

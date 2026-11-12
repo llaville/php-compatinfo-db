@@ -137,7 +137,7 @@ final class BuildHandler implements CommandHandlerInterface
         ksort($objects, SORT_NATURAL);
 
         $output->writeln(
-            json_encode(array_values($objects), JSON_PRETTY_PRINT)
+            json_encode(array_values($objects), JSON_PRETTY_PRINT),
         );
     }
 
@@ -161,7 +161,7 @@ final class BuildHandler implements CommandHandlerInterface
         ksort($objects, SORT_NATURAL);
 
         $output->writeln(
-            json_encode(array_values($objects), JSON_PRETTY_PRINT)
+            json_encode(array_values($objects), JSON_PRETTY_PRINT),
         );
     }
 
@@ -187,7 +187,7 @@ final class BuildHandler implements CommandHandlerInterface
                     // if there is one method prototype, don't check it
                     if ($output->isVerbose()) {
                         $output->writeln(
-                            sprintf('<comment>%s</comment> is a prototype', $methodName)
+                            sprintf('<comment>%s</comment> is a prototype', $methodName),
                         );
                     }
                     continue;
@@ -199,7 +199,7 @@ final class BuildHandler implements CommandHandlerInterface
                 if ($from !== $className) {
                     if ($output->isVerbose()) {
                         $output->writeln(
-                            sprintf('<comment>%s</comment> inherit from <comment>%s</comment>', $methodName, $from)
+                            sprintf('<comment>%s</comment> inherit from <comment>%s</comment>', $methodName, $from),
                         );
                     }
                     continue;
@@ -219,7 +219,7 @@ final class BuildHandler implements CommandHandlerInterface
         }
 
         $output->writeln(
-            json_encode($methods, JSON_PRETTY_PRINT)
+            json_encode($methods, JSON_PRETTY_PRINT),
         );
     }
 
@@ -249,7 +249,7 @@ final class BuildHandler implements CommandHandlerInterface
         }
 
         $output->writeln(
-            json_encode($constants, JSON_PRETTY_PRINT)
+            json_encode($constants, JSON_PRETTY_PRINT),
         );
     }
 
@@ -269,7 +269,7 @@ final class BuildHandler implements CommandHandlerInterface
         ksort($objects, SORT_NATURAL);
 
         $output->writeln(
-            json_encode(array_values($objects), JSON_PRETTY_PRINT)
+            json_encode(array_values($objects), JSON_PRETTY_PRINT),
         );
     }
 
@@ -289,7 +289,7 @@ final class BuildHandler implements CommandHandlerInterface
         ksort($objects, SORT_NATURAL);
 
         $output->writeln(
-            json_encode(array_values($objects), JSON_PRETTY_PRINT)
+            json_encode(array_values($objects), JSON_PRETTY_PRINT),
         );
     }
 }

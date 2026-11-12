@@ -77,7 +77,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
 
         $listQuery = new ListQuery(
             $app->getLongVersion(),
-            $filters
+            $filters,
         );
 
         /** @var Platform $platform */
@@ -93,8 +93,8 @@ final class ListCommand extends AbstractCommand implements CommandInterface
                     function ($item) {
                         return (string) $item;
                     },
-                    $extensions
-                )
+                    $extensions,
+                ),
             );
             return self::SUCCESS;
         }
@@ -142,8 +142,8 @@ final class ListCommand extends AbstractCommand implements CommandInterface
                 'Platform "%s %s" built %s',
                 $platform->getDescription(),
                 $platform->getVersion(),
-                $platform->getCreatedAt()->format('c')
-            )
+                $platform->getCreatedAt()->format('c'),
+            ),
         );
 
         return self::SUCCESS;

@@ -32,7 +32,7 @@ final class Release
         string $extMin,
         ?string $extMax,
         string $phpMin,
-        ?string $phpMax
+        ?string $phpMax,
     ) {
         $this->version = $version;
         $this->date = $date;

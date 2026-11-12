@@ -19,7 +19,7 @@ use Symfony\Component\Console\Input\InputInterface;
 final class ConfigResolver
 {
     public function __construct(
-        private readonly InputInterface $input
+        private readonly InputInterface $input,
     ) {
     }
 

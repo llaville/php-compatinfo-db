@@ -63,7 +63,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             ->addArgument(
                 'extension',
                 InputArgument::REQUIRED,
-                'extension to extract components (case insensitive)'
+                'extension to extract components (case insensitive)',
             )
             ->addOption('releases', null, null, 'Show releases')
             ->addOption('ini', null, null, 'Show ini Entries')
@@ -96,7 +96,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
             $input->getOption('class-constants'),
             $input->getOption('dependencies'),
             $input->getOption('polyfills'),
-            $input->getOption('deprecations')
+            $input->getOption('deprecations'),
         );
 
         /** @var Extension|null $extension */
@@ -163,41 +163,41 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $io->title('Reference Summary');
         $io->columns(
             count($extension->getReleases()),
-            '  Releases                                  %10d'
+            '  Releases                                  %10d',
         );
         $configs = $extension->getIniEntries();
         $io->columns(
             count($configs),
-            '  INI entries                               %10d'
+            '  INI entries                               %10d',
         );
         $constants = $extension->getConstants();
         $io->columns(
             count($constants),
-            '  Constants                                 %10d'
+            '  Constants                                 %10d',
         );
         $functions = $extension->getFunctions();
         $io->columns(
             count($functions),
-            '  Functions                                 %10d'
+            '  Functions                                 %10d',
         );
         $classes = $extension->getClasses();
         $io->columns(
             count($classes),
-            '  Classes                                   %10d'
+            '  Classes                                   %10d',
         );
         $interfaces = $extension->getInterfaces();
         $io->columns(
             count($interfaces),
-            '  Interfaces                                %10d'
+            '  Interfaces                                %10d',
         );
         $classConstants = $extension->getClassConstants();
         $io->columns(
             count($classConstants),
-            '  Class Constants                           %10d'
+            '  Class Constants                           %10d',
         );
         $io->columns(
             count($extension->getMethods()),
-            '  Methods                                   %10d'
+            '  Methods                                   %10d',
         );
         $dependencies = [];
         foreach ($extension->getDependencies() as $dependency) {
@@ -206,7 +206,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $dependencies = array_unique($dependencies);
         $io->columns(
             count($dependencies),
-            '  Dependencies                              %10d'
+            '  Dependencies                              %10d',
         );
         $polyfills = [];
         foreach ([$functions, $constants, $classes] as $components) {
@@ -221,7 +221,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $polyfills = array_unique($polyfills);
         $io->columns(
             count($polyfills),
-            '  Polyfills                                 %10d'
+            '  Polyfills                                 %10d',
         );
         $deprecations = [];
         foreach ([$functions, $constants, $configs, $classes, $interfaces, $classConstants] as $components) {
@@ -236,7 +236,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
         $deprecations = array_unique($deprecations);
         $io->columns(
             count($deprecations),
-            '  Deprecations                              %10d'
+            '  Deprecations                              %10d',
         );
 
         return self::SUCCESS;
@@ -364,7 +364,7 @@ final class ShowCommand extends AbstractCommand implements CommandInterface
                     '%s (%s) - %s',
                     $domain->getDate()->format('Y-m-d'),
                     $domain->getState(),
-                    $domain->getVersion()
+                    $domain->getVersion(),
                 );
             } elseif ($domain instanceof Function_ || $domain instanceof Constant_) {
                 $key = $domain->getName();

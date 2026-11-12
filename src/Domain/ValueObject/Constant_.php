@@ -44,7 +44,7 @@ final class Constant_
         ?string $phpMax,
         array $dependencies = [],
         ?string $polyfill = null,
-        ?Deprecated $deprecated = null
+        ?Deprecated $deprecated = null,
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;

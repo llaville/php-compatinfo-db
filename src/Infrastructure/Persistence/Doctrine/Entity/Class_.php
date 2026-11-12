@@ -45,7 +45,7 @@ class Class_
     #[OneToMany(
         mappedBy: "class",
         targetEntity: ClassRelationship::class,
-        cascade: ["persist"]
+        cascade: ["persist"],
     )]
     /**
      * @var Collection<int, ClassRelationship> $relationships

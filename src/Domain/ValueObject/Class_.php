@@ -53,7 +53,7 @@ final class Class_
         array $dependencies = [],
         int $flags = self::MODIFIER_PUBLIC,
         ?string $polyfill = null,
-        ?Deprecated $deprecated = null
+        ?Deprecated $deprecated = null,
     ) {
         $this->name = $name;
         $this->isInterface = $isInterface;

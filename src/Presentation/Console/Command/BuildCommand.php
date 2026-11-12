@@ -37,19 +37,19 @@ final class BuildCommand extends AbstractCommand implements CommandInterface
             ->addArgument(
                 'extension',
                 InputArgument::REQUIRED,
-                'extension to extract components (case insensitive)'
+                'extension to extract components (case insensitive)',
             )
             ->addArgument(
                 'ext_min',
                 InputArgument::OPTIONAL,
                 'extension MIN version',
-                '0.1.0'
+                '0.1.0',
             )
             ->addArgument(
                 'php_min',
                 InputArgument::OPTIONAL,
                 'php MIN version',
-                '5.3.0'
+                '5.3.0',
             )
         ;
     }
@@ -63,7 +63,7 @@ final class BuildCommand extends AbstractCommand implements CommandInterface
             trim($input->getArgument('extension')),
             trim($input->getArgument('ext_min')),
             trim($input->getArgument('php_min')),
-            $output
+            $output,
         );
 
         $this->commandBus->handle($buildCommand);

@@ -37,7 +37,7 @@ final class EventDispatcher extends SymfonyEventDispatcher
 
     public function __construct(
         InputInterface $input,
-        EventSubscriberInterface $profileEventSubscriber
+        EventSubscriberInterface $profileEventSubscriber,
     ) {
         parent::__construct();
 

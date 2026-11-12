@@ -42,7 +42,7 @@ class Constant_
     #[OneToMany(
         mappedBy: "constant",
         targetEntity: ConstantRelationship::class,
-        cascade: ["persist"]
+        cascade: ["persist"],
     )]
     /**
      * @var Collection<int, ConstantRelationship> $relationships

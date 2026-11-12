@@ -23,7 +23,7 @@ use Doctrine\ORM\EntityManagerInterface;
 final class CreateCommand implements CommandInterface
 {
     public function __construct(
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
     ) {
     }
 

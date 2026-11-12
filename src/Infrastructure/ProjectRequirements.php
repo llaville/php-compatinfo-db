@@ -53,9 +53,9 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
                 'You are running PHP version "<strong>%s</strong>",' .
                 ' but CompatInfoDB needs at least PHP "<strong>%s</strong>" to run.',
                 $installedPhpVersion,
-                $requiredPhpVersion
+                $requiredPhpVersion,
             ),
-            sprintf('Install PHP %s or newer (installed version is %s)', $requiredPhpVersion, $installedPhpVersion)
+            sprintf('Install PHP %s or newer (installed version is %s)', $requiredPhpVersion, $installedPhpVersion),
         );
 
         $conn = $query->getDatabaseConnection();
@@ -65,20 +65,20 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
         $this->addRequirement(
             extension_loaded($dbParams['driver']),
             sprintf('%s extension must be available', $dbParams['driver']),
-            sprintf('Install the <strong>%s</strong> extension', $dbParams['driver'])
+            sprintf('Install the <strong>%s</strong> extension', $dbParams['driver']),
         );
 
         if (in_array($dbParams['driver'], ['sqlite', 'sqlite3', 'pdo_sqlite'])) {
             $this->addRequirement(
                 $this->checkDbFile($dbParams['path']),
                 sprintf('Check if source "%s" can be reached', $dbParams['path']),
-                $this->helpStatus
+                $this->helpStatus,
             );
         } else {
             $this->addRequirement(
                 $this->checkDoctrineConnection($conn),
                 sprintf('Check if DSN "%s" can be reached', $dbParams['url']),
-                $this->helpStatus
+                $this->helpStatus,
             );
         }
 
@@ -86,13 +86,13 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
         $this->addRequirement(
             $tablesExists,
             'Check if tables exists in database',
-            $this->helpStatus
+            $this->helpStatus,
         );
 
         $this->addRequirement(
             $this->checkPlatformAvailable($conn, $tablesExists),
             'Check if database contains at least one distribution platform',
-            $this->helpStatus
+            $this->helpStatus,
         );
     }
 

@@ -38,8 +38,8 @@ trait PrintDiagnose
                 $appName,
                 PHP_VERSION,
                 php_uname('s'),
-                php_uname('r')
-            )
+                php_uname('r'),
+            ),
         );
         $io->text('> PHP is using the following php.ini file:');
         if ($iniPath = $requirements->getPhpIniPath()) {

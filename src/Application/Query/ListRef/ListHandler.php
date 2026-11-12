@@ -40,7 +40,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
      * ListHandler constructor.
      */
     public function __construct(
-        private readonly DistributionRepository $distributionRepository
+        private readonly DistributionRepository $distributionRepository,
     ) {
     }
 
@@ -49,7 +49,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
         $platform = $this->distributionRepository->getDistributionByVersion($query->getAppVersion());
         if (null === $platform) {
             throw new RuntimeException(
-                "Distribution platform is not available. Please run `diagnose` command to learn more."
+                "Distribution platform is not available. Please run `diagnose` command to learn more.",
             );
         }
 
@@ -90,7 +90,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $platform->getDescription(),
             $platform->getVersion(),
             $platform->getCreatedAt(),
-            $extensions
+            $extensions,
         );
     }
 
@@ -108,7 +108,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $platform->getDescription(),
             $platform->getVersion(),
             $platform->getCreatedAt(),
-            $extensions
+            $extensions,
         );
     }
 
@@ -133,7 +133,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $platform->getDescription(),
             $platform->getVersion(),
             $platform->getCreatedAt(),
-            $extensions
+            $extensions,
         );
     }
 
@@ -184,7 +184,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $platform->getDescription(),
             $platform->getVersion(),
             $platform->getCreatedAt(),
-            $extensions
+            $extensions,
         );
     }
 
@@ -211,7 +211,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
             $platform->getDescription(),
             $platform->getVersion(),
             $platform->getCreatedAt(),
-            $extensions
+            $extensions,
         );
     }
 }

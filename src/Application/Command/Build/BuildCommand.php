@@ -26,7 +26,7 @@ final class BuildCommand implements CommandInterface
         private readonly string $extension,
         private readonly string $extMin,
         private readonly string $phpMin,
-        private readonly OutputInterface $output
+        private readonly OutputInterface $output,
     ) {
     }
 

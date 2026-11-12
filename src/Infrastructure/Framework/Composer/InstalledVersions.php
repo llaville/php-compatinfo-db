@@ -48,7 +48,7 @@ final class InstalledVersions
                 return sprintf(
                     '%s@%s',
                     $prettyVersion,
-                    substr($installed['versions'][$packageName]['reference'], 0, 7)
+                    substr($installed['versions'][$packageName]['reference'], 0, 7),
                 );
             }
             return $prettyVersion;

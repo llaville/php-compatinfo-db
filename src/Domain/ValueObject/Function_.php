@@ -54,7 +54,7 @@ final class Function_
         array $dependencies,
         int $flags,
         ?string $polyfill,
-        ?Deprecated $deprecated
+        ?Deprecated $deprecated,
     ) {
         $this->name = $name;
         $this->declaringClass = $declaringClass;

@@ -24,7 +24,7 @@ final class ReleaseCommand implements CommandInterface
         private readonly string $version,
         private readonly string $date,
         private readonly string $state,
-        private readonly string $extension
+        private readonly string $extension,
     ) {
     }
 

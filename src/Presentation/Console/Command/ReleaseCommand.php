@@ -41,26 +41,26 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
             ->addArgument(
                 'rel_version',
                 InputArgument::REQUIRED,
-                'New release version'
+                'New release version',
             )
             ->addArgument(
                 'rel_date',
                 InputArgument::OPTIONAL,
                 'New release date',
-                date('Y-m-d')
+                date('Y-m-d'),
             )
             ->addArgument(
                 'rel_state',
                 InputArgument::OPTIONAL,
                 'New release state (alpha, beta, RC, stable)',
-                'stable'
+                'stable',
             )
             ->addOption(
                 'extension',
                 null,
                 InputOption::VALUE_REQUIRED,
                 'Name of extension to which add new release',
-                'core'
+                'core',
             )
         ;
     }
@@ -74,7 +74,7 @@ class ReleaseCommand extends AbstractCommand implements CommandInterface
             trim($input->getArgument('rel_version')),
             trim($input->getArgument('rel_date')),
             trim($input->getArgument('rel_state')),
-            trim(strtolower($input->getOption('extension')))
+            trim(strtolower($input->getOption('extension'))),
         );
 
         $this->commandBus->handle($releaseCommand);

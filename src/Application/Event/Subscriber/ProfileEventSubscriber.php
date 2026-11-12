@@ -32,7 +32,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
      * ProfileEventSubscriber constructor.
      */
     public function __construct(
-        private readonly Stopwatch $stopwatch
+        private readonly Stopwatch $stopwatch,
     ) {
     }
 
@@ -75,7 +75,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
             '%s<comment>Time: %s, Memory: %4.2fMb</comment>',
             PHP_EOL,
             $this->toTimeString($time),
-            sprintf('%4.2fMb', $memory / (1024 * 1024))
+            sprintf('%4.2fMb', $memory / (1024 * 1024)),
         );
         $output->writeln($text);
     }

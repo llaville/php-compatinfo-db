@@ -40,7 +40,7 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
     public function __construct(
         CommandBusInterface $commandBus,
         QueryBusInterface $queryBus,
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
     ) {
         parent::__construct($commandBus, $queryBus);
     }
@@ -76,8 +76,8 @@ class DiagnoseCommand extends AbstractCommand implements CommandInterface
             sprintf(
                 '%s version %s',
                 $app->getName(),
-                $app->getLongVersion()
-            )
+                $app->getLongVersion(),
+            ),
         );
 
         if (count($projectRequirements->getFailedRequirements()) === 0) {

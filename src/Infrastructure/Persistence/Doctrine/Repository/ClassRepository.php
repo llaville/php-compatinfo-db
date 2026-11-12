@@ -32,7 +32,7 @@ final class ClassRepository implements DomainRepository
     private EntityRepository $repository;
 
     public function __construct(
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
     ) {
         $this->repository = $this->entityManager->getRepository(ClassEntity::class);
     }
@@ -63,7 +63,7 @@ final class ClassRepository implements DomainRepository
         $entity = $collection->isEmpty()
             ? null
             : $collection->filter(
-                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le')
+                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le'),
             )->first()
         ;
 

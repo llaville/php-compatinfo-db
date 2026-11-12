@@ -56,7 +56,7 @@ final class PolyfillHandler implements CommandHandlerInterface
     private string $compatInfoBin;
 
     public function __construct(
-        private readonly JsonFileHandler $jsonFileHandler
+        private readonly JsonFileHandler $jsonFileHandler,
     ) {
     }
 
@@ -104,8 +104,8 @@ final class PolyfillHandler implements CommandHandlerInterface
                 sprintf(
                     '> Archive <info>%s</info> extracted to <info>%s</info>',
                     basename($tempArchive),
-                    $tempPackageDir
-                )
+                    $tempPackageDir,
+                ),
             );
         }
 
@@ -124,8 +124,8 @@ final class PolyfillHandler implements CommandHandlerInterface
                     '> Polyfill analysed. Found <info>%d</info> constant(s), <info>%d</info> function(s) and <info>%d</info> class(es)',
                     count($results['constants']),
                     count($results['functions']),
-                    count($results['classes'])
-                )
+                    count($results['classes']),
+                ),
             );
         }
         if ($io->isDebug()) {
@@ -151,7 +151,7 @@ final class PolyfillHandler implements CommandHandlerInterface
             $major = str_replace('.', '', $phpVersion);
             if (!$this->updateReference($major, $results, $command->getPackage())) {
                 throw new LogicException(
-                    'No reference updated. <comment>Verify if "php" option is accordingly set to this polyfill.</comment>'
+                    'No reference updated. <comment>Verify if "php" option is accordingly set to this polyfill.</comment>',
                 );
             }
         }
@@ -199,7 +199,7 @@ final class PolyfillHandler implements CommandHandlerInterface
         $composerStatus = $process->getExitCode();
         if ($composerStatus > 0) {
             throw new RuntimeException(
-                sprintf('Command "%s" returns status code %s', $process->getCommandLine(), $composerStatus)
+                sprintf('Command "%s" returns status code %s', $process->getCommandLine(), $composerStatus),
             );
         }
 
@@ -251,7 +251,7 @@ final class PolyfillHandler implements CommandHandlerInterface
         $processStatus = $process->getExitCode();
         if ($processStatus > 0) {
             throw new RuntimeException(
-                sprintf('Command "%s" returns status code %s', $process->getCommandLine(), $processStatus)
+                sprintf('Command "%s" returns status code %s', $process->getCommandLine(), $processStatus),
             );
         }
 
@@ -273,7 +273,7 @@ final class PolyfillHandler implements CommandHandlerInterface
             preg_match(
                 '/(extension_loaded|function_exists|method_exists|class_exists|interface_exists|trait_exists|defined)\((.*)\)/',
                 $condition,
-                $matches
+                $matches,
             );
 
             if ($matches[1] === 'defined') {

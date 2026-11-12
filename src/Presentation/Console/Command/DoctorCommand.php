@@ -127,7 +127,7 @@ final class DoctorCommand extends AbstractCommand implements CommandInterface
                 } else {
                     $io->columns(
                         $value,
-                        sprintf('  %-20s', $key) . ': %s'
+                        sprintf('  %-20s', $key) . ': %s',
                     );
                 }
             }

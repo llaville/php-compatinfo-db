@@ -28,7 +28,7 @@ abstract class AbstractCommand extends Command
 
     public function __construct(
         protected CommandBusInterface $commandBus,
-        protected QueryBusInterface $queryBus
+        protected QueryBusInterface $queryBus,
     ) {
         parent::__construct();
     }

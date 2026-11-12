@@ -40,7 +40,7 @@ class NewCommand extends AbstractCommand implements CommandInterface
     public function __construct(
         CommandBusInterface $commandBus,
         QueryBusInterface $queryBus,
-        protected EntityManagerInterface $entityManager
+        protected EntityManagerInterface $entityManager,
     ) {
         parent::__construct($commandBus, $queryBus);
     }
@@ -92,7 +92,7 @@ class NewCommand extends AbstractCommand implements CommandInterface
             $appVersion,
             $io,
             $input->getOption('force'),
-            $input->getOption('progress')
+            $input->getOption('progress'),
         );
 
         try {
