@@ -32,7 +32,7 @@ final class ShowQuery implements QueryInterface
         private readonly bool $classConstants,
         private readonly bool $dependencies,
         private readonly bool $polyfills,
-        private readonly bool $deprecations
+        private readonly bool $deprecations,
     ) {
     }
 

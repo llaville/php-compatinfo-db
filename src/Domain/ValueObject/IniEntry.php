@@ -38,7 +38,7 @@ final class IniEntry
         string $phpMin,
         ?string $phpMax,
         array $dependencies,
-        ?Deprecated $deprecated
+        ?Deprecated $deprecated,
     ) {
         $this->name = $name;
         $this->extMin = $extMin;

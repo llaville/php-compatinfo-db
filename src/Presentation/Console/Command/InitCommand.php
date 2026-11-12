@@ -43,7 +43,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
             ->addArgument(
                 'rel_version',
                 InputArgument::OPTIONAL,
-                'New DB version'
+                'New DB version',
             )
             ->addOption('force', 'f', null, 'Reset database contents even if not empty')
             ->addOption('progress', null, null, 'Show progress bar')
@@ -75,7 +75,7 @@ class InitCommand extends AbstractCommand implements CommandInterface
             $appVersion,
             $io,
             $input->getOption('force'),
-            $input->getOption('progress')
+            $input->getOption('progress'),
         );
 
         try {

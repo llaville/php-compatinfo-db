@@ -45,7 +45,7 @@ final class EntityManagerFactory
         bool $isDevMode,
         string $proxyDir,
         ?CacheItemPoolInterface $cache = null,
-        string $autogenerateProxyClasses = 'auto'
+        string $autogenerateProxyClasses = 'auto',
     ): EntityManagerInterface {
         $paths = [implode(DIRECTORY_SEPARATOR, [__DIR__, 'Entity'])];
 

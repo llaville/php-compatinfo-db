@@ -125,7 +125,7 @@ final class FunctionHydrator implements HydratorInterface
             $dependencies,
             $entity->getFlags(),
             $entity->getPolyfill(),
-            $deprecated
+            $deprecated,
         );
     }
 }

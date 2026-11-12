@@ -26,7 +26,7 @@ final class DiagnoseQuery implements QueryInterface
      * DiagnoseQuery constructor.
      */
     public function __construct(
-        private readonly Connection $connection
+        private readonly Connection $connection,
     ) {
     }
 

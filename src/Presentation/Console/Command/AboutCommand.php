@@ -69,7 +69,7 @@ final class AboutCommand extends AbstractCommand implements CommandInterface
             '%s/%d.%d',
             'https://llaville.github.io/php-compatinfo-db',
             $majorVersion,
-            $minorVersion
+            $minorVersion,
         );
 
         $kernel = $app->getKernel();

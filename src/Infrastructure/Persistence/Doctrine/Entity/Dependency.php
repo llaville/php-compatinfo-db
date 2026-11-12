@@ -37,7 +37,7 @@ class Dependency
             'Dependency (id: %s, name: %s, constraint: "%s")',
             $this->id,
             $this->name,
-            $this->constraintExpression
+            $this->constraintExpression,
         );
     }
 

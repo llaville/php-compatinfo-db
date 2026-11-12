@@ -28,7 +28,7 @@ final class DoctorQuery implements QueryInterface
     public function __construct(
         Platform $platform,
         bool $withTests,
-        private readonly string $version
+        private readonly string $version,
     ) {
         $this->extensions = [];
         foreach ($platform->getExtensions() as $extension) {

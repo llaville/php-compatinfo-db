@@ -56,16 +56,16 @@ class Application extends SymfonyApplication implements ApplicationInterface
                 'config',
                 'c',
                 InputOption::VALUE_REQUIRED,
-                'Read configuration from PHP file'
-            )
+                'Read configuration from PHP file',
+            ),
         );
         $definition->addOption(
             new InputOption(
                 'profile',
                 null,
                 InputOption::VALUE_NONE,
-                'Display timing and memory usage information'
-            )
+                'Display timing and memory usage information',
+            ),
         );
         return $definition;
     }
@@ -102,7 +102,7 @@ class Application extends SymfonyApplication implements ApplicationInterface
         return sprintf(
             '<info>%s</info> version <comment>%s</comment>',
             $this->getName(),
-            $this->getVersion()
+            $this->getVersion(),
         );
     }
 

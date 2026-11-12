@@ -28,7 +28,7 @@ final class ListQuery implements QueryInterface
      */
     public function __construct(
         private readonly string $appVersion,
-        private readonly array $filters = []
+        private readonly array $filters = [],
     ) {
     }
 

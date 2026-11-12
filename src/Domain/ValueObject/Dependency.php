@@ -21,7 +21,7 @@ final class Dependency
 
     public function __construct(
         string $name,
-        string $constraint
+        string $constraint,
     ) {
         $this->name = $name;
         $this->constraint = $constraint;

@@ -64,7 +64,7 @@ final class PlatformHydrator implements HydratorInterface
             $entity->getDescription(),
             $entity->getVersion(),
             $entity->getCreatedAt(),
-            $entity->getExtensions()
+            $entity->getExtensions(),
         );
     }
 }

@@ -57,7 +57,7 @@ class DependencyHydrator implements HydratorInterface
     {
         return new Domain(
             $entity->getName(),
-            $entity->getConstraintExpression()
+            $entity->getConstraintExpression(),
         );
     }
 }

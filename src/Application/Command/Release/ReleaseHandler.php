@@ -56,7 +56,7 @@ final class ReleaseHandler implements CommandHandlerInterface
      * ReleaseHandler constructor.
      */
     public function __construct(
-        private readonly JsonFileHandler $jsonFileHandler
+        private readonly JsonFileHandler $jsonFileHandler,
     ) {
         $this->refDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 4), 'data', 'reference', 'extension']);
     }

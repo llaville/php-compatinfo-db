@@ -42,25 +42,25 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
             ->addArgument(
                 'package',
                 InputArgument::REQUIRED,
-                'Polyfill vendor/package identifier'
+                'Polyfill vendor/package identifier',
             )
             ->addArgument(
                 'tag',
                 InputArgument::REQUIRED,
-                'Polyfill tag identifier'
+                'Polyfill tag identifier',
             )
             ->addOption(
                 'php',
                 null,
                 InputOption::VALUE_IS_ARRAY | InputOption::VALUE_REQUIRED,
-                'Polyfill for PHP version'
+                'Polyfill for PHP version',
             )
             ->addOption(
                 'whitelist',
                 null,
                 InputOption::VALUE_REQUIRED,
                 'File to scan into package',
-                'bootstrap.php'
+                'bootstrap.php',
             )
         ;
     }
@@ -83,7 +83,7 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
             $input->getOption('php'),
             $io,
             $kernel->getCacheDir(),
-            $input->getOption('whitelist')
+            $input->getOption('whitelist'),
         );
 
         try {
@@ -96,7 +96,7 @@ final class PolyfillCommand extends AbstractCommand implements CommandInterface
                     $exceptions[] = sprintf(
                         '<comment>from file "%s" at line %d</comment>',
                         $exception->getFile(),
-                        $exception->getLine()
+                        $exception->getLine(),
                     );
                 }
             }

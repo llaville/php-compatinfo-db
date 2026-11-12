@@ -30,7 +30,7 @@ final class PolyfillCommand implements CommandInterface
         private readonly array $php,
         private readonly StyleInterface $io,
         private readonly string $cacheDir,
-        private readonly ?string $whitelist
+        private readonly ?string $whitelist,
     ) {
     }
 

@@ -74,7 +74,7 @@ final class ReleaseHydrator implements HydratorInterface
             $entity->getExtMin(),
             $entity->getExtMax(),
             $entity->getPhpMin(),
-            $entity->getPhpMax()
+            $entity->getPhpMax(),
         );
     }
 }

@@ -37,7 +37,7 @@ final class Platform
         string $description,
         string $version,
         DateTimeImmutable $createdAt,
-        array $extensions
+        array $extensions,
     ) {
         $this->description = $description;
         $this->version = $version;
@@ -53,7 +53,7 @@ final class Platform
             $this->version,
             $this->createdAt->format('c'),
             count($this->extensions),
-            count($this->extensions) > 1 ? 's' : ''
+            count($this->extensions) > 1 ? 's' : '',
         );
     }
 

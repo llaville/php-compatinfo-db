@@ -26,7 +26,7 @@ final class ShowHandler implements QueryHandlerInterface
      * ShowHandler constructor.
      */
     public function __construct(
-        private readonly ExtensionFactoryInterface $factory
+        private readonly ExtensionFactoryInterface $factory,
     ) {
     }
 

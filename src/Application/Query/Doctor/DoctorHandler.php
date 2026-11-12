@@ -50,7 +50,7 @@ final class DoctorHandler implements QueryHandlerInterface
      * ShowHandler constructor.
      */
     public function __construct(
-        private readonly ExtensionFactoryInterface $factory
+        private readonly ExtensionFactoryInterface $factory,
     ) {
     }
 
@@ -134,7 +134,7 @@ final class DoctorHandler implements QueryHandlerInterface
             $report['PHP']['constraints'][$name] = sprintf(
                 '%d passed, %d skipped',
                 $result[self::CONSTRAINT_PASSED],
-                $result[self::CONSTRAINT_SKIPPED]
+                $result[self::CONSTRAINT_SKIPPED],
             );
             if ($result[self::CONSTRAINT_SKIPPED] > 0) {
                 $reportStatus = $reportStatus | 1;
@@ -173,7 +173,7 @@ final class DoctorHandler implements QueryHandlerInterface
         $prettyConstraint = sprintf(
             '%s [%s]',
             $constraint,
-            trim((string) (new VersionParser())->parseConstraints($constraint), '[]')
+            trim((string) (new VersionParser())->parseConstraints($constraint), '[]'),
         );
 
         if (Semver::satisfies($ver, $constraint)) {

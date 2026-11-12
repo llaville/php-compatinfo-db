@@ -46,7 +46,7 @@ class Extension
     #[OneToMany(
         mappedBy: "extension",
         targetEntity: Release::class,
-        cascade: ["persist", "remove"]
+        cascade: ["persist", "remove"],
     )]
     /**
      * @var Collection<int, Release> $releases
@@ -56,7 +56,7 @@ class Extension
     #[OneToMany(
         mappedBy: "extension",
         targetEntity: Dependency::class,
-        cascade: ["persist", "remove"]
+        cascade: ["persist", "remove"],
     )]
     /**
      * @var Collection<int, Dependency> $dependencies
@@ -66,7 +66,7 @@ class Extension
     #[OneToMany(
         mappedBy: "extension",
         targetEntity :IniEntry::class,
-        cascade: ["persist", "remove"]
+        cascade: ["persist", "remove"],
     )]
     /**
      * @var Collection<int, IniEntry> $iniEntries
@@ -76,7 +76,7 @@ class Extension
     #[OneToMany(
         mappedBy:"extension",
         targetEntity:Constant_::class,
-        cascade:["persist", "remove"]
+        cascade:["persist", "remove"],
     )]
     /**
      * @var Collection<int, Constant_> $constants
@@ -86,7 +86,7 @@ class Extension
     #[OneToMany(
         mappedBy: "extension",
         targetEntity: Function_::class,
-        cascade: ["persist", "remove"]
+        cascade: ["persist", "remove"],
     )]
     /**
      * @var Collection<int, Function_> $functions
@@ -96,7 +96,7 @@ class Extension
     #[OneToMany(
         mappedBy: "extension",
         targetEntity: Class_::class,
-        cascade: ["persist", "remove"]
+        cascade: ["persist", "remove"],
     )]
     /**
      * @var Collection<int, Class_> $relationships

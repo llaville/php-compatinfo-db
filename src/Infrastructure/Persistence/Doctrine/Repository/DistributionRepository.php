@@ -34,7 +34,7 @@ final class DistributionRepository implements DomainRepositoryInterface
     private EntityRepository $repository;
 
     public function __construct(
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
     ) {
         $this->repository = $this->entityManager->getRepository(PlatformEntity::class);
     }

@@ -54,7 +54,7 @@ final class InitHandler implements CommandHandlerInterface
     public function __construct(
         private readonly JsonFileHandler $jsonFileHandler,
         private readonly DistributionRepository $distributionRepository,
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
     ) {
     }
 
@@ -68,7 +68,7 @@ final class InitHandler implements CommandHandlerInterface
                 if (!$query->isForce()) {
                     throw new RuntimeException(
                         'Distribution platform already exists. Use `--force` option to reset contents.',
-                        self::RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS
+                        self::RETURN_CODE_DISTRIBUTION_PLATFORM_EXISTS,
                     );
                 }
                 $this->distributionRepository->clear();
@@ -184,8 +184,8 @@ final class InitHandler implements CommandHandlerInterface
                     function ($item) {
                         return (string) $item;
                     },
-                    $distribution->getExtensions()
-                )
+                    $distribution->getExtensions(),
+                ),
             );
 
             $io->section('Configuration(s) referenced');
@@ -195,8 +195,8 @@ final class InitHandler implements CommandHandlerInterface
                         function ($item) {
                             return (string) $item;
                         },
-                        $extension->getIniEntries()->toArray()
-                    )
+                        $extension->getIniEntries()->toArray(),
+                    ),
                 );
             }
 
@@ -207,8 +207,8 @@ final class InitHandler implements CommandHandlerInterface
                         function ($item) {
                             return (string) $item;
                         },
-                        $extension->getConstants()->toArray()
-                    )
+                        $extension->getConstants()->toArray(),
+                    ),
                 );
             }
 
@@ -219,8 +219,8 @@ final class InitHandler implements CommandHandlerInterface
                         function ($item) {
                             return (string) $item;
                         },
-                        $extension->getFunctions()->toArray()
-                    )
+                        $extension->getFunctions()->toArray(),
+                    ),
                 );
             }
 
@@ -231,8 +231,8 @@ final class InitHandler implements CommandHandlerInterface
                         function ($item) {
                             return (string) $item;
                         },
-                        $extension->getClasses()->toArray()
-                    )
+                        $extension->getClasses()->toArray(),
+                    ),
                 );
             }
         }
@@ -283,7 +283,7 @@ final class InitHandler implements CommandHandlerInterface
                 $temp = $this->jsonFileHandler->read(
                     dirname($path) . DIRECTORY_SEPARATOR . 'core',
                     $fileBasename,
-                    $major
+                    $major,
                 );
             }
             if (!$temp) {
@@ -357,7 +357,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -366,7 +366,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 ['40'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -382,7 +382,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -428,7 +428,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '52', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -437,7 +437,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 ['40'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -469,7 +469,7 @@ final class InitHandler implements CommandHandlerInterface
                     '51', '52', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -505,7 +505,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '52', '53', '55',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -533,7 +533,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '51'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -550,7 +550,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['0', '1'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -566,7 +566,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['40', '42', '43'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -584,7 +584,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['0', '1'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -600,7 +600,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['0'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -621,7 +621,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -646,7 +646,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '52', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -669,7 +669,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['40', '42'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -691,7 +691,7 @@ final class InitHandler implements CommandHandlerInterface
                     '52', '53', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -725,7 +725,7 @@ final class InitHandler implements CommandHandlerInterface
                     '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -761,7 +761,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -845,7 +845,7 @@ final class InitHandler implements CommandHandlerInterface
                     '55',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -873,7 +873,7 @@ final class InitHandler implements CommandHandlerInterface
                     '52', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -898,7 +898,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '53', '54', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -924,7 +924,7 @@ final class InitHandler implements CommandHandlerInterface
                     '51', '52', '53', '54', '55',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -964,7 +964,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '52', '53', '54',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1090,7 +1090,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '51', '52', '53', '54', '55', '56'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1111,7 +1111,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['1', '2', '3'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1137,7 +1137,7 @@ final class InitHandler implements CommandHandlerInterface
                     '53', '54',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1151,7 +1151,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['56'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1179,7 +1179,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '52', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1216,7 +1216,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '53',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1242,7 +1242,7 @@ final class InitHandler implements CommandHandlerInterface
                     '52', '53',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1267,7 +1267,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 ['51'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1291,7 +1291,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '52', '54', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1306,7 +1306,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['1', '2'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1328,7 +1328,7 @@ final class InitHandler implements CommandHandlerInterface
                     '51', '52',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1404,7 +1404,7 @@ final class InitHandler implements CommandHandlerInterface
                     '51', '54',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1440,7 +1440,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '51', '54'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1483,7 +1483,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '52', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1493,7 +1493,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['40'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1507,7 +1507,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '51'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1529,7 +1529,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '52', '54',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1548,7 +1548,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '55'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1569,7 +1569,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['41', '42', '43', '52', '54', '55'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1602,7 +1602,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '51', '52', '53', '54'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1633,7 +1633,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['53', '56'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1680,7 +1680,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '52', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1723,7 +1723,7 @@ final class InitHandler implements CommandHandlerInterface
                     '52', '53',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1735,7 +1735,7 @@ final class InitHandler implements CommandHandlerInterface
                     '40', '41',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1751,7 +1751,7 @@ final class InitHandler implements CommandHandlerInterface
                     '53',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1776,7 +1776,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1796,7 +1796,7 @@ final class InitHandler implements CommandHandlerInterface
                     '50', '51', '53', '54', '55', '56',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1871,7 +1871,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 ['40'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1891,7 +1891,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 ['50'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1917,7 +1917,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'  => array_merge(
                 ['51', '52'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1938,7 +1938,7 @@ final class InitHandler implements CommandHandlerInterface
             'releases'   => array_merge(
                 ['50', '51', '53'],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
 
@@ -1984,7 +1984,7 @@ final class InitHandler implements CommandHandlerInterface
                     '54',
                 ],
                 self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8
+                self::PHP_RELEASES_8,
             ),
         ];
     }

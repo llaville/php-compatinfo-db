@@ -55,7 +55,7 @@ class Function_
     #[OneToMany(
         mappedBy: "function",
         targetEntity: FunctionRelationship::class,
-        cascade: ["persist"]
+        cascade: ["persist"],
     )]
     /**
      * @var Collection<int, FunctionRelationship> $relationships

@@ -101,7 +101,7 @@ final class ConstantHydrator implements HydratorInterface
             $entity->getPhpMax(),
             $dependencies,
             $entity->getPolyfill(),
-            $deprecated
+            $deprecated,
         );
     }
 }

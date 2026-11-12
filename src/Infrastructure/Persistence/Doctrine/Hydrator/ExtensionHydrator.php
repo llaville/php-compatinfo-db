@@ -169,7 +169,7 @@ final class ExtensionHydrator implements HydratorInterface
             $functions,
             $classes,
             $dependencies,
-            $releases
+            $releases,
         );
     }
 

@@ -25,7 +25,7 @@ final class InitCommand implements CommandInterface
         private readonly string $appVersion,
         private readonly StyleInterface $io,
         private readonly bool $force,
-        private readonly bool $progress
+        private readonly bool $progress,
     ) {
     }
 

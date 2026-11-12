@@ -65,7 +65,7 @@ class Platform
             $this->version,
             $this->createdAt->format('c'),
             count($this->relationships),
-            count($this->relationships) > 1 ? 's' : ''
+            count($this->relationships) > 1 ? 's' : '',
         );
     }
 
