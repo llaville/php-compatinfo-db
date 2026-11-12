@@ -35,7 +35,7 @@ class XdebugExtensionTest extends GenericTestCase
                 array_push(
                     self::$optionalfunctions,
                     'xdebug_get_function_trace',
-                    'xdebug_dump_function_trace'
+                    'xdebug_dump_function_trace',
                 );
             }
 
@@ -43,7 +43,7 @@ class XdebugExtensionTest extends GenericTestCase
                 // removed functions in 2.0.0RC1
                 array_push(
                     self::$optionalfunctions,
-                    'xdebug_set_error_handler'
+                    'xdebug_set_error_handler',
                 );
             }
         }

@@ -36,7 +36,7 @@ class ApcExtensionTest extends GenericTestCase
             // Win*
             array_push(
                 self::$optionalcfgs,
-                'apc.shm_strings_buffer'
+                'apc.shm_strings_buffer',
             );
         }
 
@@ -60,7 +60,7 @@ class ApcExtensionTest extends GenericTestCase
                 'apc.stat_ctime',
                 'apc.user_entries_hint',
                 'apc.user_ttl',
-                'apc.write_lock'
+                'apc.write_lock',
             );
         }
 

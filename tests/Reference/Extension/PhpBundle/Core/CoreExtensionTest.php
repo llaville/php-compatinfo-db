@@ -65,7 +65,7 @@ class CoreExtensionTest extends GenericTestCase
                 self::$optionalcfgs,
                 [
                     'windows.show_crt_warning',
-                ]
+                ],
             );
             self::$optionalconstants = array_merge(
                 self::$optionalconstants,
@@ -82,7 +82,7 @@ class CoreExtensionTest extends GenericTestCase
                     'PHP_WINDOWS_NT_DOMAIN_CONTROLLER',
                     'PHP_WINDOWS_NT_SERVER',
                     'PHP_WINDOWS_NT_WORKSTATION',
-                ]
+                ],
             );
         } else {
             self::$optionalconstants = array_merge(
@@ -90,7 +90,7 @@ class CoreExtensionTest extends GenericTestCase
                 [
                     // Non Windows only
                     'PHP_MANDIR',
-                ]
+                ],
             );
         }
         if (php_sapi_name() != 'cli') {

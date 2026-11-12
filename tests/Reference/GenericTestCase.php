@@ -113,7 +113,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
         $parts = explode('\\', get_called_class());
         $name = strtolower(
-            str_replace('ExtensionTest', '', end($parts))
+            str_replace('ExtensionTest', '', end($parts)),
         );
 
         $factory = $container->get(ExtensionFactoryInterface::class);
@@ -164,7 +164,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
 
         if (!extension_loaded($name)) {
             $this->markTestSkipped(
-                sprintf('Extension %s is required.', $name)
+                sprintf('Extension %s is required.', $name),
             );
         }
     }
@@ -484,7 +484,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                 $element,
                 $range,
                 self::$optionalcfgs,
-                self::$ignoredcfgs
+                self::$ignoredcfgs,
             );
 
             $min = $range['php.min'];
@@ -493,12 +493,12 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             if ($shouldBeThere === true) {
                 $this->assertTrue(
                     (false !== ini_get($element)),
-                    "INI '$element', found in Reference ($min, $max), does not exists."
+                    "INI '$element', found in Reference ($min, $max), does not exists.",
                 );
             } elseif ($shouldBeThere === false) {
                 $this->assertFalse(
                     (false !== ini_get($element)),
-                    "INI '$element', found in Reference ($min, $max), exists."
+                    "INI '$element', found in Reference ($min, $max), exists.",
                 );
             } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
@@ -528,7 +528,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $name,
                     array_keys(self::$obj->getIniEntries()),
                     "Defined INI '$name' not known in Reference.",
-                    self::$obj
+                    self::$obj,
                 );
             }
         }
@@ -547,7 +547,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                 $element,
                 $range,
                 self::$optionalfunctions,
-                self::$ignoredfunctions
+                self::$ignoredfunctions,
             );
 
             $min = $range['php.min'];
@@ -560,14 +560,14 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     if (strcasecmp($extensionName, self::$obj->getName()) === 0) {
                         $this->assertTrue(
                             $function->isInternal(),
-                            "Function '$element', found in Reference ($min, $max), does not exists."
+                            "Function '$element', found in Reference ($min, $max), does not exists.",
                         );
                     } // else it should be a user function provided by symfony/polyfill-php packages
                 } catch (ReflectionException) {
                     // thrown if the given function does not exist.
                     $this->assertTrue(
                         false,
-                        "Function '$element', found in Reference ($min, $max), does not exists."
+                        "Function '$element', found in Reference ($min, $max), does not exists.",
                     );
                 }
             } elseif ($shouldBeThere === false) {
@@ -577,7 +577,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     if (strcasecmp($extensionName, self::$obj->getName()) === 0) {
                         $this->assertFalse(
                             $function->isInternal(),
-                            "Function '$element', found in Reference ($min, $max), exists."
+                            "Function '$element', found in Reference ($min, $max), exists.",
                         );
                     } // else it should be a user function provided by symfony/polyfill-php packages
                 } catch (ReflectionException) {
@@ -604,7 +604,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $name,
                     array_keys(self::$obj->getFunctions()),
                     "Defined function '$name' not known in Reference.",
-                    self::$obj
+                    self::$obj,
                 );
             }
         }
@@ -623,7 +623,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                 $element,
                 $range,
                 self::$optionalconstants,
-                self::$ignoredconstants
+                self::$ignoredconstants,
             );
 
             $min = $range['php.min'];
@@ -632,12 +632,12 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             if ($shouldBeThere === true) {
                 $this->assertTrue(
                     defined($element),
-                    "Constant '$element', found in Reference ($min, $max), does not exists."
+                    "Constant '$element', found in Reference ($min, $max), does not exists.",
                 );
             } elseif ($shouldBeThere === false) {
                 $this->assertFalse(
                     defined($element),
-                    "Constant '$element', found in Reference ($min, $max), exists."
+                    "Constant '$element', found in Reference ($min, $max), exists.",
                 );
             } // else (null) test $element should be skipped because it was marked as optional or ignored
         }
@@ -660,7 +660,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $name,
                     array_keys(self::$obj->getConstants()),
                     "Defined constant '$name' not known in Reference.",
-                    self::$obj
+                    self::$obj,
                 );
             }
         }
@@ -679,7 +679,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                 $element,
                 $range,
                 self::$optionalclasses,
-                self::$ignoredclasses
+                self::$ignoredclasses,
             );
 
             $min = $range['php.min'];
@@ -688,7 +688,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             if ($shouldBeThere === true) {
                 $this->assertTrue(
                     class_exists($element, false),
-                    "Class '$element', found in Reference ($min, $max), does not exists."
+                    "Class '$element', found in Reference ($min, $max), does not exists.",
                 );
             } elseif ($shouldBeThere === false) {
                 try {
@@ -696,7 +696,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $extensionName = $class->getExtensionName() ?: '';
                     $this->assertFalse(
                         (strcasecmp($extensionName, self::$obj->getName()) === 0),
-                        "Class '$element', found in Reference ($min, $max), exists."
+                        "Class '$element', found in Reference ($min, $max), exists.",
                     );
                 } catch (ReflectionException) {
                     // thrown if the given class does not exist.
@@ -722,7 +722,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $name,
                     array_keys(self::$obj->getClasses()),
                     "Defined class '$name' not known in Reference.",
-                    self::$obj
+                    self::$obj,
                 );
             }
         }
@@ -741,7 +741,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                 $element,
                 $range,
                 self::$optionalmethods,
-                self::$ignoredmethods
+                self::$ignoredmethods,
             );
 
             if (null === $shouldBeThere) {
@@ -781,24 +781,24 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             if ($shouldBeThere) {
                 $this->assertTrue(
                     $methodExists,
-                    "Class Method '$element', found in Reference, does not exists."
+                    "Class Method '$element', found in Reference, does not exists.",
                 );
 
                 if ($method->isStatic()) {
                     $this->assertTrue(
                         $range['is_static'],
-                        "Class Method '$element', found in Reference, should be declared as static."
+                        "Class Method '$element', found in Reference, should be declared as static.",
                     );
                 } else {
                     $this->assertFalse(
                         $range['is_static'],
-                        "Class Method '$element', found in Reference, should not be declared as static."
+                        "Class Method '$element', found in Reference, should not be declared as static.",
                     );
                 }
             } else {
                 $this->assertFalse(
                     $methodExists,
-                    "Class Method '$element', found in Reference, exists."
+                    "Class Method '$element', found in Reference, exists.",
                 );
             }
         }
@@ -820,7 +820,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
         $this->assertNotEquals(
             0,
             count($methods),
-            'None method defined. Checks if `methods.json` file exists.'
+            'None method defined. Checks if `methods.json` file exists.',
         );
 
         foreach ($generator as $methodName) {
@@ -831,7 +831,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             $this->assertContains(
                 $methodName,
                 array_keys($methods),
-                "Defined method '$methodName' not known in Reference."
+                "Defined method '$methodName' not known in Reference.",
             );
         }
     }
@@ -853,7 +853,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $constantName,
                     array_keys(self::$obj->getClassConstants()),
                     "Defined class constant '$constantName' not known in Reference.",
-                    self::$obj
+                    self::$obj,
                 );
             }
         }
@@ -872,7 +872,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                 $element,
                 $range,
                 self::$optionalinterfaces,
-                self::$ignoredinterfaces
+                self::$ignoredinterfaces,
             );
 
             $min = $range['php.min'];
@@ -881,7 +881,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             if ($shouldBeThere === true) {
                 $this->assertTrue(
                     interface_exists($element, false),
-                    "Interface '$element', found in Reference ($min, $max), does not exists."
+                    "Interface '$element', found in Reference ($min, $max), does not exists.",
                 );
             } elseif ($shouldBeThere === false) {
                 try {
@@ -890,7 +890,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                         $extensionName = $class->getExtensionName() ?: '';
                         $this->assertFalse(
                             (strcasecmp($extensionName, self::$obj->getName()) === 0),
-                            "Interface '$element', found in Reference ($min, $max), exists."
+                            "Interface '$element', found in Reference ($min, $max), exists.",
                         );
                     }
                 } catch (ReflectionException) {
@@ -917,7 +917,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
                     $name,
                     array_keys(self::$obj->getInterfaces()),
                     "Defined interface '$name' not known in Reference.",
-                    self::$obj
+                    self::$obj,
                 );
             }
         }
@@ -956,7 +956,7 @@ abstract class GenericTestCase extends TestCase implements ExtensionVersionProvi
             'Extension %s tested is version %s, while latest version referenced is %s and has need update.',
             $obj->getName(),
             $currentVersion,
-            $latestReleaseReferenced
+            $latestReleaseReferenced,
         );
     }
 
