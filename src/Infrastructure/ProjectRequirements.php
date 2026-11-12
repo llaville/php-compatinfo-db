@@ -51,8 +51,8 @@ class ProjectRequirements extends RequirementCollection implements RequirementsI
             version_compare($installedPhpVersion, $requiredPhpVersion, 'ge'),
             sprintf('PHP version must be at least %s', $requiredPhpVersion),
             sprintf(
-                'You are running PHP version "<strong>%s</strong>",' .
-                ' but CompatInfoDB needs at least PHP "<strong>%s</strong>" to run.',
+                'You are running PHP version "<strong>%s</strong>",'
+                . ' but CompatInfoDB needs at least PHP "<strong>%s</strong>" to run.',
                 $installedPhpVersion,
                 $requiredPhpVersion,
             ),
