@@ -27,7 +27,13 @@
     {
         "name": "ssh2_send_signal",
         "ext_min": "1.5",
-        "php_min": "8.0.0"
+        "php_min": "8.0.0",
+        "dependencies": [
+            {
+                "name": "libssh2",
+                "constraint": ">=1.11.0"
+            }
+        ]
     },
     {
         "name": "ssh2_keepalive_config",
