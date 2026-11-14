@@ -12,21 +12,29 @@ namespace Bartlett\CompatInfoDb\Domain\Factory;
 
 use Exception;
 use ReflectionClassConstant;
+use ReflectionExtension;
 
 use function constant;
 use function dechex;
 use function defined;
 use function function_exists;
 use function method_exists;
+use function ob_get_clean;
+use function ob_start;
 use function ord;
 use function phpversion;
 use function preg_match;
+use function preg_match_all;
 use function preg_replace;
 use function preg_replace_callback;
 use function sprintf;
 use function str_split;
 use function strlen;
 use function vsprintf;
+
+use const PREG_OFFSET_CAPTURE;
+use const PREG_SET_ORDER;
+use const PREG_UNMATCHED_AS_NULL;
 
 /**
  * curl
@@ -48,6 +56,10 @@ use function vsprintf;
  * libmemcached
  * @link https://www.php.net/manual/en/book.memcached.php
  * @link https://libmemcached.org/
+ *
+ * libssh2
+ * @link https://libssh2.org/
+ * @link https://github.com/libssh2/libssh2
  *
  * libxml
  * @link https://www.php.net/manual/en/book.libxml.php
@@ -190,6 +202,19 @@ trait LibraryVersionProviderTrait
                     $versionText = sprintf('%d.%d.%d', $major, $minor, $patch);
                 }
                 break;
+            case 'libssh2':
+                $reflection = new ReflectionExtension('ssh2');
+                ob_start();
+                $reflection->info();
+
+                $input = (string) ob_get_clean();
+
+                $regex = '/^libssh2 version => (?<version>.*)$/m';
+
+                $count = preg_match_all($regex, $input, $matches, PREG_SET_ORDER | PREG_OFFSET_CAPTURE | PREG_UNMATCHED_AS_NULL);
+                if ($count) {
+                    $versionText = $matches[0]['version'][0];
+                }
         }
 
         return $versionText;
