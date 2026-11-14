@@ -1,0 +1,42 @@
+[
+    {
+        "name": "SSH2_FINGERPRINT_SHA256",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_UNKNOWN",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_RSA",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_DSS",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_ECDSA_256",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_ECDSA_384",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_ECDSA_521",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    },
+    {
+        "name": "SSH2_HOSTKEY_TYPE_ED25519",
+        "ext_min": "1.6.0",
+        "php_min": "4.0.0"
+    }
+]
