@@ -1640,7 +1640,7 @@ final class InitHandler implements CommandHandlerInterface
         ];
 
         yield 'ssh2' => [
-            'constants' => ['0'],
+            'constants' => ['0', '1'],
             'functions' => ['0', '1'],
             'releases'  => ['0', '1'],
         ];
