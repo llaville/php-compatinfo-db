@@ -10,11 +10,6 @@
         "php_min": "8.4.0alpha1"
     },
     {
-        "name": "PHP_SAPI",
-        "ext_min": "8.4.0alpha1",
-        "php_min": "8.4.0alpha1"
-    },
-    {
         "name": "PHP_SBINDIR",
         "ext_min": "8.4.0alpha1",
         "php_min": "8.4.0alpha1"
