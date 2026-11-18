@@ -17,7 +17,6 @@ use Doctrine\ORM\Tools\Console\Command\InfoCommand;
 use Doctrine\ORM\Tools\Console\Command\MappingDescribeCommand;
 use Doctrine\ORM\Tools\Console\Command\ValidateSchemaCommand;
 
-use Symfony\Bundle\FrameworkBundle\Command\ContainerDebugCommand as ContainerDebugCommandSymfonyFrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader as SymfonyFactoryCommandLoader;

@@ -19,10 +19,6 @@ use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 
-use function version_compare;
-
-use const PHP_VERSION;
-
 /**
  * @since Release 3.2.0
  * @author Laurent Laville

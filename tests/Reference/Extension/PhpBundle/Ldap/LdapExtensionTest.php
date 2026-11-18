@@ -12,8 +12,6 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Ldap;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
-use Exception;
-
 /**
  * Unit tests for PHP_CompatInfo_Db, ldap extension Reference
  *
