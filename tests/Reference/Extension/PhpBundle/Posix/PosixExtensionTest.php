@@ -12,8 +12,6 @@ namespace Bartlett\CompatInfoDb\Tests\Reference\Extension\PhpBundle\Posix;
 
 use Bartlett\CompatInfoDb\Tests\Reference\GenericTestCase;
 
-use Exception;
-
 /**
  * Unit tests for PHP_CompatInfo_Db, posix extension Reference
  *
