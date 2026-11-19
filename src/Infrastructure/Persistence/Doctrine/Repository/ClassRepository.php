@@ -64,7 +64,7 @@ final class ClassRepository implements DomainRepository
         $entity = $collection->isEmpty()
             ? null
             : $collection->filter(
-                fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le'),
+                static fn($function) => version_compare($function->getPhpMin(), PHP_VERSION, 'le'),
             )->first()
         ;
 

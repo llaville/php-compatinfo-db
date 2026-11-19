@@ -143,7 +143,7 @@ trait LibraryVersionProviderTrait
                 break;
             case 'openssl':
                 if ($constant = $this->constantExists('OPENSSL_VERSION_TEXT')) {
-                    $versionText = preg_replace_callback('{^(?:OpenSSL|LibreSSL)?\s*([0-9.]+)([a-z]*).*}i', function ($match) {
+                    $versionText = preg_replace_callback('{^(?:OpenSSL|LibreSSL)?\s*([0-9.]+)([a-z]*).*}i', static function ($match) {
                         if (empty($match[2])) {
                             return $match[1];
                         }

@@ -85,7 +85,7 @@ final class ExtensionHydrator implements HydratorInterface
         }
 
         foreach (['classes', 'interfaces'] as $component) {
-            $data[$component] = array_map(function ($item) use ($component) {
+            $data[$component] = array_map(static function ($item) use ($component) {
                 $item['is_interface'] = ('interfaces' === $component);
                 return $item;
             }, $data[$component]);

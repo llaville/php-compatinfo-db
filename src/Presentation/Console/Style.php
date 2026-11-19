@@ -83,7 +83,7 @@ final class Style extends SymfonyStyle implements StyleInterface
         $style = $attributes['style'] ?? '';
         $indent = $attributes['indent'] ?? '  ';
 
-        $elements = array_map(function ($element) use ($type, $style, $indent) {
+        $elements = array_map(static function ($element) use ($type, $style, $indent) {
             if (empty($style)) {
                 return sprintf('%s %s %s', $indent, $type, $element);
             }

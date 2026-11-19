@@ -141,7 +141,7 @@ final class ListHandler implements QueryHandlerInterface, ExtensionVersionProvid
 
     private function filterPlatformByExtensionOutdated(Platform $platform): Platform
     {
-        $versionCompare = function (string $string1, string $string2): int {
+        $versionCompare = static function (string $string1, string $string2): int {
             $provided = explode('.', $string1);
             $baseline = (int) $provided[0] * 100 + (int) $provided[1];
             $installed = explode('.', $string2);
