@@ -2,8 +2,8 @@
 name: StructArmed
 
 on:
-    workflow_call:
-        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_callinputs
+    workflow_dispatch:
+        # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
         inputs:
             operating-system:
                 description: "OS name and version runtime"
@@ -13,12 +13,17 @@ on:
             php-version:
                 description: "PHP runtime version in format Major.minor"
                 required: false
-                default: "8.2"
+                default: "8.3"
                 type: string
             composer-options:
                 description: "Composer options for ramsey/composer-install GitHub Action"
                 required: false
                 default: "--prefer-dist --no-scripts"
+                type: string
+            config-file:
+                description: "Path to the StructArmed configuration file"
+                required: false
+                default: ".github/linters/structarmed.php"
                 type: string
 
 permissions:
@@ -46,7 +51,7 @@ jobs:
 
             -   # https://github.com/shivammathur/setup-php
                 name: Setup PHP runtime
-                uses: shivammathur/setup-php@2.37.2
+                uses: shivammathur/setup-php@2.40.0
                 with:
                     php-version: ${{ matrix.php }}
                     coverage: "none"
@@ -58,6 +63,12 @@ jobs:
                     dependency-versions: "highest"
                     composer-options: ${{ inputs.composer-options }}
 
-            -
+            -   # https://github.com/bamarni/composer-bin-plugin
+                name: Install StructArmed with Composer Bin Plugin
+                run: composer bin structarmed update --prefer-dist --no-progress
+
+            -   # https://github.com/boundwize/structarmed
                 name: Architecture enforcement with StructArmed
-                run: vendor/bin/structarmed analyse --no-progress
+                env:
+                    STRUCTARMED_CONFIG: ${{ inputs.config-file }}
+                run: vendor/bin/structarmed analyse --config="$STRUCTARMED_CONFIG" --no-progress
