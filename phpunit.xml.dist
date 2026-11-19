@@ -395,4 +395,9 @@
     <php>
         <env name="APP_ENV" value="tests" force="true"/>
     </php>
+    <extensions>
+        <bootstrap class="Boundwize\StructArmed\PHPUnit\StructArmedExtension">
+            <parameter name="config" value=".github/linters/structarmed.dist.php" />
+        </bootstrap>
+    </extensions>
 </phpunit>
