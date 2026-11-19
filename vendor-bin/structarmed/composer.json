@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "boundwize/structarmed": "^0.21"
+    }
+}
