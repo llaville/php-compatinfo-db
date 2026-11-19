@@ -2,29 +2,39 @@
 
 declare(strict_types=1);
 
-use Boundwize\StructArmed\Architecture;
-use Boundwize\StructArmed\Preset\Preset;
+/**
+ * This file is part of the PHP_CompatInfoDB package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-return Architecture::define()
-    ->withPresets(
-        Preset::PSR4(),
-        Preset::CODEQUALITY(),
-        Preset::DDD(),
-    )
-    ->baseline(__DIR__ . '/structarmed-baseline.php')
-    ->layer('Domain', 'src/Domain/')
-    // the kernel is the composition root, so it is carved out of Application
-    ->layer('Application', 'src/Application/', 'src/Application/Kernel/')
-    ->layer('Kernel', 'src/Application/Kernel/')
-    // Doctrine entities are plain data classes, also consumed by the Domain
-    ->layer('Infrastructure', 'src/Infrastructure/', 'src/Infrastructure/Persistence/Doctrine/Entity/')
-    ->layer('Entity', 'src/Infrastructure/Persistence/Doctrine/Entity/')
-    ->layer('Presentation', 'src/Presentation/')
-    ->ruleset([
-        'Entity'         => [],
-        'Domain'         => ['Entity'],
-        'Application'    => ['+Domain', 'Infrastructure', 'Presentation'],
-        'Infrastructure' => ['+Domain', 'Application', 'Kernel'],
-        'Presentation'   => ['+Domain', 'Application', 'Infrastructure'],
-        'Kernel'         => ['Application', 'Infrastructure', 'Presentation'],
-    ]);
+use Boundwize\StructArmed\Architecture;
+
+/**
+ * StructArmed Configuration File for development
+ *
+ * @link https://boundwize.github.io/structarmed/configuration/
+ * @since Release 6.34.0
+ * @author Laurent Laville
+ */
+
+/** @var Architecture $architecture */
+$architecture = require __DIR__ . '/structarmed.dist.php';
+// remove if we have detected and included a `structarmed-baseline.dist.php` file
+$architecture->baseline(null);
+
+/**
+ * Use a baseline to adopt StructArmed gradually from codebase of version 6.34.0
+ *
+ * @link https://github.com/llaville/php-compatinfo-db/tree/6.34
+ * @link https://boundwize.github.io/structarmed/baselines/
+ */
+
+$baselineFile = __DIR__ . '/structarmed-baseline.php';
+
+if (file_exists($baselineFile)) {
+    $architecture->baseline($baselineFile);
+}
+
+return $architecture;
