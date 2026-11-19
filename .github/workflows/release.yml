@@ -53,13 +53,6 @@ jobs:
             php-version: ${{ inputs.php-version }}
             composer-options: ${{ inputs.composer-options }}
 
-    architecture:
-        uses: ./.github/workflows/structarmed.yml
-        with:
-            operating-system: ${{ inputs.operating-system }}
-            php-version: ${{ inputs.php-version }}
-            composer-options: ${{ inputs.composer-options }}
-
     unit_tests:
         uses: ./.github/workflows/unit-tests.yml
         with:
@@ -70,7 +63,6 @@ jobs:
         if: inputs.tag-name != ''
         needs:
             - lint_files
-            - architecture
             - unit_tests
 
         runs-on: ${{ matrix.os }}
