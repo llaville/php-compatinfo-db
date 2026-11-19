@@ -26,7 +26,8 @@
             ".config/captainhook/pre-commit.phpcs-fixer.json",
             ".config/captainhook/pre-commit.phplint.json",
             ".config/captainhook/pre-push.phpstan.json",
-            ".config/captainhook/pre-push.phpunit.json"
+            ".config/captainhook/pre-push.phpunit.json",
+            ".config/captainhook/pre-push.structarmed.json"
         ]
     }
 }
