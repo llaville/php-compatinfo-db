@@ -13,7 +13,7 @@
                     "label": "Architecture enforcement (with StructArmed)"
                 },
                 "options": {
-                    "config-file": "{$ENV|value-of:XDG_CONFIG_HOME}/structarmed.php",
+                    "config-file": "{$ENV|value-of:XDG_CONFIG_HOME}/structarmed.dist.php",
                     "package-require": [
                         "boundwize/structarmed",
                         "^0.21"
