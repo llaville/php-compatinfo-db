@@ -1,0 +1,25 @@
+{
+    "pre-push": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": [
+                    "{$ENV|value-of:XDG_BIN_HOME}structarmed",
+                    "analyse",
+                    "--config={$ENV|value-of:\\Bartlett\\CaptainHookBinPlugin\\BinPlugin.config-file|cache:false}",
+                    "--no-progress"
+                ],
+                "config": {
+                    "label": "Architecture enforcement (with StructArmed)"
+                },
+                "options": {
+                    "config-file": "{$ENV|value-of:XDG_CONFIG_HOME}/structarmed.php",
+                    "package-require": [
+                        "boundwize/structarmed",
+                        "^0.21"
+                    ]
+                }
+            }
+        ]
+    }
+}
