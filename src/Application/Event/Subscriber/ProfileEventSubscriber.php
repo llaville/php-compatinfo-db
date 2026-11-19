@@ -84,7 +84,7 @@ final class ProfileEventSubscriber implements EventSubscriberInterface
     private function toTimeString(int $time): string
     {
         $times = [
-            'hour'   => 3600000,
+            'hour'   => 3_600_000,
             'minute' => 60000,
             'second' => 1000,
         ];

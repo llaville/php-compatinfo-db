@@ -183,7 +183,7 @@ final class InitHandler implements CommandHandlerInterface
             $io->section('Extension(s) referenced');
             $io->text(
                 array_map(
-                    function ($item) {
+                    static function ($item) {
                         return (string) $item;
                     },
                     $distribution->getExtensions(),
@@ -194,7 +194,7 @@ final class InitHandler implements CommandHandlerInterface
             foreach ($distribution->getExtensions() as $extension) {
                 $io->text(
                     array_map(
-                        function ($item) {
+                        static function ($item) {
                             return (string) $item;
                         },
                         $extension->getIniEntries()->toArray(),
@@ -206,7 +206,7 @@ final class InitHandler implements CommandHandlerInterface
             foreach ($distribution->getExtensions() as $extension) {
                 $io->text(
                     array_map(
-                        function ($item) {
+                        static function ($item) {
                             return (string) $item;
                         },
                         $extension->getConstants()->toArray(),
@@ -218,7 +218,7 @@ final class InitHandler implements CommandHandlerInterface
             foreach ($distribution->getExtensions() as $extension) {
                 $io->text(
                     array_map(
-                        function ($item) {
+                        static function ($item) {
                             return (string) $item;
                         },
                         $extension->getFunctions()->toArray(),
@@ -230,7 +230,7 @@ final class InitHandler implements CommandHandlerInterface
             foreach ($distribution->getExtensions() as $extension) {
                 $io->text(
                     array_map(
-                        function ($item) {
+                        static function ($item) {
                             return (string) $item;
                         },
                         $extension->getClasses()->toArray(),

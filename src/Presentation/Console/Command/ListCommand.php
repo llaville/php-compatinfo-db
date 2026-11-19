@@ -90,7 +90,7 @@ final class ListCommand extends AbstractCommand implements CommandInterface
             $io = new Style($input, $output);
             $io->text(
                 array_map(
-                    function ($item) {
+                    static function ($item) {
                         return (string) $item;
                     },
                     $extensions,
