@@ -20,7 +20,6 @@
             }
         ],
         "includes": [
-            ".config/captainhook/pre-commit.ecs.json",
             ".config/captainhook/pre-commit.mago.json",
             ".config/captainhook/pre-commit.phpcs.json",
             ".config/captainhook/pre-commit.phpcs-fixer.json",
