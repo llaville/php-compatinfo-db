@@ -19,8 +19,9 @@ use Boundwize\StructArmed\Architecture;
  * @author Laurent Laville
  */
 
-/** @var Architecture $architecture */
-$architecture = require __DIR__ . '/structarmed.dist.php';
+$architecture = Architecture::define()
+    ->import(__DIR__ . '/structarmed.dist.php')
+;
 // remove if we have detected and included a `structarmed-baseline.dist.php` file
 $architecture->baseline(null);
 
@@ -32,6 +33,12 @@ $architecture->baseline(null);
  */
 
 $baselineFile = __DIR__ . '/structarmed-baseline.php';
+
+/**
+ * Because the behavior is still blocking with version 0.21.28
+ * @link https://github.com/boundwize/structarmed/issues/597
+ * @TODO removed when version 0.22 will be available
+ */
 
 if (file_exists($baselineFile)) {
     $architecture->baseline($baselineFile);

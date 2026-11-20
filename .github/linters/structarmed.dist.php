@@ -19,29 +19,6 @@ use Boundwize\StructArmed\Preset\Preset;
  * @since Release 6.34.0
  * @author Laurent Laville
  */
-$architecture = Architecture::define()
-    ->withPresets(
-        Preset::PSR4(),
-        Preset::CODEQUALITY(),
-        Preset::DDD(),
-    )
-    ->layer('Domain', 'src/Domain/')
-    // the kernel is the composition root, so it is carved out of Application
-    ->layer('Application', 'src/Application/', 'src/Application/Kernel/')
-    ->layer('Kernel', 'src/Application/Kernel/')
-    // Doctrine entities are plain data classes, also consumed by the Domain
-    ->layer('Infrastructure', 'src/Infrastructure/', 'src/Infrastructure/Persistence/Doctrine/Entity/')
-    ->layer('Entity', 'src/Infrastructure/Persistence/Doctrine/Entity/')
-    ->layer('Presentation', 'src/Presentation/')
-    ->ruleset([
-        'Entity'         => [],
-        'Domain'         => ['Entity'],
-        'Application'    => ['+Domain', 'Infrastructure', 'Presentation'],
-        'Infrastructure' => ['+Domain', 'Application', 'Kernel'],
-        'Presentation'   => ['+Domain', 'Application', 'Infrastructure'],
-        'Kernel'         => ['Application', 'Infrastructure', 'Presentation'],
-    ])
-;
 
 /**
  * Use a distribution baseline to adopt StructArmed gradually from codebase of version 6.34.0 that still have 47 violations
@@ -52,10 +29,40 @@ $architecture = Architecture::define()
  * @link https://boundwize.github.io/structarmed/baselines/
  */
 
-$baselineFile = __DIR__ . '/structarmed-baseline.dist.php';
+return static function (Architecture $architecture): void {
+    $architecture
+        ->withPresets(
+            Preset::PSR4(),
+            Preset::CODEQUALITY(),
+            Preset::DDD(),
+        )
+        ->layer('Domain', 'src/Domain/')
+        // the kernel is the composition root, so it is carved out of Application
+        ->layer('Application', 'src/Application/', 'src/Application/Kernel/')
+        ->layer('Kernel', 'src/Application/Kernel/')
+        // Doctrine entities are plain data classes, also consumed by the Domain
+        ->layer('Infrastructure', 'src/Infrastructure/', 'src/Infrastructure/Persistence/Doctrine/Entity/')
+        ->layer('Entity', 'src/Infrastructure/Persistence/Doctrine/Entity/')
+        ->layer('Presentation', 'src/Presentation/')
+        ->ruleset([
+            'Entity'         => [],
+            'Domain'         => ['Entity'],
+            'Application'    => ['+Domain', 'Infrastructure', 'Presentation'],
+            'Infrastructure' => ['+Domain', 'Application', 'Kernel'],
+            'Presentation'   => ['+Domain', 'Application', 'Infrastructure'],
+            'Kernel'         => ['Application', 'Infrastructure', 'Presentation'],
+        ])
+    ;
 
-if (file_exists($baselineFile)) {
-    $architecture->baseline($baselineFile);
-}
+    $baselineFile = __DIR__ . '/structarmed-baseline.dist.php';
 
-return $architecture;
+    /**
+     * Because the behavior is still blocking with version 0.21.28
+     * @link https://github.com/boundwize/structarmed/issues/597
+     * @TODO removed when version 0.22 will be available
+     */
+
+    if (file_exists($baselineFile)) {
+        $architecture->baseline($baselineFile);
+    }
+};
