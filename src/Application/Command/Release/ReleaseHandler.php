@@ -100,8 +100,8 @@ final class ReleaseHandler implements CommandHandlerInterface
 
         $releaseVersion = $finder->findFirst(
             $document,
-            static fn (NodeJson $node): bool =>
-                $node instanceof ObjectItemNode
+            static fn(NodeJson $node): bool
+                => $node instanceof ObjectItemNode
                 && $node->key->value === 'rel_version'
                 && $node->value->value === $relVersion,
         );
