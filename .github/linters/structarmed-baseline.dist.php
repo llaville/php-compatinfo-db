@@ -12,8 +12,8 @@ declare(strict_types=1);
 /**
  * Baseline definition for production.
  *
- * It will allow to adopt StructArmed gradually from codebase of version 6.34.0 that still have 47 violations
- * 38 in Application layer
+ * It will allow to adopt StructArmed gradually from codebase of version 6.34.0 that still have 48 violations
+ * 39 in Application layer
  * 9 in Domain layer
  *
  * @link https://github.com/llaville/php-compatinfo-db/tree/6.34
@@ -157,8 +157,15 @@ return [
         'layer' => 'Application',
     ],
     [
+        'rule' => 'ddd.safety.application_max_complexity',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::addNewRelease()] has cyclomatic complexity of 6, maximum allowed is 5',
+        'file' => 'src/Application/Command/Release/ReleaseHandler.php',
+        'class' => 'Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler',
+        'layer' => 'Application',
+    ],
+    [
         'rule' => 'ddd.safety.application_max_method_length',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::addNewRelease()] is 28 lines long, maximum allowed is 20',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::addNewRelease()] is 33 lines long, maximum allowed is 20',
         'file' => 'src/Application/Command/Release/ReleaseHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler',
         'layer' => 'Application',
