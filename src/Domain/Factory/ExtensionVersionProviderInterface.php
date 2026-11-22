@@ -18,20 +18,20 @@ namespace Bartlett\CompatInfoDb\Domain\Factory;
  */
 interface ExtensionVersionProviderInterface
 {
-    public const LATEST_PHP_5_2 = '5.2.17';
-    public const LATEST_PHP_5_3 = '5.3.29';
-    public const LATEST_PHP_5_4 = '5.4.45';
-    public const LATEST_PHP_5_5 = '5.5.38';
-    public const LATEST_PHP_5_6 = '5.6.40';
-    public const LATEST_PHP_7_0 = '7.0.33';
-    public const LATEST_PHP_7_1 = '7.1.33';
-    public const LATEST_PHP_7_2 = '7.2.34';
-    public const LATEST_PHP_7_3 = '7.3.33';
-    public const LATEST_PHP_7_4 = '7.4.33';
-    public const LATEST_PHP_8_0 = '8.0.30';
-    public const LATEST_PHP_8_1 = '8.1.34';
-    public const LATEST_PHP_8_2 = '8.2.36';
-    public const LATEST_PHP_8_3 = '8.3.37';
-    public const LATEST_PHP_8_4 = '8.4.28';
-    public const LATEST_PHP_8_5 = '8.5.13';
+    public const string LATEST_PHP_5_2 = '5.2.17';
+    public const string LATEST_PHP_5_3 = '5.3.29';
+    public const string LATEST_PHP_5_4 = '5.4.45';
+    public const string LATEST_PHP_5_5 = '5.5.38';
+    public const string LATEST_PHP_5_6 = '5.6.40';
+    public const string LATEST_PHP_7_0 = '7.0.33';
+    public const string LATEST_PHP_7_1 = '7.1.33';
+    public const string LATEST_PHP_7_2 = '7.2.34';
+    public const string LATEST_PHP_7_3 = '7.3.33';
+    public const string LATEST_PHP_7_4 = '7.4.33';
+    public const string LATEST_PHP_8_0 = '8.0.30';
+    public const string LATEST_PHP_8_1 = '8.1.34';
+    public const string LATEST_PHP_8_2 = '8.2.36';
+    public const string LATEST_PHP_8_3 = '8.3.37';
+    public const string LATEST_PHP_8_4 = '8.4.28';
+    public const string LATEST_PHP_8_5 = '8.5.13';
 }
