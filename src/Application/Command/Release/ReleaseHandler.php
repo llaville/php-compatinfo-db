@@ -14,15 +14,18 @@ use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 
+use Boundwize\JsonRecast\Node\ArrayNode;
+use Boundwize\JsonRecast\Node\NodeJson;
+use Boundwize\JsonRecast\Node\ObjectItemNode;
+use Boundwize\JsonRecast\NodeJsonFinder;
+use Boundwize\JsonRecast\Value\JsonValue;
+
 use Generator;
 use RuntimeException;
 
 use function array_key_exists;
 use function array_keys;
-use function array_search;
-use function current;
 use function dirname;
-use function end;
 use function explode;
 use function implode;
 use function in_array;
@@ -84,34 +87,39 @@ final class ReleaseHandler implements CommandHandlerInterface
      */
     private function addNewRelease(string $major, string $relVersion, string $relDate, string $relState, string $refName): void
     {
-        $fileBasename = 'releases';
-        $path = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName]);
+        $filename = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName, $major, 'releases.json']);
 
-        $data = $this->jsonFileHandler->read($path, $fileBasename, $major);
-        if (null === $data) {
-            if (json_last_error() == JSON_ERROR_NONE) {
-                $error = sprintf('File %s/%s.json does not exist.', $path, $fileBasename);
-            } else {
-                $error = sprintf('Cannot decode file %s/%s/%s.json', $path, $major, $fileBasename);
-            }
+        $document = $this->jsonFileHandler->parse($filename);
+
+        if (!$document->value instanceof ArrayNode) {
+            $error = sprintf('File %s does not content a valid JSON string', $filename);
             throw new RuntimeException($error);
         }
 
-        end($data);
-        $latestRelease = current($data);
+        $finder = new NodeJsonFinder();
+
+        $releaseVersion = $finder->findFirst(
+            $document,
+            static fn (NodeJson $node): bool =>
+                $node instanceof ObjectItemNode
+                && $node->key->value === 'rel_version'
+                && $node->value->value === $relVersion,
+        );
+        if ($releaseVersion) {
+            throw new RuntimeException(sprintf('Release %s is already defined.', $relVersion));
+        }
 
         $newRelease = [
             'rel_version'   => $relVersion,
             'rel_date'      => $relDate,
             'rel_state'     => $relState,
-            'php_min'       => $latestRelease['php_min'],
         ];
-        if (false !== array_search($newRelease, $data)) {
-            // already exists
-            return;
+        if ('core' === $refName) {
+            $newRelease['php_min'] = $relVersion;
         }
-        $data[] = $newRelease;
-        $this->jsonFileHandler->write($path, $fileBasename, $major, $data);
+        $document->value->append(JsonValue::from($newRelease));
+
+        $this->jsonFileHandler->writeDocument($document, $filename);
     }
 
     /**

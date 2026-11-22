@@ -16,6 +16,7 @@
         "ext-pdo": "*",
         "ext-phar": "*",
         "ext-spl": "*",
+        "boundwize/jsonrecast": "^1.0",
         "composer-runtime-api": "^2.0",
         "composer/semver": "^3.0",
         "doctrine/orm": "^3.5",
