@@ -22,7 +22,7 @@
                     "config-file": "{$ENV|value-of:XDG_CONFIG_HOME}/.php-cs-fixer.dist.php",
                     "package-require": [
                         "friendsofphp/php-cs-fixer",
-                        "^3.5"
+                        "^3.95"
                     ]
                 }
             }
