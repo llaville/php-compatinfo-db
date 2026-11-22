@@ -78,6 +78,12 @@
         "php_min": "8.1.0"
     },
     {
+        "rel_version": "2.1.14",
+        "rel_date": "2026-11-19",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
+    },
+    {
         "rel_version": "2.2.0",
         "rel_date": "2026-02-11",
         "rel_state": "stable",
@@ -170,6 +176,12 @@
     {
         "rel_version": "2.5.7",
         "rel_date": "2026-11-05",
+        "rel_state": "stable",
+        "php_min": "8.1.0"
+    },
+    {
+        "rel_version": "2.5.8",
+        "rel_date": "2026-11-19",
         "rel_state": "stable",
         "php_min": "8.1.0"
     }
