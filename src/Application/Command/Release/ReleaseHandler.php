@@ -14,27 +14,28 @@ use Bartlett\CompatInfoDb\Application\Command\CommandHandlerInterface;
 use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 use Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderInterface;
 
+use Boundwize\JsonRecast\JsonRecast;
 use Boundwize\JsonRecast\Node\ArrayNode;
 use Boundwize\JsonRecast\Node\NodeJson;
 use Boundwize\JsonRecast\Node\ObjectItemNode;
+use Boundwize\JsonRecast\Node\ObjectNode;
+use Boundwize\JsonRecast\Node\StringNode;
 use Boundwize\JsonRecast\NodeJsonFinder;
+use Boundwize\JsonRecast\NodePath\NodeJsonPath;
+use Boundwize\JsonRecast\NodeVisitor\NodeJsonVisitorAbstract;
 use Boundwize\JsonRecast\Value\JsonValue;
 
 use Generator;
 use RuntimeException;
 
-use function array_key_exists;
 use function array_keys;
 use function dirname;
-use function explode;
 use function implode;
 use function in_array;
-use function json_last_error;
 use function sprintf;
 use function sscanf;
 
 use const DIRECTORY_SEPARATOR;
-use const JSON_ERROR_NONE;
 
 /**
  * Handler to add a new PHP release in JSON files.
@@ -135,49 +136,39 @@ final class ReleaseHandler implements CommandHandlerInterface
                 [$fileBasename, $major, $entry, $names, $static] = $definition;
             }
 
-            $path = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName]);
-            $data = $this->jsonFileHandler->read($path, $fileBasename, $major);
-            if (null === $data) {
-                if (json_last_error() == JSON_ERROR_NONE) {
-                    $error = sprintf('File %s/%s/%s.json does not exist.', $path, $major, $fileBasename);
-                } else {
-                    $error = sprintf('Cannot decode file %s/%s/%s.json', $path, $major, $fileBasename);
+            $filename = implode(DIRECTORY_SEPARATOR, [$this->refDir, $refName, $major, $fileBasename . '.json']);
+            $document = $this->jsonFileHandler->parse($filename);
+
+            $result = JsonRecast::traverse($document, new class ($names, $entry) extends NodeJsonVisitorAbstract {
+                public function __construct(private array $names, private string $entry)
+                {
                 }
-                throw new RuntimeException($error);
-            }
 
-            $key = $fileBasename == 'releases' ? 'rel_version' : 'name';
+                public function enterNode(NodeJson $node, NodeJsonPath $path): ?NodeJson
+                {
+                    if (
+                        $node instanceof ObjectNode
+                        && $node->has('name')
+                        && in_array($node->get('name')->value->value, array_keys($this->names))
+                    ) {
+                        $keyName = $node->get('name')->value->value;
+                        $keyValue = $node->get($this->entry)->value->value;
 
-            $methods = [];
-            if ('methods' === $fileBasename) {
-                foreach (array_keys($names) as $method) {
-                    $parts = explode('::', $method);
-                    if (!isset($methods[$parts[0]])) {
-                        $methods[$parts[0]] = [];
-                    }
-                    $methods[$parts[0]][] = $parts[1];
-                }
-            }
-
-            foreach ($data as $index => $element) {
-                if ('methods' === $fileBasename) {
-                    if (array_key_exists($element['class_name'], $methods)) {
-                        if (in_array($data[$index][$key], $methods[$element['class_name']])) {
-                            if (isset($data[$index]['static']) && $data[$index]['static'] !== $static) {
-                                continue;
-                            }
-                            $data[$index][$entry] = $names[implode('::', [$element['class_name'], $data[$index][$key]])];
+                        if ($keyValue === $this->names[$keyName]) {
+                            // no changes detected
+                            return null;
                         }
+
+                        $node->set($this->entry, new StringNode($this->names[$keyName]));
+
+                        return $node;
                     }
-                } else {
-                    if (array_key_exists($data[$index][$key], $names)) {
-                        $data[$index][$entry] = $names[$data[$index][$key]];
-                    } elseif (array_key_exists('*', $names)) {
-                        $data[$index][$entry] = $names['*'];
-                    }
+
+                    return null;
                 }
-            }
-            $this->jsonFileHandler->write($path, $fileBasename, $major, $data);
+            });
+
+            $this->jsonFileHandler->writeDocument($result->document, $filename);
         }
     }
 
