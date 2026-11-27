@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 use Boundwize\StructArmed\Architecture;
 use Boundwize\StructArmed\Preset\Preset;
+use Boundwize\StructArmed\Preset\Presets\DddPreset;
 
 /**
  * StructArmed Configuration File for production
@@ -36,6 +37,8 @@ return static function (Architecture $architecture): void {
             Preset::CODEQUALITY(),
             Preset::DDD(),
         )
+        // @see https://github.com/boundwize/structarmed/discussions/658 why we skip the rule
+        ->skipRule(DddPreset::DOMAIN_NO_BASE_EXCEPTION)
         ->layer('Domain', 'src/Domain/')
         // the kernel is the composition root, so it is carved out of Application
         ->layer('Application', 'src/Application/', 'src/Application/Kernel/')
