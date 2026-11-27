@@ -3,5 +3,10 @@
         "name": "MESSAGEPACK_OPT_ASSOC",
         "ext_min": "3.0.0RC1",
         "php_min": "7.0.0"
+    },
+    {
+        "name": "MESSAGEPACK_OPT_FORCE_F32",
+        "ext_min": "3.0.1",
+        "php_min": "7.0.0"
     }
 ]
