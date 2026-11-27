@@ -13,8 +13,8 @@ declare(strict_types=1);
  * Baseline definition for production.
  *
  * It will allow to adopt StructArmed gradually from codebase of version 6.34.0 that still have 48 violations
- * 39 in Application layer
- * 9 in Domain layer
+ * 40 in Application layer
+ * 8 in Domain layer
  *
  * @link https://github.com/llaville/php-compatinfo-db/tree/6.34
  * @link https://boundwize.github.io/structarmed/baselines/
@@ -88,28 +88,35 @@ return [
     ],
     [
         'rule' => 'ddd.safety.application_max_method_length',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::buildDistribution()] is 145 lines long, maximum allowed is 20',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::buildDistribution()] is 157 lines long, maximum allowed is 20',
         'file' => 'src/Application/Command/Init/InitHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Init\InitHandler',
         'layer' => 'Application',
     ],
     [
         'rule' => 'ddd.safety.application_max_complexity',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::readData()] has cyclomatic complexity of 7, maximum allowed is 5',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::buildExtension()] has cyclomatic complexity of 12, maximum allowed is 5',
         'file' => 'src/Application/Command/Init/InitHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Init\InitHandler',
         'layer' => 'Application',
     ],
     [
         'rule' => 'ddd.safety.application_max_method_length',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::readData()] is 23 lines long, maximum allowed is 20',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::buildExtension()] is 85 lines long, maximum allowed is 20',
+        'file' => 'src/Application/Command/Init/InitHandler.php',
+        'class' => 'Bartlett\CompatInfoDb\Application\Command\Init\InitHandler',
+        'layer' => 'Application',
+    ],
+    [
+        'rule' => 'ddd.safety.application_max_complexity',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::useCoreReleases()] has cyclomatic complexity of 6, maximum allowed is 5',
         'file' => 'src/Application/Command/Init/InitHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Init\InitHandler',
         'layer' => 'Application',
     ],
     [
         'rule' => 'ddd.safety.application_max_method_length',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::majorReleaseDefinitionProvider()] is 1681 lines long, maximum allowed is 20',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Init\InitHandler::useCoreReleases()] is 33 lines long, maximum allowed is 20',
         'file' => 'src/Application/Command/Init/InitHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Init\InitHandler',
         'layer' => 'Application',
@@ -172,14 +179,14 @@ return [
     ],
     [
         'rule' => 'ddd.safety.application_max_complexity',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::tagPhpMaxVersion()] has cyclomatic complexity of 17, maximum allowed is 5',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::tagPhpMaxVersion()] has cyclomatic complexity of 7, maximum allowed is 5',
         'file' => 'src/Application/Command/Release/ReleaseHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler',
         'layer' => 'Application',
     ],
     [
         'rule' => 'ddd.safety.application_max_method_length',
-        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::tagPhpMaxVersion()] is 52 lines long, maximum allowed is 20',
+        'message' => 'Method [Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler::tagPhpMaxVersion()] is 42 lines long, maximum allowed is 20',
         'file' => 'src/Application/Command/Release/ReleaseHandler.php',
         'class' => 'Bartlett\CompatInfoDb\Application\Command\Release\ReleaseHandler',
         'layer' => 'Application',
@@ -322,13 +329,6 @@ return [
         'message' => 'Method [Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait::getLatestPhpVersion()] is 46 lines long, maximum allowed is 20',
         'file' => 'src/Domain/Factory/ExtensionVersionProviderTrait.php',
         'class' => 'Bartlett\CompatInfoDb\Domain\Factory\ExtensionVersionProviderTrait',
-        'layer' => 'Domain',
-    ],
-    [
-        'rule' => 'ddd.safety.domain_no_base_exception',
-        'message' => 'Trait [Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait] must not use [Exception]',
-        'file' => 'src/Domain/Factory/LibraryVersionProviderTrait.php',
-        'class' => 'Bartlett\CompatInfoDb\Domain\Factory\LibraryVersionProviderTrait',
         'layer' => 'Domain',
     ],
     [
