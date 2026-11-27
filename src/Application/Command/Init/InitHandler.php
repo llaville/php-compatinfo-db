@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * This file is part of the PHP_CompatInfoDB package.
  *
@@ -15,30 +16,38 @@ use Bartlett\CompatInfoDb\Application\Service\JsonFileHandler;
 use Bartlett\CompatInfoDb\Domain\Repository\DistributionRepository;
 use Bartlett\CompatInfoDb\Presentation\Console\StyleInterface;
 
+use Boundwize\JsonRecast\Node\ArrayItemNode;
+use Boundwize\JsonRecast\Node\ArrayNode;
+use Boundwize\JsonRecast\Node\ObjectNode;
+
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\EntityManagerInterface;
 
 use Symfony\Component\Console\Helper\ProgressBar;
 
 use FilesystemIterator;
-use Generator;
 use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 use RuntimeException;
 use Throwable;
 
-use function array_keys;
 use function array_map;
 use function array_merge;
+use function array_push;
+use function basename;
 use function count;
 use function dirname;
+use function end;
+use function explode;
 use function implode;
 use function in_array;
-use function json_last_error;
+use function ksort;
+use function sort;
 use function sprintf;
 use function str_contains;
+use function str_replace;
 
 use const DIRECTORY_SEPARATOR;
-use const JSON_ERROR_NONE;
 
 /**
  * Handler to initialize the database.
@@ -103,11 +112,12 @@ final class InitHandler implements CommandHandlerInterface
         $refDir = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__, 4), 'data', 'reference', 'extension']);
         $flags = FilesystemIterator::SKIP_DOTS;
         $refs = new RecursiveDirectoryIterator($refDir, $flags);
-
+        $iterator = new RecursiveIteratorIterator($refs);
         $extensions = [];
 
-        foreach ($refs as $ref) {
-            $extensions[$ref->getBasename()] = $ref->getPathname();
+        foreach ($iterator as $key => $info) {
+            [, $refName] = explode(DIRECTORY_SEPARATOR, str_replace($refDir, '', $key));
+            $extensions[$refName][] = $key;
         }
         unset($refs);
 
@@ -126,15 +136,9 @@ final class InitHandler implements CommandHandlerInterface
 
         $collection = new ArrayCollection();
 
-        foreach ($this->majorReleaseDefinitionProvider() as $refName => $definition) {
-            if (!isset($extensions[$refName])) {
-                // definition still exists, while reference was removed from file system
-                continue;
-            }
-            $refPathname = $extensions[$refName];
-
-            $component = 'extensions';
-            $message = sprintf("Building %s (%s)", $component, $refName);
+        ksort($extensions);
+        foreach ($extensions as $refName => $files) {
+            $message = sprintf("Building %s extension", $refName);
             if ($withProgressBar) {
                 $progress->setMessage($message);
                 $progress->display();
@@ -142,18 +146,30 @@ final class InitHandler implements CommandHandlerInterface
                 $io->writeln('> ' . $message . ' ...');
             }
 
-            $meta = $this->jsonFileHandler->read($refPathname, $component, '');
-            if (null === $meta) {
-                // should not be occurs in real condition
-                if ($withProgressBar) {
-                    $progress->advance();
-                }
-                continue;
+            sort($files);
+
+            // READ extension metadata
+            $filename = end($files);
+
+            $document = $this->jsonFileHandler->parse($filename);
+
+            /** @var ObjectNode $node */
+            $node = $document->value;
+
+            $refType = $node->get('type')->value->value;
+            $refDeprecated = $node->get('deprecated') ? $node->get('deprecated')->value->value : false;
+
+            $releases = $this->useCoreReleases($refName);
+            $fileReleases = count($releases) === 0 ? [] : array_map(static function ($release) use ($refDir) {
+                return implode(DIRECTORY_SEPARATOR, [$refDir, 'core', $release, 'releases.json']);
+            }, $releases);
+
+            if (count($fileReleases)) {
+                array_push($files, ...$fileReleases);
             }
 
-            $collection->add($this->buildExtension($meta, $definition, $refPathname));
+            $collection->add($this->buildExtension($refName, $refType, $refDeprecated, $files, $io));
 
-            unset($extensions[$refName]);
             if ($withProgressBar) {
                 $progress->advance();
             }
@@ -189,6 +205,18 @@ final class InitHandler implements CommandHandlerInterface
                     $distribution->getExtensions(),
                 ),
             );
+
+            $io->section('Release(s) referenced');
+            foreach ($distribution->getExtensions() as $extension) {
+                $io->text(
+                    array_map(
+                        static function ($item) {
+                            return (string) $item;
+                        },
+                        $extension->getReleases()->toArray(),
+                    ),
+                );
+            }
 
             $io->section('Configuration(s) referenced');
             foreach ($distribution->getExtensions() as $extension) {
@@ -238,1756 +266,152 @@ final class InitHandler implements CommandHandlerInterface
                 );
             }
         }
-
-        if (count($extensions) > 0) {
-            $io->section('Warnings');
-            $io->text('Definition not provided for following references:');
-            $io->text('');
-            $io->listing(array_keys($extensions), ['type' => '[ ]', 'style' => 'fg=red']);
-        }
     }
 
     /**
      * Builds an extension with all its components.
      *
-     * @param array<string, string> $meta
-     * @param array<string, mixed> $definition
      * @return array<string, mixed>
      */
-    private function buildExtension(array $meta, array $definition, string $refPathname): array
+    private function buildExtension(string $refName, string $refType, bool $refDeprecated, array $files, StyleInterface $io): array
     {
-        $data = $meta;
-        $components = ['releases', 'iniEntries', 'constants', 'functions', 'classes', 'interfaces', 'const', 'methods'];
-        foreach ($components as $component) {
-            if (isset($definition[$component])) {
-                $data[$component] = $this->readData($refPathname, $definition[$component], $component, $meta['type']);
-            } else {
-                $data[$component] = [];
-            }
-        }
-        return $data;
-    }
-
-    /**
-     * Reads split JSON data files
-     *
-     * @param string[] $majorReleases
-     * @return string[]
-     */
-    private function readData(string $path, array $majorReleases, string $fileBasename, string $type): array
-    {
-        $data = [];
-
-        foreach ($majorReleases as $major) {
-            $temp = $this->jsonFileHandler->read($path, $fileBasename, $major);
-            if (null === $temp && 'releases' === $fileBasename && 'bundle' === $type) {
-                // retrieve core releases
-                $temp = $this->jsonFileHandler->read(
-                    dirname($path) . DIRECTORY_SEPARATOR . 'core',
-                    $fileBasename,
-                    $major,
-                );
-            }
-            if (!$temp) {
-                if (json_last_error() == JSON_ERROR_NONE) {
-                    // missing files are optional until all extensions are fully documented
-                    continue;
-                }
-                $error = sprintf('Cannot decode file %s/%s/%s.json', $path, $major, $fileBasename);
-                throw new RuntimeException($error);
-            }
-            $data = array_merge($data, $temp);
-        }
-        return $data;
-    }
-
-    /**
-     * Data provider for reference definitions
-     *
-     * @return Generator<string, mixed>
-     */
-    private function majorReleaseDefinitionProvider(): Generator
-    {
-        yield 'amqp' => [
-            'classes'    => ['0', '1', '2'],
-            'const'      => ['1'],
-            'constants'  => ['1', '2'],
-            'iniEntries' => ['0', '1', '2'],
-            'interfaces' => ['2'],
-            'methods'    => ['0', '1', '2'],
-            'releases'   => ['0', '1', '2'],
-        ];
-
-        yield 'apc' => [
-            'classes'    => ['3'],
-            'constants'  => ['3'],
-            'functions'  => ['2', '3'],
-            'iniEntries' => ['2', '3'],
-            'methods'    => ['3'],
-            'releases'   => ['2', '3'],
-        ];
-
-        yield 'apcu' => [
-            'classes'    => ['5'],
-            'constants'  => ['4'],
-            'functions'  => ['4', '5'],
-            'iniEntries' => ['4', '5'],
-            'methods'    => ['5'],
-            'releases'   => ['4', '5'],
-        ];
-
-        yield 'ast' => [
-            'classes'   => ['0'],
-            'constants' => ['0', '1'],
-            'functions' => ['0'],
-            'methods'   => ['0'],
-            'releases'  => ['0', '1'],
-        ];
-
-        yield 'bcmath' => [
-            'classes' => ['84'],
-            'functions'  => [
-                '40',
-                '50',
-                '84',
-            ],
-            'iniEntries' => ['40'],
-            'methods'   => ['84'],
-            'releases'   => array_merge(
-                [
-                    '40',
-                    '50',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'bz2' => [
-            'functions' => ['40'],
-            'releases'  => array_merge(
-                ['40'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'calendar' => [
-            'constants' => [
-                '40', '43',
-                '50',
-            ],
-            'functions' => ['40'],
-            'releases'  => array_merge(
-                [
-                    '40', '43',
-                    '50',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'core' => [
-            'classes' => [
-                '40',
-                '50', '51', '53', '55',
-                '70', '71', '73', '74',
-                '80', '81', '82', '83', '84', '85',
-            ],
-            'const' => ['80', '85'],
-            'constants' => [
-                '40', '42', '43', '44',
-                '50', '51', '52', '53', '54', '55',
-                '70', '71', '72',
-                '84', '85',
-            ],
-            'functions' => [
-                '40', '42', '43',
-                '50', '51', '53', '54',
-                '70', '73', '74',
-                '80', '81', '84', '85',
-            ],
-            'methods' => [
-                '51', '53', '55',
-                '70', '72', '74',
-                '80', '81', '82', '83', '84', '85',
-            ],
-            'iniEntries' => [
-                '40', '41',
-                '50', '54', '55', '56',
-                '70', '71', '73', '74',
-                '80', '81', '82', '83', '85',
-            ],
-            'interfaces' => [
-                '51', '53',
-                '70', '72',
-                '80', '81',
-            ],
-            'releases' => array_merge(
-                [
-                    '40', '41', '42', '43', '44',
-                    '50', '51', '52', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'ctype' => [
-            'functions' => ['40'],
-            'releases'  => array_merge(
-                ['40'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'curl' => [
-            'classes'    => [
-                '55',
-                '80', '81', '85',
-            ],
-            'constants'  => [
-                '40',
-                '51', '52', '53', '54', '55', '56',
-                '70', '73',
-                '81', '82', '83', '84', '85',
-            ],
-            'functions'  => [
-                '40',
-                '50', '51', '55',
-                '71',
-                '82', '85',
-            ],
-            'iniEntries' => ['53'],
-            'methods'    => [
-                '55',
-                '81',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40',
-                    '51', '52', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'date' => [
-            'classes'    => [
-                '52', '53', '55',
-                '83',
-            ],
-            'const'      => [
-                '52', '53',
-                '70', '71', '72',
-                '82',
-            ],
-            'constants'  => [
-                '51',
-                '70',
-                '82',
-            ],
-            'functions'  => [
-                '40',
-                '50', '51', '52', '53', '55',
-            ],
-            'iniEntries' => ['51'],
-            'interfaces' => ['55'],
-            'methods'    => [
-                '52', '53', '55', '56',
-                '72', '73',
-                '80', '82', '83', '84',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40',
-                    '50', '51', '52', '53', '55',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'dom' => [
-            'classes'    => [
-                '50', '51',
-                '84',
-            ],
-            'const'      => ['84'],
-            'constants'  => [
-                '50',
-                '84',
-            ],
-            'functions'  => [
-                '50',
-                '84',
-            ],
-            'interfaces' => [
-                '80', '84',
-            ],
-            'methods'    => [
-                '50',
-                '80', '81', '83', '84', '85',
-            ],
-            'releases'   => array_merge(
-                ['50', '51'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'enchant' => [
-            'classes'    => ['80'],
-            'constants'  => [
-                '1',
-                '80',
-            ],
-            'functions'  => [
-                '0', '1',
-                '80', '85',
-            ],
-            'releases'   => array_merge(
-                ['0', '1'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'ereg' => [
-            'functions' => ['40'],
-            'releases'  => ['40'],
-        ];
-
-        yield 'exif' => [
-            'constants'  => ['40'],
-            'functions'  => ['40', '42', '43'],
-            'iniEntries' => ['43'],
-            'releases'   => array_merge(
-                ['40', '42', '43'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'fileinfo' => [
-            'classes'    => ['0'],
-            'constants'  => [
-                '0', '1',
-                '72',
-            ],
-            'functions'  => ['0', '1'],
-            'methods'    => [
-                '0',
-                '80',
-            ],
-            'releases'   => array_merge(
-                ['0', '1'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'filter' => [
-            'classes'    => ['85'],
-            'constants'  => [
-                '0',
-                '70', '71', '73',
-                '80', '82', '85',
-            ],
-            'functions'  => ['0'],
-            'iniEntries' => ['0'],
-            'releases'   => array_merge(
-                ['0'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'ftp' => [
-            'classes'    => ['81'],
-            'constants'  => [
-                '40', '43',
-                '56',
-            ],
-            'functions'  => [
-                '40', '42', '43',
-                '50',
-                '72',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '42', '43',
-                    '50', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'gd' => [
-            'classes'    => ['80', '81'],
-            'constants'  => [
-                '40',
-                '52', '53', '55', '56',
-                '72', '74',
-                '81',
-            ],
-            'functions'  => [
-                '40', '43',
-                '50', '51', '52', '54', '55',
-                '72', '74',
-                '80', '81',
-            ],
-            'iniEntries' => ['51'],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '50', '51', '52', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'gender' => [
-            'classes'   => ['0'],
-            'const'     => ['0', '1'],
-            'methods'   => ['0'],
-            'releases'  => ['0', '1'],
-        ];
-
-        yield 'geoip' => [
-            'constants'  => ['0', '1'],
-            'functions'  => ['0', '1'],
-            'iniEntries' => ['1'],
-            'releases'   => ['0', '1'],
-        ];
-
-        yield 'gettext' => [
-            'functions'  => ['40', '42'],
-            'releases'   => array_merge(
-                ['40', '42'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'gmp' => [
-            'classes'    => ['80'],
-            'constants'  => [
-                '40',
-                '53', '56',
-            ],
-            'functions'  => [
-                '40',
-                '52', '53', '56',
-                '70', '73',
-            ],
-            'methods'    => ['81', '82'],
-            'releases'   => array_merge(
-                [
-                    '40',
-                    '52', '53', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'haru' => [
-            'classes'  => ['0'],
-            'const'    => ['0'],
-            'methods'  => ['0', '1'],
-            'releases' => ['0', '1'],
-        ];
-
-        yield 'hash' => [
-            'classes'    => ['72'],
-            'constants'  => [
-                '1',
-                '53', '54',
-                '81',
-            ],
-            'functions'  => [
-                '1',
-                '53', '55', '56',
-                '71', '72',
-            ],
+        $data = [
+            'name' => $refName,
+            'type' => $refType,
+            'deprecated' => $refDeprecated,
+            'releases' => [],
             'iniEntries' => [],
-            'methods'    => [
-                '72',
-                '84',
-            ],
-            'releases'   => array_merge(
-                [
-                    '1',
-                    '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
+            'constants' => [],
+            'functions' => [],
+            'classes' => [],
+            'interfaces' => [],
+            'const' => [],
+            'methods' => [],
         ];
 
-        yield 'htscanner' => [
-            'iniEntries' => ['0', '1'],
-            'releases'   => ['0', '1'],
-        ];
+        foreach ($files as $file) {
+            $document = $this->jsonFileHandler->parse($file);
 
-        yield 'http' => [
-            'classes'    => ['0', '1', '2', '3'],
-            'const'      => ['2', '3'],
-            'constants'  => ['1', '2', '4'],
-            'functions'  => ['1'],
-            'iniEntries' => ['1', '2'],
-            'interfaces' => ['2'],
-            'methods'    => ['2', '3', '4'],
-            'releases'   => ['0', '1', '2', '3', '4'],
-        ];
+            $component = basename($file, '.json');
 
-        yield 'iconv' => [
-            'constants'  => [
-                '43',
-                '50',
-            ],
-            'functions'  => [
-                '40',
-                '50',
-            ],
-            'iniEntries' => ['40'],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '50',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+            if ($component === 'releases') {
+                /** @var ArrayNode $node */
+                $node = $document->value;
+                foreach ($node->items as $itemNode) {
+                    /** @var ArrayItemNode $itemNode */
+                    /** @var ObjectNode $nodeValue */
+                    $nodeValue = $itemNode->value;
+                    $data[$component][] = [
+                        'rel_version' => $nodeValue->get('rel_version')->value->value,
+                        'rel_date' => $nodeValue->get('rel_date')->value->value,
+                        'rel_state' => $nodeValue->get('rel_state')->value->value,
+                        'php_min' => $nodeValue->get('php_min')->value->value,
+                    ];
+                }
+            }
 
-        yield 'igbinary' => [
-            'functions'  => ['1'],
-            'iniEntries' => ['1'],
-            'releases'   => ['1', '2', '3'],
-        ];
+            if (in_array($component, ['iniEntries', 'constants', 'functions', 'classes', 'interfaces', 'const', 'methods'])) {
+                /** @var ArrayNode $node */
+                $node = $document->value;
+                foreach ($node->items as $itemNode) {
+                    /** @var ArrayItemNode $itemNode */
+                    /** @var ObjectNode $nodeValue */
+                    $nodeValue = $itemNode->value;
 
-        yield 'imagick' => [
-            'classes'    => ['2', '3'],
-            'const'      => ['2', '3'],
-            'iniEntries' => ['3'],
-            'methods'    => ['2', '3'],
-            'releases'   => ['2', '3'],
-        ];
+                    $settings = [
+                        'name' => $nodeValue->get('name')->value->value,
+                        'ext_min' => $nodeValue->get('ext_min')->value->value,
+                        'php_min' => $nodeValue->get('php_min')->value->value,
+                    ];
 
-        yield 'imap' => [
-            'classes'    => [
-                '81',
-                '1',
-            ],
-            'constants'  => [
-                '40',
-                '53',
-            ],
-            'functions'  => [
-                '40', '43',
-                '50', '51', '53',
-                '82',
-                '1',
-            ],
-            'iniEntries' => ['56'],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '50', '51', '53', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-                ['1'],
-            ),
-        ];
+                    $extMax = $nodeValue->get('ext_max');
+                    if ($extMax) {
+                        $settings['ext_max'] = $extMax->value->value;
+                    }
 
-        yield 'inclued' => [
-            'functions'  => ['0'],
-            'iniEntries' => ['0'],
-            'releases'   => ['0'],
-        ];
+                    $phpMax = $nodeValue->get('php_max');
+                    if ($phpMax) {
+                        $settings['php_max'] = $phpMax->value->value;
+                    }
 
-        yield 'intl' => [
-            'classes'    => [
-                '1', '2',
-                '55',
-                '70',
-                '81', '85',
-            ],
-            'const'      => [
-                '1', '2',
-                '55',
-                '70', '73', '74',
-                '80', '83', '84', '85',
-            ],
-            'constants'  => ['1', '2'],
-            'functions'  => [
-                '1', '2',
-                '55',
-                '71', '73',
-                '84', '85',
-            ],
-            'iniEntries' => ['1', '3'],
-            'methods'    => [
-                '1', '2',
-                '55',
-                '70', '71', '73',
-                '81', '83', '84', '85',
-            ],
-            'releases'   => array_merge(
-                [
-                    '1', '2', '3',
-                    '55',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+                    $polyfill = $nodeValue->get('polyfill');
+                    if ($polyfill) {
+                        $settings['polyfill'] = $polyfill->value->value;
+                    }
 
-        yield 'jsmin' => [
-            'constants'  => ['0'],
-            'functions'  => ['0'],
-            'releases'   => ['0', '1', '2', '3'],
-        ];
+                    $className = $nodeValue->get('class_name');
+                    if ($className) {
+                        $settings['class_name'] = $className->value->value;
+                    }
 
-        yield 'json' => [
-            'classes'    => ['73'],
-            'constants'  => [
-                '53', '54', '55', '56',
-                '70', '71', '72', '73',
-                '81',
-            ],
-            'functions'  => [
-                '52', '53', '55',
-                '83',
-            ],
-            'interfaces' => ['54'],
-            'methods'    => ['54'],
-            'releases'   => array_merge(
-                [
-                    '52', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+                    $staticCall = $nodeValue->get('static');
+                    if ($staticCall) {
+                        $settings['static'] = $staticCall->value->value;
+                    }
 
-        yield 'ldap' => [
-            'classes'    => ['81'],
-            'constants'  => [
-                '40',
-                '53', '54', '56',
-                '70', '71', '72',
-                '84',
-            ],
-            'functions'  => [
-                '40', '42',
-                '50', '54', '56',
-                '72', '73',
-                '80', '83',
-            ],
-            'iniEntries' => ['40'],
-            'releases'   => array_merge(
-                [
-                    '40', '42',
-                    '50', '53', '54', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+                    $dependencies = $nodeValue->get('dependencies');
+                    if ($dependencies) {
+                        $settings['dependencies'] = $this->getDependencies($dependencies->value);
+                    }
 
-        yield 'libevent' => [
-            'constants'  => ['0'],
-            'functions'  => ['0'],
-            'releases'   => ['0'],
-        ];
+                    $data[$component][] = $settings;
+                }
+            }
+        }
 
-        yield 'libxml' => [
-            'classes'    => ['51'],
-            'constants'  => [
-                '51', '52', '53', '54', '55',
-                '70',
-                '84',
-            ],
-            'functions'  => [
-                '50', '51', '52', '54',
-                '82',
-            ],
-            'releases'   => array_merge(
-                [
-                    '51', '52', '53', '54', '55',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+        return $data;
+    }
 
-        yield 'lzf' => [
-            'functions'  => ['0', '1'],
-            'releases'   => ['0', '1'],
-        ];
+    private function getDependencies(ArrayNode $dependencies): array
+    {
+        $deps = [];
 
-        yield 'mailparse' => [
-            'classes'    => ['0'],
-            'constants'  => ['0'],
-            'functions'  => ['0'],
-            'iniEntries' => ['0'],
-            'methods'    => ['0', '3'],
-            'releases'   => ['0', '2', '3'],
-        ];
+        foreach ($dependencies->items as $dependency) {
+            if ($dependency->value instanceof ObjectNode) {
+                $deps[] = [
+                    'name' => $dependency->value->get('name')->value->value,
+                    'constraint' => $dependency->value->get('constraint')->value->value,
+                ];
+            }
+        }
 
-        yield 'mbstring' => [
-            'constants'  => [
-                '40',
-                '73', '74',
-            ],
-            'functions'  => [
-                '40', '42', '43', '44',
-                '50', '52', '53', '54',
-                '72', '74',
-                '83', '84',
-            ],
-            'iniEntries' => [
-                '40', '42', '43',
-                '51',
-                '73', '74',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '42', '43', '44',
-                    '50', '51', '52', '53', '54',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+        return $deps;
+    }
 
-        yield 'mcrypt' => [
-            'constants'  => [
-                '40',
-                '1',
-            ],
-            'functions'  => [
-                '40',
-                '1',
-            ],
-            'iniEntries' => [
-                '40',
-                '1',
-            ],
-            'releases'   => [
-                '40',
-                '1',
-            ],
-        ];
-
-        yield 'memcache' => [
-            'classes'    => ['0', '3'],
-            'constants'  => ['0', '2', '3'],
-            'functions'  => ['0', '1', '2', '3'],
-            'iniEntries' => ['2', '3', '4'],
-            'methods'    => ['0', '3'],
-            'releases'   => ['0', '1', '2', '3', '4', '8'],
-        ];
-
-        yield 'memcached' => [
-            'classes'    => ['0', '2'],
-            'const'      => ['2', '3'],
-            'iniEntries' => ['2', '3'],
-            'methods'    => ['0', '2'],
-            'releases'   => ['0', '2', '3'],
-        ];
-
-        yield 'mhash' => [
-            'constants'  => ['40'],
-            'functions'  => ['40'],
-            'releases'   => ['40'],
-        ];
-
-        yield 'mongo' => [
-            'classes'    => ['0', '1'],
-            'const'      => ['0', '1'],
-            'constants'  => ['1'],
-            'functions'  => ['1'],
-            'iniEntries' => ['0'],
-            'interfaces' => ['1'],
-            'methods'    => ['0', '1'],
-            'releases'   => ['0', '1'],
-        ];
-
-        yield 'mongodb' => [
-            'classes'    => ['1', '2'],
-            'const'      => ['1', '2'],
-            'constants'  => ['1'],
-            'functions'  => ['1'],
-            'iniEntries' => ['1'],
-            'interfaces' => ['1'],
-            'methods'    => ['1', '2'],
-            'releases'   => ['0', '1', '2'],
-        ];
-
-        yield 'msgpack' => [
-            'classes'    => ['0'],
-            'const'      => ['0', '3'],
-            'constants'  => ['2', '3'],
-            'functions'  => ['0'],
-            'iniEntries' => ['0', '3'],
-            'methods'    => ['0'],
-            'releases'   => ['0', '2', '3'],
-        ];
-
-        yield 'mssql' => [
-            'constants'  => ['40'],
-            'functions'  => ['40', '42', '43'],
-            'iniEntries' => [
-                '40', '42', '43',
-                '51', '55',
-            ],
-            'releases'   => [
-                '40', '42', '43',
-                '51', '55',
-            ],
-        ];
-
-        yield 'mysql' => [
-            'constants'  => ['40', '43'],
-            'functions'  => [
-                '40', '43',
-                '52',
-            ],
-            'iniEntries' => ['40', '43'],
-            'releases'   => [
-                '40', '43',
-                '52',
-            ],
-        ];
-
-        yield 'mysqli' => [
-            'classes'    => ['50'],
-            'constants'  => [
-                '50', '51', '52', '53', '54', '55', '56',
-                '72',
-                '81', '84',
-            ],
-            'functions'  => [
-                '50', '53', '54', '55', '56',
-                '81', '82',
-            ],
-            'iniEntries' => [
-                '50', '56',
-                '81',
-            ],
-            'methods'    => [
-                '50',
-                '81', '82',
-            ],
-            'releases'   => array_merge(
-                ['50', '51', '52', '53', '54', '55', '56'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'oauth' => [
-            'classes'    => ['0', '1'],
-            'constants'  => ['0', '1'],
-            'functions'  => ['0'],
-            'methods'    => ['0', '1'],
-            'releases'   => ['0', '1', '2'],
-        ];
-
-        yield 'oci8' => [
-            'classes'    => ['1', '3'],
-            'constants'  => ['1'],
-            'functions'  => ['1', '2', '3'],
-            'iniEntries' => ['1', '3'],
-            'methods'    => ['1', '3'],
-            'releases'   => array_merge(
-                ['1', '2', '3'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'odbc' => [
-            'classes'  => [
-                '84',
-            ],
-            'constants'  => [
-                '40', '43',
-                '54',
-            ],
-            'functions'  => [
-                '40',
-                '82',
-            ],
-            'iniEntries' => [
-                '40',
-                '53',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '53', '54',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'opcache' => [
-            'functions'  => ['70'],
-            'iniEntries' => [
-                '56',
-                '70', '71', '74',
-                '80', '83', '85',
-            ],
-            'releases'   => array_merge(
-                ['56'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'openssl' => [
-            'classes'    => ['80'],
-            'constants'  => [
-                '40', '43',
-                '50', '52', '53', '54', '56',
-                '71',
-                '80', '83', '84', '85',
-            ],
-            'functions'  => [
-                '40', '42',
-                '52', '53', '55', '56',
-                '71', '72', '73', '74',
-                '80', '82',
-            ],
-            'iniEntries' => [
-                '56',
-                '85',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '42', '43',
-                    '50', '52', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'opentelemetry' => [
-            'functions' => ['1'],
-            'iniEntries' => ['1'],
-            'releases' => [
-                '1',
-            ],
-        ];
-
-        yield 'pcntl' => [
-            'classes' => [
-                '84',
-            ],
-            'const' => [
-                '84',
-            ],
-            'constants' => [
-                '41',
-                '50', '53',
-                '70', '72', '74',
-                '84',
-            ],
-            'functions' => [
-                '41', '42', '43',
-                '50', '53',
-                '70', '71', '74',
-                '84',
-            ],
-            'releases'  => array_merge(
-                [
-                    '41', '42', '43',
-                    '50', '53',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'pcre' => [
-            'constants'  => [
-                '40', '43',
-                '52',
-                '70', '72', '73',
-            ],
-            'functions'  => [
-                '40',
-                '52', '53',
-                '70',
-                '80',
-            ],
-            'iniEntries' => [
-                '52',
-                '70',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '52', '53',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'pdflib' => [
-            'classes'   => ['2'],
-            'functions' => ['2', '3'],
-            'methods'   => ['2', '3'],
-            'releases'  => ['1', '2', '3', '4'],
-        ];
-
-        yield 'pdo' => [
-            'classes'   => ['51'],
-            'const'     => [
-                '51',
-                '80', '81', '84',
-            ],
-            'functions' => ['51'],
-            'methods'   => [
-                '51',
-                '84',
-            ],
-            'releases'  => array_merge(
-                ['51'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'pgsql' => [
-            'classes'    => ['81'],
-            'constants'  => [
-                '40',
-                '51', '54', '56',
-                '71', '73',
-                '83', '84',
-            ],
-            'functions'  => [
-                '40', '42', '43',
-                '50', '51', '52', '54', '56',
-                '83', '84', '85',
-            ],
-            'iniEntries' => ['40'],
-            'releases'   => array_merge(
-                [
-                    '40', '42', '43',
-                    '50', '51', '52', '54', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'phar' => [
-            'classes'    => ['1', '2'],
-            'const'      => [
-                '1', '2',
-                '81',
-            ],
-            'iniEntries' => ['1', '2'],
-            'methods'    => ['1', '2'],
-            'releases'   => array_merge(
-                ['1', '2'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'posix' => [
-            'constants'  => [
-                '51',
-                '70',
-                '83', '84', '85',
-            ],
-            'functions'  => [
-                '40', '42',
-                '51', '52',
-                '70',
-                '83',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '42',
-                    '51', '52',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'pspell' => [
-            'classes' => [
-                '1',
-            ],
-            'constants' => [
-                '1',
-            ],
-            'functions' => [
-                '1',
-            ],
-            'releases'   => array_merge(
+    private function useCoreReleases(string $refName): array
+    {
+        $releases = match ($refName) {
+            'psell' => array_merge(
                 self::PHP_RELEASES_7,
                 ['80', '81', '82', '83'],
-                ['1'],
             ),
-        ];
-
-        yield 'pthreads' => [
-            'classes'   => ['0', '1', '2'],
-            'constants' => ['0', '2'],
-            'methods'   => ['0', '1', '2', '3'],
-            'releases'  => ['0', '1', '2', '3'],
-        ];
-
-        yield 'random' => [
-            'classes' => ['82', '83'],
-            'const' => ['83'],
-            'constants' => ['82'],
-            'functions' => ['82'],
-            'interfaces' => ['82'],
-            'methods' => ['82', '83'],
-            'releases' => [
-                '82', '83', '84', '85',
-            ],
-        ];
-
-        yield 'raphf' => [
-            'functions'  => ['2'],
-            'iniEntries' => ['2'],
-            'releases'   => ['2'],
-        ];
-
-        yield 'rar' => [
-            'classes'   => ['2'],
-            'const'     => ['0', '2', '4'],
-            'constants' => ['2'],
-            'functions' => ['2', '3'],
-            'methods'   => ['0', '2', '3', '4'],
-            'releases'  => ['0', '1', '2', '3', '4'],
-        ];
-
-        yield 'rdkafka' => [
-            'classes' => ['1', '4'],
-            'constants' => ['1', '5', '6'],
-            'functions' => ['1', '5'],
-            'methods' => ['1', '3', '4', '5', '6'],
-            'releases' => ['1', '2', '3', '4', '5', '6'],
-        ];
-
-        yield 'readline' => [
-            'constants'  => ['54'],
-            'functions'  => [
-                '40',
-                '51',
-            ],
-            'iniEntries' => ['54'],
-            'releases'   => array_merge(
-                [
-                    '40',
-                    '51', '54',
-                ],
+            'random' => ['82', '83', '84', '85'],
+            default => array_merge(
                 self::PHP_RELEASES_7,
                 self::PHP_RELEASES_8,
             ),
-        ];
+        };
 
-        yield 'recode' => [
-            'functions' => ['40'],
-            'releases'  => ['40'],
-        ];
-
-        yield 'redis' => [
-            'classes'    => ['2', '5'],
-            'const'      => ['2', '4', '5', '6'],
-            'iniEntries' => ['2', '3', '4', '5', '6'],
-            'methods'    => ['2', '3', '4', '5', '6'],
-            'releases'   => ['2', '3', '4', '5', '6'],
-        ];
-
-        yield 'reflection' => [
-            'classes'    => [
-                '50', '54',
-                '70', '71', '74',
-                '80', '81', '84',
-            ],
-            'const'      => [
-                '50', '51',
-                '80', '81', '82', '84',
-            ],
-            'interfaces' => ['50'],
-            'methods'    => [
-                '50', '54',
-                '70', '71', '72', '74',
-                '80', '81', '82', '83', '84', '85',
-            ],
-            'releases'   => array_merge(
-                ['50', '51', '54'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'riak' => [
-            'classes'    => ['0', '1'],
-            'iniEntries' => ['0', '1'],
-            'interfaces' => ['0', '1'],
-            'methods'    => ['0', '1'],
-            'releases'   => ['0', '1'],
-        ];
-
-        yield 'session' => [
-            'classes'    => ['54'],
-            'constants'  => [
-                '40',
-                '54',
-            ],
-            'functions'  => [
-                '40', '42', '43', '44',
-                '54', '56',
-                '71',
-            ],
-            'iniEntries' => [
-                '40', '43',
-                '50', '52', '54', '55',
-                '70', '71', '73',
-                '85',
-            ],
-            'interfaces' => [
-                '54', '55',
-                '70',
-            ],
-            'methods'    => [
-                '54', '55',
-                '70',
-            ],
-            'releases'   => array_merge(
-                [
-                    '40', '42', '43', '44',
-                    '50', '52', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'shmop' => [
-            'classes'    => ['80'],
-            'functions'  => ['40'],
-            'releases'   => array_merge(
-                ['40'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'simplexml' => [
-            'classes'    => ['50', '51'],
-            'functions'  => ['50'],
-            'methods'    => [
-                '50',
-                '83', '85',
-            ],
-            'releases'   => array_merge(
-                ['50', '51'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'snmp' => [
-            'classes'    => ['54'],
-            'const'      => ['54'],
-            'constants'  => [
-                '43',
-                '52', '54',
-            ],
-            'functions'  => [
-                '40', '43',
-                '50', '52',
-            ],
-            'methods'    => ['54'],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '50', '52', '54',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'soap' => [
-            'classes'    => [
-                '50',
-                '84',
-            ],
-            'constants'  => ['50', '55'],
-            'functions'  => ['50'],
-            'iniEntries' => ['50'],
-            'methods'    => [
-                '50',
-                '80', '84',
-            ],
-            'releases'   => array_merge(
-                ['50', '55'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'sockets' => [
-            'classes'    => ['80'],
-            'constants'  => [
-                '41', '43',
-                '52', '54', '55',
-                '70', '72',
-                '81', '82', '83', '84', '85',
-            ],
-            'functions'  => [
-                '41', '42', '43',
-                '54', '55',
-                '70', '72',
-                '83',
-            ],
-            'releases'   => array_merge(
-                ['41', '42', '43', '52', '54', '55'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'solr' => [
-            'classes'   => ['0', '1', '2'],
-            'const'     => ['0', '2'],
-            'constants' => ['0'],
-            'functions' => ['0'],
-            'methods'   => ['0', '1', '2'],
-            'releases'  => ['0', '1', '2'],
-        ];
-
-        yield 'sphinx' => [
-            'classes'   => ['0'],
-            'constants' => ['0', '1'],
-            'methods'   => ['0', '1'],
-            'releases'  => ['0', '1'],
-        ];
-
-        yield 'spl' => [
-            'classes'    => ['50', '51', '52', '53', '54'],
-            'const'      => ['50', '51', '52', '53'],
-            'functions'  => ['50', '51', '52', '54', '72'],
-            'interfaces' => ['51'],
-            'methods'    => [
-                '50', '51', '52', '53', '54',
-                '70',
-                '82', '85',
-            ],
-            'releases'   => array_merge(
-                ['50', '51', '52', '53', '54'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'sqlite' => [
-            'classes'    => ['2'],
-            'constants'  => ['2'],
-            'functions'  => ['2'],
-            'iniEntries' => ['2'],
-            'releases'   => ['2'],
-        ];
-
-        yield 'sqlite3' => [
-            'classes'    => [
-                '53',
-                '83',
-            ],
-            'const'      => ['80', '85'],
-            'constants'  => [
-                '53',
-                '71',
-            ],
-            'iniEntries' => ['53', '56'],
-            'methods'    => [
-                '53',
-                '74',
-                '80', '85',
-            ],
-            'releases'   => array_merge(
-                ['53', '56'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'ssh2' => [
-            'constants' => ['0', '1'],
-            'functions' => ['0', '1'],
-            'releases'  => ['0', '1'],
-        ];
-
-        yield 'standard' => [
-            'classes' => [
-                '40',
-                '50',
-                '70',
-                '84',
-            ],
-            'const' => [
-                '84',
-            ],
-            'constants' => [
-                '40', '41', '43',
-                '51', '52', '53', '54', '55', '56',
-                '70', '71', '72', '73', '74',
-                '80', '81', '84', '85',
-            ],
-            'functions' => [
-                '40', '41', '42', '43',
-                '50', '51', '52', '53', '54', '55',
-                '70', '71', '72', '73', '74',
-                '80', '81', '82', '83', '84', '85',
-            ],
-            'iniEntries' => [
-                '40',
-                '53',
-                '70', '71', '74',
-            ],
-            'methods' => [
-                '40',
-                '50',
-            ],
-            'releases' => array_merge(
-                [
-                    '40', '41', '42', '43', '44',
-                    '50', '51', '52', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'stomp' => [
-            'classes'    => ['0'],
-            'functions'  => ['0', '1'],
-            'iniEntries' => ['0', '1'],
-            'methods'    => ['0', '1'],
-            'releases'   => ['0', '1', '2'],
-        ];
-
-        yield 'svn' => [
-            'classes'   => ['0'],
-            'const'     => ['1'],
-            'constants' => ['0', '1'],
-            'functions' => ['0', '1'],
-            'methods'   => ['1'],
-            'releases'  => ['0', '1', '2'],
-        ];
-
-        yield 'sync' => [
-            'classes'  => ['1'],
-            'methods'  => ['1'],
-            'releases' => ['1'],
-        ];
-
-        yield 'sysvmsg' => [
-            'classes'   => ['80'],
-            'constants' => [
-                '43',
-                '52',
-            ],
-            'functions' => [
-                '43',
-                '53',
-            ],
-            'releases'  => array_merge(
-                [
-                    '43',
-                    '52', '53',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'sysvsem' => [
-            'classes'   => ['80'],
-            'functions' => ['40', '41'],
-            'releases'  => array_merge(
-                [
-                    '40', '41',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'sysvshm' => [
-            'classes'   => ['80'],
-            'functions' => [
-                '40',
-                '53',
-            ],
-            'releases'  => array_merge(
-                [
-                    '40',
-                    '53',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'tidy' => [
-            'classes'    => ['0'],
-            'constants'  => [
-                '0',
-                '74',
-            ],
-            'functions'  => [
-                '0',
-                '50', '51',
-            ],
-            'iniEntries' => ['0'],
-            'methods'    => [
-                '0',
-                '84',
-            ],
-            'releases'   => array_merge(
-                [
-                    '0', '1',
-                    '50', '51',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'tokenizer' => [
-            'classes'   => ['80'],
-            'constants' => [
-                '42', '43',
-                '50', '51', '53', '54', '55', '56',
-                '70', '74',
-                '80', '81', '84', '85',
-            ],
-            'functions' => ['42'],
-            'methods'   => ['80'],
-            'releases'  => array_merge(
-                [
-                    '42', '43',
-                    '50', '51', '53', '54', '55', '56',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'uopz' => [
-            'constants'  => ['2'],
-            'functions'  => ['2', '5'],
-            'iniEntries' => ['2', '5', '6'],
-            'releases'   => ['2', '5', '6'],
-        ];
-
-        yield 'uploadprogress' => [
-            'functions'  => ['0'],
-            'iniEntries' => ['0'],
-            'releases'   => ['0', '1', '2'],
-        ];
-
-        yield 'uuid' => [
-            'constants' => ['1'],
-            'functions' => ['1'],
-            'releases'  => ['1'],
-        ];
-
-        yield 'varnish' => [
-            'classes'   => ['0'],
-            'const'     => ['0', '6'],
-            'constants' => ['0'],
-            'methods'   => ['0', '1'],
-            'releases'  => ['0', '1', '6'],
-        ];
-
-        yield 'wddx' => [
-            'functions' => ['40'],
-            'releases'  => ['40'],
-        ];
-
-        yield 'xcache' => [
-            'constants'  => ['1', '2'],
-            'functions'  => ['1', '2'],
-            'iniEntries' => ['1', '2', '3'],
-            'releases'   => ['1', '2', '3'],
-        ];
-
-        yield 'xdebug' => [
-            'constants'  => ['2', '3'],
-            'functions'  => ['1', '2', '3'],
-            'iniEntries' => ['1', '2', '3'],
-            'releases'   => ['1', '2', '3'],
-        ];
-
-        yield 'xhprof' => [
-            'constants'  => ['0'],
-            'functions'  => ['0'],
-            'iniEntries' => ['0', '2'],
-            'releases'   => ['0', '2'],
-        ];
-
-        yield 'xlswriter' => [
-            'classes'   => ['1', '2'],
-            'const'     => ['1', '2', '3'],
-            'functions' => ['1'],
-            'methods'   => ['1', '2', '3'],
-            'releases'  => ['1', '2', '3'],
-        ];
-
-        yield 'xml' => [
-            'classes'   => ['80'],
-            'constants' => [
-                '40',
-                '84',
-            ],
-            'functions' => ['40'],
-            'releases'  => array_merge(
-                ['40'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'xmldiff' => [
-            'classes'  => ['0'],
-            'methods'  => ['0'],
-            'releases' => ['0', '1'],
-        ];
-
-        yield 'xmlreader' => [
-            'classes'   => ['50'],
-            'const'     => ['50'],
-            'methods'   => [
-                '50',
-                '84',
-            ],
-            'releases'  => array_merge(
-                ['50'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'xmlrpc' => [
-            'classes'   => ['1'],
-            'functions' => [
-                '41',
-                '1',
-            ],
-            'releases'  => [
-                '41', '43',
-                '1',
-            ],
-        ];
-
-        yield 'xmlwriter' => [
-            'classes'   => ['51'],
-            'functions' => ['51', '52'],
-            'methods'   => [
-                '51',
-                '84',
-            ],
-            'releases'  => array_merge(
-                ['51', '52'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'xpass' => [
-            'constants' => ['1'],
-            'functions' => ['1'],
-            'releases'  => ['1'],
-        ];
-
-        yield 'xsl' => [
-            'classes'    => ['50'],
-            'constants'  => ['50', '51', '53'],
-            'methods'    => [
-                '50',
-                '84',
-            ],
-            'iniEntries' => ['53'],
-            'releases'   => array_merge(
-                ['50', '51', '53'],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
-
-        yield 'yac' => [
-            'classes'    => ['0'],
-            'constants'  => ['0', '2', '3'],
-            'iniEntries' => ['0', '2'],
-            'methods'    => ['0', '2', '3'],
-            'releases'   => ['0', '2', '3'],
-        ];
-
-        yield 'yaml' => [
-            'constants'  => ['0'],
-            'functions'  => ['0'],
-            'iniEntries' => ['0', '1'],
-            'releases'   => ['0', '1', '2'],
-        ];
-
-        yield 'zip' => [
-            'classes'   => ['1'],
-            'const'     => ['1'],
-            'functions' => ['1'],
-            'methods'   => ['1'],
-            'releases'  => ['1'],
-        ];
-
-        yield 'zlib' => [
-            'classes'    => ['80'],
-            'constants'  => [
-                '40',
-                '54',
-                '70',
-            ],
-            'functions'  => [
-                '40', '43',
-                '54',
-                '70', '72',
-            ],
-            'iniEntries' => ['40', '43'],
-            'releases'   => array_merge(
-                [
-                    '40', '43',
-                    '54',
-                ],
-                self::PHP_RELEASES_7,
-                self::PHP_RELEASES_8,
-            ),
-        ];
+        return match ($refName) {
+            'bcmath', 'bz2',
+            'calendar', 'core', 'ctype', 'curl',
+            'date', 'dom',
+            'enchant', 'exif',
+            'fileinfo', 'filter', 'ftp',
+            'gd', 'gettext', 'gmp',
+            'hash',
+            'iconv', 'imap', 'intl',
+            'json',
+            'ldap', 'libxml',
+            'mbstring', 'mysqli',
+            'oci8', 'odbc', 'opcache', 'openssl',
+            'pcntl', 'pcre', 'pdo', 'pgsql', 'phar', 'posix', 'pspell',
+            'random', 'readline', 'reflection',
+            'session', 'shmop', 'simplexml', 'snmp', 'soap', 'sockets', 'spl', 'sqlite3', 'standard', 'sysvmsg', 'sysvsem', 'sysvshm',
+            'tidy', 'tokenizer',
+            'xml', 'xmlreader', 'xmlwriter', 'xsl',
+            'zlib' => $releases,
+            default => [],
+        };
     }
 }
