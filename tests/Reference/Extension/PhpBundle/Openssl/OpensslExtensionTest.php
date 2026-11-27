@@ -39,6 +39,9 @@ class OpensslExtensionTest extends GenericTestCase
             'OPENSSL_ALGO_DSS1',
             // before PHP 8.4 (@see https://github.com/php/php-src/commit/98e2948ca7abaf38358ec4f938470aca2568f263)
             'X509_PURPOSE_ANY',
+            // requires RSA_SSLV23_PADDING
+            // since PHP 8.1.15RC1 (@see https://github.com/php/php-src/commit/0d011e4626249e4d2aa252eeedf524e18c7c50c6)
+            'OPENSSL_SSLV23_PADDING',
         ];
 
         parent::setUpBeforeClass();
