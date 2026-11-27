@@ -32,6 +32,11 @@ class ImagickExtensionTest extends GenericTestCase
         ];
 
         self::$optionalmethods = [
+            'Imagick::addNoiseImageWithAttenuate',  // if IM_HAVE_IMAGICK_ADD_NOISE_WITH_ATTENUATE
+            'Imagick::channelFxImage',          // if IM_HAVE_IMAGICK_CHANNELFXIMAGE
+            'Imagick::claheImage',              // if IM_HAVE_IMAGICK_CLAHEIMAGE
+            'Imagick::colorThresholdImage',     // if IM_HAVE_IMAGICK_COLORTHRESHOLDIMAGE
+            'Imagick::complexImages',           // if IM_HAVE_IMAGICK_COMPLEXIMAGES
             'Imagick::deleteOption',            // if IM_HAVE_IMAGICK_DELETE_OPTION
             'Imagick::getBackgroundColor',      // if IM_HAVE_IMAGICK_GET_BACKGROUND_COLOR
             'Imagick::getImageArtifacts',       // if IM_HAVE_IMAGICK_GET_IMAGE_ARTIFACTS
@@ -43,21 +48,16 @@ class ImagickExtensionTest extends GenericTestCase
             'Imagick::getOrientation',          // if IM_HAVE_IMAGICK_GET_ORIENTATION
             'Imagick::getResolution',           // if IM_HAVE_IMAGICK_GET_RESOLUTION
             'Imagick::getType',                 // if IM_HAVE_IMAGICK_GET_TYPE
+            'Imagick::interpolativeResizeImage',// if IM_HAVE_IMAGICK_INTERPOLATIVERESIZEIMAGE
+            'Imagick::levelImageColors',        // if IM_HAVE_IMAGICK_LEVELIMAGECOLORS
+            'Imagick::levelizeImage',           // if IM_HAVE_IMAGICK_LEVELIZEIMAGE
+            'Imagick::orderedDitherImage',      // if IM_HAVE_IMAGICK_ORDEREDDITHERIMAGE
             'Imagick::polynomialImage',         // if IM_HAVE_IMAGICK_POLYNOMIAL_IMAGE
             'Imagick::setDepth',                // if IM_HAVE_IMAGICK_SET_DEPTH
             'Imagick::setExtract',              // if IM_HAVE_IMAGICK_SET_EXTRACT
             'Imagick::setInterpolateMethod',    // if IM_HAVE_IMAGICK_SET_INTERPOLATE_METHOD
             'Imagick::setOrientation',          // if IM_HAVE_IMAGICK_SET_ORIENTATION
             'Imagick::setSeed',                 // if IM_HAVE_IMAGICK_SETSEED
-            'Imagick::addNoiseImageWithAttenuate',  // if IM_HAVE_IMAGICK_ADD_NOISE_WITH_ATTENUATE
-            'Imagick::claheImage',              // if IM_HAVE_IMAGICK_CLAHEIMAGE
-            'Imagick::channelFxImage',          // if IM_HAVE_IMAGICK_CHANNELFXIMAGE
-            'Imagick::colorThresholdImage',     // if IM_HAVE_IMAGICK_COLORTHRESHOLDIMAGE
-            'Imagick::complexImages',           // if IM_HAVE_IMAGICK_COMPLEXIMAGES
-            'Imagick::interpolativeResizeImage',// if IM_HAVE_IMAGICK_INTERPOLATIVERESIZEIMAGE
-            'Imagick::levelImageColors',        // if IM_HAVE_IMAGICK_LEVELIMAGECOLORS
-            'Imagick::levelizeImage',           // if IM_HAVE_IMAGICK_LEVELIZEIMAGE
-            'Imagick::orderedDitherImage',      // if IM_HAVE_IMAGICK_ORDEREDDITHERIMAGE
             'Imagick::whiteBalanceImage',       // if IM_HAVE_IMAGICK_WHITEBALANCEIMAGE
         ];
 
