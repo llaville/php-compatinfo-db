@@ -43,8 +43,9 @@ class Release
     public function __toString(): string
     {
         return sprintf(
-            'Release (id: %s, version: %s, date: %s, state: %s)',
+            'Release (id: %s, extension: %s, version: %s, date: %s, state: %s)',
             $this->id,
+            $this->extension?->getName() ?? '',
             $this->version,
             $this->date->format('c'),
             $this->state,
